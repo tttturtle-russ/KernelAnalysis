@@ -5,7 +5,14 @@
 apt install fakeroot build-essential libncurses-dev xz-utils libssl-dev bc flex libelf-dev bison cmake gcc g++ zlib1g-dev libzstd-dev zip wget libncurses-dev
 ```
 
-2. Techinique Details
+2. How to run
+```
+cd scripts
+source setup.sh # build SVF and Linux Kernel
+./analysis.sh # analysze bitcode
+```
+
+3. Techinique Details
 
 - SVF: I modified the `MemSSA::dumpMSSA` function to make `wpa` output more suitable for our analysis.
 ```diff
