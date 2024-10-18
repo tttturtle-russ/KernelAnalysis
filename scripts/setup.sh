@@ -11,9 +11,6 @@ if [ ! -d "$LOG_DIR" ]; then
 fi
 
 
-# init all submodule repo
-git submodule update --init
-
 # build SVF
 pushd "$SVF_DIR" > /dev/null
 source ./build.sh > "$LOG_DIR/SVF.log"
@@ -39,5 +36,3 @@ make CC=clang \
     V=0 \
     -j`nproc` > "$LOG_DIR/kernel_build.log"
 popd > /dev/null
-
-# 

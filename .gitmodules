@@ -1,6 +1,0 @@
-[submodule "linux"]
-	path = linux
-	url = https://github.com/torvalds/linux.git
-[submodule "SVF"]
-	path = SVF
-	url = https://github.com/SVF-tools/SVF.git
