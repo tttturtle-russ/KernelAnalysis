@@ -2,7 +2,7 @@
 
 1. Prerequisites(Tested On Ubuntu:24.04)
 ```
-apt install fakeroot build-essential libncurses-dev xz-utils libssl-dev bc flex libelf-dev bison cmake gcc g++ zlib1g-dev libzstd-dev zip wget libncurses-dev
+apt install fakeroot build-essential libncurses-dev xz-utils libssl-dev bc flex libelf-dev bison cmake gcc g++ zlib1g-dev libzstd-dev zip wget libncurses-dev python3
 ```
 
 2. How to run
