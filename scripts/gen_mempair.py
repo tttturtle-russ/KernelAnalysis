@@ -42,6 +42,12 @@ class Instruction:
         return list(zip(self.write_to, [True]*len(self.write_to))) + \
                 list(zip(self.read_from, [False]*len(self.read_from)))
 
+    def reset(self) -> None:
+        self.write_to.clear()
+        self.read_from.clear()
+        self.is_write = None
+        self.source_loc = None
+
     @staticmethod
     def __parse_pts(line: str) -> set:
         pts = line[line.index('{')+1:line.index('}')].strip()
@@ -97,12 +103,14 @@ if __name__ == '__main__':
         for line in tqdm(mssa):
             is_finished = inst.readline(line)
             if is_finished:
-                for memory, is_write in inst.memory_access():
+                for memory, is_write in tqdm(inst.memory_access()):
                     if memory == 1:
                         continue # don't know why but let's just skip this
                     if memory not in memory_locations:
                         memory_locations[memory] = MemoryLoc()
                     memory_locations[memory].add_instruction(inst)
+                
+                inst.reset()
 
         result = MemPairs()
         for memory, loc in memory_locations.items():
