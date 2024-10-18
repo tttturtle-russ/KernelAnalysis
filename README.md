@@ -1,6 +1,6 @@
 # KernelAnalysis
 
-1. Prerequisites()
+1. Prerequisites(Tested On Ubuntu:24.04)
 ```
 apt install fakeroot build-essential libncurses-dev xz-utils libssl-dev bc flex libelf-dev bison cmake gcc g++ zlib1g-dev libzstd-dev zip wget libncurses-dev
 ```
@@ -8,9 +8,31 @@ apt install fakeroot build-essential libncurses-dev xz-utils libssl-dev bc flex 
 2. Techinique Details
 
 - SVF: I modified the `MemSSA::dumpMSSA` function to make `wpa` output more suitable for our analysis.
-```
+```diff
+diff --git a/svf/include/Graphs/ICFGNode.h b/svf/include/Graphs/ICFGNode.h
+index 67fccfff..05b8ff92 100644
+--- a/svf/include/Graphs/ICFGNode.h
++++ b/svf/include/Graphs/ICFGNode.h
+@@ -587,7 +587,7 @@ public:
+ 
+     const std::string getSourceLoc() const override
+     {
+-        return "CallICFGNode: " + ICFGNode::getSourceLoc();
++        return ICFGNode::getSourceLoc();
+     }
+ };
+ 
+@@ -666,7 +666,7 @@ public:
+ 
+     const std::string getSourceLoc() const override
+     {
+-        return "RetICFGNode: " + ICFGNode::getSourceLoc();
++        return ICFGNode::getSourceLoc();
+     }
+ };
+ 
 diff --git a/svf/lib/MSSA/MemSSA.cpp b/svf/lib/MSSA/MemSSA.cpp
-index d1347768..7a2bd0e8 100644
+index d1347768..3f2581ae 100644
 --- a/svf/lib/MSSA/MemSSA.cpp
 +++ b/svf/lib/MSSA/MemSSA.cpp
 @@ -584,25 +584,25 @@ void MemSSA::dumpMSSA(OutStream& Out)
@@ -107,7 +129,7 @@ index d1347768..7a2bd0e8 100644
                      }
 +
 +                    if (has_mu_or_chi && has_debug_info)
-+                        Out << inst->getSourceLoc() << '\n';
++                        Out << "SourceLoc->" << inst->getSourceLoc() << '\n';
 +
                      if (has_chi)
                      {
