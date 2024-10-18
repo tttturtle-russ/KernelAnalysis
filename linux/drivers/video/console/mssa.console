@@ -1,0 +1,3878 @@
+==========FUNCTION: dummycon_startup==========
+==========FUNCTION: dummycon_init==========
+
+LDMU(MR_408V_2) 	pts{209 }
+SourceLoc->{ "ln": 107, "cl": 5, "fl": "drivers/video/console/dummycon.c" }
+
+LDMU(MR_410V_2) 	pts{211 }
+SourceLoc->{ "ln": 108, "cl": 9, "fl": "drivers/video/console/dummycon.c" }
+
+LDMU(MR_408V_2) 	pts{209 }
+SourceLoc->{ "ln": 109, "cl": 2, "fl": "drivers/video/console/dummycon.c" }
+
+LDMU(MR_408V_2) 	pts{209 }
+SourceLoc->{ "ln": 110, "cl": 2, "fl": "drivers/video/console/dummycon.c" }
+
+LDMU(MR_408V_2) 	pts{209 }
+SourceLoc->{ "ln": 112, "cl": 12, "fl": "drivers/video/console/dummycon.c" }
+==========FUNCTION: dummycon_deinit==========
+==========FUNCTION: dummycon_clear==========
+==========FUNCTION: dummycon_putc==========
+==========FUNCTION: dummycon_putcs==========
+==========FUNCTION: dummycon_cursor==========
+==========FUNCTION: dummycon_scroll==========
+==========FUNCTION: dummycon_switch==========
+==========FUNCTION: dummycon_blank==========
+==========FUNCTION: vc_resize==========
+
+LDMU(MR_357V_2) 	pts{408 }
+SourceLoc->{ "ln": 49, "cl": 21, "fl": "./include/linux/vt_kern.h" }
+
+LDMU(MR_359V_2) 	pts{410 }
+SourceLoc->{ "ln": 49, "cl": 25, "fl": "./include/linux/vt_kern.h" }
+
+LDMU(MR_361V_2) 	pts{412 }
+SourceLoc->{ "ln": 49, "cl": 31, "fl": "./include/linux/vt_kern.h" }
+==========FUNCTION: vgacon_startup==========
+574V_2 = STCHI(MR_574V_1) 	pts{436 }
+SourceLoc->{ "ln": 186, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+574V_3 = STCHI(MR_574V_2) 	pts{436 }
+SourceLoc->{ "ln": 186, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+576V_2 = STCHI(MR_576V_1) 	pts{438 }
+SourceLoc->{ "ln": 187, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+578V_2 = STCHI(MR_578V_1) 	pts{440 }
+SourceLoc->{ "ln": 187, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+580V_2 = STCHI(MR_580V_1) 	pts{442 }
+SourceLoc->{ "ln": 188, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 190, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 191, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 192, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+4V_3 = STCHI(MR_4V_1) 	pts{57 }
+SourceLoc->{ "ln": 195, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_4V_3) 	pts{57 }
+SourceLoc->{ "ln": 196, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_596V_1) 	pts{5063 5089 }
+SourceLoc->{ "ln": 196, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_596V_1) 	pts{5063 5089 }
+CALMU(MR_594V_1) 	pts{5020 }
+CALMU(MR_592V_1) 	pts{5019 }
+CALMU(MR_590V_1) 	pts{5018 }
+CALMU(MR_30V_1) 	pts{143 }
+CALMU(MR_215V_1) 	pts{141 }
+CALMU(MR_213V_1) 	pts{139 }
+CALMU(MR_426V_1) 	pts{137 }
+CALMU(MR_130V_1) 	pts{135 }
+CALMU(MR_269V_3) 	pts{133 }
+CALMU(MR_483V_1) 	pts{118 }
+CALMU(MR_231V_3) 	pts{106 }
+CALMU(MR_500V_1) 	pts{145 }
+CALMU(MR_2V_1) 	pts{55 }
+CALMU(MR_163V_3) 	pts{88 }
+CALMU(MR_8V_1) 	pts{60 }
+CALMU(MR_10V_1) 	pts{63 }
+CALMU(MR_207V_3) 	pts{66 }
+CALMU(MR_209V_3) 	pts{68 }
+CALMU(MR_481V_3) 	pts{70 }
+CALMU(MR_67V_3) 	pts{73 }
+CALMU(MR_69V_3) 	pts{76 }
+CALMU(MR_97V_3) 	pts{78 }
+CALMU(MR_4V_3) 	pts{57 }
+CALMU(MR_59V_3) 	pts{90 }
+CALMU(MR_423V_3) 	pts{104 }
+215V_3 = CALCHI(MR_215V_1) 	pts{141 }
+213V_3 = CALCHI(MR_213V_1) 	pts{139 }
+426V_3 = CALCHI(MR_426V_1) 	pts{137 }
+130V_3 = CALCHI(MR_130V_1) 	pts{135 }
+4V_4 = CALCHI(MR_4V_3) 	pts{57 }
+231V_4 = CALCHI(MR_231V_3) 	pts{106 }
+207V_4 = CALCHI(MR_207V_3) 	pts{66 }
+209V_4 = CALCHI(MR_209V_3) 	pts{68 }
+481V_4 = CALCHI(MR_481V_3) 	pts{70 }
+8V_3 = CALCHI(MR_8V_1) 	pts{60 }
+67V_4 = CALCHI(MR_67V_3) 	pts{73 }
+69V_4 = CALCHI(MR_69V_3) 	pts{76 }
+97V_4 = CALCHI(MR_97V_3) 	pts{78 }
+163V_4 = CALCHI(MR_163V_3) 	pts{88 }
+59V_4 = CALCHI(MR_59V_3) 	pts{90 }
+423V_4 = CALCHI(MR_423V_3) 	pts{104 }
+269V_4 = CALCHI(MR_269V_3) 	pts{133 }
+
+572V_3 = STCHI(MR_572V_1) 	pts{434 }
+SourceLoc->{ "ln": 196, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 203, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 204, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 208, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 209, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 210, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 211, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 212, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 215, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+207V_5 = STCHI(MR_207V_1) 	pts{66 }
+SourceLoc->{ "ln": 215, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 216, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+209V_5 = STCHI(MR_209V_1) 	pts{68 }
+SourceLoc->{ "ln": 216, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+481V_5 = STCHI(MR_481V_1) 	pts{70 }
+SourceLoc->{ "ln": 217, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 219, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+67V_8 = STCHI(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 221, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+69V_7 = STCHI(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 222, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+97V_7 = STCHI(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 223, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 224, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+163V_13 = STCHI(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 230, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+59V_11 = STCHI(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 231, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+574V_14 = STCHI(MR_574V_3) 	pts{436 }
+SourceLoc->{ "ln": 232, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+163V_11 = STCHI(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 246, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+59V_9 = STCHI(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 247, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+574V_12 = STCHI(MR_574V_3) 	pts{436 }
+SourceLoc->{ "ln": 248, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+423V_10 = STCHI(MR_423V_1) 	pts{104 }
+SourceLoc->{ "ln": 253, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+231V_5 = STCHI(MR_231V_1) 	pts{106 }
+SourceLoc->{ "ln": 257, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+67V_5 = STCHI(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 258, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+69V_5 = STCHI(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 259, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+97V_5 = STCHI(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 260, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 261, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+584V_5 = STCHI(MR_584V_1) 	pts{446 }
+SourceLoc->{ "ln": 262, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+59V_7 = STCHI(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 264, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 266, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+163V_7 = STCHI(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 272, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+574V_8 = STCHI(MR_574V_3) 	pts{436 }
+SourceLoc->{ "ln": 273, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+163V_9 = STCHI(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 282, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+574V_10 = STCHI(MR_574V_3) 	pts{436 }
+SourceLoc->{ "ln": 283, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+584V_7 = STCHI(MR_584V_5) 	pts{446 }
+SourceLoc->{ "ln": 293, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_584V_8) 	pts{446 }
+SourceLoc->{ "ln": 293, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_584V_8) 	pts{446 }
+SourceLoc->{ "ln": 295, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_584V_8) 	pts{446 }
+SourceLoc->{ "ln": 296, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_584V_8) 	pts{446 }
+SourceLoc->{ "ln": 293, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+584V_12 = STCHI(MR_584V_8) 	pts{446 }
+SourceLoc->{ "ln": 293, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+
+CALMU(MR_30V_1) 	pts{143 }
+584V_9 = STCHI(MR_584V_8) 	pts{446 }
+SourceLoc->{ "ln": 304, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_584V_10) 	pts{446 }
+SourceLoc->{ "ln": 304, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_584V_10) 	pts{446 }
+SourceLoc->{ "ln": 305, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_483V_1) 	pts{118 }
+SourceLoc->{ "ln": 305, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_584V_10) 	pts{446 }
+SourceLoc->{ "ln": 306, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_594V_1) 	pts{5020 }
+SourceLoc->{ "ln": 306, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_584V_10) 	pts{446 }
+SourceLoc->{ "ln": 307, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_592V_1) 	pts{5019 }
+SourceLoc->{ "ln": 307, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_584V_10) 	pts{446 }
+SourceLoc->{ "ln": 308, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_590V_1) 	pts{5018 }
+SourceLoc->{ "ln": 308, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_584V_10) 	pts{446 }
+SourceLoc->{ "ln": 304, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+584V_11 = STCHI(MR_584V_10) 	pts{446 }
+SourceLoc->{ "ln": 304, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+163V_5 = STCHI(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 317, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+59V_5 = STCHI(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 318, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+574V_6 = STCHI(MR_574V_3) 	pts{436 }
+SourceLoc->{ "ln": 319, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+423V_5 = STCHI(MR_423V_1) 	pts{104 }
+SourceLoc->{ "ln": 322, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+586V_4 = STCHI(MR_586V_1) 	pts{448 }
+SourceLoc->{ "ln": 326, "cl": 35, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_6) 	pts{73 }
+SourceLoc->{ "ln": 326, "cl": 71, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_500V_1) 	pts{145 }
+586V_5 = STCHI(MR_586V_4) 	pts{448 }
+SourceLoc->{ "ln": 326, "cl": 35, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_586V_5) 	pts{448 }
+SourceLoc->{ "ln": 326, "cl": 146, "fl": "drivers/video/console/vgacon.c" }
+588V_4 = STCHI(MR_588V_1) 	pts{450 }
+SourceLoc->{ "ln": 326, "cl": 91, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_588V_4) 	pts{450 }
+SourceLoc->{ "ln": 326, "cl": 153, "fl": "drivers/video/console/vgacon.c" }
+67V_7 = STCHI(MR_67V_6) 	pts{73 }
+SourceLoc->{ "ln": 326, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_7) 	pts{73 }
+SourceLoc->{ "ln": 327, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_59V_8) 	pts{90 }
+SourceLoc->{ "ln": 327, "cl": 33, "fl": "drivers/video/console/vgacon.c" }
+269V_5 = STCHI(MR_269V_1) 	pts{133 }
+SourceLoc->{ "ln": 327, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_7) 	pts{73 }
+SourceLoc->{ "ln": 333, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+580V_5 = STCHI(MR_580V_2) 	pts{442 }
+SourceLoc->{ "ln": 333, "cl": 4, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 334, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+576V_5 = STCHI(MR_576V_2) 	pts{438 }
+SourceLoc->{ "ln": 334, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 335, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+578V_5 = STCHI(MR_578V_2) 	pts{440 }
+SourceLoc->{ "ln": 335, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 336, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 337, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 338, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 338, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_576V_5) 	pts{438 }
+SourceLoc->{ "ln": 339, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 339, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_578V_5) 	pts{440 }
+SourceLoc->{ "ln": 340, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 340, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 343, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 344, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 345, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 345, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_576V_5) 	pts{438 }
+SourceLoc->{ "ln": 346, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 346, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_578V_5) 	pts{440 }
+SourceLoc->{ "ln": 347, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 347, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_576V_5) 	pts{438 }
+SourceLoc->{ "ln": 350, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 350, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_578V_5) 	pts{440 }
+SourceLoc->{ "ln": 351, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_580V_5) 	pts{442 }
+SourceLoc->{ "ln": 351, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_163V_10) 	pts{88 }
+SourceLoc->{ "ln": 353, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_163V_10) 	pts{88 }
+SourceLoc->{ "ln": 354, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_163V_10) 	pts{88 }
+SourceLoc->{ "ln": 355, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_10V_1) 	pts{63 }
+SourceLoc->{ "ln": 356, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+8V_5 = STCHI(MR_8V_1) 	pts{60 }
+SourceLoc->{ "ln": 356, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 357, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+130V_5 = STCHI(MR_130V_1) 	pts{135 }
+SourceLoc->{ "ln": 357, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 358, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+423V_9 = STCHI(MR_423V_7) 	pts{104 }
+SourceLoc->{ "ln": 358, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_423V_9) 	pts{104 }
+SourceLoc->{ "ln": 361, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_207V_5) 	pts{66 }
+SourceLoc->{ "ln": 361, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+426V_5 = STCHI(MR_426V_1) 	pts{137 }
+SourceLoc->{ "ln": 360, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 364, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+213V_4 = STCHI(MR_213V_1) 	pts{139 }
+SourceLoc->{ "ln": 364, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_426V_4) 	pts{137 }
+SourceLoc->{ "ln": 365, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+215V_4 = STCHI(MR_215V_1) 	pts{141 }
+SourceLoc->{ "ln": 365, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_574V_11) 	pts{436 }
+SourceLoc->{ "ln": 367, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+572V_4 = STCHI(MR_572V_1) 	pts{434 }
+SourceLoc->{ "ln": 367, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_572V_2) 	pts{434 }
+SourceLoc->{ "ln": 368, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_init==========
+439V_2 = STCHI(MR_439V_1) 	pts{858 }
+SourceLoc->{ "ln": 372, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_231V_1) 	pts{106 }
+SourceLoc->{ "ln": 383, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 383, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_426V_1) 	pts{137 }
+SourceLoc->{ "ln": 384, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 384, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_423V_1) 	pts{104 }
+SourceLoc->{ "ln": 385, "cl": 42, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 385, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 385, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_437V_2) 	pts{856 }
+SourceLoc->{ "ln": 388, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_209V_1) 	pts{68 }
+SourceLoc->{ "ln": 389, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 389, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_207V_1) 	pts{66 }
+SourceLoc->{ "ln": 390, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 390, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 392, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_209V_1) 	pts{68 }
+SourceLoc->{ "ln": 392, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_207V_1) 	pts{66 }
+SourceLoc->{ "ln": 392, "cl": 39, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 394, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_165V_1) 	pts{147 }
+SourceLoc->{ "ln": 395, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 396, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 397, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+439V_3 = STCHI(MR_439V_2) 	pts{858 }
+SourceLoc->{ "ln": 397, "cl": 4, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 398, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 399, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 400, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_431V_1) 	pts{151 }
+SourceLoc->{ "ln": 401, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+431V_3 = STCHI(MR_431V_1) 	pts{151 }
+SourceLoc->{ "ln": 401, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_429V_1) 	pts{149 }
+SourceLoc->{ "ln": 403, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_439V_3) 	pts{858 }
+SourceLoc->{ "ln": 403, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_435V_2) 	pts{854 }
+SourceLoc->{ "ln": 404, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_433V_1) 	pts{153 }
+SourceLoc->{ "ln": 407, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 409, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+433V_3 = STCHI(MR_433V_1) 	pts{153 }
+SourceLoc->{ "ln": 408, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: vgacon_deinit==========
+
+LDMU(MR_546V_2) 	pts{986 }
+SourceLoc->{ "ln": 415, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 416, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_546V_2) 	pts{986 }
+SourceLoc->{ "ln": 416, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_546V_2) 	pts{986 }
+SourceLoc->{ "ln": 417, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_69V_1) 	pts{76 }
+CALMU(MR_67V_1) 	pts{73 }
+
+LDMU(MR_431V_1) 	pts{151 }
+SourceLoc->{ "ln": 420, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+431V_2 = STCHI(MR_431V_1) 	pts{151 }
+SourceLoc->{ "ln": 420, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_546V_2) 	pts{986 }
+SourceLoc->{ "ln": 421, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_546V_2) 	pts{986 }
+SourceLoc->{ "ln": 422, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_546V_2) 	pts{986 }
+SourceLoc->{ "ln": 422, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_546V_2) 	pts{986 }
+SourceLoc->{ "ln": 423, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_clear==========
+==========FUNCTION: vgacon_putcs==========
+==========FUNCTION: vgacon_cursor==========
+326V_2 = STCHI(MR_326V_1) 	pts{1082 }
+SourceLoc->{ "ln": 508, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_322V_2) 	pts{1078 }
+SourceLoc->{ "ln": 510, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_322V_2) 	pts{1078 }
+SourceLoc->{ "ln": 513, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_332V_1) 	pts{90 163 }
+CALMU(MR_69V_1) 	pts{76 }
+CALMU(MR_67V_1) 	pts{73 }
+
+LDMU(MR_322V_2) 	pts{1078 }
+SourceLoc->{ "ln": 515, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+326V_3 = STCHI(MR_326V_2) 	pts{1082 }
+SourceLoc->{ "ln": 515, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_322V_2) 	pts{1078 }
+SourceLoc->{ "ln": 517, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 517, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_69V_1) 	pts{76 }
+
+LDMU(MR_324V_2) 	pts{1080 }
+SourceLoc->{ "ln": 519, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 520, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_334V_1) 	pts{157 159 }
+CALMU(MR_330V_1) 	pts{78 143 }
+CALMU(MR_163V_1) 	pts{88 }
+CALMU(MR_69V_1) 	pts{76 }
+334V_4 = CALCHI(MR_334V_1) 	pts{157 159 }
+
+
+CALMU(MR_330V_1) 	pts{78 143 }
+CALMU(MR_163V_1) 	pts{88 }
+CALMU(MR_334V_1) 	pts{157 159 }
+CALMU(MR_69V_1) 	pts{76 }
+334V_2 = CALCHI(MR_334V_1) 	pts{157 159 }
+
+
+LDMU(MR_322V_2) 	pts{1078 }
+SourceLoc->{ "ln": 527, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 529, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 529, "cl": 38, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 530, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 530, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_334V_1) 	pts{157 159 }
+CALMU(MR_330V_1) 	pts{78 143 }
+CALMU(MR_163V_1) 	pts{88 }
+CALMU(MR_69V_1) 	pts{76 }
+334V_11 = CALCHI(MR_334V_1) 	pts{157 159 }
+
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 533, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 534, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 534, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_334V_1) 	pts{157 159 }
+CALMU(MR_330V_1) 	pts{78 143 }
+CALMU(MR_163V_1) 	pts{88 }
+CALMU(MR_69V_1) 	pts{76 }
+334V_10 = CALCHI(MR_334V_1) 	pts{157 159 }
+
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 537, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 538, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 538, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_334V_1) 	pts{157 159 }
+CALMU(MR_330V_1) 	pts{78 143 }
+CALMU(MR_163V_1) 	pts{88 }
+CALMU(MR_69V_1) 	pts{76 }
+334V_9 = CALCHI(MR_334V_1) 	pts{157 159 }
+
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 541, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 542, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 542, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_334V_1) 	pts{157 159 }
+CALMU(MR_330V_1) 	pts{78 143 }
+CALMU(MR_163V_1) 	pts{88 }
+CALMU(MR_69V_1) 	pts{76 }
+334V_8 = CALCHI(MR_334V_1) 	pts{157 159 }
+
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 545, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_334V_1) 	pts{157 159 }
+CALMU(MR_330V_1) 	pts{78 143 }
+CALMU(MR_163V_1) 	pts{88 }
+CALMU(MR_69V_1) 	pts{76 }
+334V_7 = CALCHI(MR_334V_1) 	pts{157 159 }
+
+
+CALMU(MR_334V_1) 	pts{157 159 }
+CALMU(MR_330V_1) 	pts{78 143 }
+CALMU(MR_163V_1) 	pts{88 }
+CALMU(MR_69V_1) 	pts{76 }
+334V_5 = CALCHI(MR_334V_1) 	pts{157 159 }
+
+
+LDMU(MR_326V_3) 	pts{1082 }
+SourceLoc->{ "ln": 551, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_334V_1) 	pts{157 159 }
+CALMU(MR_330V_1) 	pts{78 143 }
+CALMU(MR_163V_1) 	pts{88 }
+CALMU(MR_69V_1) 	pts{76 }
+334V_13 = CALCHI(MR_334V_1) 	pts{157 159 }
+
+328V_3 = STCHI(MR_328V_1) 	pts{1084 }
+SourceLoc->{ "ln": 554, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: vgacon_scroll==========
+285V_2 = STCHI(MR_285V_1) 	pts{1234 }
+SourceLoc->{ "ln": 1139, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+287V_2 = STCHI(MR_287V_1) 	pts{1236 }
+SourceLoc->{ "ln": 1140, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_277V_2) 	pts{1226 }
+SourceLoc->{ "ln": 1142, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_279V_2) 	pts{1228 }
+SourceLoc->{ "ln": 1142, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1142, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_61V_1) 	pts{161 }
+SourceLoc->{ "ln": 1142, "cl": 30, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1142, "cl": 44, "fl": "drivers/video/console/vgacon.c" }
+273V_5 = STCHI(MR_273V_1) 	pts{1222 }
+SourceLoc->{ "ln": 1143, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_8V_1) 	pts{60 }
+SourceLoc->{ "ln": 1145, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_283V_2) 	pts{1232 }
+SourceLoc->{ "ln": 1145, "cl": 33, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1145, "cl": 42, "fl": "drivers/video/console/vgacon.c" }
+273V_2 = STCHI(MR_273V_1) 	pts{1222 }
+SourceLoc->{ "ln": 1146, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1148, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_72V_1) 	pts{163 }
+CALMU(MR_59V_1) 	pts{90 }
+CALMU(MR_69V_1) 	pts{76 }
+CALMU(MR_67V_1) 	pts{73 }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1149, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+285V_3 = STCHI(MR_285V_2) 	pts{1234 }
+SourceLoc->{ "ln": 1149, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_283V_2) 	pts{1232 }
+SourceLoc->{ "ln": 1150, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1150, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+287V_3 = STCHI(MR_287V_2) 	pts{1236 }
+SourceLoc->{ "ln": 1150, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_281V_2) 	pts{1230 }
+SourceLoc->{ "ln": 1151, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1152, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1152, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_269V_1) 	pts{133 }
+SourceLoc->{ "ln": 1152, "cl": 32, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 1153, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_285V_3) 	pts{1234 }
+SourceLoc->{ "ln": 1154, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1154, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1155, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1155, "cl": 32, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 1156, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1156, "cl": 4, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_285V_3) 	pts{1234 }
+SourceLoc->{ "ln": 1157, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 1157, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+72V_6 = STCHI(MR_72V_1) 	pts{163 }
+SourceLoc->{ "ln": 1157, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1159, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1159, "cl": 4, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1160, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1160, "cl": 39, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1161, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1161, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1162, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_285V_3) 	pts{1234 }
+SourceLoc->{ "ln": 1164, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1164, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 1164, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_269V_1) 	pts{133 }
+SourceLoc->{ "ln": 1165, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1166, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1167, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_285V_3) 	pts{1234 }
+SourceLoc->{ "ln": 1167, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1168, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1168, "cl": 33, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_269V_1) 	pts{133 }
+SourceLoc->{ "ln": 1169, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1169, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1169, "cl": 4, "fl": "drivers/video/console/vgacon.c" }
+72V_3 = STCHI(MR_72V_1) 	pts{163 }
+SourceLoc->{ "ln": 1170, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1172, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1172, "cl": 4, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1173, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1173, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1173, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1174, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1174, "cl": 39, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_287V_3) 	pts{1236 }
+SourceLoc->{ "ln": 1175, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1177, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1177, "cl": 33, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1177, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1178, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1178, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1179, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_69V_1) 	pts{76 }
+CALMU(MR_67V_1) 	pts{73 }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1180, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_285V_3) 	pts{1234 }
+SourceLoc->{ "ln": 1180, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1180, "cl": 35, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_275V_2) 	pts{1224 }
+SourceLoc->{ "ln": 1180, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+273V_3 = STCHI(MR_273V_1) 	pts{1222 }
+SourceLoc->{ "ln": 1181, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_273V_4) 	pts{1222 }
+SourceLoc->{ "ln": 1182, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_switch==========
+220V_2 = STCHI(MR_220V_1) 	pts{1482 }
+SourceLoc->{ "ln": 619, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 619, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+220V_3 = STCHI(MR_220V_2) 	pts{1482 }
+SourceLoc->{ "ln": 619, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+222V_2 = STCHI(MR_222V_1) 	pts{1484 }
+SourceLoc->{ "ln": 620, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 620, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 620, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+222V_3 = STCHI(MR_222V_2) 	pts{1484 }
+SourceLoc->{ "ln": 620, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+224V_2 = STCHI(MR_224V_1) 	pts{1486 }
+SourceLoc->{ "ln": 621, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 621, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_130V_1) 	pts{135 }
+SourceLoc->{ "ln": 621, "cl": 40, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 622, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+224V_3 = STCHI(MR_224V_2) 	pts{1486 }
+SourceLoc->{ "ln": 621, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 628, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+209V_2 = STCHI(MR_209V_1) 	pts{68 }
+SourceLoc->{ "ln": 628, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 629, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+207V_2 = STCHI(MR_207V_1) 	pts{66 }
+SourceLoc->{ "ln": 629, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_61V_1) 	pts{161 }
+SourceLoc->{ "ln": 634, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 635, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 635, "cl": 45, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 636, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 636, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 637, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 637, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_213V_1) 	pts{139 }
+SourceLoc->{ "ln": 639, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_220V_3) 	pts{1482 }
+SourceLoc->{ "ln": 639, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_215V_1) 	pts{141 }
+SourceLoc->{ "ln": 639, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_222V_3) 	pts{1484 }
+SourceLoc->{ "ln": 639, "cl": 43, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_209V_2) 	pts{68 }
+SourceLoc->{ "ln": 640, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_209V_2) 	pts{68 }
+SourceLoc->{ "ln": 641, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 641, "cl": 33, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_207V_2) 	pts{66 }
+SourceLoc->{ "ln": 642, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_224V_3) 	pts{1486 }
+SourceLoc->{ "ln": 642, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 643, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 643, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_218V_2) 	pts{1480 }
+SourceLoc->{ "ln": 643, "cl": 35, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_145V_1) 	pts{76 78 88 143 }
+CALMU(MR_215V_1) 	pts{141 }
+CALMU(MR_213V_1) 	pts{139 }
+215V_3 = CALCHI(MR_215V_1) 	pts{141 }
+213V_3 = CALCHI(MR_213V_1) 	pts{139 }
+
+==========FUNCTION: vgacon_blank==========
+
+LDMU(MR_470V_2) 	pts{1606 }
+SourceLoc->{ "ln": 803, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_462V_1) 	pts{165 }
+SourceLoc->{ "ln": 805, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_479V_1) 	pts{5000 5001 5002 5003 5005 5006 5007 }
+CALMU(MR_477V_1) 	pts{191 4999 5004 5008 5009 }
+CALMU(MR_126V_1) 	pts{5112 }
+CALMU(MR_30V_1) 	pts{143 }
+CALMU(MR_97V_1) 	pts{78 }
+CALMU(MR_69V_1) 	pts{76 }
+462V_4 = STCHI(MR_462V_1) 	pts{165 }
+SourceLoc->{ "ln": 807, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_198V_1) 	pts{167 }
+SourceLoc->{ "ln": 809, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_468V_2) 	pts{1604 }
+SourceLoc->{ "ln": 810, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_475V_1) 	pts{70 118 }
+CALMU(MR_30V_1) 	pts{143 }
+198V_4 = STCHI(MR_198V_1) 	pts{167 }
+SourceLoc->{ "ln": 811, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+466V_6 = STCHI(MR_466V_1) 	pts{1602 }
+SourceLoc->{ "ln": 812, "cl": 4, "fl": "drivers/video/console/vgacon.c" }
+
+61V_5 = STCHI(MR_61V_1) 	pts{161 }
+SourceLoc->{ "ln": 814, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+466V_5 = STCHI(MR_466V_1) 	pts{1602 }
+SourceLoc->{ "ln": 816, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_472V_2) 	pts{1608 }
+SourceLoc->{ "ln": 818, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 818, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_126V_1) 	pts{5112 }
+CALMU(MR_30V_1) 	pts{143 }
+198V_3 = STCHI(MR_198V_1) 	pts{167 }
+SourceLoc->{ "ln": 820, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+466V_3 = STCHI(MR_466V_1) 	pts{1602 }
+SourceLoc->{ "ln": 821, "cl": 4, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_468V_2) 	pts{1604 }
+SourceLoc->{ "ln": 823, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_200V_1) 	pts{198 }
+CALMU(MR_198V_1) 	pts{167 }
+CALMU(MR_72V_1) 	pts{163 }
+CALMU(MR_61V_1) 	pts{161 }
+CALMU(MR_69V_1) 	pts{76 }
+CALMU(MR_67V_1) 	pts{73 }
+72V_3 = CALCHI(MR_72V_1) 	pts{163 }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 824, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_468V_2) 	pts{1604 }
+SourceLoc->{ "ln": 825, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_472V_2) 	pts{1608 }
+SourceLoc->{ "ln": 826, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+61V_4 = STCHI(MR_61V_1) 	pts{161 }
+SourceLoc->{ "ln": 827, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+466V_4 = STCHI(MR_466V_1) 	pts{1602 }
+SourceLoc->{ "ln": 828, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 830, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_470V_2) 	pts{1606 }
+SourceLoc->{ "ln": 831, "cl": 30, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_479V_1) 	pts{5000 5001 5002 5003 5005 5006 5007 }
+CALMU(MR_477V_1) 	pts{191 4999 5004 5008 5009 }
+CALMU(MR_126V_1) 	pts{5112 }
+CALMU(MR_462V_1) 	pts{165 }
+CALMU(MR_30V_1) 	pts{143 }
+CALMU(MR_97V_1) 	pts{78 }
+CALMU(MR_69V_1) 	pts{76 }
+479V_4 = CALCHI(MR_479V_1) 	pts{5000 5001 5002 5003 5005 5006 5007 }
+477V_4 = CALCHI(MR_477V_1) 	pts{191 4999 5004 5008 5009 }
+
+LDMU(MR_470V_2) 	pts{1606 }
+SourceLoc->{ "ln": 832, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+462V_6 = STCHI(MR_462V_1) 	pts{165 }
+SourceLoc->{ "ln": 832, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+466V_7 = STCHI(MR_466V_1) 	pts{1602 }
+SourceLoc->{ "ln": 834, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_466V_2) 	pts{1602 }
+SourceLoc->{ "ln": 836, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_font_set==========
+177V_2 = STCHI(MR_177V_1) 	pts{1706 }
+SourceLoc->{ "ln": 1045, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_171V_2) 	pts{1700 }
+SourceLoc->{ "ln": 1045, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+177V_3 = STCHI(MR_177V_2) 	pts{1706 }
+SourceLoc->{ "ln": 1045, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+179V_2 = STCHI(MR_179V_1) 	pts{1708 }
+SourceLoc->{ "ln": 1046, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 1048, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+167V_6 = STCHI(MR_167V_1) 	pts{1696 }
+SourceLoc->{ "ln": 1049, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_171V_2) 	pts{1700 }
+SourceLoc->{ "ln": 1051, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_171V_2) 	pts{1700 }
+SourceLoc->{ "ln": 1051, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_173V_2) 	pts{1702 }
+SourceLoc->{ "ln": 1051, "cl": 47, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_177V_3) 	pts{1706 }
+SourceLoc->{ "ln": 1052, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_177V_3) 	pts{1706 }
+SourceLoc->{ "ln": 1052, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+167V_4 = STCHI(MR_167V_1) 	pts{1696 }
+SourceLoc->{ "ln": 1053, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_171V_2) 	pts{1700 }
+SourceLoc->{ "ln": 1055, "cl": 36, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_177V_3) 	pts{1706 }
+SourceLoc->{ "ln": 1055, "cl": 51, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_185V_1) 	pts{76 143 4998 }
+CALMU(MR_183V_1) 	pts{145 5112 }
+CALMU(MR_165V_1) 	pts{147 }
+CALMU(MR_163V_1) 	pts{88 }
+165V_2 = CALCHI(MR_165V_1) 	pts{147 }
+
+179V_3 = STCHI(MR_179V_2) 	pts{1708 }
+SourceLoc->{ "ln": 1055, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_179V_3) 	pts{1708 }
+SourceLoc->{ "ln": 1056, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_179V_3) 	pts{1708 }
+SourceLoc->{ "ln": 1057, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+167V_3 = STCHI(MR_167V_1) 	pts{1696 }
+SourceLoc->{ "ln": 1057, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_175V_2) 	pts{1704 }
+SourceLoc->{ "ln": 1059, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_169V_2) 	pts{1698 }
+SourceLoc->{ "ln": 1060, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_171V_2) 	pts{1700 }
+SourceLoc->{ "ln": 1060, "cl": 32, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_187V_1) 	pts{104 157 159 }
+CALMU(MR_185V_1) 	pts{76 143 4998 }
+CALMU(MR_97V_1) 	pts{78 }
+187V_2 = CALCHI(MR_187V_1) 	pts{104 157 159 }
+
+179V_4 = STCHI(MR_179V_3) 	pts{1708 }
+SourceLoc->{ "ln": 1060, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_179V_5) 	pts{1708 }
+SourceLoc->{ "ln": 1061, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+167V_2 = STCHI(MR_167V_1) 	pts{1696 }
+SourceLoc->{ "ln": 1061, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_167V_5) 	pts{1696 }
+SourceLoc->{ "ln": 1062, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_font_get==========
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 1066, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_305V_2) 	pts{1812 }
+SourceLoc->{ "ln": 1066, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+299V_5 = STCHI(MR_299V_1) 	pts{1806 }
+SourceLoc->{ "ln": 1067, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_303V_2) 	pts{1810 }
+SourceLoc->{ "ln": 1069, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_301V_2) 	pts{1808 }
+SourceLoc->{ "ln": 1070, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_303V_2) 	pts{1810 }
+SourceLoc->{ "ln": 1070, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_165V_1) 	pts{147 }
+SourceLoc->{ "ln": 1071, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_303V_2) 	pts{1810 }
+SourceLoc->{ "ln": 1071, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_303V_2) 	pts{1810 }
+SourceLoc->{ "ln": 1072, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+299V_2 = STCHI(MR_299V_1) 	pts{1806 }
+SourceLoc->{ "ln": 1073, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_303V_2) 	pts{1810 }
+SourceLoc->{ "ln": 1074, "cl": 38, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_165V_1) 	pts{147 }
+SourceLoc->{ "ln": 1074, "cl": 53, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_307V_1) 	pts{76 143 145 4998 5112 }
+CALMU(MR_165V_1) 	pts{147 }
+CALMU(MR_163V_1) 	pts{88 }
+165V_2 = CALCHI(MR_165V_1) 	pts{147 }
+
+299V_3 = STCHI(MR_299V_1) 	pts{1806 }
+SourceLoc->{ "ln": 1074, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_299V_4) 	pts{1806 }
+SourceLoc->{ "ln": 1075, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_resize==========
+
+LDMU(MR_137V_2) 	pts{1874 }
+SourceLoc->{ "ln": 1080, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_139V_2) 	pts{1876 }
+SourceLoc->{ "ln": 1080, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 1080, "cl": 30, "fl": "drivers/video/console/vgacon.c" }
+133V_6 = STCHI(MR_133V_1) 	pts{1870 }
+SourceLoc->{ "ln": 1081, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_141V_2) 	pts{1878 }
+SourceLoc->{ "ln": 1083, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_137V_2) 	pts{1874 }
+SourceLoc->{ "ln": 1088, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 1088, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_139V_2) 	pts{1876 }
+SourceLoc->{ "ln": 1089, "cl": 30, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 1089, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_135V_2) 	pts{1872 }
+SourceLoc->{ "ln": 1090, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+130V_2 = STCHI(MR_130V_1) 	pts{135 }
+SourceLoc->{ "ln": 1090, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+133V_4 = STCHI(MR_133V_1) 	pts{1870 }
+SourceLoc->{ "ln": 1091, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_137V_2) 	pts{1874 }
+SourceLoc->{ "ln": 1093, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_137V_2) 	pts{1874 }
+SourceLoc->{ "ln": 1093, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 1093, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_139V_2) 	pts{1876 }
+SourceLoc->{ "ln": 1094, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 1094, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_130V_1) 	pts{135 }
+SourceLoc->{ "ln": 1094, "cl": 43, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_135V_2) 	pts{1872 }
+SourceLoc->{ "ln": 1095, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+133V_3 = STCHI(MR_133V_1) 	pts{1870 }
+SourceLoc->{ "ln": 1096, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_135V_2) 	pts{1872 }
+SourceLoc->{ "ln": 1098, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_61V_1) 	pts{161 }
+SourceLoc->{ "ln": 1098, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_135V_2) 	pts{1872 }
+SourceLoc->{ "ln": 1099, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_137V_2) 	pts{1874 }
+SourceLoc->{ "ln": 1099, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_139V_2) 	pts{1876 }
+SourceLoc->{ "ln": 1099, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_145V_1) 	pts{76 78 88 143 }
+CALMU(MR_143V_1) 	pts{139 141 }
+143V_3 = CALCHI(MR_143V_1) 	pts{139 141 }
+
+133V_2 = STCHI(MR_133V_1) 	pts{1870 }
+SourceLoc->{ "ln": 1100, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_133V_5) 	pts{1870 }
+SourceLoc->{ "ln": 1101, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_set_palette==========
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 664, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_198V_1) 	pts{167 }
+SourceLoc->{ "ln": 664, "cl": 32, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_259V_2) 	pts{1964 }
+SourceLoc->{ "ln": 665, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_259V_2) 	pts{1964 }
+SourceLoc->{ "ln": 667, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_261V_2) 	pts{1966 }
+SourceLoc->{ "ln": 667, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_263V_1) 	pts{70 118 143 }
+==========FUNCTION: vgacon_scrolldelta==========
+78V_2 = STCHI(MR_78V_1) 	pts{1997 }
+SourceLoc->{ "ln": 141, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 141, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 141, "cl": 42, "fl": "drivers/video/console/vgacon.c" }
+78V_3 = STCHI(MR_78V_2) 	pts{1997 }
+SourceLoc->{ "ln": 141, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+80V_2 = STCHI(MR_80V_1) 	pts{1999 }
+SourceLoc->{ "ln": 142, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 142, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 142, "cl": 49, "fl": "drivers/video/console/vgacon.c" }
+80V_3 = STCHI(MR_80V_2) 	pts{1999 }
+SourceLoc->{ "ln": 142, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+82V_2 = STCHI(MR_82V_1) 	pts{2001 }
+SourceLoc->{ "ln": 143, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 143, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 143, "cl": 40, "fl": "drivers/video/console/vgacon.c" }
+82V_3 = STCHI(MR_82V_2) 	pts{2001 }
+SourceLoc->{ "ln": 143, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+84V_2 = STCHI(MR_84V_1) 	pts{2003 }
+SourceLoc->{ "ln": 144, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 144, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+84V_3 = STCHI(MR_84V_2) 	pts{2003 }
+SourceLoc->{ "ln": 144, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+86V_2 = STCHI(MR_86V_1) 	pts{2005 }
+SourceLoc->{ "ln": 145, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+88V_2 = STCHI(MR_88V_1) 	pts{2007 }
+SourceLoc->{ "ln": 145, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+90V_2 = STCHI(MR_90V_1) 	pts{2009 }
+SourceLoc->{ "ln": 145, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+92V_2 = STCHI(MR_92V_1) 	pts{2011 }
+SourceLoc->{ "ln": 145, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_76V_2) 	pts{1995 }
+SourceLoc->{ "ln": 148, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 149, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 149, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_72V_1) 	pts{163 }
+SourceLoc->{ "ln": 154, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_78V_3) 	pts{1997 }
+SourceLoc->{ "ln": 154, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_84V_3) 	pts{2003 }
+SourceLoc->{ "ln": 154, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_78V_3) 	pts{1997 }
+SourceLoc->{ "ln": 155, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+86V_6 = STCHI(MR_86V_2) 	pts{2005 }
+SourceLoc->{ "ln": 155, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_72V_1) 	pts{163 }
+SourceLoc->{ "ln": 156, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 156, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+88V_6 = STCHI(MR_88V_2) 	pts{2007 }
+SourceLoc->{ "ln": 156, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+86V_4 = STCHI(MR_86V_2) 	pts{2005 }
+SourceLoc->{ "ln": 158, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 159, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+88V_4 = STCHI(MR_88V_2) 	pts{2007 }
+SourceLoc->{ "ln": 159, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_80V_3) 	pts{1999 }
+SourceLoc->{ "ln": 162, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_86V_5) 	pts{2005 }
+SourceLoc->{ "ln": 162, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_88V_5) 	pts{2007 }
+SourceLoc->{ "ln": 162, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_88V_5) 	pts{2007 }
+SourceLoc->{ "ln": 162, "cl": 39, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_76V_2) 	pts{1995 }
+SourceLoc->{ "ln": 162, "cl": 46, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 162, "cl": 54, "fl": "drivers/video/console/vgacon.c" }
+90V_4 = STCHI(MR_90V_2) 	pts{2009 }
+SourceLoc->{ "ln": 162, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_82V_3) 	pts{2001 }
+SourceLoc->{ "ln": 163, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_86V_5) 	pts{2005 }
+SourceLoc->{ "ln": 163, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_88V_5) 	pts{2007 }
+SourceLoc->{ "ln": 163, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_88V_5) 	pts{2007 }
+SourceLoc->{ "ln": 163, "cl": 35, "fl": "drivers/video/console/vgacon.c" }
+92V_4 = STCHI(MR_92V_2) 	pts{2011 }
+SourceLoc->{ "ln": 163, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_92V_4) 	pts{2011 }
+SourceLoc->{ "ln": 166, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_84V_3) 	pts{2003 }
+SourceLoc->{ "ln": 166, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+84V_6 = STCHI(MR_84V_3) 	pts{2003 }
+SourceLoc->{ "ln": 167, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_90V_4) 	pts{2009 }
+SourceLoc->{ "ln": 168, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_84V_5) 	pts{2003 }
+SourceLoc->{ "ln": 168, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+90V_8 = STCHI(MR_90V_4) 	pts{2009 }
+SourceLoc->{ "ln": 169, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_90V_5) 	pts{2009 }
+SourceLoc->{ "ln": 170, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_92V_4) 	pts{2011 }
+SourceLoc->{ "ln": 170, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_84V_5) 	pts{2003 }
+SourceLoc->{ "ln": 170, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_92V_4) 	pts{2011 }
+SourceLoc->{ "ln": 171, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+90V_7 = STCHI(MR_90V_5) 	pts{2009 }
+SourceLoc->{ "ln": 171, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 173, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_86V_5) 	pts{2005 }
+SourceLoc->{ "ln": 173, "cl": 42, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_90V_6) 	pts{2009 }
+SourceLoc->{ "ln": 173, "cl": 49, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_88V_5) 	pts{2007 }
+SourceLoc->{ "ln": 173, "cl": 61, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 173, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_74V_2) 	pts{1993 }
+SourceLoc->{ "ln": 175, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_69V_1) 	pts{76 }
+CALMU(MR_67V_1) 	pts{73 }
+94V_4 = STCHI(MR_94V_1) 	pts{2013 }
+SourceLoc->{ "ln": 176, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: vgacon_set_origin==========
+
+LDMU(MR_61V_1) 	pts{161 }
+SourceLoc->{ "ln": 1105, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_200V_1) 	pts{198 }
+SourceLoc->{ "ln": 1106, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_198V_1) 	pts{167 }
+SourceLoc->{ "ln": 1106, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+202V_4 = STCHI(MR_202V_1) 	pts{2186 }
+SourceLoc->{ "ln": 1107, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 1108, "cl": 40, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_204V_2) 	pts{2188 }
+SourceLoc->{ "ln": 1108, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_204V_2) 	pts{2188 }
+SourceLoc->{ "ln": 1108, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_204V_2) 	pts{2188 }
+SourceLoc->{ "ln": 1109, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_69V_1) 	pts{76 }
+CALMU(MR_67V_1) 	pts{73 }
+72V_2 = STCHI(MR_72V_1) 	pts{163 }
+SourceLoc->{ "ln": 1110, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+202V_2 = STCHI(MR_202V_1) 	pts{2186 }
+SourceLoc->{ "ln": 1111, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_202V_3) 	pts{2186 }
+SourceLoc->{ "ln": 1112, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_save_screen==========
+
+LDMU(MR_63V_1) 	pts{200 }
+SourceLoc->{ "ln": 1118, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+63V_2 = STCHI(MR_63V_1) 	pts{200 }
+SourceLoc->{ "ln": 1123, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 1124, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_65V_2) 	pts{2221 }
+SourceLoc->{ "ln": 1124, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 1125, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_65V_2) 	pts{2221 }
+SourceLoc->{ "ln": 1125, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_61V_1) 	pts{161 }
+SourceLoc->{ "ln": 1131, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_65V_2) 	pts{2221 }
+SourceLoc->{ "ln": 1132, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_65V_2) 	pts{2221 }
+SourceLoc->{ "ln": 1132, "cl": 48, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_65V_2) 	pts{2221 }
+SourceLoc->{ "ln": 1133, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 1133, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_59V_1) 	pts{90 }
+SourceLoc->{ "ln": 1133, "cl": 47, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_65V_2) 	pts{2221 }
+SourceLoc->{ "ln": 1133, "cl": 63, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_build_attr==========
+247V_2 = STCHI(MR_247V_1) 	pts{2298 }
+SourceLoc->{ "ln": 431, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_235V_2) 	pts{2286 }
+SourceLoc->{ "ln": 431, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+247V_3 = STCHI(MR_247V_2) 	pts{2298 }
+SourceLoc->{ "ln": 431, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_231V_1) 	pts{106 }
+SourceLoc->{ "ln": 433, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_245V_2) 	pts{2296 }
+SourceLoc->{ "ln": 434, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_3) 	pts{2298 }
+SourceLoc->{ "ln": 435, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_233V_2) 	pts{2284 }
+SourceLoc->{ "ln": 435, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+247V_23 = STCHI(MR_247V_3) 	pts{2298 }
+SourceLoc->{ "ln": 435, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_241V_2) 	pts{2292 }
+SourceLoc->{ "ln": 436, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_3) 	pts{2298 }
+SourceLoc->{ "ln": 437, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_233V_2) 	pts{2284 }
+SourceLoc->{ "ln": 437, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+247V_21 = STCHI(MR_247V_3) 	pts{2298 }
+SourceLoc->{ "ln": 437, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_237V_2) 	pts{2288 }
+SourceLoc->{ "ln": 438, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_3) 	pts{2298 }
+SourceLoc->{ "ln": 439, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_233V_2) 	pts{2284 }
+SourceLoc->{ "ln": 439, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+247V_19 = STCHI(MR_247V_3) 	pts{2298 }
+SourceLoc->{ "ln": 439, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_243V_2) 	pts{2294 }
+SourceLoc->{ "ln": 441, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_4) 	pts{2298 }
+SourceLoc->{ "ln": 443, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_4) 	pts{2298 }
+SourceLoc->{ "ln": 443, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_4) 	pts{2298 }
+SourceLoc->{ "ln": 443, "cl": 45, "fl": "drivers/video/console/vgacon.c" }
+247V_17 = STCHI(MR_247V_4) 	pts{2298 }
+SourceLoc->{ "ln": 442, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_239V_2) 	pts{2290 }
+SourceLoc->{ "ln": 445, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_5) 	pts{2298 }
+SourceLoc->{ "ln": 446, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+247V_16 = STCHI(MR_247V_5) 	pts{2298 }
+SourceLoc->{ "ln": 446, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_237V_2) 	pts{2288 }
+SourceLoc->{ "ln": 447, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_6) 	pts{2298 }
+SourceLoc->{ "ln": 448, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+247V_15 = STCHI(MR_247V_6) 	pts{2298 }
+SourceLoc->{ "ln": 448, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_231V_1) 	pts{106 }
+SourceLoc->{ "ln": 449, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_245V_2) 	pts{2296 }
+SourceLoc->{ "ln": 450, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_7) 	pts{2298 }
+SourceLoc->{ "ln": 451, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+247V_13 = STCHI(MR_247V_7) 	pts{2298 }
+SourceLoc->{ "ln": 451, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_241V_2) 	pts{2292 }
+SourceLoc->{ "ln": 452, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_7) 	pts{2298 }
+SourceLoc->{ "ln": 453, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+247V_11 = STCHI(MR_247V_7) 	pts{2298 }
+SourceLoc->{ "ln": 453, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_237V_2) 	pts{2288 }
+SourceLoc->{ "ln": 454, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_247V_7) 	pts{2298 }
+SourceLoc->{ "ln": 455, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+247V_9 = STCHI(MR_247V_7) 	pts{2298 }
+SourceLoc->{ "ln": 455, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_247V_14) 	pts{2298 }
+SourceLoc->{ "ln": 457, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: vgacon_invert_region==========
+353V_2 = STCHI(MR_353V_1) 	pts{2476 }
+SourceLoc->{ "ln": 462, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_231V_1) 	pts{106 }
+SourceLoc->{ "ln": 462, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+353V_3 = STCHI(MR_353V_2) 	pts{2476 }
+SourceLoc->{ "ln": 462, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_351V_3) 	pts{2474 }
+SourceLoc->{ "ln": 464, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+351V_4 = STCHI(MR_351V_3) 	pts{2474 }
+SourceLoc->{ "ln": 464, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+355V_3 = STCHI(MR_355V_2) 	pts{2478 }
+SourceLoc->{ "ln": 465, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_349V_3) 	pts{2472 }
+SourceLoc->{ "ln": 465, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+355V_4 = STCHI(MR_355V_3) 	pts{2478 }
+SourceLoc->{ "ln": 465, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_353V_3) 	pts{2476 }
+SourceLoc->{ "ln": 466, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_355V_4) 	pts{2478 }
+SourceLoc->{ "ln": 467, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_355V_4) 	pts{2478 }
+SourceLoc->{ "ln": 467, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_355V_4) 	pts{2478 }
+SourceLoc->{ "ln": 468, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+355V_7 = STCHI(MR_355V_4) 	pts{2478 }
+SourceLoc->{ "ln": 467, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_355V_4) 	pts{2478 }
+SourceLoc->{ "ln": 470, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_355V_4) 	pts{2478 }
+SourceLoc->{ "ln": 470, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+355V_5 = STCHI(MR_355V_4) 	pts{2478 }
+SourceLoc->{ "ln": 470, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_355V_6) 	pts{2478 }
+SourceLoc->{ "ln": 471, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_349V_3) 	pts{2472 }
+SourceLoc->{ "ln": 471, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+349V_4 = STCHI(MR_349V_3) 	pts{2472 }
+SourceLoc->{ "ln": 471, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: scr_memcpyw==========
+
+LDMU(MR_50V_2) 	pts{2561 }
+SourceLoc->{ "ln": 49, "cl": 9, "fl": "./include/linux/vt_buffer.h" }
+
+LDMU(MR_52V_2) 	pts{2563 }
+SourceLoc->{ "ln": 49, "cl": 12, "fl": "./include/linux/vt_buffer.h" }
+
+LDMU(MR_54V_2) 	pts{2565 }
+SourceLoc->{ "ln": 49, "cl": 15, "fl": "./include/linux/vt_buffer.h" }
+==========FUNCTION: vga_set_mem_top==========
+
+LDMU(MR_600V_2) 	pts{2588 }
+SourceLoc->{ "ln": 136, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_67V_1) 	pts{73 }
+SourceLoc->{ "ln": 136, "cl": 40, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_69V_1) 	pts{76 }
+==========FUNCTION: write_vga==========
+525V_2 = STCHI(MR_525V_1) 	pts{2609 }
+SourceLoc->{ "ln": 119, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+527V_2 = STCHI(MR_527V_1) 	pts{2611 }
+SourceLoc->{ "ln": 119, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+529V_2 = STCHI(MR_529V_1) 	pts{2613 }
+SourceLoc->{ "ln": 120, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+531V_2 = STCHI(MR_531V_1) 	pts{2615 }
+SourceLoc->{ "ln": 126, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+533V_2 = STCHI(MR_533V_1) 	pts{2617 }
+SourceLoc->{ "ln": 126, "cl": 47, "fl": "drivers/video/console/vgacon.c" }
+
+535V_2 = STCHI(MR_535V_1) 	pts{2619 }
+SourceLoc->{ "ln": 126, "cl": 57, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_535V_2) 	pts{2619 }
+SourceLoc->{ "ln": 126, "cl": 91, "fl": "drivers/video/console/vgacon.c" }
+529V_3 = STCHI(MR_529V_2) 	pts{2613 }
+SourceLoc->{ "ln": 126, "cl": 101, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_521V_2) 	pts{2605 }
+SourceLoc->{ "ln": 127, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_523V_2) 	pts{2607 }
+SourceLoc->{ "ln": 127, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+525V_3 = STCHI(MR_525V_2) 	pts{2609 }
+SourceLoc->{ "ln": 127, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_521V_2) 	pts{2605 }
+SourceLoc->{ "ln": 128, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_523V_2) 	pts{2607 }
+SourceLoc->{ "ln": 128, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+527V_3 = STCHI(MR_527V_2) 	pts{2611 }
+SourceLoc->{ "ln": 128, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_525V_3) 	pts{2609 }
+SourceLoc->{ "ln": 129, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 129, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_527V_3) 	pts{2611 }
+SourceLoc->{ "ln": 130, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 130, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+537V_2 = STCHI(MR_537V_1) 	pts{2621 }
+SourceLoc->{ "ln": 131, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+539V_2 = STCHI(MR_539V_1) 	pts{2623 }
+SourceLoc->{ "ln": 131, "cl": 47, "fl": "drivers/video/console/vgacon.c" }
+
+541V_2 = STCHI(MR_541V_1) 	pts{2625 }
+SourceLoc->{ "ln": 131, "cl": 57, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_541V_2) 	pts{2625 }
+SourceLoc->{ "ln": 131, "cl": 91, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_529V_3) 	pts{2613 }
+SourceLoc->{ "ln": 131, "cl": 134, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: __outw==========
+
+LDMU(MR_770V_2) 	pts{2718 }
+SourceLoc->{ "ln": 23, "cl": 234, "fl": "./arch/x86/include/asm/shared/io.h" }
+
+LDMU(MR_772V_2) 	pts{2720 }
+SourceLoc->{ "ln": 23, "cl": 247, "fl": "./arch/x86/include/asm/shared/io.h" }
+==========FUNCTION: vga_set_palette==========
+490V_2 = STCHI(MR_490V_1) 	pts{2743 }
+SourceLoc->{ "ln": 651, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+492V_2 = STCHI(MR_492V_1) 	pts{2745 }
+SourceLoc->{ "ln": 651, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_481V_1) 	pts{70 }
+SourceLoc->{ "ln": 653, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+492V_3 = STCHI(MR_492V_2) 	pts{2745 }
+SourceLoc->{ "ln": 654, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+490V_3 = STCHI(MR_490V_2) 	pts{2743 }
+SourceLoc->{ "ln": 654, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_490V_4) 	pts{2743 }
+SourceLoc->{ "ln": 654, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_481V_1) 	pts{70 }
+SourceLoc->{ "ln": 655, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_488V_2) 	pts{2741 }
+SourceLoc->{ "ln": 655, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_490V_4) 	pts{2743 }
+SourceLoc->{ "ln": 655, "cl": 40, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_483V_1) 	pts{118 }
+SourceLoc->{ "ln": 655, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_481V_1) 	pts{70 }
+SourceLoc->{ "ln": 656, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_486V_2) 	pts{2739 }
+SourceLoc->{ "ln": 656, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_492V_4) 	pts{2745 }
+SourceLoc->{ "ln": 656, "cl": 50, "fl": "drivers/video/console/vgacon.c" }
+492V_5 = STCHI(MR_492V_4) 	pts{2745 }
+SourceLoc->{ "ln": 656, "cl": 50, "fl": "drivers/video/console/vgacon.c" }
+
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_481V_1) 	pts{70 }
+SourceLoc->{ "ln": 657, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_486V_2) 	pts{2739 }
+SourceLoc->{ "ln": 657, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_492V_5) 	pts{2745 }
+SourceLoc->{ "ln": 657, "cl": 50, "fl": "drivers/video/console/vgacon.c" }
+492V_6 = STCHI(MR_492V_5) 	pts{2745 }
+SourceLoc->{ "ln": 657, "cl": 50, "fl": "drivers/video/console/vgacon.c" }
+
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_481V_1) 	pts{70 }
+SourceLoc->{ "ln": 658, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_486V_2) 	pts{2739 }
+SourceLoc->{ "ln": 658, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_492V_6) 	pts{2745 }
+SourceLoc->{ "ln": 658, "cl": 50, "fl": "drivers/video/console/vgacon.c" }
+492V_7 = STCHI(MR_492V_6) 	pts{2745 }
+SourceLoc->{ "ln": 658, "cl": 50, "fl": "drivers/video/console/vgacon.c" }
+
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_490V_4) 	pts{2743 }
+SourceLoc->{ "ln": 654, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+490V_5 = STCHI(MR_490V_4) 	pts{2743 }
+SourceLoc->{ "ln": 654, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: vga_w==========
+
+LDMU(MR_621V_2) 	pts{2830 }
+SourceLoc->{ "ln": 247, "cl": 6, "fl": "./include/video/vga.h" }
+
+LDMU(MR_621V_2) 	pts{2830 }
+SourceLoc->{ "ln": 248, "cl": 13, "fl": "./include/video/vga.h" }
+
+LDMU(MR_623V_2) 	pts{2832 }
+SourceLoc->{ "ln": 248, "cl": 22, "fl": "./include/video/vga.h" }
+
+LDMU(MR_625V_2) 	pts{2834 }
+SourceLoc->{ "ln": 248, "cl": 28, "fl": "./include/video/vga.h" }
+
+LDMU(MR_623V_2) 	pts{2832 }
+SourceLoc->{ "ln": 250, "cl": 13, "fl": "./include/video/vga.h" }
+
+LDMU(MR_625V_2) 	pts{2834 }
+SourceLoc->{ "ln": 250, "cl": 19, "fl": "./include/video/vga.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+==========FUNCTION: vga_mm_w==========
+
+LDMU(MR_636V_2) 	pts{2868 }
+SourceLoc->{ "ln": 207, "cl": 10, "fl": "./include/video/vga.h" }
+
+LDMU(MR_632V_2) 	pts{2864 }
+SourceLoc->{ "ln": 207, "cl": 15, "fl": "./include/video/vga.h" }
+
+LDMU(MR_634V_2) 	pts{2866 }
+SourceLoc->{ "ln": 207, "cl": 25, "fl": "./include/video/vga.h" }
+==========FUNCTION: vga_io_w==========
+
+LDMU(MR_630V_2) 	pts{2891 }
+SourceLoc->{ "ln": 228, "cl": 9, "fl": "./include/video/vga.h" }
+
+LDMU(MR_628V_2) 	pts{2889 }
+SourceLoc->{ "ln": 228, "cl": 14, "fl": "./include/video/vga.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+==========FUNCTION: outb_p==========
+
+LDMU(MR_706V_2) 	pts{2904 }
+SourceLoc->{ "ln": 309, "cl": 156, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_708V_2) 	pts{2906 }
+SourceLoc->{ "ln": 309, "cl": 163, "fl": "./arch/x86/include/asm/io.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+==========FUNCTION: __outb==========
+
+LDMU(MR_309V_2) 	pts{2924 }
+SourceLoc->{ "ln": 22, "cl": 233, "fl": "./arch/x86/include/asm/shared/io.h" }
+
+LDMU(MR_311V_2) 	pts{2926 }
+SourceLoc->{ "ln": 22, "cl": 246, "fl": "./arch/x86/include/asm/shared/io.h" }
+==========FUNCTION: slow_down_io==========
+148V_2 = STCHI(MR_148V_1) 	pts{2938 }
+SourceLoc->{ "ln": 59, "cl": 25, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+LDMU(MR_148V_2) 	pts{2938 }
+SourceLoc->{ "ln": 59, "cl": 33, "fl": "./arch/x86/include/asm/paravirt.h" }
+148V_3 = STCHI(MR_148V_2) 	pts{2938 }
+SourceLoc->{ "ln": 59, "cl": 25, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+150V_2 = STCHI(MR_150V_1) 	pts{2940 }
+SourceLoc->{ "ln": 59, "cl": 40, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+LDMU(MR_150V_2) 	pts{2940 }
+SourceLoc->{ "ln": 59, "cl": 48, "fl": "./arch/x86/include/asm/paravirt.h" }
+150V_3 = STCHI(MR_150V_2) 	pts{2940 }
+SourceLoc->{ "ln": 59, "cl": 40, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+152V_2 = STCHI(MR_152V_1) 	pts{2942 }
+SourceLoc->{ "ln": 59, "cl": 55, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+LDMU(MR_152V_2) 	pts{2942 }
+SourceLoc->{ "ln": 59, "cl": 63, "fl": "./arch/x86/include/asm/paravirt.h" }
+152V_3 = STCHI(MR_152V_2) 	pts{2942 }
+SourceLoc->{ "ln": 59, "cl": 55, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+154V_2 = STCHI(MR_154V_1) 	pts{2944 }
+SourceLoc->{ "ln": 59, "cl": 70, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+LDMU(MR_154V_2) 	pts{2944 }
+SourceLoc->{ "ln": 59, "cl": 78, "fl": "./arch/x86/include/asm/paravirt.h" }
+154V_3 = STCHI(MR_154V_2) 	pts{2944 }
+SourceLoc->{ "ln": 59, "cl": 70, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+156V_2 = STCHI(MR_156V_1) 	pts{2946 }
+SourceLoc->{ "ln": 59, "cl": 85, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+LDMU(MR_156V_2) 	pts{2946 }
+SourceLoc->{ "ln": 59, "cl": 93, "fl": "./arch/x86/include/asm/paravirt.h" }
+156V_3 = STCHI(MR_156V_2) 	pts{2946 }
+SourceLoc->{ "ln": 59, "cl": 85, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+LDMU(MR_30V_1) 	pts{143 }
+SourceLoc->{ "ln": 59, "cl": 119, "fl": "./arch/x86/include/asm/paravirt.h" }
+148V_4 = STCHI(MR_148V_3) 	pts{2938 }
+SourceLoc->{ "ln": 59, "cl": 130, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+150V_4 = STCHI(MR_150V_3) 	pts{2940 }
+SourceLoc->{ "ln": 59, "cl": 130, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+152V_4 = STCHI(MR_152V_3) 	pts{2942 }
+SourceLoc->{ "ln": 59, "cl": 130, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+154V_4 = STCHI(MR_154V_3) 	pts{2944 }
+SourceLoc->{ "ln": 59, "cl": 130, "fl": "./arch/x86/include/asm/paravirt.h" }
+
+==========FUNCTION: writeb==========
+
+LDMU(MR_158V_2) 	pts{3006 }
+SourceLoc->{ "ln": 65, "cl": 208, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_160V_2) 	pts{3008 }
+SourceLoc->{ "ln": 65, "cl": 246, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: vgacon_doresize==========
+658V_2 = STCHI(MR_658V_1) 	pts{3029 }
+SourceLoc->{ "ln": 559, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+660V_2 = STCHI(MR_660V_1) 	pts{3031 }
+SourceLoc->{ "ln": 560, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_656V_2) 	pts{3027 }
+SourceLoc->{ "ln": 560, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_652V_2) 	pts{3023 }
+SourceLoc->{ "ln": 560, "cl": 36, "fl": "drivers/video/console/vgacon.c" }
+660V_3 = STCHI(MR_660V_2) 	pts{3031 }
+SourceLoc->{ "ln": 560, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+662V_2 = STCHI(MR_662V_1) 	pts{3033 }
+SourceLoc->{ "ln": 561, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+662V_3 = STCHI(MR_662V_2) 	pts{3033 }
+SourceLoc->{ "ln": 561, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+664V_2 = STCHI(MR_664V_1) 	pts{3035 }
+SourceLoc->{ "ln": 561, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+664V_3 = STCHI(MR_664V_2) 	pts{3035 }
+SourceLoc->{ "ln": 561, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+666V_2 = STCHI(MR_666V_1) 	pts{3037 }
+SourceLoc->{ "ln": 561, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+666V_3 = STCHI(MR_666V_2) 	pts{3037 }
+SourceLoc->{ "ln": 561, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+668V_2 = STCHI(MR_668V_1) 	pts{3039 }
+SourceLoc->{ "ln": 561, "cl": 46, "fl": "drivers/video/console/vgacon.c" }
+
+670V_2 = STCHI(MR_670V_1) 	pts{3041 }
+SourceLoc->{ "ln": 561, "cl": 52, "fl": "drivers/video/console/vgacon.c" }
+
+672V_2 = STCHI(MR_672V_1) 	pts{3043 }
+SourceLoc->{ "ln": 563, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+674V_2 = STCHI(MR_674V_1) 	pts{3045 }
+SourceLoc->{ "ln": 563, "cl": 47, "fl": "drivers/video/console/vgacon.c" }
+
+676V_2 = STCHI(MR_676V_1) 	pts{3047 }
+SourceLoc->{ "ln": 563, "cl": 57, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_676V_2) 	pts{3047 }
+SourceLoc->{ "ln": 563, "cl": 91, "fl": "drivers/video/console/vgacon.c" }
+658V_3 = STCHI(MR_658V_2) 	pts{3029 }
+SourceLoc->{ "ln": 563, "cl": 101, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_654V_2) 	pts{3025 }
+SourceLoc->{ "ln": 565, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+213V_2 = STCHI(MR_213V_1) 	pts{139 }
+SourceLoc->{ "ln": 565, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_656V_2) 	pts{3027 }
+SourceLoc->{ "ln": 566, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_652V_2) 	pts{3023 }
+SourceLoc->{ "ln": 566, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+215V_2 = STCHI(MR_215V_1) 	pts{141 }
+SourceLoc->{ "ln": 566, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 567, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 568, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 569, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+670V_4 = STCHI(MR_670V_2) 	pts{3041 }
+SourceLoc->{ "ln": 569, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_670V_4) 	pts{3041 }
+SourceLoc->{ "ln": 571, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_660V_3) 	pts{3031 }
+SourceLoc->{ "ln": 572, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+660V_9 = STCHI(MR_660V_3) 	pts{3031 }
+SourceLoc->{ "ln": 572, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 574, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 575, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+668V_4 = STCHI(MR_668V_2) 	pts{3039 }
+SourceLoc->{ "ln": 575, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_668V_4) 	pts{3039 }
+SourceLoc->{ "ln": 577, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_660V_5) 	pts{3031 }
+SourceLoc->{ "ln": 578, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+660V_8 = STCHI(MR_660V_5) 	pts{3031 }
+SourceLoc->{ "ln": 578, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_660V_6) 	pts{3031 }
+SourceLoc->{ "ln": 580, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+660V_7 = STCHI(MR_660V_6) 	pts{3031 }
+SourceLoc->{ "ln": 580, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_660V_7) 	pts{3031 }
+SourceLoc->{ "ln": 581, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+662V_5 = STCHI(MR_662V_3) 	pts{3033 }
+SourceLoc->{ "ln": 581, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 583, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 584, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+664V_5 = STCHI(MR_664V_3) 	pts{3035 }
+SourceLoc->{ "ln": 584, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_660V_7) 	pts{3031 }
+SourceLoc->{ "ln": 586, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_664V_5) 	pts{3035 }
+SourceLoc->{ "ln": 587, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+664V_9 = STCHI(MR_664V_5) 	pts{3035 }
+SourceLoc->{ "ln": 587, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_660V_7) 	pts{3031 }
+SourceLoc->{ "ln": 588, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_664V_6) 	pts{3035 }
+SourceLoc->{ "ln": 589, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+664V_8 = STCHI(MR_664V_6) 	pts{3035 }
+SourceLoc->{ "ln": 589, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 592, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 593, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+666V_5 = STCHI(MR_666V_3) 	pts{3037 }
+SourceLoc->{ "ln": 593, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 594, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_666V_5) 	pts{3037 }
+SourceLoc->{ "ln": 595, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 595, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 598, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_654V_2) 	pts{3025 }
+SourceLoc->{ "ln": 599, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 599, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 600, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_654V_2) 	pts{3025 }
+SourceLoc->{ "ln": 601, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 601, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 603, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 604, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_662V_4) 	pts{3033 }
+SourceLoc->{ "ln": 605, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 605, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 606, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_664V_4) 	pts{3035 }
+SourceLoc->{ "ln": 607, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 607, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 610, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_666V_4) 	pts{3037 }
+SourceLoc->{ "ln": 611, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 611, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+678V_2 = STCHI(MR_678V_1) 	pts{3049 }
+SourceLoc->{ "ln": 614, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+680V_2 = STCHI(MR_680V_1) 	pts{3051 }
+SourceLoc->{ "ln": 614, "cl": 47, "fl": "drivers/video/console/vgacon.c" }
+
+682V_2 = STCHI(MR_682V_1) 	pts{3053 }
+SourceLoc->{ "ln": 614, "cl": 57, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_682V_2) 	pts{3053 }
+SourceLoc->{ "ln": 614, "cl": 91, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_658V_3) 	pts{3029 }
+SourceLoc->{ "ln": 614, "cl": 134, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: inb_p==========
+192V_2 = STCHI(MR_192V_1) 	pts{3281 }
+SourceLoc->{ "ln": 309, "cl": 326, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_190V_2) 	pts{3279 }
+SourceLoc->{ "ln": 309, "cl": 340, "fl": "./arch/x86/include/asm/io.h" }
+192V_3 = STCHI(MR_192V_2) 	pts{3281 }
+SourceLoc->{ "ln": 309, "cl": 326, "fl": "./arch/x86/include/asm/io.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_192V_3) 	pts{3281 }
+SourceLoc->{ "ln": 309, "cl": 370, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: __inb==========
+712V_2 = STCHI(MR_712V_1) 	pts{3301 }
+SourceLoc->{ "ln": 22, "cl": 429, "fl": "./arch/x86/include/asm/shared/io.h" }
+
+LDMU(MR_710V_2) 	pts{3299 }
+SourceLoc->{ "ln": 22, "cl": 497, "fl": "./arch/x86/include/asm/shared/io.h" }
+712V_3 = STCHI(MR_712V_2) 	pts{3301 }
+SourceLoc->{ "ln": 22, "cl": 436, "fl": "./arch/x86/include/asm/shared/io.h" }
+
+LDMU(MR_712V_3) 	pts{3301 }
+SourceLoc->{ "ln": 22, "cl": 512, "fl": "./arch/x86/include/asm/shared/io.h" }
+==========FUNCTION: vgacon_do_font_op==========
+729V_2 = STCHI(MR_729V_1) 	pts{3330 }
+SourceLoc->{ "ln": 859, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 859, "cl": 37, "fl": "drivers/video/console/vgacon.c" }
+729V_3 = STCHI(MR_729V_2) 	pts{3330 }
+SourceLoc->{ "ln": 859, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+731V_2 = STCHI(MR_731V_1) 	pts{3332 }
+SourceLoc->{ "ln": 860, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+731V_3 = STCHI(MR_731V_2) 	pts{3332 }
+SourceLoc->{ "ln": 860, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+733V_2 = STCHI(MR_733V_1) 	pts{3334 }
+SourceLoc->{ "ln": 860, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+735V_2 = STCHI(MR_735V_1) 	pts{3336 }
+SourceLoc->{ "ln": 860, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+737V_2 = STCHI(MR_737V_1) 	pts{3338 }
+SourceLoc->{ "ln": 861, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+739V_2 = STCHI(MR_739V_1) 	pts{3340 }
+SourceLoc->{ "ln": 862, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+739V_3 = STCHI(MR_739V_2) 	pts{3340 }
+SourceLoc->{ "ln": 862, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 863, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+741V_3 = STCHI(MR_741V_1) 	pts{3342 }
+SourceLoc->{ "ln": 864, "cl": 39, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_500V_1) 	pts{145 }
+741V_4 = STCHI(MR_741V_3) 	pts{3342 }
+SourceLoc->{ "ln": 864, "cl": 39, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_741V_4) 	pts{3342 }
+SourceLoc->{ "ln": 864, "cl": 132, "fl": "drivers/video/console/vgacon.c" }
+743V_3 = STCHI(MR_743V_1) 	pts{3344 }
+SourceLoc->{ "ln": 864, "cl": 89, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_743V_3) 	pts{3344 }
+SourceLoc->{ "ln": 864, "cl": 139, "fl": "drivers/video/console/vgacon.c" }
+737V_9 = STCHI(MR_737V_2) 	pts{3338 }
+SourceLoc->{ "ln": 864, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+733V_5 = STCHI(MR_733V_2) 	pts{3334 }
+SourceLoc->{ "ln": 865, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+745V_3 = STCHI(MR_745V_1) 	pts{3346 }
+SourceLoc->{ "ln": 867, "cl": 39, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_500V_1) 	pts{145 }
+745V_4 = STCHI(MR_745V_3) 	pts{3346 }
+SourceLoc->{ "ln": 867, "cl": 39, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_745V_4) 	pts{3346 }
+SourceLoc->{ "ln": 867, "cl": 132, "fl": "drivers/video/console/vgacon.c" }
+747V_3 = STCHI(MR_747V_1) 	pts{3348 }
+SourceLoc->{ "ln": 867, "cl": 89, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_747V_3) 	pts{3348 }
+SourceLoc->{ "ln": 867, "cl": 139, "fl": "drivers/video/console/vgacon.c" }
+737V_8 = STCHI(MR_737V_2) 	pts{3338 }
+SourceLoc->{ "ln": 867, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+733V_4 = STCHI(MR_733V_2) 	pts{3334 }
+SourceLoc->{ "ln": 868, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_723V_2) 	pts{3324 }
+SourceLoc->{ "ln": 875, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+719V_2 = STCHI(MR_719V_1) 	pts{3320 }
+SourceLoc->{ "ln": 876, "cl": 3, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_727V_2) 	pts{3328 }
+SourceLoc->{ "ln": 878, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+731V_5 = STCHI(MR_731V_3) 	pts{3332 }
+SourceLoc->{ "ln": 878, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 882, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 882, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 884, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 884, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 886, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 886, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 888, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 888, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 891, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 891, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 893, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 893, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 895, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 895, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_723V_2) 	pts{3324 }
+SourceLoc->{ "ln": 898, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_725V_2) 	pts{3326 }
+SourceLoc->{ "ln": 899, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+735V_21 = STCHI(MR_735V_2) 	pts{3336 }
+SourceLoc->{ "ln": 900, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_735V_22) 	pts{3336 }
+SourceLoc->{ "ln": 900, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_723V_2) 	pts{3324 }
+SourceLoc->{ "ln": 901, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_22) 	pts{3336 }
+SourceLoc->{ "ln": 901, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_737V_3) 	pts{3338 }
+SourceLoc->{ "ln": 901, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_22) 	pts{3336 }
+SourceLoc->{ "ln": 901, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+751V_6 = STCHI(MR_751V_5) 	pts{3352 }
+SourceLoc->{ "ln": 902, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_751V_6) 	pts{3352 }
+SourceLoc->{ "ln": 902, "cl": 84, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_22) 	pts{3336 }
+SourceLoc->{ "ln": 900, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+735V_23 = STCHI(MR_735V_22) 	pts{3336 }
+SourceLoc->{ "ln": 900, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+735V_9 = STCHI(MR_735V_2) 	pts{3336 }
+SourceLoc->{ "ln": 905, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_735V_10) 	pts{3336 }
+SourceLoc->{ "ln": 905, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_737V_3) 	pts{3338 }
+SourceLoc->{ "ln": 906, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_10) 	pts{3336 }
+SourceLoc->{ "ln": 906, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_723V_2) 	pts{3324 }
+SourceLoc->{ "ln": 906, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_10) 	pts{3336 }
+SourceLoc->{ "ln": 906, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+753V_5 = STCHI(MR_753V_4) 	pts{3354 }
+SourceLoc->{ "ln": 907, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_753V_5) 	pts{3354 }
+SourceLoc->{ "ln": 907, "cl": 84, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_10) 	pts{3336 }
+SourceLoc->{ "ln": 905, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+735V_11 = STCHI(MR_735V_10) 	pts{3336 }
+SourceLoc->{ "ln": 905, "cl": 27, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_727V_2) 	pts{3328 }
+SourceLoc->{ "ln": 915, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_737V_3) 	pts{3338 }
+SourceLoc->{ "ln": 916, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+737V_7 = STCHI(MR_737V_3) 	pts{3338 }
+SourceLoc->{ "ln": 916, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_723V_2) 	pts{3324 }
+SourceLoc->{ "ln": 917, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+723V_6 = STCHI(MR_723V_2) 	pts{3324 }
+SourceLoc->{ "ln": 917, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_725V_2) 	pts{3326 }
+SourceLoc->{ "ln": 918, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+735V_18 = STCHI(MR_735V_12) 	pts{3336 }
+SourceLoc->{ "ln": 919, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_735V_19) 	pts{3336 }
+SourceLoc->{ "ln": 919, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_723V_6) 	pts{3324 }
+SourceLoc->{ "ln": 920, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_19) 	pts{3336 }
+SourceLoc->{ "ln": 920, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_737V_7) 	pts{3338 }
+SourceLoc->{ "ln": 920, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_19) 	pts{3336 }
+SourceLoc->{ "ln": 920, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+755V_7 = STCHI(MR_755V_6) 	pts{3356 }
+SourceLoc->{ "ln": 921, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_755V_7) 	pts{3356 }
+SourceLoc->{ "ln": 921, "cl": 85, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_19) 	pts{3336 }
+SourceLoc->{ "ln": 919, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+735V_20 = STCHI(MR_735V_19) 	pts{3336 }
+SourceLoc->{ "ln": 919, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+735V_14 = STCHI(MR_735V_12) 	pts{3336 }
+SourceLoc->{ "ln": 924, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_735V_15) 	pts{3336 }
+SourceLoc->{ "ln": 924, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_737V_7) 	pts{3338 }
+SourceLoc->{ "ln": 925, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_15) 	pts{3336 }
+SourceLoc->{ "ln": 925, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_723V_6) 	pts{3324 }
+SourceLoc->{ "ln": 925, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_15) 	pts{3336 }
+SourceLoc->{ "ln": 925, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+757V_6 = STCHI(MR_757V_5) 	pts{3358 }
+SourceLoc->{ "ln": 926, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_757V_6) 	pts{3358 }
+SourceLoc->{ "ln": 926, "cl": 85, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_15) 	pts{3336 }
+SourceLoc->{ "ln": 924, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+735V_16 = STCHI(MR_735V_15) 	pts{3336 }
+SourceLoc->{ "ln": 924, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 933, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 933, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 935, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 935, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 937, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 937, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_725V_2) 	pts{3326 }
+SourceLoc->{ "ln": 939, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 940, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 940, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_731V_5) 	pts{3332 }
+SourceLoc->{ "ln": 940, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 942, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 942, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 945, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 945, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 947, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 947, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 949, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 949, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_733V_3) 	pts{3334 }
+SourceLoc->{ "ln": 949, "cl": 33, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_725V_2) 	pts{3326 }
+SourceLoc->{ "ln": 952, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_727V_2) 	pts{3328 }
+SourceLoc->{ "ln": 952, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_165V_1) 	pts{147 }
+SourceLoc->{ "ln": 952, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_727V_2) 	pts{3328 }
+SourceLoc->{ "ln": 953, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+165V_4 = STCHI(MR_165V_1) 	pts{147 }
+SourceLoc->{ "ln": 953, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_729V_3) 	pts{3330 }
+SourceLoc->{ "ln": 956, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 958, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 958, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_727V_2) 	pts{3328 }
+SourceLoc->{ "ln": 958, "cl": 35, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_729V_3) 	pts{3330 }
+SourceLoc->{ "ln": 961, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_721V_2) 	pts{3322 }
+SourceLoc->{ "ln": 962, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 962, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+739V_6 = STCHI(MR_739V_3) 	pts{3340 }
+SourceLoc->{ "ln": 963, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_739V_5) 	pts{3340 }
+SourceLoc->{ "ln": 967, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+735V_6 = STCHI(MR_735V_4) 	pts{3336 }
+SourceLoc->{ "ln": 968, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_735V_7) 	pts{3336 }
+SourceLoc->{ "ln": 968, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+759V_5 = STCHI(MR_759V_4) 	pts{3360 }
+SourceLoc->{ "ln": 969, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_7) 	pts{3336 }
+SourceLoc->{ "ln": 969, "cl": 32, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_761V_1) 	pts{4998 }
+SourceLoc->{ "ln": 969, "cl": 35, "fl": "drivers/video/console/vgacon.c" }
+759V_6 = STCHI(MR_759V_5) 	pts{3360 }
+SourceLoc->{ "ln": 969, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_759V_6) 	pts{3360 }
+SourceLoc->{ "ln": 970, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_759V_6) 	pts{3360 }
+SourceLoc->{ "ln": 970, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_759V_6) 	pts{3360 }
+SourceLoc->{ "ln": 973, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_759V_6) 	pts{3360 }
+SourceLoc->{ "ln": 974, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_727V_2) 	pts{3328 }
+SourceLoc->{ "ln": 975, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_759V_6) 	pts{3360 }
+SourceLoc->{ "ln": 975, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_735V_7) 	pts{3336 }
+SourceLoc->{ "ln": 968, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+735V_8 = STCHI(MR_735V_7) 	pts{3336 }
+SourceLoc->{ "ln": 968, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+719V_4 = STCHI(MR_719V_1) 	pts{3320 }
+SourceLoc->{ "ln": 979, "cl": 2, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_719V_3) 	pts{3320 }
+SourceLoc->{ "ln": 980, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+==========FUNCTION: phys_to_virt==========
+
+LDMU(MR_502V_2) 	pts{3774 }
+SourceLoc->{ "ln": 150, "cl": 35, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_500V_1) 	pts{145 }
+SourceLoc->{ "ln": 150, "cl": 60, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: vga_wseq==========
+
+LDMU(MR_313V_2) 	pts{3789 }
+SourceLoc->{ "ln": 349, "cl": 14, "fl": "./include/video/vga.h" }
+
+LDMU(MR_315V_2) 	pts{3791 }
+SourceLoc->{ "ln": 349, "cl": 30, "fl": "./include/video/vga.h" }
+
+LDMU(MR_317V_2) 	pts{3793 }
+SourceLoc->{ "ln": 349, "cl": 35, "fl": "./include/video/vga.h" }
+==========FUNCTION: vga_wgfx==========
+
+LDMU(MR_764V_2) 	pts{3813 }
+SourceLoc->{ "ln": 403, "cl": 14, "fl": "./include/video/vga.h" }
+
+LDMU(MR_766V_2) 	pts{3815 }
+SourceLoc->{ "ln": 403, "cl": 30, "fl": "./include/video/vga.h" }
+
+LDMU(MR_768V_2) 	pts{3817 }
+SourceLoc->{ "ln": 403, "cl": 35, "fl": "./include/video/vga.h" }
+==========FUNCTION: __might_resched==========
+==========FUNCTION: _cond_resched==========
+784V_2 = STCHI(MR_784V_1) 	pts{3851 }
+SourceLoc->{ "ln": 2031, "cl": 12, "fl": "./include/linux/sched.h" }
+
+LDMU(MR_784V_2) 	pts{3851 }
+SourceLoc->{ "ln": 2031, "cl": 221, "fl": "./include/linux/sched.h" }
+==========FUNCTION: vga_wattr==========
+
+LDMU(MR_396V_2) 	pts{3863 }
+SourceLoc->{ "ln": 457, "cl": 16, "fl": "./include/video/vga.h" }
+
+LDMU(MR_398V_2) 	pts{3865 }
+SourceLoc->{ "ln": 457, "cl": 32, "fl": "./include/video/vga.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_396V_2) 	pts{3863 }
+SourceLoc->{ "ln": 458, "cl": 16, "fl": "./include/video/vga.h" }
+
+LDMU(MR_400V_2) 	pts{3867 }
+SourceLoc->{ "ln": 458, "cl": 32, "fl": "./include/video/vga.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+==========FUNCTION: vga_w_fast==========
+
+LDMU(MR_612V_2) 	pts{3890 }
+SourceLoc->{ "ln": 257, "cl": 6, "fl": "./include/video/vga.h" }
+
+LDMU(MR_612V_2) 	pts{3890 }
+SourceLoc->{ "ln": 258, "cl": 18, "fl": "./include/video/vga.h" }
+
+LDMU(MR_614V_2) 	pts{3892 }
+SourceLoc->{ "ln": 258, "cl": 27, "fl": "./include/video/vga.h" }
+
+LDMU(MR_616V_2) 	pts{3894 }
+SourceLoc->{ "ln": 258, "cl": 33, "fl": "./include/video/vga.h" }
+
+LDMU(MR_618V_2) 	pts{3896 }
+SourceLoc->{ "ln": 258, "cl": 38, "fl": "./include/video/vga.h" }
+
+LDMU(MR_614V_2) 	pts{3892 }
+SourceLoc->{ "ln": 260, "cl": 18, "fl": "./include/video/vga.h" }
+
+LDMU(MR_616V_2) 	pts{3894 }
+SourceLoc->{ "ln": 260, "cl": 24, "fl": "./include/video/vga.h" }
+
+LDMU(MR_618V_2) 	pts{3896 }
+SourceLoc->{ "ln": 260, "cl": 29, "fl": "./include/video/vga.h" }
+==========FUNCTION: vga_mm_w_fast==========
+
+LDMU(MR_255V_2) 	pts{3937 }
+SourceLoc->{ "ln": 213, "cl": 13, "fl": "./include/video/vga.h" }
+
+LDMU(MR_253V_2) 	pts{3935 }
+SourceLoc->{ "ln": 213, "cl": 27, "fl": "./include/video/vga.h" }
+
+LDMU(MR_249V_2) 	pts{3931 }
+SourceLoc->{ "ln": 213, "cl": 34, "fl": "./include/video/vga.h" }
+
+LDMU(MR_251V_2) 	pts{3933 }
+SourceLoc->{ "ln": 213, "cl": 44, "fl": "./include/video/vga.h" }
+==========FUNCTION: vga_io_w_fast==========
+
+LDMU(MR_778V_2) 	pts{3971 }
+SourceLoc->{ "ln": 234, "cl": 12, "fl": "./include/video/vga.h" }
+
+LDMU(MR_776V_2) 	pts{3969 }
+SourceLoc->{ "ln": 234, "cl": 26, "fl": "./include/video/vga.h" }
+
+LDMU(MR_774V_2) 	pts{3967 }
+SourceLoc->{ "ln": 234, "cl": 33, "fl": "./include/video/vga.h" }
+==========FUNCTION: writew==========
+
+LDMU(MR_780V_2) 	pts{3992 }
+SourceLoc->{ "ln": 66, "cl": 209, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_782V_2) 	pts{3994 }
+SourceLoc->{ "ln": 66, "cl": 248, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: vgacon_adjust_height==========
+796V_2 = STCHI(MR_796V_1) 	pts{4012 }
+SourceLoc->{ "ln": 987, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+798V_2 = STCHI(MR_798V_1) 	pts{4014 }
+SourceLoc->{ "ln": 987, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+800V_2 = STCHI(MR_800V_1) 	pts{4016 }
+SourceLoc->{ "ln": 987, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+802V_2 = STCHI(MR_802V_1) 	pts{4018 }
+SourceLoc->{ "ln": 988, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+804V_2 = STCHI(MR_804V_1) 	pts{4020 }
+SourceLoc->{ "ln": 988, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+806V_2 = STCHI(MR_806V_1) 	pts{4022 }
+SourceLoc->{ "ln": 988, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_792V_2) 	pts{4008 }
+SourceLoc->{ "ln": 990, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_794V_2) 	pts{4010 }
+SourceLoc->{ "ln": 990, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+802V_3 = STCHI(MR_802V_2) 	pts{4018 }
+SourceLoc->{ "ln": 990, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_802V_3) 	pts{4018 }
+SourceLoc->{ "ln": 991, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_794V_2) 	pts{4010 }
+SourceLoc->{ "ln": 991, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+804V_3 = STCHI(MR_804V_2) 	pts{4020 }
+SourceLoc->{ "ln": 991, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 1004, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 1005, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+796V_3 = STCHI(MR_796V_2) 	pts{4012 }
+SourceLoc->{ "ln": 1005, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 1006, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 1007, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+800V_3 = STCHI(MR_800V_2) 	pts{4016 }
+SourceLoc->{ "ln": 1007, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_804V_3) 	pts{4020 }
+SourceLoc->{ "ln": 1010, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+798V_3 = STCHI(MR_798V_2) 	pts{4014 }
+SourceLoc->{ "ln": 1010, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_796V_3) 	pts{4012 }
+SourceLoc->{ "ln": 1011, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_804V_3) 	pts{4020 }
+SourceLoc->{ "ln": 1012, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_804V_3) 	pts{4020 }
+SourceLoc->{ "ln": 1012, "cl": 35, "fl": "drivers/video/console/vgacon.c" }
+796V_4 = STCHI(MR_796V_3) 	pts{4012 }
+SourceLoc->{ "ln": 1011, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_800V_3) 	pts{4016 }
+SourceLoc->{ "ln": 1013, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_794V_2) 	pts{4010 }
+SourceLoc->{ "ln": 1013, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+800V_4 = STCHI(MR_800V_3) 	pts{4016 }
+SourceLoc->{ "ln": 1013, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 1016, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_796V_4) 	pts{4012 }
+SourceLoc->{ "ln": 1017, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 1017, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 1018, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_800V_4) 	pts{4016 }
+SourceLoc->{ "ln": 1019, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 1019, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 1020, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_798V_3) 	pts{4014 }
+SourceLoc->{ "ln": 1021, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 1021, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_794V_2) 	pts{4010 }
+SourceLoc->{ "ln": 1023, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+423V_2 = STCHI(MR_423V_1) 	pts{104 }
+SourceLoc->{ "ln": 1023, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+806V_3 = STCHI(MR_806V_2) 	pts{4022 }
+SourceLoc->{ "ln": 1025, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_806V_4) 	pts{4022 }
+SourceLoc->{ "ln": 1025, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+808V_3 = STCHI(MR_808V_2) 	pts{4024 }
+SourceLoc->{ "ln": 1026, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_806V_4) 	pts{4022 }
+SourceLoc->{ "ln": 1026, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_761V_1) 	pts{4998 }
+SourceLoc->{ "ln": 1026, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+808V_4 = STCHI(MR_808V_3) 	pts{4024 }
+SourceLoc->{ "ln": 1026, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_808V_4) 	pts{4024 }
+SourceLoc->{ "ln": 1028, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_808V_4) 	pts{4024 }
+SourceLoc->{ "ln": 1028, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_808V_4) 	pts{4024 }
+SourceLoc->{ "ln": 1029, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+367V_5 = STCHI(MR_367V_2) 	pts{157 }
+SourceLoc->{ "ln": 1031, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+369V_5 = STCHI(MR_369V_2) 	pts{159 }
+SourceLoc->{ "ln": 1032, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_808V_4) 	pts{4024 }
+SourceLoc->{ "ln": 1033, "cl": 5, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_808V_4) 	pts{4024 }
+SourceLoc->{ "ln": 1033, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_794V_2) 	pts{4010 }
+SourceLoc->{ "ln": 1035, "cl": 44, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_808V_4) 	pts{4024 }
+SourceLoc->{ "ln": 1035, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_808V_4) 	pts{4024 }
+SourceLoc->{ "ln": 1035, "cl": 4, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_808V_4) 	pts{4024 }
+SourceLoc->{ "ln": 1036, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_802V_3) 	pts{4018 }
+SourceLoc->{ "ln": 1036, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_806V_4) 	pts{4022 }
+SourceLoc->{ "ln": 1025, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+806V_5 = STCHI(MR_806V_4) 	pts{4022 }
+SourceLoc->{ "ln": 1025, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: vc_resize.1==========
+
+LDMU(MR_811V_2) 	pts{4185 }
+SourceLoc->{ "ln": 49, "cl": 21, "fl": "./include/linux/vt_kern.h" }
+
+LDMU(MR_813V_2) 	pts{4187 }
+SourceLoc->{ "ln": 49, "cl": 25, "fl": "./include/linux/vt_kern.h" }
+
+LDMU(MR_815V_2) 	pts{4189 }
+SourceLoc->{ "ln": 49, "cl": 31, "fl": "./include/linux/vt_kern.h" }
+==========FUNCTION: vga_vesa_unblank==========
+
+LDMU(MR_102V_2) 	pts{4204 }
+SourceLoc->{ "ln": 760, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 760, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_104V_1) 	pts{4999 }
+SourceLoc->{ "ln": 760, "cl": 41, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 762, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_106V_1) 	pts{5000 }
+SourceLoc->{ "ln": 763, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 763, "cl": 36, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 764, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_108V_1) 	pts{5001 }
+SourceLoc->{ "ln": 765, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 765, "cl": 36, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 766, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_110V_1) 	pts{5002 }
+SourceLoc->{ "ln": 767, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 767, "cl": 38, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 768, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_112V_1) 	pts{5003 }
+SourceLoc->{ "ln": 769, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 769, "cl": 36, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 770, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_114V_1) 	pts{5004 }
+SourceLoc->{ "ln": 771, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 771, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 772, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_116V_1) 	pts{5005 }
+SourceLoc->{ "ln": 773, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 773, "cl": 37, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 774, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_118V_1) 	pts{5006 }
+SourceLoc->{ "ln": 775, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 775, "cl": 35, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 776, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_120V_1) 	pts{5007 }
+SourceLoc->{ "ln": 777, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 777, "cl": 32, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_102V_2) 	pts{4204 }
+SourceLoc->{ "ln": 779, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 779, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_122V_1) 	pts{5008 }
+SourceLoc->{ "ln": 779, "cl": 43, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_102V_2) 	pts{4204 }
+SourceLoc->{ "ln": 782, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 782, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_100V_1) 	pts{191 }
+SourceLoc->{ "ln": 782, "cl": 41, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_124V_1) 	pts{5009 }
+SourceLoc->{ "ln": 783, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 783, "cl": 33, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+==========FUNCTION: vga_pal_blank==========
+444V_2 = STCHI(MR_444V_1) 	pts{4285 }
+SourceLoc->{ "ln": 789, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_442V_2) 	pts{4283 }
+SourceLoc->{ "ln": 791, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 791, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+444V_3 = STCHI(MR_444V_2) 	pts{4285 }
+SourceLoc->{ "ln": 792, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_444V_4) 	pts{4285 }
+SourceLoc->{ "ln": 792, "cl": 14, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_442V_2) 	pts{4283 }
+SourceLoc->{ "ln": 793, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 793, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_444V_4) 	pts{4285 }
+SourceLoc->{ "ln": 793, "cl": 32, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_442V_2) 	pts{4283 }
+SourceLoc->{ "ln": 794, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 794, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_442V_2) 	pts{4283 }
+SourceLoc->{ "ln": 795, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 795, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_442V_2) 	pts{4283 }
+SourceLoc->{ "ln": 796, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 796, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_444V_4) 	pts{4285 }
+SourceLoc->{ "ln": 792, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+444V_5 = STCHI(MR_444V_4) 	pts{4285 }
+SourceLoc->{ "ln": 792, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: scr_memsetw==========
+
+LDMU(MR_514V_2) 	pts{4332 }
+SourceLoc->{ "ln": 36, "cl": 11, "fl": "./include/linux/vt_buffer.h" }
+
+LDMU(MR_516V_2) 	pts{4334 }
+SourceLoc->{ "ln": 36, "cl": 14, "fl": "./include/linux/vt_buffer.h" }
+
+LDMU(MR_518V_2) 	pts{4336 }
+SourceLoc->{ "ln": 36, "cl": 17, "fl": "./include/linux/vt_buffer.h" }
+==========FUNCTION: vga_vesa_blank==========
+
+LDMU(MR_462V_1) 	pts{165 }
+SourceLoc->{ "ln": 689, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_689V_2) 	pts{4356 }
+SourceLoc->{ "ln": 691, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 691, "cl": 41, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+100V_2 = STCHI(MR_100V_1) 	pts{191 }
+SourceLoc->{ "ln": 691, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 692, "cl": 34, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+124V_2 = STCHI(MR_124V_1) 	pts{5009 }
+SourceLoc->{ "ln": 692, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_689V_2) 	pts{4356 }
+SourceLoc->{ "ln": 693, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 693, "cl": 38, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+104V_2 = STCHI(MR_104V_1) 	pts{4999 }
+SourceLoc->{ "ln": 693, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 696, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 697, "cl": 37, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+106V_2 = STCHI(MR_106V_1) 	pts{5000 }
+SourceLoc->{ "ln": 697, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 698, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 699, "cl": 37, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+108V_2 = STCHI(MR_108V_1) 	pts{5001 }
+SourceLoc->{ "ln": 699, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 700, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 701, "cl": 39, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+110V_2 = STCHI(MR_110V_1) 	pts{5002 }
+SourceLoc->{ "ln": 701, "cl": 31, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 702, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 703, "cl": 37, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+112V_2 = STCHI(MR_112V_1) 	pts{5003 }
+SourceLoc->{ "ln": 703, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 704, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 705, "cl": 30, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+114V_2 = STCHI(MR_114V_1) 	pts{5004 }
+SourceLoc->{ "ln": 705, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 706, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 707, "cl": 38, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+116V_2 = STCHI(MR_116V_1) 	pts{5005 }
+SourceLoc->{ "ln": 707, "cl": 30, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 708, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 709, "cl": 36, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+118V_2 = STCHI(MR_118V_1) 	pts{5006 }
+SourceLoc->{ "ln": 709, "cl": 28, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 710, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 711, "cl": 33, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+120V_2 = STCHI(MR_120V_1) 	pts{5007 }
+SourceLoc->{ "ln": 711, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_689V_2) 	pts{4356 }
+SourceLoc->{ "ln": 712, "cl": 37, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 712, "cl": 44, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+122V_2 = STCHI(MR_122V_1) 	pts{5008 }
+SourceLoc->{ "ln": 712, "cl": 26, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_689V_2) 	pts{4356 }
+SourceLoc->{ "ln": 718, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 718, "cl": 18, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_122V_3) 	pts{5008 }
+SourceLoc->{ "ln": 718, "cl": 43, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_104V_3) 	pts{4999 }
+SourceLoc->{ "ln": 721, "cl": 17, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_689V_2) 	pts{4356 }
+SourceLoc->{ "ln": 722, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 722, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_104V_3) 	pts{4999 }
+SourceLoc->{ "ln": 722, "cl": 42, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_691V_2) 	pts{4358 }
+SourceLoc->{ "ln": 729, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 730, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 731, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 732, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 733, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 734, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_114V_3) 	pts{5004 }
+SourceLoc->{ "ln": 735, "cl": 20, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 735, "cl": 37, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_691V_2) 	pts{4358 }
+SourceLoc->{ "ln": 738, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 744, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 745, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 746, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 747, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_689V_2) 	pts{4356 }
+SourceLoc->{ "ln": 751, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_126V_1) 	pts{5112 }
+SourceLoc->{ "ln": 751, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_100V_3) 	pts{191 }
+SourceLoc->{ "ln": 751, "cl": 41, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_124V_3) 	pts{5009 }
+SourceLoc->{ "ln": 752, "cl": 19, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 752, "cl": 33, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+==========FUNCTION: vga_r==========
+
+LDMU(MR_46V_2) 	pts{4528 }
+SourceLoc->{ "ln": 239, "cl": 6, "fl": "./include/video/vga.h" }
+
+LDMU(MR_46V_2) 	pts{4528 }
+SourceLoc->{ "ln": 240, "cl": 20, "fl": "./include/video/vga.h" }
+
+LDMU(MR_48V_2) 	pts{4530 }
+SourceLoc->{ "ln": 240, "cl": 29, "fl": "./include/video/vga.h" }
+44V_4 = STCHI(MR_44V_1) 	pts{4526 }
+SourceLoc->{ "ln": 240, "cl": 3, "fl": "./include/video/vga.h" }
+
+
+LDMU(MR_48V_2) 	pts{4530 }
+SourceLoc->{ "ln": 242, "cl": 20, "fl": "./include/video/vga.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+44V_2 = STCHI(MR_44V_1) 	pts{4526 }
+SourceLoc->{ "ln": 242, "cl": 3, "fl": "./include/video/vga.h" }
+
+
+LDMU(MR_44V_3) 	pts{4526 }
+SourceLoc->{ "ln": 243, "cl": 1, "fl": "./include/video/vga.h" }
+==========FUNCTION: vga_rseq==========
+
+LDMU(MR_39V_2) 	pts{4558 }
+SourceLoc->{ "ln": 342, "cl": 16, "fl": "./include/video/vga.h" }
+
+LDMU(MR_41V_2) 	pts{4560 }
+SourceLoc->{ "ln": 342, "cl": 32, "fl": "./include/video/vga.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_39V_2) 	pts{4558 }
+SourceLoc->{ "ln": 343, "cl": 23, "fl": "./include/video/vga.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+==========FUNCTION: vga_mm_r==========
+
+LDMU(MR_34V_2) 	pts{4576 }
+SourceLoc->{ "ln": 202, "cl": 16, "fl": "./include/video/vga.h" }
+
+LDMU(MR_36V_2) 	pts{4578 }
+SourceLoc->{ "ln": 202, "cl": 26, "fl": "./include/video/vga.h" }
+==========FUNCTION: vga_io_r==========
+
+LDMU(MR_32V_2) 	pts{4595 }
+SourceLoc->{ "ln": 223, "cl": 15, "fl": "./include/video/vga.h" }
+
+CALMU(MR_30V_1) 	pts{143 }
+==========FUNCTION: readb==========
+28V_2 = STCHI(MR_28V_1) 	pts{4606 }
+SourceLoc->{ "ln": 57, "cl": 178, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_26V_2) 	pts{4604 }
+SourceLoc->{ "ln": 57, "cl": 259, "fl": "./arch/x86/include/asm/io.h" }
+28V_3 = STCHI(MR_28V_2) 	pts{4606 }
+SourceLoc->{ "ln": 57, "cl": 183, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_28V_3) 	pts{4606 }
+SourceLoc->{ "ln": 57, "cl": 284, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: memset16==========
+24V_2 = STCHI(MR_24V_1) 	pts{4630 }
+SourceLoc->{ "ln": 33, "cl": 20, "fl": "./arch/x86/include/asm/string_64.h" }
+
+LDMU(MR_18V_2) 	pts{4624 }
+SourceLoc->{ "ln": 33, "cl": 25, "fl": "./arch/x86/include/asm/string_64.h" }
+24V_3 = STCHI(MR_24V_2) 	pts{4630 }
+SourceLoc->{ "ln": 33, "cl": 20, "fl": "./arch/x86/include/asm/string_64.h" }
+
+LDMU(MR_18V_2) 	pts{4624 }
+SourceLoc->{ "ln": 34, "cl": 2, "fl": "./arch/x86/include/asm/string_64.h" }
+
+LDMU(MR_22V_2) 	pts{4628 }
+SourceLoc->{ "ln": 34, "cl": 2, "fl": "./arch/x86/include/asm/string_64.h" }
+
+LDMU(MR_20V_2) 	pts{4626 }
+SourceLoc->{ "ln": 37, "cl": 10, "fl": "./arch/x86/include/asm/string_64.h" }
+18V_3 = STCHI(MR_18V_2) 	pts{4624 }
+SourceLoc->{ "ln": 34, "cl": 2, "fl": "./arch/x86/include/asm/string_64.h" }
+
+22V_3 = STCHI(MR_22V_2) 	pts{4628 }
+SourceLoc->{ "ln": 34, "cl": 2, "fl": "./arch/x86/include/asm/string_64.h" }
+
+LDMU(MR_24V_3) 	pts{4630 }
+SourceLoc->{ "ln": 40, "cl": 9, "fl": "./arch/x86/include/asm/string_64.h" }
+==========FUNCTION: vgacon_restore_screen==========
+
+LDMU(MR_14V_2) 	pts{4657 }
+SourceLoc->{ "ln": 180, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_14V_2) 	pts{4657 }
+SourceLoc->{ "ln": 180, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_14V_2) 	pts{4657 }
+SourceLoc->{ "ln": 181, "cl": 22, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_16V_1) 	pts{73 76 90 163 }
+==========FUNCTION: scr_memmovew==========
+
+LDMU(MR_291V_2) 	pts{4678 }
+SourceLoc->{ "ln": 68, "cl": 10, "fl": "./include/linux/vt_buffer.h" }
+
+LDMU(MR_293V_2) 	pts{4680 }
+SourceLoc->{ "ln": 68, "cl": 13, "fl": "./include/linux/vt_buffer.h" }
+
+LDMU(MR_295V_2) 	pts{4682 }
+SourceLoc->{ "ln": 68, "cl": 16, "fl": "./include/linux/vt_buffer.h" }
+==========FUNCTION: vgacon_set_cursor_size==========
+375V_2 = STCHI(MR_375V_1) 	pts{4710 }
+SourceLoc->{ "ln": 477, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+377V_2 = STCHI(MR_377V_1) 	pts{4712 }
+SourceLoc->{ "ln": 478, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+379V_2 = STCHI(MR_379V_1) 	pts{4714 }
+SourceLoc->{ "ln": 478, "cl": 12, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_371V_2) 	pts{4706 }
+SourceLoc->{ "ln": 480, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_367V_1) 	pts{157 }
+SourceLoc->{ "ln": 480, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_373V_2) 	pts{4708 }
+SourceLoc->{ "ln": 480, "cl": 41, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_369V_1) 	pts{159 }
+SourceLoc->{ "ln": 480, "cl": 47, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_371V_2) 	pts{4706 }
+SourceLoc->{ "ln": 482, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+367V_2 = STCHI(MR_367V_1) 	pts{157 }
+SourceLoc->{ "ln": 482, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_373V_2) 	pts{4708 }
+SourceLoc->{ "ln": 483, "cl": 23, "fl": "drivers/video/console/vgacon.c" }
+369V_2 = STCHI(MR_369V_1) 	pts{159 }
+SourceLoc->{ "ln": 483, "cl": 21, "fl": "drivers/video/console/vgacon.c" }
+
+383V_2 = STCHI(MR_383V_1) 	pts{4718 }
+SourceLoc->{ "ln": 485, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+385V_2 = STCHI(MR_385V_1) 	pts{4720 }
+SourceLoc->{ "ln": 485, "cl": 47, "fl": "drivers/video/console/vgacon.c" }
+
+387V_2 = STCHI(MR_387V_1) 	pts{4722 }
+SourceLoc->{ "ln": 485, "cl": 57, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_387V_2) 	pts{4722 }
+SourceLoc->{ "ln": 485, "cl": 91, "fl": "drivers/video/console/vgacon.c" }
+375V_3 = STCHI(MR_375V_2) 	pts{4710 }
+SourceLoc->{ "ln": 485, "cl": 101, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_163V_1) 	pts{88 }
+SourceLoc->{ "ln": 486, "cl": 6, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 487, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 488, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+377V_6 = STCHI(MR_377V_2) 	pts{4712 }
+SourceLoc->{ "ln": 488, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 489, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 490, "cl": 16, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+379V_6 = STCHI(MR_379V_2) 	pts{4714 }
+SourceLoc->{ "ln": 490, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+377V_3 = STCHI(MR_377V_2) 	pts{4712 }
+SourceLoc->{ "ln": 492, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+379V_3 = STCHI(MR_379V_2) 	pts{4714 }
+SourceLoc->{ "ln": 493, "cl": 8, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_377V_4) 	pts{4712 }
+SourceLoc->{ "ln": 496, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_371V_2) 	pts{4706 }
+SourceLoc->{ "ln": 496, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+377V_5 = STCHI(MR_377V_4) 	pts{4712 }
+SourceLoc->{ "ln": 496, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_379V_4) 	pts{4714 }
+SourceLoc->{ "ln": 497, "cl": 10, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_373V_2) 	pts{4708 }
+SourceLoc->{ "ln": 497, "cl": 25, "fl": "drivers/video/console/vgacon.c" }
+379V_5 = STCHI(MR_379V_4) 	pts{4714 }
+SourceLoc->{ "ln": 497, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 499, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_377V_5) 	pts{4712 }
+SourceLoc->{ "ln": 500, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 500, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_69V_1) 	pts{76 }
+SourceLoc->{ "ln": 501, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+
+LDMU(MR_379V_5) 	pts{4714 }
+SourceLoc->{ "ln": 502, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_97V_1) 	pts{78 }
+SourceLoc->{ "ln": 502, "cl": 15, "fl": "drivers/video/console/vgacon.c" }
+
+CALMU(MR_30V_1) 	pts{143 }
+389V_2 = STCHI(MR_389V_1) 	pts{4724 }
+SourceLoc->{ "ln": 503, "cl": 24, "fl": "drivers/video/console/vgacon.c" }
+
+391V_2 = STCHI(MR_391V_1) 	pts{4726 }
+SourceLoc->{ "ln": 503, "cl": 47, "fl": "drivers/video/console/vgacon.c" }
+
+393V_2 = STCHI(MR_393V_1) 	pts{4728 }
+SourceLoc->{ "ln": 503, "cl": 57, "fl": "drivers/video/console/vgacon.c" }
+
+
+LDMU(MR_393V_2) 	pts{4728 }
+SourceLoc->{ "ln": 503, "cl": 91, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_375V_3) 	pts{4710 }
+SourceLoc->{ "ln": 503, "cl": 134, "fl": "drivers/video/console/vgacon.c" }
+381V_2 = STCHI(MR_381V_1) 	pts{4716 }
+SourceLoc->{ "ln": 504, "cl": 1, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: no_scroll==========
+8V_2 = STCHI(MR_8V_1) 	pts{60 }
+SourceLoc->{ "ln": 104, "cl": 54, "fl": "drivers/video/console/vgacon.c" }
+
+10V_2 = STCHI(MR_10V_1) 	pts{63 }
+SourceLoc->{ "ln": 104, "cl": 29, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: vgacon_register_screen==========
+
+LDMU(MR_6V_2) 	pts{4878 }
+SourceLoc->{ "ln": 1218, "cl": 7, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 1218, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+4V_3 = STCHI(MR_4V_1) 	pts{57 }
+SourceLoc->{ "ln": 1221, "cl": 13, "fl": "drivers/video/console/vgacon.c" }
+
+LDMU(MR_6V_2) 	pts{4878 }
+SourceLoc->{ "ln": 1222, "cl": 11, "fl": "drivers/video/console/vgacon.c" }
+2V_3 = STCHI(MR_2V_1) 	pts{55 }
+SourceLoc->{ "ln": 1222, "cl": 9, "fl": "drivers/video/console/vgacon.c" }
+
+==========FUNCTION: llvm.dbg.declare==========
+==========FUNCTION: __vc_resize==========
+==========FUNCTION: llvm.lifetime.start.p0==========
+==========FUNCTION: llvm.lifetime.end.p0==========
+==========FUNCTION: llvm.memcpy.p0.p0.i64==========
+==========FUNCTION: _raw_spin_lock_irqsave==========
+==========FUNCTION: _raw_spin_unlock_irqrestore==========
+==========FUNCTION: con_is_visible==========
+==========FUNCTION: llvm.read_register.i64==========
+==========FUNCTION: llvm.write_register.i64==========
+==========FUNCTION: _raw_spin_lock_irq==========
+==========FUNCTION: _raw_spin_unlock_irq==========
+==========FUNCTION: clear_buffer_attributes==========
+==========FUNCTION: __SCT__cond_resched==========
+==========FUNCTION: llvm.memmove.p0.p0.i64==========
+==========FUNCTION: con_free_unimap==========
+==========FUNCTION: con_set_default_unimap==========
+==========FUNCTION: llvm.dbg.label==========
+==========FUNCTION: request_resource==========

@@ -1,0 +1,2707 @@
+==========FUNCTION: early_dbgp_write==========
+261V_2 = STCHI(MR_261V_1) 	pts{102 }
+SourceLoc->{ "ln": 910, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+226V_2 = STCHI(MR_226V_1) 	pts{104 }
+SourceLoc->{ "ln": 911, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+264V_2 = STCHI(MR_264V_1) 	pts{106 }
+SourceLoc->{ "ln": 912, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+264V_3 = STCHI(MR_264V_2) 	pts{106 }
+SourceLoc->{ "ln": 912, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+266V_2 = STCHI(MR_266V_1) 	pts{108 }
+SourceLoc->{ "ln": 913, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+268V_2 = STCHI(MR_268V_1) 	pts{110 }
+SourceLoc->{ "ln": 913, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+270V_2 = STCHI(MR_270V_1) 	pts{112 }
+SourceLoc->{ "ln": 914, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+270V_3 = STCHI(MR_270V_2) 	pts{112 }
+SourceLoc->{ "ln": 914, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 916, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_121V_1) 	pts{46 }
+SourceLoc->{ "ln": 916, "cl": 21, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 919, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+266V_4 = STCHI(MR_266V_2) 	pts{108 }
+SourceLoc->{ "ln": 919, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_266V_4) 	pts{108 }
+SourceLoc->{ "ln": 920, "cl": 28, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 924, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+268V_5 = STCHI(MR_268V_2) 	pts{110 }
+SourceLoc->{ "ln": 924, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_268V_5) 	pts{110 }
+SourceLoc->{ "ln": 925, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+121V_7 = STCHI(MR_121V_1) 	pts{46 }
+SourceLoc->{ "ln": 926, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_12V_1) 	pts{78 }
+CALMU(MR_126V_1) 	pts{70 }
+CALMU(MR_124V_1) 	pts{67 }
+CALMU(MR_10V_1) 	pts{55 }
+CALMU(MR_121V_7) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+CALMU(MR_4V_1) 	pts{23 }
+12V_4 = CALCHI(MR_12V_1) 	pts{78 }
+126V_7 = CALCHI(MR_126V_1) 	pts{70 }
+124V_4 = CALCHI(MR_124V_1) 	pts{67 }
+121V_8 = CALCHI(MR_121V_7) 	pts{46 }
+
+
+LDMU(MR_266V_4) 	pts{108 }
+SourceLoc->{ "ln": 929, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+266V_10 = STCHI(MR_266V_4) 	pts{108 }
+SourceLoc->{ "ln": 929, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_266V_10) 	pts{108 }
+SourceLoc->{ "ln": 930, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 930, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+270V_7 = STCHI(MR_270V_3) 	pts{112 }
+SourceLoc->{ "ln": 931, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_259V_4) 	pts{100 }
+SourceLoc->{ "ln": 934, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+261V_5 = STCHI(MR_261V_4) 	pts{102 }
+SourceLoc->{ "ln": 935, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_261V_6) 	pts{102 }
+SourceLoc->{ "ln": 935, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_259V_5) 	pts{100 }
+SourceLoc->{ "ln": 935, "cl": 32, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_264V_6) 	pts{106 }
+SourceLoc->{ "ln": 937, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_257V_5) 	pts{98 }
+SourceLoc->{ "ln": 937, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+264V_7 = STCHI(MR_264V_6) 	pts{106 }
+SourceLoc->{ "ln": 938, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_261V_6) 	pts{102 }
+SourceLoc->{ "ln": 939, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+226V_6 = STCHI(MR_226V_5) 	pts{104 }
+SourceLoc->{ "ln": 939, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_257V_5) 	pts{98 }
+SourceLoc->{ "ln": 940, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+257V_6 = STCHI(MR_257V_5) 	pts{98 }
+SourceLoc->{ "ln": 940, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_259V_5) 	pts{100 }
+SourceLoc->{ "ln": 941, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+259V_6 = STCHI(MR_259V_5) 	pts{100 }
+SourceLoc->{ "ln": 941, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_264V_6) 	pts{106 }
+SourceLoc->{ "ln": 944, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+264V_10 = STCHI(MR_264V_6) 	pts{106 }
+SourceLoc->{ "ln": 945, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_257V_5) 	pts{98 }
+SourceLoc->{ "ln": 946, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_261V_6) 	pts{102 }
+SourceLoc->{ "ln": 946, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+226V_8 = STCHI(MR_226V_5) 	pts{104 }
+SourceLoc->{ "ln": 946, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_257V_7) 	pts{98 }
+SourceLoc->{ "ln": 936, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+257V_8 = STCHI(MR_257V_7) 	pts{98 }
+SourceLoc->{ "ln": 936, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_261V_6) 	pts{102 }
+SourceLoc->{ "ln": 936, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+261V_7 = STCHI(MR_261V_6) 	pts{102 }
+SourceLoc->{ "ln": 936, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_259V_7) 	pts{100 }
+SourceLoc->{ "ln": 936, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+259V_8 = STCHI(MR_259V_7) 	pts{100 }
+SourceLoc->{ "ln": 936, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_261V_6) 	pts{102 }
+SourceLoc->{ "ln": 948, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_124V_3) 	pts{67 }
+SourceLoc->{ "ln": 950, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_261V_6) 	pts{102 }
+SourceLoc->{ "ln": 950, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_226V_5) 	pts{104 }
+CALMU(MR_126V_4) 	pts{70 }
+CALMU(MR_121V_4) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+126V_6 = CALCHI(MR_126V_4) 	pts{70 }
+121V_6 = CALCHI(MR_121V_4) 	pts{46 }
+
+
+LDMU(MR_270V_5) 	pts{112 }
+SourceLoc->{ "ln": 953, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 954, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+266V_7 = STCHI(MR_266V_5) 	pts{108 }
+SourceLoc->{ "ln": 954, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_266V_7) 	pts{108 }
+SourceLoc->{ "ln": 955, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+266V_8 = STCHI(MR_266V_7) 	pts{108 }
+SourceLoc->{ "ln": 955, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_266V_8) 	pts{108 }
+SourceLoc->{ "ln": 956, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 956, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+272V_4 = STCHI(MR_272V_1) 	pts{114 }
+SourceLoc->{ "ln": 958, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+==========FUNCTION: readl==========
+221V_2 = STCHI(MR_221V_1) 	pts{339 }
+SourceLoc->{ "ln": 59, "cl": 176, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_219V_2) 	pts{337 }
+SourceLoc->{ "ln": 59, "cl": 256, "fl": "./arch/x86/include/asm/io.h" }
+221V_3 = STCHI(MR_221V_2) 	pts{339 }
+SourceLoc->{ "ln": 59, "cl": 181, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_221V_3) 	pts{339 }
+SourceLoc->{ "ln": 59, "cl": 281, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: _dbgp_external_startup==========
+131V_2 = STCHI(MR_131V_1) 	pts{359 }
+SourceLoc->{ "ln": 492, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+133V_2 = STCHI(MR_133V_1) 	pts{361 }
+133V_3 = STCHI(MR_133V_2) 	pts{361 }
+133V_4 = STCHI(MR_133V_3) 	pts{361 }
+133V_5 = STCHI(MR_133V_4) 	pts{361 }
+SourceLoc->{ "ln": 493, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+135V_2 = STCHI(MR_135V_1) 	pts{363 }
+SourceLoc->{ "ln": 494, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+137V_2 = STCHI(MR_137V_1) 	pts{365 }
+SourceLoc->{ "ln": 495, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+139V_2 = STCHI(MR_139V_1) 	pts{367 }
+SourceLoc->{ "ln": 495, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+141V_2 = STCHI(MR_141V_1) 	pts{369 }
+SourceLoc->{ "ln": 495, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+143V_2 = STCHI(MR_143V_1) 	pts{371 }
+SourceLoc->{ "ln": 496, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_10V_1) 	pts{55 }
+SourceLoc->{ "ln": 496, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+143V_3 = STCHI(MR_143V_2) 	pts{371 }
+SourceLoc->{ "ln": 496, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+145V_2 = STCHI(MR_145V_1) 	pts{373 }
+SourceLoc->{ "ln": 497, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+145V_3 = STCHI(MR_145V_2) 	pts{373 }
+SourceLoc->{ "ln": 497, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+147V_2 = STCHI(MR_147V_1) 	pts{375 }
+SourceLoc->{ "ln": 498, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+147V_3 = STCHI(MR_147V_2) 	pts{375 }
+SourceLoc->{ "ln": 498, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+149V_2 = STCHI(MR_149V_1) 	pts{377 }
+SourceLoc->{ "ln": 499, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+149V_3 = STCHI(MR_149V_2) 	pts{377 }
+SourceLoc->{ "ln": 499, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+CALMU(MR_6V_1) 	pts{25 }
+CALMU(MR_4V_1) 	pts{23 }
+135V_4 = STCHI(MR_135V_3) 	pts{363 }
+SourceLoc->{ "ln": 502, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_135V_4) 	pts{363 }
+SourceLoc->{ "ln": 503, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_135V_4) 	pts{363 }
+SourceLoc->{ "ln": 504, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+129V_7 = STCHI(MR_129V_1) 	pts{357 }
+SourceLoc->{ "ln": 504, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_143V_3) 	pts{371 }
+SourceLoc->{ "ln": 507, "cl": 27, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_4V_1) 	pts{23 }
+135V_5 = STCHI(MR_135V_4) 	pts{363 }
+SourceLoc->{ "ln": 507, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_135V_5) 	pts{363 }
+SourceLoc->{ "ln": 508, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 509, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_143V_3) 	pts{371 }
+SourceLoc->{ "ln": 509, "cl": 42, "fl": "drivers/usb/early/ehci-dbgp.c" }
+139V_6 = STCHI(MR_139V_3) 	pts{367 }
+SourceLoc->{ "ln": 509, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_139V_6) 	pts{367 }
+SourceLoc->{ "ln": 510, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_149V_4) 	pts{377 }
+SourceLoc->{ "ln": 510, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+149V_5 = STCHI(MR_149V_4) 	pts{377 }
+SourceLoc->{ "ln": 514, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 515, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+141V_4 = STCHI(MR_141V_3) 	pts{369 }
+SourceLoc->{ "ln": 515, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_141V_4) 	pts{369 }
+SourceLoc->{ "ln": 516, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+141V_5 = STCHI(MR_141V_4) 	pts{369 }
+SourceLoc->{ "ln": 516, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_141V_5) 	pts{369 }
+SourceLoc->{ "ln": 517, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 517, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 518, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_143V_3) 	pts{371 }
+SourceLoc->{ "ln": 518, "cl": 43, "fl": "drivers/usb/early/ehci-dbgp.c" }
+139V_7 = STCHI(MR_139V_6) 	pts{367 }
+SourceLoc->{ "ln": 518, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_139V_7) 	pts{367 }
+SourceLoc->{ "ln": 519, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+139V_8 = STCHI(MR_139V_7) 	pts{367 }
+SourceLoc->{ "ln": 519, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_139V_8) 	pts{367 }
+SourceLoc->{ "ln": 520, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 520, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_143V_3) 	pts{371 }
+SourceLoc->{ "ln": 520, "cl": 43, "fl": "drivers/usb/early/ehci-dbgp.c" }
+153V_3 = STCHI(MR_153V_2) 	pts{381 }
+SourceLoc->{ "ln": 522, "cl": 232, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+153V_4 = STCHI(MR_153V_3) 	pts{381 }
+SourceLoc->{ "ln": 522, "cl": 232, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_153V_5) 	pts{381 }
+SourceLoc->{ "ln": 522, "cl": 254, "fl": "drivers/usb/early/ehci-dbgp.c" }
+153V_6 = STCHI(MR_153V_5) 	pts{381 }
+SourceLoc->{ "ln": 522, "cl": 254, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+CALMU(MR_4V_1) 	pts{23 }
+
+LDMU(MR_147V_4) 	pts{375 }
+SourceLoc->{ "ln": 525, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+147V_5 = STCHI(MR_147V_4) 	pts{375 }
+SourceLoc->{ "ln": 525, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+129V_5 = STCHI(MR_129V_1) 	pts{357 }
+SourceLoc->{ "ln": 529, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 534, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+137V_3 = STCHI(MR_137V_2) 	pts{365 }
+SourceLoc->{ "ln": 534, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_137V_3) 	pts{365 }
+SourceLoc->{ "ln": 535, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+137V_4 = STCHI(MR_137V_3) 	pts{365 }
+SourceLoc->{ "ln": 535, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_137V_4) 	pts{365 }
+SourceLoc->{ "ln": 536, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 536, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 537, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+137V_5 = STCHI(MR_137V_4) 	pts{365 }
+SourceLoc->{ "ln": 537, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_137V_5) 	pts{365 }
+SourceLoc->{ "ln": 538, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_137V_5) 	pts{365 }
+SourceLoc->{ "ln": 540, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 540, "cl": 50, "fl": "drivers/usb/early/ehci-dbgp.c" }
+129V_4 = STCHI(MR_129V_1) 	pts{357 }
+SourceLoc->{ "ln": 541, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 546, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_143V_3) 	pts{371 }
+SourceLoc->{ "ln": 546, "cl": 41, "fl": "drivers/usb/early/ehci-dbgp.c" }
+139V_4 = STCHI(MR_139V_3) 	pts{367 }
+SourceLoc->{ "ln": 546, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_139V_4) 	pts{367 }
+SourceLoc->{ "ln": 547, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+139V_5 = STCHI(MR_139V_4) 	pts{367 }
+SourceLoc->{ "ln": 547, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_139V_5) 	pts{367 }
+SourceLoc->{ "ln": 548, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 548, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_143V_3) 	pts{371 }
+SourceLoc->{ "ln": 548, "cl": 41, "fl": "drivers/usb/early/ehci-dbgp.c" }
+131V_4 = STCHI(MR_131V_3) 	pts{359 }
+SourceLoc->{ "ln": 554, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_131V_5) 	pts{359 }
+SourceLoc->{ "ln": 554, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_131V_5) 	pts{359 }
+SourceLoc->{ "ln": 555, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_133V_7) 	pts{361 }
+CALMU(MR_121V_3) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+133V_9 = CALCHI(MR_133V_7) 	pts{361 }
+121V_11 = CALCHI(MR_121V_3) 	pts{46 }
+
+135V_14 = STCHI(MR_135V_7) 	pts{363 }
+SourceLoc->{ "ln": 555, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_135V_14) 	pts{363 }
+SourceLoc->{ "ln": 559, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_131V_5) 	pts{359 }
+SourceLoc->{ "ln": 554, "cl": 40, "fl": "drivers/usb/early/ehci-dbgp.c" }
+131V_6 = STCHI(MR_131V_5) 	pts{359 }
+SourceLoc->{ "ln": 554, "cl": 40, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_131V_5) 	pts{359 }
+SourceLoc->{ "ln": 562, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_133V_8) 	pts{361 }
+SourceLoc->{ "ln": 566, "cl": 32, "fl": "drivers/usb/early/ehci-dbgp.c" }
+124V_3 = STCHI(MR_124V_2) 	pts{67 }
+SourceLoc->{ "ln": 566, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_133V_8) 	pts{361 }
+SourceLoc->{ "ln": 567, "cl": 31, "fl": "drivers/usb/early/ehci-dbgp.c" }
+12V_3 = STCHI(MR_12V_2) 	pts{78 }
+SourceLoc->{ "ln": 567, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_131V_5) 	pts{359 }
+SourceLoc->{ "ln": 570, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_131V_5) 	pts{359 }
+SourceLoc->{ "ln": 571, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_121V_4) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+121V_9 = CALCHI(MR_121V_4) 	pts{46 }
+
+135V_12 = STCHI(MR_135V_8) 	pts{363 }
+SourceLoc->{ "ln": 571, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_135V_12) 	pts{363 }
+SourceLoc->{ "ln": 574, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_121V_5) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+121V_6 = CALCHI(MR_121V_5) 	pts{46 }
+
+135V_10 = STCHI(MR_135V_9) 	pts{363 }
+SourceLoc->{ "ln": 583, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_135V_10) 	pts{363 }
+SourceLoc->{ "ln": 586, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_124V_3) 	pts{67 }
+SourceLoc->{ "ln": 593, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_126V_2) 	pts{70 }
+CALMU(MR_121V_6) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+126V_3 = CALCHI(MR_126V_2) 	pts{70 }
+121V_7 = CALCHI(MR_121V_6) 	pts{46 }
+
+135V_11 = STCHI(MR_135V_10) 	pts{363 }
+SourceLoc->{ "ln": 593, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_135V_11) 	pts{363 }
+SourceLoc->{ "ln": 594, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_135V_11) 	pts{363 }
+SourceLoc->{ "ln": 595, "cl": 47, "fl": "drivers/usb/early/ehci-dbgp.c" }
+121V_8 = STCHI(MR_121V_7) 	pts{46 }
+SourceLoc->{ "ln": 599, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+129V_2 = STCHI(MR_129V_1) 	pts{357 }
+SourceLoc->{ "ln": 601, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_145V_4) 	pts{373 }
+SourceLoc->{ "ln": 603, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+145V_5 = STCHI(MR_145V_4) 	pts{373 }
+SourceLoc->{ "ln": 603, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+129V_3 = STCHI(MR_129V_1) 	pts{357 }
+SourceLoc->{ "ln": 605, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_129V_6) 	pts{357 }
+SourceLoc->{ "ln": 606, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: writel==========
+
+LDMU(MR_199V_2) 	pts{692 }
+SourceLoc->{ "ln": 67, "cl": 207, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_201V_2) 	pts{694 }
+SourceLoc->{ "ln": 67, "cl": 244, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: dbgp_bulk_write==========
+238V_2 = STCHI(MR_238V_1) 	pts{720 }
+SourceLoc->{ "ln": 268, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+240V_2 = STCHI(MR_240V_1) 	pts{722 }
+SourceLoc->{ "ln": 269, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+242V_2 = STCHI(MR_242V_1) 	pts{724 }
+SourceLoc->{ "ln": 270, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+244V_2 = STCHI(MR_244V_1) 	pts{726 }
+SourceLoc->{ "ln": 270, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_236V_2) 	pts{718 }
+SourceLoc->{ "ln": 272, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+228V_4 = STCHI(MR_228V_1) 	pts{710 }
+SourceLoc->{ "ln": 273, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_230V_2) 	pts{712 }
+SourceLoc->{ "ln": 275, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_232V_2) 	pts{714 }
+SourceLoc->{ "ln": 275, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+240V_3 = STCHI(MR_240V_2) 	pts{722 }
+SourceLoc->{ "ln": 275, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 277, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+242V_3 = STCHI(MR_242V_2) 	pts{724 }
+SourceLoc->{ "ln": 277, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_242V_3) 	pts{724 }
+SourceLoc->{ "ln": 278, "cl": 31, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_126V_1) 	pts{70 }
+126V_2 = CALCHI(MR_126V_1) 	pts{70 }
+
+242V_4 = STCHI(MR_242V_3) 	pts{724 }
+SourceLoc->{ "ln": 278, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 280, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+244V_3 = STCHI(MR_244V_2) 	pts{726 }
+SourceLoc->{ "ln": 280, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_244V_3) 	pts{726 }
+SourceLoc->{ "ln": 281, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_236V_2) 	pts{718 }
+SourceLoc->{ "ln": 281, "cl": 31, "fl": "drivers/usb/early/ehci-dbgp.c" }
+244V_4 = STCHI(MR_244V_3) 	pts{726 }
+SourceLoc->{ "ln": 281, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_244V_4) 	pts{726 }
+SourceLoc->{ "ln": 282, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+244V_5 = STCHI(MR_244V_4) 	pts{726 }
+SourceLoc->{ "ln": 282, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_244V_5) 	pts{726 }
+SourceLoc->{ "ln": 283, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+244V_6 = STCHI(MR_244V_5) 	pts{726 }
+SourceLoc->{ "ln": 283, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_234V_2) 	pts{716 }
+SourceLoc->{ "ln": 285, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_236V_2) 	pts{718 }
+SourceLoc->{ "ln": 285, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_226V_1) 	pts{104 }
+CALMU(MR_6V_1) 	pts{25 }
+
+LDMU(MR_240V_3) 	pts{722 }
+SourceLoc->{ "ln": 286, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 286, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_242V_4) 	pts{724 }
+SourceLoc->{ "ln": 287, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 287, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_244V_6) 	pts{726 }
+SourceLoc->{ "ln": 288, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_121V_1) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+121V_2 = CALCHI(MR_121V_1) 	pts{46 }
+
+238V_3 = STCHI(MR_238V_2) 	pts{720 }
+SourceLoc->{ "ln": 288, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_238V_3) 	pts{720 }
+SourceLoc->{ "ln": 290, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+228V_2 = STCHI(MR_228V_1) 	pts{710 }
+SourceLoc->{ "ln": 290, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_228V_3) 	pts{710 }
+SourceLoc->{ "ln": 291, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_pid_write_update==========
+
+LDMU(MR_126V_1) 	pts{70 }
+SourceLoc->{ "ln": 153, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+126V_2 = STCHI(MR_126V_1) 	pts{70 }
+SourceLoc->{ "ln": 153, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_180V_2) 	pts{825 }
+SourceLoc->{ "ln": 154, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_126V_2) 	pts{70 }
+SourceLoc->{ "ln": 154, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_182V_2) 	pts{827 }
+SourceLoc->{ "ln": 154, "cl": 44, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_len_update==========
+
+LDMU(MR_97V_2) 	pts{851 }
+SourceLoc->{ "ln": 97, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_99V_2) 	pts{853 }
+SourceLoc->{ "ln": 97, "cl": 24, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_set_data==========
+189V_2 = STCHI(MR_189V_1) 	pts{874 }
+SourceLoc->{ "ln": 238, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_185V_2) 	pts{870 }
+SourceLoc->{ "ln": 238, "cl": 31, "fl": "drivers/usb/early/ehci-dbgp.c" }
+189V_3 = STCHI(MR_189V_2) 	pts{874 }
+SourceLoc->{ "ln": 238, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+191V_2 = STCHI(MR_191V_1) 	pts{876 }
+SourceLoc->{ "ln": 239, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+193V_2 = STCHI(MR_193V_1) 	pts{878 }
+SourceLoc->{ "ln": 239, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+195V_2 = STCHI(MR_195V_1) 	pts{880 }
+SourceLoc->{ "ln": 240, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+193V_3 = STCHI(MR_193V_2) 	pts{878 }
+SourceLoc->{ "ln": 242, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+191V_3 = STCHI(MR_191V_2) 	pts{876 }
+SourceLoc->{ "ln": 242, "cl": 5, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+195V_3 = STCHI(MR_195V_2) 	pts{880 }
+SourceLoc->{ "ln": 243, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_195V_4) 	pts{880 }
+SourceLoc->{ "ln": 243, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_195V_4) 	pts{880 }
+SourceLoc->{ "ln": 243, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_187V_2) 	pts{872 }
+SourceLoc->{ "ln": 243, "cl": 27, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_189V_3) 	pts{874 }
+SourceLoc->{ "ln": 244, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_195V_4) 	pts{880 }
+SourceLoc->{ "ln": 244, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_197V_1) 	pts{3 104 1601 }
+SourceLoc->{ "ln": 244, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_195V_4) 	pts{880 }
+SourceLoc->{ "ln": 244, "cl": 24, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_191V_4) 	pts{876 }
+SourceLoc->{ "ln": 244, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+191V_5 = STCHI(MR_191V_4) 	pts{876 }
+SourceLoc->{ "ln": 244, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_195V_4) 	pts{880 }
+SourceLoc->{ "ln": 243, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+195V_7 = STCHI(MR_195V_4) 	pts{880 }
+SourceLoc->{ "ln": 243, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_195V_5) 	pts{880 }
+SourceLoc->{ "ln": 245, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_195V_5) 	pts{880 }
+SourceLoc->{ "ln": 245, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_187V_2) 	pts{872 }
+SourceLoc->{ "ln": 245, "cl": 22, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_189V_3) 	pts{874 }
+SourceLoc->{ "ln": 246, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_195V_5) 	pts{880 }
+SourceLoc->{ "ln": 246, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_197V_1) 	pts{3 104 1601 }
+SourceLoc->{ "ln": 246, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_195V_5) 	pts{880 }
+SourceLoc->{ "ln": 246, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_193V_4) 	pts{878 }
+SourceLoc->{ "ln": 246, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+193V_5 = STCHI(MR_193V_4) 	pts{878 }
+SourceLoc->{ "ln": 246, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_195V_5) 	pts{880 }
+SourceLoc->{ "ln": 245, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+195V_6 = STCHI(MR_195V_5) 	pts{880 }
+SourceLoc->{ "ln": 245, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_191V_4) 	pts{876 }
+SourceLoc->{ "ln": 247, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 247, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_193V_4) 	pts{878 }
+SourceLoc->{ "ln": 248, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 248, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_wait_until_done==========
+211V_2 = STCHI(MR_211V_1) 	pts{986 }
+SourceLoc->{ "ln": 197, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+213V_2 = STCHI(MR_213V_1) 	pts{988 }
+SourceLoc->{ "ln": 197, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+215V_2 = STCHI(MR_215V_1) 	pts{990 }
+SourceLoc->{ "ln": 198, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_207V_2) 	pts{982 }
+SourceLoc->{ "ln": 201, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 201, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_6V_1) 	pts{25 }
+215V_4 = STCHI(MR_215V_3) 	pts{990 }
+SourceLoc->{ "ln": 202, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 203, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+211V_4 = STCHI(MR_211V_3) 	pts{986 }
+SourceLoc->{ "ln": 203, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_211V_4) 	pts{986 }
+SourceLoc->{ "ln": 204, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+213V_4 = STCHI(MR_213V_3) 	pts{988 }
+SourceLoc->{ "ln": 204, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_215V_4) 	pts{990 }
+SourceLoc->{ "ln": 206, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_215V_4) 	pts{990 }
+SourceLoc->{ "ln": 213, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_121V_2) 	pts{46 }
+SourceLoc->{ "ln": 213, "cl": 32, "fl": "drivers/usb/early/ehci-dbgp.c" }
+121V_5 = STCHI(MR_121V_2) 	pts{46 }
+SourceLoc->{ "ln": 214, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_215V_4) 	pts{990 }
+SourceLoc->{ "ln": 215, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_209V_3) 	pts{984 }
+SourceLoc->{ "ln": 215, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+209V_8 = STCHI(MR_209V_3) 	pts{984 }
+SourceLoc->{ "ln": 215, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_215V_4) 	pts{990 }
+SourceLoc->{ "ln": 217, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+205V_4 = STCHI(MR_205V_1) 	pts{980 }
+SourceLoc->{ "ln": 217, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_213V_4) 	pts{988 }
+SourceLoc->{ "ln": 224, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_213V_4) 	pts{988 }
+SourceLoc->{ "ln": 224, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_213V_4) 	pts{988 }
+SourceLoc->{ "ln": 228, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_209V_3) 	pts{984 }
+SourceLoc->{ "ln": 229, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+209V_5 = STCHI(MR_209V_3) 	pts{984 }
+SourceLoc->{ "ln": 229, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_215V_4) 	pts{990 }
+SourceLoc->{ "ln": 233, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+205V_2 = STCHI(MR_205V_1) 	pts{980 }
+SourceLoc->{ "ln": 233, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_205V_3) 	pts{980 }
+SourceLoc->{ "ln": 234, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_wait_until_complete==========
+81V_2 = STCHI(MR_81V_1) 	pts{1094 }
+SourceLoc->{ "ln": 164, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+83V_2 = STCHI(MR_83V_1) 	pts{1096 }
+SourceLoc->{ "ln": 165, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+85V_2 = STCHI(MR_85V_1) 	pts{1098 }
+SourceLoc->{ "ln": 167, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+85V_3 = STCHI(MR_85V_2) 	pts{1098 }
+SourceLoc->{ "ln": 167, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+87V_2 = STCHI(MR_87V_1) 	pts{1100 }
+SourceLoc->{ "ln": 167, "cl": 50, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_85V_3) 	pts{1098 }
+SourceLoc->{ "ln": 167, "cl": 62, "fl": "drivers/usb/early/ehci-dbgp.c" }
+87V_3 = STCHI(MR_87V_2) 	pts{1100 }
+SourceLoc->{ "ln": 167, "cl": 50, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+89V_2 = STCHI(MR_89V_1) 	pts{1102 }
+SourceLoc->{ "ln": 167, "cl": 98, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+89V_3 = STCHI(MR_89V_2) 	pts{1102 }
+SourceLoc->{ "ln": 167, "cl": 98, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+91V_2 = STCHI(MR_91V_1) 	pts{1104 }
+SourceLoc->{ "ln": 167, "cl": 120, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_89V_3) 	pts{1102 }
+SourceLoc->{ "ln": 167, "cl": 133, "fl": "drivers/usb/early/ehci-dbgp.c" }
+91V_3 = STCHI(MR_91V_2) 	pts{1104 }
+SourceLoc->{ "ln": 167, "cl": 120, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 167, "cl": 425, "fl": "drivers/usb/early/ehci-dbgp.c" }
+81V_4 = STCHI(MR_81V_3) 	pts{1094 }
+SourceLoc->{ "ln": 167, "cl": 416, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_81V_4) 	pts{1094 }
+SourceLoc->{ "ln": 167, "cl": 452, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_85V_3) 	pts{1098 }
+SourceLoc->{ "ln": 167, "cl": 480, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_87V_4) 	pts{1100 }
+SourceLoc->{ "ln": 167, "cl": 496, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 167, "cl": 529, "fl": "drivers/usb/early/ehci-dbgp.c" }
+81V_5 = STCHI(MR_81V_4) 	pts{1094 }
+SourceLoc->{ "ln": 167, "cl": 520, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_89V_3) 	pts{1102 }
+SourceLoc->{ "ln": 167, "cl": 564, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_89V_3) 	pts{1102 }
+SourceLoc->{ "ln": 167, "cl": 606, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_89V_3) 	pts{1102 }
+SourceLoc->{ "ln": 167, "cl": 626, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_89V_3) 	pts{1102 }
+SourceLoc->{ "ln": 167, "cl": 689, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_89V_3) 	pts{1102 }
+SourceLoc->{ "ln": 167, "cl": 732, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_85V_3) 	pts{1098 }
+SourceLoc->{ "ln": 167, "cl": 755, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_91V_3) 	pts{1104 }
+SourceLoc->{ "ln": 167, "cl": 782, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_87V_4) 	pts{1100 }
+SourceLoc->{ "ln": 167, "cl": 779, "fl": "drivers/usb/early/ehci-dbgp.c" }
+87V_9 = STCHI(MR_87V_4) 	pts{1100 }
+SourceLoc->{ "ln": 167, "cl": 779, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_85V_3) 	pts{1098 }
+SourceLoc->{ "ln": 167, "cl": 813, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_87V_5) 	pts{1100 }
+SourceLoc->{ "ln": 167, "cl": 836, "fl": "drivers/usb/early/ehci-dbgp.c" }
+87V_7 = STCHI(MR_87V_5) 	pts{1100 }
+SourceLoc->{ "ln": 167, "cl": 836, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_81V_6) 	pts{1094 }
+SourceLoc->{ "ln": 167, "cl": 844, "fl": "drivers/usb/early/ehci-dbgp.c" }
+93V_2 = STCHI(MR_93V_1) 	pts{1106 }
+SourceLoc->{ "ln": 167, "cl": 840, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_93V_2) 	pts{1106 }
+SourceLoc->{ "ln": 167, "cl": 873, "fl": "drivers/usb/early/ehci-dbgp.c" }
+83V_3 = STCHI(MR_83V_2) 	pts{1096 }
+SourceLoc->{ "ln": 167, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_83V_3) 	pts{1096 }
+SourceLoc->{ "ln": 169, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+79V_4 = STCHI(MR_79V_1) 	pts{1092 }
+SourceLoc->{ "ln": 170, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_81V_6) 	pts{1094 }
+SourceLoc->{ "ln": 176, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 176, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_81V_6) 	pts{1094 }
+SourceLoc->{ "ln": 177, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_81V_6) 	pts{1094 }
+SourceLoc->{ "ln": 177, "cl": 31, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_81V_6) 	pts{1094 }
+SourceLoc->{ "ln": 177, "cl": 52, "fl": "drivers/usb/early/ehci-dbgp.c" }
+79V_2 = STCHI(MR_79V_1) 	pts{1092 }
+SourceLoc->{ "ln": 177, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_79V_3) 	pts{1092 }
+SourceLoc->{ "ln": 178, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_breath==========
+==========FUNCTION: cpu_relax==========
+==========FUNCTION: rep_nop==========
+==========FUNCTION: dbgp_ehci_startup==========
+55V_2 = STCHI(MR_55V_1) 	pts{1286 }
+SourceLoc->{ "ln": 428, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+57V_2 = STCHI(MR_57V_1) 	pts{1288 }
+SourceLoc->{ "ln": 428, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+59V_2 = STCHI(MR_59V_1) 	pts{1290 }
+SourceLoc->{ "ln": 428, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+61V_2 = STCHI(MR_61V_1) 	pts{1292 }
+SourceLoc->{ "ln": 429, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 432, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+55V_3 = STCHI(MR_55V_2) 	pts{1286 }
+SourceLoc->{ "ln": 432, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_55V_3) 	pts{1286 }
+SourceLoc->{ "ln": 433, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+55V_4 = STCHI(MR_55V_3) 	pts{1286 }
+SourceLoc->{ "ln": 433, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_55V_4) 	pts{1286 }
+SourceLoc->{ "ln": 434, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+55V_5 = STCHI(MR_55V_4) 	pts{1286 }
+SourceLoc->{ "ln": 434, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_55V_5) 	pts{1286 }
+SourceLoc->{ "ln": 435, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 435, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 440, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+57V_3 = STCHI(MR_57V_2) 	pts{1288 }
+SourceLoc->{ "ln": 440, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_57V_3) 	pts{1288 }
+SourceLoc->{ "ln": 441, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+57V_4 = STCHI(MR_57V_3) 	pts{1288 }
+SourceLoc->{ "ln": 441, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_57V_4) 	pts{1288 }
+SourceLoc->{ "ln": 442, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+57V_5 = STCHI(MR_57V_4) 	pts{1288 }
+SourceLoc->{ "ln": 442, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_57V_5) 	pts{1288 }
+SourceLoc->{ "ln": 443, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 443, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 446, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+61V_3 = STCHI(MR_61V_2) 	pts{1292 }
+SourceLoc->{ "ln": 449, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 451, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+59V_4 = STCHI(MR_59V_3) 	pts{1290 }
+SourceLoc->{ "ln": 451, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_59V_4) 	pts{1290 }
+SourceLoc->{ "ln": 452, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_61V_4) 	pts{1292 }
+SourceLoc->{ "ln": 455, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+61V_6 = STCHI(MR_61V_4) 	pts{1292 }
+SourceLoc->{ "ln": 455, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_61V_5) 	pts{1292 }
+SourceLoc->{ "ln": 457, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+53V_2 = STCHI(MR_53V_1) 	pts{1284 }
+SourceLoc->{ "ln": 459, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+53V_4 = STCHI(MR_53V_1) 	pts{1284 }
+SourceLoc->{ "ln": 462, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_53V_3) 	pts{1284 }
+SourceLoc->{ "ln": 463, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: ehci_wait_for_port==========
+368V_2 = STCHI(MR_368V_1) 	pts{1390 }
+SourceLoc->{ "ln": 656, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+370V_2 = STCHI(MR_370V_1) 	pts{1392 }
+SourceLoc->{ "ln": 657, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+372V_2 = STCHI(MR_372V_1) 	pts{1394 }
+SourceLoc->{ "ln": 657, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+372V_3 = STCHI(MR_372V_2) 	pts{1394 }
+SourceLoc->{ "ln": 659, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_372V_4) 	pts{1394 }
+SourceLoc->{ "ln": 659, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 660, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+368V_5 = STCHI(MR_368V_3) 	pts{1390 }
+SourceLoc->{ "ln": 660, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_368V_5) 	pts{1390 }
+SourceLoc->{ "ln": 661, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_372V_4) 	pts{1394 }
+SourceLoc->{ "ln": 659, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+372V_5 = STCHI(MR_372V_4) 	pts{1394 }
+SourceLoc->{ "ln": 659, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_366V_2) 	pts{1388 }
+SourceLoc->{ "ln": 665, "cl": 24, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_4V_1) 	pts{23 }
+370V_3 = STCHI(MR_370V_2) 	pts{1392 }
+SourceLoc->{ "ln": 665, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_370V_3) 	pts{1392 }
+SourceLoc->{ "ln": 666, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+364V_4 = STCHI(MR_364V_1) 	pts{1386 }
+SourceLoc->{ "ln": 667, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+364V_2 = STCHI(MR_364V_1) 	pts{1386 }
+SourceLoc->{ "ln": 668, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_364V_3) 	pts{1386 }
+SourceLoc->{ "ln": 669, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_ehci_status==========
+==========FUNCTION: dbgp_ehci_controller_reset==========
+328V_2 = STCHI(MR_328V_1) 	pts{1464 }
+SourceLoc->{ "ln": 467, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+328V_3 = STCHI(MR_328V_2) 	pts{1464 }
+SourceLoc->{ "ln": 467, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+330V_2 = STCHI(MR_330V_1) 	pts{1466 }
+SourceLoc->{ "ln": 468, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 471, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+330V_3 = STCHI(MR_330V_2) 	pts{1466 }
+SourceLoc->{ "ln": 471, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_330V_3) 	pts{1466 }
+SourceLoc->{ "ln": 472, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+330V_4 = STCHI(MR_330V_3) 	pts{1466 }
+SourceLoc->{ "ln": 472, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_330V_4) 	pts{1466 }
+SourceLoc->{ "ln": 473, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 473, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 475, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+330V_6 = STCHI(MR_330V_5) 	pts{1466 }
+SourceLoc->{ "ln": 475, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_330V_6) 	pts{1466 }
+SourceLoc->{ "ln": 476, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_328V_4) 	pts{1464 }
+SourceLoc->{ "ln": 476, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+328V_6 = STCHI(MR_328V_4) 	pts{1464 }
+SourceLoc->{ "ln": 476, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_328V_5) 	pts{1464 }
+SourceLoc->{ "ln": 478, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+326V_2 = STCHI(MR_326V_1) 	pts{1462 }
+SourceLoc->{ "ln": 480, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+326V_4 = STCHI(MR_326V_1) 	pts{1462 }
+SourceLoc->{ "ln": 483, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_326V_3) 	pts{1462 }
+SourceLoc->{ "ln": 484, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_printk==========
+==========FUNCTION: dbgp_mdelay==========
+278V_2 = STCHI(MR_278V_1) 	pts{1537 }
+SourceLoc->{ "ln": 182, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_276V_3) 	pts{1535 }
+SourceLoc->{ "ln": 184, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+276V_4 = STCHI(MR_276V_3) 	pts{1535 }
+SourceLoc->{ "ln": 184, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+278V_4 = STCHI(MR_278V_3) 	pts{1537 }
+SourceLoc->{ "ln": 185, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_278V_5) 	pts{1537 }
+SourceLoc->{ "ln": 185, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_278V_5) 	pts{1537 }
+SourceLoc->{ "ln": 185, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+278V_6 = STCHI(MR_278V_5) 	pts{1537 }
+SourceLoc->{ "ln": 185, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+==========FUNCTION: dbgp_control_msg==========
+311V_2 = STCHI(MR_311V_1) 	pts{1595 }
+SourceLoc->{ "ln": 327, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+313V_2 = STCHI(MR_313V_1) 	pts{1597 }
+SourceLoc->{ "ln": 327, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+315V_2 = STCHI(MR_315V_1) 	pts{1599 }
+SourceLoc->{ "ln": 327, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+317V_2 = STCHI(MR_317V_1) 	pts{1601 }
+317V_3 = STCHI(MR_317V_2) 	pts{1601 }
+317V_4 = STCHI(MR_317V_3) 	pts{1601 }
+317V_5 = STCHI(MR_317V_4) 	pts{1601 }
+317V_6 = STCHI(MR_317V_5) 	pts{1601 }
+SourceLoc->{ "ln": 328, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+319V_2 = STCHI(MR_319V_1) 	pts{1603 }
+SourceLoc->{ "ln": 329, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+321V_2 = STCHI(MR_321V_1) 	pts{1605 }
+SourceLoc->{ "ln": 330, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_299V_2) 	pts{1583 }
+SourceLoc->{ "ln": 332, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+319V_3 = STCHI(MR_319V_2) 	pts{1603 }
+SourceLoc->{ "ln": 332, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_309V_2) 	pts{1593 }
+SourceLoc->{ "ln": 333, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_319V_3) 	pts{1603 }
+SourceLoc->{ "ln": 333, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+295V_5 = STCHI(MR_295V_1) 	pts{1579 }
+SourceLoc->{ "ln": 334, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_299V_2) 	pts{1583 }
+SourceLoc->{ "ln": 337, "cl": 21, "fl": "drivers/usb/early/ehci-dbgp.c" }
+317V_7 = STCHI(MR_317V_6) 	pts{1601 }
+SourceLoc->{ "ln": 337, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_301V_2) 	pts{1585 }
+SourceLoc->{ "ln": 338, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+317V_8 = STCHI(MR_317V_7) 	pts{1601 }
+SourceLoc->{ "ln": 338, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_303V_2) 	pts{1587 }
+SourceLoc->{ "ln": 339, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+317V_9 = STCHI(MR_317V_8) 	pts{1601 }
+SourceLoc->{ "ln": 339, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_305V_2) 	pts{1589 }
+SourceLoc->{ "ln": 340, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+317V_10 = STCHI(MR_317V_9) 	pts{1601 }
+SourceLoc->{ "ln": 340, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_309V_2) 	pts{1593 }
+SourceLoc->{ "ln": 341, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+317V_11 = STCHI(MR_317V_10) 	pts{1601 }
+SourceLoc->{ "ln": 341, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+311V_3 = STCHI(MR_311V_2) 	pts{1595 }
+SourceLoc->{ "ln": 343, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_297V_2) 	pts{1581 }
+SourceLoc->{ "ln": 344, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+313V_3 = STCHI(MR_313V_2) 	pts{1597 }
+SourceLoc->{ "ln": 344, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 346, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+315V_3 = STCHI(MR_315V_2) 	pts{1599 }
+SourceLoc->{ "ln": 346, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_315V_3) 	pts{1599 }
+SourceLoc->{ "ln": 347, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+315V_4 = STCHI(MR_315V_3) 	pts{1599 }
+SourceLoc->{ "ln": 347, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_315V_4) 	pts{1599 }
+SourceLoc->{ "ln": 348, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+315V_5 = STCHI(MR_315V_4) 	pts{1599 }
+SourceLoc->{ "ln": 348, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_315V_5) 	pts{1599 }
+SourceLoc->{ "ln": 349, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+315V_6 = STCHI(MR_315V_5) 	pts{1599 }
+SourceLoc->{ "ln": 349, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_317V_11) 	pts{1601 }
+CALMU(MR_6V_1) 	pts{25 }
+
+LDMU(MR_313V_3) 	pts{1597 }
+SourceLoc->{ "ln": 353, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 353, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_311V_3) 	pts{1595 }
+SourceLoc->{ "ln": 354, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 354, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_315V_6) 	pts{1599 }
+SourceLoc->{ "ln": 355, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_121V_1) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+121V_2 = CALCHI(MR_121V_1) 	pts{46 }
+
+321V_3 = STCHI(MR_321V_2) 	pts{1605 }
+SourceLoc->{ "ln": 355, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_321V_3) 	pts{1605 }
+SourceLoc->{ "ln": 356, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_321V_3) 	pts{1605 }
+SourceLoc->{ "ln": 357, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+295V_3 = STCHI(MR_295V_1) 	pts{1579 }
+SourceLoc->{ "ln": 357, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_297V_2) 	pts{1581 }
+SourceLoc->{ "ln": 360, "cl": 24, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_307V_2) 	pts{1591 }
+SourceLoc->{ "ln": 360, "cl": 35, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_309V_2) 	pts{1593 }
+SourceLoc->{ "ln": 360, "cl": 41, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_133V_1) 	pts{361 }
+CALMU(MR_121V_2) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+133V_2 = CALCHI(MR_133V_1) 	pts{361 }
+121V_3 = CALCHI(MR_121V_2) 	pts{46 }
+
+295V_2 = STCHI(MR_295V_1) 	pts{1579 }
+SourceLoc->{ "ln": 360, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_295V_4) 	pts{1579 }
+SourceLoc->{ "ln": 361, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_bulk_read==========
+349V_2 = STCHI(MR_349V_1) 	pts{1750 }
+SourceLoc->{ "ln": 296, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+351V_2 = STCHI(MR_351V_1) 	pts{1752 }
+SourceLoc->{ "ln": 296, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+353V_2 = STCHI(MR_353V_1) 	pts{1754 }
+SourceLoc->{ "ln": 296, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+355V_2 = STCHI(MR_355V_1) 	pts{1756 }
+SourceLoc->{ "ln": 297, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_345V_2) 	pts{1746 }
+SourceLoc->{ "ln": 299, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+337V_5 = STCHI(MR_337V_1) 	pts{1738 }
+SourceLoc->{ "ln": 300, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_339V_2) 	pts{1740 }
+SourceLoc->{ "ln": 302, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_341V_2) 	pts{1742 }
+SourceLoc->{ "ln": 302, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+351V_3 = STCHI(MR_351V_2) 	pts{1752 }
+SourceLoc->{ "ln": 302, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 304, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+349V_3 = STCHI(MR_349V_2) 	pts{1750 }
+SourceLoc->{ "ln": 304, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_349V_3) 	pts{1750 }
+SourceLoc->{ "ln": 305, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+349V_4 = STCHI(MR_349V_3) 	pts{1750 }
+SourceLoc->{ "ln": 305, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 307, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+353V_3 = STCHI(MR_353V_2) 	pts{1754 }
+SourceLoc->{ "ln": 307, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_353V_3) 	pts{1754 }
+SourceLoc->{ "ln": 308, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_345V_2) 	pts{1746 }
+SourceLoc->{ "ln": 308, "cl": 31, "fl": "drivers/usb/early/ehci-dbgp.c" }
+353V_4 = STCHI(MR_353V_3) 	pts{1754 }
+SourceLoc->{ "ln": 308, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_353V_4) 	pts{1754 }
+SourceLoc->{ "ln": 309, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+353V_5 = STCHI(MR_353V_4) 	pts{1754 }
+SourceLoc->{ "ln": 309, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_353V_5) 	pts{1754 }
+SourceLoc->{ "ln": 310, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+353V_6 = STCHI(MR_353V_5) 	pts{1754 }
+SourceLoc->{ "ln": 310, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_351V_3) 	pts{1752 }
+SourceLoc->{ "ln": 312, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 312, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_349V_4) 	pts{1750 }
+SourceLoc->{ "ln": 313, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 313, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_353V_6) 	pts{1754 }
+SourceLoc->{ "ln": 314, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_347V_2) 	pts{1748 }
+SourceLoc->{ "ln": 314, "cl": 35, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_121V_1) 	pts{46 }
+CALMU(MR_6V_1) 	pts{25 }
+121V_2 = CALCHI(MR_121V_1) 	pts{46 }
+
+355V_3 = STCHI(MR_355V_2) 	pts{1756 }
+SourceLoc->{ "ln": 314, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_355V_3) 	pts{1756 }
+SourceLoc->{ "ln": 315, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_355V_3) 	pts{1756 }
+SourceLoc->{ "ln": 316, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+337V_3 = STCHI(MR_337V_1) 	pts{1738 }
+SourceLoc->{ "ln": 316, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_345V_2) 	pts{1746 }
+SourceLoc->{ "ln": 318, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_355V_3) 	pts{1756 }
+SourceLoc->{ "ln": 318, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_355V_3) 	pts{1756 }
+SourceLoc->{ "ln": 319, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+345V_4 = STCHI(MR_345V_2) 	pts{1746 }
+SourceLoc->{ "ln": 319, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_343V_2) 	pts{1744 }
+SourceLoc->{ "ln": 320, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_345V_3) 	pts{1746 }
+SourceLoc->{ "ln": 320, "cl": 22, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_133V_1) 	pts{361 }
+CALMU(MR_6V_1) 	pts{25 }
+133V_2 = CALCHI(MR_133V_1) 	pts{361 }
+
+LDMU(MR_355V_3) 	pts{1756 }
+SourceLoc->{ "ln": 321, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+337V_2 = STCHI(MR_337V_1) 	pts{1738 }
+SourceLoc->{ "ln": 321, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_337V_4) 	pts{1738 }
+SourceLoc->{ "ln": 322, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_pid_read_update==========
+
+LDMU(MR_359V_2) 	pts{1864 }
+SourceLoc->{ "ln": 159, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_361V_2) 	pts{1866 }
+SourceLoc->{ "ln": 159, "cl": 43, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_get_data==========
+382V_2 = STCHI(MR_382V_1) 	pts{1887 }
+SourceLoc->{ "ln": 253, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_378V_2) 	pts{1883 }
+SourceLoc->{ "ln": 253, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+382V_3 = STCHI(MR_382V_2) 	pts{1887 }
+SourceLoc->{ "ln": 253, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+384V_2 = STCHI(MR_384V_1) 	pts{1889 }
+SourceLoc->{ "ln": 254, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+386V_2 = STCHI(MR_386V_1) 	pts{1891 }
+SourceLoc->{ "ln": 254, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+388V_2 = STCHI(MR_388V_1) 	pts{1893 }
+SourceLoc->{ "ln": 255, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 257, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+384V_3 = STCHI(MR_384V_2) 	pts{1889 }
+SourceLoc->{ "ln": 257, "cl": 5, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 258, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+386V_3 = STCHI(MR_386V_2) 	pts{1891 }
+SourceLoc->{ "ln": 258, "cl": 5, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+388V_3 = STCHI(MR_388V_2) 	pts{1893 }
+SourceLoc->{ "ln": 259, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_388V_4) 	pts{1893 }
+SourceLoc->{ "ln": 259, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_388V_4) 	pts{1893 }
+SourceLoc->{ "ln": 259, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_380V_2) 	pts{1885 }
+SourceLoc->{ "ln": 259, "cl": 27, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_384V_3) 	pts{1889 }
+SourceLoc->{ "ln": 260, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_388V_4) 	pts{1893 }
+SourceLoc->{ "ln": 260, "cl": 24, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_382V_3) 	pts{1887 }
+SourceLoc->{ "ln": 260, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_388V_4) 	pts{1893 }
+SourceLoc->{ "ln": 260, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+133V_5 = STCHI(MR_133V_2) 	pts{361 }
+SourceLoc->{ "ln": 260, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_388V_4) 	pts{1893 }
+SourceLoc->{ "ln": 259, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+388V_7 = STCHI(MR_388V_4) 	pts{1893 }
+SourceLoc->{ "ln": 259, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_388V_5) 	pts{1893 }
+SourceLoc->{ "ln": 261, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_388V_5) 	pts{1893 }
+SourceLoc->{ "ln": 261, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_380V_2) 	pts{1885 }
+SourceLoc->{ "ln": 261, "cl": 22, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_386V_3) 	pts{1891 }
+SourceLoc->{ "ln": 262, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_388V_5) 	pts{1893 }
+SourceLoc->{ "ln": 262, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_382V_3) 	pts{1887 }
+SourceLoc->{ "ln": 262, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_388V_5) 	pts{1893 }
+SourceLoc->{ "ln": 262, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+133V_4 = STCHI(MR_133V_3) 	pts{361 }
+SourceLoc->{ "ln": 262, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_388V_5) 	pts{1893 }
+SourceLoc->{ "ln": 261, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+388V_6 = STCHI(MR_388V_5) 	pts{1893 }
+SourceLoc->{ "ln": 261, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+==========FUNCTION: __outb==========
+
+LDMU(MR_390V_2) 	pts{1989 }
+SourceLoc->{ "ln": 22, "cl": 233, "fl": "./arch/x86/include/asm/shared/io.h" }
+
+LDMU(MR_392V_2) 	pts{1991 }
+SourceLoc->{ "ln": 22, "cl": 246, "fl": "./arch/x86/include/asm/shared/io.h" }
+==========FUNCTION: ehci_reset_port==========
+417V_2 = STCHI(MR_417V_1) 	pts{2008 }
+SourceLoc->{ "ln": 610, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+419V_2 = STCHI(MR_419V_1) 	pts{2010 }
+SourceLoc->{ "ln": 611, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+421V_2 = STCHI(MR_421V_1) 	pts{2012 }
+SourceLoc->{ "ln": 611, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+423V_2 = STCHI(MR_423V_1) 	pts{2014 }
+SourceLoc->{ "ln": 612, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 616, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_415V_2) 	pts{2006 }
+SourceLoc->{ "ln": 616, "cl": 41, "fl": "drivers/usb/early/ehci-dbgp.c" }
+417V_3 = STCHI(MR_417V_2) 	pts{2008 }
+SourceLoc->{ "ln": 616, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_417V_3) 	pts{2008 }
+SourceLoc->{ "ln": 617, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+417V_4 = STCHI(MR_417V_3) 	pts{2008 }
+SourceLoc->{ "ln": 617, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_417V_4) 	pts{2008 }
+SourceLoc->{ "ln": 618, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+417V_5 = STCHI(MR_417V_4) 	pts{2008 }
+SourceLoc->{ "ln": 618, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_417V_5) 	pts{2008 }
+SourceLoc->{ "ln": 619, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 619, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_415V_2) 	pts{2006 }
+SourceLoc->{ "ln": 619, "cl": 41, "fl": "drivers/usb/early/ehci-dbgp.c" }
+421V_3 = STCHI(MR_421V_2) 	pts{2012 }
+SourceLoc->{ "ln": 621, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+419V_3 = STCHI(MR_419V_2) 	pts{2010 }
+SourceLoc->{ "ln": 622, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_419V_4) 	pts{2010 }
+SourceLoc->{ "ln": 622, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_421V_3) 	pts{2012 }
+SourceLoc->{ "ln": 624, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 625, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_415V_2) 	pts{2006 }
+SourceLoc->{ "ln": 625, "cl": 42, "fl": "drivers/usb/early/ehci-dbgp.c" }
+417V_11 = STCHI(MR_417V_6) 	pts{2008 }
+SourceLoc->{ "ln": 625, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_417V_11) 	pts{2008 }
+SourceLoc->{ "ln": 626, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_421V_3) 	pts{2012 }
+SourceLoc->{ "ln": 623, "cl": 21, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_419V_4) 	pts{2010 }
+SourceLoc->{ "ln": 623, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+419V_5 = STCHI(MR_419V_4) 	pts{2010 }
+SourceLoc->{ "ln": 623, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_417V_7) 	pts{2008 }
+SourceLoc->{ "ln": 629, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+423V_4 = STCHI(MR_423V_2) 	pts{2014 }
+SourceLoc->{ "ln": 631, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_417V_7) 	pts{2008 }
+SourceLoc->{ "ln": 632, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 633, "cl": 5, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_415V_2) 	pts{2006 }
+SourceLoc->{ "ln": 633, "cl": 28, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 636, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_415V_2) 	pts{2006 }
+SourceLoc->{ "ln": 636, "cl": 43, "fl": "drivers/usb/early/ehci-dbgp.c" }
+417V_10 = STCHI(MR_417V_9) 	pts{2008 }
+SourceLoc->{ "ln": 636, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_417V_10) 	pts{2008 }
+SourceLoc->{ "ln": 637, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_423V_5) 	pts{2014 }
+SourceLoc->{ "ln": 637, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+423V_7 = STCHI(MR_423V_5) 	pts{2014 }
+SourceLoc->{ "ln": 637, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_417V_8) 	pts{2008 }
+SourceLoc->{ "ln": 641, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+413V_2 = STCHI(MR_413V_1) 	pts{2004 }
+SourceLoc->{ "ln": 642, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_417V_8) 	pts{2008 }
+SourceLoc->{ "ln": 645, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+413V_6 = STCHI(MR_413V_1) 	pts{2004 }
+SourceLoc->{ "ln": 646, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_417V_8) 	pts{2008 }
+SourceLoc->{ "ln": 649, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_417V_8) 	pts{2008 }
+SourceLoc->{ "ln": 649, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+413V_4 = STCHI(MR_413V_1) 	pts{2004 }
+SourceLoc->{ "ln": 650, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+413V_5 = STCHI(MR_413V_1) 	pts{2004 }
+SourceLoc->{ "ln": 651, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_413V_3) 	pts{2004 }
+SourceLoc->{ "ln": 652, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: dbgp_external_startup==========
+
+LDMU(MR_66V_2) 	pts{2170 }
+SourceLoc->{ "ln": 998, "cl": 35, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_40V_1) 	pts{46 67 70 }
+CALMU(MR_68V_1) 	pts{23 25 55 }
+CALMU(MR_12V_1) 	pts{78 }
+40V_2 = CALCHI(MR_40V_1) 	pts{46 67 70 }
+12V_2 = CALCHI(MR_12V_1) 	pts{78 }
+
+==========FUNCTION: xen_dbgp_external_startup==========
+==========FUNCTION: dbgp_reset_prep==========
+163V_2 = STCHI(MR_163V_1) 	pts{2200 }
+SourceLoc->{ "ln": 970, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_161V_2) 	pts{2198 }
+SourceLoc->{ "ln": 970, "cl": 32, "fl": "drivers/usb/early/ehci-dbgp.c" }
+163V_3 = STCHI(MR_163V_2) 	pts{2200 }
+SourceLoc->{ "ln": 970, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+165V_2 = STCHI(MR_165V_1) 	pts{2202 }
+SourceLoc->{ "ln": 971, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_163V_3) 	pts{2200 }
+SourceLoc->{ "ln": 973, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_163V_3) 	pts{2200 }
+SourceLoc->{ "ln": 974, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+159V_6 = STCHI(MR_159V_1) 	pts{2196 }
+SourceLoc->{ "ln": 974, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+121V_2 = STCHI(MR_121V_1) 	pts{46 }
+SourceLoc->{ "ln": 976, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 977, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+159V_2 = STCHI(MR_159V_1) 	pts{2196 }
+SourceLoc->{ "ln": 978, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_169V_1) 	pts{3480 }
+SourceLoc->{ "ln": 980, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_171V_1) 	pts{3481 }
+SourceLoc->{ "ln": 981, "cl": 28, "fl": "drivers/usb/early/ehci-dbgp.c" }
+159V_4 = STCHI(MR_159V_1) 	pts{2196 }
+SourceLoc->{ "ln": 983, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 987, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+165V_3 = STCHI(MR_165V_2) 	pts{2202 }
+SourceLoc->{ "ln": 987, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_165V_3) 	pts{2202 }
+SourceLoc->{ "ln": 988, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_165V_3) 	pts{2202 }
+SourceLoc->{ "ln": 989, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+165V_5 = STCHI(MR_165V_3) 	pts{2202 }
+SourceLoc->{ "ln": 989, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_165V_5) 	pts{2202 }
+SourceLoc->{ "ln": 990, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 990, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+159V_3 = STCHI(MR_159V_1) 	pts{2196 }
+SourceLoc->{ "ln": 992, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_159V_5) 	pts{2196 }
+SourceLoc->{ "ln": 993, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: xen_dbgp_reset_prep==========
+==========FUNCTION: early_dbgp_init==========
+441V_2 = STCHI(MR_441V_1) 	pts{2287 }
+SourceLoc->{ "ln": 827, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+443V_2 = STCHI(MR_443V_1) 	pts{2289 }
+SourceLoc->{ "ln": 827, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+445V_2 = STCHI(MR_445V_1) 	pts{2291 }
+SourceLoc->{ "ln": 827, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+447V_2 = STCHI(MR_447V_1) 	pts{2293 }
+SourceLoc->{ "ln": 828, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+449V_2 = STCHI(MR_449V_1) 	pts{2295 }
+SourceLoc->{ "ln": 828, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+451V_2 = STCHI(MR_451V_1) 	pts{2297 }
+SourceLoc->{ "ln": 828, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+453V_2 = STCHI(MR_453V_1) 	pts{2299 }
+SourceLoc->{ "ln": 828, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+455V_2 = STCHI(MR_455V_1) 	pts{2301 }
+SourceLoc->{ "ln": 829, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+457V_2 = STCHI(MR_457V_1) 	pts{2303 }
+SourceLoc->{ "ln": 830, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+459V_2 = STCHI(MR_459V_1) 	pts{2305 }
+SourceLoc->{ "ln": 831, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+461V_2 = STCHI(MR_461V_1) 	pts{2307 }
+SourceLoc->{ "ln": 832, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+463V_2 = STCHI(MR_463V_1) 	pts{2309 }
+SourceLoc->{ "ln": 833, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+465V_2 = STCHI(MR_465V_1) 	pts{2311 }
+SourceLoc->{ "ln": 834, "cl": 5, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+437V_2 = STCHI(MR_437V_1) 	pts{2283 }
+SourceLoc->{ "ln": 837, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+457V_4 = STCHI(MR_457V_2) 	pts{2303 }
+SourceLoc->{ "ln": 839, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_439V_2) 	pts{2285 }
+SourceLoc->{ "ln": 840, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_439V_2) 	pts{2285 }
+SourceLoc->{ "ln": 841, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+457V_6 = STCHI(MR_457V_4) 	pts{2303 }
+SourceLoc->{ "ln": 841, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_457V_5) 	pts{2303 }
+SourceLoc->{ "ln": 842, "cl": 32, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_457V_5) 	pts{2303 }
+SourceLoc->{ "ln": 844, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_451V_2) 	pts{2297 }
+CALMU(MR_449V_2) 	pts{2295 }
+CALMU(MR_447V_2) 	pts{2293 }
+451V_4 = CALCHI(MR_451V_2) 	pts{2297 }
+449V_4 = CALCHI(MR_449V_2) 	pts{2295 }
+447V_4 = CALCHI(MR_447V_2) 	pts{2293 }
+
+453V_4 = STCHI(MR_453V_2) 	pts{2299 }
+SourceLoc->{ "ln": 844, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_453V_4) 	pts{2299 }
+SourceLoc->{ "ln": 845, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+437V_4 = STCHI(MR_437V_1) 	pts{2283 }
+SourceLoc->{ "ln": 846, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_447V_4) 	pts{2293 }
+SourceLoc->{ "ln": 848, "cl": 58, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_449V_4) 	pts{2295 }
+SourceLoc->{ "ln": 848, "cl": 63, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_451V_4) 	pts{2297 }
+SourceLoc->{ "ln": 849, "cl": 5, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_447V_4) 	pts{2293 }
+SourceLoc->{ "ln": 851, "cl": 31, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_449V_4) 	pts{2295 }
+SourceLoc->{ "ln": 851, "cl": 36, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_451V_4) 	pts{2297 }
+SourceLoc->{ "ln": 851, "cl": 42, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_453V_4) 	pts{2299 }
+SourceLoc->{ "ln": 851, "cl": 48, "fl": "drivers/usb/early/ehci-dbgp.c" }
+441V_4 = STCHI(MR_441V_2) 	pts{2287 }
+SourceLoc->{ "ln": 851, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_441V_4) 	pts{2287 }
+SourceLoc->{ "ln": 852, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+443V_4 = STCHI(MR_443V_2) 	pts{2289 }
+SourceLoc->{ "ln": 852, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_443V_4) 	pts{2289 }
+SourceLoc->{ "ln": 853, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+443V_5 = STCHI(MR_443V_4) 	pts{2289 }
+SourceLoc->{ "ln": 853, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_441V_4) 	pts{2287 }
+SourceLoc->{ "ln": 854, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+445V_4 = STCHI(MR_445V_2) 	pts{2291 }
+SourceLoc->{ "ln": 854, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_443V_5) 	pts{2289 }
+SourceLoc->{ "ln": 855, "cl": 42, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_445V_4) 	pts{2291 }
+SourceLoc->{ "ln": 855, "cl": 47, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_443V_5) 	pts{2289 }
+SourceLoc->{ "ln": 856, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+437V_8 = STCHI(MR_437V_1) 	pts{2283 }
+SourceLoc->{ "ln": 859, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_447V_4) 	pts{2293 }
+SourceLoc->{ "ln": 862, "cl": 28, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_449V_4) 	pts{2295 }
+SourceLoc->{ "ln": 862, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_451V_4) 	pts{2297 }
+SourceLoc->{ "ln": 862, "cl": 39, "fl": "drivers/usb/early/ehci-dbgp.c" }
+459V_4 = STCHI(MR_459V_2) 	pts{2305 }
+SourceLoc->{ "ln": 862, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_459V_4) 	pts{2305 }
+SourceLoc->{ "ln": 863, "cl": 46, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_445V_4) 	pts{2291 }
+SourceLoc->{ "ln": 863, "cl": 55, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_459V_4) 	pts{2305 }
+SourceLoc->{ "ln": 864, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+437V_7 = STCHI(MR_437V_1) 	pts{2283 }
+SourceLoc->{ "ln": 867, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_447V_4) 	pts{2293 }
+SourceLoc->{ "ln": 871, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_449V_4) 	pts{2295 }
+SourceLoc->{ "ln": 871, "cl": 35, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_451V_4) 	pts{2297 }
+SourceLoc->{ "ln": 871, "cl": 41, "fl": "drivers/usb/early/ehci-dbgp.c" }
+465V_4 = STCHI(MR_465V_2) 	pts{2311 }
+SourceLoc->{ "ln": 871, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_465V_4) 	pts{2311 }
+SourceLoc->{ "ln": 872, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_465V_4) 	pts{2311 }
+SourceLoc->{ "ln": 873, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+465V_5 = STCHI(MR_465V_4) 	pts{2311 }
+SourceLoc->{ "ln": 873, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_447V_4) 	pts{2293 }
+SourceLoc->{ "ln": 874, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_449V_4) 	pts{2295 }
+SourceLoc->{ "ln": 874, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_451V_4) 	pts{2297 }
+SourceLoc->{ "ln": 874, "cl": 36, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_465V_5) 	pts{2311 }
+SourceLoc->{ "ln": 874, "cl": 48, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_459V_4) 	pts{2305 }
+SourceLoc->{ "ln": 882, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_429V_1) 	pts{18 }
+SourceLoc->{ "ln": 882, "cl": 270, "fl": "drivers/usb/early/ehci-dbgp.c" }
+469V_3 = STCHI(MR_469V_1) 	pts{3469 }
+SourceLoc->{ "ln": 882, "cl": 74, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_469V_3) 	pts{3469 }
+SourceLoc->{ "ln": 882, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+455V_4 = STCHI(MR_455V_2) 	pts{2301 }
+SourceLoc->{ "ln": 883, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_459V_4) 	pts{2305 }
+SourceLoc->{ "ln": 884, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_455V_4) 	pts{2301 }
+SourceLoc->{ "ln": 884, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+455V_5 = STCHI(MR_455V_4) 	pts{2301 }
+SourceLoc->{ "ln": 884, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_455V_5) 	pts{2301 }
+SourceLoc->{ "ln": 885, "cl": 32, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_455V_5) 	pts{2301 }
+SourceLoc->{ "ln": 887, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+2V_3 = STCHI(MR_2V_1) 	pts{21 }
+SourceLoc->{ "ln": 887, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_455V_5) 	pts{2301 }
+SourceLoc->{ "ln": 888, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_2V_3) 	pts{21 }
+SourceLoc->{ "ln": 888, "cl": 43, "fl": "drivers/usb/early/ehci-dbgp.c" }
+4V_3 = STCHI(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 888, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_455V_5) 	pts{2301 }
+SourceLoc->{ "ln": 889, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_445V_4) 	pts{2291 }
+SourceLoc->{ "ln": 889, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+6V_3 = STCHI(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 889, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_447V_4) 	pts{2293 }
+SourceLoc->{ "ln": 890, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+42V_3 = STCHI(MR_42V_1) 	pts{32 }
+SourceLoc->{ "ln": 890, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_449V_4) 	pts{2295 }
+SourceLoc->{ "ln": 891, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+47V_3 = STCHI(MR_47V_1) 	pts{3501 }
+SourceLoc->{ "ln": 891, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_451V_4) 	pts{2297 }
+SourceLoc->{ "ln": 892, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+49V_3 = STCHI(MR_49V_1) 	pts{3502 }
+SourceLoc->{ "ln": 892, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_49V_3) 	pts{3502 }
+CALMU(MR_47V_3) 	pts{3501 }
+CALMU(MR_8V_1) 	pts{52 }
+CALMU(MR_42V_3) 	pts{32 }
+8V_3 = CALCHI(MR_8V_1) 	pts{52 }
+
+CALMU(MR_12V_1) 	pts{78 }
+CALMU(MR_8V_3) 	pts{52 }
+CALMU(MR_42V_3) 	pts{32 }
+CALMU(MR_473V_1) 	pts{46 55 67 70 }
+CALMU(MR_6V_3) 	pts{25 }
+CALMU(MR_49V_3) 	pts{3502 }
+CALMU(MR_4V_3) 	pts{23 }
+CALMU(MR_47V_3) 	pts{3501 }
+CALMU(MR_2V_3) 	pts{21 }
+473V_3 = CALCHI(MR_473V_1) 	pts{46 55 67 70 }
+12V_3 = CALCHI(MR_12V_1) 	pts{78 }
+
+463V_4 = STCHI(MR_463V_2) 	pts{2309 }
+SourceLoc->{ "ln": 896, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_463V_4) 	pts{2309 }
+SourceLoc->{ "ln": 897, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+6V_4 = STCHI(MR_6V_3) 	pts{25 }
+SourceLoc->{ "ln": 899, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+437V_6 = STCHI(MR_437V_1) 	pts{2283 }
+SourceLoc->{ "ln": 901, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+437V_5 = STCHI(MR_437V_1) 	pts{2283 }
+SourceLoc->{ "ln": 905, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_437V_3) 	pts{2283 }
+SourceLoc->{ "ln": 906, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: find_dbgp==========
+490V_2 = STCHI(MR_490V_1) 	pts{2598 }
+SourceLoc->{ "ln": 403, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+492V_2 = STCHI(MR_492V_1) 	pts{2600 }
+SourceLoc->{ "ln": 403, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+494V_2 = STCHI(MR_494V_1) 	pts{2602 }
+SourceLoc->{ "ln": 403, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+490V_3 = STCHI(MR_490V_2) 	pts{2598 }
+SourceLoc->{ "ln": 405, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_490V_4) 	pts{2598 }
+SourceLoc->{ "ln": 405, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+492V_5 = STCHI(MR_492V_3) 	pts{2600 }
+SourceLoc->{ "ln": 406, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_492V_6) 	pts{2600 }
+SourceLoc->{ "ln": 406, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+494V_6 = STCHI(MR_494V_5) 	pts{2602 }
+SourceLoc->{ "ln": 407, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_494V_7) 	pts{2602 }
+SourceLoc->{ "ln": 407, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+496V_6 = STCHI(MR_496V_5) 	pts{2604 }
+SourceLoc->{ "ln": 408, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_490V_4) 	pts{2598 }
+SourceLoc->{ "ln": 410, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_492V_6) 	pts{2600 }
+SourceLoc->{ "ln": 410, "cl": 28, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_494V_7) 	pts{2602 }
+SourceLoc->{ "ln": 410, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+496V_7 = STCHI(MR_496V_6) 	pts{2604 }
+SourceLoc->{ "ln": 410, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_496V_7) 	pts{2604 }
+SourceLoc->{ "ln": 412, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_482V_6) 	pts{2590 }
+SourceLoc->{ "ln": 414, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+482V_8 = STCHI(MR_482V_6) 	pts{2590 }
+SourceLoc->{ "ln": 414, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_490V_4) 	pts{2598 }
+SourceLoc->{ "ln": 416, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_484V_2) 	pts{2592 }
+SourceLoc->{ "ln": 416, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+447V_7 = STCHI(MR_447V_5) 	pts{2293 }
+SourceLoc->{ "ln": 416, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_492V_6) 	pts{2600 }
+SourceLoc->{ "ln": 417, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_486V_2) 	pts{2594 }
+SourceLoc->{ "ln": 417, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+449V_7 = STCHI(MR_449V_5) 	pts{2295 }
+SourceLoc->{ "ln": 417, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_494V_7) 	pts{2602 }
+SourceLoc->{ "ln": 418, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_488V_2) 	pts{2596 }
+SourceLoc->{ "ln": 418, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+451V_7 = STCHI(MR_451V_5) 	pts{2297 }
+SourceLoc->{ "ln": 418, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_496V_7) 	pts{2604 }
+SourceLoc->{ "ln": 419, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+480V_8 = STCHI(MR_480V_6) 	pts{2588 }
+SourceLoc->{ "ln": 419, "cl": 5, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_494V_7) 	pts{2602 }
+SourceLoc->{ "ln": 407, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+494V_8 = STCHI(MR_494V_7) 	pts{2602 }
+SourceLoc->{ "ln": 407, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_492V_6) 	pts{2600 }
+SourceLoc->{ "ln": 406, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+492V_7 = STCHI(MR_492V_6) 	pts{2600 }
+SourceLoc->{ "ln": 406, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_490V_4) 	pts{2598 }
+SourceLoc->{ "ln": 405, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+490V_5 = STCHI(MR_490V_4) 	pts{2598 }
+SourceLoc->{ "ln": 405, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+480V_3 = STCHI(MR_480V_2) 	pts{2588 }
+SourceLoc->{ "ln": 423, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_480V_4) 	pts{2588 }
+SourceLoc->{ "ln": 424, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: __set_fixmap==========
+
+LDMU(MR_173V_2) 	pts{2731 }
+SourceLoc->{ "ln": 167, "cl": 20, "fl": "./arch/x86/include/asm/fixmap.h" }
+
+LDMU(MR_175V_2) 	pts{2733 }
+SourceLoc->{ "ln": 167, "cl": 25, "fl": "./arch/x86/include/asm/fixmap.h" }
+
+LDMU(MR_177V_2) 	pts{3468 }
+SourceLoc->{ "ln": 167, "cl": 2, "fl": "./arch/x86/include/asm/fixmap.h" }
+==========FUNCTION: detect_set_debug_port==========
+45V_2 = STCHI(MR_45V_1) 	pts{2751 }
+SourceLoc->{ "ln": 693, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_42V_1) 	pts{32 }
+SourceLoc->{ "ln": 695, "cl": 38, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_47V_1) 	pts{3501 }
+SourceLoc->{ "ln": 695, "cl": 52, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_49V_1) 	pts{3502 }
+SourceLoc->{ "ln": 695, "cl": 67, "fl": "drivers/usb/early/ehci-dbgp.c" }
+45V_3 = STCHI(MR_45V_2) 	pts{2751 }
+SourceLoc->{ "ln": 695, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_45V_3) 	pts{2751 }
+SourceLoc->{ "ln": 698, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+8V_3 = STCHI(MR_8V_1) 	pts{52 }
+SourceLoc->{ "ln": 700, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+==========FUNCTION: ehci_setup==========
+16V_2 = STCHI(MR_16V_1) 	pts{2783 }
+SourceLoc->{ "ln": 753, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+18V_2 = STCHI(MR_18V_1) 	pts{2785 }
+SourceLoc->{ "ln": 753, "cl": 12, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+20V_2 = STCHI(MR_20V_1) 	pts{2787 }
+SourceLoc->{ "ln": 753, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+22V_2 = STCHI(MR_22V_1) 	pts{2789 }
+SourceLoc->{ "ln": 754, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+24V_2 = STCHI(MR_24V_1) 	pts{2791 }
+SourceLoc->{ "ln": 754, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+24V_3 = STCHI(MR_24V_2) 	pts{2791 }
+SourceLoc->{ "ln": 754, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+26V_2 = STCHI(MR_26V_1) 	pts{2793 }
+SourceLoc->{ "ln": 754, "cl": 38, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+28V_2 = STCHI(MR_28V_1) 	pts{2795 }
+SourceLoc->{ "ln": 755, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+30V_2 = STCHI(MR_30V_1) 	pts{2797 }
+SourceLoc->{ "ln": 755, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+32V_2 = STCHI(MR_32V_1) 	pts{2799 }
+SourceLoc->{ "ln": 756, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+34V_2 = STCHI(MR_34V_1) 	pts{2801 }
+SourceLoc->{ "ln": 757, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+34V_3 = STCHI(MR_34V_2) 	pts{2801 }
+SourceLoc->{ "ln": 757, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_38V_1) 	pts{32 3501 3502 }
+CALMU(MR_2V_1) 	pts{21 }
+32V_4 = STCHI(MR_32V_3) 	pts{2799 }
+SourceLoc->{ "ln": 762, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_2V_1) 	pts{21 }
+SourceLoc->{ "ln": 766, "cl": 22, "fl": "drivers/usb/early/ehci-dbgp.c" }
+20V_5 = STCHI(MR_20V_4) 	pts{2787 }
+SourceLoc->{ "ln": 766, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_20V_5) 	pts{2787 }
+SourceLoc->{ "ln": 767, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+22V_5 = STCHI(MR_22V_4) 	pts{2789 }
+SourceLoc->{ "ln": 767, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_22V_5) 	pts{2789 }
+SourceLoc->{ "ln": 768, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+10V_4 = STCHI(MR_10V_3) 	pts{55 }
+SourceLoc->{ "ln": 768, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_20V_5) 	pts{2787 }
+SourceLoc->{ "ln": 769, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+26V_5 = STCHI(MR_26V_4) 	pts{2793 }
+SourceLoc->{ "ln": 769, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_22V_5) 	pts{2789 }
+SourceLoc->{ "ln": 771, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_26V_5) 	pts{2793 }
+SourceLoc->{ "ln": 772, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+30V_5 = STCHI(MR_30V_4) 	pts{2797 }
+SourceLoc->{ "ln": 775, "cl": 9, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_30V_6) 	pts{2797 }
+SourceLoc->{ "ln": 775, "cl": 14, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_26V_5) 	pts{2793 }
+SourceLoc->{ "ln": 775, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 776, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_30V_6) 	pts{2797 }
+SourceLoc->{ "ln": 776, "cl": 42, "fl": "drivers/usb/early/ehci-dbgp.c" }
+18V_6 = STCHI(MR_18V_5) 	pts{2785 }
+SourceLoc->{ "ln": 776, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_30V_6) 	pts{2797 }
+SourceLoc->{ "ln": 777, "cl": 39, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_18V_6) 	pts{2785 }
+SourceLoc->{ "ln": 777, "cl": 42, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_30V_6) 	pts{2797 }
+SourceLoc->{ "ln": 775, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+30V_7 = STCHI(MR_30V_6) 	pts{2797 }
+SourceLoc->{ "ln": 775, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_32V_5) 	pts{2799 }
+SourceLoc->{ "ln": 780, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_24V_5) 	pts{2791 }
+SourceLoc->{ "ln": 780, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_22V_5) 	pts{2789 }
+SourceLoc->{ "ln": 780, "cl": 43, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_34V_4) 	pts{2801 }
+SourceLoc->{ "ln": 781, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+34V_7 = STCHI(MR_34V_4) 	pts{2801 }
+SourceLoc->{ "ln": 781, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_8V_1) 	pts{52 }
+SourceLoc->{ "ln": 782, "cl": 4, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_24V_5) 	pts{2791 }
+SourceLoc->{ "ln": 782, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_38V_1) 	pts{32 3501 3502 }
+14V_7 = STCHI(MR_14V_1) 	pts{2781 }
+SourceLoc->{ "ln": 785, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_4V_1) 	pts{23 }
+SourceLoc->{ "ln": 790, "cl": 15, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_4V_1) 	pts{23 }
+14V_2 = STCHI(MR_14V_1) 	pts{2781 }
+SourceLoc->{ "ln": 792, "cl": 4, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+CALMU(MR_40V_3) 	pts{46 67 70 }
+CALMU(MR_12V_3) 	pts{78 }
+CALMU(MR_10V_4) 	pts{55 }
+CALMU(MR_6V_1) 	pts{25 }
+CALMU(MR_4V_1) 	pts{23 }
+40V_4 = CALCHI(MR_40V_3) 	pts{46 67 70 }
+12V_4 = CALCHI(MR_12V_3) 	pts{78 }
+
+28V_5 = STCHI(MR_28V_4) 	pts{2795 }
+SourceLoc->{ "ln": 797, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_28V_5) 	pts{2795 }
+SourceLoc->{ "ln": 798, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_28V_5) 	pts{2795 }
+SourceLoc->{ "ln": 801, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 803, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+16V_3 = STCHI(MR_16V_2) 	pts{2783 }
+SourceLoc->{ "ln": 803, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_16V_3) 	pts{2783 }
+SourceLoc->{ "ln": 804, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+16V_4 = STCHI(MR_16V_3) 	pts{2783 }
+SourceLoc->{ "ln": 804, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_16V_4) 	pts{2783 }
+SourceLoc->{ "ln": 805, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_6V_1) 	pts{25 }
+SourceLoc->{ "ln": 805, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+14V_4 = STCHI(MR_14V_1) 	pts{2781 }
+SourceLoc->{ "ln": 806, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+14V_3 = STCHI(MR_14V_1) 	pts{2781 }
+SourceLoc->{ "ln": 808, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_22V_5) 	pts{2789 }
+SourceLoc->{ "ln": 811, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_32V_5) 	pts{2799 }
+SourceLoc->{ "ln": 811, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+32V_6 = STCHI(MR_32V_5) 	pts{2799 }
+SourceLoc->{ "ln": 811, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_22V_5) 	pts{2789 }
+SourceLoc->{ "ln": 812, "cl": 21, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_26V_5) 	pts{2793 }
+SourceLoc->{ "ln": 812, "cl": 37, "fl": "drivers/usb/early/ehci-dbgp.c" }
+24V_6 = STCHI(MR_24V_5) 	pts{2791 }
+SourceLoc->{ "ln": 812, "cl": 17, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_32V_6) 	pts{2799 }
+SourceLoc->{ "ln": 813, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_26V_5) 	pts{2793 }
+SourceLoc->{ "ln": 813, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_8V_1) 	pts{52 }
+SourceLoc->{ "ln": 814, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_24V_6) 	pts{2791 }
+SourceLoc->{ "ln": 814, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_38V_1) 	pts{32 3501 3502 }
+
+LDMU(MR_34V_4) 	pts{2801 }
+SourceLoc->{ "ln": 817, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+34V_5 = STCHI(MR_34V_4) 	pts{2801 }
+SourceLoc->{ "ln": 817, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_8V_1) 	pts{52 }
+SourceLoc->{ "ln": 818, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_24V_6) 	pts{2791 }
+SourceLoc->{ "ln": 818, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+CALMU(MR_38V_1) 	pts{32 3501 3502 }
+14V_5 = STCHI(MR_14V_1) 	pts{2781 }
+SourceLoc->{ "ln": 822, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_14V_6) 	pts{2781 }
+SourceLoc->{ "ln": 823, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: early_ehci_bios_handoff==========
+396V_2 = STCHI(MR_396V_1) 	pts{3004 }
+SourceLoc->{ "ln": 711, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_2V_1) 	pts{21 }
+SourceLoc->{ "ln": 711, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+396V_3 = STCHI(MR_396V_2) 	pts{3004 }
+SourceLoc->{ "ln": 711, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+398V_2 = STCHI(MR_398V_1) 	pts{3006 }
+SourceLoc->{ "ln": 712, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_396V_3) 	pts{3004 }
+SourceLoc->{ "ln": 712, "cl": 16, "fl": "drivers/usb/early/ehci-dbgp.c" }
+398V_3 = STCHI(MR_398V_2) 	pts{3006 }
+SourceLoc->{ "ln": 712, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+400V_2 = STCHI(MR_400V_1) 	pts{3008 }
+SourceLoc->{ "ln": 713, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+402V_2 = STCHI(MR_402V_1) 	pts{3010 }
+SourceLoc->{ "ln": 714, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_398V_3) 	pts{3006 }
+SourceLoc->{ "ln": 716, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_42V_1) 	pts{32 }
+SourceLoc->{ "ln": 719, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_47V_1) 	pts{3501 }
+SourceLoc->{ "ln": 719, "cl": 47, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_49V_1) 	pts{3502 }
+SourceLoc->{ "ln": 720, "cl": 19, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_398V_3) 	pts{3006 }
+SourceLoc->{ "ln": 720, "cl": 25, "fl": "drivers/usb/early/ehci-dbgp.c" }
+400V_4 = STCHI(MR_400V_2) 	pts{3008 }
+SourceLoc->{ "ln": 719, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_400V_4) 	pts{3008 }
+SourceLoc->{ "ln": 721, "cl": 46, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_400V_4) 	pts{3008 }
+SourceLoc->{ "ln": 723, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_400V_4) 	pts{3008 }
+SourceLoc->{ "ln": 723, "cl": 28, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_42V_1) 	pts{32 }
+SourceLoc->{ "ln": 725, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_47V_1) 	pts{3501 }
+SourceLoc->{ "ln": 725, "cl": 48, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_49V_1) 	pts{3502 }
+SourceLoc->{ "ln": 726, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_398V_3) 	pts{3006 }
+SourceLoc->{ "ln": 726, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+402V_4 = STCHI(MR_402V_2) 	pts{3010 }
+SourceLoc->{ "ln": 730, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_400V_5) 	pts{3008 }
+SourceLoc->{ "ln": 731, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_402V_5) 	pts{3010 }
+SourceLoc->{ "ln": 731, "cl": 31, "fl": "drivers/usb/early/ehci-dbgp.c" }
+406V_4 = STCHI(MR_406V_3) 	pts{3014 }
+SourceLoc->{ "ln": 732, "cl": 231, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+406V_5 = STCHI(MR_406V_4) 	pts{3014 }
+SourceLoc->{ "ln": 732, "cl": 231, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_406V_6) 	pts{3014 }
+SourceLoc->{ "ln": 732, "cl": 253, "fl": "drivers/usb/early/ehci-dbgp.c" }
+406V_7 = STCHI(MR_406V_6) 	pts{3014 }
+SourceLoc->{ "ln": 732, "cl": 253, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_402V_5) 	pts{3010 }
+SourceLoc->{ "ln": 733, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+402V_6 = STCHI(MR_402V_5) 	pts{3010 }
+SourceLoc->{ "ln": 733, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_42V_1) 	pts{32 }
+SourceLoc->{ "ln": 734, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_47V_1) 	pts{3501 }
+SourceLoc->{ "ln": 734, "cl": 48, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_49V_1) 	pts{3502 }
+SourceLoc->{ "ln": 735, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_398V_3) 	pts{3006 }
+SourceLoc->{ "ln": 735, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+400V_6 = STCHI(MR_400V_5) 	pts{3008 }
+SourceLoc->{ "ln": 734, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_400V_5) 	pts{3008 }
+SourceLoc->{ "ln": 738, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_400V_5) 	pts{3008 }
+SourceLoc->{ "ln": 741, "cl": 52, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_42V_1) 	pts{32 }
+SourceLoc->{ "ln": 742, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_47V_1) 	pts{3501 }
+SourceLoc->{ "ln": 742, "cl": 48, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_49V_1) 	pts{3502 }
+SourceLoc->{ "ln": 743, "cl": 20, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_398V_3) 	pts{3006 }
+SourceLoc->{ "ln": 743, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_42V_1) 	pts{32 }
+SourceLoc->{ "ln": 747, "cl": 33, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_47V_1) 	pts{3501 }
+SourceLoc->{ "ln": 747, "cl": 47, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_49V_1) 	pts{3502 }
+SourceLoc->{ "ln": 747, "cl": 62, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_398V_3) 	pts{3006 }
+SourceLoc->{ "ln": 748, "cl": 10, "fl": "drivers/usb/early/ehci-dbgp.c" }
+404V_4 = STCHI(MR_404V_1) 	pts{3012 }
+SourceLoc->{ "ln": 749, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+==========FUNCTION: default_set_debug_port==========
+==========FUNCTION: nvidia_set_debug_port==========
+74V_2 = STCHI(MR_74V_1) 	pts{3177 }
+SourceLoc->{ "ln": 681, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_42V_1) 	pts{32 }
+SourceLoc->{ "ln": 682, "cl": 35, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_47V_1) 	pts{3501 }
+SourceLoc->{ "ln": 682, "cl": 49, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_49V_1) 	pts{3502 }
+SourceLoc->{ "ln": 682, "cl": 64, "fl": "drivers/usb/early/ehci-dbgp.c" }
+74V_3 = STCHI(MR_74V_2) 	pts{3177 }
+SourceLoc->{ "ln": 682, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_74V_3) 	pts{3177 }
+SourceLoc->{ "ln": 684, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+74V_4 = STCHI(MR_74V_3) 	pts{3177 }
+SourceLoc->{ "ln": 684, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_72V_2) 	pts{3175 }
+SourceLoc->{ "ln": 685, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_74V_4) 	pts{3177 }
+SourceLoc->{ "ln": 685, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+74V_5 = STCHI(MR_74V_4) 	pts{3177 }
+SourceLoc->{ "ln": 685, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_42V_1) 	pts{32 }
+SourceLoc->{ "ln": 686, "cl": 28, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_47V_1) 	pts{3501 }
+SourceLoc->{ "ln": 686, "cl": 42, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_49V_1) 	pts{3502 }
+SourceLoc->{ "ln": 686, "cl": 57, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_74V_5) 	pts{3177 }
+SourceLoc->{ "ln": 687, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_72V_2) 	pts{3175 }
+SourceLoc->{ "ln": 688, "cl": 40, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: __find_dbgp==========
+288V_2 = STCHI(MR_288V_1) 	pts{3243 }
+SourceLoc->{ "ln": 392, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_282V_2) 	pts{3237 }
+SourceLoc->{ "ln": 394, "cl": 26, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_284V_2) 	pts{3239 }
+SourceLoc->{ "ln": 394, "cl": 31, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_286V_2) 	pts{3241 }
+SourceLoc->{ "ln": 394, "cl": 37, "fl": "drivers/usb/early/ehci-dbgp.c" }
+288V_3 = STCHI(MR_288V_2) 	pts{3243 }
+SourceLoc->{ "ln": 394, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_288V_3) 	pts{3243 }
+SourceLoc->{ "ln": 395, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+280V_4 = STCHI(MR_280V_1) 	pts{3235 }
+SourceLoc->{ "ln": 396, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_282V_2) 	pts{3237 }
+SourceLoc->{ "ln": 398, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_284V_2) 	pts{3239 }
+SourceLoc->{ "ln": 398, "cl": 23, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_286V_2) 	pts{3241 }
+SourceLoc->{ "ln": 398, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+280V_2 = STCHI(MR_280V_1) 	pts{3235 }
+SourceLoc->{ "ln": 398, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_280V_3) 	pts{3235 }
+SourceLoc->{ "ln": 399, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: find_cap==========
+111V_2 = STCHI(MR_111V_1) 	pts{3301 }
+SourceLoc->{ "ln": 366, "cl": 5, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+113V_2 = STCHI(MR_113V_1) 	pts{3303 }
+SourceLoc->{ "ln": 367, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_103V_2) 	pts{3293 }
+SourceLoc->{ "ln": 369, "cl": 27, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_105V_2) 	pts{3295 }
+SourceLoc->{ "ln": 369, "cl": 32, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_107V_2) 	pts{3297 }
+SourceLoc->{ "ln": 369, "cl": 38, "fl": "drivers/usb/early/ehci-dbgp.c" }
+101V_2 = STCHI(MR_101V_1) 	pts{3291 }
+SourceLoc->{ "ln": 371, "cl": 3, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_103V_2) 	pts{3293 }
+SourceLoc->{ "ln": 373, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_105V_2) 	pts{3295 }
+SourceLoc->{ "ln": 373, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_107V_2) 	pts{3297 }
+SourceLoc->{ "ln": 373, "cl": 40, "fl": "drivers/usb/early/ehci-dbgp.c" }
+111V_4 = STCHI(MR_111V_2) 	pts{3301 }
+SourceLoc->{ "ln": 373, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+113V_4 = STCHI(MR_113V_2) 	pts{3303 }
+SourceLoc->{ "ln": 374, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_113V_5) 	pts{3303 }
+SourceLoc->{ "ln": 374, "cl": 18, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_111V_5) 	pts{3301 }
+SourceLoc->{ "ln": 374, "cl": 32, "fl": "drivers/usb/early/ehci-dbgp.c" }
+117V_5 = STCHI(MR_117V_3) 	pts{3307 }
+SourceLoc->{ "ln": 375, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_111V_5) 	pts{3301 }
+SourceLoc->{ "ln": 377, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+111V_7 = STCHI(MR_111V_5) 	pts{3301 }
+SourceLoc->{ "ln": 377, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_103V_2) 	pts{3293 }
+SourceLoc->{ "ln": 378, "cl": 29, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_105V_2) 	pts{3295 }
+SourceLoc->{ "ln": 378, "cl": 34, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_107V_2) 	pts{3297 }
+SourceLoc->{ "ln": 378, "cl": 40, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_111V_7) 	pts{3301 }
+SourceLoc->{ "ln": 378, "cl": 46, "fl": "drivers/usb/early/ehci-dbgp.c" }
+117V_6 = STCHI(MR_117V_5) 	pts{3307 }
+SourceLoc->{ "ln": 378, "cl": 6, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_117V_6) 	pts{3307 }
+SourceLoc->{ "ln": 379, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_117V_6) 	pts{3307 }
+SourceLoc->{ "ln": 381, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_109V_2) 	pts{3299 }
+SourceLoc->{ "ln": 381, "cl": 13, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_111V_7) 	pts{3301 }
+SourceLoc->{ "ln": 382, "cl": 11, "fl": "drivers/usb/early/ehci-dbgp.c" }
+101V_7 = STCHI(MR_101V_4) 	pts{3291 }
+SourceLoc->{ "ln": 382, "cl": 4, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_103V_2) 	pts{3293 }
+SourceLoc->{ "ln": 384, "cl": 30, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_105V_2) 	pts{3295 }
+SourceLoc->{ "ln": 384, "cl": 35, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_107V_2) 	pts{3297 }
+SourceLoc->{ "ln": 384, "cl": 41, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+LDMU(MR_111V_7) 	pts{3301 }
+SourceLoc->{ "ln": 385, "cl": 8, "fl": "drivers/usb/early/ehci-dbgp.c" }
+111V_8 = STCHI(MR_111V_7) 	pts{3301 }
+SourceLoc->{ "ln": 384, "cl": 7, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+115V_7 = STCHI(MR_115V_4) 	pts{3305 }
+SourceLoc->{ "ln": 386, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_113V_5) 	pts{3303 }
+SourceLoc->{ "ln": 374, "cl": 50, "fl": "drivers/usb/early/ehci-dbgp.c" }
+113V_6 = STCHI(MR_113V_5) 	pts{3303 }
+SourceLoc->{ "ln": 374, "cl": 50, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+101V_6 = STCHI(MR_101V_5) 	pts{3291 }
+SourceLoc->{ "ln": 387, "cl": 2, "fl": "drivers/usb/early/ehci-dbgp.c" }
+
+
+LDMU(MR_101V_3) 	pts{3291 }
+SourceLoc->{ "ln": 388, "cl": 1, "fl": "drivers/usb/early/ehci-dbgp.c" }
+==========FUNCTION: llvm.dbg.declare==========
+==========FUNCTION: llvm.lifetime.start.p0==========
+==========FUNCTION: llvm.memset.p0.i64==========
+==========FUNCTION: llvm.expect.i64==========
+==========FUNCTION: llvm.lifetime.end.p0==========
+==========FUNCTION: llvm.dbg.label==========
+==========FUNCTION: llvm.is.constant.i64==========
+==========FUNCTION: __bad_udelay==========
+==========FUNCTION: __const_udelay==========
+==========FUNCTION: __udelay==========
+==========FUNCTION: early_pci_allowed==========
+==========FUNCTION: simple_strtoul==========
+==========FUNCTION: read_pci_config==========
+==========FUNCTION: read_pci_config_byte==========
+==========FUNCTION: write_pci_config_byte==========
+==========FUNCTION: cachemode2protval==========
+==========FUNCTION: write_pci_config==========
+==========FUNCTION: native_set_fixmap==========
+==========FUNCTION: read_pci_config_16==========

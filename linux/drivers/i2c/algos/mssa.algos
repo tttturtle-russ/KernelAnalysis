@@ -1,0 +1,1614 @@
+==========FUNCTION: bit_xfer==========
+224V_2 = STCHI(MR_224V_1) 	pts{81 }
+SourceLoc->{ "ln": 523, "cl": 18, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+226V_2 = STCHI(MR_226V_1) 	pts{83 }
+SourceLoc->{ "ln": 524, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_218V_2) 	pts{75 }
+SourceLoc->{ "ln": 524, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+226V_3 = STCHI(MR_226V_2) 	pts{83 }
+SourceLoc->{ "ln": 524, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+228V_2 = STCHI(MR_228V_1) 	pts{85 }
+SourceLoc->{ "ln": 525, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+230V_2 = STCHI(MR_230V_1) 	pts{87 }
+SourceLoc->{ "ln": 525, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+232V_2 = STCHI(MR_232V_1) 	pts{89 }
+SourceLoc->{ "ln": 526, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_226V_3) 	pts{83 }
+SourceLoc->{ "ln": 528, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_226V_3) 	pts{83 }
+SourceLoc->{ "ln": 529, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_218V_2) 	pts{75 }
+SourceLoc->{ "ln": 529, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+230V_17 = STCHI(MR_230V_2) 	pts{87 }
+SourceLoc->{ "ln": 529, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_17) 	pts{87 }
+SourceLoc->{ "ln": 530, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_17) 	pts{87 }
+SourceLoc->{ "ln": 531, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+216V_4 = STCHI(MR_216V_1) 	pts{72 }
+SourceLoc->{ "ln": 531, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_226V_3) 	pts{83 }
+SourceLoc->{ "ln": 535, "cl": 12, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+228V_3 = STCHI(MR_228V_2) 	pts{85 }
+SourceLoc->{ "ln": 536, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_228V_4) 	pts{85 }
+SourceLoc->{ "ln": 536, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_222V_2) 	pts{79 }
+SourceLoc->{ "ln": 536, "cl": 18, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_220V_2) 	pts{77 }
+SourceLoc->{ "ln": 537, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_228V_4) 	pts{85 }
+SourceLoc->{ "ln": 537, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+224V_5 = STCHI(MR_224V_3) 	pts{81 }
+SourceLoc->{ "ln": 537, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_224V_5) 	pts{81 }
+SourceLoc->{ "ln": 538, "cl": 12, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+232V_5 = STCHI(MR_232V_3) 	pts{89 }
+SourceLoc->{ "ln": 538, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_224V_5) 	pts{81 }
+SourceLoc->{ "ln": 539, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_228V_4) 	pts{85 }
+SourceLoc->{ "ln": 540, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_220V_2) 	pts{77 }
+SourceLoc->{ "ln": 541, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_228V_4) 	pts{85 }
+SourceLoc->{ "ln": 541, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_226V_3) 	pts{83 }
+SourceLoc->{ "ln": 544, "cl": 15, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_226V_3) 	pts{83 }
+SourceLoc->{ "ln": 545, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_226V_3) 	pts{83 }
+SourceLoc->{ "ln": 549, "cl": 19, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_218V_2) 	pts{75 }
+SourceLoc->{ "ln": 552, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_224V_5) 	pts{81 }
+SourceLoc->{ "ln": 552, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+230V_7 = STCHI(MR_230V_4) 	pts{87 }
+SourceLoc->{ "ln": 552, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_7) 	pts{87 }
+SourceLoc->{ "ln": 553, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_232V_5) 	pts{89 }
+SourceLoc->{ "ln": 553, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_224V_5) 	pts{81 }
+SourceLoc->{ "ln": 560, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_218V_2) 	pts{75 }
+SourceLoc->{ "ln": 562, "cl": 20, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_224V_5) 	pts{81 }
+SourceLoc->{ "ln": 562, "cl": 30, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+230V_13 = STCHI(MR_230V_8) 	pts{87 }
+SourceLoc->{ "ln": 562, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_13) 	pts{87 }
+SourceLoc->{ "ln": 563, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_13) 	pts{87 }
+SourceLoc->{ "ln": 566, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_224V_5) 	pts{81 }
+SourceLoc->{ "ln": 566, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_13) 	pts{87 }
+SourceLoc->{ "ln": 567, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+230V_15 = STCHI(MR_230V_13) 	pts{87 }
+SourceLoc->{ "ln": 568, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_218V_2) 	pts{75 }
+SourceLoc->{ "ln": 573, "cl": 20, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_224V_5) 	pts{81 }
+SourceLoc->{ "ln": 573, "cl": 30, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+230V_9 = STCHI(MR_230V_8) 	pts{87 }
+SourceLoc->{ "ln": 573, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_9) 	pts{87 }
+SourceLoc->{ "ln": 574, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_9) 	pts{87 }
+SourceLoc->{ "ln": 577, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_224V_5) 	pts{81 }
+SourceLoc->{ "ln": 577, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_9) 	pts{87 }
+SourceLoc->{ "ln": 578, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+230V_11 = STCHI(MR_230V_9) 	pts{87 }
+SourceLoc->{ "ln": 579, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_228V_4) 	pts{85 }
+SourceLoc->{ "ln": 536, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+228V_5 = STCHI(MR_228V_4) 	pts{85 }
+SourceLoc->{ "ln": 536, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_228V_4) 	pts{85 }
+SourceLoc->{ "ln": 584, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+230V_5 = STCHI(MR_230V_4) 	pts{87 }
+SourceLoc->{ "ln": 584, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_226V_3) 	pts{83 }
+SourceLoc->{ "ln": 588, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_226V_3) 	pts{83 }
+SourceLoc->{ "ln": 590, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_226V_3) 	pts{83 }
+SourceLoc->{ "ln": 591, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_218V_2) 	pts{75 }
+SourceLoc->{ "ln": 591, "cl": 19, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_230V_6) 	pts{87 }
+SourceLoc->{ "ln": 592, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+216V_2 = STCHI(MR_216V_1) 	pts{72 }
+SourceLoc->{ "ln": 592, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_216V_3) 	pts{72 }
+SourceLoc->{ "ln": 593, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: bit_xfer_atomic==========
+114V_2 = STCHI(MR_114V_1) 	pts{377 }
+SourceLoc->{ "ln": 604, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_108V_2) 	pts{371 }
+SourceLoc->{ "ln": 604, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+114V_3 = STCHI(MR_114V_2) 	pts{377 }
+SourceLoc->{ "ln": 604, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_114V_3) 	pts{377 }
+SourceLoc->{ "ln": 606, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_108V_2) 	pts{371 }
+SourceLoc->{ "ln": 607, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_108V_2) 	pts{371 }
+SourceLoc->{ "ln": 609, "cl": 18, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_110V_2) 	pts{373 }
+SourceLoc->{ "ln": 609, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_112V_2) 	pts{375 }
+SourceLoc->{ "ln": 609, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+==========FUNCTION: bit_func==========
+==========FUNCTION: i2c_start==========
+
+LDMU(MR_119V_2) 	pts{444 }
+SourceLoc->{ "ln": 118, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_119V_2) 	pts{444 }
+SourceLoc->{ "ln": 118, "cl": 15, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_119V_2) 	pts{444 }
+SourceLoc->{ "ln": 119, "cl": 30, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_119V_2) 	pts{444 }
+SourceLoc->{ "ln": 119, "cl": 52, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_119V_2) 	pts{444 }
+SourceLoc->{ "ln": 119, "cl": 117, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_119V_2) 	pts{444 }
+SourceLoc->{ "ln": 119, "cl": 162, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_119V_2) 	pts{444 }
+SourceLoc->{ "ln": 120, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: i2c_stop==========
+
+LDMU(MR_117V_2) 	pts{502 }
+SourceLoc->{ "ln": 137, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_117V_2) 	pts{502 }
+SourceLoc->{ "ln": 138, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_117V_2) 	pts{502 }
+SourceLoc->{ "ln": 139, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_117V_2) 	pts{502 }
+SourceLoc->{ "ln": 139, "cl": 15, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_117V_2) 	pts{502 }
+SourceLoc->{ "ln": 140, "cl": 30, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_117V_2) 	pts{502 }
+SourceLoc->{ "ln": 140, "cl": 52, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_117V_2) 	pts{502 }
+SourceLoc->{ "ln": 140, "cl": 117, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_117V_2) 	pts{502 }
+SourceLoc->{ "ln": 140, "cl": 162, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: i2c_repstart==========
+
+LDMU(MR_122V_2) 	pts{553 }
+SourceLoc->{ "ln": 126, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_122V_2) 	pts{553 }
+SourceLoc->{ "ln": 127, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_122V_2) 	pts{553 }
+SourceLoc->{ "ln": 128, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_122V_2) 	pts{553 }
+SourceLoc->{ "ln": 128, "cl": 15, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_122V_2) 	pts{553 }
+SourceLoc->{ "ln": 129, "cl": 30, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_122V_2) 	pts{553 }
+SourceLoc->{ "ln": 129, "cl": 52, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_122V_2) 	pts{553 }
+SourceLoc->{ "ln": 129, "cl": 117, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_122V_2) 	pts{553 }
+SourceLoc->{ "ln": 129, "cl": 162, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_122V_2) 	pts{553 }
+SourceLoc->{ "ln": 130, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: bit_doAddress==========
+131V_2 = STCHI(MR_131V_1) 	pts{611 }
+SourceLoc->{ "ln": 468, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_129V_2) 	pts{609 }
+SourceLoc->{ "ln": 468, "cl": 25, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+131V_3 = STCHI(MR_131V_2) 	pts{611 }
+SourceLoc->{ "ln": 468, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+133V_2 = STCHI(MR_133V_1) 	pts{613 }
+SourceLoc->{ "ln": 469, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_129V_2) 	pts{609 }
+SourceLoc->{ "ln": 469, "cl": 26, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+133V_3 = STCHI(MR_133V_2) 	pts{613 }
+SourceLoc->{ "ln": 469, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+135V_2 = STCHI(MR_135V_1) 	pts{615 }
+SourceLoc->{ "ln": 470, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_127V_2) 	pts{607 }
+SourceLoc->{ "ln": 470, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+135V_3 = STCHI(MR_135V_2) 	pts{615 }
+SourceLoc->{ "ln": 470, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+137V_2 = STCHI(MR_137V_1) 	pts{617 }
+SourceLoc->{ "ln": 472, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+139V_2 = STCHI(MR_139V_1) 	pts{619 }
+SourceLoc->{ "ln": 473, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+141V_2 = STCHI(MR_141V_1) 	pts{621 }
+SourceLoc->{ "ln": 473, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_133V_3) 	pts{613 }
+SourceLoc->{ "ln": 475, "cl": 12, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_127V_2) 	pts{607 }
+SourceLoc->{ "ln": 475, "cl": 25, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+141V_3 = STCHI(MR_141V_2) 	pts{621 }
+SourceLoc->{ "ln": 475, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_131V_3) 	pts{611 }
+SourceLoc->{ "ln": 477, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_129V_2) 	pts{609 }
+SourceLoc->{ "ln": 479, "cl": 19, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+137V_8 = STCHI(MR_137V_2) 	pts{617 }
+SourceLoc->{ "ln": 479, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_127V_2) 	pts{607 }
+SourceLoc->{ "ln": 482, "cl": 21, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_137V_8) 	pts{617 }
+SourceLoc->{ "ln": 482, "cl": 31, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_141V_3) 	pts{621 }
+SourceLoc->{ "ln": 482, "cl": 37, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+139V_6 = STCHI(MR_139V_2) 	pts{619 }
+SourceLoc->{ "ln": 482, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_139V_6) 	pts{619 }
+SourceLoc->{ "ln": 483, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_133V_3) 	pts{613 }
+SourceLoc->{ "ln": 483, "cl": 22, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_127V_2) 	pts{607 }
+SourceLoc->{ "ln": 484, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+125V_7 = STCHI(MR_125V_1) 	pts{605 }
+SourceLoc->{ "ln": 486, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_127V_2) 	pts{607 }
+SourceLoc->{ "ln": 489, "cl": 18, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_129V_2) 	pts{609 }
+SourceLoc->{ "ln": 489, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+139V_7 = STCHI(MR_139V_6) 	pts{619 }
+SourceLoc->{ "ln": 489, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_139V_7) 	pts{619 }
+SourceLoc->{ "ln": 490, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_133V_3) 	pts{613 }
+SourceLoc->{ "ln": 490, "cl": 22, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_127V_2) 	pts{607 }
+SourceLoc->{ "ln": 492, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+125V_6 = STCHI(MR_125V_1) 	pts{605 }
+SourceLoc->{ "ln": 493, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_131V_3) 	pts{611 }
+SourceLoc->{ "ln": 495, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_135V_3) 	pts{615 }
+SourceLoc->{ "ln": 498, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_137V_8) 	pts{617 }
+SourceLoc->{ "ln": 500, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+137V_10 = STCHI(MR_137V_8) 	pts{617 }
+SourceLoc->{ "ln": 500, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_127V_2) 	pts{607 }
+SourceLoc->{ "ln": 501, "cl": 22, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_137V_10) 	pts{617 }
+SourceLoc->{ "ln": 501, "cl": 32, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_141V_3) 	pts{621 }
+SourceLoc->{ "ln": 501, "cl": 38, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+139V_9 = STCHI(MR_139V_7) 	pts{619 }
+SourceLoc->{ "ln": 501, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_139V_9) 	pts{619 }
+SourceLoc->{ "ln": 502, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_133V_3) 	pts{613 }
+SourceLoc->{ "ln": 502, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_127V_2) 	pts{607 }
+SourceLoc->{ "ln": 503, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+125V_5 = STCHI(MR_125V_1) 	pts{605 }
+SourceLoc->{ "ln": 505, "cl": 5, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_129V_2) 	pts{609 }
+SourceLoc->{ "ln": 509, "cl": 33, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+137V_4 = STCHI(MR_137V_2) 	pts{617 }
+SourceLoc->{ "ln": 509, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_131V_3) 	pts{611 }
+SourceLoc->{ "ln": 510, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_137V_4) 	pts{617 }
+SourceLoc->{ "ln": 511, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+137V_6 = STCHI(MR_137V_4) 	pts{617 }
+SourceLoc->{ "ln": 511, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_127V_2) 	pts{607 }
+SourceLoc->{ "ln": 512, "cl": 21, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_137V_5) 	pts{617 }
+SourceLoc->{ "ln": 512, "cl": 31, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_141V_3) 	pts{621 }
+SourceLoc->{ "ln": 512, "cl": 37, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+139V_4 = STCHI(MR_139V_2) 	pts{619 }
+SourceLoc->{ "ln": 512, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_139V_4) 	pts{619 }
+SourceLoc->{ "ln": 513, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_133V_3) 	pts{613 }
+SourceLoc->{ "ln": 513, "cl": 22, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+125V_3 = STCHI(MR_125V_1) 	pts{605 }
+SourceLoc->{ "ln": 514, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+125V_4 = STCHI(MR_125V_1) 	pts{605 }
+SourceLoc->{ "ln": 517, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_125V_2) 	pts{605 }
+SourceLoc->{ "ln": 518, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: readbytes==========
+188V_2 = STCHI(MR_188V_1) 	pts{855 }
+SourceLoc->{ "ln": 403, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+190V_2 = STCHI(MR_190V_1) 	pts{857 }
+SourceLoc->{ "ln": 404, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+190V_3 = STCHI(MR_190V_2) 	pts{857 }
+SourceLoc->{ "ln": 404, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+192V_2 = STCHI(MR_192V_1) 	pts{859 }
+SourceLoc->{ "ln": 405, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_186V_2) 	pts{853 }
+SourceLoc->{ "ln": 405, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+192V_3 = STCHI(MR_192V_2) 	pts{859 }
+SourceLoc->{ "ln": 405, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+194V_2 = STCHI(MR_194V_1) 	pts{861 }
+SourceLoc->{ "ln": 406, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_186V_2) 	pts{853 }
+SourceLoc->{ "ln": 406, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+194V_3 = STCHI(MR_194V_2) 	pts{861 }
+SourceLoc->{ "ln": 406, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+196V_2 = STCHI(MR_196V_1) 	pts{863 }
+SourceLoc->{ "ln": 407, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_186V_2) 	pts{853 }
+SourceLoc->{ "ln": 407, "cl": 25, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+196V_3 = STCHI(MR_196V_2) 	pts{863 }
+SourceLoc->{ "ln": 407, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+198V_2 = STCHI(MR_198V_1) 	pts{865 }
+SourceLoc->{ "ln": 408, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_184V_2) 	pts{851 }
+SourceLoc->{ "ln": 408, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+198V_3 = STCHI(MR_198V_2) 	pts{865 }
+SourceLoc->{ "ln": 408, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_198V_3) 	pts{865 }
+SourceLoc->{ "ln": 410, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+182V_2 = STCHI(MR_182V_1) 	pts{849 }
+SourceLoc->{ "ln": 411, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_194V_5) 	pts{861 }
+SourceLoc->{ "ln": 413, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_184V_2) 	pts{851 }
+SourceLoc->{ "ln": 414, "cl": 19, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+188V_6 = STCHI(MR_188V_4) 	pts{855 }
+SourceLoc->{ "ln": 414, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_188V_6) 	pts{855 }
+SourceLoc->{ "ln": 415, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_188V_6) 	pts{855 }
+SourceLoc->{ "ln": 416, "cl": 12, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_192V_5) 	pts{859 }
+SourceLoc->{ "ln": 416, "cl": 5, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_190V_5) 	pts{857 }
+SourceLoc->{ "ln": 417, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+190V_6 = STCHI(MR_190V_5) 	pts{857 }
+SourceLoc->{ "ln": 417, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_192V_5) 	pts{859 }
+SourceLoc->{ "ln": 422, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+192V_6 = STCHI(MR_192V_5) 	pts{859 }
+SourceLoc->{ "ln": 422, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_194V_5) 	pts{861 }
+SourceLoc->{ "ln": 423, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+194V_6 = STCHI(MR_194V_5) 	pts{861 }
+SourceLoc->{ "ln": 423, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_190V_6) 	pts{857 }
+SourceLoc->{ "ln": 427, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_196V_3) 	pts{863 }
+SourceLoc->{ "ln": 427, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_188V_6) 	pts{855 }
+SourceLoc->{ "ln": 428, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_188V_6) 	pts{855 }
+SourceLoc->{ "ln": 428, "cl": 22, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_196V_3) 	pts{863 }
+SourceLoc->{ "ln": 429, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_184V_2) 	pts{851 }
+SourceLoc->{ "ln": 430, "cl": 13, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_184V_2) 	pts{851 }
+SourceLoc->{ "ln": 431, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_188V_6) 	pts{855 }
+SourceLoc->{ "ln": 431, "cl": 92, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+182V_6 = STCHI(MR_182V_1) 	pts{849 }
+SourceLoc->{ "ln": 434, "cl": 5, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_188V_6) 	pts{855 }
+SourceLoc->{ "ln": 439, "cl": 13, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_194V_6) 	pts{861 }
+SourceLoc->{ "ln": 439, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+194V_8 = STCHI(MR_194V_6) 	pts{861 }
+SourceLoc->{ "ln": 439, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_188V_6) 	pts{855 }
+SourceLoc->{ "ln": 440, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_186V_2) 	pts{853 }
+SourceLoc->{ "ln": 440, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_196V_3) 	pts{863 }
+SourceLoc->{ "ln": 449, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_184V_2) 	pts{851 }
+SourceLoc->{ "ln": 450, "cl": 19, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_194V_7) 	pts{861 }
+SourceLoc->{ "ln": 450, "cl": 29, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+188V_7 = STCHI(MR_188V_6) 	pts{855 }
+SourceLoc->{ "ln": 450, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_188V_7) 	pts{855 }
+SourceLoc->{ "ln": 451, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_188V_7) 	pts{855 }
+SourceLoc->{ "ln": 452, "cl": 12, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+182V_5 = STCHI(MR_182V_1) 	pts{849 }
+SourceLoc->{ "ln": 452, "cl": 5, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_190V_5) 	pts{857 }
+SourceLoc->{ "ln": 455, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+182V_4 = STCHI(MR_182V_1) 	pts{849 }
+SourceLoc->{ "ln": 455, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_182V_3) 	pts{849 }
+SourceLoc->{ "ln": 456, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: sendbytes==========
+152V_2 = STCHI(MR_152V_1) 	pts{1050 }
+SourceLoc->{ "ln": 346, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_150V_2) 	pts{1048 }
+SourceLoc->{ "ln": 346, "cl": 30, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+152V_3 = STCHI(MR_152V_2) 	pts{1050 }
+SourceLoc->{ "ln": 346, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+154V_2 = STCHI(MR_154V_1) 	pts{1052 }
+SourceLoc->{ "ln": 347, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_150V_2) 	pts{1048 }
+SourceLoc->{ "ln": 347, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+154V_3 = STCHI(MR_154V_2) 	pts{1052 }
+SourceLoc->{ "ln": 347, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+156V_2 = STCHI(MR_156V_1) 	pts{1054 }
+SourceLoc->{ "ln": 348, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_150V_2) 	pts{1048 }
+SourceLoc->{ "ln": 348, "cl": 26, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+156V_3 = STCHI(MR_156V_2) 	pts{1054 }
+SourceLoc->{ "ln": 348, "cl": 17, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+158V_2 = STCHI(MR_158V_1) 	pts{1056 }
+SourceLoc->{ "ln": 349, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+160V_2 = STCHI(MR_160V_1) 	pts{1058 }
+SourceLoc->{ "ln": 350, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+160V_3 = STCHI(MR_160V_2) 	pts{1058 }
+SourceLoc->{ "ln": 350, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_154V_4) 	pts{1052 }
+SourceLoc->{ "ln": 352, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_148V_2) 	pts{1046 }
+SourceLoc->{ "ln": 353, "cl": 21, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_152V_4) 	pts{1050 }
+SourceLoc->{ "ln": 353, "cl": 32, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+158V_5 = STCHI(MR_158V_3) 	pts{1056 }
+SourceLoc->{ "ln": 353, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_158V_5) 	pts{1056 }
+SourceLoc->{ "ln": 356, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_156V_3) 	pts{1054 }
+SourceLoc->{ "ln": 356, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_158V_5) 	pts{1056 }
+SourceLoc->{ "ln": 356, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_154V_4) 	pts{1052 }
+SourceLoc->{ "ln": 357, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+154V_5 = STCHI(MR_154V_4) 	pts{1052 }
+SourceLoc->{ "ln": 357, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_152V_4) 	pts{1050 }
+SourceLoc->{ "ln": 358, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+152V_5 = STCHI(MR_152V_4) 	pts{1050 }
+SourceLoc->{ "ln": 358, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_160V_4) 	pts{1058 }
+SourceLoc->{ "ln": 359, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+160V_5 = STCHI(MR_160V_4) 	pts{1058 }
+SourceLoc->{ "ln": 359, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_158V_5) 	pts{1056 }
+SourceLoc->{ "ln": 365, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_148V_2) 	pts{1046 }
+SourceLoc->{ "ln": 366, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+146V_5 = STCHI(MR_146V_1) 	pts{1044 }
+SourceLoc->{ "ln": 367, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_148V_2) 	pts{1046 }
+SourceLoc->{ "ln": 377, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_158V_5) 	pts{1056 }
+SourceLoc->{ "ln": 377, "cl": 74, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_158V_5) 	pts{1056 }
+SourceLoc->{ "ln": 379, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+146V_4 = STCHI(MR_146V_1) 	pts{1044 }
+SourceLoc->{ "ln": 379, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_160V_4) 	pts{1058 }
+SourceLoc->{ "ln": 382, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+146V_2 = STCHI(MR_146V_1) 	pts{1044 }
+SourceLoc->{ "ln": 382, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_146V_3) 	pts{1044 }
+SourceLoc->{ "ln": 383, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: i2c_outb==========
+171V_2 = STCHI(MR_171V_1) 	pts{1184 }
+SourceLoc->{ "ln": 154, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+173V_2 = STCHI(MR_173V_1) 	pts{1186 }
+SourceLoc->{ "ln": 155, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+175V_2 = STCHI(MR_175V_1) 	pts{1188 }
+SourceLoc->{ "ln": 156, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+177V_2 = STCHI(MR_177V_1) 	pts{1190 }
+SourceLoc->{ "ln": 157, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_167V_2) 	pts{1180 }
+SourceLoc->{ "ln": 157, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+177V_3 = STCHI(MR_177V_2) 	pts{1190 }
+SourceLoc->{ "ln": 157, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+171V_3 = STCHI(MR_171V_2) 	pts{1184 }
+SourceLoc->{ "ln": 160, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_171V_4) 	pts{1184 }
+SourceLoc->{ "ln": 160, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_169V_2) 	pts{1182 }
+SourceLoc->{ "ln": 161, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_171V_4) 	pts{1184 }
+SourceLoc->{ "ln": 161, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+173V_5 = STCHI(MR_173V_3) 	pts{1186 }
+SourceLoc->{ "ln": 161, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 162, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 162, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_173V_5) 	pts{1186 }
+SourceLoc->{ "ln": 162, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 163, "cl": 32, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 163, "cl": 64, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 163, "cl": 139, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 163, "cl": 194, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 164, "cl": 13, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+165V_5 = STCHI(MR_165V_1) 	pts{1178 }
+SourceLoc->{ "ln": 168, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 176, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_171V_4) 	pts{1184 }
+SourceLoc->{ "ln": 160, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+171V_5 = STCHI(MR_171V_4) 	pts{1184 }
+SourceLoc->{ "ln": 160, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 178, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 179, "cl": 12, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+165V_3 = STCHI(MR_165V_1) 	pts{1178 }
+SourceLoc->{ "ln": 182, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 189, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 189, "cl": 26, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 189, "cl": 39, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+175V_3 = STCHI(MR_175V_2) 	pts{1188 }
+SourceLoc->{ "ln": 189, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_177V_3) 	pts{1190 }
+SourceLoc->{ "ln": 193, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_175V_3) 	pts{1188 }
+SourceLoc->{ "ln": 194, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+165V_2 = STCHI(MR_165V_1) 	pts{1178 }
+SourceLoc->{ "ln": 194, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_165V_4) 	pts{1178 }
+SourceLoc->{ "ln": 196, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: sclhi==========
+211V_2 = STCHI(MR_211V_1) 	pts{1364 }
+SourceLoc->{ "ln": 77, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 79, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 79, "cl": 15, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 82, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_4V_1) 	pts{39 }
+SourceLoc->{ "ln": 85, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+211V_5 = STCHI(MR_211V_2) 	pts{1364 }
+SourceLoc->{ "ln": 85, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 86, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 86, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_211V_5) 	pts{1364 }
+SourceLoc->{ "ln": 92, "cl": 215, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 92, "cl": 223, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_4V_1) 	pts{39 }
+SourceLoc->{ "ln": 92, "cl": 241, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 96, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 96, "cl": 21, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+207V_4 = STCHI(MR_207V_1) 	pts{1360 }
+SourceLoc->{ "ln": 98, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 109, "cl": 30, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 109, "cl": 52, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 109, "cl": 117, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_209V_2) 	pts{1362 }
+SourceLoc->{ "ln": 109, "cl": 162, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+207V_3 = STCHI(MR_207V_1) 	pts{1360 }
+SourceLoc->{ "ln": 110, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_207V_2) 	pts{1360 }
+SourceLoc->{ "ln": 111, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: scllo==========
+
+LDMU(MR_202V_2) 	pts{1471 }
+SourceLoc->{ "ln": 67, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_202V_2) 	pts{1471 }
+SourceLoc->{ "ln": 67, "cl": 15, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_202V_2) 	pts{1471 }
+SourceLoc->{ "ln": 68, "cl": 30, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_202V_2) 	pts{1471 }
+SourceLoc->{ "ln": 68, "cl": 56, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_202V_2) 	pts{1471 }
+SourceLoc->{ "ln": 68, "cl": 125, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_202V_2) 	pts{1471 }
+SourceLoc->{ "ln": 68, "cl": 174, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: sdahi==========
+
+LDMU(MR_236V_2) 	pts{1518 }
+SourceLoc->{ "ln": 61, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_236V_2) 	pts{1518 }
+SourceLoc->{ "ln": 61, "cl": 15, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_236V_2) 	pts{1518 }
+SourceLoc->{ "ln": 62, "cl": 31, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_236V_2) 	pts{1518 }
+SourceLoc->{ "ln": 62, "cl": 63, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_236V_2) 	pts{1518 }
+SourceLoc->{ "ln": 62, "cl": 138, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_236V_2) 	pts{1518 }
+SourceLoc->{ "ln": 62, "cl": 193, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: cpu_relax==========
+==========FUNCTION: rep_nop==========
+==========FUNCTION: i2c_inb==========
+99V_2 = STCHI(MR_99V_1) 	pts{1582 }
+SourceLoc->{ "ln": 203, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+101V_2 = STCHI(MR_101V_1) 	pts{1584 }
+SourceLoc->{ "ln": 204, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+101V_3 = STCHI(MR_101V_2) 	pts{1584 }
+SourceLoc->{ "ln": 204, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+103V_2 = STCHI(MR_103V_1) 	pts{1586 }
+SourceLoc->{ "ln": 205, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_97V_2) 	pts{1580 }
+SourceLoc->{ "ln": 205, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+103V_3 = STCHI(MR_103V_2) 	pts{1586 }
+SourceLoc->{ "ln": 205, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 208, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+99V_3 = STCHI(MR_99V_2) 	pts{1582 }
+SourceLoc->{ "ln": 209, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_99V_4) 	pts{1582 }
+SourceLoc->{ "ln": 209, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 210, "cl": 13, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+95V_4 = STCHI(MR_95V_1) 	pts{1578 }
+SourceLoc->{ "ln": 214, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_101V_4) 	pts{1584 }
+SourceLoc->{ "ln": 216, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+101V_5 = STCHI(MR_101V_4) 	pts{1584 }
+SourceLoc->{ "ln": 216, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 217, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 217, "cl": 20, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_101V_5) 	pts{1584 }
+SourceLoc->{ "ln": 218, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+101V_7 = STCHI(MR_101V_5) 	pts{1584 }
+SourceLoc->{ "ln": 218, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 219, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 219, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_99V_4) 	pts{1582 }
+SourceLoc->{ "ln": 220, "cl": 31, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 220, "cl": 40, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 220, "cl": 59, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_99V_4) 	pts{1582 }
+SourceLoc->{ "ln": 220, "cl": 81, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 220, "cl": 90, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 220, "cl": 109, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_99V_4) 	pts{1582 }
+SourceLoc->{ "ln": 220, "cl": 174, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 220, "cl": 183, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 220, "cl": 202, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_99V_4) 	pts{1582 }
+SourceLoc->{ "ln": 220, "cl": 247, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 220, "cl": 256, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_103V_3) 	pts{1586 }
+SourceLoc->{ "ln": 220, "cl": 275, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_99V_4) 	pts{1582 }
+SourceLoc->{ "ln": 209, "cl": 22, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+99V_5 = STCHI(MR_99V_4) 	pts{1582 }
+SourceLoc->{ "ln": 209, "cl": 22, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_101V_4) 	pts{1584 }
+SourceLoc->{ "ln": 223, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+95V_3 = STCHI(MR_95V_1) 	pts{1578 }
+SourceLoc->{ "ln": 223, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_95V_2) 	pts{1578 }
+SourceLoc->{ "ln": 224, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: acknak==========
+90V_2 = STCHI(MR_90V_1) 	pts{1754 }
+SourceLoc->{ "ln": 387, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_86V_2) 	pts{1750 }
+SourceLoc->{ "ln": 387, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+90V_3 = STCHI(MR_90V_2) 	pts{1754 }
+SourceLoc->{ "ln": 387, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_88V_2) 	pts{1752 }
+SourceLoc->{ "ln": 390, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_90V_3) 	pts{1754 }
+SourceLoc->{ "ln": 391, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_90V_3) 	pts{1754 }
+SourceLoc->{ "ln": 391, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_90V_3) 	pts{1754 }
+SourceLoc->{ "ln": 392, "cl": 31, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_90V_3) 	pts{1754 }
+SourceLoc->{ "ln": 392, "cl": 63, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_90V_3) 	pts{1754 }
+SourceLoc->{ "ln": 392, "cl": 138, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_90V_3) 	pts{1754 }
+SourceLoc->{ "ln": 392, "cl": 193, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_90V_3) 	pts{1754 }
+SourceLoc->{ "ln": 393, "cl": 12, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_86V_2) 	pts{1750 }
+SourceLoc->{ "ln": 394, "cl": 33, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+84V_4 = STCHI(MR_84V_1) 	pts{1748 }
+SourceLoc->{ "ln": 395, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_90V_3) 	pts{1754 }
+SourceLoc->{ "ln": 397, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+84V_2 = STCHI(MR_84V_1) 	pts{1748 }
+SourceLoc->{ "ln": 398, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_84V_3) 	pts{1748 }
+SourceLoc->{ "ln": 399, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: try_address==========
+36V_2 = STCHI(MR_36V_1) 	pts{1853 }
+SourceLoc->{ "ln": 322, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_30V_2) 	pts{1847 }
+SourceLoc->{ "ln": 322, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+36V_3 = STCHI(MR_36V_2) 	pts{1853 }
+SourceLoc->{ "ln": 322, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+38V_2 = STCHI(MR_38V_1) 	pts{1855 }
+SourceLoc->{ "ln": 323, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+40V_2 = STCHI(MR_40V_1) 	pts{1857 }
+SourceLoc->{ "ln": 323, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+40V_3 = STCHI(MR_40V_2) 	pts{1857 }
+SourceLoc->{ "ln": 323, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+38V_3 = STCHI(MR_38V_2) 	pts{1855 }
+SourceLoc->{ "ln": 325, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_38V_4) 	pts{1855 }
+SourceLoc->{ "ln": 325, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_34V_2) 	pts{1851 }
+SourceLoc->{ "ln": 325, "cl": 19, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_30V_2) 	pts{1847 }
+SourceLoc->{ "ln": 326, "cl": 18, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_32V_2) 	pts{1849 }
+SourceLoc->{ "ln": 326, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+40V_6 = STCHI(MR_40V_4) 	pts{1857 }
+SourceLoc->{ "ln": 326, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_40V_6) 	pts{1857 }
+SourceLoc->{ "ln": 327, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_38V_4) 	pts{1855 }
+SourceLoc->{ "ln": 327, "cl": 19, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_34V_2) 	pts{1851 }
+SourceLoc->{ "ln": 327, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_36V_3) 	pts{1853 }
+SourceLoc->{ "ln": 330, "cl": 12, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_36V_3) 	pts{1853 }
+SourceLoc->{ "ln": 331, "cl": 31, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_36V_3) 	pts{1853 }
+SourceLoc->{ "ln": 331, "cl": 53, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_36V_3) 	pts{1853 }
+SourceLoc->{ "ln": 331, "cl": 118, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_36V_3) 	pts{1853 }
+SourceLoc->{ "ln": 331, "cl": 163, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_36V_3) 	pts{1853 }
+SourceLoc->{ "ln": 334, "cl": 13, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_38V_4) 	pts{1855 }
+SourceLoc->{ "ln": 325, "cl": 29, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+38V_5 = STCHI(MR_38V_4) 	pts{1855 }
+SourceLoc->{ "ln": 325, "cl": 29, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_38V_4) 	pts{1855 }
+SourceLoc->{ "ln": 336, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_40V_5) 	pts{1857 }
+SourceLoc->{ "ln": 336, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_40V_5) 	pts{1857 }
+SourceLoc->{ "ln": 341, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: i2c_8bit_addr_from_msg==========
+
+LDMU(MR_27V_2) 	pts{1974 }
+SourceLoc->{ "ln": 949, "cl": 10, "fl": "./include/linux/i2c.h" }
+
+LDMU(MR_27V_2) 	pts{1974 }
+SourceLoc->{ "ln": 949, "cl": 29, "fl": "./include/linux/i2c.h" }
+==========FUNCTION: sdalo==========
+
+LDMU(MR_22V_2) 	pts{1994 }
+SourceLoc->{ "ln": 55, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_22V_2) 	pts{1994 }
+SourceLoc->{ "ln": 55, "cl": 15, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_22V_2) 	pts{1994 }
+SourceLoc->{ "ln": 56, "cl": 31, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_22V_2) 	pts{1994 }
+SourceLoc->{ "ln": 56, "cl": 63, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_22V_2) 	pts{1994 }
+SourceLoc->{ "ln": 56, "cl": 138, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_22V_2) 	pts{1994 }
+SourceLoc->{ "ln": 56, "cl": 193, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: i2c_bit_add_numbered_bus==========
+
+LDMU(MR_18V_2) 	pts{2046 }
+SourceLoc->{ "ln": 682, "cl": 27, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_20V_1) 	pts{32 39 }
+==========FUNCTION: __i2c_bit_add_bus==========
+12V_2 = STCHI(MR_12V_1) 	pts{2068 }
+SourceLoc->{ "ln": 638, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_8V_2) 	pts{2064 }
+SourceLoc->{ "ln": 638, "cl": 39, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+12V_3 = STCHI(MR_12V_2) 	pts{2068 }
+SourceLoc->{ "ln": 638, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+14V_2 = STCHI(MR_14V_1) 	pts{2070 }
+SourceLoc->{ "ln": 639, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_2V_1) 	pts{32 }
+SourceLoc->{ "ln": 641, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_8V_2) 	pts{2064 }
+SourceLoc->{ "ln": 642, "cl": 18, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+14V_6 = STCHI(MR_14V_2) 	pts{2070 }
+SourceLoc->{ "ln": 642, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_2V_1) 	pts{32 }
+SourceLoc->{ "ln": 643, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_14V_6) 	pts{2070 }
+SourceLoc->{ "ln": 643, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+6V_5 = STCHI(MR_6V_1) 	pts{2062 }
+SourceLoc->{ "ln": 644, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_8V_2) 	pts{2064 }
+SourceLoc->{ "ln": 648, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_8V_2) 	pts{2064 }
+SourceLoc->{ "ln": 649, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_12V_3) 	pts{2068 }
+SourceLoc->{ "ln": 650, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_8V_2) 	pts{2064 }
+SourceLoc->{ "ln": 651, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_10V_2) 	pts{2066 }
+SourceLoc->{ "ln": 658, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_8V_2) 	pts{2064 }
+SourceLoc->{ "ln": 658, "cl": 20, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+14V_4 = STCHI(MR_14V_3) 	pts{2070 }
+SourceLoc->{ "ln": 658, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_14V_4) 	pts{2070 }
+SourceLoc->{ "ln": 659, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_14V_4) 	pts{2070 }
+SourceLoc->{ "ln": 660, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+6V_3 = STCHI(MR_6V_1) 	pts{2062 }
+SourceLoc->{ "ln": 660, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_12V_3) 	pts{2068 }
+SourceLoc->{ "ln": 662, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_8V_2) 	pts{2064 }
+SourceLoc->{ "ln": 663, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_12V_3) 	pts{2068 }
+SourceLoc->{ "ln": 665, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_8V_2) 	pts{2064 }
+SourceLoc->{ "ln": 666, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_12V_3) 	pts{2068 }
+SourceLoc->{ "ln": 668, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_12V_3) 	pts{2068 }
+SourceLoc->{ "ln": 668, "cl": 41, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_8V_2) 	pts{2064 }
+SourceLoc->{ "ln": 669, "cl": 34, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+6V_2 = STCHI(MR_6V_1) 	pts{2062 }
+SourceLoc->{ "ln": 671, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_6V_4) 	pts{2062 }
+SourceLoc->{ "ln": 672, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: test_bus==========
+47V_2 = STCHI(MR_47V_1) 	pts{2203 }
+SourceLoc->{ "ln": 232, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_45V_2) 	pts{2201 }
+SourceLoc->{ "ln": 232, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+47V_3 = STCHI(MR_47V_2) 	pts{2203 }
+SourceLoc->{ "ln": 232, "cl": 28, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+49V_2 = STCHI(MR_49V_1) 	pts{2205 }
+SourceLoc->{ "ln": 233, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_45V_2) 	pts{2201 }
+SourceLoc->{ "ln": 233, "cl": 21, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+49V_3 = STCHI(MR_49V_2) 	pts{2205 }
+SourceLoc->{ "ln": 233, "cl": 14, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+51V_2 = STCHI(MR_51V_1) 	pts{2207 }
+SourceLoc->{ "ln": 234, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+53V_2 = STCHI(MR_53V_1) 	pts{2209 }
+SourceLoc->{ "ln": 234, "cl": 11, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+55V_2 = STCHI(MR_55V_1) 	pts{2211 }
+SourceLoc->{ "ln": 234, "cl": 16, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 236, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 237, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_45V_2) 	pts{2201 }
+SourceLoc->{ "ln": 237, "cl": 24, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+55V_5 = STCHI(MR_55V_2) 	pts{2211 }
+SourceLoc->{ "ln": 237, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_55V_5) 	pts{2211 }
+SourceLoc->{ "ln": 238, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+43V_5 = STCHI(MR_43V_1) 	pts{2199 }
+SourceLoc->{ "ln": 239, "cl": 4, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 242, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 243, "cl": 91, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+59V_3 = STCHI(MR_59V_1) 	pts{2215 }
+SourceLoc->{ "ln": 243, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_59V_3) 	pts{2215 }
+SourceLoc->{ "ln": 243, "cl": 98, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 244, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 245, "cl": 91, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+61V_3 = STCHI(MR_61V_1) 	pts{2217 }
+SourceLoc->{ "ln": 245, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_61V_3) 	pts{2217 }
+SourceLoc->{ "ln": 245, "cl": 98, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 247, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 247, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 247, "cl": 36, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+53V_3 = STCHI(MR_53V_2) 	pts{2209 }
+SourceLoc->{ "ln": 247, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 248, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 248, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 248, "cl": 36, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+51V_3 = STCHI(MR_51V_2) 	pts{2207 }
+SourceLoc->{ "ln": 248, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_51V_3) 	pts{2207 }
+SourceLoc->{ "ln": 249, "cl": 7, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_53V_3) 	pts{2209 }
+SourceLoc->{ "ln": 249, "cl": 15, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 250, "cl": 89, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_51V_3) 	pts{2207 }
+SourceLoc->{ "ln": 250, "cl": 95, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_53V_3) 	pts{2209 }
+SourceLoc->{ "ln": 250, "cl": 100, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+63V_2 = STCHI(MR_63V_1) 	pts{2219 }
+SourceLoc->{ "ln": 250, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_63V_2) 	pts{2219 }
+SourceLoc->{ "ln": 250, "cl": 106, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 254, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 255, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 255, "cl": 22, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 255, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 256, "cl": 67, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+65V_3 = STCHI(MR_65V_1) 	pts{2221 }
+SourceLoc->{ "ln": 256, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_65V_3) 	pts{2221 }
+SourceLoc->{ "ln": 256, "cl": 74, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 259, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 259, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 259, "cl": 36, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 260, "cl": 93, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+67V_3 = STCHI(MR_67V_1) 	pts{2223 }
+SourceLoc->{ "ln": 260, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_67V_3) 	pts{2223 }
+SourceLoc->{ "ln": 260, "cl": 100, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 264, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 265, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 265, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 265, "cl": 36, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 266, "cl": 66, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+69V_3 = STCHI(MR_69V_1) 	pts{2225 }
+SourceLoc->{ "ln": 266, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_69V_3) 	pts{2225 }
+SourceLoc->{ "ln": 266, "cl": 73, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 269, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 269, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 269, "cl": 36, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 270, "cl": 94, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+71V_3 = STCHI(MR_71V_1) 	pts{2227 }
+SourceLoc->{ "ln": 270, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_71V_3) 	pts{2227 }
+SourceLoc->{ "ln": 270, "cl": 101, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 274, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 275, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 275, "cl": 22, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 275, "cl": 35, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 276, "cl": 67, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+73V_3 = STCHI(MR_73V_1) 	pts{2229 }
+SourceLoc->{ "ln": 276, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_73V_3) 	pts{2229 }
+SourceLoc->{ "ln": 276, "cl": 74, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 279, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 279, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 279, "cl": 36, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 280, "cl": 93, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+75V_3 = STCHI(MR_75V_1) 	pts{2231 }
+SourceLoc->{ "ln": 280, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_75V_3) 	pts{2231 }
+SourceLoc->{ "ln": 280, "cl": 100, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 284, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 285, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 285, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 285, "cl": 36, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 286, "cl": 66, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+77V_3 = STCHI(MR_77V_1) 	pts{2233 }
+SourceLoc->{ "ln": 286, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_77V_3) 	pts{2233 }
+SourceLoc->{ "ln": 286, "cl": 73, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 289, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 289, "cl": 23, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 289, "cl": 36, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 290, "cl": 94, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+79V_3 = STCHI(MR_79V_1) 	pts{2235 }
+SourceLoc->{ "ln": 290, "cl": 10, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_79V_3) 	pts{2235 }
+SourceLoc->{ "ln": 290, "cl": 101, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 294, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 295, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_45V_2) 	pts{2201 }
+SourceLoc->{ "ln": 295, "cl": 19, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_49V_3) 	pts{2205 }
+SourceLoc->{ "ln": 297, "cl": 58, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+81V_2 = STCHI(MR_81V_1) 	pts{2237 }
+SourceLoc->{ "ln": 297, "cl": 9, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_81V_2) 	pts{2237 }
+SourceLoc->{ "ln": 297, "cl": 65, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+43V_3 = STCHI(MR_43V_1) 	pts{2199 }
+SourceLoc->{ "ln": 298, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 300, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 301, "cl": 8, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_4V_1) 	pts{39 }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 303, "cl": 6, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_47V_3) 	pts{2203 }
+SourceLoc->{ "ln": 304, "cl": 3, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+LDMU(MR_45V_2) 	pts{2201 }
+SourceLoc->{ "ln": 304, "cl": 19, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+43V_2 = STCHI(MR_43V_1) 	pts{2199 }
+SourceLoc->{ "ln": 306, "cl": 2, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+
+LDMU(MR_43V_4) 	pts{2199 }
+SourceLoc->{ "ln": 307, "cl": 1, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+==========FUNCTION: i2c_bit_add_bus==========
+
+LDMU(MR_24V_2) 	pts{2641 }
+SourceLoc->{ "ln": 676, "cl": 27, "fl": "drivers/i2c/algos/i2c-algo-bit.c" }
+
+CALMU(MR_20V_1) 	pts{32 39 }
+==========FUNCTION: llvm.dbg.declare==========
+==========FUNCTION: llvm.lifetime.start.p0==========
+==========FUNCTION: _dev_warn==========
+==========FUNCTION: llvm.lifetime.end.p0==========
+==========FUNCTION: llvm.dbg.label==========
+==========FUNCTION: _dev_err==========
+==========FUNCTION: llvm.is.constant.i32==========
+==========FUNCTION: __bad_udelay==========
+==========FUNCTION: __const_udelay==========
+==========FUNCTION: __udelay==========
+==========FUNCTION: yield==========
+==========FUNCTION: i2c_add_numbered_adapter==========
+==========FUNCTION: _printk==========
+==========FUNCTION: i2c_add_adapter==========

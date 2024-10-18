@@ -1,0 +1,4375 @@
+==========FUNCTION: intel_detect_pch==========
+234V_2 = STCHI(MR_234V_1) 	pts{98 }
+SourceLoc->{ "ln": 210, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+234V_3 = STCHI(MR_234V_2) 	pts{98 }
+SourceLoc->{ "ln": 210, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+236V_2 = STCHI(MR_236V_1) 	pts{100 }
+SourceLoc->{ "ln": 211, "cl": 17, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+238V_2 = STCHI(MR_238V_1) 	pts{102 }
+SourceLoc->{ "ln": 212, "cl": 17, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 218, "cl": 178, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 219, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 221, "cl": 44, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 226, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 228, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 229, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 231, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 232, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_234V_4) 	pts{98 }
+SourceLoc->{ "ln": 247, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+234V_5 = STCHI(MR_234V_4) 	pts{98 }
+SourceLoc->{ "ln": 247, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_234V_5) 	pts{98 }
+SourceLoc->{ "ln": 248, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_234V_5) 	pts{98 }
+SourceLoc->{ "ln": 251, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+236V_9 = STCHI(MR_236V_3) 	pts{100 }
+SourceLoc->{ "ln": 251, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 253, "cl": 29, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_236V_9) 	pts{100 }
+SourceLoc->{ "ln": 253, "cl": 39, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+238V_9 = STCHI(MR_238V_3) 	pts{102 }
+SourceLoc->{ "ln": 253, "cl": 12, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_238V_9) 	pts{102 }
+SourceLoc->{ "ln": 254, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_238V_9) 	pts{102 }
+SourceLoc->{ "ln": 255, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 255, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_236V_9) 	pts{100 }
+SourceLoc->{ "ln": 256, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 256, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_236V_9) 	pts{100 }
+SourceLoc->{ "ln": 258, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_234V_5) 	pts{98 }
+SourceLoc->{ "ln": 258, "cl": 36, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_234V_5) 	pts{98 }
+SourceLoc->{ "ln": 259, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 260, "cl": 26, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+CALMU(MR_238V_9) 	pts{102 }
+CALMU(MR_236V_9) 	pts{100 }
+238V_10 = CALCHI(MR_238V_9) 	pts{102 }
+236V_10 = CALCHI(MR_236V_9) 	pts{100 }
+
+LDMU(MR_238V_10) 	pts{102 }
+SourceLoc->{ "ln": 261, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 261, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_236V_10) 	pts{100 }
+SourceLoc->{ "ln": 262, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 262, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_234V_5) 	pts{98 }
+SourceLoc->{ "ln": 271, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 271, "cl": 186, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 272, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 272, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 274, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 275, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_234V_5) 	pts{98 }
+SourceLoc->{ "ln": 276, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+CALMU(MR_230V_1) 	pts{44 }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 277, "cl": 202, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 278, "cl": 26, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+CALMU(MR_238V_4) 	pts{102 }
+CALMU(MR_236V_4) 	pts{100 }
+238V_7 = CALCHI(MR_238V_4) 	pts{102 }
+236V_7 = CALCHI(MR_236V_4) 	pts{100 }
+
+LDMU(MR_238V_7) 	pts{102 }
+SourceLoc->{ "ln": 279, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 279, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_236V_7) 	pts{100 }
+SourceLoc->{ "ln": 280, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 280, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 282, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_232V_2) 	pts{95 }
+SourceLoc->{ "ln": 282, "cl": 52, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_234V_5) 	pts{98 }
+SourceLoc->{ "ln": 286, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+240V_2 = STCHI(MR_240V_1) 	pts{104 }
+SourceLoc->{ "ln": 287, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+==========FUNCTION: IS_PLATFORM==========
+262V_2 = STCHI(MR_262V_1) 	pts{374 }
+SourceLoc->{ "ln": 461, "cl": 35, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_258V_2) 	pts{370 }
+SourceLoc->{ "ln": 461, "cl": 45, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+262V_3 = STCHI(MR_262V_2) 	pts{374 }
+SourceLoc->{ "ln": 461, "cl": 35, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+264V_2 = STCHI(MR_264V_1) 	pts{376 }
+SourceLoc->{ "ln": 462, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_262V_3) 	pts{374 }
+SourceLoc->{ "ln": 462, "cl": 48, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_260V_2) 	pts{372 }
+SourceLoc->{ "ln": 462, "cl": 54, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+264V_3 = STCHI(MR_264V_2) 	pts{376 }
+SourceLoc->{ "ln": 462, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+266V_2 = STCHI(MR_266V_1) 	pts{378 }
+SourceLoc->{ "ln": 463, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_262V_3) 	pts{374 }
+SourceLoc->{ "ln": 463, "cl": 46, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_260V_2) 	pts{372 }
+SourceLoc->{ "ln": 463, "cl": 52, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+266V_3 = STCHI(MR_266V_2) 	pts{378 }
+SourceLoc->{ "ln": 463, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+
+LDMU(MR_260V_2) 	pts{372 }
+SourceLoc->{ "ln": 465, "cl": 190, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_262V_3) 	pts{374 }
+SourceLoc->{ "ln": 467, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_264V_3) 	pts{376 }
+SourceLoc->{ "ln": 467, "cl": 29, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_266V_3) 	pts{378 }
+SourceLoc->{ "ln": 467, "cl": 50, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: intel_pch_type==========
+
+LDMU(MR_272V_2) 	pts{451 }
+SourceLoc->{ "ln": 14, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 16, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 16, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+274V_3 = STCHI(MR_274V_1) 	pts{453 }
+SourceLoc->{ "ln": 17, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 17, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+274V_4 = STCHI(MR_274V_3) 	pts{453 }
+SourceLoc->{ "ln": 17, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_274V_4) 	pts{453 }
+SourceLoc->{ "ln": 17, "cl": 106, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 17, "cl": 327, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 17, "cl": 362, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+276V_4 = STCHI(MR_276V_1) 	pts{455 }
+SourceLoc->{ "ln": 17, "cl": 474, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+276V_5 = STCHI(MR_276V_4) 	pts{455 }
+SourceLoc->{ "ln": 17, "cl": 474, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_276V_5) 	pts{455 }
+SourceLoc->{ "ln": 17, "cl": 1118, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_274V_4) 	pts{453 }
+SourceLoc->{ "ln": 17, "cl": 1494, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+278V_3 = STCHI(MR_278V_1) 	pts{457 }
+SourceLoc->{ "ln": 17, "cl": 123, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_278V_3) 	pts{457 }
+SourceLoc->{ "ln": 17, "cl": 1514, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_13 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 18, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 20, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 20, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+280V_3 = STCHI(MR_280V_1) 	pts{459 }
+SourceLoc->{ "ln": 21, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 21, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 21, "cl": 95, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+280V_4 = STCHI(MR_280V_3) 	pts{459 }
+SourceLoc->{ "ln": 21, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_280V_4) 	pts{459 }
+SourceLoc->{ "ln": 21, "cl": 149, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 21, "cl": 370, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 21, "cl": 405, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+282V_4 = STCHI(MR_282V_1) 	pts{461 }
+SourceLoc->{ "ln": 21, "cl": 560, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+282V_5 = STCHI(MR_282V_4) 	pts{461 }
+SourceLoc->{ "ln": 21, "cl": 560, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_282V_5) 	pts{461 }
+SourceLoc->{ "ln": 21, "cl": 1204, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_280V_4) 	pts{459 }
+SourceLoc->{ "ln": 21, "cl": 1580, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+284V_3 = STCHI(MR_284V_1) 	pts{463 }
+SourceLoc->{ "ln": 21, "cl": 166, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_284V_3) 	pts{463 }
+SourceLoc->{ "ln": 21, "cl": 1600, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_20 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 23, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 25, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 25, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+286V_3 = STCHI(MR_286V_1) 	pts{465 }
+SourceLoc->{ "ln": 26, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 26, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 26, "cl": 95, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+286V_4 = STCHI(MR_286V_3) 	pts{465 }
+SourceLoc->{ "ln": 26, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_286V_4) 	pts{465 }
+SourceLoc->{ "ln": 26, "cl": 149, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 26, "cl": 370, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 26, "cl": 405, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+288V_4 = STCHI(MR_288V_1) 	pts{467 }
+SourceLoc->{ "ln": 26, "cl": 560, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+288V_5 = STCHI(MR_288V_4) 	pts{467 }
+SourceLoc->{ "ln": 26, "cl": 560, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_288V_5) 	pts{467 }
+SourceLoc->{ "ln": 26, "cl": 1204, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_286V_4) 	pts{465 }
+SourceLoc->{ "ln": 26, "cl": 1580, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+290V_3 = STCHI(MR_290V_1) 	pts{469 }
+SourceLoc->{ "ln": 26, "cl": 166, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_290V_3) 	pts{469 }
+SourceLoc->{ "ln": 26, "cl": 1600, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_14 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 29, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 31, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 31, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+292V_3 = STCHI(MR_292V_1) 	pts{471 }
+SourceLoc->{ "ln": 32, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 32, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 32, "cl": 84, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+292V_4 = STCHI(MR_292V_3) 	pts{471 }
+SourceLoc->{ "ln": 32, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_292V_4) 	pts{471 }
+SourceLoc->{ "ln": 32, "cl": 138, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 32, "cl": 359, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 32, "cl": 394, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+294V_4 = STCHI(MR_294V_1) 	pts{473 }
+SourceLoc->{ "ln": 32, "cl": 538, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+294V_5 = STCHI(MR_294V_4) 	pts{473 }
+SourceLoc->{ "ln": 32, "cl": 538, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_294V_5) 	pts{473 }
+SourceLoc->{ "ln": 32, "cl": 1182, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_292V_4) 	pts{471 }
+SourceLoc->{ "ln": 32, "cl": 1558, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+296V_3 = STCHI(MR_296V_1) 	pts{475 }
+SourceLoc->{ "ln": 32, "cl": 155, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_296V_3) 	pts{475 }
+SourceLoc->{ "ln": 32, "cl": 1578, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+298V_3 = STCHI(MR_298V_1) 	pts{477 }
+SourceLoc->{ "ln": 34, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 34, "cl": 45, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 34, "cl": 93, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+298V_4 = STCHI(MR_298V_3) 	pts{477 }
+SourceLoc->{ "ln": 34, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_298V_4) 	pts{477 }
+SourceLoc->{ "ln": 34, "cl": 152, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 34, "cl": 373, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 34, "cl": 408, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+300V_4 = STCHI(MR_300V_1) 	pts{479 }
+SourceLoc->{ "ln": 34, "cl": 566, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+300V_5 = STCHI(MR_300V_4) 	pts{479 }
+SourceLoc->{ "ln": 34, "cl": 566, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_300V_5) 	pts{479 }
+SourceLoc->{ "ln": 34, "cl": 1210, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_298V_4) 	pts{477 }
+SourceLoc->{ "ln": 34, "cl": 1586, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+302V_3 = STCHI(MR_302V_1) 	pts{481 }
+SourceLoc->{ "ln": 34, "cl": 169, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_302V_3) 	pts{481 }
+SourceLoc->{ "ln": 34, "cl": 1606, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_17 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 36, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 38, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 38, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+304V_3 = STCHI(MR_304V_1) 	pts{483 }
+SourceLoc->{ "ln": 39, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 39, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 39, "cl": 84, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+304V_4 = STCHI(MR_304V_3) 	pts{483 }
+SourceLoc->{ "ln": 39, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_304V_4) 	pts{483 }
+SourceLoc->{ "ln": 39, "cl": 138, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 39, "cl": 359, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 39, "cl": 394, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+306V_4 = STCHI(MR_306V_1) 	pts{485 }
+SourceLoc->{ "ln": 39, "cl": 538, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+306V_5 = STCHI(MR_306V_4) 	pts{485 }
+SourceLoc->{ "ln": 39, "cl": 538, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_306V_5) 	pts{485 }
+SourceLoc->{ "ln": 39, "cl": 1182, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_304V_4) 	pts{483 }
+SourceLoc->{ "ln": 39, "cl": 1558, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+308V_3 = STCHI(MR_308V_1) 	pts{487 }
+SourceLoc->{ "ln": 39, "cl": 155, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_308V_3) 	pts{487 }
+SourceLoc->{ "ln": 39, "cl": 1578, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+310V_3 = STCHI(MR_310V_1) 	pts{489 }
+SourceLoc->{ "ln": 41, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 41, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 41, "cl": 95, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+310V_4 = STCHI(MR_310V_3) 	pts{489 }
+SourceLoc->{ "ln": 41, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_310V_4) 	pts{489 }
+SourceLoc->{ "ln": 41, "cl": 154, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 41, "cl": 375, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 41, "cl": 410, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+312V_4 = STCHI(MR_312V_1) 	pts{491 }
+SourceLoc->{ "ln": 41, "cl": 570, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+312V_5 = STCHI(MR_312V_4) 	pts{491 }
+SourceLoc->{ "ln": 41, "cl": 570, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_312V_5) 	pts{491 }
+SourceLoc->{ "ln": 41, "cl": 1214, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_310V_4) 	pts{489 }
+SourceLoc->{ "ln": 41, "cl": 1590, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+314V_3 = STCHI(MR_314V_1) 	pts{493 }
+SourceLoc->{ "ln": 41, "cl": 171, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_314V_3) 	pts{493 }
+SourceLoc->{ "ln": 41, "cl": 1610, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_16 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 43, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 45, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 45, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+316V_2 = STCHI(MR_316V_1) 	pts{495 }
+SourceLoc->{ "ln": 46, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 46, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 46, "cl": 84, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+316V_3 = STCHI(MR_316V_2) 	pts{495 }
+SourceLoc->{ "ln": 46, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_316V_3) 	pts{495 }
+SourceLoc->{ "ln": 46, "cl": 138, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 46, "cl": 359, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 46, "cl": 394, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+318V_3 = STCHI(MR_318V_1) 	pts{497 }
+SourceLoc->{ "ln": 46, "cl": 538, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+318V_4 = STCHI(MR_318V_3) 	pts{497 }
+SourceLoc->{ "ln": 46, "cl": 538, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_318V_4) 	pts{497 }
+SourceLoc->{ "ln": 46, "cl": 1182, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_316V_3) 	pts{495 }
+SourceLoc->{ "ln": 46, "cl": 1558, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+320V_2 = STCHI(MR_320V_1) 	pts{499 }
+SourceLoc->{ "ln": 46, "cl": 155, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_320V_2) 	pts{499 }
+SourceLoc->{ "ln": 46, "cl": 1578, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+322V_2 = STCHI(MR_322V_1) 	pts{501 }
+SourceLoc->{ "ln": 48, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 48, "cl": 45, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 48, "cl": 93, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+322V_3 = STCHI(MR_322V_2) 	pts{501 }
+SourceLoc->{ "ln": 48, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_322V_3) 	pts{501 }
+SourceLoc->{ "ln": 48, "cl": 152, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 48, "cl": 373, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 48, "cl": 408, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+324V_3 = STCHI(MR_324V_1) 	pts{503 }
+SourceLoc->{ "ln": 48, "cl": 566, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+324V_4 = STCHI(MR_324V_3) 	pts{503 }
+SourceLoc->{ "ln": 48, "cl": 566, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_324V_4) 	pts{503 }
+SourceLoc->{ "ln": 48, "cl": 1210, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_322V_3) 	pts{501 }
+SourceLoc->{ "ln": 48, "cl": 1586, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+326V_2 = STCHI(MR_326V_1) 	pts{505 }
+SourceLoc->{ "ln": 48, "cl": 169, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_326V_2) 	pts{505 }
+SourceLoc->{ "ln": 48, "cl": 1606, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_9 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 51, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 53, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 53, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+328V_3 = STCHI(MR_328V_1) 	pts{507 }
+SourceLoc->{ "ln": 54, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 54, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 54, "cl": 84, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+328V_4 = STCHI(MR_328V_3) 	pts{507 }
+SourceLoc->{ "ln": 54, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_328V_4) 	pts{507 }
+SourceLoc->{ "ln": 54, "cl": 138, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 54, "cl": 359, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 54, "cl": 394, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+330V_4 = STCHI(MR_330V_1) 	pts{509 }
+SourceLoc->{ "ln": 54, "cl": 538, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+330V_5 = STCHI(MR_330V_4) 	pts{509 }
+SourceLoc->{ "ln": 54, "cl": 538, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_330V_5) 	pts{509 }
+SourceLoc->{ "ln": 54, "cl": 1182, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_328V_4) 	pts{507 }
+SourceLoc->{ "ln": 54, "cl": 1558, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+332V_3 = STCHI(MR_332V_1) 	pts{511 }
+SourceLoc->{ "ln": 54, "cl": 155, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_332V_3) 	pts{511 }
+SourceLoc->{ "ln": 54, "cl": 1578, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+334V_3 = STCHI(MR_334V_1) 	pts{513 }
+SourceLoc->{ "ln": 56, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 56, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 56, "cl": 95, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+334V_4 = STCHI(MR_334V_3) 	pts{513 }
+SourceLoc->{ "ln": 56, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_334V_4) 	pts{513 }
+SourceLoc->{ "ln": 56, "cl": 154, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 56, "cl": 375, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 56, "cl": 410, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+336V_4 = STCHI(MR_336V_1) 	pts{515 }
+SourceLoc->{ "ln": 56, "cl": 570, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+336V_5 = STCHI(MR_336V_4) 	pts{515 }
+SourceLoc->{ "ln": 56, "cl": 570, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_336V_5) 	pts{515 }
+SourceLoc->{ "ln": 56, "cl": 1214, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_334V_4) 	pts{513 }
+SourceLoc->{ "ln": 56, "cl": 1590, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+338V_3 = STCHI(MR_338V_1) 	pts{517 }
+SourceLoc->{ "ln": 56, "cl": 171, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_338V_3) 	pts{517 }
+SourceLoc->{ "ln": 56, "cl": 1610, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_18 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 59, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 61, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 61, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+340V_2 = STCHI(MR_340V_1) 	pts{519 }
+SourceLoc->{ "ln": 62, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 62, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 62, "cl": 84, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+340V_3 = STCHI(MR_340V_2) 	pts{519 }
+SourceLoc->{ "ln": 62, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_340V_3) 	pts{519 }
+SourceLoc->{ "ln": 62, "cl": 137, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 62, "cl": 358, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 62, "cl": 393, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+342V_3 = STCHI(MR_342V_1) 	pts{521 }
+SourceLoc->{ "ln": 62, "cl": 536, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+342V_4 = STCHI(MR_342V_3) 	pts{521 }
+SourceLoc->{ "ln": 62, "cl": 536, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_342V_4) 	pts{521 }
+SourceLoc->{ "ln": 62, "cl": 1180, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_340V_3) 	pts{519 }
+SourceLoc->{ "ln": 62, "cl": 1556, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+344V_2 = STCHI(MR_344V_1) 	pts{523 }
+SourceLoc->{ "ln": 62, "cl": 154, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_344V_2) 	pts{523 }
+SourceLoc->{ "ln": 62, "cl": 1576, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_10 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 64, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 66, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 66, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+346V_3 = STCHI(MR_346V_1) 	pts{525 }
+SourceLoc->{ "ln": 67, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 67, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 67, "cl": 84, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 67, "cl": 126, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 67, "cl": 170, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+346V_4 = STCHI(MR_346V_3) 	pts{525 }
+SourceLoc->{ "ln": 67, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_346V_4) 	pts{525 }
+SourceLoc->{ "ln": 67, "cl": 224, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 67, "cl": 445, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 67, "cl": 480, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+348V_4 = STCHI(MR_348V_1) 	pts{527 }
+SourceLoc->{ "ln": 67, "cl": 710, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+348V_5 = STCHI(MR_348V_4) 	pts{527 }
+SourceLoc->{ "ln": 67, "cl": 710, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_348V_5) 	pts{527 }
+SourceLoc->{ "ln": 67, "cl": 1354, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_346V_4) 	pts{525 }
+SourceLoc->{ "ln": 67, "cl": 1730, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+350V_3 = STCHI(MR_350V_1) 	pts{529 }
+SourceLoc->{ "ln": 67, "cl": 241, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_350V_3) 	pts{529 }
+SourceLoc->{ "ln": 67, "cl": 1750, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_22 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 72, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 74, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 74, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+352V_3 = STCHI(MR_352V_1) 	pts{531 }
+SourceLoc->{ "ln": 75, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 75, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 75, "cl": 84, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 75, "cl": 126, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 75, "cl": 170, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+352V_4 = STCHI(MR_352V_3) 	pts{531 }
+SourceLoc->{ "ln": 75, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_352V_4) 	pts{531 }
+SourceLoc->{ "ln": 75, "cl": 224, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 75, "cl": 445, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 75, "cl": 480, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+354V_4 = STCHI(MR_354V_1) 	pts{533 }
+SourceLoc->{ "ln": 75, "cl": 710, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+354V_5 = STCHI(MR_354V_4) 	pts{533 }
+SourceLoc->{ "ln": 75, "cl": 710, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_354V_5) 	pts{533 }
+SourceLoc->{ "ln": 75, "cl": 1354, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_352V_4) 	pts{531 }
+SourceLoc->{ "ln": 75, "cl": 1730, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+356V_3 = STCHI(MR_356V_1) 	pts{535 }
+SourceLoc->{ "ln": 75, "cl": 241, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_356V_3) 	pts{535 }
+SourceLoc->{ "ln": 75, "cl": 1750, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_21 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 81, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 83, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 83, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+358V_2 = STCHI(MR_358V_1) 	pts{537 }
+SourceLoc->{ "ln": 84, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 84, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 84, "cl": 87, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+358V_3 = STCHI(MR_358V_2) 	pts{537 }
+SourceLoc->{ "ln": 84, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_358V_3) 	pts{537 }
+SourceLoc->{ "ln": 84, "cl": 141, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 84, "cl": 362, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 84, "cl": 397, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+360V_3 = STCHI(MR_360V_1) 	pts{539 }
+SourceLoc->{ "ln": 84, "cl": 544, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+360V_4 = STCHI(MR_360V_3) 	pts{539 }
+SourceLoc->{ "ln": 84, "cl": 544, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_360V_4) 	pts{539 }
+SourceLoc->{ "ln": 84, "cl": 1188, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_358V_3) 	pts{537 }
+SourceLoc->{ "ln": 84, "cl": 1564, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+362V_2 = STCHI(MR_362V_1) 	pts{541 }
+SourceLoc->{ "ln": 84, "cl": 158, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_362V_2) 	pts{541 }
+SourceLoc->{ "ln": 84, "cl": 1584, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_11 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 87, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 89, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 89, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+364V_3 = STCHI(MR_364V_1) 	pts{543 }
+SourceLoc->{ "ln": 91, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 91, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 91, "cl": 87, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+364V_4 = STCHI(MR_364V_3) 	pts{543 }
+SourceLoc->{ "ln": 91, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_364V_4) 	pts{543 }
+SourceLoc->{ "ln": 91, "cl": 141, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 91, "cl": 362, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 91, "cl": 397, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+366V_4 = STCHI(MR_366V_1) 	pts{545 }
+SourceLoc->{ "ln": 91, "cl": 544, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+366V_5 = STCHI(MR_366V_4) 	pts{545 }
+SourceLoc->{ "ln": 91, "cl": 544, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_366V_5) 	pts{545 }
+SourceLoc->{ "ln": 91, "cl": 1188, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_364V_4) 	pts{543 }
+SourceLoc->{ "ln": 91, "cl": 1564, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+368V_3 = STCHI(MR_368V_1) 	pts{547 }
+SourceLoc->{ "ln": 91, "cl": 158, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_368V_3) 	pts{547 }
+SourceLoc->{ "ln": 91, "cl": 1584, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_19 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 94, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 97, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 97, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+370V_2 = STCHI(MR_370V_1) 	pts{549 }
+SourceLoc->{ "ln": 98, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 98, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 98, "cl": 87, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 98, "cl": 130, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+370V_3 = STCHI(MR_370V_2) 	pts{549 }
+SourceLoc->{ "ln": 98, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_370V_3) 	pts{549 }
+SourceLoc->{ "ln": 98, "cl": 185, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 98, "cl": 406, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 98, "cl": 441, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+372V_3 = STCHI(MR_372V_1) 	pts{551 }
+SourceLoc->{ "ln": 98, "cl": 632, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+372V_4 = STCHI(MR_372V_3) 	pts{551 }
+SourceLoc->{ "ln": 98, "cl": 632, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_372V_4) 	pts{551 }
+SourceLoc->{ "ln": 98, "cl": 1277, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_370V_3) 	pts{549 }
+SourceLoc->{ "ln": 98, "cl": 1653, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+374V_2 = STCHI(MR_374V_1) 	pts{553 }
+SourceLoc->{ "ln": 98, "cl": 202, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_374V_2) 	pts{553 }
+SourceLoc->{ "ln": 98, "cl": 1673, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_7 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 103, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 105, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 105, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+376V_2 = STCHI(MR_376V_1) 	pts{555 }
+SourceLoc->{ "ln": 106, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 106, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 106, "cl": 87, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+376V_3 = STCHI(MR_376V_2) 	pts{555 }
+SourceLoc->{ "ln": 106, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_376V_3) 	pts{555 }
+SourceLoc->{ "ln": 106, "cl": 141, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 106, "cl": 362, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 106, "cl": 397, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+378V_3 = STCHI(MR_378V_1) 	pts{557 }
+SourceLoc->{ "ln": 106, "cl": 544, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+378V_4 = STCHI(MR_378V_3) 	pts{557 }
+SourceLoc->{ "ln": 106, "cl": 544, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_378V_4) 	pts{557 }
+SourceLoc->{ "ln": 106, "cl": 1189, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_376V_3) 	pts{555 }
+SourceLoc->{ "ln": 106, "cl": 1565, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+380V_2 = STCHI(MR_380V_1) 	pts{559 }
+SourceLoc->{ "ln": 106, "cl": 158, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_380V_2) 	pts{559 }
+SourceLoc->{ "ln": 106, "cl": 1585, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_6 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 110, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 113, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 113, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+382V_2 = STCHI(MR_382V_1) 	pts{561 }
+SourceLoc->{ "ln": 114, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 114, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+382V_3 = STCHI(MR_382V_2) 	pts{561 }
+SourceLoc->{ "ln": 114, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_382V_3) 	pts{561 }
+SourceLoc->{ "ln": 114, "cl": 95, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 114, "cl": 316, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 114, "cl": 351, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+384V_3 = STCHI(MR_384V_1) 	pts{563 }
+SourceLoc->{ "ln": 114, "cl": 452, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+384V_4 = STCHI(MR_384V_3) 	pts{563 }
+SourceLoc->{ "ln": 114, "cl": 452, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_384V_4) 	pts{563 }
+SourceLoc->{ "ln": 114, "cl": 1097, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_382V_3) 	pts{561 }
+SourceLoc->{ "ln": 114, "cl": 1473, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+386V_2 = STCHI(MR_386V_1) 	pts{565 }
+SourceLoc->{ "ln": 114, "cl": 112, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_386V_2) 	pts{565 }
+SourceLoc->{ "ln": 114, "cl": 1493, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_5 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 115, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 117, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 117, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+388V_2 = STCHI(MR_388V_1) 	pts{567 }
+SourceLoc->{ "ln": 118, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 118, "cl": 44, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 118, "cl": 87, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+388V_3 = STCHI(MR_388V_2) 	pts{567 }
+SourceLoc->{ "ln": 118, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_388V_3) 	pts{567 }
+SourceLoc->{ "ln": 118, "cl": 144, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 118, "cl": 365, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 118, "cl": 400, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+390V_3 = STCHI(MR_390V_1) 	pts{569 }
+SourceLoc->{ "ln": 118, "cl": 550, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+390V_4 = STCHI(MR_390V_3) 	pts{569 }
+SourceLoc->{ "ln": 118, "cl": 550, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_390V_4) 	pts{569 }
+SourceLoc->{ "ln": 118, "cl": 1195, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_388V_3) 	pts{567 }
+SourceLoc->{ "ln": 118, "cl": 1571, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+392V_2 = STCHI(MR_392V_1) 	pts{571 }
+SourceLoc->{ "ln": 118, "cl": 161, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_392V_2) 	pts{571 }
+SourceLoc->{ "ln": 118, "cl": 1591, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_4 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 121, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 124, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 124, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+394V_2 = STCHI(MR_394V_1) 	pts{573 }
+SourceLoc->{ "ln": 125, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 125, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 125, "cl": 86, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 125, "cl": 123, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 125, "cl": 175, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+394V_3 = STCHI(MR_394V_2) 	pts{573 }
+SourceLoc->{ "ln": 125, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_394V_3) 	pts{573 }
+SourceLoc->{ "ln": 125, "cl": 230, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 125, "cl": 451, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 125, "cl": 486, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+396V_3 = STCHI(MR_396V_1) 	pts{575 }
+SourceLoc->{ "ln": 125, "cl": 722, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+396V_4 = STCHI(MR_396V_3) 	pts{575 }
+SourceLoc->{ "ln": 125, "cl": 722, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_396V_4) 	pts{575 }
+SourceLoc->{ "ln": 125, "cl": 1367, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_394V_3) 	pts{573 }
+SourceLoc->{ "ln": 125, "cl": 1743, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+398V_2 = STCHI(MR_398V_1) 	pts{577 }
+SourceLoc->{ "ln": 125, "cl": 247, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_398V_2) 	pts{577 }
+SourceLoc->{ "ln": 125, "cl": 1763, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_3 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 128, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 130, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 130, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+400V_2 = STCHI(MR_400V_1) 	pts{579 }
+SourceLoc->{ "ln": 131, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 131, "cl": 44, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 131, "cl": 87, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+400V_3 = STCHI(MR_400V_2) 	pts{579 }
+SourceLoc->{ "ln": 131, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_400V_3) 	pts{579 }
+SourceLoc->{ "ln": 131, "cl": 144, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 131, "cl": 365, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 131, "cl": 400, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+402V_3 = STCHI(MR_402V_1) 	pts{581 }
+SourceLoc->{ "ln": 131, "cl": 550, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+402V_4 = STCHI(MR_402V_3) 	pts{581 }
+SourceLoc->{ "ln": 131, "cl": 550, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_402V_4) 	pts{581 }
+SourceLoc->{ "ln": 131, "cl": 1195, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_400V_3) 	pts{579 }
+SourceLoc->{ "ln": 131, "cl": 1571, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+404V_2 = STCHI(MR_404V_1) 	pts{583 }
+SourceLoc->{ "ln": 131, "cl": 161, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_404V_2) 	pts{583 }
+SourceLoc->{ "ln": 131, "cl": 1591, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_2 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 134, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 139, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 139, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+406V_3 = STCHI(MR_406V_1) 	pts{585 }
+SourceLoc->{ "ln": 140, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 140, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 140, "cl": 88, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+406V_4 = STCHI(MR_406V_3) 	pts{585 }
+SourceLoc->{ "ln": 140, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_406V_4) 	pts{585 }
+SourceLoc->{ "ln": 140, "cl": 144, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 140, "cl": 365, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_270V_2) 	pts{449 }
+SourceLoc->{ "ln": 140, "cl": 400, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+408V_4 = STCHI(MR_408V_1) 	pts{587 }
+SourceLoc->{ "ln": 140, "cl": 550, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+408V_5 = STCHI(MR_408V_4) 	pts{587 }
+SourceLoc->{ "ln": 140, "cl": 550, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_408V_5) 	pts{587 }
+SourceLoc->{ "ln": 140, "cl": 1195, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_406V_4) 	pts{585 }
+SourceLoc->{ "ln": 140, "cl": 1571, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+410V_3 = STCHI(MR_410V_1) 	pts{589 }
+SourceLoc->{ "ln": 140, "cl": 161, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_410V_3) 	pts{589 }
+SourceLoc->{ "ln": 140, "cl": 1591, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+268V_15 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 142, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+268V_8 = STCHI(MR_268V_1) 	pts{447 }
+SourceLoc->{ "ln": 144, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_268V_12) 	pts{447 }
+SourceLoc->{ "ln": 146, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+==========FUNCTION: intel_is_virt_pch==========
+
+LDMU(MR_666V_2) 	pts{2935 }
+SourceLoc->{ "ln": 151, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_666V_2) 	pts{2935 }
+SourceLoc->{ "ln": 152, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_666V_2) 	pts{2935 }
+SourceLoc->{ "ln": 153, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_668V_2) 	pts{2937 }
+SourceLoc->{ "ln": 154, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_670V_2) 	pts{2939 }
+SourceLoc->{ "ln": 155, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+==========FUNCTION: intel_virt_detect_pch==========
+426V_2 = STCHI(MR_426V_1) 	pts{2988 }
+SourceLoc->{ "ln": 162, "cl": 17, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+426V_3 = STCHI(MR_426V_2) 	pts{2988 }
+SourceLoc->{ "ln": 162, "cl": 17, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 171, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 171, "cl": 62, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_25 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 172, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 173, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 173, "cl": 65, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_21 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 174, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 175, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 175, "cl": 66, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_19 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 176, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 177, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_17 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 178, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 179, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 180, "cl": 16, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_15 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 181, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 182, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 182, "cl": 64, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_13 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 183, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 184, "cl": 26, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 184, "cl": 74, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_11 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 185, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 186, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 186, "cl": 63, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_9 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 187, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 188, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 188, "cl": 75, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_7 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 189, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 190, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_5 = STCHI(MR_426V_3) 	pts{2988 }
+SourceLoc->{ "ln": 191, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_426V_22) 	pts{2988 }
+SourceLoc->{ "ln": 193, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 194, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 194, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_426V_22) 	pts{2988 }
+SourceLoc->{ "ln": 194, "cl": 124, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 196, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 196, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 198, "cl": 29, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_426V_22) 	pts{2988 }
+SourceLoc->{ "ln": 198, "cl": 39, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_424V_2) 	pts{2986 }
+SourceLoc->{ "ln": 198, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+238V_2 = STCHI(MR_238V_1) 	pts{102 }
+SourceLoc->{ "ln": 198, "cl": 12, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+428V_2 = STCHI(MR_428V_1) 	pts{2990 }
+SourceLoc->{ "ln": 201, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_426V_22) 	pts{2988 }
+SourceLoc->{ "ln": 201, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_424V_2) 	pts{2986 }
+SourceLoc->{ "ln": 201, "cl": 40, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_238V_2) 	pts{102 }
+SourceLoc->{ "ln": 201, "cl": 39, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+428V_3 = STCHI(MR_428V_2) 	pts{2990 }
+SourceLoc->{ "ln": 201, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_428V_3) 	pts{2990 }
+SourceLoc->{ "ln": 201, "cl": 88, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 201, "cl": 309, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_420V_2) 	pts{2982 }
+SourceLoc->{ "ln": 201, "cl": 344, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+430V_3 = STCHI(MR_430V_1) 	pts{2992 }
+SourceLoc->{ "ln": 201, "cl": 435, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+430V_4 = STCHI(MR_430V_3) 	pts{2992 }
+SourceLoc->{ "ln": 201, "cl": 435, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_430V_4) 	pts{2992 }
+SourceLoc->{ "ln": 201, "cl": 1080, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_428V_3) 	pts{2990 }
+SourceLoc->{ "ln": 201, "cl": 1456, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+432V_2 = STCHI(MR_432V_1) 	pts{2994 }
+SourceLoc->{ "ln": 201, "cl": 105, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_432V_2) 	pts{2994 }
+SourceLoc->{ "ln": 201, "cl": 1476, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+426V_24 = STCHI(MR_426V_22) 	pts{2988 }
+SourceLoc->{ "ln": 203, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+
+LDMU(MR_426V_23) 	pts{2988 }
+SourceLoc->{ "ln": 205, "cl": 12, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+LDMU(MR_422V_2) 	pts{2984 }
+SourceLoc->{ "ln": 205, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+236V_2 = STCHI(MR_236V_1) 	pts{100 }
+SourceLoc->{ "ln": 205, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_pch.c" }
+
+==========FUNCTION: i915_run_as_guest==========
+
+CALMU(MR_230V_1) 	pts{44 }
+==========FUNCTION: hypervisor_is_type==========
+
+LDMU(MR_230V_1) 	pts{44 }
+SourceLoc->{ "ln": 74, "cl": 9, "fl": "./arch/x86/include/asm/hypervisor.h" }
+
+LDMU(MR_441V_2) 	pts{3276 }
+SourceLoc->{ "ln": 74, "cl": 27, "fl": "./arch/x86/include/asm/hypervisor.h" }
+==========FUNCTION: IS_SUBPLATFORM==========
+248V_2 = STCHI(MR_248V_1) 	pts{3294 }
+SourceLoc->{ "ln": 474, "cl": 35, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_242V_2) 	pts{3288 }
+SourceLoc->{ "ln": 474, "cl": 45, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+248V_3 = STCHI(MR_248V_2) 	pts{3294 }
+SourceLoc->{ "ln": 474, "cl": 35, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+250V_2 = STCHI(MR_250V_1) 	pts{3296 }
+SourceLoc->{ "ln": 475, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_248V_3) 	pts{3294 }
+SourceLoc->{ "ln": 475, "cl": 48, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_244V_2) 	pts{3290 }
+SourceLoc->{ "ln": 475, "cl": 54, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+250V_3 = STCHI(MR_250V_2) 	pts{3296 }
+SourceLoc->{ "ln": 475, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+252V_2 = STCHI(MR_252V_1) 	pts{3298 }
+SourceLoc->{ "ln": 476, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_248V_3) 	pts{3294 }
+SourceLoc->{ "ln": 476, "cl": 46, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_244V_2) 	pts{3290 }
+SourceLoc->{ "ln": 476, "cl": 52, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+252V_3 = STCHI(MR_252V_2) 	pts{3298 }
+SourceLoc->{ "ln": 476, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+254V_2 = STCHI(MR_254V_1) 	pts{3300 }
+SourceLoc->{ "ln": 477, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+254V_3 = STCHI(MR_254V_2) 	pts{3300 }
+SourceLoc->{ "ln": 477, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+256V_2 = STCHI(MR_256V_1) 	pts{3302 }
+SourceLoc->{ "ln": 478, "cl": 12, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_248V_3) 	pts{3294 }
+SourceLoc->{ "ln": 478, "cl": 19, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_250V_3) 	pts{3296 }
+SourceLoc->{ "ln": 478, "cl": 39, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+256V_3 = STCHI(MR_256V_2) 	pts{3302 }
+SourceLoc->{ "ln": 478, "cl": 12, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+
+LDMU(MR_244V_2) 	pts{3290 }
+SourceLoc->{ "ln": 480, "cl": 190, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_246V_2) 	pts{3292 }
+SourceLoc->{ "ln": 481, "cl": 190, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_246V_2) 	pts{3292 }
+SourceLoc->{ "ln": 482, "cl": 174, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_256V_3) 	pts{3302 }
+SourceLoc->{ "ln": 485, "cl": 11, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_252V_3) 	pts{3298 }
+SourceLoc->{ "ln": 485, "cl": 26, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_256V_3) 	pts{3302 }
+SourceLoc->{ "ln": 485, "cl": 34, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_246V_2) 	pts{3292 }
+SourceLoc->{ "ln": 485, "cl": 49, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: dev_name==========
+
+LDMU(MR_461V_2) 	pts{3413 }
+SourceLoc->{ "ln": 883, "cl": 6, "fl": "./include/linux/device.h" }
+
+LDMU(MR_461V_2) 	pts{3413 }
+SourceLoc->{ "ln": 884, "cl": 10, "fl": "./include/linux/device.h" }
+459V_4 = STCHI(MR_459V_1) 	pts{3411 }
+SourceLoc->{ "ln": 884, "cl": 3, "fl": "./include/linux/device.h" }
+
+
+LDMU(MR_461V_2) 	pts{3413 }
+SourceLoc->{ "ln": 886, "cl": 23, "fl": "./include/linux/device.h" }
+459V_2 = STCHI(MR_459V_1) 	pts{3411 }
+SourceLoc->{ "ln": 886, "cl": 2, "fl": "./include/linux/device.h" }
+
+
+LDMU(MR_459V_3) 	pts{3411 }
+SourceLoc->{ "ln": 887, "cl": 1, "fl": "./include/linux/device.h" }
+==========FUNCTION: kobject_name==========
+
+LDMU(MR_769V_2) 	pts{3442 }
+SourceLoc->{ "ln": 89, "cl": 9, "fl": "./include/linux/kobject.h" }
+==========FUNCTION: __platform_mask_index==========
+564V_2 = STCHI(MR_564V_1) 	pts{3457 }
+SourceLoc->{ "ln": 430, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+564V_3 = STCHI(MR_564V_2) 	pts{3457 }
+SourceLoc->{ "ln": 430, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+
+LDMU(MR_562V_2) 	pts{3455 }
+SourceLoc->{ "ln": 437, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: __platform_mask_bit==========
+544V_2 = STCHI(MR_544V_1) 	pts{3484 }
+SourceLoc->{ "ln": 444, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+544V_3 = STCHI(MR_544V_2) 	pts{3484 }
+SourceLoc->{ "ln": 444, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_542V_2) 	pts{3482 }
+SourceLoc->{ "ln": 447, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: i9xx_fsb_freq==========
+691V_2 = STCHI(MR_691V_1) 	pts{3513 }
+SourceLoc->{ "ln": 147, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_689V_2) 	pts{3511 }
+SourceLoc->{ "ln": 157, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+707V_2 = STCHI(MR_707V_1) 	pts{8282 }
+SourceLoc->{ "ln": 157, "cl": 60, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_707V_2) 	pts{8282 }
+SourceLoc->{ "ln": 157, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+691V_3 = STCHI(MR_691V_2) 	pts{3513 }
+SourceLoc->{ "ln": 157, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_689V_2) 	pts{3511 }
+SourceLoc->{ "ln": 159, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_689V_2) 	pts{3511 }
+SourceLoc->{ "ln": 159, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_691V_3) 	pts{3513 }
+SourceLoc->{ "ln": 160, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+687V_16 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 162, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_14 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 164, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_15 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 166, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_13 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 168, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_12 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 170, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_11 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 172, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+695V_3 = STCHI(MR_695V_1) 	pts{3519 }
+SourceLoc->{ "ln": 174, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+695V_4 = STCHI(MR_695V_3) 	pts{3519 }
+SourceLoc->{ "ln": 174, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_695V_4) 	pts{3519 }
+SourceLoc->{ "ln": 174, "cl": 58, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_691V_3) 	pts{3513 }
+SourceLoc->{ "ln": 174, "cl": 280, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+697V_4 = STCHI(MR_697V_1) 	pts{3521 }
+SourceLoc->{ "ln": 174, "cl": 304, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+697V_5 = STCHI(MR_697V_4) 	pts{3521 }
+SourceLoc->{ "ln": 174, "cl": 304, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_697V_5) 	pts{3521 }
+SourceLoc->{ "ln": 174, "cl": 950, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_695V_4) 	pts{3519 }
+SourceLoc->{ "ln": 174, "cl": 1326, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+699V_3 = STCHI(MR_699V_1) 	pts{3523 }
+SourceLoc->{ "ln": 174, "cl": 75, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_699V_3) 	pts{3523 }
+SourceLoc->{ "ln": 174, "cl": 1346, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+687V_17 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 175, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_691V_3) 	pts{3513 }
+SourceLoc->{ "ln": 178, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+687V_8 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 180, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_7 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 182, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_6 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 184, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_5 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 186, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_4 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 188, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_3 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 190, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+687V_2 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 192, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+701V_2 = STCHI(MR_701V_1) 	pts{3525 }
+SourceLoc->{ "ln": 194, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+701V_3 = STCHI(MR_701V_2) 	pts{3525 }
+SourceLoc->{ "ln": 194, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_701V_3) 	pts{3525 }
+SourceLoc->{ "ln": 194, "cl": 58, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_691V_3) 	pts{3513 }
+SourceLoc->{ "ln": 194, "cl": 280, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+703V_3 = STCHI(MR_703V_1) 	pts{3527 }
+SourceLoc->{ "ln": 194, "cl": 304, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+703V_4 = STCHI(MR_703V_3) 	pts{3527 }
+SourceLoc->{ "ln": 194, "cl": 304, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_703V_4) 	pts{3527 }
+SourceLoc->{ "ln": 194, "cl": 950, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_701V_3) 	pts{3525 }
+SourceLoc->{ "ln": 194, "cl": 1326, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+705V_2 = STCHI(MR_705V_1) 	pts{3529 }
+SourceLoc->{ "ln": 194, "cl": 75, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_705V_2) 	pts{3529 }
+SourceLoc->{ "ln": 194, "cl": 1346, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+687V_9 = STCHI(MR_687V_1) 	pts{3509 }
+SourceLoc->{ "ln": 195, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_687V_10) 	pts{3509 }
+SourceLoc->{ "ln": 198, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: intel_uncore_read==========
+
+LDMU(MR_463V_2) 	pts{3744 }
+SourceLoc->{ "ln": 373, "cl": 191, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+LDMU(MR_463V_2) 	pts{3744 }
+SourceLoc->{ "ln": 373, "cl": 216, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+LDMU(MR_465V_2) 	pts{8281 }
+SourceLoc->{ "ln": 373, "cl": 191, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+==========FUNCTION: IS_PLATFORM.1==========
+554V_2 = STCHI(MR_554V_1) 	pts{3768 }
+SourceLoc->{ "ln": 461, "cl": 35, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_550V_2) 	pts{3764 }
+SourceLoc->{ "ln": 461, "cl": 45, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+554V_3 = STCHI(MR_554V_2) 	pts{3768 }
+SourceLoc->{ "ln": 461, "cl": 35, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+556V_2 = STCHI(MR_556V_1) 	pts{3770 }
+SourceLoc->{ "ln": 462, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_554V_3) 	pts{3768 }
+SourceLoc->{ "ln": 462, "cl": 48, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_552V_2) 	pts{3766 }
+SourceLoc->{ "ln": 462, "cl": 54, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+556V_3 = STCHI(MR_556V_2) 	pts{3770 }
+SourceLoc->{ "ln": 462, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+558V_2 = STCHI(MR_558V_1) 	pts{3772 }
+SourceLoc->{ "ln": 463, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_554V_3) 	pts{3768 }
+SourceLoc->{ "ln": 463, "cl": 46, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_552V_2) 	pts{3766 }
+SourceLoc->{ "ln": 463, "cl": 52, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+558V_3 = STCHI(MR_558V_2) 	pts{3772 }
+SourceLoc->{ "ln": 463, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+
+LDMU(MR_552V_2) 	pts{3766 }
+SourceLoc->{ "ln": 465, "cl": 190, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_554V_3) 	pts{3768 }
+SourceLoc->{ "ln": 467, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_556V_3) 	pts{3770 }
+SourceLoc->{ "ln": 467, "cl": 29, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_558V_3) 	pts{3772 }
+SourceLoc->{ "ln": 467, "cl": 50, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: __platform_mask_index.42==========
+228V_2 = STCHI(MR_228V_1) 	pts{3836 }
+SourceLoc->{ "ln": 430, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+228V_3 = STCHI(MR_228V_2) 	pts{3836 }
+SourceLoc->{ "ln": 430, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+
+LDMU(MR_226V_2) 	pts{3834 }
+SourceLoc->{ "ln": 437, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: __platform_mask_bit.43==========
+490V_2 = STCHI(MR_490V_1) 	pts{3863 }
+SourceLoc->{ "ln": 444, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+490V_3 = STCHI(MR_490V_2) 	pts{3863 }
+SourceLoc->{ "ln": 444, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_488V_2) 	pts{3861 }
+SourceLoc->{ "ln": 447, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: intel_dram_detect==========
+204V_2 = STCHI(MR_204V_1) 	pts{3884 }
+SourceLoc->{ "ln": 704, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 704, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+204V_3 = STCHI(MR_204V_2) 	pts{3884 }
+SourceLoc->{ "ln": 704, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+206V_2 = STCHI(MR_206V_1) 	pts{3886 }
+SourceLoc->{ "ln": 705, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 707, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 708, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 710, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 710, "cl": 65, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 710, "cl": 250, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 717, "cl": 43, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 717, "cl": 90, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_204V_3) 	pts{3884 }
+SourceLoc->{ "ln": 717, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 719, "cl": 170, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 720, "cl": 30, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+206V_11 = STCHI(MR_206V_2) 	pts{3886 }
+SourceLoc->{ "ln": 720, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 721, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 722, "cl": 29, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+206V_9 = STCHI(MR_206V_2) 	pts{3886 }
+SourceLoc->{ "ln": 722, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 723, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 724, "cl": 29, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_97V_1) 	pts{8283 }
+206V_7 = STCHI(MR_206V_2) 	pts{3886 }
+SourceLoc->{ "ln": 724, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 725, "cl": 16, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 725, "cl": 63, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 726, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_97V_1) 	pts{8283 }
+206V_5 = STCHI(MR_206V_2) 	pts{3886 }
+SourceLoc->{ "ln": 726, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 728, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_97V_1) 	pts{8283 }
+206V_3 = STCHI(MR_206V_2) 	pts{3886 }
+SourceLoc->{ "ln": 728, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_206V_10) 	pts{3886 }
+SourceLoc->{ "ln": 729, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 732, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 732, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_204V_3) 	pts{3884 }
+SourceLoc->{ "ln": 732, "cl": 112, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 734, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 734, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_204V_3) 	pts{3884 }
+SourceLoc->{ "ln": 734, "cl": 112, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 736, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_202V_2) 	pts{3882 }
+SourceLoc->{ "ln": 736, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_204V_3) 	pts{3884 }
+SourceLoc->{ "ln": 736, "cl": 145, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+208V_2 = STCHI(MR_208V_1) 	pts{3888 }
+SourceLoc->{ "ln": 738, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+==========FUNCTION: detect_fsb_freq==========
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 229, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 230, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 230, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 231, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 231, "cl": 63, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 232, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 232, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 234, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 235, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 235, "cl": 47, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_200V_2) 	pts{4118 }
+SourceLoc->{ "ln": 235, "cl": 120, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: detect_mem_freq==========
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 129, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 130, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 130, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 131, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 132, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 132, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 133, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 134, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 134, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 135, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 136, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 136, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 138, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 139, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 139, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 141, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 142, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 142, "cl": 47, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_198V_2) 	pts{4192 }
+SourceLoc->{ "ln": 142, "cl": 116, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: xelpdp_get_dram_info==========
+172V_2 = STCHI(MR_172V_1) 	pts{4298 }
+SourceLoc->{ "ln": 664, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_170V_2) 	pts{4296 }
+SourceLoc->{ "ln": 664, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+196V_2 = STCHI(MR_196V_1) 	pts{8280 }
+SourceLoc->{ "ln": 664, "cl": 64, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_196V_2) 	pts{8280 }
+SourceLoc->{ "ln": 664, "cl": 12, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+172V_3 = STCHI(MR_172V_2) 	pts{4298 }
+SourceLoc->{ "ln": 664, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+174V_2 = STCHI(MR_174V_1) 	pts{4302 }
+SourceLoc->{ "ln": 665, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_170V_2) 	pts{4296 }
+SourceLoc->{ "ln": 665, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+174V_3 = STCHI(MR_174V_2) 	pts{4302 }
+SourceLoc->{ "ln": 665, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_172V_3) 	pts{4298 }
+SourceLoc->{ "ln": 667, "cl": 9537, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+176V_2 = STCHI(MR_176V_1) 	pts{4304 }
+SourceLoc->{ "ln": 667, "cl": 19, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_176V_2) 	pts{4304 }
+SourceLoc->{ "ln": 667, "cl": 10501, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_174V_3) 	pts{4302 }
+SourceLoc->{ "ln": 669, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_174V_3) 	pts{4302 }
+SourceLoc->{ "ln": 672, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_174V_3) 	pts{4302 }
+SourceLoc->{ "ln": 675, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_174V_3) 	pts{4302 }
+SourceLoc->{ "ln": 678, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_174V_3) 	pts{4302 }
+SourceLoc->{ "ln": 681, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_174V_3) 	pts{4302 }
+SourceLoc->{ "ln": 684, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+178V_3 = STCHI(MR_178V_1) 	pts{4306 }
+SourceLoc->{ "ln": 687, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_170V_2) 	pts{4296 }
+SourceLoc->{ "ln": 687, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+178V_4 = STCHI(MR_178V_3) 	pts{4306 }
+SourceLoc->{ "ln": 687, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_178V_4) 	pts{4306 }
+SourceLoc->{ "ln": 687, "cl": 86, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_170V_2) 	pts{4296 }
+SourceLoc->{ "ln": 687, "cl": 307, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_170V_2) 	pts{4296 }
+SourceLoc->{ "ln": 687, "cl": 338, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+180V_4 = STCHI(MR_180V_1) 	pts{4308 }
+SourceLoc->{ "ln": 687, "cl": 426, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+180V_5 = STCHI(MR_180V_4) 	pts{4308 }
+SourceLoc->{ "ln": 687, "cl": 426, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_180V_5) 	pts{4308 }
+SourceLoc->{ "ln": 687, "cl": 1072, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_178V_4) 	pts{4306 }
+SourceLoc->{ "ln": 687, "cl": 1448, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+182V_3 = STCHI(MR_182V_1) 	pts{4310 }
+SourceLoc->{ "ln": 687, "cl": 103, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_182V_3) 	pts{4310 }
+SourceLoc->{ "ln": 687, "cl": 1468, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_174V_3) 	pts{4302 }
+SourceLoc->{ "ln": 688, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+184V_3 = STCHI(MR_184V_1) 	pts{4312 }
+SourceLoc->{ "ln": 691, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+184V_4 = STCHI(MR_184V_3) 	pts{4312 }
+SourceLoc->{ "ln": 691, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_184V_4) 	pts{4312 }
+SourceLoc->{ "ln": 691, "cl": 57, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_172V_3) 	pts{4298 }
+SourceLoc->{ "ln": 691, "cl": 279, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+186V_4 = STCHI(MR_186V_1) 	pts{4314 }
+SourceLoc->{ "ln": 691, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+186V_5 = STCHI(MR_186V_4) 	pts{4314 }
+SourceLoc->{ "ln": 691, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_186V_5) 	pts{4314 }
+SourceLoc->{ "ln": 691, "cl": 949, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_184V_4) 	pts{4312 }
+SourceLoc->{ "ln": 691, "cl": 1325, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+188V_3 = STCHI(MR_188V_1) 	pts{4316 }
+SourceLoc->{ "ln": 691, "cl": 74, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_188V_3) 	pts{4316 }
+SourceLoc->{ "ln": 691, "cl": 1345, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+168V_4 = STCHI(MR_168V_1) 	pts{4294 }
+SourceLoc->{ "ln": 692, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_172V_3) 	pts{4298 }
+SourceLoc->{ "ln": 695, "cl": 9555, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+192V_2 = STCHI(MR_192V_1) 	pts{4320 }
+SourceLoc->{ "ln": 695, "cl": 37, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_192V_2) 	pts{4320 }
+SourceLoc->{ "ln": 695, "cl": 10519, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_174V_3) 	pts{4302 }
+SourceLoc->{ "ln": 695, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_172V_3) 	pts{4298 }
+SourceLoc->{ "ln": 696, "cl": 9653, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+194V_2 = STCHI(MR_194V_1) 	pts{4322 }
+SourceLoc->{ "ln": 696, "cl": 39, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_194V_2) 	pts{4322 }
+SourceLoc->{ "ln": 696, "cl": 10629, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_174V_3) 	pts{4302 }
+SourceLoc->{ "ln": 696, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+168V_2 = STCHI(MR_168V_1) 	pts{4294 }
+SourceLoc->{ "ln": 699, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_168V_3) 	pts{4294 }
+SourceLoc->{ "ln": 700, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: gen12_get_dram_info==========
+
+LDMU(MR_166V_2) 	pts{4646 }
+SourceLoc->{ "ln": 657, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_166V_2) 	pts{4646 }
+SourceLoc->{ "ln": 659, "cl": 40, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: gen11_get_dram_info==========
+93V_2 = STCHI(MR_93V_1) 	pts{4665 }
+SourceLoc->{ "ln": 647, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_91V_2) 	pts{4663 }
+SourceLoc->{ "ln": 647, "cl": 30, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_97V_1) 	pts{8283 }
+93V_3 = STCHI(MR_93V_2) 	pts{4665 }
+SourceLoc->{ "ln": 647, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_93V_3) 	pts{4665 }
+SourceLoc->{ "ln": 649, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_93V_3) 	pts{4665 }
+SourceLoc->{ "ln": 650, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+89V_4 = STCHI(MR_89V_1) 	pts{4661 }
+SourceLoc->{ "ln": 650, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_91V_2) 	pts{4663 }
+SourceLoc->{ "ln": 652, "cl": 40, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+89V_2 = STCHI(MR_89V_1) 	pts{4661 }
+SourceLoc->{ "ln": 652, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_89V_3) 	pts{4661 }
+SourceLoc->{ "ln": 653, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: bxt_get_dram_info==========
+139V_2 = STCHI(MR_139V_1) 	pts{4699 }
+SourceLoc->{ "ln": 537, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_137V_2) 	pts{4697 }
+SourceLoc->{ "ln": 537, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+139V_3 = STCHI(MR_139V_2) 	pts{4699 }
+SourceLoc->{ "ln": 537, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+141V_2 = STCHI(MR_141V_1) 	pts{4701 }
+SourceLoc->{ "ln": 538, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+143V_2 = STCHI(MR_143V_1) 	pts{4703 }
+SourceLoc->{ "ln": 539, "cl": 5, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+143V_3 = STCHI(MR_143V_2) 	pts{4703 }
+SourceLoc->{ "ln": 539, "cl": 5, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+145V_2 = STCHI(MR_145V_1) 	pts{4705 }
+SourceLoc->{ "ln": 540, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+145V_3 = STCHI(MR_145V_2) 	pts{4705 }
+SourceLoc->{ "ln": 545, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_145V_4) 	pts{4705 }
+SourceLoc->{ "ln": 545, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+159V_3 = STCHI(MR_159V_2) 	pts{8277 }
+161V_3 = STCHI(MR_161V_2) 	pts{8278 }
+163V_3 = STCHI(MR_163V_2) 	pts{8279 }
+SourceLoc->{ "ln": 546, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+147V_3 = STCHI(MR_147V_2) 	pts{4709 }
+SourceLoc->{ "ln": 547, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_137V_2) 	pts{4697 }
+SourceLoc->{ "ln": 549, "cl": 28, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_145V_4) 	pts{4705 }
+SourceLoc->{ "ln": 549, "cl": 96, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+157V_3 = STCHI(MR_157V_2) 	pts{8276 }
+SourceLoc->{ "ln": 549, "cl": 61, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_157V_3) 	pts{8276 }
+SourceLoc->{ "ln": 549, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+141V_4 = STCHI(MR_141V_3) 	pts{4701 }
+SourceLoc->{ "ln": 549, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_141V_4) 	pts{4701 }
+SourceLoc->{ "ln": 550, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_139V_3) 	pts{4699 }
+SourceLoc->{ "ln": 553, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_141V_4) 	pts{4701 }
+SourceLoc->{ "ln": 555, "cl": 28, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_163V_3) 	pts{8279 }
+CALMU(MR_161V_3) 	pts{8278 }
+CALMU(MR_159V_3) 	pts{8277 }
+163V_4 = CALCHI(MR_163V_3) 	pts{8279 }
+161V_4 = CALCHI(MR_161V_3) 	pts{8278 }
+159V_4 = CALCHI(MR_159V_3) 	pts{8277 }
+
+LDMU(MR_141V_4) 	pts{4701 }
+SourceLoc->{ "ln": 556, "cl": 28, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+147V_4 = STCHI(MR_147V_3) 	pts{4709 }
+SourceLoc->{ "ln": 556, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+151V_3 = STCHI(MR_151V_2) 	pts{4715 }
+SourceLoc->{ "ln": 558, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_147V_4) 	pts{4709 }
+SourceLoc->{ "ln": 558, "cl": 30, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_139V_3) 	pts{4699 }
+SourceLoc->{ "ln": 558, "cl": 60, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_139V_3) 	pts{4699 }
+SourceLoc->{ "ln": 558, "cl": 101, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_147V_4) 	pts{4709 }
+SourceLoc->{ "ln": 558, "cl": 120, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+151V_4 = STCHI(MR_151V_3) 	pts{4715 }
+SourceLoc->{ "ln": 558, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_151V_4) 	pts{4715 }
+SourceLoc->{ "ln": 558, "cl": 152, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_137V_2) 	pts{4697 }
+SourceLoc->{ "ln": 558, "cl": 373, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_137V_2) 	pts{4697 }
+SourceLoc->{ "ln": 558, "cl": 404, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+153V_4 = STCHI(MR_153V_2) 	pts{4717 }
+SourceLoc->{ "ln": 558, "cl": 558, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+153V_5 = STCHI(MR_153V_4) 	pts{4717 }
+SourceLoc->{ "ln": 558, "cl": 558, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_153V_5) 	pts{4717 }
+SourceLoc->{ "ln": 558, "cl": 1204, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_151V_4) 	pts{4715 }
+SourceLoc->{ "ln": 558, "cl": 1580, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+155V_3 = STCHI(MR_155V_2) 	pts{4719 }
+SourceLoc->{ "ln": 558, "cl": 169, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_155V_3) 	pts{4719 }
+SourceLoc->{ "ln": 558, "cl": 1600, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_137V_2) 	pts{4697 }
+SourceLoc->{ "ln": 562, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_137V_2) 	pts{4697 }
+SourceLoc->{ "ln": 562, "cl": 47, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_145V_4) 	pts{4705 }
+SourceLoc->{ "ln": 562, "cl": 150, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_159V_4) 	pts{8277 }
+SourceLoc->{ "ln": 562, "cl": 162, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_161V_4) 	pts{8278 }
+SourceLoc->{ "ln": 562, "cl": 173, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_163V_4) 	pts{8279 }
+SourceLoc->{ "ln": 562, "cl": 185, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_147V_4) 	pts{4709 }
+SourceLoc->{ "ln": 562, "cl": 212, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_97V_1) 	pts{8283 }
+
+LDMU(MR_143V_4) 	pts{4703 }
+SourceLoc->{ "ln": 568, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_163V_4) 	pts{8279 }
+SourceLoc->{ "ln": 569, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+143V_6 = STCHI(MR_143V_4) 	pts{4703 }
+SourceLoc->{ "ln": 569, "cl": 16, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_147V_4) 	pts{4709 }
+SourceLoc->{ "ln": 571, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_147V_4) 	pts{4709 }
+SourceLoc->{ "ln": 572, "cl": 22, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_139V_3) 	pts{4699 }
+SourceLoc->{ "ln": 572, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+149V_6 = STCHI(MR_149V_2) 	pts{4713 }
+SourceLoc->{ "ln": 573, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_145V_4) 	pts{4705 }
+SourceLoc->{ "ln": 545, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+145V_5 = STCHI(MR_145V_4) 	pts{4705 }
+SourceLoc->{ "ln": 545, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_139V_3) 	pts{4699 }
+SourceLoc->{ "ln": 575, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_143V_4) 	pts{4703 }
+SourceLoc->{ "ln": 575, "cl": 47, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_137V_2) 	pts{4697 }
+SourceLoc->{ "ln": 576, "cl": 36, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_137V_2) 	pts{4697 }
+SourceLoc->{ "ln": 576, "cl": 53, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+135V_4 = STCHI(MR_135V_1) 	pts{4695 }
+SourceLoc->{ "ln": 577, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+135V_2 = STCHI(MR_135V_1) 	pts{4695 }
+SourceLoc->{ "ln": 580, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_135V_3) 	pts{4695 }
+SourceLoc->{ "ln": 581, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: skl_get_dram_info==========
+217V_2 = STCHI(MR_217V_1) 	pts{4983 }
+SourceLoc->{ "ln": 443, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_215V_2) 	pts{4981 }
+SourceLoc->{ "ln": 443, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+217V_3 = STCHI(MR_217V_2) 	pts{4983 }
+SourceLoc->{ "ln": 443, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+219V_2 = STCHI(MR_219V_1) 	pts{4985 }
+SourceLoc->{ "ln": 444, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_215V_2) 	pts{4981 }
+SourceLoc->{ "ln": 446, "cl": 38, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_217V_3) 	pts{4983 }
+SourceLoc->{ "ln": 446, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_215V_2) 	pts{4981 }
+SourceLoc->{ "ln": 447, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_215V_2) 	pts{4981 }
+SourceLoc->{ "ln": 447, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_217V_3) 	pts{4983 }
+SourceLoc->{ "ln": 447, "cl": 128, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_97V_1) 	pts{8283 }
+
+LDMU(MR_215V_2) 	pts{4981 }
+SourceLoc->{ "ln": 450, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+219V_3 = STCHI(MR_219V_2) 	pts{4985 }
+SourceLoc->{ "ln": 450, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_219V_3) 	pts{4985 }
+SourceLoc->{ "ln": 451, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_219V_3) 	pts{4985 }
+SourceLoc->{ "ln": 452, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+213V_4 = STCHI(MR_213V_1) 	pts{4979 }
+SourceLoc->{ "ln": 452, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+213V_2 = STCHI(MR_213V_1) 	pts{4979 }
+SourceLoc->{ "ln": 454, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_213V_3) 	pts{4979 }
+SourceLoc->{ "ln": 455, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: str_yes_no==========
+
+LDMU(MR_99V_2) 	pts{5046 }
+SourceLoc->{ "ln": 58, "cl": 9, "fl": "./include/linux/string_choices.h" }
+==========FUNCTION: skl_get_dram_type==========
+447V_2 = STCHI(MR_447V_1) 	pts{5062 }
+SourceLoc->{ "ln": 420, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_445V_2) 	pts{5060 }
+SourceLoc->{ "ln": 422, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+457V_2 = STCHI(MR_457V_1) 	pts{8275 }
+SourceLoc->{ "ln": 423, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_457V_2) 	pts{8275 }
+SourceLoc->{ "ln": 422, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+447V_3 = STCHI(MR_447V_2) 	pts{5062 }
+SourceLoc->{ "ln": 422, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_447V_3) 	pts{5062 }
+SourceLoc->{ "ln": 425, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+443V_4 = STCHI(MR_443V_1) 	pts{5058 }
+SourceLoc->{ "ln": 427, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+443V_2 = STCHI(MR_443V_1) 	pts{5058 }
+SourceLoc->{ "ln": 429, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+443V_6 = STCHI(MR_443V_1) 	pts{5058 }
+SourceLoc->{ "ln": 431, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+443V_3 = STCHI(MR_443V_1) 	pts{5058 }
+SourceLoc->{ "ln": 433, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+451V_3 = STCHI(MR_451V_1) 	pts{5068 }
+SourceLoc->{ "ln": 435, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+451V_4 = STCHI(MR_451V_3) 	pts{5068 }
+SourceLoc->{ "ln": 435, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_451V_4) 	pts{5068 }
+SourceLoc->{ "ln": 435, "cl": 57, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_447V_3) 	pts{5062 }
+SourceLoc->{ "ln": 435, "cl": 279, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+453V_4 = STCHI(MR_453V_1) 	pts{5070 }
+SourceLoc->{ "ln": 435, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+453V_5 = STCHI(MR_453V_4) 	pts{5070 }
+SourceLoc->{ "ln": 435, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_453V_5) 	pts{5070 }
+SourceLoc->{ "ln": 435, "cl": 949, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_451V_4) 	pts{5068 }
+SourceLoc->{ "ln": 435, "cl": 1325, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+455V_3 = STCHI(MR_455V_1) 	pts{5072 }
+SourceLoc->{ "ln": 435, "cl": 74, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_455V_3) 	pts{5072 }
+SourceLoc->{ "ln": 435, "cl": 1345, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+443V_7 = STCHI(MR_443V_1) 	pts{5058 }
+SourceLoc->{ "ln": 436, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_443V_5) 	pts{5058 }
+SourceLoc->{ "ln": 438, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: intel_dram_type_str==========
+
+LDMU(MR_467V_2) 	pts{5170 }
+SourceLoc->{ "ln": 38, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+467V_4 = STCHI(MR_467V_2) 	pts{5170 }
+SourceLoc->{ "ln": 39, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_467V_3) 	pts{5170 }
+SourceLoc->{ "ln": 41, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_97V_1) 	pts{8283 }
+SourceLoc->{ "ln": 41, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: skl_dram_get_channels_info==========
+496V_2 = STCHI(MR_496V_1) 	pts{5193 }
+SourceLoc->{ "ln": 380, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 380, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+496V_3 = STCHI(MR_496V_2) 	pts{5193 }
+SourceLoc->{ "ln": 380, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+528V_2 = STCHI(MR_528V_1) 	pts{8269 }
+530V_2 = STCHI(MR_530V_1) 	pts{8270 }
+532V_2 = STCHI(MR_532V_1) 	pts{8271 }
+534V_2 = STCHI(MR_534V_1) 	pts{8272 }
+536V_2 = STCHI(MR_536V_1) 	pts{8273 }
+538V_2 = STCHI(MR_538V_1) 	pts{8274 }
+524V_2 = STCHI(MR_524V_1) 	pts{8267 }
+526V_2 = STCHI(MR_526V_1) 	pts{8268 }
+SourceLoc->{ "ln": 381, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+512V_2 = STCHI(MR_512V_1) 	pts{8261 }
+514V_2 = STCHI(MR_514V_1) 	pts{8262 }
+516V_2 = STCHI(MR_516V_1) 	pts{8263 }
+518V_2 = STCHI(MR_518V_1) 	pts{8264 }
+520V_2 = STCHI(MR_520V_1) 	pts{8265 }
+522V_2 = STCHI(MR_522V_1) 	pts{8266 }
+508V_2 = STCHI(MR_508V_1) 	pts{8259 }
+510V_2 = STCHI(MR_510V_1) 	pts{8260 }
+SourceLoc->{ "ln": 381, "cl": 37, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+498V_2 = STCHI(MR_498V_1) 	pts{5199 }
+SourceLoc->{ "ln": 382, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+500V_2 = STCHI(MR_500V_1) 	pts{5201 }
+SourceLoc->{ "ln": 383, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 385, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+506V_2 = STCHI(MR_506V_1) 	pts{8258 }
+SourceLoc->{ "ln": 386, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_506V_2) 	pts{8258 }
+SourceLoc->{ "ln": 385, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+498V_3 = STCHI(MR_498V_2) 	pts{5199 }
+SourceLoc->{ "ln": 385, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 387, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_498V_3) 	pts{5199 }
+SourceLoc->{ "ln": 387, "cl": 49, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_538V_2) 	pts{8274 }
+CALMU(MR_536V_2) 	pts{8273 }
+CALMU(MR_534V_2) 	pts{8272 }
+CALMU(MR_532V_2) 	pts{8271 }
+CALMU(MR_530V_2) 	pts{8270 }
+CALMU(MR_528V_2) 	pts{8269 }
+CALMU(MR_526V_2) 	pts{8268 }
+CALMU(MR_524V_2) 	pts{8267 }
+538V_3 = CALCHI(MR_538V_2) 	pts{8274 }
+536V_3 = CALCHI(MR_536V_2) 	pts{8273 }
+534V_3 = CALCHI(MR_534V_2) 	pts{8272 }
+530V_3 = CALCHI(MR_530V_2) 	pts{8270 }
+528V_3 = CALCHI(MR_528V_2) 	pts{8269 }
+526V_3 = CALCHI(MR_526V_2) 	pts{8268 }
+532V_3 = CALCHI(MR_532V_2) 	pts{8271 }
+524V_3 = CALCHI(MR_524V_2) 	pts{8267 }
+
+500V_3 = STCHI(MR_500V_2) 	pts{5201 }
+SourceLoc->{ "ln": 387, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_500V_3) 	pts{5201 }
+SourceLoc->{ "ln": 388, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_496V_3) 	pts{5193 }
+SourceLoc->{ "ln": 389, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 391, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+504V_2 = STCHI(MR_504V_1) 	pts{8257 }
+SourceLoc->{ "ln": 392, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_504V_2) 	pts{8257 }
+SourceLoc->{ "ln": 391, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+498V_4 = STCHI(MR_498V_3) 	pts{5199 }
+SourceLoc->{ "ln": 391, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 393, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_498V_4) 	pts{5199 }
+SourceLoc->{ "ln": 393, "cl": 49, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_522V_2) 	pts{8266 }
+CALMU(MR_520V_2) 	pts{8265 }
+CALMU(MR_518V_2) 	pts{8264 }
+CALMU(MR_516V_2) 	pts{8263 }
+CALMU(MR_514V_2) 	pts{8262 }
+CALMU(MR_512V_2) 	pts{8261 }
+CALMU(MR_510V_2) 	pts{8260 }
+CALMU(MR_508V_2) 	pts{8259 }
+522V_3 = CALCHI(MR_522V_2) 	pts{8266 }
+520V_3 = CALCHI(MR_520V_2) 	pts{8265 }
+518V_3 = CALCHI(MR_518V_2) 	pts{8264 }
+514V_3 = CALCHI(MR_514V_2) 	pts{8262 }
+512V_3 = CALCHI(MR_512V_2) 	pts{8261 }
+510V_3 = CALCHI(MR_510V_2) 	pts{8260 }
+516V_3 = CALCHI(MR_516V_2) 	pts{8263 }
+508V_3 = CALCHI(MR_508V_2) 	pts{8259 }
+
+500V_4 = STCHI(MR_500V_3) 	pts{5201 }
+SourceLoc->{ "ln": 393, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_500V_4) 	pts{5201 }
+SourceLoc->{ "ln": 394, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_496V_3) 	pts{5193 }
+SourceLoc->{ "ln": 395, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_496V_3) 	pts{5193 }
+SourceLoc->{ "ln": 397, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 398, "cl": 36, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 398, "cl": 53, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+492V_5 = STCHI(MR_492V_1) 	pts{5189 }
+SourceLoc->{ "ln": 399, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_524V_3) 	pts{8267 }
+SourceLoc->{ "ln": 402, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_508V_3) 	pts{8259 }
+SourceLoc->{ "ln": 402, "cl": 28, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 403, "cl": 36, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 403, "cl": 53, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+492V_3 = STCHI(MR_492V_1) 	pts{5189 }
+SourceLoc->{ "ln": 404, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_526V_3) 	pts{8268 }
+SourceLoc->{ "ln": 407, "cl": 41, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_510V_3) 	pts{8260 }
+SourceLoc->{ "ln": 407, "cl": 61, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_496V_3) 	pts{5193 }
+SourceLoc->{ "ln": 407, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_534V_3) 	pts{8272 }
+
+LDMU(MR_496V_3) 	pts{5193 }
+SourceLoc->{ "ln": 409, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 411, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_494V_2) 	pts{5191 }
+SourceLoc->{ "ln": 411, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_496V_3) 	pts{5193 }
+SourceLoc->{ "ln": 411, "cl": 143, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+492V_2 = STCHI(MR_492V_1) 	pts{5189 }
+SourceLoc->{ "ln": 414, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_492V_4) 	pts{5189 }
+SourceLoc->{ "ln": 415, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: skl_dram_get_channel_info==========
+
+LDMU(MR_103V_2) 	pts{5400 }
+SourceLoc->{ "ln": 342, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 342, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_107V_2) 	pts{5404 }
+SourceLoc->{ "ln": 343, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_109V_2) 	pts{5406 }
+SourceLoc->{ "ln": 343, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_123V_1) 	pts{8262 8265 8270 8273 }
+CALMU(MR_121V_1) 	pts{8266 8274 }
+CALMU(MR_119V_1) 	pts{8264 8272 }
+CALMU(MR_117V_1) 	pts{8263 8271 }
+CALMU(MR_115V_1) 	pts{8261 8269 }
+123V_2 = CALCHI(MR_123V_1) 	pts{8262 8265 8270 8273 }
+121V_2 = CALCHI(MR_121V_1) 	pts{8266 8274 }
+119V_2 = CALCHI(MR_119V_1) 	pts{8264 8272 }
+117V_2 = CALCHI(MR_117V_1) 	pts{8263 8271 }
+115V_2 = CALCHI(MR_115V_1) 	pts{8261 8269 }
+
+LDMU(MR_103V_2) 	pts{5400 }
+SourceLoc->{ "ln": 344, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 344, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_107V_2) 	pts{5404 }
+SourceLoc->{ "ln": 345, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_109V_2) 	pts{5406 }
+SourceLoc->{ "ln": 345, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_123V_2) 	pts{8262 8265 8270 8273 }
+CALMU(MR_121V_2) 	pts{8266 8274 }
+CALMU(MR_119V_2) 	pts{8264 8272 }
+CALMU(MR_117V_2) 	pts{8263 8271 }
+CALMU(MR_115V_2) 	pts{8261 8269 }
+121V_3 = CALCHI(MR_121V_2) 	pts{8266 8274 }
+119V_3 = CALCHI(MR_119V_2) 	pts{8264 8272 }
+117V_3 = CALCHI(MR_117V_2) 	pts{8263 8271 }
+123V_3 = CALCHI(MR_123V_2) 	pts{8262 8265 8270 8273 }
+115V_3 = CALCHI(MR_115V_2) 	pts{8261 8269 }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 347, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_115V_3) 	pts{8261 8269 }
+SourceLoc->{ "ln": 347, "cl": 17, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 347, "cl": 30, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_119V_3) 	pts{8264 8272 }
+SourceLoc->{ "ln": 347, "cl": 41, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_103V_2) 	pts{5400 }
+SourceLoc->{ "ln": 348, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_103V_2) 	pts{5400 }
+SourceLoc->{ "ln": 348, "cl": 47, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_107V_2) 	pts{5404 }
+SourceLoc->{ "ln": 348, "cl": 114, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+101V_4 = STCHI(MR_101V_1) 	pts{5398 }
+SourceLoc->{ "ln": 349, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 352, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_117V_3) 	pts{8263 8271 }
+SourceLoc->{ "ln": 352, "cl": 17, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 352, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_121V_3) 	pts{8266 8274 }
+SourceLoc->{ "ln": 352, "cl": 42, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 353, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+111V_6 = STCHI(MR_111V_1) 	pts{8259 8267 }
+SourceLoc->{ "ln": 353, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 354, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_117V_3) 	pts{8263 8271 }
+SourceLoc->{ "ln": 354, "cl": 22, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 354, "cl": 36, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_121V_3) 	pts{8266 8274 }
+SourceLoc->{ "ln": 354, "cl": 47, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 355, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+111V_4 = STCHI(MR_111V_1) 	pts{8259 8267 }
+SourceLoc->{ "ln": 355, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 357, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+111V_2 = STCHI(MR_111V_1) 	pts{8259 8267 }
+SourceLoc->{ "ln": 357, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 359, "cl": 39, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_123V_3) 	pts{8262 8265 8270 8273 }
+CALMU(MR_121V_3) 	pts{8266 8274 }
+CALMU(MR_119V_3) 	pts{8264 8272 }
+CALMU(MR_117V_3) 	pts{8263 8271 }
+CALMU(MR_115V_3) 	pts{8261 8269 }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 360, "cl": 21, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_123V_3) 	pts{8262 8265 8270 8273 }
+CALMU(MR_121V_3) 	pts{8266 8274 }
+CALMU(MR_119V_3) 	pts{8264 8272 }
+CALMU(MR_117V_3) 	pts{8263 8271 }
+CALMU(MR_115V_3) 	pts{8261 8269 }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 359, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+113V_2 = STCHI(MR_113V_1) 	pts{8260 8268 }
+SourceLoc->{ "ln": 359, "cl": 19, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_103V_2) 	pts{5400 }
+SourceLoc->{ "ln": 362, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_103V_2) 	pts{5400 }
+SourceLoc->{ "ln": 362, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_107V_2) 	pts{5404 }
+SourceLoc->{ "ln": 362, "cl": 125, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 362, "cl": 134, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_111V_5) 	pts{8259 8267 }
+SourceLoc->{ "ln": 362, "cl": 138, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_105V_2) 	pts{5402 }
+SourceLoc->{ "ln": 362, "cl": 156, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_113V_2) 	pts{8260 8268 }
+SourceLoc->{ "ln": 362, "cl": 160, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+101V_2 = STCHI(MR_101V_1) 	pts{5398 }
+SourceLoc->{ "ln": 365, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_101V_3) 	pts{5398 }
+SourceLoc->{ "ln": 366, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: intel_is_dram_symmetric==========
+
+LDMU(MR_672V_2) 	pts{5563 }
+SourceLoc->{ "ln": 372, "cl": 17, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_674V_2) 	pts{5565 }
+SourceLoc->{ "ln": 372, "cl": 22, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_672V_2) 	pts{5563 }
+SourceLoc->{ "ln": 373, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_534V_1) 	pts{8272 }
+SourceLoc->{ "ln": 373, "cl": 16, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_672V_2) 	pts{5563 }
+SourceLoc->{ "ln": 374, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_672V_2) 	pts{5563 }
+SourceLoc->{ "ln": 374, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: skl_dram_get_dimm_info==========
+
+LDMU(MR_570V_2) 	pts{5609 }
+SourceLoc->{ "ln": 321, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_578V_2) 	pts{5617 }
+SourceLoc->{ "ln": 322, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 322, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+127V_4 = STCHI(MR_127V_1) 	pts{8261 8264 8269 8272 }
+SourceLoc->{ "ln": 322, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_578V_2) 	pts{5617 }
+SourceLoc->{ "ln": 323, "cl": 36, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 323, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+123V_4 = STCHI(MR_123V_1) 	pts{8262 8265 8270 8273 }
+SourceLoc->{ "ln": 323, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_578V_2) 	pts{5617 }
+SourceLoc->{ "ln": 324, "cl": 36, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 324, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+582V_4 = STCHI(MR_582V_1) 	pts{8263 8266 8271 8274 }
+SourceLoc->{ "ln": 324, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_578V_2) 	pts{5617 }
+SourceLoc->{ "ln": 326, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 326, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+127V_2 = STCHI(MR_127V_1) 	pts{8261 8264 8269 8272 }
+SourceLoc->{ "ln": 326, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_578V_2) 	pts{5617 }
+SourceLoc->{ "ln": 327, "cl": 36, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 327, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+123V_2 = STCHI(MR_123V_1) 	pts{8262 8265 8270 8273 }
+SourceLoc->{ "ln": 327, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_578V_2) 	pts{5617 }
+SourceLoc->{ "ln": 328, "cl": 36, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 328, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+582V_2 = STCHI(MR_582V_1) 	pts{8263 8266 8271 8274 }
+SourceLoc->{ "ln": 328, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_570V_2) 	pts{5609 }
+SourceLoc->{ "ln": 331, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_570V_2) 	pts{5609 }
+SourceLoc->{ "ln": 331, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_574V_2) 	pts{5613 }
+SourceLoc->{ "ln": 331, "cl": 158, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_576V_2) 	pts{5615 }
+SourceLoc->{ "ln": 331, "cl": 167, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 331, "cl": 178, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_127V_3) 	pts{8261 8264 8269 8272 }
+SourceLoc->{ "ln": 331, "cl": 184, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 331, "cl": 190, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_123V_3) 	pts{8262 8265 8270 8273 }
+SourceLoc->{ "ln": 331, "cl": 196, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 331, "cl": 203, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_582V_3) 	pts{8263 8266 8271 8274 }
+SourceLoc->{ "ln": 331, "cl": 209, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_572V_2) 	pts{5611 }
+SourceLoc->{ "ln": 331, "cl": 244, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_582V_3) 	pts{8263 8266 8271 8274 }
+CALMU(MR_123V_3) 	pts{8262 8265 8270 8273 }
+CALMU(MR_127V_3) 	pts{8261 8264 8269 8272 }
+==========FUNCTION: skl_is_16gb_dimm==========
+
+LDMU(MR_125V_2) 	pts{5723 }
+SourceLoc->{ "ln": 313, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_127V_1) 	pts{8261 8264 8269 8272 }
+SourceLoc->{ "ln": 313, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_125V_2) 	pts{5723 }
+SourceLoc->{ "ln": 313, "cl": 46, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_129V_1) 	pts{8262 8263 8265 8266 8270 8271 8273 8274 }
+==========FUNCTION: intel_dimm_num_devices==========
+
+LDMU(MR_592V_2) 	pts{5746 }
+SourceLoc->{ "ln": 240, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_596V_1) 	pts{8263 8266 8271 8274 8279 }
+SourceLoc->{ "ln": 240, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_592V_2) 	pts{5746 }
+SourceLoc->{ "ln": 240, "cl": 29, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_594V_1) 	pts{8262 8265 8270 8273 8278 }
+SourceLoc->{ "ln": 240, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: icl_get_dimm_size==========
+
+LDMU(MR_598V_2) 	pts{5770 }
+SourceLoc->{ "ln": 279, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: icl_get_dimm_width==========
+
+LDMU(MR_612V_2) 	pts{5784 }
+SourceLoc->{ "ln": 284, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+610V_5 = STCHI(MR_610V_1) 	pts{5782 }
+SourceLoc->{ "ln": 285, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_612V_2) 	pts{5784 }
+SourceLoc->{ "ln": 287, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_612V_2) 	pts{5784 }
+SourceLoc->{ "ln": 291, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+612V_3 = STCHI(MR_612V_2) 	pts{5784 }
+SourceLoc->{ "ln": 291, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_612V_3) 	pts{5784 }
+SourceLoc->{ "ln": 292, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+610V_2 = STCHI(MR_610V_1) 	pts{5782 }
+SourceLoc->{ "ln": 292, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+614V_2 = STCHI(MR_614V_1) 	pts{5786 }
+SourceLoc->{ "ln": 294, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+614V_3 = STCHI(MR_614V_2) 	pts{5786 }
+SourceLoc->{ "ln": 294, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_614V_3) 	pts{5786 }
+SourceLoc->{ "ln": 294, "cl": 57, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_612V_2) 	pts{5784 }
+SourceLoc->{ "ln": 294, "cl": 279, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+616V_3 = STCHI(MR_616V_1) 	pts{5788 }
+SourceLoc->{ "ln": 294, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+616V_4 = STCHI(MR_616V_3) 	pts{5788 }
+SourceLoc->{ "ln": 294, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_616V_4) 	pts{5788 }
+SourceLoc->{ "ln": 294, "cl": 949, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_614V_3) 	pts{5786 }
+SourceLoc->{ "ln": 294, "cl": 1325, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+618V_2 = STCHI(MR_618V_1) 	pts{5790 }
+SourceLoc->{ "ln": 294, "cl": 74, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_618V_2) 	pts{5790 }
+SourceLoc->{ "ln": 294, "cl": 1345, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+610V_3 = STCHI(MR_610V_1) 	pts{5782 }
+SourceLoc->{ "ln": 295, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_610V_4) 	pts{5782 }
+SourceLoc->{ "ln": 297, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: icl_get_dimm_ranks==========
+
+LDMU(MR_568V_2) 	pts{5883 }
+SourceLoc->{ "ln": 301, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+566V_4 = STCHI(MR_566V_1) 	pts{5881 }
+SourceLoc->{ "ln": 302, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_568V_2) 	pts{5883 }
+SourceLoc->{ "ln": 304, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+568V_3 = STCHI(MR_568V_2) 	pts{5883 }
+SourceLoc->{ "ln": 304, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_568V_3) 	pts{5883 }
+SourceLoc->{ "ln": 306, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+566V_2 = STCHI(MR_566V_1) 	pts{5881 }
+SourceLoc->{ "ln": 306, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_566V_3) 	pts{5881 }
+SourceLoc->{ "ln": 307, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: skl_get_dimm_size==========
+
+LDMU(MR_211V_2) 	pts{5910 }
+SourceLoc->{ "ln": 246, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: skl_get_dimm_width==========
+
+LDMU(MR_679V_2) 	pts{5923 }
+SourceLoc->{ "ln": 251, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+677V_5 = STCHI(MR_677V_1) 	pts{5921 }
+SourceLoc->{ "ln": 252, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_679V_2) 	pts{5923 }
+SourceLoc->{ "ln": 254, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_679V_2) 	pts{5923 }
+SourceLoc->{ "ln": 258, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+679V_3 = STCHI(MR_679V_2) 	pts{5923 }
+SourceLoc->{ "ln": 258, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_679V_3) 	pts{5923 }
+SourceLoc->{ "ln": 259, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+677V_2 = STCHI(MR_677V_1) 	pts{5921 }
+SourceLoc->{ "ln": 259, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+681V_2 = STCHI(MR_681V_1) 	pts{5925 }
+SourceLoc->{ "ln": 261, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+681V_3 = STCHI(MR_681V_2) 	pts{5925 }
+SourceLoc->{ "ln": 261, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_681V_3) 	pts{5925 }
+SourceLoc->{ "ln": 261, "cl": 57, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_679V_2) 	pts{5923 }
+SourceLoc->{ "ln": 261, "cl": 279, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+683V_3 = STCHI(MR_683V_1) 	pts{5927 }
+SourceLoc->{ "ln": 261, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+683V_4 = STCHI(MR_683V_3) 	pts{5927 }
+SourceLoc->{ "ln": 261, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_683V_4) 	pts{5927 }
+SourceLoc->{ "ln": 261, "cl": 949, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_681V_3) 	pts{5925 }
+SourceLoc->{ "ln": 261, "cl": 1325, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+685V_2 = STCHI(MR_685V_1) 	pts{5929 }
+SourceLoc->{ "ln": 261, "cl": 74, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_685V_2) 	pts{5929 }
+SourceLoc->{ "ln": 261, "cl": 1345, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+677V_3 = STCHI(MR_677V_1) 	pts{5921 }
+SourceLoc->{ "ln": 262, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_677V_4) 	pts{5921 }
+SourceLoc->{ "ln": 264, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: skl_get_dimm_ranks==========
+
+LDMU(MR_711V_2) 	pts{6022 }
+SourceLoc->{ "ln": 268, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+709V_4 = STCHI(MR_709V_1) 	pts{6020 }
+SourceLoc->{ "ln": 269, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_711V_2) 	pts{6022 }
+SourceLoc->{ "ln": 271, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+711V_3 = STCHI(MR_711V_2) 	pts{6022 }
+SourceLoc->{ "ln": 271, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_711V_3) 	pts{6022 }
+SourceLoc->{ "ln": 273, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+709V_2 = STCHI(MR_709V_1) 	pts{6020 }
+SourceLoc->{ "ln": 273, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_709V_3) 	pts{6020 }
+SourceLoc->{ "ln": 274, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: bxt_get_dimm_info==========
+
+LDMU(MR_715V_2) 	pts{6051 }
+SourceLoc->{ "ln": 525, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_713V_2) 	pts{6049 }
+SourceLoc->{ "ln": 525, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+161V_2 = STCHI(MR_161V_1) 	pts{8278 }
+SourceLoc->{ "ln": 525, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_715V_2) 	pts{6051 }
+SourceLoc->{ "ln": 526, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_713V_2) 	pts{6049 }
+SourceLoc->{ "ln": 526, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+163V_2 = STCHI(MR_163V_1) 	pts{8279 }
+SourceLoc->{ "ln": 526, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_715V_2) 	pts{6051 }
+SourceLoc->{ "ln": 532, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_713V_2) 	pts{6049 }
+SourceLoc->{ "ln": 532, "cl": 63, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+CALMU(MR_163V_2) 	pts{8279 }
+CALMU(MR_161V_2) 	pts{8278 }
+
+LDMU(MR_713V_2) 	pts{6049 }
+SourceLoc->{ "ln": 532, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+159V_2 = STCHI(MR_159V_1) 	pts{8277 }
+SourceLoc->{ "ln": 532, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+==========FUNCTION: bxt_get_dimm_type==========
+
+LDMU(MR_602V_2) 	pts{6089 }
+SourceLoc->{ "ln": 505, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+600V_2 = STCHI(MR_600V_1) 	pts{6087 }
+SourceLoc->{ "ln": 506, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_602V_2) 	pts{6089 }
+SourceLoc->{ "ln": 508, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+600V_7 = STCHI(MR_600V_1) 	pts{6087 }
+SourceLoc->{ "ln": 510, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+600V_6 = STCHI(MR_600V_1) 	pts{6087 }
+SourceLoc->{ "ln": 512, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+600V_5 = STCHI(MR_600V_1) 	pts{6087 }
+SourceLoc->{ "ln": 514, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+600V_4 = STCHI(MR_600V_1) 	pts{6087 }
+SourceLoc->{ "ln": 516, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+604V_3 = STCHI(MR_604V_1) 	pts{6091 }
+SourceLoc->{ "ln": 518, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+604V_4 = STCHI(MR_604V_3) 	pts{6091 }
+SourceLoc->{ "ln": 518, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_604V_4) 	pts{6091 }
+SourceLoc->{ "ln": 518, "cl": 57, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_602V_2) 	pts{6089 }
+SourceLoc->{ "ln": 518, "cl": 279, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+606V_4 = STCHI(MR_606V_1) 	pts{6093 }
+SourceLoc->{ "ln": 518, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+606V_5 = STCHI(MR_606V_4) 	pts{6093 }
+SourceLoc->{ "ln": 518, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_606V_5) 	pts{6093 }
+SourceLoc->{ "ln": 518, "cl": 949, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_604V_4) 	pts{6091 }
+SourceLoc->{ "ln": 518, "cl": 1325, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+608V_3 = STCHI(MR_608V_1) 	pts{6095 }
+SourceLoc->{ "ln": 518, "cl": 74, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_608V_3) 	pts{6095 }
+SourceLoc->{ "ln": 518, "cl": 1345, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+600V_8 = STCHI(MR_600V_1) 	pts{6087 }
+SourceLoc->{ "ln": 519, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_600V_3) 	pts{6087 }
+SourceLoc->{ "ln": 521, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: dev_name.62==========
+
+LDMU(MR_732V_2) 	pts{6184 }
+SourceLoc->{ "ln": 883, "cl": 6, "fl": "./include/linux/device.h" }
+
+LDMU(MR_732V_2) 	pts{6184 }
+SourceLoc->{ "ln": 884, "cl": 10, "fl": "./include/linux/device.h" }
+730V_4 = STCHI(MR_730V_1) 	pts{6182 }
+SourceLoc->{ "ln": 884, "cl": 3, "fl": "./include/linux/device.h" }
+
+
+LDMU(MR_732V_2) 	pts{6184 }
+SourceLoc->{ "ln": 886, "cl": 23, "fl": "./include/linux/device.h" }
+730V_2 = STCHI(MR_730V_1) 	pts{6182 }
+SourceLoc->{ "ln": 886, "cl": 2, "fl": "./include/linux/device.h" }
+
+
+LDMU(MR_730V_3) 	pts{6182 }
+SourceLoc->{ "ln": 887, "cl": 1, "fl": "./include/linux/device.h" }
+==========FUNCTION: kobject_name.67==========
+
+LDMU(MR_742V_2) 	pts{6210 }
+SourceLoc->{ "ln": 89, "cl": 9, "fl": "./include/linux/kobject.h" }
+==========FUNCTION: bxt_get_dimm_size==========
+
+LDMU(MR_756V_2) 	pts{6222 }
+SourceLoc->{ "ln": 460, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+754V_6 = STCHI(MR_754V_1) 	pts{6220 }
+SourceLoc->{ "ln": 462, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+754V_5 = STCHI(MR_754V_1) 	pts{6220 }
+SourceLoc->{ "ln": 464, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+754V_4 = STCHI(MR_754V_1) 	pts{6220 }
+SourceLoc->{ "ln": 466, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+754V_3 = STCHI(MR_754V_1) 	pts{6220 }
+SourceLoc->{ "ln": 468, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+754V_2 = STCHI(MR_754V_1) 	pts{6220 }
+SourceLoc->{ "ln": 470, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+758V_3 = STCHI(MR_758V_1) 	pts{6224 }
+SourceLoc->{ "ln": 472, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+758V_4 = STCHI(MR_758V_3) 	pts{6224 }
+SourceLoc->{ "ln": 472, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_758V_4) 	pts{6224 }
+SourceLoc->{ "ln": 472, "cl": 57, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_756V_2) 	pts{6222 }
+SourceLoc->{ "ln": 472, "cl": 279, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+760V_4 = STCHI(MR_760V_1) 	pts{6226 }
+SourceLoc->{ "ln": 472, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+760V_5 = STCHI(MR_760V_4) 	pts{6226 }
+SourceLoc->{ "ln": 472, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_760V_5) 	pts{6226 }
+SourceLoc->{ "ln": 472, "cl": 949, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_758V_4) 	pts{6224 }
+SourceLoc->{ "ln": 472, "cl": 1325, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+762V_3 = STCHI(MR_762V_1) 	pts{6228 }
+SourceLoc->{ "ln": 472, "cl": 74, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_762V_3) 	pts{6228 }
+SourceLoc->{ "ln": 472, "cl": 1345, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+754V_8 = STCHI(MR_754V_1) 	pts{6220 }
+SourceLoc->{ "ln": 473, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_754V_7) 	pts{6220 }
+SourceLoc->{ "ln": 475, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: bxt_get_dimm_width==========
+
+LDMU(MR_548V_2) 	pts{6313 }
+SourceLoc->{ "ln": 479, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+546V_2 = STCHI(MR_546V_1) 	pts{6311 }
+SourceLoc->{ "ln": 480, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_548V_2) 	pts{6313 }
+SourceLoc->{ "ln": 482, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+548V_4 = STCHI(MR_548V_2) 	pts{6313 }
+SourceLoc->{ "ln": 482, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_548V_4) 	pts{6313 }
+SourceLoc->{ "ln": 484, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+546V_4 = STCHI(MR_546V_1) 	pts{6311 }
+SourceLoc->{ "ln": 484, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_546V_3) 	pts{6311 }
+SourceLoc->{ "ln": 485, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: bxt_get_dimm_ranks==========
+
+LDMU(MR_746V_2) 	pts{6339 }
+SourceLoc->{ "ln": 489, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+744V_2 = STCHI(MR_744V_1) 	pts{6337 }
+SourceLoc->{ "ln": 490, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_746V_2) 	pts{6339 }
+SourceLoc->{ "ln": 492, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+744V_4 = STCHI(MR_744V_1) 	pts{6337 }
+SourceLoc->{ "ln": 494, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+744V_5 = STCHI(MR_744V_1) 	pts{6337 }
+SourceLoc->{ "ln": 496, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+748V_3 = STCHI(MR_748V_1) 	pts{6341 }
+SourceLoc->{ "ln": 498, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+748V_4 = STCHI(MR_748V_3) 	pts{6341 }
+SourceLoc->{ "ln": 498, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_748V_4) 	pts{6341 }
+SourceLoc->{ "ln": 498, "cl": 57, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_746V_2) 	pts{6339 }
+SourceLoc->{ "ln": 498, "cl": 279, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+750V_4 = STCHI(MR_750V_1) 	pts{6343 }
+SourceLoc->{ "ln": 498, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+750V_5 = STCHI(MR_750V_4) 	pts{6343 }
+SourceLoc->{ "ln": 498, "cl": 303, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_750V_5) 	pts{6343 }
+SourceLoc->{ "ln": 498, "cl": 949, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_748V_4) 	pts{6341 }
+SourceLoc->{ "ln": 498, "cl": 1325, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+752V_3 = STCHI(MR_752V_1) 	pts{6345 }
+SourceLoc->{ "ln": 498, "cl": 74, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_752V_3) 	pts{6345 }
+SourceLoc->{ "ln": 498, "cl": 1345, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+744V_6 = STCHI(MR_744V_1) 	pts{6337 }
+SourceLoc->{ "ln": 499, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_744V_3) 	pts{6337 }
+SourceLoc->{ "ln": 501, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: icl_pcode_read_mem_global_info==========
+624V_2 = STCHI(MR_624V_1) 	pts{6431 }
+SourceLoc->{ "ln": 585, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_622V_2) 	pts{6429 }
+SourceLoc->{ "ln": 585, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+624V_3 = STCHI(MR_624V_2) 	pts{6431 }
+SourceLoc->{ "ln": 585, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+626V_2 = STCHI(MR_626V_1) 	pts{6433 }
+SourceLoc->{ "ln": 586, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+626V_3 = STCHI(MR_626V_2) 	pts{6433 }
+SourceLoc->{ "ln": 586, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+628V_2 = STCHI(MR_628V_1) 	pts{6435 }
+SourceLoc->{ "ln": 587, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_622V_2) 	pts{6429 }
+SourceLoc->{ "ln": 589, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+628V_3 = STCHI(MR_628V_2) 	pts{6435 }
+SourceLoc->{ "ln": 589, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_628V_3) 	pts{6435 }
+SourceLoc->{ "ln": 591, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_628V_3) 	pts{6435 }
+SourceLoc->{ "ln": 592, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+620V_6 = STCHI(MR_620V_1) 	pts{6427 }
+SourceLoc->{ "ln": 592, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_622V_2) 	pts{6429 }
+SourceLoc->{ "ln": 594, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_626V_3) 	pts{6433 }
+SourceLoc->{ "ln": 595, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 597, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 600, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 603, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 606, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 609, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 612, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+632V_2 = STCHI(MR_632V_1) 	pts{6439 }
+SourceLoc->{ "ln": 615, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+632V_3 = STCHI(MR_632V_2) 	pts{6439 }
+SourceLoc->{ "ln": 615, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_632V_3) 	pts{6439 }
+SourceLoc->{ "ln": 615, "cl": 58, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_626V_3) 	pts{6433 }
+SourceLoc->{ "ln": 615, "cl": 286, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+634V_3 = STCHI(MR_634V_1) 	pts{6441 }
+SourceLoc->{ "ln": 615, "cl": 316, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+634V_4 = STCHI(MR_634V_3) 	pts{6441 }
+SourceLoc->{ "ln": 615, "cl": 316, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_634V_4) 	pts{6441 }
+SourceLoc->{ "ln": 615, "cl": 962, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_632V_3) 	pts{6439 }
+SourceLoc->{ "ln": 615, "cl": 1338, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+636V_2 = STCHI(MR_636V_1) 	pts{6443 }
+SourceLoc->{ "ln": 615, "cl": 75, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_636V_2) 	pts{6443 }
+SourceLoc->{ "ln": 615, "cl": 1358, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+620V_4 = STCHI(MR_620V_1) 	pts{6427 }
+SourceLoc->{ "ln": 616, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_626V_3) 	pts{6433 }
+SourceLoc->{ "ln": 619, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 621, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 624, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 627, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 630, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+638V_2 = STCHI(MR_638V_1) 	pts{6445 }
+SourceLoc->{ "ln": 633, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+638V_3 = STCHI(MR_638V_2) 	pts{6445 }
+SourceLoc->{ "ln": 633, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_638V_3) 	pts{6445 }
+SourceLoc->{ "ln": 633, "cl": 58, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_626V_3) 	pts{6433 }
+SourceLoc->{ "ln": 633, "cl": 286, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+640V_3 = STCHI(MR_640V_1) 	pts{6447 }
+SourceLoc->{ "ln": 633, "cl": 316, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+640V_4 = STCHI(MR_640V_3) 	pts{6447 }
+SourceLoc->{ "ln": 633, "cl": 316, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_640V_4) 	pts{6447 }
+SourceLoc->{ "ln": 633, "cl": 962, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_638V_3) 	pts{6445 }
+SourceLoc->{ "ln": 633, "cl": 1338, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+642V_2 = STCHI(MR_642V_1) 	pts{6449 }
+SourceLoc->{ "ln": 633, "cl": 75, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_642V_2) 	pts{6449 }
+SourceLoc->{ "ln": 633, "cl": 1358, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+620V_2 = STCHI(MR_620V_1) 	pts{6427 }
+SourceLoc->{ "ln": 634, "cl": 4, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_626V_3) 	pts{6433 }
+SourceLoc->{ "ln": 638, "cl": 29, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 638, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_626V_3) 	pts{6433 }
+SourceLoc->{ "ln": 639, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 639, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_626V_3) 	pts{6433 }
+SourceLoc->{ "ln": 640, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_624V_3) 	pts{6431 }
+SourceLoc->{ "ln": 640, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+620V_3 = STCHI(MR_620V_1) 	pts{6427 }
+SourceLoc->{ "ln": 642, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_620V_5) 	pts{6427 }
+SourceLoc->{ "ln": 643, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: pnv_mem_freq==========
+474V_2 = STCHI(MR_474V_1) 	pts{6705 }
+SourceLoc->{ "ln": 53, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_472V_2) 	pts{6703 }
+SourceLoc->{ "ln": 55, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+478V_2 = STCHI(MR_478V_1) 	pts{8256 }
+SourceLoc->{ "ln": 55, "cl": 64, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_478V_2) 	pts{8256 }
+SourceLoc->{ "ln": 55, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+474V_3 = STCHI(MR_474V_2) 	pts{6705 }
+SourceLoc->{ "ln": 55, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_474V_3) 	pts{6705 }
+SourceLoc->{ "ln": 57, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+470V_5 = STCHI(MR_470V_1) 	pts{6701 }
+SourceLoc->{ "ln": 59, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+470V_2 = STCHI(MR_470V_1) 	pts{6701 }
+SourceLoc->{ "ln": 61, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+470V_3 = STCHI(MR_470V_1) 	pts{6701 }
+SourceLoc->{ "ln": 63, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+470V_6 = STCHI(MR_470V_1) 	pts{6701 }
+SourceLoc->{ "ln": 66, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_470V_4) 	pts{6701 }
+SourceLoc->{ "ln": 67, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: ilk_mem_freq==========
+724V_2 = STCHI(MR_724V_1) 	pts{6750 }
+SourceLoc->{ "ln": 71, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_722V_2) 	pts{6748 }
+SourceLoc->{ "ln": 73, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+728V_2 = STCHI(MR_728V_1) 	pts{8255 }
+SourceLoc->{ "ln": 73, "cl": 69, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_728V_2) 	pts{8255 }
+SourceLoc->{ "ln": 73, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+724V_3 = STCHI(MR_724V_2) 	pts{6750 }
+SourceLoc->{ "ln": 73, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_724V_3) 	pts{6750 }
+SourceLoc->{ "ln": 74, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+720V_3 = STCHI(MR_720V_1) 	pts{6746 }
+SourceLoc->{ "ln": 76, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+720V_4 = STCHI(MR_720V_1) 	pts{6746 }
+SourceLoc->{ "ln": 78, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+720V_6 = STCHI(MR_720V_1) 	pts{6746 }
+SourceLoc->{ "ln": 80, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+720V_2 = STCHI(MR_720V_1) 	pts{6746 }
+SourceLoc->{ "ln": 82, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_722V_2) 	pts{6748 }
+SourceLoc->{ "ln": 84, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_722V_2) 	pts{6748 }
+SourceLoc->{ "ln": 84, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_724V_3) 	pts{6750 }
+SourceLoc->{ "ln": 84, "cl": 138, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+720V_7 = STCHI(MR_720V_1) 	pts{6746 }
+SourceLoc->{ "ln": 86, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_720V_5) 	pts{6746 }
+SourceLoc->{ "ln": 88, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: chv_mem_freq==========
+588V_2 = STCHI(MR_588V_1) 	pts{6818 }
+SourceLoc->{ "ln": 92, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_586V_2) 	pts{6816 }
+SourceLoc->{ "ln": 94, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_586V_2) 	pts{6816 }
+SourceLoc->{ "ln": 95, "cl": 21, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+588V_3 = STCHI(MR_588V_2) 	pts{6818 }
+SourceLoc->{ "ln": 95, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_586V_2) 	pts{6816 }
+SourceLoc->{ "ln": 96, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_588V_3) 	pts{6818 }
+SourceLoc->{ "ln": 98, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+584V_2 = STCHI(MR_584V_1) 	pts{6814 }
+SourceLoc->{ "ln": 100, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+584V_4 = STCHI(MR_584V_1) 	pts{6814 }
+SourceLoc->{ "ln": 102, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_584V_3) 	pts{6814 }
+SourceLoc->{ "ln": 104, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: vlv_mem_freq==========
+738V_2 = STCHI(MR_738V_1) 	pts{6861 }
+SourceLoc->{ "ln": 108, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_736V_2) 	pts{6859 }
+SourceLoc->{ "ln": 110, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_736V_2) 	pts{6859 }
+SourceLoc->{ "ln": 111, "cl": 23, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+738V_3 = STCHI(MR_738V_2) 	pts{6861 }
+SourceLoc->{ "ln": 111, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_736V_2) 	pts{6859 }
+SourceLoc->{ "ln": 112, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_738V_3) 	pts{6861 }
+SourceLoc->{ "ln": 114, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+734V_5 = STCHI(MR_734V_1) 	pts{6857 }
+SourceLoc->{ "ln": 117, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+734V_2 = STCHI(MR_734V_1) 	pts{6857 }
+SourceLoc->{ "ln": 119, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+734V_3 = STCHI(MR_734V_1) 	pts{6857 }
+SourceLoc->{ "ln": 121, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+734V_6 = STCHI(MR_734V_1) 	pts{6857 }
+SourceLoc->{ "ln": 124, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_734V_4) 	pts{6857 }
+SourceLoc->{ "ln": 125, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: pnv_is_ddr3==========
+
+LDMU(MR_771V_2) 	pts{6903 }
+SourceLoc->{ "ln": 48, "cl": 28, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+773V_2 = STCHI(MR_773V_1) 	pts{8254 }
+SourceLoc->{ "ln": 48, "cl": 61, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_773V_2) 	pts{8254 }
+SourceLoc->{ "ln": 48, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: intel_uncore_read16==========
+
+LDMU(MR_131V_2) 	pts{6937 }
+SourceLoc->{ "ln": 372, "cl": 193, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+LDMU(MR_131V_2) 	pts{6937 }
+SourceLoc->{ "ln": 372, "cl": 218, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+LDMU(MR_133V_2) 	pts{8253 }
+SourceLoc->{ "ln": 372, "cl": 193, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+==========FUNCTION: ilk_fsb_freq==========
+648V_2 = STCHI(MR_648V_1) 	pts{6959 }
+SourceLoc->{ "ln": 202, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_646V_2) 	pts{6957 }
+SourceLoc->{ "ln": 204, "cl": 29, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+652V_2 = STCHI(MR_652V_1) 	pts{8252 }
+SourceLoc->{ "ln": 204, "cl": 66, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_652V_2) 	pts{8252 }
+SourceLoc->{ "ln": 204, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+648V_3 = STCHI(MR_648V_2) 	pts{6959 }
+SourceLoc->{ "ln": 204, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_648V_3) 	pts{6959 }
+SourceLoc->{ "ln": 206, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+644V_8 = STCHI(MR_644V_1) 	pts{6955 }
+SourceLoc->{ "ln": 208, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+644V_5 = STCHI(MR_644V_1) 	pts{6955 }
+SourceLoc->{ "ln": 210, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+644V_3 = STCHI(MR_644V_1) 	pts{6955 }
+SourceLoc->{ "ln": 212, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+644V_7 = STCHI(MR_644V_1) 	pts{6955 }
+SourceLoc->{ "ln": 214, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+644V_2 = STCHI(MR_644V_1) 	pts{6955 }
+SourceLoc->{ "ln": 216, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+644V_6 = STCHI(MR_644V_1) 	pts{6955 }
+SourceLoc->{ "ln": 218, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+644V_4 = STCHI(MR_644V_1) 	pts{6955 }
+SourceLoc->{ "ln": 220, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_646V_2) 	pts{6957 }
+SourceLoc->{ "ln": 222, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_646V_2) 	pts{6957 }
+SourceLoc->{ "ln": 222, "cl": 51, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_648V_3) 	pts{6959 }
+SourceLoc->{ "ln": 222, "cl": 135, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+644V_10 = STCHI(MR_644V_1) 	pts{6955 }
+SourceLoc->{ "ln": 223, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_644V_9) 	pts{6955 }
+SourceLoc->{ "ln": 225, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: intel_dram_edram_detect==========
+777V_2 = STCHI(MR_777V_1) 	pts{7042 }
+SourceLoc->{ "ln": 752, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+777V_3 = STCHI(MR_777V_2) 	pts{7042 }
+SourceLoc->{ "ln": 752, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 754, "cl": 20, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 754, "cl": 56, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 754, "cl": 86, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 757, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+781V_3 = STCHI(MR_781V_1) 	pts{8251 }
+SourceLoc->{ "ln": 757, "cl": 68, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+
+LDMU(MR_781V_3) 	pts{8251 }
+SourceLoc->{ "ln": 757, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+777V_5 = STCHI(MR_777V_3) 	pts{7042 }
+SourceLoc->{ "ln": 757, "cl": 12, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_777V_5) 	pts{7042 }
+SourceLoc->{ "ln": 761, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 768, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 769, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 771, "cl": 44, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_777V_5) 	pts{7042 }
+SourceLoc->{ "ln": 771, "cl": 50, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 771, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 773, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 773, "cl": 52, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_775V_2) 	pts{7040 }
+SourceLoc->{ "ln": 773, "cl": 118, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+779V_5 = STCHI(MR_779V_1) 	pts{7044 }
+SourceLoc->{ "ln": 774, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+==========FUNCTION: __raw_uncore_read32==========
+414V_2 = STCHI(MR_414V_1) 	pts{7149 }
+SourceLoc->{ "ln": 346, "cl": 196, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+
+LDMU(MR_416V_2) 	pts{8250 }
+SourceLoc->{ "ln": 346, "cl": 239, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+414V_3 = STCHI(MR_414V_2) 	pts{7149 }
+SourceLoc->{ "ln": 346, "cl": 196, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+LDMU(MR_414V_3) 	pts{7149 }
+SourceLoc->{ "ln": 346, "cl": 278, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+LDMU(MR_412V_2) 	pts{7147 }
+SourceLoc->{ "ln": 346, "cl": 308, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+LDMU(MR_414V_3) 	pts{7149 }
+SourceLoc->{ "ln": 346, "cl": 305, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+414V_5 = STCHI(MR_414V_3) 	pts{7149 }
+SourceLoc->{ "ln": 346, "cl": 305, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+
+LDMU(MR_412V_2) 	pts{7147 }
+SourceLoc->{ "ln": 346, "cl": 341, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+
+LDMU(MR_414V_4) 	pts{7149 }
+SourceLoc->{ "ln": 346, "cl": 356, "fl": "drivers/gpu/drm/i915/intel_uncore.h" }
+==========FUNCTION: gen9_edram_size_mb==========
+
+LDMU(MR_787V_2) 	pts{7190 }
+SourceLoc->{ "ln": 745, "cl": 12, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_787V_2) 	pts{7190 }
+SourceLoc->{ "ln": 746, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_783V_1) 	pts{3 }
+SourceLoc->{ "ln": 746, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_787V_2) 	pts{7190 }
+SourceLoc->{ "ln": 747, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+
+LDMU(MR_783V_1) 	pts{3 }
+SourceLoc->{ "ln": 747, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_dram.c" }
+==========FUNCTION: readl==========
+766V_2 = STCHI(MR_766V_1) 	pts{7220 }
+SourceLoc->{ "ln": 59, "cl": 176, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_764V_2) 	pts{7218 }
+SourceLoc->{ "ln": 59, "cl": 256, "fl": "./arch/x86/include/asm/io.h" }
+766V_3 = STCHI(MR_766V_2) 	pts{7220 }
+SourceLoc->{ "ln": 59, "cl": 181, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_766V_3) 	pts{7220 }
+SourceLoc->{ "ln": 59, "cl": 281, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: intel_gmch_bridge_setup==========
+658V_2 = STCHI(MR_658V_1) 	pts{7242 }
+SourceLoc->{ "ln": 24, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+660V_2 = STCHI(MR_660V_1) 	pts{7244 }
+SourceLoc->{ "ln": 24, "cl": 38, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_656V_2) 	pts{7240 }
+SourceLoc->{ "ln": 24, "cl": 56, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+660V_3 = STCHI(MR_660V_2) 	pts{7244 }
+SourceLoc->{ "ln": 24, "cl": 38, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_660V_3) 	pts{7244 }
+SourceLoc->{ "ln": 24, "cl": 315, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+662V_2 = STCHI(MR_662V_1) 	pts{7246 }
+SourceLoc->{ "ln": 24, "cl": 72, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_662V_2) 	pts{7246 }
+SourceLoc->{ "ln": 24, "cl": 367, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+658V_3 = STCHI(MR_658V_2) 	pts{7242 }
+SourceLoc->{ "ln": 24, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_658V_3) 	pts{7242 }
+SourceLoc->{ "ln": 26, "cl": 48, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_656V_2) 	pts{7240 }
+SourceLoc->{ "ln": 26, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_656V_2) 	pts{7240 }
+SourceLoc->{ "ln": 27, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_656V_2) 	pts{7240 }
+SourceLoc->{ "ln": 28, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_656V_2) 	pts{7240 }
+SourceLoc->{ "ln": 28, "cl": 52, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+654V_2 = STCHI(MR_654V_1) 	pts{7238 }
+SourceLoc->{ "ln": 29, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_656V_2) 	pts{7240 }
+SourceLoc->{ "ln": 32, "cl": 37, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_656V_2) 	pts{7240 }
+SourceLoc->{ "ln": 32, "cl": 75, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+654V_4 = STCHI(MR_654V_1) 	pts{7238 }
+SourceLoc->{ "ln": 32, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_654V_3) 	pts{7238 }
+SourceLoc->{ "ln": 34, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+==========FUNCTION: pci_domain_nr==========
+
+LDMU(MR_87V_2) 	pts{7334 }
+SourceLoc->{ "ln": 45, "cl": 24, "fl": "./arch/x86/include/asm/pci.h" }
+==========FUNCTION: intel_gmch_bridge_release==========
+
+LDMU(MR_85V_2) 	pts{7358 }
+SourceLoc->{ "ln": 19, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+==========FUNCTION: to_pci_sysdata==========
+
+LDMU(MR_81V_2) 	pts{7374 }
+SourceLoc->{ "ln": 37, "cl": 9, "fl": "./arch/x86/include/asm/pci.h" }
+==========FUNCTION: intel_gmch_bar_setup==========
+69V_2 = STCHI(MR_69V_1) 	pts{7388 }
+SourceLoc->{ "ln": 86, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+71V_2 = STCHI(MR_71V_1) 	pts{7390 }
+SourceLoc->{ "ln": 87, "cl": 7, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 89, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 89, "cl": 57, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 92, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 94, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 94, "cl": 52, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 95, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_69V_2) 	pts{7388 }
+SourceLoc->{ "ln": 96, "cl": 16, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+71V_5 = STCHI(MR_71V_2) 	pts{7390 }
+SourceLoc->{ "ln": 96, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 98, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 98, "cl": 53, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_69V_2) 	pts{7388 }
+SourceLoc->{ "ln": 99, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+71V_3 = STCHI(MR_71V_2) 	pts{7390 }
+SourceLoc->{ "ln": 99, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_71V_4) 	pts{7390 }
+SourceLoc->{ "ln": 103, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 106, "cl": 34, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+CALMU(MR_38V_1) 	pts{88 }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 109, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 112, "cl": 18, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 112, "cl": 52, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 113, "cl": 26, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_69V_2) 	pts{7388 }
+SourceLoc->{ "ln": 114, "cl": 12, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 116, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 116, "cl": 53, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 117, "cl": 26, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_67V_2) 	pts{7386 }
+SourceLoc->{ "ln": 117, "cl": 54, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_69V_2) 	pts{7388 }
+SourceLoc->{ "ln": 117, "cl": 61, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+73V_2 = STCHI(MR_73V_1) 	pts{7392 }
+SourceLoc->{ "ln": 119, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+==========FUNCTION: IS_PLATFORM.77==========
+60V_2 = STCHI(MR_60V_1) 	pts{7522 }
+SourceLoc->{ "ln": 461, "cl": 35, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_56V_2) 	pts{7518 }
+SourceLoc->{ "ln": 461, "cl": 45, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+60V_3 = STCHI(MR_60V_2) 	pts{7522 }
+SourceLoc->{ "ln": 461, "cl": 35, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+62V_2 = STCHI(MR_62V_1) 	pts{7524 }
+SourceLoc->{ "ln": 462, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_60V_3) 	pts{7522 }
+SourceLoc->{ "ln": 462, "cl": 48, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_58V_2) 	pts{7520 }
+SourceLoc->{ "ln": 462, "cl": 54, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+62V_3 = STCHI(MR_62V_2) 	pts{7524 }
+SourceLoc->{ "ln": 462, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+64V_2 = STCHI(MR_64V_1) 	pts{7526 }
+SourceLoc->{ "ln": 463, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_60V_3) 	pts{7522 }
+SourceLoc->{ "ln": 463, "cl": 46, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_58V_2) 	pts{7520 }
+SourceLoc->{ "ln": 463, "cl": 52, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+64V_3 = STCHI(MR_64V_2) 	pts{7526 }
+SourceLoc->{ "ln": 463, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+
+LDMU(MR_58V_2) 	pts{7520 }
+SourceLoc->{ "ln": 465, "cl": 190, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_60V_3) 	pts{7522 }
+SourceLoc->{ "ln": 467, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_62V_3) 	pts{7524 }
+SourceLoc->{ "ln": 467, "cl": 29, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_64V_3) 	pts{7526 }
+SourceLoc->{ "ln": 467, "cl": 50, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: mchbar_reg==========
+
+LDMU(MR_54V_2) 	pts{7591 }
+SourceLoc->{ "ln": 38, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+==========FUNCTION: intel_alloc_mchbar_resource==========
+44V_2 = STCHI(MR_44V_1) 	pts{7614 }
+SourceLoc->{ "ln": 45, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+46V_2 = STCHI(MR_46V_1) 	pts{7616 }
+SourceLoc->{ "ln": 45, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+46V_3 = STCHI(MR_46V_2) 	pts{7616 }
+SourceLoc->{ "ln": 45, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+48V_2 = STCHI(MR_48V_1) 	pts{7618 }
+SourceLoc->{ "ln": 46, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+50V_2 = STCHI(MR_50V_1) 	pts{7620 }
+SourceLoc->{ "ln": 47, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 49, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 50, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 50, "cl": 53, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 51, "cl": 24, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 51, "cl": 52, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_46V_3) 	pts{7616 }
+SourceLoc->{ "ln": 52, "cl": 22, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_44V_2) 	pts{7614 }
+SourceLoc->{ "ln": 52, "cl": 39, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+48V_3 = STCHI(MR_48V_2) 	pts{7618 }
+SourceLoc->{ "ln": 52, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_48V_3) 	pts{7618 }
+SourceLoc->{ "ln": 55, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_48V_3) 	pts{7618 }
+SourceLoc->{ "ln": 56, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_48V_3) 	pts{7618 }
+SourceLoc->{ "ln": 56, "cl": 38, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+40V_5 = STCHI(MR_40V_1) 	pts{7610 }
+SourceLoc->{ "ln": 57, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 60, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 61, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 62, "cl": 31, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 63, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_38V_1) 	pts{88 }
+SourceLoc->{ "ln": 65, "cl": 11, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 67, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+50V_3 = STCHI(MR_50V_2) 	pts{7620 }
+SourceLoc->{ "ln": 62, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_50V_3) 	pts{7620 }
+SourceLoc->{ "ln": 68, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 69, "cl": 32, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 69, "cl": 47, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_50V_3) 	pts{7620 }
+SourceLoc->{ "ln": 69, "cl": 119, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 70, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_50V_3) 	pts{7620 }
+SourceLoc->{ "ln": 71, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+40V_3 = STCHI(MR_40V_1) 	pts{7610 }
+SourceLoc->{ "ln": 71, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 74, "cl": 10, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 75, "cl": 26, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 75, "cl": 54, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 76, "cl": 21, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 78, "cl": 25, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 78, "cl": 53, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_42V_2) 	pts{7612 }
+SourceLoc->{ "ln": 79, "cl": 19, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+40V_2 = STCHI(MR_40V_1) 	pts{7610 }
+SourceLoc->{ "ln": 80, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_40V_4) 	pts{7610 }
+SourceLoc->{ "ln": 81, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+==========FUNCTION: __platform_mask_index.80==========
+438V_2 = STCHI(MR_438V_1) 	pts{7826 }
+SourceLoc->{ "ln": 430, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+438V_3 = STCHI(MR_438V_2) 	pts{7826 }
+SourceLoc->{ "ln": 430, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+
+LDMU(MR_436V_2) 	pts{7824 }
+SourceLoc->{ "ln": 437, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: __platform_mask_bit.81==========
+79V_2 = STCHI(MR_79V_1) 	pts{7853 }
+SourceLoc->{ "ln": 444, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+79V_3 = STCHI(MR_79V_2) 	pts{7853 }
+SourceLoc->{ "ln": 444, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_77V_2) 	pts{7851 }
+SourceLoc->{ "ln": 447, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: intel_gmch_bar_teardown==========
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 123, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 124, "cl": 19, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 124, "cl": 53, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+482V_4 = STCHI(MR_482V_1) 	pts{7875 }
+SourceLoc->{ "ln": 125, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 127, "cl": 26, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_482V_4) 	pts{7875 }
+SourceLoc->{ "ln": 129, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+482V_5 = STCHI(MR_482V_4) 	pts{7875 }
+SourceLoc->{ "ln": 129, "cl": 14, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 130, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_482V_5) 	pts{7875 }
+SourceLoc->{ "ln": 131, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+484V_3 = STCHI(MR_484V_1) 	pts{7877 }
+SourceLoc->{ "ln": 133, "cl": 8, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 135, "cl": 26, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 135, "cl": 54, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_484V_3) 	pts{7877 }
+SourceLoc->{ "ln": 137, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+484V_4 = STCHI(MR_484V_3) 	pts{7877 }
+SourceLoc->{ "ln": 137, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 138, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 138, "cl": 55, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_484V_4) 	pts{7877 }
+SourceLoc->{ "ln": 139, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 143, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_480V_2) 	pts{7873 }
+SourceLoc->{ "ln": 144, "cl": 21, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+==========FUNCTION: intel_gmch_vga_set_state==========
+32V_2 = STCHI(MR_32V_1) 	pts{7969 }
+SourceLoc->{ "ln": 149, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_28V_2) 	pts{7965 }
+SourceLoc->{ "ln": 149, "cl": 185, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+32V_3 = STCHI(MR_32V_2) 	pts{7969 }
+SourceLoc->{ "ln": 149, "cl": 15, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+34V_2 = STCHI(MR_34V_1) 	pts{7971 }
+SourceLoc->{ "ln": 150, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_28V_2) 	pts{7965 }
+SourceLoc->{ "ln": 152, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_32V_3) 	pts{7969 }
+SourceLoc->{ "ln": 152, "cl": 44, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_28V_2) 	pts{7965 }
+SourceLoc->{ "ln": 153, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_28V_2) 	pts{7965 }
+SourceLoc->{ "ln": 153, "cl": 52, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+26V_6 = STCHI(MR_26V_1) 	pts{7963 }
+SourceLoc->{ "ln": 154, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_34V_2) 	pts{7971 }
+SourceLoc->{ "ln": 157, "cl": 9, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_30V_2) 	pts{7967 }
+SourceLoc->{ "ln": 157, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+26V_4 = STCHI(MR_26V_1) 	pts{7963 }
+SourceLoc->{ "ln": 158, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_30V_2) 	pts{7967 }
+SourceLoc->{ "ln": 160, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_34V_2) 	pts{7971 }
+SourceLoc->{ "ln": 161, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+34V_5 = STCHI(MR_34V_2) 	pts{7971 }
+SourceLoc->{ "ln": 161, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_34V_2) 	pts{7971 }
+SourceLoc->{ "ln": 163, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+34V_3 = STCHI(MR_34V_2) 	pts{7971 }
+SourceLoc->{ "ln": 163, "cl": 13, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_28V_2) 	pts{7965 }
+SourceLoc->{ "ln": 165, "cl": 28, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_32V_3) 	pts{7969 }
+SourceLoc->{ "ln": 165, "cl": 45, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_34V_4) 	pts{7971 }
+SourceLoc->{ "ln": 165, "cl": 50, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_28V_2) 	pts{7965 }
+SourceLoc->{ "ln": 166, "cl": 35, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_28V_2) 	pts{7965 }
+SourceLoc->{ "ln": 166, "cl": 52, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+26V_3 = STCHI(MR_26V_1) 	pts{7963 }
+SourceLoc->{ "ln": 167, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+26V_2 = STCHI(MR_26V_1) 	pts{7963 }
+SourceLoc->{ "ln": 170, "cl": 2, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_26V_5) 	pts{7963 }
+SourceLoc->{ "ln": 171, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+==========FUNCTION: intel_gmch_vga_set_decode==========
+22V_2 = STCHI(MR_22V_1) 	pts{8125 }
+SourceLoc->{ "ln": 175, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_18V_2) 	pts{8121 }
+SourceLoc->{ "ln": 175, "cl": 47, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+22V_3 = STCHI(MR_22V_2) 	pts{8125 }
+SourceLoc->{ "ln": 175, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_22V_3) 	pts{8125 }
+SourceLoc->{ "ln": 177, "cl": 27, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_20V_2) 	pts{8123 }
+SourceLoc->{ "ln": 177, "cl": 33, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+LDMU(MR_20V_2) 	pts{8123 }
+SourceLoc->{ "ln": 179, "cl": 6, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+16V_4 = STCHI(MR_16V_1) 	pts{8119 }
+SourceLoc->{ "ln": 180, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+16V_2 = STCHI(MR_16V_1) 	pts{8119 }
+SourceLoc->{ "ln": 183, "cl": 3, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+
+
+LDMU(MR_16V_3) 	pts{8119 }
+SourceLoc->{ "ln": 184, "cl": 1, "fl": "drivers/gpu/drm/i915/soc/intel_gmch.c" }
+==========FUNCTION: pdev_to_i915==========
+14V_2 = STCHI(MR_14V_1) 	pts{8163 }
+SourceLoc->{ "ln": 375, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_12V_2) 	pts{8161 }
+SourceLoc->{ "ln": 375, "cl": 43, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+14V_3 = STCHI(MR_14V_2) 	pts{8163 }
+SourceLoc->{ "ln": 375, "cl": 21, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_14V_3) 	pts{8163 }
+SourceLoc->{ "ln": 377, "cl": 9, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_14V_3) 	pts{8163 }
+SourceLoc->{ "ln": 377, "cl": 23, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: pci_get_drvdata==========
+
+LDMU(MR_10V_2) 	pts{8190 }
+SourceLoc->{ "ln": 2138, "cl": 26, "fl": "./include/linux/pci.h" }
+==========FUNCTION: to_i915==========
+6V_2 = STCHI(MR_6V_1) 	pts{8204 }
+SourceLoc->{ "ln": 363, "cl": 18, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_4V_2) 	pts{8202 }
+SourceLoc->{ "ln": 363, "cl": 36, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+6V_3 = STCHI(MR_6V_2) 	pts{8204 }
+SourceLoc->{ "ln": 363, "cl": 18, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+LDMU(MR_6V_3) 	pts{8204 }
+SourceLoc->{ "ln": 363, "cl": 283, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+8V_2 = STCHI(MR_8V_1) 	pts{8206 }
+SourceLoc->{ "ln": 363, "cl": 42, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+
+
+LDMU(MR_8V_2) 	pts{8206 }
+SourceLoc->{ "ln": 363, "cl": 344, "fl": "drivers/gpu/drm/i915/i915_drv.h" }
+==========FUNCTION: dev_get_drvdata==========
+
+LDMU(MR_2V_2) 	pts{8223 }
+SourceLoc->{ "ln": 940, "cl": 9, "fl": "./include/linux/device.h" }
+==========FUNCTION: llvm.dbg.declare==========
+==========FUNCTION: llvm.lifetime.start.p0==========
+==========FUNCTION: pci_get_class==========
+==========FUNCTION: __drm_dev_dbg==========
+==========FUNCTION: pci_dev_put==========
+==========FUNCTION: llvm.lifetime.end.p0==========
+==========FUNCTION: llvm.expect.i64==========
+==========FUNCTION: dev_driver_string==========
+==========FUNCTION: __warn_printk==========
+==========FUNCTION: llvm.is.constant.i32==========
+==========FUNCTION: __compiletime_assert_664==========
+==========FUNCTION: __compiletime_assert_665==========
+==========FUNCTION: __compiletime_assert_666==========
+==========FUNCTION: __compiletime_assert_663==========
+==========FUNCTION: llvm.memset.p0.i64==========
+==========FUNCTION: _dev_info==========
+==========FUNCTION: memcmp==========
+==========FUNCTION: snb_pcode_read==========
+==========FUNCTION: vlv_iosf_sb_get==========
+==========FUNCTION: vlv_punit_read==========
+==========FUNCTION: vlv_iosf_sb_put==========
+==========FUNCTION: vlv_cck_read==========
+==========FUNCTION: pci_get_domain_bus_and_slot==========
+==========FUNCTION: _dev_err==========
+==========FUNCTION: __drmm_add_action_or_reset==========
+==========FUNCTION: pci_read_config_dword==========
+==========FUNCTION: pci_write_config_dword==========
+==========FUNCTION: pnp_range_reserved==========
+==========FUNCTION: pcibios_align_resource==========
+==========FUNCTION: pci_bus_alloc_resource==========
+==========FUNCTION: __compiletime_assert_667==========
+==========FUNCTION: release_resource==========
+==========FUNCTION: pci_read_config_word==========
+==========FUNCTION: pci_write_config_word==========

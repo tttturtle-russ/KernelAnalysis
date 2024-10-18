@@ -1,0 +1,3977 @@
+==========FUNCTION: acpi_extract_apple_properties==========
+466V_2 = STCHI(MR_466V_1) 	pts{255 }
+SourceLoc->{ "ln": 30, "cl": 15, "fl": "drivers/acpi/x86/apple.c" }
+
+468V_2 = STCHI(MR_468V_1) 	pts{257 }
+SourceLoc->{ "ln": 30, "cl": 18, "fl": "drivers/acpi/x86/apple.c" }
+
+468V_3 = STCHI(MR_468V_2) 	pts{257 }
+SourceLoc->{ "ln": 30, "cl": 18, "fl": "drivers/acpi/x86/apple.c" }
+
+470V_2 = STCHI(MR_470V_1) 	pts{259 }
+SourceLoc->{ "ln": 30, "cl": 25, "fl": "drivers/acpi/x86/apple.c" }
+
+470V_3 = STCHI(MR_470V_2) 	pts{259 }
+SourceLoc->{ "ln": 30, "cl": 25, "fl": "drivers/acpi/x86/apple.c" }
+
+472V_2 = STCHI(MR_472V_1) 	pts{261 }
+SourceLoc->{ "ln": 30, "cl": 38, "fl": "drivers/acpi/x86/apple.c" }
+
+474V_2 = STCHI(MR_474V_1) 	pts{263 }
+SourceLoc->{ "ln": 30, "cl": 48, "fl": "drivers/acpi/x86/apple.c" }
+
+476V_2 = STCHI(MR_476V_1) 	pts{265 }
+SourceLoc->{ "ln": 31, "cl": 21, "fl": "drivers/acpi/x86/apple.c" }
+
+478V_2 = STCHI(MR_478V_1) 	pts{267 }
+SourceLoc->{ "ln": 31, "cl": 29, "fl": "drivers/acpi/x86/apple.c" }
+
+480V_2 = STCHI(MR_480V_1) 	pts{269 }
+SourceLoc->{ "ln": 32, "cl": 17, "fl": "drivers/acpi/x86/apple.c" }
+
+480V_3 = STCHI(MR_480V_2) 	pts{269 }
+SourceLoc->{ "ln": 32, "cl": 17, "fl": "drivers/acpi/x86/apple.c" }
+
+482V_2 = STCHI(MR_482V_1) 	pts{271 }
+SourceLoc->{ "ln": 33, "cl": 8, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_462V_1) 	pts{5 }
+SourceLoc->{ "ln": 35, "cl": 7, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_464V_2) 	pts{253 }
+SourceLoc->{ "ln": 38, "cl": 34, "fl": "drivers/acpi/x86/apple.c" }
+476V_5 = STCHI(MR_476V_2) 	pts{265 }
+SourceLoc->{ "ln": 38, "cl": 8, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_5) 	pts{265 }
+SourceLoc->{ "ln": 40, "cl": 7, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_5) 	pts{265 }
+SourceLoc->{ "ln": 43, "cl": 7, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_5) 	pts{265 }
+SourceLoc->{ "ln": 46, "cl": 6, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_464V_2) 	pts{253 }
+SourceLoc->{ "ln": 47, "cl": 34, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_5) 	pts{265 }
+SourceLoc->{ "ln": 47, "cl": 109, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_5) 	pts{265 }
+SourceLoc->{ "ln": 47, "cl": 131, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_5) 	pts{265 }
+SourceLoc->{ "ln": 53, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_464V_2) 	pts{253 }
+SourceLoc->{ "ln": 54, "cl": 34, "fl": "drivers/acpi/x86/apple.c" }
+476V_7 = STCHI(MR_476V_5) 	pts{265 }
+SourceLoc->{ "ln": 54, "cl": 8, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_7) 	pts{265 }
+SourceLoc->{ "ln": 56, "cl": 7, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_7) 	pts{265 }
+SourceLoc->{ "ln": 59, "cl": 13, "fl": "drivers/acpi/x86/apple.c" }
+472V_6 = STCHI(MR_472V_2) 	pts{261 }
+SourceLoc->{ "ln": 59, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_472V_6) 	pts{261 }
+SourceLoc->{ "ln": 60, "cl": 7, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_472V_6) 	pts{261 }
+SourceLoc->{ "ln": 63, "cl": 24, "fl": "drivers/acpi/x86/apple.c" }
+480V_7 = STCHI(MR_480V_3) 	pts{269 }
+SourceLoc->{ "ln": 63, "cl": 8, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_480V_7) 	pts{269 }
+SourceLoc->{ "ln": 64, "cl": 7, "fl": "drivers/acpi/x86/apple.c" }
+466V_6 = STCHI(MR_466V_2) 	pts{255 }
+SourceLoc->{ "ln": 68, "cl": 9, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_466V_7) 	pts{255 }
+SourceLoc->{ "ln": 68, "cl": 14, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_472V_6) 	pts{261 }
+SourceLoc->{ "ln": 68, "cl": 18, "fl": "drivers/acpi/x86/apple.c" }
+486V_6 = STCHI(MR_486V_5) 	pts{275 }
+SourceLoc->{ "ln": 69, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_7) 	pts{265 }
+SourceLoc->{ "ln": 69, "cl": 29, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_466V_7) 	pts{255 }
+SourceLoc->{ "ln": 69, "cl": 53, "fl": "drivers/acpi/x86/apple.c" }
+486V_7 = STCHI(MR_486V_6) 	pts{275 }
+SourceLoc->{ "ln": 69, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+488V_6 = STCHI(MR_488V_5) 	pts{277 }
+SourceLoc->{ "ln": 70, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_7) 	pts{265 }
+SourceLoc->{ "ln": 70, "cl": 29, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_466V_7) 	pts{255 }
+SourceLoc->{ "ln": 70, "cl": 53, "fl": "drivers/acpi/x86/apple.c" }
+488V_7 = STCHI(MR_488V_6) 	pts{277 }
+SourceLoc->{ "ln": 70, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_486V_7) 	pts{275 }
+SourceLoc->{ "ln": 72, "cl": 8, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_488V_7) 	pts{277 }
+SourceLoc->{ "ln": 73, "cl": 8, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_488V_7) 	pts{277 }
+SourceLoc->{ "ln": 74, "cl": 8, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_488V_7) 	pts{277 }
+SourceLoc->{ "ln": 75, "cl": 8, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_466V_7) 	pts{255 }
+SourceLoc->{ "ln": 78, "cl": 26, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_480V_7) 	pts{269 }
+SourceLoc->{ "ln": 78, "cl": 65, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_480V_7) 	pts{269 }
+SourceLoc->{ "ln": 78, "cl": 114, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_480V_7) 	pts{269 }
+SourceLoc->{ "ln": 78, "cl": 196, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_466V_7) 	pts{255 }
+SourceLoc->{ "ln": 78, "cl": 225, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_480V_7) 	pts{269 }
+SourceLoc->{ "ln": 78, "cl": 228, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_466V_7) 	pts{255 }
+SourceLoc->{ "ln": 78, "cl": 248, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_480V_7) 	pts{269 }
+SourceLoc->{ "ln": 78, "cl": 251, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_486V_7) 	pts{275 }
+SourceLoc->{ "ln": 79, "cl": 14, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_470V_7) 	pts{259 }
+SourceLoc->{ "ln": 79, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+470V_9 = STCHI(MR_470V_7) 	pts{259 }
+SourceLoc->{ "ln": 79, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_488V_7) 	pts{277 }
+SourceLoc->{ "ln": 80, "cl": 8, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_488V_7) 	pts{277 }
+SourceLoc->{ "ln": 81, "cl": 15, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_470V_9) 	pts{259 }
+SourceLoc->{ "ln": 81, "cl": 12, "fl": "drivers/acpi/x86/apple.c" }
+470V_13 = STCHI(MR_470V_9) 	pts{259 }
+SourceLoc->{ "ln": 81, "cl": 12, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_488V_7) 	pts{277 }
+SourceLoc->{ "ln": 82, "cl": 12, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_488V_7) 	pts{277 }
+SourceLoc->{ "ln": 83, "cl": 15, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_470V_9) 	pts{259 }
+SourceLoc->{ "ln": 83, "cl": 12, "fl": "drivers/acpi/x86/apple.c" }
+470V_11 = STCHI(MR_470V_9) 	pts{259 }
+SourceLoc->{ "ln": 83, "cl": 12, "fl": "drivers/acpi/x86/apple.c" }
+
+484V_10 = STCHI(MR_484V_9) 	pts{273 }
+SourceLoc->{ "ln": 84, "cl": 2, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_466V_7) 	pts{255 }
+SourceLoc->{ "ln": 68, "cl": 29, "fl": "drivers/acpi/x86/apple.c" }
+466V_12 = STCHI(MR_466V_7) 	pts{255 }
+SourceLoc->{ "ln": 68, "cl": 29, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_480V_7) 	pts{269 }
+SourceLoc->{ "ln": 86, "cl": 27, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_472V_6) 	pts{261 }
+SourceLoc->{ "ln": 86, "cl": 34, "fl": "drivers/acpi/x86/apple.c" }
+474V_6 = STCHI(MR_474V_2) 	pts{263 }
+SourceLoc->{ "ln": 86, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_472V_6) 	pts{261 }
+SourceLoc->{ "ln": 87, "cl": 6, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_474V_6) 	pts{263 }
+SourceLoc->{ "ln": 87, "cl": 17, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_464V_2) 	pts{253 }
+SourceLoc->{ "ln": 88, "cl": 34, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_472V_6) 	pts{261 }
+SourceLoc->{ "ln": 88, "cl": 107, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_474V_6) 	pts{263 }
+SourceLoc->{ "ln": 88, "cl": 118, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_474V_6) 	pts{263 }
+SourceLoc->{ "ln": 91, "cl": 6, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_474V_6) 	pts{263 }
+SourceLoc->{ "ln": 95, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_470V_7) 	pts{259 }
+SourceLoc->{ "ln": 95, "cl": 10, "fl": "drivers/acpi/x86/apple.c" }
+470V_8 = STCHI(MR_470V_7) 	pts{259 }
+SourceLoc->{ "ln": 95, "cl": 10, "fl": "drivers/acpi/x86/apple.c" }
+
+492V_5 = STCHI(MR_492V_1) 	pts{281 }
+SourceLoc->{ "ln": 96, "cl": 68, "fl": "drivers/acpi/x86/apple.c" }
+
+492V_6 = STCHI(MR_492V_5) 	pts{281 }
+SourceLoc->{ "ln": 96, "cl": 68, "fl": "drivers/acpi/x86/apple.c" }
+
+494V_5 = STCHI(MR_494V_1) 	pts{283 }
+SourceLoc->{ "ln": 96, "cl": 722, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_470V_8) 	pts{259 }
+SourceLoc->{ "ln": 96, "cl": 757, "fl": "drivers/acpi/x86/apple.c" }
+496V_5 = STCHI(MR_496V_1) 	pts{285 }
+SourceLoc->{ "ln": 96, "cl": 784, "fl": "drivers/acpi/x86/apple.c" }
+
+498V_5 = STCHI(MR_498V_1) 	pts{287 }
+SourceLoc->{ "ln": 96, "cl": 814, "fl": "drivers/acpi/x86/apple.c" }
+
+500V_5 = STCHI(MR_500V_1) 	pts{289 }
+SourceLoc->{ "ln": 96, "cl": 838, "fl": "drivers/acpi/x86/apple.c" }
+
+502V_5 = STCHI(MR_502V_1) 	pts{291 }
+SourceLoc->{ "ln": 96, "cl": 848, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_502V_5) 	pts{291 }
+SourceLoc->{ "ln": 96, "cl": 882, "fl": "drivers/acpi/x86/apple.c" }
+496V_6 = STCHI(MR_496V_5) 	pts{285 }
+SourceLoc->{ "ln": 96, "cl": 893, "fl": "drivers/acpi/x86/apple.c" }
+
+506V_5 = STCHI(MR_506V_1) 	pts{295 }
+SourceLoc->{ "ln": 96, "cl": 953, "fl": "drivers/acpi/x86/apple.c" }
+
+508V_5 = STCHI(MR_508V_1) 	pts{297 }
+SourceLoc->{ "ln": 96, "cl": 977, "fl": "drivers/acpi/x86/apple.c" }
+
+510V_5 = STCHI(MR_510V_1) 	pts{299 }
+SourceLoc->{ "ln": 96, "cl": 987, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_510V_5) 	pts{299 }
+SourceLoc->{ "ln": 96, "cl": 1021, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_496V_6) 	pts{285 }
+SourceLoc->{ "ln": 96, "cl": 1050, "fl": "drivers/acpi/x86/apple.c" }
+512V_5 = STCHI(MR_512V_1) 	pts{301 }
+SourceLoc->{ "ln": 96, "cl": 936, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_512V_5) 	pts{301 }
+SourceLoc->{ "ln": 96, "cl": 1059, "fl": "drivers/acpi/x86/apple.c" }
+504V_5 = STCHI(MR_504V_1) 	pts{293 }
+SourceLoc->{ "ln": 96, "cl": 920, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_504V_5) 	pts{293 }
+SourceLoc->{ "ln": 96, "cl": 1063, "fl": "drivers/acpi/x86/apple.c" }
+
+CALMU(MR_286V_1) 	pts{6231 }
+494V_6 = STCHI(MR_494V_5) 	pts{283 }
+SourceLoc->{ "ln": 96, "cl": 722, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_494V_6) 	pts{283 }
+SourceLoc->{ "ln": 96, "cl": 1373, "fl": "drivers/acpi/x86/apple.c" }
+514V_5 = STCHI(MR_514V_1) 	pts{303 }
+SourceLoc->{ "ln": 96, "cl": 1360, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_514V_5) 	pts{303 }
+SourceLoc->{ "ln": 96, "cl": 1379, "fl": "drivers/acpi/x86/apple.c" }
+490V_5 = STCHI(MR_490V_1) 	pts{279 }
+SourceLoc->{ "ln": 96, "cl": 14, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_490V_5) 	pts{279 }
+SourceLoc->{ "ln": 96, "cl": 1383, "fl": "drivers/acpi/x86/apple.c" }
+478V_6 = STCHI(MR_478V_2) 	pts{267 }
+SourceLoc->{ "ln": 96, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 97, "cl": 7, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 101, "cl": 2, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_474V_6) 	pts{263 }
+SourceLoc->{ "ln": 102, "cl": 28, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 102, "cl": 2, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 103, "cl": 32, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 103, "cl": 2, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 104, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_474V_6) 	pts{263 }
+SourceLoc->{ "ln": 104, "cl": 33, "fl": "drivers/acpi/x86/apple.c" }
+482V_6 = STCHI(MR_482V_2) 	pts{271 }
+SourceLoc->{ "ln": 104, "cl": 13, "fl": "drivers/acpi/x86/apple.c" }
+
+466V_8 = STCHI(MR_466V_7) 	pts{255 }
+SourceLoc->{ "ln": 106, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_480V_7) 	pts{269 }
+SourceLoc->{ "ln": 106, "cl": 37, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_472V_6) 	pts{261 }
+SourceLoc->{ "ln": 106, "cl": 46, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_466V_9) 	pts{255 }
+SourceLoc->{ "ln": 106, "cl": 58, "fl": "drivers/acpi/x86/apple.c" }
+466V_10 = STCHI(MR_466V_9) 	pts{255 }
+SourceLoc->{ "ln": 106, "cl": 20, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_466V_10) 	pts{255 }
+SourceLoc->{ "ln": 106, "cl": 64, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_472V_6) 	pts{261 }
+SourceLoc->{ "ln": 106, "cl": 70, "fl": "drivers/acpi/x86/apple.c" }
+516V_6 = STCHI(MR_516V_5) 	pts{305 }
+SourceLoc->{ "ln": 107, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_7) 	pts{265 }
+SourceLoc->{ "ln": 107, "cl": 29, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_466V_10) 	pts{255 }
+SourceLoc->{ "ln": 107, "cl": 53, "fl": "drivers/acpi/x86/apple.c" }
+516V_7 = STCHI(MR_516V_6) 	pts{305 }
+SourceLoc->{ "ln": 107, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+518V_6 = STCHI(MR_518V_5) 	pts{307 }
+SourceLoc->{ "ln": 108, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_7) 	pts{265 }
+SourceLoc->{ "ln": 108, "cl": 29, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_466V_10) 	pts{255 }
+SourceLoc->{ "ln": 108, "cl": 53, "fl": "drivers/acpi/x86/apple.c" }
+518V_7 = STCHI(MR_518V_6) 	pts{307 }
+SourceLoc->{ "ln": 108, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+520V_6 = STCHI(MR_520V_5) 	pts{309 }
+SourceLoc->{ "ln": 109, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_474V_6) 	pts{263 }
+SourceLoc->{ "ln": 109, "cl": 24, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_468V_7) 	pts{257 }
+SourceLoc->{ "ln": 109, "cl": 35, "fl": "drivers/acpi/x86/apple.c" }
+520V_7 = STCHI(MR_520V_6) 	pts{309 }
+SourceLoc->{ "ln": 109, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+522V_6 = STCHI(MR_522V_5) 	pts{311 }
+SourceLoc->{ "ln": 110, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_520V_7) 	pts{309 }
+SourceLoc->{ "ln": 110, "cl": 20, "fl": "drivers/acpi/x86/apple.c" }
+522V_7 = STCHI(MR_522V_6) 	pts{311 }
+SourceLoc->{ "ln": 110, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 112, "cl": 3, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_468V_7) 	pts{257 }
+SourceLoc->{ "ln": 112, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 113, "cl": 3, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_468V_7) 	pts{257 }
+SourceLoc->{ "ln": 113, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 114, "cl": 39, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_520V_7) 	pts{309 }
+SourceLoc->{ "ln": 114, "cl": 48, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 114, "cl": 3, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_468V_7) 	pts{257 }
+SourceLoc->{ "ln": 114, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 116, "cl": 3, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_520V_7) 	pts{309 }
+SourceLoc->{ "ln": 116, "cl": 12, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_516V_7) 	pts{305 }
+SourceLoc->{ "ln": 117, "cl": 31, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 117, "cl": 3, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_520V_7) 	pts{309 }
+SourceLoc->{ "ln": 117, "cl": 12, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_7) 	pts{271 }
+SourceLoc->{ "ln": 118, "cl": 32, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 118, "cl": 3, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_520V_7) 	pts{309 }
+SourceLoc->{ "ln": 118, "cl": 12, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_7) 	pts{271 }
+SourceLoc->{ "ln": 119, "cl": 10, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_516V_7) 	pts{305 }
+SourceLoc->{ "ln": 119, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_516V_7) 	pts{305 }
+SourceLoc->{ "ln": 119, "cl": 43, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_516V_7) 	pts{305 }
+SourceLoc->{ "ln": 120, "cl": 17, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_7) 	pts{271 }
+SourceLoc->{ "ln": 120, "cl": 14, "fl": "drivers/acpi/x86/apple.c" }
+482V_8 = STCHI(MR_482V_7) 	pts{271 }
+SourceLoc->{ "ln": 120, "cl": 14, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 122, "cl": 22, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 122, "cl": 3, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_522V_7) 	pts{311 }
+SourceLoc->{ "ln": 122, "cl": 12, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 123, "cl": 7, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 124, "cl": 32, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 124, "cl": 4, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_522V_7) 	pts{311 }
+SourceLoc->{ "ln": 124, "cl": 13, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 125, "cl": 14, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 126, "cl": 32, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 126, "cl": 4, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_522V_7) 	pts{311 }
+SourceLoc->{ "ln": 126, "cl": 13, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_8) 	pts{271 }
+SourceLoc->{ "ln": 127, "cl": 33, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 127, "cl": 4, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_522V_7) 	pts{311 }
+SourceLoc->{ "ln": 127, "cl": 13, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_8) 	pts{271 }
+SourceLoc->{ "ln": 128, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 128, "cl": 23, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 129, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 130, "cl": 18, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_8) 	pts{271 }
+SourceLoc->{ "ln": 130, "cl": 15, "fl": "drivers/acpi/x86/apple.c" }
+482V_11 = STCHI(MR_482V_8) 	pts{271 }
+SourceLoc->{ "ln": 130, "cl": 15, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 132, "cl": 32, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 132, "cl": 4, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_522V_7) 	pts{311 }
+SourceLoc->{ "ln": 132, "cl": 13, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_8) 	pts{271 }
+SourceLoc->{ "ln": 133, "cl": 33, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 133, "cl": 4, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_522V_7) 	pts{311 }
+SourceLoc->{ "ln": 133, "cl": 13, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_8) 	pts{271 }
+SourceLoc->{ "ln": 134, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 134, "cl": 23, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 135, "cl": 11, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_518V_7) 	pts{307 }
+SourceLoc->{ "ln": 136, "cl": 18, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_8) 	pts{271 }
+SourceLoc->{ "ln": 136, "cl": 15, "fl": "drivers/acpi/x86/apple.c" }
+482V_9 = STCHI(MR_482V_8) 	pts{271 }
+SourceLoc->{ "ln": 136, "cl": 15, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_468V_7) 	pts{257 }
+SourceLoc->{ "ln": 138, "cl": 4, "fl": "drivers/acpi/x86/apple.c" }
+468V_8 = STCHI(MR_468V_7) 	pts{257 }
+SourceLoc->{ "ln": 138, "cl": 4, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_466V_10) 	pts{255 }
+SourceLoc->{ "ln": 106, "cl": 84, "fl": "drivers/acpi/x86/apple.c" }
+466V_11 = STCHI(MR_466V_10) 	pts{255 }
+SourceLoc->{ "ln": 106, "cl": 84, "fl": "drivers/acpi/x86/apple.c" }
+
+524V_5 = STCHI(MR_524V_1) 	pts{313 }
+SourceLoc->{ "ln": 140, "cl": 9, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_482V_7) 	pts{271 }
+SourceLoc->{ "ln": 140, "cl": 28, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 140, "cl": 50, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_470V_8) 	pts{259 }
+SourceLoc->{ "ln": 140, "cl": 61, "fl": "drivers/acpi/x86/apple.c" }
+524V_6 = STCHI(MR_524V_5) 	pts{313 }
+SourceLoc->{ "ln": 140, "cl": 9, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_524V_6) 	pts{313 }
+SourceLoc->{ "ln": 140, "cl": 95, "fl": "drivers/acpi/x86/apple.c" }
+526V_6 = STCHI(MR_526V_1) 	pts{315 }
+SourceLoc->{ "ln": 140, "cl": 132, "fl": "drivers/acpi/x86/apple.c" }
+
+526V_7 = STCHI(MR_526V_6) 	pts{315 }
+SourceLoc->{ "ln": 140, "cl": 132, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_526V_7) 	pts{315 }
+SourceLoc->{ "ln": 140, "cl": 754, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_524V_6) 	pts{313 }
+SourceLoc->{ "ln": 140, "cl": 980, "fl": "drivers/acpi/x86/apple.c" }
+528V_5 = STCHI(MR_528V_1) 	pts{317 }
+SourceLoc->{ "ln": 140, "cl": 112, "fl": "drivers/acpi/x86/apple.c" }
+
+
+LDMU(MR_528V_5) 	pts{317 }
+SourceLoc->{ "ln": 140, "cl": 1000, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 142, "cl": 23, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_464V_2) 	pts{253 }
+SourceLoc->{ "ln": 142, "cl": 2, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_464V_2) 	pts{253 }
+SourceLoc->{ "ln": 143, "cl": 23, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_478V_6) 	pts{267 }
+SourceLoc->{ "ln": 143, "cl": 52, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_476V_6) 	pts{265 }
+SourceLoc->{ "ln": 146, "cl": 16, "fl": "drivers/acpi/x86/apple.c" }
+
+LDMU(MR_480V_6) 	pts{269 }
+SourceLoc->{ "ln": 147, "cl": 14, "fl": "drivers/acpi/x86/apple.c" }
+484V_7 = STCHI(MR_484V_6) 	pts{273 }
+SourceLoc->{ "ln": 148, "cl": 1, "fl": "drivers/acpi/x86/apple.c" }
+
+==========FUNCTION: acpi_evaluate_dsm_typed==========
+765V_2 = STCHI(MR_765V_1) 	pts{1059 }
+SourceLoc->{ "ln": 68, "cl": 21, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_753V_2) 	pts{1047 }
+SourceLoc->{ "ln": 70, "cl": 26, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_755V_2) 	pts{1049 }
+SourceLoc->{ "ln": 70, "cl": 34, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_757V_2) 	pts{1051 }
+SourceLoc->{ "ln": 70, "cl": 40, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_759V_2) 	pts{1053 }
+SourceLoc->{ "ln": 70, "cl": 45, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_761V_2) 	pts{1055 }
+SourceLoc->{ "ln": 70, "cl": 51, "fl": "./include/acpi/acpi_bus.h" }
+765V_3 = STCHI(MR_765V_2) 	pts{1059 }
+SourceLoc->{ "ln": 70, "cl": 6, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_765V_3) 	pts{1059 }
+SourceLoc->{ "ln": 71, "cl": 6, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_765V_3) 	pts{1059 }
+SourceLoc->{ "ln": 71, "cl": 13, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_763V_2) 	pts{1057 }
+SourceLoc->{ "ln": 71, "cl": 26, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_765V_3) 	pts{1059 }
+SourceLoc->{ "ln": 72, "cl": 17, "fl": "./include/acpi/acpi_bus.h" }
+765V_5 = STCHI(MR_765V_3) 	pts{1059 }
+SourceLoc->{ "ln": 73, "cl": 7, "fl": "./include/acpi/acpi_bus.h" }
+
+
+LDMU(MR_765V_4) 	pts{1059 }
+SourceLoc->{ "ln": 76, "cl": 9, "fl": "./include/acpi/acpi_bus.h" }
+==========FUNCTION: acpi_os_free==========
+
+LDMU(MR_187V_2) 	pts{1108 }
+SourceLoc->{ "ln": 64, "cl": 8, "fl": "./include/acpi/platform/aclinuxex.h" }
+==========FUNCTION: generic___set_bit==========
+207V_2 = STCHI(MR_207V_1) 	pts{1131 }
+SourceLoc->{ "ln": 30, "cl": 16, "fl": "./include/asm-generic/bitops/generic-non-atomic.h" }
+
+LDMU(MR_203V_2) 	pts{1127 }
+SourceLoc->{ "ln": 30, "cl": 39, "fl": "./include/asm-generic/bitops/generic-non-atomic.h" }
+207V_3 = STCHI(MR_207V_2) 	pts{1131 }
+SourceLoc->{ "ln": 30, "cl": 16, "fl": "./include/asm-generic/bitops/generic-non-atomic.h" }
+
+209V_2 = STCHI(MR_209V_1) 	pts{1133 }
+SourceLoc->{ "ln": 31, "cl": 17, "fl": "./include/asm-generic/bitops/generic-non-atomic.h" }
+
+LDMU(MR_205V_2) 	pts{1129 }
+SourceLoc->{ "ln": 31, "cl": 39, "fl": "./include/asm-generic/bitops/generic-non-atomic.h" }
+
+LDMU(MR_203V_2) 	pts{1127 }
+SourceLoc->{ "ln": 31, "cl": 49, "fl": "./include/asm-generic/bitops/generic-non-atomic.h" }
+209V_3 = STCHI(MR_209V_2) 	pts{1133 }
+SourceLoc->{ "ln": 31, "cl": 17, "fl": "./include/asm-generic/bitops/generic-non-atomic.h" }
+
+LDMU(MR_207V_3) 	pts{1131 }
+SourceLoc->{ "ln": 33, "cl": 8, "fl": "./include/asm-generic/bitops/generic-non-atomic.h" }
+
+LDMU(MR_209V_3) 	pts{1133 }
+SourceLoc->{ "ln": 33, "cl": 3, "fl": "./include/asm-generic/bitops/generic-non-atomic.h" }
+==========FUNCTION: ___set_bit==========
+
+LDMU(MR_290V_2) 	pts{1168 }
+SourceLoc->{ "ln": 28, "cl": 19, "fl": "./include/asm-generic/bitops/instrumented-non-atomic.h" }
+
+LDMU(MR_288V_2) 	pts{1166 }
+SourceLoc->{ "ln": 28, "cl": 28, "fl": "./include/asm-generic/bitops/instrumented-non-atomic.h" }
+
+LDMU(MR_288V_2) 	pts{1166 }
+SourceLoc->{ "ln": 29, "cl": 17, "fl": "./include/asm-generic/bitops/instrumented-non-atomic.h" }
+
+LDMU(MR_290V_2) 	pts{1168 }
+SourceLoc->{ "ln": 29, "cl": 21, "fl": "./include/asm-generic/bitops/instrumented-non-atomic.h" }
+==========FUNCTION: bitmap_weight==========
+
+LDMU(MR_670V_2) 	pts{1197 }
+SourceLoc->{ "ln": 444, "cl": 28, "fl": "./include/linux/bitmap.h" }
+
+LDMU(MR_670V_2) 	pts{1197 }
+SourceLoc->{ "ln": 444, "cl": 39, "fl": "./include/linux/bitmap.h" }
+
+LDMU(MR_670V_2) 	pts{1197 }
+SourceLoc->{ "ln": 444, "cl": 56, "fl": "./include/linux/bitmap.h" }
+
+LDMU(MR_668V_2) 	pts{1195 }
+SourceLoc->{ "ln": 445, "cl": 24, "fl": "./include/linux/bitmap.h" }
+
+LDMU(MR_670V_2) 	pts{1197 }
+SourceLoc->{ "ln": 445, "cl": 42, "fl": "./include/linux/bitmap.h" }
+666V_4 = STCHI(MR_666V_1) 	pts{1193 }
+SourceLoc->{ "ln": 445, "cl": 3, "fl": "./include/linux/bitmap.h" }
+
+
+LDMU(MR_668V_2) 	pts{1195 }
+SourceLoc->{ "ln": 446, "cl": 25, "fl": "./include/linux/bitmap.h" }
+
+LDMU(MR_670V_2) 	pts{1197 }
+SourceLoc->{ "ln": 446, "cl": 30, "fl": "./include/linux/bitmap.h" }
+666V_2 = STCHI(MR_666V_1) 	pts{1193 }
+SourceLoc->{ "ln": 446, "cl": 2, "fl": "./include/linux/bitmap.h" }
+
+
+LDMU(MR_666V_3) 	pts{1193 }
+SourceLoc->{ "ln": 447, "cl": 1, "fl": "./include/linux/bitmap.h" }
+==========FUNCTION: arch_local_save_flags==========
+==========FUNCTION: arch_irqs_disabled_flags==========
+
+LDMU(MR_339V_2) 	pts{1245 }
+SourceLoc->{ "ln": 142, "cl": 11, "fl": "./arch/x86/include/asm/irqflags.h" }
+==========FUNCTION: kzalloc_noprof==========
+
+LDMU(MR_381V_2) 	pts{1259 }
+SourceLoc->{ "ln": 1014, "cl": 24, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_383V_2) 	pts{1261 }
+SourceLoc->{ "ln": 1014, "cl": 30, "fl": "./include/linux/slab.h" }
+
+CALMU(MR_286V_1) 	pts{6231 }
+==========FUNCTION: find_next_bit==========
+
+LDMU(MR_171V_2) 	pts{1283 }
+SourceLoc->{ "ln": 59, "cl": 28, "fl": "./include/linux/find.h" }
+
+LDMU(MR_171V_2) 	pts{1283 }
+SourceLoc->{ "ln": 59, "cl": 38, "fl": "./include/linux/find.h" }
+
+LDMU(MR_171V_2) 	pts{1283 }
+SourceLoc->{ "ln": 59, "cl": 54, "fl": "./include/linux/find.h" }
+175V_3 = STCHI(MR_175V_1) 	pts{1287 }
+SourceLoc->{ "ln": 60, "cl": 17, "fl": "./include/linux/find.h" }
+
+LDMU(MR_173V_2) 	pts{1285 }
+SourceLoc->{ "ln": 62, "cl": 27, "fl": "./include/linux/find.h" }
+
+LDMU(MR_171V_2) 	pts{1283 }
+SourceLoc->{ "ln": 62, "cl": 37, "fl": "./include/linux/find.h" }
+
+LDMU(MR_171V_2) 	pts{1283 }
+SourceLoc->{ "ln": 63, "cl": 11, "fl": "./include/linux/find.h" }
+167V_6 = STCHI(MR_167V_1) 	pts{1279 }
+SourceLoc->{ "ln": 63, "cl": 4, "fl": "./include/linux/find.h" }
+
+
+LDMU(MR_169V_2) 	pts{1281 }
+SourceLoc->{ "ln": 65, "cl": 10, "fl": "./include/linux/find.h" }
+
+LDMU(MR_173V_2) 	pts{1285 }
+SourceLoc->{ "ln": 65, "cl": 230, "fl": "./include/linux/find.h" }
+
+LDMU(MR_171V_2) 	pts{1283 }
+SourceLoc->{ "ln": 65, "cl": 270, "fl": "./include/linux/find.h" }
+175V_4 = STCHI(MR_175V_3) 	pts{1287 }
+SourceLoc->{ "ln": 65, "cl": 7, "fl": "./include/linux/find.h" }
+
+LDMU(MR_175V_4) 	pts{1287 }
+SourceLoc->{ "ln": 66, "cl": 10, "fl": "./include/linux/find.h" }
+
+LDMU(MR_175V_4) 	pts{1287 }
+SourceLoc->{ "ln": 66, "cl": 38, "fl": "./include/linux/find.h" }
+
+LDMU(MR_175V_4) 	pts{1287 }
+SourceLoc->{ "ln": 66, "cl": 75, "fl": "./include/linux/find.h" }
+
+LDMU(MR_175V_4) 	pts{1287 }
+SourceLoc->{ "ln": 66, "cl": 96, "fl": "./include/linux/find.h" }
+
+LDMU(MR_171V_2) 	pts{1283 }
+SourceLoc->{ "ln": 66, "cl": 104, "fl": "./include/linux/find.h" }
+167V_4 = STCHI(MR_167V_1) 	pts{1279 }
+SourceLoc->{ "ln": 66, "cl": 3, "fl": "./include/linux/find.h" }
+
+
+LDMU(MR_169V_2) 	pts{1281 }
+SourceLoc->{ "ln": 69, "cl": 24, "fl": "./include/linux/find.h" }
+
+LDMU(MR_171V_2) 	pts{1283 }
+SourceLoc->{ "ln": 69, "cl": 30, "fl": "./include/linux/find.h" }
+
+LDMU(MR_173V_2) 	pts{1285 }
+SourceLoc->{ "ln": 69, "cl": 36, "fl": "./include/linux/find.h" }
+167V_2 = STCHI(MR_167V_1) 	pts{1279 }
+SourceLoc->{ "ln": 69, "cl": 2, "fl": "./include/linux/find.h" }
+
+
+LDMU(MR_167V_3) 	pts{1279 }
+SourceLoc->{ "ln": 70, "cl": 1, "fl": "./include/linux/find.h" }
+==========FUNCTION: variable__ffs==========
+
+LDMU(MR_357V_2) 	pts{1403 }
+SourceLoc->{ "ln": 253, "cl": 10, "fl": "./arch/x86/include/asm/bitops.h" }
+357V_3 = STCHI(MR_357V_2) 	pts{1403 }
+SourceLoc->{ "ln": 251, "cl": 2, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_357V_3) 	pts{1403 }
+SourceLoc->{ "ln": 254, "cl": 9, "fl": "./arch/x86/include/asm/bitops.h" }
+==========FUNCTION: kmalloc_noprof==========
+
+LDMU(MR_390V_2) 	pts{1422 }
+SourceLoc->{ "ln": 871, "cl": 27, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_390V_2) 	pts{1422 }
+SourceLoc->{ "ln": 871, "cl": 36, "fl": "./include/linux/slab.h" }
+394V_3 = STCHI(MR_394V_1) 	pts{1426 }
+SourceLoc->{ "ln": 872, "cl": 16, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_390V_2) 	pts{1422 }
+SourceLoc->{ "ln": 874, "cl": 7, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_390V_2) 	pts{1422 }
+SourceLoc->{ "ln": 875, "cl": 34, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_392V_2) 	pts{1424 }
+SourceLoc->{ "ln": 875, "cl": 40, "fl": "./include/linux/slab.h" }
+388V_6 = STCHI(MR_388V_1) 	pts{1420 }
+SourceLoc->{ "ln": 875, "cl": 4, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_390V_2) 	pts{1422 }
+SourceLoc->{ "ln": 877, "cl": 27, "fl": "./include/linux/slab.h" }
+394V_4 = STCHI(MR_394V_3) 	pts{1426 }
+SourceLoc->{ "ln": 877, "cl": 9, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_392V_2) 	pts{1424 }
+SourceLoc->{ "ln": 879, "cl": 33, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_394V_4) 	pts{1426 }
+SourceLoc->{ "ln": 879, "cl": 85, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_286V_1) 	pts{6231 }
+SourceLoc->{ "ln": 879, "cl": 5, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_392V_2) 	pts{1424 }
+SourceLoc->{ "ln": 880, "cl": 5, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_390V_2) 	pts{1422 }
+SourceLoc->{ "ln": 880, "cl": 12, "fl": "./include/linux/slab.h" }
+388V_4 = STCHI(MR_388V_1) 	pts{1420 }
+SourceLoc->{ "ln": 878, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_390V_2) 	pts{1422 }
+SourceLoc->{ "ln": 882, "cl": 26, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_392V_2) 	pts{1424 }
+SourceLoc->{ "ln": 882, "cl": 32, "fl": "./include/linux/slab.h" }
+388V_2 = STCHI(MR_388V_1) 	pts{1420 }
+SourceLoc->{ "ln": 882, "cl": 2, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_388V_3) 	pts{1420 }
+SourceLoc->{ "ln": 883, "cl": 1, "fl": "./include/linux/slab.h" }
+==========FUNCTION: __kmalloc_index==========
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 657, "cl": 7, "fl": "./include/linux/slab.h" }
+775V_2 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 658, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 660, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_25 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 661, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 663, "cl": 24, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 663, "cl": 37, "fl": "./include/linux/slab.h" }
+775V_24 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 664, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 665, "cl": 24, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 665, "cl": 38, "fl": "./include/linux/slab.h" }
+775V_23 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 666, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 667, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_22 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 667, "cl": 17, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 668, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_21 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 668, "cl": 18, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 669, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_20 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 669, "cl": 18, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 670, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_19 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 670, "cl": 18, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 671, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_18 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 671, "cl": 19, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 672, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_17 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 672, "cl": 19, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 673, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_16 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 673, "cl": 19, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 674, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_15 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 674, "cl": 20, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 675, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_14 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 675, "cl": 24, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 676, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_13 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 676, "cl": 24, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 677, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_12 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 677, "cl": 24, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 678, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_11 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 678, "cl": 25, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 679, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_10 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 679, "cl": 25, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 680, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_9 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 680, "cl": 25, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 681, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_8 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 681, "cl": 26, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 682, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_7 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 682, "cl": 26, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 683, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_6 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 683, "cl": 26, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 684, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_5 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 684, "cl": 27, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_777V_2) 	pts{1503 }
+SourceLoc->{ "ln": 685, "cl": 6, "fl": "./include/linux/slab.h" }
+775V_4 = STCHI(MR_775V_1) 	pts{1501 }
+SourceLoc->{ "ln": 685, "cl": 31, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_779V_2) 	pts{1505 }
+SourceLoc->{ "ln": 687, "cl": 12, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_775V_3) 	pts{1501 }
+SourceLoc->{ "ln": 694, "cl": 1, "fl": "./include/linux/slab.h" }
+==========FUNCTION: kmalloc_type==========
+
+LDMU(MR_195V_2) 	pts{1702 }
+SourceLoc->{ "ln": 617, "cl": 27, "fl": "./include/linux/slab.h" }
+193V_5 = STCHI(MR_193V_1) 	pts{1700 }
+SourceLoc->{ "ln": 623, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_195V_2) 	pts{1702 }
+SourceLoc->{ "ln": 633, "cl": 12, "fl": "./include/linux/slab.h" }
+193V_3 = STCHI(MR_193V_1) 	pts{1700 }
+SourceLoc->{ "ln": 634, "cl": 3, "fl": "./include/linux/slab.h" }
+
+193V_2 = STCHI(MR_193V_1) 	pts{1700 }
+SourceLoc->{ "ln": 636, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_193V_4) 	pts{1700 }
+SourceLoc->{ "ln": 639, "cl": 1, "fl": "./include/linux/slab.h" }
+==========FUNCTION: native_save_fl==========
+419V_2 = STCHI(MR_419V_1) 	pts{1742 }
+SourceLoc->{ "ln": 19, "cl": 16, "fl": "./arch/x86/include/asm/irqflags.h" }
+
+
+LDMU(MR_419V_2) 	pts{1742 }
+SourceLoc->{ "ln": 32, "cl": 9, "fl": "./arch/x86/include/asm/irqflags.h" }
+==========FUNCTION: hweight_long==========
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1259, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1296, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1329, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1362, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1395, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1428, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1461, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1494, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1527, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1580, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1620, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1660, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1700, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1740, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1780, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1820, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1860, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1921, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 1962, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2003, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2044, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2085, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2126, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2167, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2208, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2269, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2317, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2365, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2413, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2461, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2509, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2557, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2605, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2675, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2716, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2757, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2798, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2839, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2880, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2921, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 2962, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3023, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3071, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3119, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3167, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3215, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3263, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3311, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3359, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3428, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3477, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3526, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3575, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3624, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3673, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3722, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3771, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3840, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3896, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 3952, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 4008, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 4064, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 4120, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 4176, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 4232, "fl": "./include/linux/bitops.h" }
+
+LDMU(MR_337V_2) 	pts{1754 }
+SourceLoc->{ "ln": 97, "cl": 4302, "fl": "./include/linux/bitops.h" }
+==========FUNCTION: __arch_hweight64==========
+181V_2 = STCHI(MR_181V_1) 	pts{2322 }
+SourceLoc->{ "ln": 45, "cl": 16, "fl": "./arch/x86/include/asm/arch_hweight.h" }
+
+LDMU(MR_179V_2) 	pts{2320 }
+SourceLoc->{ "ln": 49, "cl": 12, "fl": "./arch/x86/include/asm/arch_hweight.h" }
+181V_3 = STCHI(MR_181V_2) 	pts{2322 }
+SourceLoc->{ "ln": 47, "cl": 2, "fl": "./arch/x86/include/asm/arch_hweight.h" }
+
+LDMU(MR_181V_3) 	pts{2322 }
+SourceLoc->{ "ln": 51, "cl": 9, "fl": "./arch/x86/include/asm/arch_hweight.h" }
+==========FUNCTION: instrument_write==========
+
+LDMU(MR_199V_2) 	pts{2339 }
+SourceLoc->{ "ln": 40, "cl": 20, "fl": "./include/linux/instrumented.h" }
+
+LDMU(MR_201V_2) 	pts{2341 }
+SourceLoc->{ "ln": 40, "cl": 23, "fl": "./include/linux/instrumented.h" }
+
+LDMU(MR_199V_2) 	pts{2339 }
+SourceLoc->{ "ln": 41, "cl": 21, "fl": "./include/linux/instrumented.h" }
+
+LDMU(MR_201V_2) 	pts{2341 }
+SourceLoc->{ "ln": 41, "cl": 24, "fl": "./include/linux/instrumented.h" }
+==========FUNCTION: arch___set_bit==========
+
+LDMU(MR_379V_2) 	pts{2364 }
+SourceLoc->{ "ln": 68, "cl": 68, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_377V_2) 	pts{2362 }
+SourceLoc->{ "ln": 68, "cl": 82, "fl": "./arch/x86/include/asm/bitops.h" }
+==========FUNCTION: kasan_check_write==========
+==========FUNCTION: kcsan_check_access==========
+==========FUNCTION: acpi_unregister_lps0_dev==========
+157V_2 = STCHI(MR_157V_1) 	pts{2417 }
+SourceLoc->{ "ln": 672, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 674, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_112V_1) 	pts{39 }
+SourceLoc->{ "ln": 674, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+157V_4 = STCHI(MR_157V_2) 	pts{2417 }
+SourceLoc->{ "ln": 677, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_155V_2) 	pts{2415 }
+SourceLoc->{ "ln": 678, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_157V_4) 	pts{2417 }
+SourceLoc->{ "ln": 679, "cl": 22, "fl": "drivers/acpi/x86/s2idle.c" }
+159V_4 = STCHI(MR_159V_1) 	pts{2419 }
+SourceLoc->{ "ln": 680, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+
+==========FUNCTION: list_del==========
+
+LDMU(MR_664V_2) 	pts{2458 }
+SourceLoc->{ "ln": 229, "cl": 19, "fl": "./include/linux/list.h" }
+
+LDMU(MR_664V_2) 	pts{2458 }
+SourceLoc->{ "ln": 230, "cl": 2, "fl": "./include/linux/list.h" }
+
+LDMU(MR_664V_2) 	pts{2458 }
+SourceLoc->{ "ln": 231, "cl": 2, "fl": "./include/linux/list.h" }
+==========FUNCTION: __list_del_entry==========
+
+LDMU(MR_713V_2) 	pts{2483 }
+SourceLoc->{ "ln": 215, "cl": 30, "fl": "./include/linux/list.h" }
+
+LDMU(MR_713V_2) 	pts{2483 }
+SourceLoc->{ "ln": 218, "cl": 13, "fl": "./include/linux/list.h" }
+
+LDMU(MR_713V_2) 	pts{2483 }
+SourceLoc->{ "ln": 218, "cl": 26, "fl": "./include/linux/list.h" }
+==========FUNCTION: __list_del_entry_valid==========
+==========FUNCTION: __list_del==========
+
+LDMU(MR_421V_2) 	pts{2515 }
+SourceLoc->{ "ln": 195, "cl": 15, "fl": "./include/linux/list.h" }
+
+LDMU(MR_423V_2) 	pts{2517 }
+SourceLoc->{ "ln": 195, "cl": 2, "fl": "./include/linux/list.h" }
+
+LDMU(MR_423V_2) 	pts{2517 }
+SourceLoc->{ "ln": 196, "cl": 460, "fl": "./include/linux/list.h" }
+
+LDMU(MR_421V_2) 	pts{2515 }
+SourceLoc->{ "ln": 196, "cl": 445, "fl": "./include/linux/list.h" }
+==========FUNCTION: acpi_register_lps0_dev==========
+409V_2 = STCHI(MR_409V_1) 	pts{2551 }
+SourceLoc->{ "ln": 657, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 659, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_112V_1) 	pts{39 }
+SourceLoc->{ "ln": 659, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+405V_3 = STCHI(MR_405V_1) 	pts{2547 }
+SourceLoc->{ "ln": 660, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+409V_4 = STCHI(MR_409V_2) 	pts{2551 }
+SourceLoc->{ "ln": 662, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_407V_2) 	pts{2549 }
+SourceLoc->{ "ln": 663, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_355V_1) 	pts{6248 }
+CALMU(MR_353V_1) 	pts{6247 }
+355V_3 = CALCHI(MR_355V_1) 	pts{6248 }
+353V_3 = CALCHI(MR_353V_1) 	pts{6247 }
+
+LDMU(MR_409V_4) 	pts{2551 }
+SourceLoc->{ "ln": 664, "cl": 22, "fl": "drivers/acpi/x86/s2idle.c" }
+405V_4 = STCHI(MR_405V_1) 	pts{2547 }
+SourceLoc->{ "ln": 666, "cl": 2, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_405V_2) 	pts{2547 }
+SourceLoc->{ "ln": 667, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+==========FUNCTION: list_add==========
+
+LDMU(MR_595V_2) 	pts{2589 }
+SourceLoc->{ "ln": 169, "cl": 13, "fl": "./include/linux/list.h" }
+
+LDMU(MR_597V_2) 	pts{2591 }
+SourceLoc->{ "ln": 169, "cl": 18, "fl": "./include/linux/list.h" }
+
+LDMU(MR_597V_2) 	pts{2591 }
+SourceLoc->{ "ln": 169, "cl": 24, "fl": "./include/linux/list.h" }
+
+LDMU(MR_353V_1) 	pts{6247 }
+SourceLoc->{ "ln": 169, "cl": 30, "fl": "./include/linux/list.h" }
+
+CALMU(MR_355V_1) 	pts{6248 }
+CALMU(MR_353V_1) 	pts{6247 }
+355V_2 = CALCHI(MR_355V_1) 	pts{6248 }
+353V_2 = CALCHI(MR_353V_1) 	pts{6247 }
+
+==========FUNCTION: __list_add==========
+
+LDMU(MR_347V_2) 	pts{2610 }
+SourceLoc->{ "ln": 150, "cl": 24, "fl": "./include/linux/list.h" }
+
+LDMU(MR_349V_2) 	pts{2612 }
+SourceLoc->{ "ln": 150, "cl": 29, "fl": "./include/linux/list.h" }
+
+LDMU(MR_351V_2) 	pts{2614 }
+SourceLoc->{ "ln": 150, "cl": 35, "fl": "./include/linux/list.h" }
+
+LDMU(MR_347V_2) 	pts{2610 }
+SourceLoc->{ "ln": 153, "cl": 15, "fl": "./include/linux/list.h" }
+
+LDMU(MR_351V_2) 	pts{2614 }
+SourceLoc->{ "ln": 153, "cl": 2, "fl": "./include/linux/list.h" }
+355V_3 = STCHI(MR_355V_1) 	pts{6248 }
+SourceLoc->{ "ln": 153, "cl": 13, "fl": "./include/linux/list.h" }
+
+LDMU(MR_351V_2) 	pts{2614 }
+SourceLoc->{ "ln": 154, "cl": 14, "fl": "./include/linux/list.h" }
+
+LDMU(MR_347V_2) 	pts{2610 }
+SourceLoc->{ "ln": 154, "cl": 2, "fl": "./include/linux/list.h" }
+
+LDMU(MR_349V_2) 	pts{2612 }
+SourceLoc->{ "ln": 155, "cl": 14, "fl": "./include/linux/list.h" }
+
+LDMU(MR_347V_2) 	pts{2610 }
+SourceLoc->{ "ln": 155, "cl": 2, "fl": "./include/linux/list.h" }
+
+LDMU(MR_347V_2) 	pts{2610 }
+SourceLoc->{ "ln": 156, "cl": 460, "fl": "./include/linux/list.h" }
+
+LDMU(MR_349V_2) 	pts{2612 }
+SourceLoc->{ "ln": 156, "cl": 445, "fl": "./include/linux/list.h" }
+353V_3 = STCHI(MR_353V_1) 	pts{6247 }
+SourceLoc->{ "ln": 156, "cl": 457, "fl": "./include/linux/list.h" }
+
+==========FUNCTION: __list_add_valid==========
+==========FUNCTION: acpi_get_lps0_constraint==========
+456V_2 = STCHI(MR_456V_1) 	pts{2684 }
+SourceLoc->{ "ln": 316, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+458V_2 = STCHI(MR_458V_1) 	pts{2686 }
+SourceLoc->{ "ln": 318, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+
+458V_3 = STCHI(MR_458V_2) 	pts{2686 }
+SourceLoc->{ "ln": 318, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_225V_1) 	pts{42 }
+SourceLoc->{ "ln": 318, "cl": 27, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_458V_4) 	pts{2686 }
+SourceLoc->{ "ln": 318, "cl": 49, "fl": "drivers/acpi/x86/s2idle.c" }
+456V_4 = STCHI(MR_456V_3) 	pts{2684 }
+SourceLoc->{ "ln": 318, "cl": 24, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_458V_4) 	pts{2686 }
+SourceLoc->{ "ln": 318, "cl": 53, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_227V_1) 	pts{45 }
+SourceLoc->{ "ln": 318, "cl": 57, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_454V_2) 	pts{2682 }
+SourceLoc->{ "ln": 319, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_456V_4) 	pts{2684 }
+SourceLoc->{ "ln": 319, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_456V_4) 	pts{2684 }
+SourceLoc->{ "ln": 320, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+452V_5 = STCHI(MR_452V_1) 	pts{2680 }
+SourceLoc->{ "ln": 320, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_458V_4) 	pts{2686 }
+SourceLoc->{ "ln": 318, "cl": 86, "fl": "drivers/acpi/x86/s2idle.c" }
+458V_5 = STCHI(MR_458V_4) 	pts{2686 }
+SourceLoc->{ "ln": 318, "cl": 86, "fl": "drivers/acpi/x86/s2idle.c" }
+
+452V_3 = STCHI(MR_452V_2) 	pts{2680 }
+SourceLoc->{ "ln": 323, "cl": 2, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_452V_4) 	pts{2680 }
+SourceLoc->{ "ln": 324, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+==========FUNCTION: acpi_s2idle_prepare_late==========
+135V_2 = STCHI(MR_135V_1) 	pts{2748 }
+SourceLoc->{ "ln": 544, "cl": 30, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 546, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_112V_1) 	pts{39 }
+SourceLoc->{ "ln": 546, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+133V_3 = STCHI(MR_133V_1) 	pts{2746 }
+SourceLoc->{ "ln": 547, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_116V_1) 	pts{49 }
+SourceLoc->{ "ln": 549, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_151V_1) 	pts{42 45 }
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 553, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 557, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_120V_1) 	pts{55 }
+SourceLoc->{ "ln": 554, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_149V_1) 	pts{6250 }
+SourceLoc->{ "ln": 554, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_1) 	pts{88 }
+CALMU(MR_128V_1) 	pts{86 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_116V_1) 	pts{49 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_13 = CALCHI(MR_130V_1) 	pts{88 }
+
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 559, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 561, "cl": 5, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_124V_1) 	pts{60 }
+SourceLoc->{ "ln": 560, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_147V_1) 	pts{6249 }
+SourceLoc->{ "ln": 560, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_3) 	pts{88 }
+CALMU(MR_128V_1) 	pts{86 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_116V_1) 	pts{49 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_12 = CALCHI(MR_130V_3) 	pts{88 }
+
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 564, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 566, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_120V_1) 	pts{55 }
+SourceLoc->{ "ln": 565, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_149V_1) 	pts{6250 }
+SourceLoc->{ "ln": 565, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_4) 	pts{88 }
+CALMU(MR_128V_1) 	pts{86 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_116V_1) 	pts{49 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_11 = CALCHI(MR_130V_4) 	pts{88 }
+
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 568, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 571, "cl": 5, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_124V_1) 	pts{60 }
+SourceLoc->{ "ln": 570, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_147V_1) 	pts{6249 }
+SourceLoc->{ "ln": 570, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_5) 	pts{88 }
+CALMU(MR_128V_1) 	pts{86 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_116V_1) 	pts{49 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_9 = CALCHI(MR_130V_5) 	pts{88 }
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 573, "cl": 5, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_124V_1) 	pts{60 }
+SourceLoc->{ "ln": 572, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_147V_1) 	pts{6249 }
+SourceLoc->{ "ln": 572, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_9) 	pts{88 }
+CALMU(MR_128V_1) 	pts{86 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_116V_1) 	pts{49 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_10 = CALCHI(MR_130V_9) 	pts{88 }
+
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 576, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 578, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_120V_1) 	pts{55 }
+SourceLoc->{ "ln": 577, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_149V_1) 	pts{6250 }
+SourceLoc->{ "ln": 577, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_6) 	pts{88 }
+CALMU(MR_128V_1) 	pts{86 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_116V_1) 	pts{49 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_8 = CALCHI(MR_130V_6) 	pts{88 }
+
+139V_3 = STCHI(MR_139V_1) 	pts{2752 }
+SourceLoc->{ "ln": 580, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_126V_1) 	pts{63 }
+SourceLoc->{ "ln": 580, "cl": 72, "fl": "drivers/acpi/x86/s2idle.c" }
+139V_4 = STCHI(MR_139V_3) 	pts{2752 }
+SourceLoc->{ "ln": 580, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_139V_4) 	pts{2752 }
+SourceLoc->{ "ln": 580, "cl": 370, "fl": "drivers/acpi/x86/s2idle.c" }
+141V_3 = STCHI(MR_141V_1) 	pts{2754 }
+SourceLoc->{ "ln": 580, "cl": 79, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_141V_3) 	pts{2754 }
+SourceLoc->{ "ln": 580, "cl": 430, "fl": "drivers/acpi/x86/s2idle.c" }
+135V_4 = STCHI(MR_135V_2) 	pts{2748 }
+SourceLoc->{ "ln": 580, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_135V_5) 	pts{2748 }
+SourceLoc->{ "ln": 580, "cl": 449, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_135V_5) 	pts{2748 }
+SourceLoc->{ "ln": 581, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_135V_5) 	pts{2748 }
+SourceLoc->{ "ln": 582, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+143V_4 = STCHI(MR_143V_3) 	pts{2756 }
+SourceLoc->{ "ln": 580, "cl": 517, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_135V_5) 	pts{2748 }
+SourceLoc->{ "ln": 580, "cl": 536, "fl": "drivers/acpi/x86/s2idle.c" }
+143V_5 = STCHI(MR_143V_4) 	pts{2756 }
+SourceLoc->{ "ln": 580, "cl": 517, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_143V_5) 	pts{2756 }
+SourceLoc->{ "ln": 580, "cl": 844, "fl": "drivers/acpi/x86/s2idle.c" }
+145V_4 = STCHI(MR_145V_3) 	pts{2758 }
+SourceLoc->{ "ln": 580, "cl": 563, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_145V_4) 	pts{2758 }
+SourceLoc->{ "ln": 580, "cl": 906, "fl": "drivers/acpi/x86/s2idle.c" }
+135V_6 = STCHI(MR_135V_5) 	pts{2748 }
+SourceLoc->{ "ln": 580, "cl": 506, "fl": "drivers/acpi/x86/s2idle.c" }
+
+133V_4 = STCHI(MR_133V_1) 	pts{2746 }
+SourceLoc->{ "ln": 585, "cl": 2, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_133V_2) 	pts{2746 }
+SourceLoc->{ "ln": 586, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+==========FUNCTION: lpi_check_constraints==========
+361V_2 = STCHI(MR_361V_1) 	pts{2903 }
+SourceLoc->{ "ln": 328, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+363V_2 = STCHI(MR_363V_1) 	pts{2905 }
+SourceLoc->{ "ln": 330, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+
+363V_3 = STCHI(MR_363V_2) 	pts{2905 }
+SourceLoc->{ "ln": 330, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_225V_1) 	pts{42 }
+SourceLoc->{ "ln": 330, "cl": 27, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_363V_4) 	pts{2905 }
+SourceLoc->{ "ln": 330, "cl": 49, "fl": "drivers/acpi/x86/s2idle.c" }
+361V_4 = STCHI(MR_361V_3) 	pts{2903 }
+SourceLoc->{ "ln": 330, "cl": 24, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_363V_4) 	pts{2905 }
+SourceLoc->{ "ln": 330, "cl": 53, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_227V_1) 	pts{45 }
+SourceLoc->{ "ln": 330, "cl": 57, "fl": "drivers/acpi/x86/s2idle.c" }
+367V_3 = STCHI(MR_367V_2) 	pts{2909 }
+SourceLoc->{ "ln": 331, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_361V_4) 	pts{2903 }
+SourceLoc->{ "ln": 331, "cl": 50, "fl": "drivers/acpi/x86/s2idle.c" }
+367V_4 = STCHI(MR_367V_3) 	pts{2909 }
+SourceLoc->{ "ln": 331, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_367V_4) 	pts{2909 }
+SourceLoc->{ "ln": 333, "cl": 8, "fl": "drivers/acpi/x86/s2idle.c" }
+369V_4 = STCHI(MR_369V_2) 	pts{2911 }
+SourceLoc->{ "ln": 336, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_369V_4) 	pts{2911 }
+SourceLoc->{ "ln": 336, "cl": 212, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_367V_4) 	pts{2909 }
+SourceLoc->{ "ln": 341, "cl": 8, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_361V_4) 	pts{2903 }
+SourceLoc->{ "ln": 342, "cl": 35, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_361V_4) 	pts{2903 }
+SourceLoc->{ "ln": 343, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_367V_4) 	pts{2909 }
+SourceLoc->{ "ln": 347, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_361V_4) 	pts{2903 }
+SourceLoc->{ "ln": 347, "cl": 27, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_361V_4) 	pts{2903 }
+SourceLoc->{ "ln": 348, "cl": 35, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_361V_4) 	pts{2903 }
+SourceLoc->{ "ln": 348, "cl": 146, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_367V_4) 	pts{2909 }
+SourceLoc->{ "ln": 348, "cl": 190, "fl": "drivers/acpi/x86/s2idle.c" }
+365V_7 = STCHI(MR_365V_2) 	pts{2907 }
+SourceLoc->{ "ln": 352, "cl": 2, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_363V_4) 	pts{2905 }
+SourceLoc->{ "ln": 330, "cl": 86, "fl": "drivers/acpi/x86/s2idle.c" }
+363V_5 = STCHI(MR_363V_4) 	pts{2905 }
+SourceLoc->{ "ln": 330, "cl": 86, "fl": "drivers/acpi/x86/s2idle.c" }
+
+==========FUNCTION: acpi_s2idle_vendor_amd==========
+
+LDMU(MR_12V_1) 	pts{182 }
+SourceLoc->{ "ln": 357, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+==========FUNCTION: acpi_sleep_run_lps0_dsm==========
+540V_2 = STCHI(MR_540V_1) 	pts{3026 }
+SourceLoc->{ "ln": 395, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_538V_2) 	pts{3024 }
+SourceLoc->{ "ln": 397, "cl": 8, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_536V_2) 	pts{3022 }
+SourceLoc->{ "ln": 397, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 400, "cl": 30, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_128V_1) 	pts{86 }
+SourceLoc->{ "ln": 401, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_536V_2) 	pts{3022 }
+SourceLoc->{ "ln": 401, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+540V_4 = STCHI(MR_540V_2) 	pts{3026 }
+SourceLoc->{ "ln": 400, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_540V_4) 	pts{3026 }
+SourceLoc->{ "ln": 402, "cl": 16, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_536V_2) 	pts{3022 }
+SourceLoc->{ "ln": 404, "cl": 19, "fl": "drivers/acpi/x86/s2idle.c" }
+130V_3 = STCHI(MR_130V_1) 	pts{88 }
+SourceLoc->{ "ln": 404, "cl": 17, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_116V_1) 	pts{49 }
+SourceLoc->{ "ln": 405, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 406, "cl": 34, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_540V_4) 	pts{3026 }
+SourceLoc->{ "ln": 406, "cl": 87, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_130V_3) 	pts{88 }
+SourceLoc->{ "ln": 406, "cl": 155, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_546V_1) 	pts{57 182 }
+542V_4 = STCHI(MR_542V_1) 	pts{3028 }
+SourceLoc->{ "ln": 411, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+
+==========FUNCTION: list_is_head==========
+
+LDMU(MR_399V_2) 	pts{3089 }
+SourceLoc->{ "ln": 364, "cl": 9, "fl": "./include/linux/list.h" }
+
+LDMU(MR_401V_2) 	pts{3091 }
+SourceLoc->{ "ln": 364, "cl": 17, "fl": "./include/linux/list.h" }
+==========FUNCTION: acpi_os_free.1==========
+
+LDMU(MR_345V_2) 	pts{3104 }
+SourceLoc->{ "ln": 64, "cl": 8, "fl": "./include/acpi/platform/aclinuxex.h" }
+==========FUNCTION: acpi_sleep_dsm_state_to_str==========
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 362, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+
+LDMU(MR_731V_2) 	pts{3115 }
+SourceLoc->{ "ln": 363, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+729V_11 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 365, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+729V_13 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 367, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+729V_12 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 369, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+729V_10 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 371, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+729V_9 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 373, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+729V_8 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 375, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_731V_2) 	pts{3115 }
+SourceLoc->{ "ln": 378, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+729V_6 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 380, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+729V_5 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 382, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+729V_4 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 384, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+729V_3 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 386, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+729V_7 = STCHI(MR_729V_1) 	pts{3113 }
+SourceLoc->{ "ln": 390, "cl": 2, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_729V_2) 	pts{3113 }
+SourceLoc->{ "ln": 391, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+==========FUNCTION: acpi_s2idle_check==========
+428V_2 = STCHI(MR_428V_1) 	pts{3162 }
+SourceLoc->{ "ln": 590, "cl": 30, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 592, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_112V_1) 	pts{39 }
+SourceLoc->{ "ln": 592, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+432V_3 = STCHI(MR_432V_1) 	pts{3166 }
+SourceLoc->{ "ln": 595, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_126V_1) 	pts{63 }
+SourceLoc->{ "ln": 595, "cl": 72, "fl": "drivers/acpi/x86/s2idle.c" }
+432V_4 = STCHI(MR_432V_3) 	pts{3166 }
+SourceLoc->{ "ln": 595, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_432V_4) 	pts{3166 }
+SourceLoc->{ "ln": 595, "cl": 370, "fl": "drivers/acpi/x86/s2idle.c" }
+434V_3 = STCHI(MR_434V_1) 	pts{3168 }
+SourceLoc->{ "ln": 595, "cl": 79, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_434V_3) 	pts{3168 }
+SourceLoc->{ "ln": 595, "cl": 430, "fl": "drivers/acpi/x86/s2idle.c" }
+428V_4 = STCHI(MR_428V_2) 	pts{3162 }
+SourceLoc->{ "ln": 595, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_428V_5) 	pts{3162 }
+SourceLoc->{ "ln": 595, "cl": 449, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_428V_5) 	pts{3162 }
+SourceLoc->{ "ln": 596, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_428V_5) 	pts{3162 }
+SourceLoc->{ "ln": 597, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+436V_4 = STCHI(MR_436V_3) 	pts{3170 }
+SourceLoc->{ "ln": 595, "cl": 517, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_428V_5) 	pts{3162 }
+SourceLoc->{ "ln": 595, "cl": 536, "fl": "drivers/acpi/x86/s2idle.c" }
+436V_5 = STCHI(MR_436V_4) 	pts{3170 }
+SourceLoc->{ "ln": 595, "cl": 517, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_436V_5) 	pts{3170 }
+SourceLoc->{ "ln": 595, "cl": 844, "fl": "drivers/acpi/x86/s2idle.c" }
+438V_4 = STCHI(MR_438V_3) 	pts{3172 }
+SourceLoc->{ "ln": 595, "cl": 563, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_438V_4) 	pts{3172 }
+SourceLoc->{ "ln": 595, "cl": 906, "fl": "drivers/acpi/x86/s2idle.c" }
+428V_6 = STCHI(MR_428V_5) 	pts{3162 }
+SourceLoc->{ "ln": 595, "cl": 506, "fl": "drivers/acpi/x86/s2idle.c" }
+
+430V_4 = STCHI(MR_430V_1) 	pts{3164 }
+SourceLoc->{ "ln": 599, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+
+==========FUNCTION: acpi_s2idle_restore_early==========
+557V_2 = STCHI(MR_557V_1) 	pts{3242 }
+SourceLoc->{ "ln": 603, "cl": 30, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 605, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_112V_1) 	pts{39 }
+SourceLoc->{ "ln": 605, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+561V_3 = STCHI(MR_561V_1) 	pts{3246 }
+SourceLoc->{ "ln": 608, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_126V_1) 	pts{63 }
+SourceLoc->{ "ln": 608, "cl": 72, "fl": "drivers/acpi/x86/s2idle.c" }
+561V_4 = STCHI(MR_561V_3) 	pts{3246 }
+SourceLoc->{ "ln": 608, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_561V_4) 	pts{3246 }
+SourceLoc->{ "ln": 608, "cl": 370, "fl": "drivers/acpi/x86/s2idle.c" }
+563V_3 = STCHI(MR_563V_1) 	pts{3248 }
+SourceLoc->{ "ln": 608, "cl": 79, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_563V_3) 	pts{3248 }
+SourceLoc->{ "ln": 608, "cl": 430, "fl": "drivers/acpi/x86/s2idle.c" }
+557V_4 = STCHI(MR_557V_2) 	pts{3242 }
+SourceLoc->{ "ln": 608, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_557V_5) 	pts{3242 }
+SourceLoc->{ "ln": 608, "cl": 449, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_557V_5) 	pts{3242 }
+SourceLoc->{ "ln": 609, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_557V_5) 	pts{3242 }
+SourceLoc->{ "ln": 610, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+565V_4 = STCHI(MR_565V_3) 	pts{3250 }
+SourceLoc->{ "ln": 608, "cl": 517, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_557V_5) 	pts{3242 }
+SourceLoc->{ "ln": 608, "cl": 536, "fl": "drivers/acpi/x86/s2idle.c" }
+565V_5 = STCHI(MR_565V_4) 	pts{3250 }
+SourceLoc->{ "ln": 608, "cl": 517, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_565V_5) 	pts{3250 }
+SourceLoc->{ "ln": 608, "cl": 844, "fl": "drivers/acpi/x86/s2idle.c" }
+567V_4 = STCHI(MR_567V_3) 	pts{3252 }
+SourceLoc->{ "ln": 608, "cl": 563, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_567V_4) 	pts{3252 }
+SourceLoc->{ "ln": 608, "cl": 906, "fl": "drivers/acpi/x86/s2idle.c" }
+557V_6 = STCHI(MR_557V_5) 	pts{3242 }
+SourceLoc->{ "ln": 608, "cl": 506, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 613, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 617, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_120V_1) 	pts{55 }
+SourceLoc->{ "ln": 614, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_149V_1) 	pts{6250 }
+SourceLoc->{ "ln": 614, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_571V_1) 	pts{49 86 }
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_1) 	pts{88 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_11 = CALCHI(MR_130V_1) 	pts{88 }
+
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 619, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 621, "cl": 5, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_124V_1) 	pts{60 }
+SourceLoc->{ "ln": 620, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_147V_1) 	pts{6249 }
+SourceLoc->{ "ln": 620, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_571V_1) 	pts{49 86 }
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_3) 	pts{88 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_9 = CALCHI(MR_130V_3) 	pts{88 }
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 624, "cl": 5, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_124V_1) 	pts{60 }
+SourceLoc->{ "ln": 623, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_147V_1) 	pts{6249 }
+SourceLoc->{ "ln": 623, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_571V_1) 	pts{49 86 }
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_9) 	pts{88 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_10 = CALCHI(MR_130V_9) 	pts{88 }
+
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 628, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 630, "cl": 5, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_124V_1) 	pts{60 }
+SourceLoc->{ "ln": 629, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_147V_1) 	pts{6249 }
+SourceLoc->{ "ln": 629, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_571V_1) 	pts{49 86 }
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_4) 	pts{88 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_8 = CALCHI(MR_130V_4) 	pts{88 }
+
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 631, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+
+LDMU(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 635, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_120V_1) 	pts{55 }
+SourceLoc->{ "ln": 632, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_149V_1) 	pts{6250 }
+SourceLoc->{ "ln": 632, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_571V_1) 	pts{49 86 }
+CALMU(MR_12V_1) 	pts{182 }
+CALMU(MR_130V_5) 	pts{88 }
+CALMU(MR_122V_1) 	pts{57 }
+CALMU(MR_114V_1) 	pts{47 }
+130V_7 = CALCHI(MR_130V_5) 	pts{88 }
+
+559V_4 = STCHI(MR_559V_1) 	pts{3244 }
+SourceLoc->{ "ln": 636, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+
+==========FUNCTION: acpi_s2idle_setup==========
+==========FUNCTION: lps0_device_attach==========
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 460, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+307V_5 = STCHI(MR_307V_1) 	pts{3399 }
+SourceLoc->{ "ln": 461, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_309V_2) 	pts{3401 }
+SourceLoc->{ "ln": 463, "cl": 46, "fl": "drivers/acpi/x86/s2idle.c" }
+122V_2 = STCHI(MR_122V_1) 	pts{57 }
+SourceLoc->{ "ln": 463, "cl": 31, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+313V_3 = STCHI(MR_313V_1) 	pts{3405 }
+SourceLoc->{ "ln": 468, "cl": 42, "fl": "drivers/acpi/x86/s2idle.c" }
+
+298V_3 = STCHI(MR_298V_1) 	pts{101 }
+SourceLoc->{ "ln": 470, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_298V_4) 	pts{101 }
+SourceLoc->{ "ln": 470, "cl": 34, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_292V_1) 	pts{3 }
+SourceLoc->{ "ln": 470, "cl": 34, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_309V_2) 	pts{3401 }
+SourceLoc->{ "ln": 471, "cl": 28, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_298V_4) 	pts{101 }
+SourceLoc->{ "ln": 471, "cl": 34, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_298V_4) 	pts{101 }
+SourceLoc->{ "ln": 470, "cl": 55, "fl": "drivers/acpi/x86/s2idle.c" }
+298V_5 = STCHI(MR_298V_4) 	pts{101 }
+SourceLoc->{ "ln": 470, "cl": 55, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_298V_4) 	pts{101 }
+SourceLoc->{ "ln": 473, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_292V_1) 	pts{3 }
+SourceLoc->{ "ln": 473, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_298V_4) 	pts{101 }
+SourceLoc->{ "ln": 474, "cl": 53, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_292V_1) 	pts{3 }
+SourceLoc->{ "ln": 474, "cl": 61, "fl": "drivers/acpi/x86/s2idle.c" }
+313V_6 = STCHI(MR_313V_3) 	pts{3405 }
+SourceLoc->{ "ln": 474, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+313V_4 = STCHI(MR_313V_3) 	pts{3405 }
+SourceLoc->{ "ln": 476, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_309V_2) 	pts{3401 }
+SourceLoc->{ "ln": 477, "cl": 37, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_128V_1) 	pts{86 }
+SourceLoc->{ "ln": 478, "cl": 46, "fl": "drivers/acpi/x86/s2idle.c" }
+118V_4 = STCHI(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 477, "cl": 22, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_118V_4) 	pts{51 }
+SourceLoc->{ "ln": 479, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_313V_5) 	pts{3405 }
+SourceLoc->{ "ln": 479, "cl": 35, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_292V_1) 	pts{3 }
+SourceLoc->{ "ln": 479, "cl": 41, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_118V_4) 	pts{51 }
+SourceLoc->{ "ln": 480, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+118V_6 = STCHI(MR_118V_4) 	pts{51 }
+SourceLoc->{ "ln": 480, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+315V_4 = STCHI(MR_315V_1) 	pts{3407 }
+SourceLoc->{ "ln": 481, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_315V_4) 	pts{3407 }
+SourceLoc->{ "ln": 481, "cl": 171, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_122V_2) 	pts{57 }
+SourceLoc->{ "ln": 483, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_128V_1) 	pts{86 }
+SourceLoc->{ "ln": 483, "cl": 50, "fl": "drivers/acpi/x86/s2idle.c" }
+122V_5 = STCHI(MR_122V_2) 	pts{57 }
+SourceLoc->{ "ln": 484, "cl": 33, "fl": "drivers/acpi/x86/s2idle.c" }
+
+317V_4 = STCHI(MR_317V_1) 	pts{3409 }
+SourceLoc->{ "ln": 485, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_317V_4) 	pts{3409 }
+SourceLoc->{ "ln": 485, "cl": 90, "fl": "drivers/acpi/x86/s2idle.c" }
+128V_2 = STCHI(MR_128V_1) 	pts{86 }
+SourceLoc->{ "ln": 488, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_309V_2) 	pts{3401 }
+SourceLoc->{ "ln": 489, "cl": 37, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_128V_2) 	pts{86 }
+SourceLoc->{ "ln": 490, "cl": 46, "fl": "drivers/acpi/x86/s2idle.c" }
+118V_2 = STCHI(MR_118V_1) 	pts{51 }
+SourceLoc->{ "ln": 489, "cl": 22, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_118V_2) 	pts{51 }
+SourceLoc->{ "ln": 491, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_122V_2) 	pts{57 }
+SourceLoc->{ "ln": 491, "cl": 33, "fl": "drivers/acpi/x86/s2idle.c" }
+319V_3 = STCHI(MR_319V_1) 	pts{3411 }
+SourceLoc->{ "ln": 492, "cl": 17, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_118V_2) 	pts{51 }
+SourceLoc->{ "ln": 498, "cl": 16, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_122V_2) 	pts{57 }
+SourceLoc->{ "ln": 498, "cl": 37, "fl": "drivers/acpi/x86/s2idle.c" }
+319V_4 = STCHI(MR_319V_3) 	pts{3411 }
+SourceLoc->{ "ln": 498, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_319V_4) 	pts{3411 }
+SourceLoc->{ "ln": 499, "cl": 8, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_309V_2) 	pts{3401 }
+SourceLoc->{ "ln": 500, "cl": 36, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_319V_4) 	pts{3411 }
+SourceLoc->{ "ln": 500, "cl": 98, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_118V_3) 	pts{51 }
+SourceLoc->{ "ln": 506, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_122V_3) 	pts{57 }
+SourceLoc->{ "ln": 506, "cl": 32, "fl": "drivers/acpi/x86/s2idle.c" }
+307V_3 = STCHI(MR_307V_1) 	pts{3399 }
+SourceLoc->{ "ln": 507, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_309V_2) 	pts{3401 }
+SourceLoc->{ "ln": 509, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+114V_2 = STCHI(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 509, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_12V_1) 	pts{182 }
+
+CALMU(MR_151V_1) 	pts{42 45 }
+CALMU(MR_286V_1) 	pts{6231 }
+CALMU(MR_128V_3) 	pts{86 }
+CALMU(MR_114V_2) 	pts{47 }
+151V_4 = CALCHI(MR_151V_1) 	pts{42 45 }
+
+
+CALMU(MR_151V_1) 	pts{42 45 }
+CALMU(MR_286V_1) 	pts{6231 }
+CALMU(MR_114V_2) 	pts{47 }
+151V_3 = CALCHI(MR_151V_1) 	pts{42 45 }
+
+
+LDMU(MR_26V_1) 	pts{6194 }
+SourceLoc->{ "ln": 521, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_300V_1) 	pts{112 }
+SourceLoc->{ "ln": 522, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_302V_1) 	pts{114 }
+SourceLoc->{ "ln": 522, "cl": 53, "fl": "drivers/acpi/x86/s2idle.c" }
+304V_3 = STCHI(MR_304V_1) 	pts{116 }
+SourceLoc->{ "ln": 523, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+
+321V_3 = STCHI(MR_321V_1) 	pts{3413 }
+SourceLoc->{ "ln": 524, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_321V_3) 	pts{3413 }
+SourceLoc->{ "ln": 524, "cl": 101, "fl": "drivers/acpi/x86/s2idle.c" }
+307V_2 = STCHI(MR_307V_1) 	pts{3399 }
+SourceLoc->{ "ln": 534, "cl": 2, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_307V_4) 	pts{3399 }
+SourceLoc->{ "ln": 535, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+==========FUNCTION: validate_dsm==========
+581V_2 = STCHI(MR_581V_1) 	pts{3616 }
+SourceLoc->{ "ln": 416, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+
+583V_2 = STCHI(MR_583V_1) 	pts{3618 }
+SourceLoc->{ "ln": 417, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+583V_3 = STCHI(MR_583V_2) 	pts{3618 }
+SourceLoc->{ "ln": 417, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_575V_2) 	pts{3610 }
+SourceLoc->{ "ln": 419, "cl": 13, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_579V_2) 	pts{3614 }
+SourceLoc->{ "ln": 419, "cl": 19, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_573V_2) 	pts{3608 }
+SourceLoc->{ "ln": 422, "cl": 32, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_579V_2) 	pts{3614 }
+SourceLoc->{ "ln": 422, "cl": 40, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_577V_2) 	pts{3612 }
+SourceLoc->{ "ln": 422, "cl": 50, "fl": "drivers/acpi/x86/s2idle.c" }
+581V_3 = STCHI(MR_581V_2) 	pts{3616 }
+SourceLoc->{ "ln": 422, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_581V_3) 	pts{3616 }
+SourceLoc->{ "ln": 423, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_581V_3) 	pts{3616 }
+SourceLoc->{ "ln": 423, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_581V_3) 	pts{3616 }
+SourceLoc->{ "ln": 423, "cl": 41, "fl": "drivers/acpi/x86/s2idle.c" }
+585V_3 = STCHI(MR_585V_1) 	pts{3620 }
+SourceLoc->{ "ln": 424, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_585V_3) 	pts{3620 }
+SourceLoc->{ "ln": 424, "cl": 121, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_581V_3) 	pts{3616 }
+SourceLoc->{ "ln": 429, "cl": 16, "fl": "drivers/acpi/x86/s2idle.c" }
+583V_5 = STCHI(MR_583V_3) 	pts{3618 }
+SourceLoc->{ "ln": 429, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+587V_3 = STCHI(MR_587V_1) 	pts{3622 }
+SourceLoc->{ "ln": 430, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_587V_3) 	pts{3622 }
+SourceLoc->{ "ln": 430, "cl": 116, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_581V_3) 	pts{3616 }
+SourceLoc->{ "ln": 433, "cl": 16, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_583V_4) 	pts{3618 }
+SourceLoc->{ "ln": 434, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+==========FUNCTION: acpi_dev_hid_match==========
+593V_2 = STCHI(MR_593V_1) 	pts{3692 }
+SourceLoc->{ "ln": 878, "cl": 14, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_589V_2) 	pts{3688 }
+SourceLoc->{ "ln": 878, "cl": 37, "fl": "./include/acpi/acpi_bus.h" }
+593V_3 = STCHI(MR_593V_2) 	pts{3692 }
+SourceLoc->{ "ln": 878, "cl": 14, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_593V_3) 	pts{3692 }
+SourceLoc->{ "ln": 880, "cl": 9, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_591V_2) 	pts{3690 }
+SourceLoc->{ "ln": 880, "cl": 17, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_593V_3) 	pts{3692 }
+SourceLoc->{ "ln": 880, "cl": 33, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_591V_2) 	pts{3690 }
+SourceLoc->{ "ln": 880, "cl": 39, "fl": "./include/acpi/acpi_bus.h" }
+==========FUNCTION: lpi_device_get_constraints_amd==========
+605V_2 = STCHI(MR_605V_1) 	pts{3725 }
+SourceLoc->{ "ln": 104, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+
+607V_2 = STCHI(MR_607V_1) 	pts{3727 }
+SourceLoc->{ "ln": 105, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+609V_2 = STCHI(MR_609V_1) 	pts{3729 }
+SourceLoc->{ "ln": 105, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+611V_2 = STCHI(MR_611V_1) 	pts{3731 }
+SourceLoc->{ "ln": 105, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 107, "cl": 36, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_128V_1) 	pts{86 }
+SourceLoc->{ "ln": 108, "cl": 8, "fl": "drivers/acpi/x86/s2idle.c" }
+605V_3 = STCHI(MR_605V_2) 	pts{3725 }
+SourceLoc->{ "ln": 107, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+613V_2 = STCHI(MR_613V_1) 	pts{3733 }
+SourceLoc->{ "ln": 111, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_613V_2) 	pts{3733 }
+SourceLoc->{ "ln": 111, "cl": 131, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_605V_3) 	pts{3725 }
+SourceLoc->{ "ln": 114, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+607V_5 = STCHI(MR_607V_2) 	pts{3727 }
+SourceLoc->{ "ln": 117, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_607V_6) 	pts{3727 }
+SourceLoc->{ "ln": 117, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_605V_3) 	pts{3725 }
+SourceLoc->{ "ln": 117, "cl": 18, "fl": "drivers/acpi/x86/s2idle.c" }
+617V_6 = STCHI(MR_617V_4) 	pts{3737 }
+SourceLoc->{ "ln": 118, "cl": 22, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_605V_3) 	pts{3725 }
+SourceLoc->{ "ln": 118, "cl": 33, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_607V_6) 	pts{3727 }
+SourceLoc->{ "ln": 118, "cl": 59, "fl": "drivers/acpi/x86/s2idle.c" }
+617V_7 = STCHI(MR_617V_6) 	pts{3737 }
+SourceLoc->{ "ln": 118, "cl": 22, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_617V_7) 	pts{3737 }
+SourceLoc->{ "ln": 120, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_225V_4) 	pts{42 }
+SourceLoc->{ "ln": 121, "cl": 8, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 122, "cl": 36, "fl": "drivers/acpi/x86/s2idle.c" }
+621V_8 = STCHI(MR_621V_4) 	pts{3741 }
+SourceLoc->{ "ln": 127, "cl": 83, "fl": "drivers/acpi/x86/s2idle.c" }
+
+621V_9 = STCHI(MR_621V_8) 	pts{3741 }
+SourceLoc->{ "ln": 127, "cl": 83, "fl": "drivers/acpi/x86/s2idle.c" }
+
+623V_8 = STCHI(MR_623V_4) 	pts{3743 }
+SourceLoc->{ "ln": 127, "cl": 422, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_617V_7) 	pts{3737 }
+SourceLoc->{ "ln": 127, "cl": 450, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_286V_1) 	pts{6231 }
+623V_9 = STCHI(MR_623V_8) 	pts{3743 }
+SourceLoc->{ "ln": 127, "cl": 422, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_623V_9) 	pts{3743 }
+SourceLoc->{ "ln": 127, "cl": 758, "fl": "drivers/acpi/x86/s2idle.c" }
+625V_8 = STCHI(MR_625V_4) 	pts{3745 }
+SourceLoc->{ "ln": 127, "cl": 745, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_625V_8) 	pts{3745 }
+SourceLoc->{ "ln": 127, "cl": 764, "fl": "drivers/acpi/x86/s2idle.c" }
+619V_8 = STCHI(MR_619V_4) 	pts{3739 }
+SourceLoc->{ "ln": 127, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_619V_8) 	pts{3739 }
+SourceLoc->{ "ln": 127, "cl": 768, "fl": "drivers/acpi/x86/s2idle.c" }
+225V_8 = STCHI(MR_225V_4) 	pts{42 }
+SourceLoc->{ "ln": 127, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_225V_8) 	pts{42 }
+SourceLoc->{ "ln": 131, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+627V_8 = STCHI(MR_627V_4) 	pts{3747 }
+SourceLoc->{ "ln": 134, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_627V_8) 	pts{3747 }
+SourceLoc->{ "ln": 134, "cl": 103, "fl": "drivers/acpi/x86/s2idle.c" }
+609V_9 = STCHI(MR_609V_5) 	pts{3729 }
+SourceLoc->{ "ln": 137, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_609V_10) 	pts{3729 }
+SourceLoc->{ "ln": 137, "cl": 16, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_617V_7) 	pts{3737 }
+SourceLoc->{ "ln": 137, "cl": 20, "fl": "drivers/acpi/x86/s2idle.c" }
+629V_9 = STCHI(MR_629V_8) 	pts{3749 }
+SourceLoc->{ "ln": 138, "cl": 24, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_617V_7) 	pts{3737 }
+SourceLoc->{ "ln": 138, "cl": 36, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_609V_10) 	pts{3729 }
+SourceLoc->{ "ln": 138, "cl": 62, "fl": "drivers/acpi/x86/s2idle.c" }
+629V_10 = STCHI(MR_629V_9) 	pts{3749 }
+SourceLoc->{ "ln": 138, "cl": 24, "fl": "drivers/acpi/x86/s2idle.c" }
+
+643V_9 = STCHI(MR_643V_8) 	pts{6169 }
+641V_9 = STCHI(MR_641V_8) 	pts{6168 }
+645V_9 = STCHI(MR_645V_8) 	pts{6170 }
+647V_9 = STCHI(MR_647V_8) 	pts{6171 }
+SourceLoc->{ "ln": 139, "cl": 38, "fl": "drivers/acpi/x86/s2idle.c" }
+
+631V_9 = STCHI(MR_631V_8) 	pts{3753 }
+SourceLoc->{ "ln": 140, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+
+633V_9 = STCHI(MR_633V_8) 	pts{3755 }
+SourceLoc->{ "ln": 141, "cl": 17, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_225V_8) 	pts{42 }
+SourceLoc->{ "ln": 143, "cl": 13, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_227V_8) 	pts{45 }
+SourceLoc->{ "ln": 143, "cl": 35, "fl": "drivers/acpi/x86/s2idle.c" }
+631V_10 = STCHI(MR_631V_9) 	pts{3753 }
+SourceLoc->{ "ln": 143, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+611V_10 = STCHI(MR_611V_9) 	pts{3731 }
+SourceLoc->{ "ln": 145, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_611V_11) 	pts{3731 }
+SourceLoc->{ "ln": 145, "cl": 17, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_629V_10) 	pts{3749 }
+SourceLoc->{ "ln": 145, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+635V_10 = STCHI(MR_635V_9) 	pts{3757 }
+SourceLoc->{ "ln": 146, "cl": 25, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_629V_10) 	pts{3749 }
+SourceLoc->{ "ln": 146, "cl": 32, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_611V_11) 	pts{3731 }
+SourceLoc->{ "ln": 146, "cl": 59, "fl": "drivers/acpi/x86/s2idle.c" }
+635V_11 = STCHI(MR_635V_10) 	pts{3757 }
+SourceLoc->{ "ln": 146, "cl": 25, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_611V_11) 	pts{3731 }
+SourceLoc->{ "ln": 148, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_635V_11) 	pts{3757 }
+SourceLoc->{ "ln": 150, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+641V_11 = STCHI(MR_641V_10) 	pts{6168 }
+SourceLoc->{ "ln": 150, "cl": 24, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_635V_11) 	pts{3757 }
+SourceLoc->{ "ln": 153, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+643V_11 = STCHI(MR_643V_10) 	pts{6169 }
+SourceLoc->{ "ln": 153, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_635V_11) 	pts{3757 }
+SourceLoc->{ "ln": 156, "cl": 34, "fl": "drivers/acpi/x86/s2idle.c" }
+645V_11 = STCHI(MR_645V_10) 	pts{6170 }
+SourceLoc->{ "ln": 156, "cl": 32, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_635V_11) 	pts{3757 }
+SourceLoc->{ "ln": 159, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+647V_11 = STCHI(MR_647V_10) 	pts{6171 }
+SourceLoc->{ "ln": 159, "cl": 27, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_611V_11) 	pts{3731 }
+SourceLoc->{ "ln": 145, "cl": 47, "fl": "drivers/acpi/x86/s2idle.c" }
+611V_12 = STCHI(MR_611V_11) 	pts{3731 }
+SourceLoc->{ "ln": 145, "cl": 47, "fl": "drivers/acpi/x86/s2idle.c" }
+
+637V_9 = STCHI(MR_637V_8) 	pts{3759 }
+SourceLoc->{ "ln": 164, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_637V_9) 	pts{3759 }
+SourceLoc->{ "ln": 164, "cl": 203, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_641V_10) 	pts{6168 }
+SourceLoc->{ "ln": 171, "cl": 19, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_643V_10) 	pts{6169 }
+SourceLoc->{ "ln": 171, "cl": 40, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_647V_10) 	pts{6171 }
+SourceLoc->{ "ln": 172, "cl": 19, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_643V_10) 	pts{6169 }
+SourceLoc->{ "ln": 175, "cl": 52, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_631V_10) 	pts{3753 }
+SourceLoc->{ "ln": 175, "cl": 59, "fl": "drivers/acpi/x86/s2idle.c" }
+633V_11 = STCHI(MR_633V_9) 	pts{3755 }
+SourceLoc->{ "ln": 175, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_633V_11) 	pts{3755 }
+SourceLoc->{ "ln": 176, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_647V_10) 	pts{6171 }
+SourceLoc->{ "ln": 179, "cl": 33, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_631V_10) 	pts{3753 }
+SourceLoc->{ "ln": 179, "cl": 5, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_227V_8) 	pts{45 }
+SourceLoc->{ "ln": 181, "cl": 31, "fl": "drivers/acpi/x86/s2idle.c" }
+227V_10 = STCHI(MR_227V_8) 	pts{45 }
+SourceLoc->{ "ln": 181, "cl": 31, "fl": "drivers/acpi/x86/s2idle.c" }
+
+615V_15 = STCHI(MR_615V_12) 	pts{3735 }
+SourceLoc->{ "ln": 182, "cl": 4, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_609V_10) 	pts{3729 }
+SourceLoc->{ "ln": 137, "cl": 45, "fl": "drivers/acpi/x86/s2idle.c" }
+609V_11 = STCHI(MR_609V_10) 	pts{3729 }
+SourceLoc->{ "ln": 137, "cl": 45, "fl": "drivers/acpi/x86/s2idle.c" }
+
+615V_9 = STCHI(MR_615V_8) 	pts{3735 }
+SourceLoc->{ "ln": 184, "cl": 2, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_607V_6) 	pts{3727 }
+SourceLoc->{ "ln": 117, "cl": 43, "fl": "drivers/acpi/x86/s2idle.c" }
+607V_7 = STCHI(MR_607V_6) 	pts{3727 }
+SourceLoc->{ "ln": 117, "cl": 43, "fl": "drivers/acpi/x86/s2idle.c" }
+
+639V_4 = STCHI(MR_639V_1) 	pts{3761 }
+SourceLoc->{ "ln": 186, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_639V_4) 	pts{3761 }
+SourceLoc->{ "ln": 186, "cl": 98, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_605V_3) 	pts{3725 }
+SourceLoc->{ "ln": 189, "cl": 16, "fl": "drivers/acpi/x86/s2idle.c" }
+615V_7 = STCHI(MR_615V_6) 	pts{3735 }
+SourceLoc->{ "ln": 190, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+
+==========FUNCTION: lpi_device_get_constraints==========
+230V_2 = STCHI(MR_230V_1) 	pts{4030 }
+SourceLoc->{ "ln": 194, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+
+232V_2 = STCHI(MR_232V_1) 	pts{4032 }
+SourceLoc->{ "ln": 195, "cl": 6, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_114V_1) 	pts{47 }
+SourceLoc->{ "ln": 197, "cl": 36, "fl": "drivers/acpi/x86/s2idle.c" }
+230V_3 = STCHI(MR_230V_2) 	pts{4030 }
+SourceLoc->{ "ln": 197, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+234V_2 = STCHI(MR_234V_1) 	pts{4034 }
+SourceLoc->{ "ln": 201, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_234V_2) 	pts{4034 }
+SourceLoc->{ "ln": 201, "cl": 131, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_230V_3) 	pts{4030 }
+SourceLoc->{ "ln": 204, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+240V_4 = STCHI(MR_240V_1) 	pts{4040 }
+SourceLoc->{ "ln": 207, "cl": 81, "fl": "drivers/acpi/x86/s2idle.c" }
+
+240V_5 = STCHI(MR_240V_4) 	pts{4040 }
+SourceLoc->{ "ln": 207, "cl": 81, "fl": "drivers/acpi/x86/s2idle.c" }
+
+242V_4 = STCHI(MR_242V_1) 	pts{4042 }
+SourceLoc->{ "ln": 207, "cl": 420, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_230V_3) 	pts{4030 }
+SourceLoc->{ "ln": 207, "cl": 448, "fl": "drivers/acpi/x86/s2idle.c" }
+
+CALMU(MR_286V_1) 	pts{6231 }
+242V_5 = STCHI(MR_242V_4) 	pts{4042 }
+SourceLoc->{ "ln": 207, "cl": 420, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_242V_5) 	pts{4042 }
+SourceLoc->{ "ln": 207, "cl": 756, "fl": "drivers/acpi/x86/s2idle.c" }
+244V_4 = STCHI(MR_244V_1) 	pts{4044 }
+SourceLoc->{ "ln": 207, "cl": 743, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_244V_4) 	pts{4044 }
+SourceLoc->{ "ln": 207, "cl": 762, "fl": "drivers/acpi/x86/s2idle.c" }
+238V_4 = STCHI(MR_238V_1) 	pts{4038 }
+SourceLoc->{ "ln": 207, "cl": 27, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_238V_4) 	pts{4038 }
+SourceLoc->{ "ln": 207, "cl": 766, "fl": "drivers/acpi/x86/s2idle.c" }
+225V_4 = STCHI(MR_225V_1) 	pts{42 }
+SourceLoc->{ "ln": 207, "cl": 24, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_225V_4) 	pts{42 }
+SourceLoc->{ "ln": 210, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+246V_5 = STCHI(MR_246V_1) 	pts{4046 }
+SourceLoc->{ "ln": 213, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_246V_5) 	pts{4046 }
+SourceLoc->{ "ln": 213, "cl": 101, "fl": "drivers/acpi/x86/s2idle.c" }
+232V_6 = STCHI(MR_232V_2) 	pts{4032 }
+SourceLoc->{ "ln": 215, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_232V_7) 	pts{4032 }
+SourceLoc->{ "ln": 215, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_230V_3) 	pts{4030 }
+SourceLoc->{ "ln": 215, "cl": 18, "fl": "drivers/acpi/x86/s2idle.c" }
+248V_6 = STCHI(MR_248V_5) 	pts{4048 }
+SourceLoc->{ "ln": 216, "cl": 27, "fl": "drivers/acpi/x86/s2idle.c" }
+
+250V_6 = STCHI(MR_250V_5) 	pts{4050 }
+SourceLoc->{ "ln": 217, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+252V_6 = STCHI(MR_252V_5) 	pts{4052 }
+SourceLoc->{ "ln": 218, "cl": 22, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_230V_3) 	pts{4030 }
+SourceLoc->{ "ln": 218, "cl": 33, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_232V_7) 	pts{4032 }
+SourceLoc->{ "ln": 218, "cl": 59, "fl": "drivers/acpi/x86/s2idle.c" }
+252V_7 = STCHI(MR_252V_6) 	pts{4052 }
+SourceLoc->{ "ln": 218, "cl": 22, "fl": "drivers/acpi/x86/s2idle.c" }
+
+282V_6 = STCHI(MR_282V_5) 	pts{6166 }
+280V_6 = STCHI(MR_280V_5) 	pts{6165 }
+284V_6 = STCHI(MR_284V_5) 	pts{6167 }
+SourceLoc->{ "ln": 219, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+254V_6 = STCHI(MR_254V_5) 	pts{4056 }
+SourceLoc->{ "ln": 220, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+254V_7 = STCHI(MR_254V_6) 	pts{4056 }
+SourceLoc->{ "ln": 220, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+
+256V_6 = STCHI(MR_256V_5) 	pts{4058 }
+SourceLoc->{ "ln": 220, "cl": 26, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_252V_7) 	pts{4052 }
+SourceLoc->{ "ln": 222, "cl": 8, "fl": "drivers/acpi/x86/s2idle.c" }
+256V_8 = STCHI(MR_256V_6) 	pts{4058 }
+SourceLoc->{ "ln": 225, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_256V_9) 	pts{4058 }
+SourceLoc->{ "ln": 225, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_252V_7) 	pts{4052 }
+SourceLoc->{ "ln": 225, "cl": 19, "fl": "drivers/acpi/x86/s2idle.c" }
+258V_8 = STCHI(MR_258V_7) 	pts{4060 }
+SourceLoc->{ "ln": 226, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_252V_7) 	pts{4052 }
+SourceLoc->{ "ln": 227, "cl": 8, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_256V_9) 	pts{4058 }
+SourceLoc->{ "ln": 227, "cl": 34, "fl": "drivers/acpi/x86/s2idle.c" }
+258V_9 = STCHI(MR_258V_8) 	pts{4060 }
+SourceLoc->{ "ln": 226, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_258V_9) 	pts{4060 }
+SourceLoc->{ "ln": 229, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_258V_9) 	pts{4060 }
+SourceLoc->{ "ln": 231, "cl": 20, "fl": "drivers/acpi/x86/s2idle.c" }
+280V_9 = STCHI(MR_280V_8) 	pts{6165 }
+SourceLoc->{ "ln": 231, "cl": 18, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_258V_9) 	pts{4060 }
+SourceLoc->{ "ln": 234, "cl": 17, "fl": "drivers/acpi/x86/s2idle.c" }
+282V_9 = STCHI(MR_282V_8) 	pts{6166 }
+SourceLoc->{ "ln": 234, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_258V_9) 	pts{4060 }
+SourceLoc->{ "ln": 237, "cl": 21, "fl": "drivers/acpi/x86/s2idle.c" }
+254V_10 = STCHI(MR_254V_9) 	pts{4056 }
+SourceLoc->{ "ln": 237, "cl": 19, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_258V_9) 	pts{4060 }
+SourceLoc->{ "ln": 238, "cl": 20, "fl": "drivers/acpi/x86/s2idle.c" }
+284V_9 = STCHI(MR_284V_8) 	pts{6167 }
+SourceLoc->{ "ln": 238, "cl": 18, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_256V_9) 	pts{4058 }
+SourceLoc->{ "ln": 225, "cl": 44, "fl": "drivers/acpi/x86/s2idle.c" }
+256V_13 = STCHI(MR_256V_9) 	pts{4058 }
+SourceLoc->{ "ln": 225, "cl": 44, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_280V_8) 	pts{6165 }
+SourceLoc->{ "ln": 243, "cl": 13, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_284V_8) 	pts{6167 }
+SourceLoc->{ "ln": 243, "cl": 30, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_282V_8) 	pts{6166 }
+SourceLoc->{ "ln": 243, "cl": 47, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_225V_4) 	pts{42 }
+SourceLoc->{ "ln": 246, "cl": 17, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_227V_5) 	pts{45 }
+SourceLoc->{ "ln": 246, "cl": 39, "fl": "drivers/acpi/x86/s2idle.c" }
+248V_8 = STCHI(MR_248V_6) 	pts{4048 }
+SourceLoc->{ "ln": 246, "cl": 14, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_282V_8) 	pts{6166 }
+SourceLoc->{ "ln": 248, "cl": 46, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_248V_8) 	pts{4048 }
+SourceLoc->{ "ln": 248, "cl": 53, "fl": "drivers/acpi/x86/s2idle.c" }
+250V_8 = STCHI(MR_250V_6) 	pts{4050 }
+SourceLoc->{ "ln": 248, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_250V_8) 	pts{4050 }
+SourceLoc->{ "ln": 249, "cl": 8, "fl": "drivers/acpi/x86/s2idle.c" }
+260V_7 = STCHI(MR_260V_5) 	pts{4062 }
+SourceLoc->{ "ln": 252, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_260V_7) 	pts{4062 }
+SourceLoc->{ "ln": 252, "cl": 104, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_248V_8) 	pts{4048 }
+SourceLoc->{ "ln": 255, "cl": 3, "fl": "drivers/acpi/x86/s2idle.c" }
+256V_10 = STCHI(MR_256V_9) 	pts{4058 }
+SourceLoc->{ "ln": 257, "cl": 10, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_256V_11) 	pts{4058 }
+SourceLoc->{ "ln": 257, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_254V_9) 	pts{4056 }
+SourceLoc->{ "ln": 257, "cl": 19, "fl": "drivers/acpi/x86/s2idle.c" }
+262V_8 = STCHI(MR_262V_7) 	pts{4064 }
+SourceLoc->{ "ln": 258, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_284V_8) 	pts{6167 }
+SourceLoc->{ "ln": 258, "cl": 40, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_256V_11) 	pts{4058 }
+SourceLoc->{ "ln": 258, "cl": 48, "fl": "drivers/acpi/x86/s2idle.c" }
+262V_9 = STCHI(MR_262V_8) 	pts{4064 }
+SourceLoc->{ "ln": 258, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+264V_8 = STCHI(MR_264V_7) 	pts{4066 }
+SourceLoc->{ "ln": 259, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+266V_8 = STCHI(MR_266V_7) 	pts{4068 }
+SourceLoc->{ "ln": 260, "cl": 23, "fl": "drivers/acpi/x86/s2idle.c" }
+
+274V_8 = STCHI(MR_274V_7) 	pts{6162 }
+276V_8 = STCHI(MR_276V_7) 	pts{6163 }
+278V_8 = STCHI(MR_278V_7) 	pts{6164 }
+SourceLoc->{ "ln": 261, "cl": 33, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_262V_9) 	pts{4064 }
+SourceLoc->{ "ln": 263, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_262V_9) 	pts{4064 }
+SourceLoc->{ "ln": 268, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_262V_9) 	pts{4064 }
+SourceLoc->{ "ln": 271, "cl": 17, "fl": "drivers/acpi/x86/s2idle.c" }
+264V_9 = STCHI(MR_264V_8) 	pts{4066 }
+SourceLoc->{ "ln": 271, "cl": 15, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_264V_9) 	pts{4066 }
+SourceLoc->{ "ln": 272, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+266V_9 = STCHI(MR_266V_8) 	pts{4068 }
+SourceLoc->{ "ln": 272, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_266V_9) 	pts{4068 }
+SourceLoc->{ "ln": 273, "cl": 20, "fl": "drivers/acpi/x86/s2idle.c" }
+274V_9 = STCHI(MR_274V_8) 	pts{6162 }
+SourceLoc->{ "ln": 273, "cl": 18, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_264V_9) 	pts{4066 }
+SourceLoc->{ "ln": 274, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+266V_10 = STCHI(MR_266V_9) 	pts{4068 }
+SourceLoc->{ "ln": 274, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_266V_10) 	pts{4068 }
+SourceLoc->{ "ln": 275, "cl": 27, "fl": "drivers/acpi/x86/s2idle.c" }
+276V_9 = STCHI(MR_276V_8) 	pts{6163 }
+SourceLoc->{ "ln": 275, "cl": 25, "fl": "drivers/acpi/x86/s2idle.c" }
+
+268V_8 = STCHI(MR_268V_7) 	pts{4072 }
+SourceLoc->{ "ln": 277, "cl": 12, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_268V_8) 	pts{4072 }
+SourceLoc->{ "ln": 277, "cl": 156, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_276V_9) 	pts{6163 }
+SourceLoc->{ "ln": 282, "cl": 39, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_248V_8) 	pts{4048 }
+SourceLoc->{ "ln": 282, "cl": 5, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_256V_11) 	pts{4058 }
+SourceLoc->{ "ln": 257, "cl": 35, "fl": "drivers/acpi/x86/s2idle.c" }
+256V_12 = STCHI(MR_256V_11) 	pts{4058 }
+SourceLoc->{ "ln": 257, "cl": 35, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_248V_8) 	pts{4048 }
+SourceLoc->{ "ln": 287, "cl": 7, "fl": "drivers/acpi/x86/s2idle.c" }
+270V_7 = STCHI(MR_270V_5) 	pts{4074 }
+SourceLoc->{ "ln": 288, "cl": 11, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_270V_7) 	pts{4074 }
+SourceLoc->{ "ln": 288, "cl": 104, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_227V_5) 	pts{45 }
+SourceLoc->{ "ln": 293, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+227V_7 = STCHI(MR_227V_5) 	pts{45 }
+SourceLoc->{ "ln": 293, "cl": 29, "fl": "drivers/acpi/x86/s2idle.c" }
+
+236V_11 = STCHI(MR_236V_7) 	pts{4036 }
+SourceLoc->{ "ln": 294, "cl": 2, "fl": "drivers/acpi/x86/s2idle.c" }
+
+
+LDMU(MR_232V_7) 	pts{4032 }
+SourceLoc->{ "ln": 215, "cl": 43, "fl": "drivers/acpi/x86/s2idle.c" }
+232V_8 = STCHI(MR_232V_7) 	pts{4032 }
+SourceLoc->{ "ln": 215, "cl": 43, "fl": "drivers/acpi/x86/s2idle.c" }
+
+272V_5 = STCHI(MR_272V_1) 	pts{4076 }
+SourceLoc->{ "ln": 296, "cl": 9, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_272V_5) 	pts{4076 }
+SourceLoc->{ "ln": 296, "cl": 98, "fl": "drivers/acpi/x86/s2idle.c" }
+
+LDMU(MR_230V_3) 	pts{4030 }
+SourceLoc->{ "ln": 299, "cl": 16, "fl": "drivers/acpi/x86/s2idle.c" }
+236V_6 = STCHI(MR_236V_5) 	pts{4036 }
+SourceLoc->{ "ln": 300, "cl": 1, "fl": "drivers/acpi/x86/s2idle.c" }
+
+==========FUNCTION: acpi_evaluate_dsm_typed.11==========
+662V_2 = STCHI(MR_662V_1) 	pts{4398 }
+SourceLoc->{ "ln": 68, "cl": 21, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_650V_2) 	pts{4386 }
+SourceLoc->{ "ln": 70, "cl": 26, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_652V_2) 	pts{4388 }
+SourceLoc->{ "ln": 70, "cl": 34, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_654V_2) 	pts{4390 }
+SourceLoc->{ "ln": 70, "cl": 40, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_656V_2) 	pts{4392 }
+SourceLoc->{ "ln": 70, "cl": 45, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_658V_2) 	pts{4394 }
+SourceLoc->{ "ln": 70, "cl": 51, "fl": "./include/acpi/acpi_bus.h" }
+662V_3 = STCHI(MR_662V_2) 	pts{4398 }
+SourceLoc->{ "ln": 70, "cl": 6, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_662V_3) 	pts{4398 }
+SourceLoc->{ "ln": 71, "cl": 6, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_662V_3) 	pts{4398 }
+SourceLoc->{ "ln": 71, "cl": 13, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_660V_2) 	pts{4396 }
+SourceLoc->{ "ln": 71, "cl": 26, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_662V_3) 	pts{4398 }
+SourceLoc->{ "ln": 72, "cl": 17, "fl": "./include/acpi/acpi_bus.h" }
+662V_5 = STCHI(MR_662V_3) 	pts{4398 }
+SourceLoc->{ "ln": 73, "cl": 7, "fl": "./include/acpi/acpi_bus.h" }
+
+
+LDMU(MR_662V_4) 	pts{4398 }
+SourceLoc->{ "ln": 76, "cl": 9, "fl": "./include/acpi/acpi_bus.h" }
+==========FUNCTION: kmalloc_array_noprof==========
+708V_2 = STCHI(MR_708V_1) 	pts{4450 }
+SourceLoc->{ "ln": 917, "cl": 9, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_702V_2) 	pts{4444 }
+SourceLoc->{ "ln": 919, "cl": 71, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_704V_2) 	pts{4446 }
+SourceLoc->{ "ln": 919, "cl": 74, "fl": "./include/linux/slab.h" }
+708V_3 = STCHI(MR_708V_2) 	pts{4450 }
+SourceLoc->{ "ln": 919, "cl": 48, "fl": "./include/linux/slab.h" }
+
+700V_5 = STCHI(MR_700V_1) 	pts{4442 }
+SourceLoc->{ "ln": 920, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_702V_2) 	pts{4444 }
+SourceLoc->{ "ln": 921, "cl": 27, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_704V_2) 	pts{4446 }
+SourceLoc->{ "ln": 921, "cl": 54, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_708V_3) 	pts{4450 }
+SourceLoc->{ "ln": 922, "cl": 25, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_706V_2) 	pts{4448 }
+SourceLoc->{ "ln": 922, "cl": 32, "fl": "./include/linux/slab.h" }
+
+CALMU(MR_286V_1) 	pts{6231 }
+700V_3 = STCHI(MR_700V_1) 	pts{4442 }
+SourceLoc->{ "ln": 922, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_708V_3) 	pts{4450 }
+SourceLoc->{ "ln": 923, "cl": 24, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_706V_2) 	pts{4448 }
+SourceLoc->{ "ln": 923, "cl": 31, "fl": "./include/linux/slab.h" }
+
+CALMU(MR_286V_1) 	pts{6231 }
+700V_2 = STCHI(MR_700V_1) 	pts{4442 }
+SourceLoc->{ "ln": 923, "cl": 2, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_700V_4) 	pts{4442 }
+SourceLoc->{ "ln": 924, "cl": 1, "fl": "./include/linux/slab.h" }
+==========FUNCTION: __must_check_overflow==========
+
+LDMU(MR_386V_2) 	pts{4522 }
+SourceLoc->{ "ln": 53, "cl": 29, "fl": "./include/linux/overflow.h" }
+==========FUNCTION: kmalloc_noprof.12==========
+
+LDMU(MR_328V_2) 	pts{4541 }
+SourceLoc->{ "ln": 871, "cl": 27, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_328V_2) 	pts{4541 }
+SourceLoc->{ "ln": 871, "cl": 36, "fl": "./include/linux/slab.h" }
+332V_3 = STCHI(MR_332V_1) 	pts{4545 }
+SourceLoc->{ "ln": 872, "cl": 16, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_328V_2) 	pts{4541 }
+SourceLoc->{ "ln": 874, "cl": 7, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_328V_2) 	pts{4541 }
+SourceLoc->{ "ln": 875, "cl": 34, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_330V_2) 	pts{4543 }
+SourceLoc->{ "ln": 875, "cl": 40, "fl": "./include/linux/slab.h" }
+326V_6 = STCHI(MR_326V_1) 	pts{4539 }
+SourceLoc->{ "ln": 875, "cl": 4, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_328V_2) 	pts{4541 }
+SourceLoc->{ "ln": 877, "cl": 27, "fl": "./include/linux/slab.h" }
+332V_4 = STCHI(MR_332V_3) 	pts{4545 }
+SourceLoc->{ "ln": 877, "cl": 9, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_330V_2) 	pts{4543 }
+SourceLoc->{ "ln": 879, "cl": 33, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_332V_4) 	pts{4545 }
+SourceLoc->{ "ln": 879, "cl": 85, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_286V_1) 	pts{6231 }
+SourceLoc->{ "ln": 879, "cl": 5, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_330V_2) 	pts{4543 }
+SourceLoc->{ "ln": 880, "cl": 5, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_328V_2) 	pts{4541 }
+SourceLoc->{ "ln": 880, "cl": 12, "fl": "./include/linux/slab.h" }
+326V_4 = STCHI(MR_326V_1) 	pts{4539 }
+SourceLoc->{ "ln": 878, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_328V_2) 	pts{4541 }
+SourceLoc->{ "ln": 882, "cl": 26, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_330V_2) 	pts{4543 }
+SourceLoc->{ "ln": 882, "cl": 32, "fl": "./include/linux/slab.h" }
+326V_2 = STCHI(MR_326V_1) 	pts{4539 }
+SourceLoc->{ "ln": 882, "cl": 2, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_326V_3) 	pts{4539 }
+SourceLoc->{ "ln": 883, "cl": 1, "fl": "./include/linux/slab.h" }
+==========FUNCTION: __kmalloc_index.13==========
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 657, "cl": 7, "fl": "./include/linux/slab.h" }
+715V_2 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 658, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 660, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_25 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 661, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 663, "cl": 24, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 663, "cl": 37, "fl": "./include/linux/slab.h" }
+715V_24 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 664, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 665, "cl": 24, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 665, "cl": 38, "fl": "./include/linux/slab.h" }
+715V_23 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 666, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 667, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_22 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 667, "cl": 17, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 668, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_21 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 668, "cl": 18, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 669, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_20 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 669, "cl": 18, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 670, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_19 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 670, "cl": 18, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 671, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_18 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 671, "cl": 19, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 672, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_17 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 672, "cl": 19, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 673, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_16 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 673, "cl": 19, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 674, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_15 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 674, "cl": 20, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 675, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_14 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 675, "cl": 24, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 676, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_13 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 676, "cl": 24, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 677, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_12 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 677, "cl": 24, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 678, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_11 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 678, "cl": 25, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 679, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_10 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 679, "cl": 25, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 680, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_9 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 680, "cl": 25, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 681, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_8 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 681, "cl": 26, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 682, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_7 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 682, "cl": 26, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 683, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_6 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 683, "cl": 26, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 684, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_5 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 684, "cl": 27, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_717V_2) 	pts{4610 }
+SourceLoc->{ "ln": 685, "cl": 6, "fl": "./include/linux/slab.h" }
+715V_4 = STCHI(MR_715V_1) 	pts{4608 }
+SourceLoc->{ "ln": 685, "cl": 31, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_719V_2) 	pts{4612 }
+SourceLoc->{ "ln": 687, "cl": 12, "fl": "./include/linux/slab.h" }
+
+LDMU(MR_715V_3) 	pts{4608 }
+SourceLoc->{ "ln": 694, "cl": 1, "fl": "./include/linux/slab.h" }
+==========FUNCTION: kmalloc_type.14==========
+
+LDMU(MR_723V_2) 	pts{4771 }
+SourceLoc->{ "ln": 617, "cl": 27, "fl": "./include/linux/slab.h" }
+721V_5 = STCHI(MR_721V_1) 	pts{4769 }
+SourceLoc->{ "ln": 623, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_723V_2) 	pts{4771 }
+SourceLoc->{ "ln": 633, "cl": 12, "fl": "./include/linux/slab.h" }
+721V_3 = STCHI(MR_721V_1) 	pts{4769 }
+SourceLoc->{ "ln": 634, "cl": 3, "fl": "./include/linux/slab.h" }
+
+721V_2 = STCHI(MR_721V_1) 	pts{4769 }
+SourceLoc->{ "ln": 636, "cl": 3, "fl": "./include/linux/slab.h" }
+
+
+LDMU(MR_721V_4) 	pts{4769 }
+SourceLoc->{ "ln": 639, "cl": 1, "fl": "./include/linux/slab.h" }
+==========FUNCTION: acpi_lpss_init==========
+==========FUNCTION: acpi_remove_cmos_rtc_space_handler==========
+
+LDMU(MR_415V_2) 	pts{4818 }
+SourceLoc->{ "ln": 73, "cl": 41, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+417V_3 = STCHI(MR_417V_1) 	pts{4820 }
+SourceLoc->{ "ln": 75, "cl": 10, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_417V_3) 	pts{4820 }
+SourceLoc->{ "ln": 75, "cl": 96, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+==========FUNCTION: acpi_cmos_rtc_space_handler==========
+688V_2 = STCHI(MR_688V_1) 	pts{4864 }
+SourceLoc->{ "ln": 32, "cl": 6, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+690V_2 = STCHI(MR_690V_1) 	pts{4866 }
+SourceLoc->{ "ln": 33, "cl": 6, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_682V_2) 	pts{4858 }
+SourceLoc->{ "ln": 33, "cl": 20, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+690V_3 = STCHI(MR_690V_2) 	pts{4866 }
+SourceLoc->{ "ln": 33, "cl": 6, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_678V_2) 	pts{4854 }
+SourceLoc->{ "ln": 35, "cl": 6, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_682V_2) 	pts{4858 }
+SourceLoc->{ "ln": 35, "cl": 25, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+674V_5 = STCHI(MR_674V_1) 	pts{4850 }
+SourceLoc->{ "ln": 36, "cl": 3, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+
+LDMU(MR_676V_2) 	pts{4852 }
+SourceLoc->{ "ln": 38, "cl": 6, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_676V_2) 	pts{4852 }
+SourceLoc->{ "ln": 38, "cl": 23, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+674V_3 = STCHI(MR_674V_1) 	pts{4850 }
+SourceLoc->{ "ln": 39, "cl": 3, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+688V_3 = STCHI(MR_688V_2) 	pts{4864 }
+SourceLoc->{ "ln": 43, "cl": 9, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+
+LDMU(MR_688V_4) 	pts{4864 }
+SourceLoc->{ "ln": 43, "cl": 14, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_680V_2) 	pts{4856 }
+SourceLoc->{ "ln": 43, "cl": 21, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_676V_2) 	pts{4852 }
+SourceLoc->{ "ln": 44, "cl": 7, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_678V_3) 	pts{4854 }
+SourceLoc->{ "ln": 45, "cl": 27, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_690V_4) 	pts{4866 }
+SourceLoc->{ "ln": 45, "cl": 5, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_690V_4) 	pts{4866 }
+SourceLoc->{ "ln": 47, "cl": 20, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_678V_3) 	pts{4854 }
+SourceLoc->{ "ln": 47, "cl": 27, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_688V_4) 	pts{4864 }
+SourceLoc->{ "ln": 43, "cl": 46, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+688V_5 = STCHI(MR_688V_4) 	pts{4864 }
+SourceLoc->{ "ln": 43, "cl": 46, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_678V_3) 	pts{4854 }
+SourceLoc->{ "ln": 43, "cl": 51, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+678V_4 = STCHI(MR_678V_3) 	pts{4854 }
+SourceLoc->{ "ln": 43, "cl": 51, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_690V_4) 	pts{4866 }
+SourceLoc->{ "ln": 43, "cl": 62, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+690V_5 = STCHI(MR_690V_4) 	pts{4866 }
+SourceLoc->{ "ln": 43, "cl": 62, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+674V_2 = STCHI(MR_674V_1) 	pts{4850 }
+SourceLoc->{ "ln": 51, "cl": 2, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+
+LDMU(MR_674V_4) 	pts{4850 }
+SourceLoc->{ "ln": 52, "cl": 1, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+==========FUNCTION: spin_lock_irq==========
+
+LDMU(MR_751V_2) 	pts{4971 }
+SourceLoc->{ "ln": 376, "cl": 22, "fl": "./include/linux/spinlock.h" }
+==========FUNCTION: spin_unlock_irq==========
+
+LDMU(MR_672V_2) 	pts{4988 }
+SourceLoc->{ "ln": 401, "cl": 24, "fl": "./include/linux/spinlock.h" }
+==========FUNCTION: acpi_install_cmos_rtc_space_handler==========
+444V_2 = STCHI(MR_444V_1) 	pts{5009 }
+SourceLoc->{ "ln": 56, "cl": 14, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_442V_2) 	pts{5007 }
+SourceLoc->{ "ln": 58, "cl": 46, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+444V_3 = STCHI(MR_444V_2) 	pts{5009 }
+SourceLoc->{ "ln": 58, "cl": 9, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_444V_3) 	pts{5009 }
+SourceLoc->{ "ln": 62, "cl": 7, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+446V_3 = STCHI(MR_446V_1) 	pts{5011 }
+SourceLoc->{ "ln": 63, "cl": 10, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+LDMU(MR_446V_3) 	pts{5011 }
+SourceLoc->{ "ln": 63, "cl": 98, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+440V_4 = STCHI(MR_440V_1) 	pts{5005 }
+SourceLoc->{ "ln": 64, "cl": 3, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+440V_3 = STCHI(MR_440V_1) 	pts{5005 }
+SourceLoc->{ "ln": 67, "cl": 2, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+
+
+LDMU(MR_440V_2) 	pts{5005 }
+SourceLoc->{ "ln": 68, "cl": 1, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+==========FUNCTION: acpi_cmos_rtc_init==========
+==========FUNCTION: acpi_cmos_rtc_attach_handler==========
+
+LDMU(MR_189V_2) 	pts{5062 }
+SourceLoc->{ "ln": 81, "cl": 45, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+==========FUNCTION: acpi_cmos_rtc_detach_handler==========
+
+LDMU(MR_767V_2) 	pts{5078 }
+SourceLoc->{ "ln": 86, "cl": 37, "fl": "drivers/acpi/x86/cmos_rtc.c" }
+==========FUNCTION: acpi_quirk_skip_acpi_ac_and_battery==========
+785V_2 = STCHI(MR_785V_1) 	pts{5091 }
+SourceLoc->{ "ln": 534, "cl": 30, "fl": "drivers/acpi/x86/utils.c" }
+
+787V_2 = STCHI(MR_787V_1) 	pts{5093 }
+SourceLoc->{ "ln": 535, "cl": 7, "fl": "drivers/acpi/x86/utils.c" }
+
+787V_3 = STCHI(MR_787V_2) 	pts{5093 }
+SourceLoc->{ "ln": 535, "cl": 7, "fl": "drivers/acpi/x86/utils.c" }
+
+789V_2 = STCHI(MR_789V_1) 	pts{5095 }
+SourceLoc->{ "ln": 536, "cl": 6, "fl": "drivers/acpi/x86/utils.c" }
+
+785V_3 = STCHI(MR_785V_2) 	pts{5091 }
+SourceLoc->{ "ln": 538, "cl": 9, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_785V_3) 	pts{5091 }
+SourceLoc->{ "ln": 539, "cl": 6, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_785V_3) 	pts{5091 }
+SourceLoc->{ "ln": 540, "cl": 27, "fl": "drivers/acpi/x86/utils.c" }
+787V_5 = STCHI(MR_787V_3) 	pts{5093 }
+SourceLoc->{ "ln": 540, "cl": 10, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_787V_4) 	pts{5093 }
+SourceLoc->{ "ln": 542, "cl": 6, "fl": "drivers/acpi/x86/utils.c" }
+783V_6 = STCHI(MR_783V_1) 	pts{5089 }
+SourceLoc->{ "ln": 543, "cl": 3, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_787V_4) 	pts{5093 }
+SourceLoc->{ "ln": 545, "cl": 6, "fl": "drivers/acpi/x86/utils.c" }
+783V_4 = STCHI(MR_783V_1) 	pts{5089 }
+SourceLoc->{ "ln": 546, "cl": 3, "fl": "drivers/acpi/x86/utils.c" }
+
+789V_3 = STCHI(MR_789V_2) 	pts{5095 }
+SourceLoc->{ "ln": 548, "cl": 9, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_789V_4) 	pts{5095 }
+SourceLoc->{ "ln": 548, "cl": 14, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_789V_4) 	pts{5095 }
+SourceLoc->{ "ln": 549, "cl": 58, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_805V_1) 	pts{6188 }
+SourceLoc->{ "ln": 549, "cl": 61, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_789V_4) 	pts{5095 }
+SourceLoc->{ "ln": 550, "cl": 44, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_807V_1) 	pts{6189 }
+SourceLoc->{ "ln": 550, "cl": 47, "fl": "drivers/acpi/x86/utils.c" }
+793V_2 = STCHI(MR_793V_1) 	pts{5099 }
+SourceLoc->{ "ln": 551, "cl": 12, "fl": "drivers/acpi/x86/utils.c" }
+
+793V_3 = STCHI(MR_793V_2) 	pts{5099 }
+SourceLoc->{ "ln": 551, "cl": 12, "fl": "drivers/acpi/x86/utils.c" }
+
+795V_2 = STCHI(MR_795V_1) 	pts{5101 }
+SourceLoc->{ "ln": 551, "cl": 121, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_793V_3) 	pts{5099 }
+SourceLoc->{ "ln": 551, "cl": 137, "fl": "drivers/acpi/x86/utils.c" }
+795V_3 = STCHI(MR_795V_2) 	pts{5101 }
+SourceLoc->{ "ln": 551, "cl": 121, "fl": "drivers/acpi/x86/utils.c" }
+
+797V_2 = STCHI(MR_797V_1) 	pts{5103 }
+SourceLoc->{ "ln": 551, "cl": 158, "fl": "drivers/acpi/x86/utils.c" }
+
+797V_3 = STCHI(MR_797V_2) 	pts{5103 }
+SourceLoc->{ "ln": 551, "cl": 158, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_795V_3) 	pts{5101 }
+SourceLoc->{ "ln": 551, "cl": 202, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_781V_1) 	pts{204 }
+SourceLoc->{ "ln": 551, "cl": 217, "fl": "drivers/acpi/x86/utils.c" }
+781V_3 = STCHI(MR_781V_1) 	pts{204 }
+SourceLoc->{ "ln": 551, "cl": 255, "fl": "drivers/acpi/x86/utils.c" }
+
+797V_5 = STCHI(MR_797V_3) 	pts{5103 }
+SourceLoc->{ "ln": 551, "cl": 274, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_797V_4) 	pts{5103 }
+SourceLoc->{ "ln": 551, "cl": 304, "fl": "drivers/acpi/x86/utils.c" }
+799V_2 = STCHI(MR_799V_1) 	pts{5105 }
+SourceLoc->{ "ln": 551, "cl": 235, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_799V_2) 	pts{5105 }
+SourceLoc->{ "ln": 551, "cl": 321, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_789V_4) 	pts{5095 }
+SourceLoc->{ "ln": 551, "cl": 471, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_805V_1) 	pts{6188 }
+SourceLoc->{ "ln": 551, "cl": 474, "fl": "drivers/acpi/x86/utils.c" }
+801V_3 = STCHI(MR_801V_1) 	pts{5107 }
+SourceLoc->{ "ln": 551, "cl": 332, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_801V_3) 	pts{5107 }
+SourceLoc->{ "ln": 551, "cl": 480, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_793V_3) 	pts{5099 }
+SourceLoc->{ "ln": 551, "cl": 504, "fl": "drivers/acpi/x86/utils.c" }
+803V_2 = STCHI(MR_803V_1) 	pts{5109 }
+SourceLoc->{ "ln": 551, "cl": 322, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_803V_2) 	pts{5109 }
+SourceLoc->{ "ln": 551, "cl": 524, "fl": "drivers/acpi/x86/utils.c" }
+783V_3 = STCHI(MR_783V_1) 	pts{5089 }
+SourceLoc->{ "ln": 553, "cl": 4, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_789V_4) 	pts{5095 }
+SourceLoc->{ "ln": 548, "cl": 278, "fl": "drivers/acpi/x86/utils.c" }
+789V_5 = STCHI(MR_789V_4) 	pts{5095 }
+SourceLoc->{ "ln": 548, "cl": 278, "fl": "drivers/acpi/x86/utils.c" }
+
+783V_2 = STCHI(MR_783V_1) 	pts{5089 }
+SourceLoc->{ "ln": 557, "cl": 2, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_783V_5) 	pts{5089 }
+SourceLoc->{ "ln": 558, "cl": 1, "fl": "drivers/acpi/x86/utils.c" }
+==========FUNCTION: acpi_quirk_skip_serdev_enumeration==========
+739V_2 = STCHI(MR_739V_1) 	pts{5281 }
+SourceLoc->{ "ln": 497, "cl": 22, "fl": "drivers/acpi/x86/utils.c" }
+
+741V_2 = STCHI(MR_741V_1) 	pts{5283 }
+SourceLoc->{ "ln": 497, "cl": 68, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_735V_2) 	pts{5277 }
+SourceLoc->{ "ln": 497, "cl": 100, "fl": "drivers/acpi/x86/utils.c" }
+741V_3 = STCHI(MR_741V_2) 	pts{5283 }
+SourceLoc->{ "ln": 497, "cl": 68, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_741V_3) 	pts{5283 }
+SourceLoc->{ "ln": 497, "cl": 148, "fl": "drivers/acpi/x86/utils.c" }
+745V_3 = STCHI(MR_745V_1) 	pts{5287 }
+SourceLoc->{ "ln": 497, "cl": 189, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_741V_3) 	pts{5283 }
+SourceLoc->{ "ln": 497, "cl": 207, "fl": "drivers/acpi/x86/utils.c" }
+745V_4 = STCHI(MR_745V_3) 	pts{5287 }
+SourceLoc->{ "ln": 497, "cl": 189, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_745V_4) 	pts{5287 }
+SourceLoc->{ "ln": 497, "cl": 522, "fl": "drivers/acpi/x86/utils.c" }
+747V_3 = STCHI(MR_747V_1) 	pts{5289 }
+SourceLoc->{ "ln": 497, "cl": 238, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_747V_3) 	pts{5289 }
+SourceLoc->{ "ln": 497, "cl": 581, "fl": "drivers/acpi/x86/utils.c" }
+743V_2 = STCHI(MR_743V_1) 	pts{5285 }
+SourceLoc->{ "ln": 497, "cl": 32, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_743V_2) 	pts{5285 }
+SourceLoc->{ "ln": 497, "cl": 599, "fl": "drivers/acpi/x86/utils.c" }
+739V_3 = STCHI(MR_739V_2) 	pts{5281 }
+SourceLoc->{ "ln": 497, "cl": 22, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_737V_2) 	pts{5279 }
+SourceLoc->{ "ln": 499, "cl": 3, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_739V_3) 	pts{5281 }
+SourceLoc->{ "ln": 508, "cl": 25, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_737V_2) 	pts{5279 }
+SourceLoc->{ "ln": 509, "cl": 4, "fl": "drivers/acpi/x86/utils.c" }
+733V_4 = STCHI(MR_733V_1) 	pts{5275 }
+SourceLoc->{ "ln": 516, "cl": 3, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_735V_2) 	pts{5277 }
+SourceLoc->{ "ln": 519, "cl": 42, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_737V_2) 	pts{5279 }
+SourceLoc->{ "ln": 519, "cl": 61, "fl": "drivers/acpi/x86/utils.c" }
+733V_2 = STCHI(MR_733V_1) 	pts{5275 }
+SourceLoc->{ "ln": 519, "cl": 2, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_733V_3) 	pts{5275 }
+SourceLoc->{ "ln": 520, "cl": 1, "fl": "drivers/acpi/x86/utils.c" }
+==========FUNCTION: acpi_dev_hid_match.28==========
+698V_2 = STCHI(MR_698V_1) 	pts{5368 }
+SourceLoc->{ "ln": 878, "cl": 14, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_694V_2) 	pts{5364 }
+SourceLoc->{ "ln": 878, "cl": 37, "fl": "./include/acpi/acpi_bus.h" }
+698V_3 = STCHI(MR_698V_2) 	pts{5368 }
+SourceLoc->{ "ln": 878, "cl": 14, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_698V_3) 	pts{5368 }
+SourceLoc->{ "ln": 880, "cl": 9, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_696V_2) 	pts{5366 }
+SourceLoc->{ "ln": 880, "cl": 17, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_698V_3) 	pts{5368 }
+SourceLoc->{ "ln": 880, "cl": 33, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_696V_2) 	pts{5366 }
+SourceLoc->{ "ln": 880, "cl": 39, "fl": "./include/acpi/acpi_bus.h" }
+==========FUNCTION: platform_device_register_simple==========
+
+LDMU(MR_102V_2) 	pts{5401 }
+SourceLoc->{ "ln": 198, "cl": 56, "fl": "./include/linux/platform_device.h" }
+
+LDMU(MR_104V_2) 	pts{5403 }
+SourceLoc->{ "ln": 198, "cl": 62, "fl": "./include/linux/platform_device.h" }
+
+LDMU(MR_106V_2) 	pts{5405 }
+SourceLoc->{ "ln": 199, "cl": 4, "fl": "./include/linux/platform_device.h" }
+
+LDMU(MR_108V_2) 	pts{5407 }
+SourceLoc->{ "ln": 199, "cl": 9, "fl": "./include/linux/platform_device.h" }
+==========FUNCTION: acpi_dmi_skip_serdev_enumeration==========
+==========FUNCTION: platform_device_register_resndata==========
+80V_2 = STCHI(MR_80V_1) 	pts{6151 }
+82V_2 = STCHI(MR_82V_1) 	pts{6152 }
+84V_2 = STCHI(MR_84V_1) 	pts{6153 }
+86V_2 = STCHI(MR_86V_1) 	pts{6154 }
+88V_2 = STCHI(MR_88V_1) 	pts{6155 }
+90V_2 = STCHI(MR_90V_1) 	pts{6156 }
+92V_2 = STCHI(MR_92V_1) 	pts{6157 }
+94V_2 = STCHI(MR_94V_1) 	pts{6158 }
+96V_2 = STCHI(MR_96V_1) 	pts{6159 }
+98V_2 = STCHI(MR_98V_1) 	pts{6160 }
+100V_2 = STCHI(MR_100V_1) 	pts{6161 }
+SourceLoc->{ "ln": 158, "cl": 30, "fl": "./include/linux/platform_device.h" }
+
+
+LDMU(MR_66V_2) 	pts{5445 }
+SourceLoc->{ "ln": 159, "cl": 13, "fl": "./include/linux/platform_device.h" }
+80V_3 = STCHI(MR_80V_2) 	pts{6151 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+82V_3 = STCHI(MR_82V_2) 	pts{6152 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+84V_3 = STCHI(MR_84V_2) 	pts{6153 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+
+LDMU(MR_68V_2) 	pts{5447 }
+SourceLoc->{ "ln": 160, "cl": 11, "fl": "./include/linux/platform_device.h" }
+86V_3 = STCHI(MR_86V_2) 	pts{6154 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+
+LDMU(MR_70V_2) 	pts{5449 }
+SourceLoc->{ "ln": 161, "cl": 9, "fl": "./include/linux/platform_device.h" }
+88V_3 = STCHI(MR_88V_2) 	pts{6155 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+
+LDMU(MR_72V_2) 	pts{5451 }
+SourceLoc->{ "ln": 162, "cl": 10, "fl": "./include/linux/platform_device.h" }
+90V_3 = STCHI(MR_90V_2) 	pts{6156 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+
+LDMU(MR_74V_2) 	pts{5453 }
+SourceLoc->{ "ln": 163, "cl": 14, "fl": "./include/linux/platform_device.h" }
+92V_3 = STCHI(MR_92V_2) 	pts{6157 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+
+LDMU(MR_76V_2) 	pts{5455 }
+SourceLoc->{ "ln": 164, "cl": 11, "fl": "./include/linux/platform_device.h" }
+94V_3 = STCHI(MR_94V_2) 	pts{6158 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+
+LDMU(MR_78V_2) 	pts{5457 }
+SourceLoc->{ "ln": 165, "cl": 16, "fl": "./include/linux/platform_device.h" }
+96V_3 = STCHI(MR_96V_2) 	pts{6159 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+98V_3 = STCHI(MR_98V_2) 	pts{6160 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+100V_3 = STCHI(MR_100V_2) 	pts{6161 }
+SourceLoc->{ "ln": 158, "cl": 41, "fl": "./include/linux/platform_device.h" }
+
+==========FUNCTION: acpi_device_override_status==========
+38V_2 = STCHI(MR_38V_1) 	pts{5524 }
+SourceLoc->{ "ln": 169, "cl": 7, "fl": "drivers/acpi/x86/utils.c" }
+
+38V_3 = STCHI(MR_38V_2) 	pts{5524 }
+SourceLoc->{ "ln": 169, "cl": 7, "fl": "drivers/acpi/x86/utils.c" }
+
+40V_2 = STCHI(MR_40V_1) 	pts{5526 }
+SourceLoc->{ "ln": 170, "cl": 15, "fl": "drivers/acpi/x86/utils.c" }
+
+40V_3 = STCHI(MR_40V_2) 	pts{5526 }
+SourceLoc->{ "ln": 172, "cl": 9, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 172, "cl": 14, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 173, "cl": 42, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 176, "cl": 27, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_60V_1) 	pts{6215 }
+SourceLoc->{ "ln": 176, "cl": 52, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 177, "cl": 45, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 180, "cl": 27, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_56V_1) 	pts{6211 }
+SourceLoc->{ "ln": 180, "cl": 30, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_50V_1) 	pts{6197 }
+LDMU(MR_52V_1) 	pts{6198 }
+48V_6 = STCHI(MR_48V_2) 	pts{6150 }
+46V_6 = STCHI(MR_46V_2) 	pts{6149 }
+SourceLoc->{ "ln": 181, "cl": 23, "fl": "drivers/acpi/x86/utils.c" }
+
+42V_6 = STCHI(MR_42V_2) 	pts{5530 }
+SourceLoc->{ "ln": 182, "cl": 9, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_34V_2) 	pts{5520 }
+SourceLoc->{ "ln": 184, "cl": 22, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_46V_6) 	pts{6149 }
+SourceLoc->{ "ln": 187, "cl": 32, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 187, "cl": 61, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_56V_1) 	pts{6211 }
+SourceLoc->{ "ln": 187, "cl": 64, "fl": "drivers/acpi/x86/utils.c" }
+42V_7 = STCHI(MR_42V_6) 	pts{5530 }
+SourceLoc->{ "ln": 187, "cl": 10, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_46V_6) 	pts{6149 }
+SourceLoc->{ "ln": 188, "cl": 15, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_42V_7) 	pts{5530 }
+SourceLoc->{ "ln": 190, "cl": 9, "fl": "drivers/acpi/x86/utils.c" }
+44V_8 = STCHI(MR_44V_2) 	pts{5532 }
+SourceLoc->{ "ln": 192, "cl": 3, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_34V_2) 	pts{5520 }
+SourceLoc->{ "ln": 193, "cl": 30, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 193, "cl": 56, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_34V_2) 	pts{5520 }
+SourceLoc->{ "ln": 196, "cl": 355, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 196, "cl": 381, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_54V_1) 	pts{6210 }
+SourceLoc->{ "ln": 196, "cl": 384, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 200, "cl": 33, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_58V_1) 	pts{6212 }
+SourceLoc->{ "ln": 200, "cl": 36, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_36V_2) 	pts{5522 }
+SourceLoc->{ "ln": 200, "cl": 4, "fl": "drivers/acpi/x86/utils.c" }
+38V_5 = STCHI(MR_38V_3) 	pts{5524 }
+SourceLoc->{ "ln": 201, "cl": 7, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 172, "cl": 222, "fl": "drivers/acpi/x86/utils.c" }
+40V_5 = STCHI(MR_40V_4) 	pts{5526 }
+SourceLoc->{ "ln": 172, "cl": 222, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_38V_4) 	pts{5524 }
+SourceLoc->{ "ln": 205, "cl": 9, "fl": "drivers/acpi/x86/utils.c" }
+==========FUNCTION: acpi_str_uid_match==========
+32V_2 = STCHI(MR_32V_1) 	pts{5702 }
+SourceLoc->{ "ln": 885, "cl": 14, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_28V_2) 	pts{5698 }
+SourceLoc->{ "ln": 885, "cl": 23, "fl": "./include/acpi/acpi_bus.h" }
+32V_3 = STCHI(MR_32V_2) 	pts{5702 }
+SourceLoc->{ "ln": 885, "cl": 14, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_32V_3) 	pts{5702 }
+SourceLoc->{ "ln": 887, "cl": 9, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_30V_2) 	pts{5700 }
+SourceLoc->{ "ln": 887, "cl": 17, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_32V_3) 	pts{5702 }
+SourceLoc->{ "ln": 887, "cl": 33, "fl": "./include/acpi/acpi_bus.h" }
+
+LDMU(MR_30V_2) 	pts{5700 }
+SourceLoc->{ "ln": 887, "cl": 39, "fl": "./include/acpi/acpi_bus.h" }
+==========FUNCTION: force_storage_d3==========
+
+CALMU(MR_12V_1) 	pts{182 }
+24V_2 = STCHI(MR_24V_1) 	pts{5735 }
+SourceLoc->{ "ln": 238, "cl": 3, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_26V_1) 	pts{6194 }
+SourceLoc->{ "ln": 239, "cl": 23, "fl": "drivers/acpi/x86/utils.c" }
+24V_4 = STCHI(MR_24V_1) 	pts{5735 }
+SourceLoc->{ "ln": 239, "cl": 2, "fl": "drivers/acpi/x86/utils.c" }
+
+
+LDMU(MR_24V_3) 	pts{5735 }
+SourceLoc->{ "ln": 240, "cl": 1, "fl": "drivers/acpi/x86/utils.c" }
+==========FUNCTION: arch_test_bit==========
+
+LDMU(MR_19V_2) 	pts{5767 }
+SourceLoc->{ "ln": 238, "cl": 30, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_19V_2) 	pts{5767 }
+SourceLoc->{ "ln": 238, "cl": 54, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_21V_2) 	pts{5769 }
+SourceLoc->{ "ln": 238, "cl": 58, "fl": "./arch/x86/include/asm/bitops.h" }
+
+CALMU(MR_12V_1) 	pts{182 }
+
+LDMU(MR_19V_2) 	pts{5767 }
+SourceLoc->{ "ln": 239, "cl": 26, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_21V_2) 	pts{5769 }
+SourceLoc->{ "ln": 239, "cl": 30, "fl": "./arch/x86/include/asm/bitops.h" }
+==========FUNCTION: _static_cpu_has==========
+
+LDMU(MR_64V_2) 	pts{5800 }
+SourceLoc->{ "ln": 185, "cl": 23, "fl": "./arch/x86/include/asm/cpufeature.h" }
+
+LDMU(MR_64V_2) 	pts{5800 }
+SourceLoc->{ "ln": 186, "cl": 28, "fl": "./arch/x86/include/asm/cpufeature.h" }
+
+LDMU(MR_64V_2) 	pts{5800 }
+SourceLoc->{ "ln": 187, "cl": 70, "fl": "./arch/x86/include/asm/cpufeature.h" }
+62V_4 = STCHI(MR_62V_1) 	pts{5798 }
+SourceLoc->{ "ln": 190, "cl": 2, "fl": "./arch/x86/include/asm/cpufeature.h" }
+
+62V_2 = STCHI(MR_62V_1) 	pts{5798 }
+SourceLoc->{ "ln": 192, "cl": 2, "fl": "./arch/x86/include/asm/cpufeature.h" }
+
+
+LDMU(MR_62V_3) 	pts{5798 }
+SourceLoc->{ "ln": 193, "cl": 1, "fl": "./arch/x86/include/asm/cpufeature.h" }
+==========FUNCTION: constant_test_bit==========
+
+LDMU(MR_14V_2) 	pts{5831 }
+SourceLoc->{ "ln": 205, "cl": 19, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_16V_2) 	pts{5833 }
+SourceLoc->{ "ln": 206, "cl": 4, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_14V_2) 	pts{5831 }
+SourceLoc->{ "ln": 206, "cl": 9, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_12V_1) 	pts{182 }
+SourceLoc->{ "ln": 206, "cl": 4, "fl": "./arch/x86/include/asm/bitops.h" }
+==========FUNCTION: variable_test_bit==========
+10V_2 = STCHI(MR_10V_1) 	pts{5858 }
+SourceLoc->{ "ln": 225, "cl": 7, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_8V_2) 	pts{5856 }
+SourceLoc->{ "ln": 230, "cl": 33, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_6V_2) 	pts{5854 }
+SourceLoc->{ "ln": 230, "cl": 46, "fl": "./arch/x86/include/asm/bitops.h" }
+10V_3 = STCHI(MR_10V_2) 	pts{5858 }
+SourceLoc->{ "ln": 227, "cl": 2, "fl": "./arch/x86/include/asm/bitops.h" }
+
+LDMU(MR_10V_3) 	pts{5858 }
+SourceLoc->{ "ln": 232, "cl": 9, "fl": "./arch/x86/include/asm/bitops.h" }
+==========FUNCTION: acpi_proc_quirk_mwait_check==========
+==========FUNCTION: acpi_proc_quirk_set_no_mwait==========
+
+LDMU(MR_771V_2) 	pts{5891 }
+SourceLoc->{ "ln": 566, "cl": 102, "fl": "drivers/acpi/x86/utils.c" }
+773V_2 = STCHI(MR_773V_1) 	pts{5893 }
+SourceLoc->{ "ln": 566, "cl": 9, "fl": "drivers/acpi/x86/utils.c" }
+
+LDMU(MR_773V_2) 	pts{5893 }
+SourceLoc->{ "ln": 566, "cl": 114, "fl": "drivers/acpi/x86/utils.c" }
+769V_2 = STCHI(MR_769V_1) 	pts{214 }
+SourceLoc->{ "ln": 568, "cl": 28, "fl": "drivers/acpi/x86/utils.c" }
+
+==========FUNCTION: acpi_blacklisted==========
+211V_2 = STCHI(MR_211V_1) 	pts{5912 }
+SourceLoc->{ "ln": 49, "cl": 6, "fl": "drivers/acpi/x86/blacklist.c" }
+
+213V_2 = STCHI(MR_213V_1) 	pts{5914 }
+SourceLoc->{ "ln": 50, "cl": 6, "fl": "drivers/acpi/x86/blacklist.c" }
+
+213V_3 = STCHI(MR_213V_2) 	pts{5914 }
+SourceLoc->{ "ln": 50, "cl": 6, "fl": "drivers/acpi/x86/blacklist.c" }
+
+211V_3 = STCHI(MR_211V_2) 	pts{5912 }
+SourceLoc->{ "ln": 52, "cl": 4, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_211V_3) 	pts{5912 }
+SourceLoc->{ "ln": 53, "cl": 6, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_211V_3) 	pts{5912 }
+SourceLoc->{ "ln": 54, "cl": 150, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_211V_3) 	pts{5912 }
+SourceLoc->{ "ln": 54, "cl": 176, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_211V_3) 	pts{5912 }
+SourceLoc->{ "ln": 54, "cl": 208, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_219V_1) 	pts{6178 }
+SourceLoc->{ "ln": 54, "cl": 211, "fl": "drivers/acpi/x86/blacklist.c" }
+215V_3 = STCHI(MR_215V_1) 	pts{5916 }
+SourceLoc->{ "ln": 54, "cl": 10, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_215V_3) 	pts{5916 }
+SourceLoc->{ "ln": 54, "cl": 226, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_211V_3) 	pts{5912 }
+SourceLoc->{ "ln": 59, "cl": 102, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_221V_1) 	pts{6181 }
+SourceLoc->{ "ln": 59, "cl": 105, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_211V_3) 	pts{5912 }
+SourceLoc->{ "ln": 59, "cl": 129, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_223V_1) 	pts{6182 }
+SourceLoc->{ "ln": 59, "cl": 132, "fl": "drivers/acpi/x86/blacklist.c" }
+217V_3 = STCHI(MR_217V_1) 	pts{5918 }
+SourceLoc->{ "ln": 59, "cl": 10, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_217V_3) 	pts{5918 }
+SourceLoc->{ "ln": 59, "cl": 176, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_211V_3) 	pts{5912 }
+SourceLoc->{ "ln": 64, "cl": 32, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_223V_1) 	pts{6182 }
+SourceLoc->{ "ln": 64, "cl": 35, "fl": "drivers/acpi/x86/blacklist.c" }
+213V_5 = STCHI(MR_213V_3) 	pts{5914 }
+SourceLoc->{ "ln": 64, "cl": 15, "fl": "drivers/acpi/x86/blacklist.c" }
+
+
+LDMU(MR_213V_4) 	pts{5914 }
+SourceLoc->{ "ln": 72, "cl": 9, "fl": "drivers/acpi/x86/blacklist.c" }
+==========FUNCTION: dmi_enable_rev_override==========
+
+LDMU(MR_2V_2) 	pts{6002 }
+SourceLoc->{ "ln": 78, "cl": 95, "fl": "drivers/acpi/x86/blacklist.c" }
+4V_2 = STCHI(MR_4V_1) 	pts{6004 }
+SourceLoc->{ "ln": 78, "cl": 9, "fl": "drivers/acpi/x86/blacklist.c" }
+
+LDMU(MR_4V_2) 	pts{6004 }
+SourceLoc->{ "ln": 78, "cl": 106, "fl": "drivers/acpi/x86/blacklist.c" }
+==========FUNCTION: llvm.dbg.declare==========
+==========FUNCTION: llvm.lifetime.start.p0==========
+==========FUNCTION: acpi_handle_printk==========
+==========FUNCTION: bitmap_zalloc==========
+==========FUNCTION: llvm.is.constant.i32==========
+==========FUNCTION: llvm.is.constant.i64==========
+==========FUNCTION: llvm.lifetime.end.p0==========
+==========FUNCTION: llvm.memcpy.p0.p0.i64==========
+==========FUNCTION: llvm.expect.i64==========
+==========FUNCTION: acpi_data_add_props==========
+==========FUNCTION: llvm.dbg.label==========
+==========FUNCTION: bitmap_free==========
+==========FUNCTION: llvm.cttz.i64==========
+==========FUNCTION: _find_next_bit==========
+==========FUNCTION: __kmalloc_large_noprof==========
+==========FUNCTION: llvm.returnaddress==========
+==========FUNCTION: __kmalloc_cache_noprof==========
+==========FUNCTION: __kmalloc_noprof==========
+==========FUNCTION: __compiletime_assert_186==========
+==========FUNCTION: __bitmap_weight==========
+==========FUNCTION: kfree==========
+==========FUNCTION: acpi_evaluate_dsm==========
+==========FUNCTION: lock_system_sleep==========
+==========FUNCTION: unlock_system_sleep==========
+==========FUNCTION: acpi_fetch_acpi_dev==========
+==========FUNCTION: acpi_power_state_string==========
+==========FUNCTION: acpi_scan_add_handler==========
+==========FUNCTION: s2idle_set_ops==========
+==========FUNCTION: acpi_s2idle_begin==========
+==========FUNCTION: acpi_s2idle_prepare==========
+==========FUNCTION: acpi_s2idle_wake==========
+==========FUNCTION: acpi_s2idle_restore==========
+==========FUNCTION: acpi_s2idle_end==========
+==========FUNCTION: _printk==========
+==========FUNCTION: acpi_ec_mark_gpe_for_wake==========
+==========FUNCTION: llvm.memset.p0.i64==========
+==========FUNCTION: acpi_get_handle==========
+==========FUNCTION: llvm.umul.with.overflow.i64==========
+==========FUNCTION: acpi_device_hid==========
+==========FUNCTION: strcmp==========
+==========FUNCTION: guid_parse==========
+==========FUNCTION: acpi_remove_address_space_handler==========
+==========FUNCTION: rtc_cmos_read==========
+==========FUNCTION: rtc_cmos_write==========
+==========FUNCTION: _raw_spin_unlock_irq==========
+==========FUNCTION: _raw_spin_lock_irq==========
+==========FUNCTION: acpi_install_address_space_handler==========
+==========FUNCTION: dmi_first_match==========
+==========FUNCTION: acpi_dev_present==========
+==========FUNCTION: is_acpi_device_node==========
+==========FUNCTION: platform_device_register_full==========
+==========FUNCTION: x86_match_cpu==========
+==========FUNCTION: dmi_check_system==========
+==========FUNCTION: acpi_get_name==========
+==========FUNCTION: acpi_match_device_ids==========
+==========FUNCTION: llvm.assume==========
+==========FUNCTION: acpi_match_platform_list==========
+==========FUNCTION: early_acpi_osi_init==========
+==========FUNCTION: acpi_rev_override_setup==========

@@ -1,0 +1,4 @@
+==========FUNCTION: acpi_int340x_thermal_init==========
+==========FUNCTION: int340x_thermal_handler_attach==========
+==========FUNCTION: acpi_scan_add_handler==========
+==========FUNCTION: llvm.dbg.declare==========

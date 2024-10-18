@@ -1,0 +1,572 @@
+==========FUNCTION: setup_ohci1394_dma==========
+
+LDMU(MR_14V_2) 	pts{25 }
+SourceLoc->{ "ln": 290, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+12V_2 = STCHI(MR_12V_1) 	pts{16 }
+SourceLoc->{ "ln": 291, "cl": 27, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+==========FUNCTION: init_ohci1394_dma_on_all_controllers==========
+45V_2 = STCHI(MR_45V_1) 	pts{51 }
+SourceLoc->{ "ln": 259, "cl": 6, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+47V_2 = STCHI(MR_47V_1) 	pts{53 }
+SourceLoc->{ "ln": 259, "cl": 11, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+49V_2 = STCHI(MR_49V_1) 	pts{55 }
+SourceLoc->{ "ln": 259, "cl": 17, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+51V_2 = STCHI(MR_51V_1) 	pts{57 }
+SourceLoc->{ "ln": 260, "cl": 6, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+45V_4 = STCHI(MR_45V_2) 	pts{51 }
+SourceLoc->{ "ln": 266, "cl": 11, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_45V_5) 	pts{51 }
+SourceLoc->{ "ln": 266, "cl": 16, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+47V_5 = STCHI(MR_47V_4) 	pts{53 }
+SourceLoc->{ "ln": 267, "cl": 13, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_47V_6) 	pts{53 }
+SourceLoc->{ "ln": 267, "cl": 18, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+49V_6 = STCHI(MR_49V_5) 	pts{55 }
+SourceLoc->{ "ln": 268, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_49V_7) 	pts{55 }
+SourceLoc->{ "ln": 268, "cl": 19, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_45V_5) 	pts{51 }
+SourceLoc->{ "ln": 269, "cl": 29, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_47V_6) 	pts{53 }
+SourceLoc->{ "ln": 269, "cl": 34, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_49V_7) 	pts{55 }
+SourceLoc->{ "ln": 269, "cl": 40, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+51V_8 = STCHI(MR_51V_6) 	pts{57 }
+SourceLoc->{ "ln": 269, "cl": 11, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_51V_8) 	pts{57 }
+SourceLoc->{ "ln": 271, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_51V_8) 	pts{57 }
+SourceLoc->{ "ln": 274, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_45V_5) 	pts{51 }
+SourceLoc->{ "ln": 277, "cl": 30, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_47V_6) 	pts{53 }
+SourceLoc->{ "ln": 277, "cl": 35, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_49V_7) 	pts{55 }
+SourceLoc->{ "ln": 277, "cl": 41, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_21V_1) 	pts{19 }
+
+LDMU(MR_49V_7) 	pts{55 }
+SourceLoc->{ "ln": 268, "cl": 33, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+49V_8 = STCHI(MR_49V_7) 	pts{55 }
+SourceLoc->{ "ln": 268, "cl": 33, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_47V_6) 	pts{53 }
+SourceLoc->{ "ln": 267, "cl": 33, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+47V_7 = STCHI(MR_47V_6) 	pts{53 }
+SourceLoc->{ "ln": 267, "cl": 33, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_45V_5) 	pts{51 }
+SourceLoc->{ "ln": 266, "cl": 29, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+45V_6 = STCHI(MR_45V_5) 	pts{51 }
+SourceLoc->{ "ln": 266, "cl": 29, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+55V_3 = STCHI(MR_55V_1) 	pts{61 }
+SourceLoc->{ "ln": 282, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_55V_3) 	pts{61 }
+SourceLoc->{ "ln": 282, "cl": 97, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+53V_4 = STCHI(MR_53V_1) 	pts{59 }
+SourceLoc->{ "ln": 283, "cl": 1, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+==========FUNCTION: init_ohci1394_controller==========
+29V_2 = STCHI(MR_29V_1) 	pts{195 }
+SourceLoc->{ "ln": 237, "cl": 16, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+10V_2 = STCHI(MR_10V_1) 	pts{855 }
+SourceLoc->{ "ln": 238, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_23V_2) 	pts{189 }
+SourceLoc->{ "ln": 240, "cl": 107, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_25V_2) 	pts{191 }
+SourceLoc->{ "ln": 240, "cl": 112, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_27V_2) 	pts{193 }
+SourceLoc->{ "ln": 240, "cl": 118, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+31V_2 = STCHI(MR_31V_1) 	pts{199 }
+SourceLoc->{ "ln": 240, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_31V_2) 	pts{199 }
+SourceLoc->{ "ln": 240, "cl": 125, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_23V_2) 	pts{189 }
+SourceLoc->{ "ln": 243, "cl": 30, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_25V_2) 	pts{191 }
+SourceLoc->{ "ln": 243, "cl": 35, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_27V_2) 	pts{193 }
+SourceLoc->{ "ln": 243, "cl": 41, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+29V_3 = STCHI(MR_29V_2) 	pts{195 }
+SourceLoc->{ "ln": 243, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_29V_3) 	pts{195 }
+SourceLoc->{ "ln": 246, "cl": 34, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_21V_1) 	pts{19 }
+SourceLoc->{ "ln": 246, "cl": 253, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+33V_2 = STCHI(MR_33V_1) 	pts{854 }
+SourceLoc->{ "ln": 246, "cl": 57, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_33V_2) 	pts{854 }
+SourceLoc->{ "ln": 246, "cl": 2, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+10V_3 = STCHI(MR_10V_2) 	pts{855 }
+SourceLoc->{ "ln": 248, "cl": 17, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_3) 	pts{855 }
+==========FUNCTION: __set_fixmap==========
+
+LDMU(MR_36V_2) 	pts{293 }
+SourceLoc->{ "ln": 167, "cl": 20, "fl": "./arch/x86/include/asm/fixmap.h" }
+
+LDMU(MR_38V_2) 	pts{295 }
+SourceLoc->{ "ln": 167, "cl": 25, "fl": "./arch/x86/include/asm/fixmap.h" }
+
+LDMU(MR_40V_2) 	pts{853 }
+SourceLoc->{ "ln": 167, "cl": 2, "fl": "./arch/x86/include/asm/fixmap.h" }
+==========FUNCTION: fix_to_virt==========
+
+LDMU(MR_42V_2) 	pts{314 }
+SourceLoc->{ "ln": 32, "cl": 175, "fl": "./include/asm-generic/fixmap.h" }
+
+LDMU(MR_42V_2) 	pts{314 }
+SourceLoc->{ "ln": 33, "cl": 133, "fl": "./include/asm-generic/fixmap.h" }
+==========FUNCTION: init_ohci1394_reset_and_init_dma==========
+
+LDMU(MR_57V_2) 	pts{339 }
+SourceLoc->{ "ln": 209, "cl": 27, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_57V_2) 	pts{339 }
+SourceLoc->{ "ln": 212, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_57V_2) 	pts{339 }
+SourceLoc->{ "ln": 215, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_57V_2) 	pts{339 }
+SourceLoc->{ "ln": 216, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+59V_2 = STCHI(MR_59V_1) 	pts{341 }
+SourceLoc->{ "ln": 218, "cl": 230, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+59V_3 = STCHI(MR_59V_2) 	pts{341 }
+SourceLoc->{ "ln": 218, "cl": 230, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_59V_4) 	pts{341 }
+SourceLoc->{ "ln": 218, "cl": 252, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+59V_5 = STCHI(MR_59V_4) 	pts{341 }
+SourceLoc->{ "ln": 218, "cl": 252, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_57V_2) 	pts{339 }
+SourceLoc->{ "ln": 220, "cl": 27, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_57V_2) 	pts{339 }
+SourceLoc->{ "ln": 225, "cl": 35, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_57V_2) 	pts{339 }
+SourceLoc->{ "ln": 228, "cl": 36, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+==========FUNCTION: init_ohci1394_soft_reset==========
+64V_2 = STCHI(MR_64V_1) 	pts{397 }
+SourceLoc->{ "ln": 87, "cl": 6, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_62V_2) 	pts{395 }
+SourceLoc->{ "ln": 89, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+64V_3 = STCHI(MR_64V_2) 	pts{397 }
+SourceLoc->{ "ln": 91, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_64V_4) 	pts{397 }
+SourceLoc->{ "ln": 91, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_62V_2) 	pts{395 }
+SourceLoc->{ "ln": 92, "cl": 18, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_64V_4) 	pts{397 }
+SourceLoc->{ "ln": 91, "cl": 24, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+64V_5 = STCHI(MR_64V_4) 	pts{397 }
+SourceLoc->{ "ln": 91, "cl": 24, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+==========FUNCTION: reg_write==========
+
+LDMU(MR_71V_2) 	pts{440 }
+SourceLoc->{ "ln": 42, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_67V_2) 	pts{436 }
+SourceLoc->{ "ln": 42, "cl": 15, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_10V_1) 	pts{855 }
+SourceLoc->{ "ln": 42, "cl": 21, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_69V_2) 	pts{438 }
+SourceLoc->{ "ln": 42, "cl": 33, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+==========FUNCTION: init_ohci1394_initialize==========
+85V_2 = STCHI(MR_85V_1) 	pts{465 }
+SourceLoc->{ "ln": 106, "cl": 6, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+87V_2 = STCHI(MR_87V_1) 	pts{467 }
+SourceLoc->{ "ln": 107, "cl": 6, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+89V_2 = STCHI(MR_89V_1) 	pts{469 }
+SourceLoc->{ "ln": 107, "cl": 17, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 110, "cl": 25, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+85V_3 = STCHI(MR_85V_2) 	pts{465 }
+SourceLoc->{ "ln": 110, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_85V_3) 	pts{465 }
+SourceLoc->{ "ln": 111, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+85V_4 = STCHI(MR_85V_3) 	pts{465 }
+SourceLoc->{ "ln": 111, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_85V_4) 	pts{465 }
+SourceLoc->{ "ln": 112, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+85V_5 = STCHI(MR_85V_4) 	pts{465 }
+SourceLoc->{ "ln": 112, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_85V_5) 	pts{465 }
+SourceLoc->{ "ln": 113, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+85V_6 = STCHI(MR_85V_5) 	pts{465 }
+SourceLoc->{ "ln": 113, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 114, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_85V_6) 	pts{465 }
+SourceLoc->{ "ln": 114, "cl": 25, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 117, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 120, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 124, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 127, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 131, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 134, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 135, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 136, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 137, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 140, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 143, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 149, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 153, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 156, "cl": 26, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+87V_3 = STCHI(MR_87V_2) 	pts{467 }
+SourceLoc->{ "ln": 156, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+89V_3 = STCHI(MR_89V_2) 	pts{469 }
+SourceLoc->{ "ln": 157, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_89V_4) 	pts{469 }
+SourceLoc->{ "ln": 157, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_87V_3) 	pts{467 }
+SourceLoc->{ "ln": 157, "cl": 18, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+91V_3 = STCHI(MR_91V_2) 	pts{471 }
+SourceLoc->{ "ln": 158, "cl": 16, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 160, "cl": 15, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_89V_4) 	pts{469 }
+SourceLoc->{ "ln": 160, "cl": 24, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 161, "cl": 24, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+91V_4 = STCHI(MR_91V_3) 	pts{471 }
+SourceLoc->{ "ln": 161, "cl": 10, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_91V_4) 	pts{471 }
+SourceLoc->{ "ln": 163, "cl": 7, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_83V_2) 	pts{463 }
+SourceLoc->{ "ln": 164, "cl": 16, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_91V_4) 	pts{471 }
+SourceLoc->{ "ln": 164, "cl": 25, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_89V_4) 	pts{469 }
+SourceLoc->{ "ln": 157, "cl": 30, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+89V_5 = STCHI(MR_89V_4) 	pts{469 }
+SourceLoc->{ "ln": 157, "cl": 30, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+==========FUNCTION: init_ohci1394_wait_for_busresets==========
+76V_2 = STCHI(MR_76V_1) 	pts{601 }
+SourceLoc->{ "ln": 179, "cl": 6, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+78V_2 = STCHI(MR_78V_1) 	pts{603 }
+SourceLoc->{ "ln": 179, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+76V_3 = STCHI(MR_76V_2) 	pts{601 }
+SourceLoc->{ "ln": 181, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_76V_4) 	pts{601 }
+SourceLoc->{ "ln": 181, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+80V_3 = STCHI(MR_80V_2) 	pts{605 }
+SourceLoc->{ "ln": 182, "cl": 237, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+80V_4 = STCHI(MR_80V_3) 	pts{605 }
+SourceLoc->{ "ln": 182, "cl": 237, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_80V_5) 	pts{605 }
+SourceLoc->{ "ln": 182, "cl": 260, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+80V_6 = STCHI(MR_80V_5) 	pts{605 }
+SourceLoc->{ "ln": 182, "cl": 260, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_74V_2) 	pts{599 }
+SourceLoc->{ "ln": 183, "cl": 21, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+78V_4 = STCHI(MR_78V_3) 	pts{603 }
+SourceLoc->{ "ln": 183, "cl": 10, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_78V_4) 	pts{603 }
+SourceLoc->{ "ln": 184, "cl": 7, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_74V_2) 	pts{599 }
+SourceLoc->{ "ln": 185, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_76V_4) 	pts{601 }
+SourceLoc->{ "ln": 181, "cl": 22, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+76V_5 = STCHI(MR_76V_4) 	pts{601 }
+SourceLoc->{ "ln": 181, "cl": 22, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+==========FUNCTION: init_ohci1394_enable_physical_dma==========
+
+LDMU(MR_94V_2) 	pts{660 }
+SourceLoc->{ "ln": 197, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_94V_2) 	pts{660 }
+SourceLoc->{ "ln": 198, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_94V_2) 	pts{660 }
+SourceLoc->{ "ln": 199, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+==========FUNCTION: reg_read==========
+
+LDMU(MR_16V_2) 	pts{678 }
+SourceLoc->{ "ln": 47, "cl": 15, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_10V_1) 	pts{855 }
+SourceLoc->{ "ln": 47, "cl": 21, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_18V_2) 	pts{680 }
+SourceLoc->{ "ln": 47, "cl": 33, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+==========FUNCTION: readl==========
+112V_2 = STCHI(MR_112V_1) 	pts{700 }
+SourceLoc->{ "ln": 59, "cl": 176, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_110V_2) 	pts{698 }
+SourceLoc->{ "ln": 59, "cl": 256, "fl": "./arch/x86/include/asm/io.h" }
+112V_3 = STCHI(MR_112V_2) 	pts{700 }
+SourceLoc->{ "ln": 59, "cl": 181, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_112V_3) 	pts{700 }
+SourceLoc->{ "ln": 59, "cl": 281, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: get_phy_reg==========
+105V_2 = STCHI(MR_105V_1) 	pts{721 }
+SourceLoc->{ "ln": 55, "cl": 6, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+107V_2 = STCHI(MR_107V_1) 	pts{723 }
+SourceLoc->{ "ln": 56, "cl": 6, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_101V_2) 	pts{717 }
+SourceLoc->{ "ln": 58, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_103V_2) 	pts{719 }
+SourceLoc->{ "ln": 58, "cl": 26, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+105V_3 = STCHI(MR_105V_2) 	pts{721 }
+SourceLoc->{ "ln": 60, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_105V_4) 	pts{721 }
+SourceLoc->{ "ln": 60, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_101V_2) 	pts{717 }
+SourceLoc->{ "ln": 61, "cl": 16, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_105V_4) 	pts{721 }
+SourceLoc->{ "ln": 60, "cl": 24, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+105V_5 = STCHI(MR_105V_4) 	pts{721 }
+SourceLoc->{ "ln": 60, "cl": 24, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_101V_2) 	pts{717 }
+SourceLoc->{ "ln": 65, "cl": 15, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+107V_3 = STCHI(MR_107V_2) 	pts{723 }
+SourceLoc->{ "ln": 65, "cl": 4, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_107V_3) 	pts{723 }
+SourceLoc->{ "ln": 67, "cl": 10, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+==========FUNCTION: set_phy_reg==========
+8V_2 = STCHI(MR_8V_1) 	pts{785 }
+SourceLoc->{ "ln": 73, "cl": 6, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_2V_2) 	pts{779 }
+SourceLoc->{ "ln": 75, "cl": 12, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_4V_2) 	pts{781 }
+SourceLoc->{ "ln": 75, "cl": 26, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_6V_2) 	pts{783 }
+SourceLoc->{ "ln": 75, "cl": 39, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+8V_3 = STCHI(MR_8V_2) 	pts{785 }
+SourceLoc->{ "ln": 77, "cl": 9, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+
+LDMU(MR_8V_4) 	pts{785 }
+SourceLoc->{ "ln": 77, "cl": 14, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+LDMU(MR_2V_2) 	pts{779 }
+SourceLoc->{ "ln": 78, "cl": 18, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+CALMU(MR_10V_1) 	pts{855 }
+
+LDMU(MR_8V_4) 	pts{785 }
+SourceLoc->{ "ln": 77, "cl": 24, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+8V_5 = STCHI(MR_8V_4) 	pts{785 }
+SourceLoc->{ "ln": 77, "cl": 24, "fl": "drivers/firewire/init_ohci1394_dma.c" }
+
+==========FUNCTION: writel==========
+
+LDMU(MR_97V_2) 	pts{831 }
+SourceLoc->{ "ln": 67, "cl": 207, "fl": "./arch/x86/include/asm/io.h" }
+
+LDMU(MR_99V_2) 	pts{833 }
+SourceLoc->{ "ln": 67, "cl": 244, "fl": "./arch/x86/include/asm/io.h" }
+==========FUNCTION: llvm.dbg.declare==========
+==========FUNCTION: strcmp==========
+==========FUNCTION: llvm.lifetime.start.p0==========
+==========FUNCTION: early_pci_allowed==========
+==========FUNCTION: read_pci_config==========
+==========FUNCTION: _printk==========
+==========FUNCTION: llvm.lifetime.end.p0==========
+==========FUNCTION: llvm.memset.p0.i64==========
+==========FUNCTION: cachemode2protval==========
+==========FUNCTION: __const_udelay==========
+==========FUNCTION: __compiletime_assert_279==========
+==========FUNCTION: native_set_fixmap==========
