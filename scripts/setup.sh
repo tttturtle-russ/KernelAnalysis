@@ -12,12 +12,12 @@ fi
 
 
 # build SVF
-pushd "$SVF_DIR" > /dev/null
+pushd "$SVF_DIR" > /dev/null || exit 1
 source ./build.sh > "$LOG_DIR/SVF.log"
-popd > /dev/null
+popd > /dev/null || exit 1
 
 # build linux kernel bitcode files
-pushd "$KERNEL_DIR" > /dev/null
+pushd "$KERNEL_DIR" > /dev/null || exit 1
 make defconfig
 # disable warnings as errors
 ./scripts/config --disable CONFIG_WERROR
@@ -34,5 +34,5 @@ make CC=clang \
     HOSTAR=llvm-ar \
     HOSTLD=ld.lld \
     V=0 \
-    -j`nproc` > "$LOG_DIR/kernel_build.log"
-popd > /dev/null
+    -j"$(nproc)" > "$LOG_DIR/kernel_build.log"
+popd > /dev/null || exit 1
