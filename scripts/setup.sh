@@ -4,6 +4,7 @@ TOP_DIR="$(pwd)/.."
 KERNEL_DIR="$TOP_DIR/linux"
 SVF_DIR="$TOP_DIR/SVF"
 LOG_DIR="$TOP_DIR/logs"
+CONFIG_DIR="$TOP_DIR/configs"
 
 # create log dir
 if [ ! -d "$LOG_DIR" ]; then
@@ -12,15 +13,17 @@ fi
 
 
 # build SVF
+echo "Building SVF, see logs in $LOG_DIR/SVF.log"
 pushd "$SVF_DIR" > /dev/null || exit 1
 source ./build.sh > "$LOG_DIR/SVF.log"
 popd > /dev/null || exit 1
 
+echo "Building Linux, see logs in $LOG_DIR/kernel_build.log"
+echo "For now only support linux-6.12-rc3"
 # build linux kernel bitcode files
 pushd "$KERNEL_DIR" > /dev/null || exit 1
-make defconfig
-# disable warnings as errors
-./scripts/config --disable CONFIG_WERROR
+cp "$CONFIG_DIR/.config" .
+cp "$CONFIG_DIR/Makefile" .
 make CC=clang \
     LD=ld.lld \
     AR=llvm-ar \
