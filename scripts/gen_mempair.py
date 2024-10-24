@@ -1,7 +1,6 @@
 import json
 import itertools
 import argparse
-from tqdm import tqdm
 
 class Instruction:
     def __init__(self) -> None:
@@ -100,10 +99,10 @@ if __name__ == '__main__':
     memory_locations = {}
     with open(args.mssa, "r") as mssa:
         inst = Instruction()
-        for line in tqdm(mssa):
+        for line in mssa:
             is_finished = inst.readline(line)
             if is_finished:
-                for memory, is_write in tqdm(inst.memory_access()):
+                for memory, is_write in inst.memory_access():
                     if memory == 1:
                         continue # don't know why but let's just skip this
                     if memory not in memory_locations:
