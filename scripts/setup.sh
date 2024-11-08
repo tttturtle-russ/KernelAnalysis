@@ -23,7 +23,7 @@ LOG_DIR="$TOP_DIR/logs"
 echo "Choose kernel version:"
 echo "1. 6.12-rc3"
 KERNEL_VER=$(choose_version)
-CONFIG_DIR="$TOP_DIR/$KERNEL_VER/configs"
+CONFIG_DIR="$TOP_DIR/configs/$KERNEL_VER"
 
 # create log dir
 if [ ! -d "$LOG_DIR" ]; then
