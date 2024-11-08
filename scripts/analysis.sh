@@ -30,7 +30,7 @@ link_bc_files ./drivers
 find . -name "combined.bc" | while read -r bcfile; do
     dir=$(dirname "$bcfile")
     name=$(dirname "$bcfile" | awk -F/ '{print $NF}')
-    wpa -ander -cxt -race -stat=false -dump-mssa -ind-call-limit=100000 -svfg "$bcfile" > "$dir/mssa.$name"
+    wpa -ander -cxt -opt-svfg -race -stat=false -dump-mssa -ind-call-limit=100000 -svfg "$bcfile" > "$dir/mssa.$name"
 done;
 
 find . -name "mssa.*" | while read -r mssa; do

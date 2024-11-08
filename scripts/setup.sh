@@ -4,7 +4,7 @@ TOP_DIR="$(pwd)/.."
 KERNEL_DIR="$TOP_DIR/linux"
 SVF_DIR="$TOP_DIR/SVF"
 LOG_DIR="$TOP_DIR/logs"
-CONFIG_DIR="$TOP_DIR/configs"
+CONFIG_DIR="$TOP_DIR/6.12-rc3/configs"
 
 # create log dir
 if [ ! -d "$LOG_DIR" ]; then
@@ -39,3 +39,5 @@ make CC=clang \
     V=0 \
     -j"$(nproc)" > "$LOG_DIR/kernel_build.log"
 popd > /dev/null || exit 1
+
+echo "Finish building now."
