@@ -1,10 +1,29 @@
 #!/bin/bash
 
+choose_version() {
+    while true; do
+        read -p "Input your choice: " choice
+        case $choice in
+            1)
+                echo "6.12-rc3"
+                return 0
+                ;;
+            *)
+                echo "Invalid choice, please input 1."
+                ;;
+        esac
+    done
+}
+
 TOP_DIR="$(pwd)/.."
 KERNEL_DIR="$TOP_DIR/linux"
 SVF_DIR="$TOP_DIR/SVF"
 LOG_DIR="$TOP_DIR/logs"
-CONFIG_DIR="$TOP_DIR/6.12-rc3/configs"
+
+echo "Choose kernel version:"
+echo "1. 6.12-rc3"
+KERNEL_VER=$(choose_version)
+CONFIG_DIR="$TOP_DIR/$KERNEL_VER/configs"
 
 # create log dir
 if [ ! -d "$LOG_DIR" ]; then

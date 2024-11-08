@@ -30,12 +30,14 @@ link_bc_files ./drivers
 find . -name "combined.bc" | while read -r bcfile; do
     dir=$(dirname "$bcfile")
     name=$(dirname "$bcfile" | awk -F/ '{print $NF}')
+    echo "Analyzing $name"
     wpa -ander -cxt -opt-svfg -race -stat=false -dump-mssa -ind-call-limit=100000 -svfg "$bcfile" > "$dir/mssa.$name"
 done;
 
 find . -name "mssa.*" | while read -r mssa; do
     dir=$(dirname "$mssa")
     name=$(dirname "$mssa" | awk -F/ '{print $NF}')
+    echo "Generating $name"
     python3 "$SCRIPT_DIR/gen_mempair.py" "$mssa" > "$dir/mempairs.$name"
 done;
 
