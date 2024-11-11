@@ -69,7 +69,8 @@ class MemoryLoc:
             self.read_insts.add(inst.source_loc)
 
     def generate_mempair(self) -> list:
-        write_write = list(itertools.product(self.write_insts, self.write_insts))
+        # write_write = list(itertools.product(self.write_insts, self.write_insts))
+        write_write = {tuple(sorted((w1, w2))) for w1, w2 in itertools.product(self.write_insts, repeat=2)}
         write_read = list(itertools.product(self.write_insts, self.read_insts))
         result = []
 
