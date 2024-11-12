@@ -647,7 +647,7 @@ void MemSSA::dumpMSSA(OutStream& Out)
 
                     SVFStmtList& pagEdgeList = mrGen->getPAGEdgesFromInst(inst);
                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
-                            bit!=ebit && has_debug_info; ++bit)
+                            bit!=ebit; ++bit)
                     {
                         const PAGEdge* edge = *bit;
                         if (const LoadStmt* load = SVFUtil::dyn_cast<LoadStmt>(edge))
@@ -670,7 +670,7 @@ void MemSSA::dumpMSSA(OutStream& Out)
 
                     bool has_chi = false;
                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
-                            bit!=ebit && has_debug_info; ++bit)
+                            bit!=ebit; ++bit)
                     {
                         const PAGEdge* edge = *bit;
                         if (const StoreStmt* store = SVFUtil::dyn_cast<StoreStmt>(edge))
