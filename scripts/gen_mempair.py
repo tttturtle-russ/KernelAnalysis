@@ -68,18 +68,18 @@ class MemoryLoc:
         else:
             self.read_insts.add(inst.source_loc)
 
-    def generate_mempair(self) -> list:
+    def generate_mempair(self) -> set:
         write_write = list(itertools.product(self.write_insts, self.write_insts))
         write_read = list(itertools.product(self.write_insts, self.read_insts))
-        result = []
+        result = set()
 
         for w1,w2 in write_write:
-            result.append(f"{w1}->W {w2}->W")
+            result.add(f"{w1}->W {w2}->W")
 
         for w,r in write_read:
-            result.append(f"{w}->W {r}->R")
+            result.add(f"{w}->W {r}->R")
 
-        return list(set(result))
+        return list(result)
 
 class MemPairs:
     def __init__(self) -> None:
