@@ -31,7 +31,7 @@ echo "Building Linux, see logs in $LOG_DIR/kernel_build.log"
 echo "For now only support linux-6.12-rc3"
 # build linux kernel bitcode files
 pushd "$KERNEL_DIR" > /dev/null || exit 1
-make CC=wllvm HOSTCC=wllvm allyesconfig
+make CC=wllvm HOSTCC=wllvm defconfig
 make CC=wllvm HOSTCC=wllvm -j"$(nproc)" drivers/ > "$LOG_DIR/kernel_build.log"
 for dir in drivers/*; do
         if [ -d "$dir" ]; then

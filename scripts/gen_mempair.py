@@ -79,7 +79,7 @@ class MemoryLoc:
         for w,r in write_read:
             result.append(f"{w}->W {r}->R")
 
-        return result
+        return list(set(result))
 
 class MemPairs:
     def __init__(self) -> None:
