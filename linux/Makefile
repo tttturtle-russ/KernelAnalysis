@@ -2,7 +2,7 @@
 VERSION = 6
 PATCHLEVEL = 12
 SUBLEVEL = 0
-EXTRAVERSION = -rc3
+EXTRAVERSION = -rc7
 NAME = Baby Opossum Posse
 
 # *DOCUMENTATION*
@@ -551,11 +551,6 @@ KBUILD_CFLAGS += -funsigned-char
 KBUILD_CFLAGS += -fno-common
 KBUILD_CFLAGS += -fno-PIE
 KBUILD_CFLAGS += -fno-strict-aliasing
-
-# add debug info
-KBUILD_CFLAGS += -g
-# generate bitcode
-KBUILD_CFLAGS += -save-temps=obj
 
 KBUILD_CPPFLAGS := -D__KERNEL__
 KBUILD_RUSTFLAGS := $(rust_common_flags) \
