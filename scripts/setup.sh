@@ -40,6 +40,9 @@ for dir in drivers/*; do
                 else
                         find "$dir" -name built-in.a | while read -r archive; do
                                 extract-bc -b "$archive"
+                                if [ ! -f "$archive".bc ]; then
+                                        continue
+                                fi
                                 dir_name=$(dirname "$archive")
                                 mv "$archive".bc "$dir_name"/built-in.bc
                         done
