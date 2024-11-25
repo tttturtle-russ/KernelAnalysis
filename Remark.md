@@ -13,3 +13,4 @@
 - [ ] 9. vcall gep idx not constantint, also the wpa error
 - [ ] 10. other wpa errors, have not check carefully
 - [ ] 11. Warnings should not display while compiling
+- [ ] 12. Uniq mempairs by different ways are different
