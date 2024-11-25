@@ -6,14 +6,14 @@ SCRIPT_DIR="$TOP_DIR/scripts"
 
 pushd "$KERNEL_DIR" > /dev/null || exit 1
 
-find . -name "built-in.bc" | while read -r bcfile; do
+find . -mindepth 2 -maxdepth 2 -name "built-in.bc" | while read -r bcfile; do
     dir=$(dirname "$bcfile")
     name=$(dirname "$bcfile" | awk -F/ '{print $NF}')
     echo "Analyzing $name"
     wpa -fspta -cxt -race -stat=false -dump-mssa -ind-call-limit=100000 "$bcfile" > "$dir/mssa.$name"
 done;
 
-find . -name "mssa.*" | while read -r mssa; do
+find . -mindepth 2 -maxdepth 2 -name "mssa.*" | while read -r mssa; do
     dir=$(dirname "$mssa")
     name=$(dirname "$mssa" | awk -F/ '{print $NF}')
     echo "Generating $name"
