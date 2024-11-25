@@ -10,7 +10,7 @@ find . -name "built-in.bc" | while read -r bcfile; do
     dir=$(dirname "$bcfile")
     name=$(dirname "$bcfile" | awk -F/ '{print $NF}')
     echo "Analyzing $name"
-    wpa -ander -cxt -race -stat=false -dump-mssa -ind-call-limit=100000 -svfg "$bcfile" > "$dir/mssa.$name"
+    wpa -fspta -cxt -race -stat=false -dump-mssa -ind-call-limit=100000 "$bcfile" > "$dir/mssa.$name"
 done;
 
 find . -name "mssa.*" | while read -r mssa; do
