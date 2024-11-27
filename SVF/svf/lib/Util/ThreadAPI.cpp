@@ -32,8 +32,8 @@
 
 #include "Util/ThreadAPI.h"
 #include "Util/SVFUtil.h"
-#include "SVFIR/SVFIR.h"
 #include "Graphs/CallGraph.h"
+#include "SVFIR/SVFIR.h"
 
 #include <iostream>		/// std output
 #include <stdio.h>

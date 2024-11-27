@@ -32,6 +32,8 @@
 #include "Util/CallGraphBuilder.h"
 #include "Graphs/ICFG.h"
 #include "SVFIR/SVFIR.h"
+#include "Graphs/CallGraph.h"
+#include "Graphs/ThreadCallGraph.h"
 
 using namespace SVF;
 using namespace SVFUtil;
@@ -62,6 +64,12 @@ CallGraph* CallGraphBuilder::buildSVFIRCallGraph(SVFModule* svfModule)
         }
     }
     return callgraph;
+}
+
+PTACallGraph* CallGraphBuilder::buildPTACallGraph()
+{
+    CallGraph* svfirCallGraph = PAG::getPAG()->getCallGraph();
+    return new PTACallGraph(*svfirCallGraph);
 }
 
 ThreadCallGraph* CallGraphBuilder::buildThreadCallGraph()

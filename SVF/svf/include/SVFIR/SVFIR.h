@@ -35,6 +35,7 @@
 namespace SVF
 {
 class CommonCHGraph;
+class CallGraph;
 /*!
  * SVF Intermediate representation, representing variables and statements as a Program Assignment Graph (PAG)
  * Variables as nodes and statements as edges.

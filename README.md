@@ -14,7 +14,7 @@ source setup.sh # build SVF and Linux Kernel
 
 3. Techinique Details
 
-- SVF: I modified the `MemSSA::dumpMSSA` function to make `wpa` output more suitable for our analysis.
+- SVF: I modified the `MemSSA::dumpMSSA` function and `ICFGCallNode::getSourceLoc` to make `wpa` output more suitable for our analysis.
 ```diff
 diff --git a/svf/include/Graphs/ICFGNode.h b/svf/include/Graphs/ICFGNode.h
 index 67fccfff..05b8ff92 100644

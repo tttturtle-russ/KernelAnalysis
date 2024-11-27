@@ -31,6 +31,7 @@
 #include "MSSA/MemPartition.h"
 #include "MSSA/MemSSA.h"
 #include "Graphs/SVFGStat.h"
+#include "Graphs/CallGraph.h"
 
 using namespace SVF;
 using namespace SVFUtil;
@@ -583,26 +584,11 @@ void MemSSA::dumpMSSA(OutStream& Out)
             continue;
 
         Out << "==========FUNCTION: " << fun->getName() << "==========\n";
-        // dump function entry chi nodes
-        // if (hasFuncEntryChi(fun))
-        // {
-        //     CHISet & entry_chis = getFuncEntryChiSet(fun);
-        //     for (CHISet::iterator chi_it = entry_chis.begin(); chi_it != entry_chis.end(); chi_it++)
-        //     {
-        //         (*chi_it)->dump();
-        //     }
-        // }
 
         for (SVFFunction::const_iterator bit = fun->begin(), ebit = fun->end();
                 bit != ebit; ++bit)
         {
             const SVFBasicBlock* bb = *bit;
-            // Out << bb->getName() << "\n";
-            // PHISet& phiSet = getPHISet(bb);
-            // for(PHISet::iterator pi = phiSet.begin(), epi = phiSet.end(); pi !=epi; ++pi)
-            // {
-            //     // (*pi)->dump();
-            // }
 
             bool last_is_chi = false;
             for (const auto& inst: bb->getICFGNodeList())
@@ -624,8 +610,6 @@ void MemSSA::dumpMSSA(OutStream& Out)
                         }
                     }
 
-                    // Out << inst->toString() << "\n";
-
                     if(hasCHI(cs))
                     {
                         for (CHISet::iterator cit = getCHISet(cs).begin(), ecit = getCHISet(cs).end();
@@ -644,7 +628,6 @@ void MemSSA::dumpMSSA(OutStream& Out)
                     bool dump_preamble = false;
                     bool has_mu_or_chi = false;
                     bool has_debug_info = !inst->getSourceLoc().empty();
-
                     SVFStmtList& pagEdgeList = mrGen->getPAGEdgesFromInst(inst);
                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
                             bit!=ebit && has_debug_info; ++bit)
@@ -666,11 +649,9 @@ void MemSSA::dumpMSSA(OutStream& Out)
                         }
                     }
 
-                    // Out << inst->toString() << "\n";
-
                     bool has_chi = false;
                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
-                            bit!=ebit && has_debug_info; ++bit)
+                            bit!=ebit; ++bit)
                     {
                         const PAGEdge* edge = *bit;
                         if (const StoreStmt* store = SVFUtil::dyn_cast<StoreStmt>(edge))
@@ -685,8 +666,8 @@ void MemSSA::dumpMSSA(OutStream& Out)
                         }
                     }
 
-                    if (has_mu_or_chi && has_debug_info)
-                        Out << "SourceLoc->" << inst->getSourceLoc() << '\n';
+                    if (has_debug_info)
+                        Out << "SourceLoc->" << inst->getSourceLoc() << "\n";
 
                     if (has_chi)
                     {
@@ -698,15 +679,5 @@ void MemSSA::dumpMSSA(OutStream& Out)
                 }
             }
         }
-
-        // dump return mu nodes
-        // if (hasReturnMu(fun))
-        // {
-        //     MUSet & return_mus = getReturnMuSet(fun);
-        //     for (MUSet::iterator mu_it = return_mus.begin(); mu_it != return_mus.end(); mu_it++)
-        //     {
-        //         (*mu_it)->dump();
-        //     }
-        // }
     }
 }
