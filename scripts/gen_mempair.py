@@ -12,9 +12,11 @@ class Instruction:
     """Read a line from SVF output and parse it into useful values
 
     readline only handles the following situations:
-    1. LDMU: reprents the instruction reads from memory
-    2. STCHI: reprents the instruction writes to memory
-    3. source loc: parse the source location of the instrcution
+    1. LDMU: the instruction reads from memory
+    2. CALMU: the instruction calls a function that reads from memory
+    3. STCHI: the instruction writes to memory
+    4. CALCHI: the instruction calls a function that writes to memory
+    5. SourceLoc: parse the source location of the instruction
 
     Args:
         line: one line from SVF output
@@ -22,12 +24,12 @@ class Instruction:
     Return:
         bool: if the instruction has beem constructed
     """
-    def readline(self,line: str) -> bool:
-        if "LDMU" in line:
+    def readline(self, line: str) -> bool:
+        if "LDMU" in line or "CALMU" in line:
             pts = self.__parse_pts(line)
             self.read_from = self.read_from.union(pts)
             self.is_write = False
-        elif "STCHI" in line:
+        elif "STCHI" in line or 'CALCHI' in line:
             pts = self.__parse_pts(line)
             self.write_to = self.write_to.union(pts)
             self.is_write = True
