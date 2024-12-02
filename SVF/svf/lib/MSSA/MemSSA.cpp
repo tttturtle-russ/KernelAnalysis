@@ -33,6 +33,8 @@
 #include "Graphs/SVFGStat.h"
 #include "Graphs/CallGraph.h"
 
+#include "SVF-LLVM/LLVMModule.h"
+
 using namespace SVF;
 using namespace SVFUtil;
 
@@ -570,6 +572,41 @@ u32_t MemSSA::getBBPhiNum() const
     return num;
 }
 
+const char* InitSections[] = {
+    ".init.text", // denoted by __init
+    ".init.data", // denoted by __initdata
+    ".init.rodata", // denoted by __initconst
+    ".exit.text", // denoted by __exit
+    ".exit.data", // denoted by __exitdata
+    ".exitcall.exit" // denoted by __exit_call
+};
+
+bool isInitFunc(const Function* F)
+{
+    if (F == nullptr || !F->hasSection())
+        return false;
+    return std::any_of(InitSections,
+        InitSections + sizeof(InitSections) / sizeof(char*),
+        [F](const char* s){return s == F->getSection();});
+}
+
+/*
+ * detect if the Function F is called by InitFunc and only called once in the module.
+ */
+bool isCalledByInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F, OutStream& Out)
+{
+    if (F == nullptr) return false;
+    auto callGraphNode = llvmModuleSet->getCallGraphNode(F);
+    auto inEdges = callGraphNode->getInEdges();
+    Out << "Function: " << F->getName().str() << "is called " << inEdges.size() << " times\n";
+    for (const auto edge : inEdges)
+    {
+        if (F->getName() != edge->getDstNode()->getName()) Out << "Parameter does not equal to DstNode!\n";
+        Out << "Function: " << edge->getSrcNode()->getName() << " calls " << F->getName().str() << "\n";
+    }
+    return true;
+}
+
 /*!
  * Print SSA
  */
@@ -580,6 +617,11 @@ void MemSSA::dumpMSSA(OutStream& Out)
     for (const auto& item: *svfirCallGraph)
     {
         const SVFFunction* fun = item.second->getFunction();
+        auto llvmModuleSet = LLVMModuleSet::getLLVMModuleSet();
+        auto llvmValue = llvmModuleSet->getLLVMValue(fun);
+        auto llvmFunction = llvm::dyn_cast<llvm::Function>(llvmValue);
+        if (isCalledByInitFunc(llvmModuleSet, llvmFunction, Out))
+            continue;
         if(Options::MSSAFun()!="" && Options::MSSAFun()!=fun->getName())
             continue;
 
@@ -648,10 +690,9 @@ void MemSSA::dumpMSSA(OutStream& Out)
                             }
                         }
                     }
-
                     bool has_chi = false;
                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
-                            bit!=ebit; ++bit)
+                            bit!=ebit && has_debug_info; ++bit)
                     {
                         const PAGEdge* edge = *bit;
                         if (const StoreStmt* store = SVFUtil::dyn_cast<StoreStmt>(edge))

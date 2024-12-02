@@ -6,12 +6,12 @@
 # Dependencies include: build-essential libncurses5 libncurses-dev cmake zlib1g-dev
 set -e # exit on first error
 
-jobs=8
+jobs=$(nproc)
 
 #########
 # VARs and Links
 ########
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 SVFHOME="${SCRIPT_DIR}"
 sysOS=$(uname -s)
 arch=$(uname -m)
@@ -29,113 +29,112 @@ SourceZ3="https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.8.8.zip"
 LLVMHome="llvm-${MajorLLVMVer}.0.0.obj"
 Z3Home="z3.obj"
 
-
 # Downloads $1 (URL) to $2 (target destination) using wget or curl,
 # depending on OS.
 # E.g. generic_download_file www.url.com/my.zip loc/my.zip
 function generic_download_file {
-    if [[ $# -ne 2 ]]; then
-        echo "$0: bad args to generic_download_file!"
-        exit 1
-    fi
+	if [[ $# -ne 2 ]]; then
+		echo "$0: bad args to generic_download_file!"
+		exit 1
+	fi
 
-    if [[ -f "$2" ]]; then
-        echo "File $2 exists, skip download..."
-        return
-    fi
+	if [[ -f "$2" ]]; then
+		echo "File $2 exists, skip download..."
+		return
+	fi
 
-    local download_failed=false
-    if type curl &> /dev/null; then
-        if ! curl -L "$1" -o "$2"; then
-            download_failed=true
-        fi
-    elif type wget &> /dev/null; then
-        if ! wget -c "$1" -O "$2"; then
-            download_failed=true
-        fi
-    else
-        echo "Cannot find download tool. Please install curl or wget."
-        exit 1
-    fi
+	local download_failed=false
+	if type curl &>/dev/null; then
+		if ! curl -L "$1" -o "$2"; then
+			download_failed=true
+		fi
+	elif type wget &>/dev/null; then
+		if ! wget -c "$1" -O "$2"; then
+			download_failed=true
+		fi
+	else
+		echo "Cannot find download tool. Please install curl or wget."
+		exit 1
+	fi
 
-    if $download_failed; then
-        echo "Failed to download $1"
-        rm -f "$2"
-        exit 1
-    fi
+	if $download_failed; then
+		echo "Failed to download $1"
+		rm -f "$2"
+		exit 1
+	fi
 }
 
 # check if unzip is missing (Z3)
 function check_unzip {
-    if ! type unzip &> /dev/null; then
-        echo "Cannot find unzip. Please install unzip."
-        exit 1
-    fi
+	if ! type unzip &>/dev/null; then
+		echo "Cannot find unzip. Please install unzip."
+		exit 1
+	fi
 }
 
 # check if xz is missing (LLVM)
 function check_xz {
-    if ! type xz &> /dev/null; then
-        echo "Cannot find xz. Please install xz-utils."
-        exit 1
-    fi
+	if ! type xz &>/dev/null; then
+		echo "Cannot find xz. Please install xz-utils."
+		exit 1
+	fi
 }
 
 function build_z3_from_source {
-    mkdir "$Z3Home"
-    echo "Downloading Z3 source..."
-    generic_download_file "$SourceZ3" z3.zip
-    check_unzip
-    echo "Unzipping Z3 source..."
-    mkdir z3-source
-    unzip z3.zip -d z3-source
+	mkdir "$Z3Home"
+	echo "Downloading Z3 source..."
+	generic_download_file "$SourceZ3" z3.zip
+	check_unzip
+	echo "Unzipping Z3 source..."
+	mkdir z3-source
+	unzip z3.zip -d z3-source
 
-    echo "Building Z3..."
-    mkdir z3-build
-    cd z3-build
-    # /* is a dirty hack to get z3-version...
-    cmake -DCMAKE_INSTALL_PREFIX="$SVFHOME/$Z3Home" -DZ3_BUILD_LIBZ3_SHARED=false ../z3-source/*
-    cmake --build . -j ${jobs}
-    cmake --install .
+	echo "Building Z3..."
+	mkdir z3-build
+	cd z3-build
+	# /* is a dirty hack to get z3-version...
+	cmake -DCMAKE_INSTALL_PREFIX="$SVFHOME/$Z3Home" -DZ3_BUILD_LIBZ3_SHARED=false ../z3-source/*
+	cmake --build . -j ${jobs}
+	cmake --install .
 
-    cd ..
-    rm -r z3-source z3-build z3.zip
+	cd ..
+	rm -r z3-source z3-build z3.zip
 }
 
 function build_llvm_from_source {
-    mkdir "$LLVMHome"
-    echo "Downloading LLVM source..."
-    generic_download_file "$SourceLLVM" llvm.zip
-    check_unzip
-    echo "Unzipping LLVM source..."
-    mkdir llvm-source
-    unzip llvm.zip -d llvm-source
+	mkdir "$LLVMHome"
+	echo "Downloading LLVM source..."
+	generic_download_file "$SourceLLVM" llvm.zip
+	check_unzip
+	echo "Unzipping LLVM source..."
+	mkdir llvm-source
+	unzip llvm.zip -d llvm-source
 
-    echo "Building LLVM..."
-    mkdir llvm-build
-    cd llvm-build
-    # /*/ is a dirty hack to get llvm-project-llvmorg-version...
-    cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$SVFHOME/$LLVMHome" -DLLVM_ENABLE_PROJECTS=clang ../llvm-source/*/llvm
-    cmake --build . -j ${jobs}
-    cmake --install .
+	echo "Building LLVM..."
+	mkdir llvm-build
+	cd llvm-build
+	# /*/ is a dirty hack to get llvm-project-llvmorg-version...
+	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$SVFHOME/$LLVMHome" -DLLVM_ENABLE_PROJECTS=clang ../llvm-source/*/llvm
+	cmake --build . -j ${jobs}
+	cmake --install .
 
-    cd ..
-    rm -r llvm-source llvm-build llvm.zip
+	cd ..
+	rm -r llvm-source llvm-build llvm.zip
 }
 
 function check_and_install_brew {
-    if command -v brew >/dev/null 2>&1; then
-        echo "Homebrew is already installed."
-    else
-        echo "Homebrew not found. Installing Homebrew..."
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-        if [ $? -eq 0 ]; then
-            echo "Homebrew installation completed."
-        else
-            echo "Homebrew installation failed."
-            exit 1
-        fi
-    fi
+	if command -v brew >/dev/null 2>&1; then
+		echo "Homebrew is already installed."
+	else
+		echo "Homebrew not found. Installing Homebrew..."
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+		if [ $? -eq 0 ]; then
+			echo "Homebrew installation completed."
+		else
+			echo "Homebrew installation failed."
+			exit 1
+		fi
+	fi
 }
 
 # OS-specific values.
@@ -148,86 +147,85 @@ OSDisplayName=""
 # M1 Macs give back arm64, some Linuxes can give aarch64 for arm architecture
 #######
 if [[ $sysOS == "Darwin" ]]; then
-    check_and_install_brew
-    if [[ "$arch" == "arm64" ]]; then
-        OSDisplayName="macOS arm64"
-    else
-        OSDisplayName="macOS x86"
-    fi
+	check_and_install_brew
+	if [[ "$arch" == "arm64" ]]; then
+		OSDisplayName="macOS arm64"
+	else
+		OSDisplayName="macOS x86"
+	fi
 elif [[ $sysOS == "Linux" ]]; then
-    if [[ "$arch" == "aarch64" ]]; then
-        urlLLVM="$UbuntuArmLLVM"
-        urlZ3="$UbuntuZ3Arm"
-        OSDisplayName="Ubuntu arm64"
-    else
-        urlLLVM="$UbuntuLLVM"
-        urlZ3="$UbuntuZ3"
-        OSDisplayName="Ubuntu x86"
-    fi
+	if [[ "$arch" == "aarch64" ]]; then
+		urlLLVM="$UbuntuArmLLVM"
+		urlZ3="$UbuntuZ3Arm"
+		OSDisplayName="Ubuntu arm64"
+	else
+		urlLLVM="$UbuntuLLVM"
+		urlZ3="$UbuntuZ3"
+		OSDisplayName="Ubuntu x86"
+	fi
 else
-    echo "Builds outside Ubuntu and macOS are not supported."
+	echo "Builds outside Ubuntu and macOS are not supported."
 fi
 
 ########
 # Download LLVM if need be.
 #######
 if [[ ! -d "$LLVM_DIR" ]]; then
-    if [[ ! -d "$LLVMHome" ]]; then
-        if [[ "$sysOS" = "Darwin" ]]; then
-            echo "Installing LLVM binary for $OSDisplayName"
-            brew install llvm@${MajorLLVMVer}
-            # check whether llvm is installed
-            if [ $? -eq 0 ]; then
-                echo "LLVM binary installation completed."
-            else
-                echo "LLVM binary installation failed."
-                exit 1
-            fi
-            mkdir -p $SVFHOME/$LLVMHome
-            ln -s $(brew --prefix llvm@${MajorLLVMVer})/* $SVFHOME/$LLVMHome
-        else
-            # everything else downloads pre-built lib includ osx "arm64"
-            echo "Downloading LLVM binary for $OSDisplayName"
-            generic_download_file "$urlLLVM" llvm.tar.xz
-            check_xz
-            echo "Unzipping llvm package..."
-            mkdir -p "./$LLVMHome" && tar -xf llvm.tar.xz -C "./$LLVMHome" --strip-components 1
-            rm llvm.tar.xz
-        fi
-    fi
-    export LLVM_DIR="$SVFHOME/$LLVMHome"
+	if [[ ! -d "$LLVMHome" ]]; then
+		if [[ "$sysOS" = "Darwin" ]]; then
+			echo "Installing LLVM binary for $OSDisplayName"
+			brew install llvm@${MajorLLVMVer}
+			# check whether llvm is installed
+			if [ $? -eq 0 ]; then
+				echo "LLVM binary installation completed."
+			else
+				echo "LLVM binary installation failed."
+				exit 1
+			fi
+			mkdir -p $SVFHOME/$LLVMHome
+			ln -s $(brew --prefix llvm@${MajorLLVMVer})/* $SVFHOME/$LLVMHome
+		else
+			# everything else downloads pre-built lib includ osx "arm64"
+			echo "Downloading LLVM binary for $OSDisplayName"
+			generic_download_file "$urlLLVM" llvm.tar.xz
+			check_xz
+			echo "Unzipping llvm package..."
+			mkdir -p "./$LLVMHome" && tar -xf llvm.tar.xz -C "./$LLVMHome" --strip-components 1
+			rm llvm.tar.xz
+		fi
+	fi
+	export LLVM_DIR="$SVFHOME/$LLVMHome"
 fi
-
 
 ########
 # Download Z3 if need be.
 #######
 if [[ ! -d "$Z3_DIR" ]]; then
-    if [[ ! -d "$Z3Home" ]]; then
-        # M1 Macs give back arm64, some Linuxes can give aarch64.
-        if [[ "$sysOS" = "Darwin" ]]; then
-            echo "Downloading Z3 binary for $OSDisplayName"
-            brew install z3
-            if [ $? -eq 0 ]; then
-		      echo "z3 binary installation completed."
-	        else
-		      echo "z3 binary installation failed."
-		      exit 1
-	        fi
-            mkdir -p $SVFHOME/$Z3Home
-            ln -s $(brew --prefix z3)/* $SVFHOME/$Z3Home
-        else
-            # everything else downloads pre-built lib
-            echo "Downloading Z3 binary for $OSDisplayName"
-            generic_download_file "$urlZ3" z3.zip
-            check_unzip
-            echo "Unzipping z3 package..."
-            unzip -q "z3.zip" && mv ./z3-* ./$Z3Home
-            rm z3.zip
-        fi
-    fi
+	if [[ ! -d "$Z3Home" ]]; then
+		# M1 Macs give back arm64, some Linuxes can give aarch64.
+		if [[ "$sysOS" = "Darwin" ]]; then
+			echo "Downloading Z3 binary for $OSDisplayName"
+			brew install z3
+			if [ $? -eq 0 ]; then
+				echo "z3 binary installation completed."
+			else
+				echo "z3 binary installation failed."
+				exit 1
+			fi
+			mkdir -p $SVFHOME/$Z3Home
+			ln -s $(brew --prefix z3)/* $SVFHOME/$Z3Home
+		else
+			# everything else downloads pre-built lib
+			echo "Downloading Z3 binary for $OSDisplayName"
+			generic_download_file "$urlZ3" z3.zip
+			check_unzip
+			echo "Unzipping z3 package..."
+			unzip -q "z3.zip" && mv ./z3-* ./$Z3Home
+			rm z3.zip
+		fi
+	fi
 
-    export Z3_DIR="$SVFHOME/$Z3Home"
+	export Z3_DIR="$SVFHOME/$Z3Home"
 fi
 
 # Add LLVM & Z3 to $PATH and $LD_LIBRARY_PATH (prepend so that selected instances will be used first)
@@ -241,9 +239,9 @@ echo "Z3_DIR=$Z3_DIR"
 # Build SVF
 ########
 if [[ $1 =~ ^[Dd]ebug$ ]]; then
-    BUILD_TYPE='Debug'
+	BUILD_TYPE='Debug'
 else
-    BUILD_TYPE='Release'
+	BUILD_TYPE='Release'
 fi
 BUILD_DIR="./${BUILD_TYPE}-build"
 
@@ -251,10 +249,10 @@ rm -rf "${BUILD_DIR}"
 mkdir "${BUILD_DIR}"
 # If you need shared libs, turn BUILD_SHARED_LIBS on
 cmake -D CMAKE_BUILD_TYPE:STRING="${BUILD_TYPE}" \
-    -DSVF_ENABLE_ASSERTIONS:BOOL=true            \
-    -DSVF_SANITIZE="${SVF_SANITIZER}"            \
-    -DBUILD_SHARED_LIBS=off                      \
-    -S "${SVFHOME}" -B "${BUILD_DIR}"
+	-DSVF_ENABLE_ASSERTIONS:BOOL=true \
+	-DSVF_SANITIZE="${SVF_SANITIZER}" \
+	-DBUILD_SHARED_LIBS=off \
+	-S "${SVFHOME}" -B "${BUILD_DIR}"
 cmake --build "${BUILD_DIR}" -j ${jobs}
 
 ########

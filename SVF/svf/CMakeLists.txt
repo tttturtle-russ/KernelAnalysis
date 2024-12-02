@@ -1,5 +1,6 @@
 # Define the core library
 add_library(SvfCore)
+find_package(LLVM REQUIRED CONFIG HINTS ${LLVM_DIR} $ENV{LLVM_DIR})
 
 # Add the public headers as an include directory
 target_include_directories(SvfCore
@@ -13,6 +14,11 @@ set_target_properties(SvfCore PROPERTIES
     ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
 )
+
+include_directories(SYSTEM ${LLVM_INCLUDE_DIRS})
+link_directories(${LLVM_LIBRARY_DIRS})
+add_definitions(${LLVM_DEFINITIONS})
+target_link_libraries(SvfCore PUBLIC SvfLLVM)
 
 # Get the source files (i.e. all *.c/*.cpp files) for SVF's subprojects and add them to SvfCore
 file(GLOB_RECURSE SVF_CORE_SOURCES lib/*.cpp)
