@@ -581,30 +581,45 @@ const char* InitSections[] = {
     ".exitcall.exit" // denoted by __exit_call
 };
 
-bool isInitFunc(const Function* F)
+const Function* getLLVMFunction(const LLVMModuleSet* llvmModuleSet,const SVFFunction* SF)
+{
+    auto llvmValue = llvmModuleSet->getLLVMValue(SF);
+    auto llvmFunction = llvm::dyn_cast<llvm::Function>(llvmValue);
+    return llvmFunction;
+}
+
+bool isInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F)
 {
     if (F == nullptr || !F->hasSection())
         return false;
+    auto callGraphNode = llvmModuleSet->getCallGraphNode(F);
+    auto inEdges = callGraphNode->getInEdges();
     return std::any_of(InitSections,
         InitSections + sizeof(InitSections) / sizeof(char*),
-        [F](const char* s){return s == F->getSection();});
+        [F](const char* s){return s == F->getSection();}) || inEdges.size() == 0;
 }
 
 /*
- * detect if the Function F is called by InitFunc and only called once in the module.
+ * detect if the Function F is called by InitFunc.
  */
-bool isCalledByInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F, OutStream& Out)
+bool isCalledByInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F)
 {
     if (F == nullptr) return false;
     auto callGraphNode = llvmModuleSet->getCallGraphNode(F);
     auto inEdges = callGraphNode->getInEdges();
-    Out << "Function: " << F->getName().str() << "is called " << inEdges.size() << " times\n";
-    for (const auto edge : inEdges)
-    {
-        if (F->getName() != edge->getDstNode()->getName()) Out << "Parameter does not equal to DstNode!\n";
-        Out << "Function: " << edge->getSrcNode()->getName() << " calls " << F->getName().str() << "\n";
-    }
-    return true;
+    return std::all_of(inEdges.begin(), inEdges.end(), [llvmModuleSet](const CallGraphEdge* edge) {
+        auto caller = edge->getSrcNode();
+        if (caller == nullptr) return true;
+        auto F = getLLVMFunction(llvmModuleSet, caller->getFunction());
+        if (F == nullptr) return true;
+        if (isInitFunc(llvmModuleSet, F)) return true;
+        return false;
+    });
+}
+
+bool isAncestor(const LLVMModuleSet* llvmModuleSet, const Function* F)
+{
+    return isInitFunc(llvmModuleSet,F) || isCalledByInitFunc(llvmModuleSet, F);
 }
 
 /*!
@@ -618,9 +633,8 @@ void MemSSA::dumpMSSA(OutStream& Out)
     {
         const SVFFunction* fun = item.second->getFunction();
         auto llvmModuleSet = LLVMModuleSet::getLLVMModuleSet();
-        auto llvmValue = llvmModuleSet->getLLVMValue(fun);
-        auto llvmFunction = llvm::dyn_cast<llvm::Function>(llvmValue);
-        if (isCalledByInitFunc(llvmModuleSet, llvmFunction, Out))
+        auto llvmFunction = getLLVMFunction(llvmModuleSet, fun);
+        if (isAncestor(llvmModuleSet, llvmFunction))
             continue;
         if(Options::MSSAFun()!="" && Options::MSSAFun()!=fun->getName())
             continue;

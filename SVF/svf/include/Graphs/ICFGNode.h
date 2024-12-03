@@ -587,7 +587,7 @@ public:
 
     const std::string getSourceLoc() const override
     {
-        return "CallICFGNode: " + ICFGNode::getSourceLoc();
+        return ICFGNode::getSourceLoc();
     }
 };
 
