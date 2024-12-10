@@ -1,11 +1,13 @@
 # KernelAnalysis
 
 1. Prerequisites(Tested On Ubuntu:24.04)
+
 ```
-apt install fakeroot build-essential libncurses-dev xz-utils libssl-dev bc flex libelf-dev bison cmake gcc g++ zlib1g-dev libzstd-dev zip wget libncurses-dev python3
+apt install fakeroot build-essential libncurses-dev xz-utils libssl-dev bc flex libelf-dev bison cmake gcc g++ zlib1g-dev libzstd-dev zip wget libncurses-dev python3 python3-venv python3-pip file
 ```
 
 2. How to run
+
 ```
 cd scripts
 source setup.sh # build SVF and Linux Kernel
@@ -14,36 +16,37 @@ source setup.sh # build SVF and Linux Kernel
 
 3. Techinique Details
 
-- SVF: I modified the `MemSSA::dumpMSSA` function and `ICFGCallNode::getSourceLoc` to make `wpa` output more suitable for our analysis.
+- SVF: We modified the `MemSSA::dumpMSSA` function and `ICFGCallNode::getSourceLoc` to make `wpa` output more suitable for our analysis.
+
 ```diff
 diff --git a/svf/include/Graphs/ICFGNode.h b/svf/include/Graphs/ICFGNode.h
 index 67fccfff..05b8ff92 100644
 --- a/svf/include/Graphs/ICFGNode.h
 +++ b/svf/include/Graphs/ICFGNode.h
 @@ -587,7 +587,7 @@ public:
- 
+
      const std::string getSourceLoc() const override
      {
 -        return "CallICFGNode: " + ICFGNode::getSourceLoc();
 +        return ICFGNode::getSourceLoc();
      }
  };
- 
+
 @@ -666,7 +666,7 @@ public:
- 
+
      const std::string getSourceLoc() const override
      {
 -        return "RetICFGNode: " + ICFGNode::getSourceLoc();
 +        return ICFGNode::getSourceLoc();
      }
  };
- 
+
 diff --git a/svf/lib/MSSA/MemSSA.cpp b/svf/lib/MSSA/MemSSA.cpp
 index d1347768..3f2581ae 100644
 --- a/svf/lib/MSSA/MemSSA.cpp
 +++ b/svf/lib/MSSA/MemSSA.cpp
 @@ -584,25 +584,25 @@ void MemSSA::dumpMSSA(OutStream& Out)
- 
+
          Out << "==========FUNCTION: " << fun->getName() << "==========\n";
          // dump function entry chi nodes
 -        if (hasFuncEntryChi(fun))
@@ -62,7 +65,7 @@ index d1347768..3f2581ae 100644
 +        //         (*chi_it)->dump();
 +        //     }
 +        // }
- 
+
          for (SVFFunction::const_iterator bit = fun->begin(), ebit = fun->end();
                  bit != ebit; ++bit)
          {
@@ -79,16 +82,16 @@ index d1347768..3f2581ae 100644
 +            // {
 +            //     // (*pi)->dump();
 +            // }
- 
+
              bool last_is_chi = false;
              for (const auto& inst: bb->getICFGNodeList())
 @@ -624,7 +624,7 @@ void MemSSA::dumpMSSA(OutStream& Out)
                          }
                      }
- 
+
 -                    Out << inst->toString() << "\n";
 +                    // Out << inst->toString() << "\n";
- 
+
                      if(hasCHI(cs))
                      {
 @@ -642,9 +642,12 @@ void MemSSA::dumpMSSA(OutStream& Out)
@@ -114,10 +117,10 @@ index d1347768..3f2581ae 100644
                              }
                          }
                      }
- 
+
 -                    Out << inst->toString() << "\n";
 +                    // Out << inst->toString() << "\n";
- 
+
                      bool has_chi = false;
                      for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
 -                            bit!=ebit; ++bit)
@@ -143,7 +146,7 @@ index d1347768..3f2581ae 100644
                          Out << "\n";
 @@ -691,13 +700,13 @@ void MemSSA::dumpMSSA(OutStream& Out)
          }
- 
+
          // dump return mu nodes
 -        if (hasReturnMu(fun))
 -        {
