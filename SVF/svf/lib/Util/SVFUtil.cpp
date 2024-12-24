@@ -30,6 +30,7 @@
 #include "Util/Options.h"
 #include "Util/SVFUtil.h"
 #include "MemoryModel/PointsTo.h"
+#include "Graphs/CallGraph.h"
 
 #include <sys/resource.h>		/// increase stack size
 
@@ -422,4 +423,11 @@ const SVFFunction* SVFUtil::getProgEntryFunction()
             return (fun->getFunction());
     }
     return nullptr;
+}
+
+
+const ObjVar* SVFUtil::getObjVarOfValVar(const SVF::ValVar* valVar)
+{
+    assert(valVar->getInEdges().size() == 1);
+    return SVFUtil::dyn_cast<ObjVar>((*valVar->getInEdges().begin())->getSrcNode());
 }

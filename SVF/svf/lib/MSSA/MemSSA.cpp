@@ -31,6 +31,9 @@
 #include "MSSA/MemPartition.h"
 #include "MSSA/MemSSA.h"
 #include "Graphs/SVFGStat.h"
+#include "Graphs/CallGraph.h"
+
+#include "SVF-LLVM/LLVMModule.h"
 
 using namespace SVF;
 using namespace SVFUtil;
@@ -569,6 +572,62 @@ u32_t MemSSA::getBBPhiNum() const
     return num;
 }
 
+// init and exit sections defined by linux kernel
+const char* InitSections[] = {
+    ".init.text", // denoted by __init
+    ".init.data", // denoted by __initdata
+    ".init.rodata", // denoted by __initconst
+    ".exit.text", // denoted by __exit
+    ".exit.data", // denoted by __exitdata
+    ".exitcall.exit" // denoted by __exit_call
+};
+
+// utility function, get the llvm::Function from SVFFunction
+const Function* getLLVMFunction(const LLVMModuleSet* llvmModuleSet,const SVFFunction* SF)
+{
+    auto llvmValue = llvmModuleSet->getLLVMValue(SF);
+    auto llvmFunction = llvm::dyn_cast<llvm::Function>(llvmValue);
+    return llvmFunction;
+}
+
+/*
+ * detect if the function is linked in InitSections
+ * a function is init function iff:
+ * 1. it is in InitSections
+ * or
+ * 2. it has no caller
+*/
+bool isInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F)
+{
+    if (F == nullptr || !F->hasSection())
+        return false;
+    auto callGraphNode = llvmModuleSet->getCallGraphNode(F);
+    auto inEdges = callGraphNode->getInEdges();
+    return std::any_of(InitSections,
+        InitSections + sizeof(InitSections) / sizeof(char*),
+        [F](const char* s){return s == F->getSection();}) || inEdges.size() == 0;
+}
+
+/*
+ * detect if the Function F is called by InitFunc.
+ */
+bool isCalledByInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F)
+{
+    if (F == nullptr) return false;
+    auto callGraphNode = llvmModuleSet->getCallGraphNode(F);
+    auto inEdges = callGraphNode->getInEdges();
+    return std::all_of(inEdges.begin(), inEdges.end(), [llvmModuleSet](const CallGraphEdge* edge) {
+        auto caller = edge->getSrcNode();
+        auto F = getLLVMFunction(llvmModuleSet, caller->getFunction());
+        return isInitFunc(llvmModuleSet,F);
+    });
+}
+
+bool isAncestor(const LLVMModuleSet* llvmModuleSet, const Function* F)
+{
+    return isInitFunc(llvmModuleSet,F) || isCalledByInitFunc(llvmModuleSet, F);
+}
+
 /*!
  * Print SSA
  */
@@ -579,30 +638,19 @@ void MemSSA::dumpMSSA(OutStream& Out)
     for (const auto& item: *svfirCallGraph)
     {
         const SVFFunction* fun = item.second->getFunction();
+        auto llvmModuleSet = LLVMModuleSet::getLLVMModuleSet();
+        auto llvmFunction = getLLVMFunction(llvmModuleSet, fun);
+        if (isAncestor(llvmModuleSet, llvmFunction))
+            continue;
         if(Options::MSSAFun()!="" && Options::MSSAFun()!=fun->getName())
             continue;
 
         Out << "==========FUNCTION: " << fun->getName() << "==========\n";
-        // dump function entry chi nodes
-        // if (hasFuncEntryChi(fun))
-        // {
-        //     CHISet & entry_chis = getFuncEntryChiSet(fun);
-        //     for (CHISet::iterator chi_it = entry_chis.begin(); chi_it != entry_chis.end(); chi_it++)
-        //     {
-        //         (*chi_it)->dump();
-        //     }
-        // }
 
         for (SVFFunction::const_iterator bit = fun->begin(), ebit = fun->end();
                 bit != ebit; ++bit)
         {
             const SVFBasicBlock* bb = *bit;
-            // Out << bb->getName() << "\n";
-            // PHISet& phiSet = getPHISet(bb);
-            // for(PHISet::iterator pi = phiSet.begin(), epi = phiSet.end(); pi !=epi; ++pi)
-            // {
-            //     // (*pi)->dump();
-            // }
 
             bool last_is_chi = false;
             for (const auto& inst: bb->getICFGNodeList())
@@ -624,8 +672,6 @@ void MemSSA::dumpMSSA(OutStream& Out)
                         }
                     }
 
-                    // Out << inst->toString() << "\n";
-
                     if(hasCHI(cs))
                     {
                         for (CHISet::iterator cit = getCHISet(cs).begin(), ecit = getCHISet(cs).end();
@@ -644,7 +690,6 @@ void MemSSA::dumpMSSA(OutStream& Out)
                     bool dump_preamble = false;
                     bool has_mu_or_chi = false;
                     bool has_debug_info = !inst->getSourceLoc().empty();
-
                     SVFStmtList& pagEdgeList = mrGen->getPAGEdgesFromInst(inst);
                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
                             bit!=ebit && has_debug_info; ++bit)
@@ -665,9 +710,6 @@ void MemSSA::dumpMSSA(OutStream& Out)
                             }
                         }
                     }
-
-                    // Out << inst->toString() << "\n";
-
                     bool has_chi = false;
                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
                             bit!=ebit && has_debug_info; ++bit)
@@ -686,7 +728,7 @@ void MemSSA::dumpMSSA(OutStream& Out)
                     }
 
                     if (has_mu_or_chi && has_debug_info)
-                        Out << "SourceLoc->" << inst->getSourceLoc() << '\n';
+                        Out << "SourceLoc->" << inst->getSourceLoc() << "\n";
 
                     if (has_chi)
                     {
@@ -698,15 +740,5 @@ void MemSSA::dumpMSSA(OutStream& Out)
                 }
             }
         }
-
-        // dump return mu nodes
-        // if (hasReturnMu(fun))
-        // {
-        //     MUSet & return_mus = getReturnMuSet(fun);
-        //     for (MUSet::iterator mu_it = return_mus.begin(); mu_it != return_mus.end(); mu_it++)
-        //     {
-        //         (*mu_it)->dump();
-        //     }
-        // }
     }
 }

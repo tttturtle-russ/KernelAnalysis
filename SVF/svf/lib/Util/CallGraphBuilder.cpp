@@ -32,6 +32,8 @@
 #include "Util/CallGraphBuilder.h"
 #include "Graphs/ICFG.h"
 #include "SVFIR/SVFIR.h"
+#include "Graphs/CallGraph.h"
+#include "Graphs/ThreadCallGraph.h"
 
 using namespace SVF;
 using namespace SVFUtil;
@@ -64,6 +66,12 @@ CallGraph* CallGraphBuilder::buildSVFIRCallGraph(SVFModule* svfModule)
     return callgraph;
 }
 
+PTACallGraph* CallGraphBuilder::buildPTACallGraph()
+{
+    CallGraph* svfirCallGraph = PAG::getPAG()->getCallGraph();
+    return new PTACallGraph(*svfirCallGraph);
+}
+
 ThreadCallGraph* CallGraphBuilder::buildThreadCallGraph()
 {
     CallGraph* svfirCallGraph = PAG::getPAG()->getCallGraph();
@@ -80,15 +88,15 @@ ThreadCallGraph* CallGraphBuilder::buildThreadCallGraph()
                 {
                     const CallICFGNode* cs = cast<CallICFGNode>(inst);
                     cg->addForksite(cs);
-                    const SVFFunction* forkee = SVFUtil::dyn_cast<SVFFunction>(tdAPI->getForkedFun(cs)->getValue());
-                    if (forkee)
+                    const ValVar* svfVar = tdAPI->getForkedFun(cs);
+                    if (SVFUtil::isa<FunValVar>(svfVar))
                     {
                         cg->addDirectForkEdge(cs);
                     }
                     // indirect call to the start routine function
                     else
                     {
-                        cg->addThreadForkEdgeSetMap(cs,nullptr);
+                        cg->addThreadForkEdgeSetMap(cs, nullptr);
                     }
                 }
             }

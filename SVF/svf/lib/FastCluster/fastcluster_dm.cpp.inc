@@ -88,7 +88,7 @@ typedef __int32 int_fast32_t;
 typedef __int64 int64_t;
 #endif
 #else
-#define __STDC_LIMIT_MACROS
+// #define __STDC_LIMIT_MACROS
 #include <stdint.h>
 #endif
 #endif

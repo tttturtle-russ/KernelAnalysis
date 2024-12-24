@@ -36,6 +36,7 @@
 #include "Util/PTAStat.h"
 #include "Graphs/ThreadCallGraph.h"
 #include "Graphs/ICFG.h"
+#include "Graphs/CallGraph.h"
 #include "Util/CallGraphBuilder.h"
 
 #include <iomanip>
@@ -116,8 +117,8 @@ void PointerAnalysis::initialize()
     }
     else
     {
-        CallGraph* cg = pag->getCallGraph();
-        callgraph = new CallGraph(*cg);
+        CallGraphBuilder bd;
+        callgraph = bd.buildPTACallGraph();
     }
     callGraphSCCDetection();
 
@@ -399,7 +400,7 @@ void PointerAnalysis::resolveIndCalls(const CallICFGNode* cs, const PointsTo& ta
 
             if(obj->isFunction())
             {
-                const SVFFunction* calleefun = SVFUtil::cast<SVFFunction>(obj->getValue());
+                const SVFFunction* calleefun = SVFUtil::cast<CallGraphNode>(obj->getGNode())->getFunction();
                 const SVFFunction* callee = calleefun->getDefFunForMultipleModule();
 
                 if(SVFUtil::matchArgs(cs, callee) == false)
@@ -413,7 +414,7 @@ void PointerAnalysis::resolveIndCalls(const CallICFGNode* cs, const PointsTo& ta
                     callgraph->addIndirectCallGraphEdge(cs, cs->getCaller(), callee);
                     // FIXME: do we need to update llvm call graph here?
                     // The indirect call is maintained by ourself, We may update llvm's when we need to
-                    //CallGraphNode* callgraphNode = callgraph->getOrInsertFunction(cs.getCaller());
+                    //PTACallGraphNode* callgraphNode = callgraph->getOrInsertFunction(cs.getCaller());
                     //callgraphNode->addCalledFunction(cs,callgraph->getOrInsertFunction(callee));
                 }
             }

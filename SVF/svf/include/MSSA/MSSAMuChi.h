@@ -265,7 +265,7 @@ public:
     virtual void dump()
     {
         SVFUtil::outs() << "CALMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
-                        this->getMR()->dumpStr() << "\n";
+                        this->getMR()->dumpStr() << "\n" << this->getCallSite()->getSourceLoc() << '\n';
     }
 };
 
@@ -515,7 +515,7 @@ public:
 
 /*!
  *
- *  StoreCHI is annotated at each store instruction, representing a memory object is modified here
+ *  CallCHI is annotated at callsite, representing a memory object is indirect modified by callee
  */
 template<class Cond>
 class CallCHI : public MSSACHI<Cond>
@@ -523,7 +523,7 @@ class CallCHI : public MSSACHI<Cond>
 private:
     const CallICFGNode* callsite;
 public:
-    /// Constructors for StoreCHI
+    /// Constructors for CallCHI
     //@{
     CallCHI(const CallICFGNode* cs, const MemRegion* m, Cond c = true) :
         MSSACHI<Cond>(MSSADEF::CallMSSACHI,m,c), callsite(cs)
@@ -567,7 +567,7 @@ public:
     {
         SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
                         " = CALCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
-                        this->getMR()->dumpStr() << "\n";
+                        this->getMR()->dumpStr() << "\n" << this->getCallSite()->getSourceLoc() << '\n';
     }
 };
 
