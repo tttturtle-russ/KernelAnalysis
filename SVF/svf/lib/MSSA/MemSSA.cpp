@@ -727,8 +727,10 @@ void MemSSA::dumpMSSA(OutStream& Out)
                         }
                     }
 
-                    if (has_mu_or_chi && has_debug_info)
+                    if (has_mu_or_chi && has_debug_info) {
                         Out << "SourceLoc->" << inst->getSourceLoc() << "\n";
+                        Out << "FunctionLoc->" << inst->getFun()->getSourceLoc() << '\n';
+                    }
 
                     if (has_chi)
                     {

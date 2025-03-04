@@ -265,7 +265,9 @@ public:
     virtual void dump()
     {
         SVFUtil::outs() << "CALMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
-                        this->getMR()->dumpStr() << "\n" << this->getCallSite()->getSourceLoc() << '\n';
+                        this->getMR()->dumpStr() << "\n";
+        SVFUtil::outs() << "SourceLoc->" << this->getCallSite()->getSourceLoc() << '\n'
+                        << "FunctionLoc->" << this->getCallSite()->getFun()->getSourceLoc() << '\n';
     }
 };
 
@@ -567,7 +569,9 @@ public:
     {
         SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
                         " = CALCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
-                        this->getMR()->dumpStr() << "\n" << this->getCallSite()->getSourceLoc() << '\n';
+                        this->getMR()->dumpStr() << "\n";
+        SVFUtil::outs() << "SourceLoc->" << this->getCallSite()->getSourceLoc() << '\n'
+                        << "FunctionLoc->" << this->getCallSite()->getFun()->getSourceLoc() << '\n';
     }
 };
 
