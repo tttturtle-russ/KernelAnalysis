@@ -8,6 +8,7 @@ class Instruction:
         self.read_from = set()
         self.source_loc = None
         self.is_write = None
+        self.func = None
 
     """Read a line from SVF output and parse it into useful values
 
@@ -35,6 +36,8 @@ class Instruction:
             self.is_write = True
         elif "SourceLoc" in line:
             self.source_loc = self.__parse_source_loc(line.split("->")[1])
+        elif "FunctionLoc" in line:
+            self.func = self.__parse_function(line.split("->")[1])
             return True
     
         return False
@@ -50,6 +53,11 @@ class Instruction:
         self.source_loc = None
 
     @staticmethod
+    def __parse_function(line: str) -> str:
+        loc = json.loads(line.strip())
+        return f"{loc["file"]}:{loc["ln"]}"
+
+    @staticmethod
     def __parse_pts(line: str) -> set:
         pts = line[line.index('{')+1:line.index('}')].strip()
         return set(map(int, pts.split()))
@@ -58,6 +66,21 @@ class Instruction:
     def __parse_source_loc(line:str) -> str:
         loc = json.loads(line.strip())
         return f"{loc["fl"]}:{loc["ln"]}"
+
+class FunctionMapping:
+    def __init__(self) -> None:
+        self.mapping = {}
+
+    def add_instruction(self, inst: Instruction) -> None:
+        if inst.source_loc not in self.mapping:
+            self.mapping[inst.source_loc] = set()
+        self.mapping[inst.source_loc].add(inst.func)
+
+    def dump2file(self, path):
+        with open(path, "w") as f:
+            for source, funcs in self.mapping.items():
+                f.write(f"{source}:{funcs}\n")
+
 
 class MemoryLoc:
     def __init__(self) -> None:
@@ -91,15 +114,17 @@ class MemPairs:
     def add_pair(self, pair: str):
         self.pairs.append(pair)
 
-    def dump(self):
-        for pair in self.pairs:
-            print(pair)
+    def dump2file(self, file):
+        with open(file, "w") as f:
+            for pair in self.pairs:
+                f.write(f"{pair}\n")
 
 if __name__ == '__main__':
     argParser = argparse.ArgumentParser()
     argParser.add_argument("mssa")
     args = argParser.parse_args()
     memory_locations = {}
+    mapping = FunctionMapping()
     with open(args.mssa, "r") as mssa:
         inst = Instruction()
         for line in mssa:
@@ -111,7 +136,7 @@ if __name__ == '__main__':
                     if memory not in memory_locations:
                         memory_locations[memory] = MemoryLoc()
                     memory_locations[memory].add_instruction(inst)
-                
+                mapping.add_instruction(inst)
                 inst.reset()
 
         result = MemPairs()
@@ -119,4 +144,5 @@ if __name__ == '__main__':
             for mempair in loc.generate_mempair():
                 result.add_pair(mempair)
 
-        result.dump()
+        mapping.dump2file("./source2func.map")
+        result.dump2file("./mempairs")
