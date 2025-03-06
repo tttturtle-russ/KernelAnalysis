@@ -77,7 +77,7 @@ class FunctionMapping:
         self.mapping[inst.source_loc].add(inst.func)
 
     def dump2file(self, path):
-        with open(path, "w") as f:
+        with open(path, "a") as f:
             for source, funcs in self.mapping.items():
                 f.write(f"{source}:{funcs}\n")
 
@@ -115,7 +115,7 @@ class MemPairs:
         self.pairs.append(pair)
 
     def dump2file(self, file):
-        with open(file, "w") as f:
+        with open(file, "a") as f:
             for pair in self.pairs:
                 f.write(f"{pair}\n")
 
