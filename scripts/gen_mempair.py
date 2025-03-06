@@ -122,6 +122,8 @@ class MemPairs:
 if __name__ == '__main__':
     argParser = argparse.ArgumentParser()
     argParser.add_argument("mssa")
+    argParser.add_argument("mempair")
+    argParser.add_argument("source2func")
     args = argParser.parse_args()
     memory_locations = {}
     mapping = FunctionMapping()
@@ -144,5 +146,5 @@ if __name__ == '__main__':
             for mempair in loc.generate_mempair():
                 result.add_pair(mempair)
 
-        mapping.dump2file("./source2func.map")
-        result.dump2file("./mempairs")
+        mapping.dump2file(args.source2func)
+        result.dump2file(args.mempair)
