@@ -267,7 +267,8 @@ public:
         SVFUtil::outs() << "CALMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
                         this->getMR()->dumpStr() << "\n";
         SVFUtil::outs() << "SourceLoc->" << this->getCallSite()->getSourceLoc() << '\n'
-                        << "FunctionLoc->" << this->getCallSite()->getFun()->getSourceLoc() << '\n';
+                        << "FunctionLoc->" << this->getCallSite()->getFun()->getSourceLoc() << '\n'
+                        << "FunctionName->" << this->getCallSite()->getFun()->getName() << '\n';
     }
 };
 
@@ -571,7 +572,8 @@ public:
                         " = CALCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
                         this->getMR()->dumpStr() << "\n";
         SVFUtil::outs() << "SourceLoc->" << this->getCallSite()->getSourceLoc() << '\n'
-                        << "FunctionLoc->" << this->getCallSite()->getFun()->getSourceLoc() << '\n';
+                        << "FunctionLoc->" << this->getCallSite()->getFun()->getSourceLoc() << '\n'
+                        << "FunctionName->" << this->getCallSite()->getFun()->getName() << '\n';
     }
 };
 
