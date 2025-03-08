@@ -9,7 +9,7 @@ class Instruction:
         self.read_from = set()
         self.source_loc = None
         self.is_write = None
-        self.func = None
+        self.func_loc = None
         self.func_name = None
 
     """Read a line from SVF output and parse it into useful values
@@ -41,7 +41,7 @@ class Instruction:
         elif "SourceLoc" in line:
             self.source_loc = self.__parse_source_loc(line.split("->")[1])
         elif "FunctionLoc" in line:
-            self.func = self.__parse_function(line.split("->")[1])
+            self.func_loc = self.__parse_function(line.split("->")[1])
         elif "FunctionName" in line:
             self.func_name = line.split("->")[1].strip()
             return True
@@ -78,14 +78,16 @@ class FunctionMapping:
         self.mapping = {}
 
     def add_instruction(self, inst: Instruction) -> None:
-        if inst.source_loc not in self.mapping:
-            self.mapping[inst.source_loc] = set()
-        self.mapping[inst.source_loc].add(inst.func)
+        if inst.func_loc not in self.mapping:
+            self.mapping[inst.func_loc] = set()
+        self.mapping[inst.func_loc].add((inst.func_name, inst.source_loc))
 
     def dump2file(self, path):
-        with open(path, "a") as f:
-            for source, funcs in self.mapping.items():
-                f.write(f"{source}:{funcs}\n")
+        with open(path, "w") as f:
+            for func_loc, name_and_loc_set in self.mapping.items():
+                for name_and_loc in name_and_loc_set:
+                    # source_loc:func_name:func_loc
+                    f.write(f"{name_and_loc[1]}:{name_and_loc[0]}:{func_loc}\n")
 
 
 class MemoryLoc:
@@ -121,7 +123,7 @@ class MemPairs:
         self.pairs.append(pair)
 
     def dump2file(self, file):
-        with open(file, "a") as f:
+        with open(file, "w") as f:
             for pair in self.pairs:
                 f.write(f"{pair}\n")
 
