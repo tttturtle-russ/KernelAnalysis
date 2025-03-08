@@ -1,6 +1,7 @@
 import json
 import itertools
 import argparse
+import threading
 
 class Instruction:
     def __init__(self) -> None:
@@ -9,6 +10,7 @@ class Instruction:
         self.source_loc = None
         self.is_write = None
         self.func = None
+        self.func_name = None
 
     """Read a line from SVF output and parse it into useful values
 
@@ -18,6 +20,8 @@ class Instruction:
     3. STCHI: the instruction writes to memory
     4. CALCHI: the instruction calls a function that writes to memory
     5. SourceLoc: parse the source location of the instruction
+    6. FunctionLoc: parse the function location of the instruction
+    7. FunctionName: parse the function name of the instruction
 
     Args:
         line: one line from SVF output
@@ -148,5 +152,18 @@ if __name__ == '__main__':
             for mempair in loc.generate_mempair():
                 result.add_pair(mempair)
 
-        mapping.dump2file(args.source2func)
-        result.dump2file(args.mempair)
+
+        def dump_mempair():
+            result.dump2file(args.mempair)
+
+        def dump_mapping():
+            mapping.dump2file(args.source2func)
+
+        t1 = threading.Thread(target=dump_mempair)
+        t2 = threading.Thread(target=dump_mapping)
+
+        t1.start()
+        t2.start()
+
+        t1.join()
+        t2.join()
