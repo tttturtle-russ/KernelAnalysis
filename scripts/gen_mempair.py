@@ -38,6 +38,8 @@ class Instruction:
             self.source_loc = self.__parse_source_loc(line.split("->")[1])
         elif "FunctionLoc" in line:
             self.func = self.__parse_function(line.split("->")[1])
+        elif "FunctionName" in line:
+            self.func_name = line.split("->")[1].strip()
             return True
     
         return False
