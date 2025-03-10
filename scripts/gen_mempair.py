@@ -129,9 +129,9 @@ class MemPairs:
 
 if __name__ == '__main__':
     argParser = argparse.ArgumentParser()
-    argParser.add_argument("mssa")
-    argParser.add_argument("mempair")
-    argParser.add_argument("source2func")
+    argParser.add_argument("--mssa")
+    argParser.add_argument("--mempair")
+    argParser.add_argument("--mapping")
     args = argParser.parse_args()
     memory_locations = {}
     mapping = FunctionMapping()

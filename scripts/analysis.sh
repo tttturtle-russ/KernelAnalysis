@@ -31,7 +31,7 @@ find . -mindepth 3 -maxdepth 3 -name "ka_mssa.*" | while read -r mssa; do
   dir=$(dirname "$mssa")
   name=$(dirname "$mssa" | awk -F/ '{print $NF}')
   echo "Generating $name"
-  python3 "$SCRIPT_DIR/gen_mempair.py" "$mssa" "$dir/ka_mempairs.$name" "$dir/ka_mapping.$name"
+  python3 "$SCRIPT_DIR/gen_mempair.py" --mssa "$mssa" --mempair "$dir/ka_mempairs.$name" --mapping "$dir/ka_mapping.$name"
 done
 
 # use parallel to speed up
