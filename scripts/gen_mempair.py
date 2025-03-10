@@ -87,7 +87,7 @@ class FunctionMapping:
             for func_loc, name_and_loc_set in self.mapping.items():
                 for name_and_loc in name_and_loc_set:
                     # source_loc:func_name:func_loc
-                    f.write(f"{name_and_loc[1]}:{name_and_loc[0]}:{func_loc}\n")
+                    f.write(f"{name_and_loc[1]}\t{name_and_loc[0]}\t{func_loc}\n")
 
 
 class MemoryLoc:
