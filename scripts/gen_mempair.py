@@ -159,7 +159,7 @@ if __name__ == '__main__':
             result.dump2file(args.mempair)
 
         def dump_mapping():
-            mapping.dump2file(args.source2func)
+            mapping.dump2file(args.mapping)
 
         t1 = threading.Thread(target=dump_mempair)
         t2 = threading.Thread(target=dump_mapping)
