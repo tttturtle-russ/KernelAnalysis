@@ -5,7 +5,7 @@ KERNEL_DIR="$TOP_DIR/linux"
 SCRIPT_DIR="$TOP_DIR/scripts"
 
 find_and_merge_mempairs() {
-    find . -mindepth 3 -maxdepth 3 -name "ka_mempairs.*" -exec sh -c 'cat "$1' _ {} \; > ka_mempairs_all
+    find . -mindepth 3 -maxdepth 3 -name "ka_mempairs.*" -exec sh -c 'cat "$1"' _ {} \; > ka_mempairs_all
     sort ka_mempairs_all | uniq > ka_mempairs_uniq
 }
 
