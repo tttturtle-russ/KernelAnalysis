@@ -16,6 +16,8 @@ source setup.sh # build SVF and Linux Kernel
 
 3. Techinique Details
 
+- Syzkaller: We use the modified syzkaller from [HBFourier](https://figshare.com/articles/code/HBFourier_Artifact/25365340?file=44924227), also we add some functions to make it more functional. See this [patch](./0001-Update-apply-HBFourier-patches-and-make-it-more-scal.patch).
+
 - SVF: We modified the `MemSSA::dumpMSSA` function and `ICFGCallNode::getSourceLoc` to make `wpa` output more suitable for our analysis.
 
 ```diff
