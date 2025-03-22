@@ -1,0 +1,31 @@
+From 8f165e4a47c15c83f5999a803fc3a9918cf261d1 Mon Sep 17 00:00:00 2001
+From: TurtleRuss <tttturtleruss@gmail.com>
+Date: Wed, 13 Nov 2024 10:40:24 +0800
+Subject: [PATCH 02/10] add debug flag to Makefile
+
+
+diff --git a/SVF/svf/lib/MSSA/MemSSA.cpp b/SVF/svf/lib/MSSA/MemSSA.cpp
+index f29fd17ca..3f2581ae8 100644
+--- a/SVF/svf/lib/MSSA/MemSSA.cpp
++++ b/SVF/svf/lib/MSSA/MemSSA.cpp
+@@ -647,7 +647,7 @@ void MemSSA::dumpMSSA(OutStream& Out)
+ 
+                     SVFStmtList& pagEdgeList = mrGen->getPAGEdgesFromInst(inst);
+                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
+-                            bit!=ebit; ++bit)
++                            bit!=ebit && has_debug_info; ++bit)
+                     {
+                         const PAGEdge* edge = *bit;
+                         if (const LoadStmt* load = SVFUtil::dyn_cast<LoadStmt>(edge))
+@@ -670,7 +670,7 @@ void MemSSA::dumpMSSA(OutStream& Out)
+ 
+                     bool has_chi = false;
+                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
+-                            bit!=ebit; ++bit)
++                            bit!=ebit && has_debug_info; ++bit)
+                     {
+                         const PAGEdge* edge = *bit;
+                         if (const StoreStmt* store = SVFUtil::dyn_cast<StoreStmt>(edge))
+-- 
+2.39.5 (Apple Git-154)
+

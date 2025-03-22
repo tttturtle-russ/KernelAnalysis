@@ -1,0 +1,130 @@
+From c5bd2a8f9be40cb9cb6a6ad148459d405281d7a1 Mon Sep 17 00:00:00 2001
+From: TurtleRuss <tttturtleruss@gmail.com>
+Date: Tue, 3 Dec 2024 10:04:31 +0800
+Subject: [PATCH 07/10] fix: duplicated SVF definition
+
+
+diff --git a/SVF/svf/include/Graphs/ICFGNode.h b/SVF/svf/include/Graphs/ICFGNode.h
+index 033660187..f303ca5b6 100644
+--- a/SVF/svf/include/Graphs/ICFGNode.h
++++ b/SVF/svf/include/Graphs/ICFGNode.h
+@@ -587,7 +587,7 @@ public:
+ 
+     const std::string getSourceLoc() const override
+     {
+-        return "CallICFGNode: " + ICFGNode::getSourceLoc();
++        return ICFGNode::getSourceLoc();
+     }
+ };
+ 
+diff --git a/SVF/svf/include/MSSA/MSSAMuChi.h b/SVF/svf/include/MSSA/MSSAMuChi.h
+index 1e5dc0e41..96e9e7c77 100644
+--- a/SVF/svf/include/MSSA/MSSAMuChi.h
++++ b/SVF/svf/include/MSSA/MSSAMuChi.h
+@@ -265,7 +265,7 @@ public:
+     virtual void dump()
+     {
+         SVFUtil::outs() << "CALMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n";
++                        this->getMR()->dumpStr() << "\n" << this->getCallSite()->getSourceLoc() << '\n';
+     }
+ };
+ 
+@@ -567,7 +567,7 @@ public:
+     {
+         SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
+                         " = CALCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n";
++                        this->getMR()->dumpStr() << "\n" << this->getCallSite()->getSourceLoc() << '\n';
+     }
+ };
+ 
+diff --git a/SVF/svf/lib/FastCluster/fastcluster_dm.cpp.inc b/SVF/svf/lib/FastCluster/fastcluster_dm.cpp.inc
+index 31a142bb2..f5e83ed62 100644
+--- a/SVF/svf/lib/FastCluster/fastcluster_dm.cpp.inc
++++ b/SVF/svf/lib/FastCluster/fastcluster_dm.cpp.inc
+@@ -88,7 +88,7 @@ typedef __int32 int_fast32_t;
+ typedef __int64 int64_t;
+ #endif
+ #else
+-#define __STDC_LIMIT_MACROS
++// #define __STDC_LIMIT_MACROS
+ #include <stdint.h>
+ #endif
+ #endif
+diff --git a/SVF/svf/lib/MSSA/MemSSA.cpp b/SVF/svf/lib/MSSA/MemSSA.cpp
+index 849b335ef..90f651350 100644
+--- a/SVF/svf/lib/MSSA/MemSSA.cpp
++++ b/SVF/svf/lib/MSSA/MemSSA.cpp
+@@ -581,30 +581,45 @@ const char* InitSections[] = {
+     ".exitcall.exit" // denoted by __exit_call
+ };
+ 
+-bool isInitFunc(const Function* F)
++const Function* getLLVMFunction(const LLVMModuleSet* llvmModuleSet,const SVFFunction* SF)
++{
++    auto llvmValue = llvmModuleSet->getLLVMValue(SF);
++    auto llvmFunction = llvm::dyn_cast<llvm::Function>(llvmValue);
++    return llvmFunction;
++}
++
++bool isInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F)
+ {
+     if (F == nullptr || !F->hasSection())
+         return false;
++    auto callGraphNode = llvmModuleSet->getCallGraphNode(F);
++    auto inEdges = callGraphNode->getInEdges();
+     return std::any_of(InitSections,
+         InitSections + sizeof(InitSections) / sizeof(char*),
+-        [F](const char* s){return s == F->getSection();});
++        [F](const char* s){return s == F->getSection();}) || inEdges.size() == 0;
+ }
+ 
+ /*
+- * detect if the Function F is called by InitFunc and only called once in the module.
++ * detect if the Function F is called by InitFunc.
+  */
+-bool isCalledByInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F, OutStream& Out)
++bool isCalledByInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F)
+ {
+     if (F == nullptr) return false;
+     auto callGraphNode = llvmModuleSet->getCallGraphNode(F);
+     auto inEdges = callGraphNode->getInEdges();
+-    Out << "Function: " << F->getName().str() << "is called " << inEdges.size() << " times\n";
+-    for (const auto edge : inEdges)
+-    {
+-        if (F->getName() != edge->getDstNode()->getName()) Out << "Parameter does not equal to DstNode!\n";
+-        Out << "Function: " << edge->getSrcNode()->getName() << " calls " << F->getName().str() << "\n";
+-    }
+-    return true;
++    return std::all_of(inEdges.begin(), inEdges.end(), [llvmModuleSet](const CallGraphEdge* edge) {
++        auto caller = edge->getSrcNode();
++        if (caller == nullptr) return true;
++        auto F = getLLVMFunction(llvmModuleSet, caller->getFunction());
++        if (F == nullptr) return true;
++        if (isInitFunc(llvmModuleSet, F)) return true;
++        return false;
++    });
++}
++
++bool isAncestor(const LLVMModuleSet* llvmModuleSet, const Function* F)
++{
++    return isInitFunc(llvmModuleSet,F) || isCalledByInitFunc(llvmModuleSet, F);
+ }
+ 
+ /*!
+@@ -618,9 +633,8 @@ void MemSSA::dumpMSSA(OutStream& Out)
+     {
+         const SVFFunction* fun = item.second->getFunction();
+         auto llvmModuleSet = LLVMModuleSet::getLLVMModuleSet();
+-        auto llvmValue = llvmModuleSet->getLLVMValue(fun);
+-        auto llvmFunction = llvm::dyn_cast<llvm::Function>(llvmValue);
+-        if (isCalledByInitFunc(llvmModuleSet, llvmFunction, Out))
++        auto llvmFunction = getLLVMFunction(llvmModuleSet, fun);
++        if (isAncestor(llvmModuleSet, llvmFunction))
+             continue;
+         if(Options::MSSAFun()!="" && Options::MSSAFun()!=fun->getName())
+             continue;
+-- 
+2.39.5 (Apple Git-154)
+

@@ -1,0 +1,31 @@
+From c239a0dd5498325408858ded8528ec18f303ac7e Mon Sep 17 00:00:00 2001
+From: TurtleRuss <tttturtleruss@gmail.com>
+Date: Tue, 12 Nov 2024 15:44:27 +0800
+Subject: [PATCH 01/10] enable output for instructions without debug info
+
+
+diff --git a/SVF/svf/lib/MSSA/MemSSA.cpp b/SVF/svf/lib/MSSA/MemSSA.cpp
+index 3f2581ae8..f29fd17ca 100644
+--- a/SVF/svf/lib/MSSA/MemSSA.cpp
++++ b/SVF/svf/lib/MSSA/MemSSA.cpp
+@@ -647,7 +647,7 @@ void MemSSA::dumpMSSA(OutStream& Out)
+ 
+                     SVFStmtList& pagEdgeList = mrGen->getPAGEdgesFromInst(inst);
+                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
+-                            bit!=ebit && has_debug_info; ++bit)
++                            bit!=ebit; ++bit)
+                     {
+                         const PAGEdge* edge = *bit;
+                         if (const LoadStmt* load = SVFUtil::dyn_cast<LoadStmt>(edge))
+@@ -670,7 +670,7 @@ void MemSSA::dumpMSSA(OutStream& Out)
+ 
+                     bool has_chi = false;
+                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
+-                            bit!=ebit && has_debug_info; ++bit)
++                            bit!=ebit; ++bit)
+                     {
+                         const PAGEdge* edge = *bit;
+                         if (const StoreStmt* store = SVFUtil::dyn_cast<StoreStmt>(edge))
+-- 
+2.39.5 (Apple Git-154)
+

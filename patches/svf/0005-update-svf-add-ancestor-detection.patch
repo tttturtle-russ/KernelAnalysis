@@ -1,0 +1,2900 @@
+From 7827dcad1f41549232cd720d5d09b9cb604512af Mon Sep 17 00:00:00 2001
+From: TurtleRuss <tttturtleruss@gmail.com>
+Date: Mon, 2 Dec 2024 21:02:16 +0800
+Subject: [PATCH 05/10] update: svf, add ancestor detection
+
+
+diff --git a/SVF/build.sh b/SVF/build.sh
+index 5233c2733..a988f9c79 100755
+--- a/SVF/build.sh
++++ b/SVF/build.sh
+@@ -6,12 +6,12 @@
+ # Dependencies include: build-essential libncurses5 libncurses-dev cmake zlib1g-dev
+ set -e # exit on first error
+ 
+-jobs=8
++jobs=$(nproc)
+ 
+ #########
+ # VARs and Links
+ ########
+-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
++SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+ SVFHOME="${SCRIPT_DIR}"
+ sysOS=$(uname -s)
+ arch=$(uname -m)
+@@ -29,113 +29,112 @@ SourceZ3="https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.8.8.zip"
+ LLVMHome="llvm-${MajorLLVMVer}.0.0.obj"
+ Z3Home="z3.obj"
+ 
+-
+ # Downloads $1 (URL) to $2 (target destination) using wget or curl,
+ # depending on OS.
+ # E.g. generic_download_file www.url.com/my.zip loc/my.zip
+ function generic_download_file {
+-    if [[ $# -ne 2 ]]; then
+-        echo "$0: bad args to generic_download_file!"
+-        exit 1
+-    fi
++	if [[ $# -ne 2 ]]; then
++		echo "$0: bad args to generic_download_file!"
++		exit 1
++	fi
+ 
+-    if [[ -f "$2" ]]; then
+-        echo "File $2 exists, skip download..."
+-        return
+-    fi
++	if [[ -f "$2" ]]; then
++		echo "File $2 exists, skip download..."
++		return
++	fi
+ 
+-    local download_failed=false
+-    if type curl &> /dev/null; then
+-        if ! curl -L "$1" -o "$2"; then
+-            download_failed=true
+-        fi
+-    elif type wget &> /dev/null; then
+-        if ! wget -c "$1" -O "$2"; then
+-            download_failed=true
+-        fi
+-    else
+-        echo "Cannot find download tool. Please install curl or wget."
+-        exit 1
+-    fi
++	local download_failed=false
++	if type curl &>/dev/null; then
++		if ! curl -L "$1" -o "$2"; then
++			download_failed=true
++		fi
++	elif type wget &>/dev/null; then
++		if ! wget -c "$1" -O "$2"; then
++			download_failed=true
++		fi
++	else
++		echo "Cannot find download tool. Please install curl or wget."
++		exit 1
++	fi
+ 
+-    if $download_failed; then
+-        echo "Failed to download $1"
+-        rm -f "$2"
+-        exit 1
+-    fi
++	if $download_failed; then
++		echo "Failed to download $1"
++		rm -f "$2"
++		exit 1
++	fi
+ }
+ 
+ # check if unzip is missing (Z3)
+ function check_unzip {
+-    if ! type unzip &> /dev/null; then
+-        echo "Cannot find unzip. Please install unzip."
+-        exit 1
+-    fi
++	if ! type unzip &>/dev/null; then
++		echo "Cannot find unzip. Please install unzip."
++		exit 1
++	fi
+ }
+ 
+ # check if xz is missing (LLVM)
+ function check_xz {
+-    if ! type xz &> /dev/null; then
+-        echo "Cannot find xz. Please install xz-utils."
+-        exit 1
+-    fi
++	if ! type xz &>/dev/null; then
++		echo "Cannot find xz. Please install xz-utils."
++		exit 1
++	fi
+ }
+ 
+ function build_z3_from_source {
+-    mkdir "$Z3Home"
+-    echo "Downloading Z3 source..."
+-    generic_download_file "$SourceZ3" z3.zip
+-    check_unzip
+-    echo "Unzipping Z3 source..."
+-    mkdir z3-source
+-    unzip z3.zip -d z3-source
++	mkdir "$Z3Home"
++	echo "Downloading Z3 source..."
++	generic_download_file "$SourceZ3" z3.zip
++	check_unzip
++	echo "Unzipping Z3 source..."
++	mkdir z3-source
++	unzip z3.zip -d z3-source
+ 
+-    echo "Building Z3..."
+-    mkdir z3-build
+-    cd z3-build
+-    # /* is a dirty hack to get z3-version...
+-    cmake -DCMAKE_INSTALL_PREFIX="$SVFHOME/$Z3Home" -DZ3_BUILD_LIBZ3_SHARED=false ../z3-source/*
+-    cmake --build . -j ${jobs}
+-    cmake --install .
++	echo "Building Z3..."
++	mkdir z3-build
++	cd z3-build
++	# /* is a dirty hack to get z3-version...
++	cmake -DCMAKE_INSTALL_PREFIX="$SVFHOME/$Z3Home" -DZ3_BUILD_LIBZ3_SHARED=false ../z3-source/*
++	cmake --build . -j ${jobs}
++	cmake --install .
+ 
+-    cd ..
+-    rm -r z3-source z3-build z3.zip
++	cd ..
++	rm -r z3-source z3-build z3.zip
+ }
+ 
+ function build_llvm_from_source {
+-    mkdir "$LLVMHome"
+-    echo "Downloading LLVM source..."
+-    generic_download_file "$SourceLLVM" llvm.zip
+-    check_unzip
+-    echo "Unzipping LLVM source..."
+-    mkdir llvm-source
+-    unzip llvm.zip -d llvm-source
++	mkdir "$LLVMHome"
++	echo "Downloading LLVM source..."
++	generic_download_file "$SourceLLVM" llvm.zip
++	check_unzip
++	echo "Unzipping LLVM source..."
++	mkdir llvm-source
++	unzip llvm.zip -d llvm-source
+ 
+-    echo "Building LLVM..."
+-    mkdir llvm-build
+-    cd llvm-build
+-    # /*/ is a dirty hack to get llvm-project-llvmorg-version...
+-    cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$SVFHOME/$LLVMHome" -DLLVM_ENABLE_PROJECTS=clang ../llvm-source/*/llvm
+-    cmake --build . -j ${jobs}
+-    cmake --install .
++	echo "Building LLVM..."
++	mkdir llvm-build
++	cd llvm-build
++	# /*/ is a dirty hack to get llvm-project-llvmorg-version...
++	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$SVFHOME/$LLVMHome" -DLLVM_ENABLE_PROJECTS=clang ../llvm-source/*/llvm
++	cmake --build . -j ${jobs}
++	cmake --install .
+ 
+-    cd ..
+-    rm -r llvm-source llvm-build llvm.zip
++	cd ..
++	rm -r llvm-source llvm-build llvm.zip
+ }
+ 
+ function check_and_install_brew {
+-    if command -v brew >/dev/null 2>&1; then
+-        echo "Homebrew is already installed."
+-    else
+-        echo "Homebrew not found. Installing Homebrew..."
+-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+-        if [ $? -eq 0 ]; then
+-            echo "Homebrew installation completed."
+-        else
+-            echo "Homebrew installation failed."
+-            exit 1
+-        fi
+-    fi
++	if command -v brew >/dev/null 2>&1; then
++		echo "Homebrew is already installed."
++	else
++		echo "Homebrew not found. Installing Homebrew..."
++		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
++		if [ $? -eq 0 ]; then
++			echo "Homebrew installation completed."
++		else
++			echo "Homebrew installation failed."
++			exit 1
++		fi
++	fi
+ }
+ 
+ # OS-specific values.
+@@ -148,86 +147,85 @@ OSDisplayName=""
+ # M1 Macs give back arm64, some Linuxes can give aarch64 for arm architecture
+ #######
+ if [[ $sysOS == "Darwin" ]]; then
+-    check_and_install_brew
+-    if [[ "$arch" == "arm64" ]]; then
+-        OSDisplayName="macOS arm64"
+-    else
+-        OSDisplayName="macOS x86"
+-    fi
++	check_and_install_brew
++	if [[ "$arch" == "arm64" ]]; then
++		OSDisplayName="macOS arm64"
++	else
++		OSDisplayName="macOS x86"
++	fi
+ elif [[ $sysOS == "Linux" ]]; then
+-    if [[ "$arch" == "aarch64" ]]; then
+-        urlLLVM="$UbuntuArmLLVM"
+-        urlZ3="$UbuntuZ3Arm"
+-        OSDisplayName="Ubuntu arm64"
+-    else
+-        urlLLVM="$UbuntuLLVM"
+-        urlZ3="$UbuntuZ3"
+-        OSDisplayName="Ubuntu x86"
+-    fi
++	if [[ "$arch" == "aarch64" ]]; then
++		urlLLVM="$UbuntuArmLLVM"
++		urlZ3="$UbuntuZ3Arm"
++		OSDisplayName="Ubuntu arm64"
++	else
++		urlLLVM="$UbuntuLLVM"
++		urlZ3="$UbuntuZ3"
++		OSDisplayName="Ubuntu x86"
++	fi
+ else
+-    echo "Builds outside Ubuntu and macOS are not supported."
++	echo "Builds outside Ubuntu and macOS are not supported."
+ fi
+ 
+ ########
+ # Download LLVM if need be.
+ #######
+ if [[ ! -d "$LLVM_DIR" ]]; then
+-    if [[ ! -d "$LLVMHome" ]]; then
+-        if [[ "$sysOS" = "Darwin" ]]; then
+-            echo "Installing LLVM binary for $OSDisplayName"
+-            brew install llvm@${MajorLLVMVer}
+-            # check whether llvm is installed
+-            if [ $? -eq 0 ]; then
+-                echo "LLVM binary installation completed."
+-            else
+-                echo "LLVM binary installation failed."
+-                exit 1
+-            fi
+-            mkdir -p $SVFHOME/$LLVMHome
+-            ln -s $(brew --prefix llvm@${MajorLLVMVer})/* $SVFHOME/$LLVMHome
+-        else
+-            # everything else downloads pre-built lib includ osx "arm64"
+-            echo "Downloading LLVM binary for $OSDisplayName"
+-            generic_download_file "$urlLLVM" llvm.tar.xz
+-            check_xz
+-            echo "Unzipping llvm package..."
+-            mkdir -p "./$LLVMHome" && tar -xf llvm.tar.xz -C "./$LLVMHome" --strip-components 1
+-            rm llvm.tar.xz
+-        fi
+-    fi
+-    export LLVM_DIR="$SVFHOME/$LLVMHome"
++	if [[ ! -d "$LLVMHome" ]]; then
++		if [[ "$sysOS" = "Darwin" ]]; then
++			echo "Installing LLVM binary for $OSDisplayName"
++			brew install llvm@${MajorLLVMVer}
++			# check whether llvm is installed
++			if [ $? -eq 0 ]; then
++				echo "LLVM binary installation completed."
++			else
++				echo "LLVM binary installation failed."
++				exit 1
++			fi
++			mkdir -p $SVFHOME/$LLVMHome
++			ln -s $(brew --prefix llvm@${MajorLLVMVer})/* $SVFHOME/$LLVMHome
++		else
++			# everything else downloads pre-built lib includ osx "arm64"
++			echo "Downloading LLVM binary for $OSDisplayName"
++			generic_download_file "$urlLLVM" llvm.tar.xz
++			check_xz
++			echo "Unzipping llvm package..."
++			mkdir -p "./$LLVMHome" && tar -xf llvm.tar.xz -C "./$LLVMHome" --strip-components 1
++			rm llvm.tar.xz
++		fi
++	fi
++	export LLVM_DIR="$SVFHOME/$LLVMHome"
+ fi
+ 
+-
+ ########
+ # Download Z3 if need be.
+ #######
+ if [[ ! -d "$Z3_DIR" ]]; then
+-    if [[ ! -d "$Z3Home" ]]; then
+-        # M1 Macs give back arm64, some Linuxes can give aarch64.
+-        if [[ "$sysOS" = "Darwin" ]]; then
+-            echo "Downloading Z3 binary for $OSDisplayName"
+-            brew install z3
+-            if [ $? -eq 0 ]; then
+-		      echo "z3 binary installation completed."
+-	        else
+-		      echo "z3 binary installation failed."
+-		      exit 1
+-	        fi
+-            mkdir -p $SVFHOME/$Z3Home
+-            ln -s $(brew --prefix z3)/* $SVFHOME/$Z3Home
+-        else
+-            # everything else downloads pre-built lib
+-            echo "Downloading Z3 binary for $OSDisplayName"
+-            generic_download_file "$urlZ3" z3.zip
+-            check_unzip
+-            echo "Unzipping z3 package..."
+-            unzip -q "z3.zip" && mv ./z3-* ./$Z3Home
+-            rm z3.zip
+-        fi
+-    fi
++	if [[ ! -d "$Z3Home" ]]; then
++		# M1 Macs give back arm64, some Linuxes can give aarch64.
++		if [[ "$sysOS" = "Darwin" ]]; then
++			echo "Downloading Z3 binary for $OSDisplayName"
++			brew install z3
++			if [ $? -eq 0 ]; then
++				echo "z3 binary installation completed."
++			else
++				echo "z3 binary installation failed."
++				exit 1
++			fi
++			mkdir -p $SVFHOME/$Z3Home
++			ln -s $(brew --prefix z3)/* $SVFHOME/$Z3Home
++		else
++			# everything else downloads pre-built lib
++			echo "Downloading Z3 binary for $OSDisplayName"
++			generic_download_file "$urlZ3" z3.zip
++			check_unzip
++			echo "Unzipping z3 package..."
++			unzip -q "z3.zip" && mv ./z3-* ./$Z3Home
++			rm z3.zip
++		fi
++	fi
+ 
+-    export Z3_DIR="$SVFHOME/$Z3Home"
++	export Z3_DIR="$SVFHOME/$Z3Home"
+ fi
+ 
+ # Add LLVM & Z3 to $PATH and $LD_LIBRARY_PATH (prepend so that selected instances will be used first)
+@@ -241,9 +239,9 @@ echo "Z3_DIR=$Z3_DIR"
+ # Build SVF
+ ########
+ if [[ $1 =~ ^[Dd]ebug$ ]]; then
+-    BUILD_TYPE='Debug'
++	BUILD_TYPE='Debug'
+ else
+-    BUILD_TYPE='Release'
++	BUILD_TYPE='Release'
+ fi
+ BUILD_DIR="./${BUILD_TYPE}-build"
+ 
+@@ -251,10 +249,10 @@ rm -rf "${BUILD_DIR}"
+ mkdir "${BUILD_DIR}"
+ # If you need shared libs, turn BUILD_SHARED_LIBS on
+ cmake -D CMAKE_BUILD_TYPE:STRING="${BUILD_TYPE}" \
+-    -DSVF_ENABLE_ASSERTIONS:BOOL=true            \
+-    -DSVF_SANITIZE="${SVF_SANITIZER}"            \
+-    -DBUILD_SHARED_LIBS=off                      \
+-    -S "${SVFHOME}" -B "${BUILD_DIR}"
++	-DSVF_ENABLE_ASSERTIONS:BOOL=true \
++	-DSVF_SANITIZE="${SVF_SANITIZER}" \
++	-DBUILD_SHARED_LIBS=off \
++	-S "${SVFHOME}" -B "${BUILD_DIR}"
+ cmake --build "${BUILD_DIR}" -j ${jobs}
+ 
+ ########
+diff --git a/SVF/svf-llvm/include/SVF-LLVM/LLVMModule.h b/SVF/svf-llvm/include/SVF-LLVM/LLVMModule.h
+index 7b5a81e38..1ef1184fb 100644
+--- a/SVF/svf-llvm/include/SVF-LLVM/LLVMModule.h
++++ b/SVF/svf-llvm/include/SVF-LLVM/LLVMModule.h
+@@ -54,6 +54,7 @@ public:
+     typedef Map<const GlobalVariable*, GlobalVariable*> GlobalDefToRepMapTy;
+ 
+     typedef Map<const Function*, SVFFunction*> LLVMFun2SVFFunMap;
++    typedef Map<const Function*, CallGraphNode*> LLVMFun2CallGraphNodeMap;
+     typedef Map<const BasicBlock*, SVFBasicBlock*> LLVMBB2SVFBBMap;
+     typedef Map<const Instruction*, SVFInstruction*> LLVMInst2SVFInstMap;
+     typedef Map<const Argument*, SVFArgument*> LLVMArgument2SVFArgumentMap;
+@@ -89,6 +90,7 @@ private:
+     GlobalDefToRepMapTy GlobalDefToRepMap;
+ 
+     LLVMFun2SVFFunMap LLVMFunc2SVFFunc; ///< Map an LLVM Function to an SVF Function
++    LLVMFun2CallGraphNodeMap LLVMFunc2CallGraphNode; ///< Map an LLVM Function to an CallGraph Node
+     LLVMBB2SVFBBMap LLVMBB2SVFBB;
+     LLVMInst2SVFInstMap LLVMInst2SVFInst;
+     LLVMArgument2SVFArgumentMap LLVMArgument2SVFArgument;
+@@ -170,6 +172,8 @@ public:
+         LLVMFunc2SVFFunc[func] = svfFunc;
+         setValueAttr(func,svfFunc);
+     }
++    void addFunctionMap(const Function* func, CallGraphNode* svfFunc);
++
+     inline void addBasicBlockMap(const BasicBlock* bb, SVFBasicBlock* svfBB)
+     {
+         LLVMBB2SVFBB[bb] = svfBB;
+@@ -234,6 +238,13 @@ public:
+         return it->second;
+     }
+ 
++    inline CallGraphNode* getCallGraphNode(const Function* fun) const
++    {
++        LLVMFun2CallGraphNodeMap::const_iterator it = LLVMFunc2CallGraphNode.find(fun);
++        assert(it!=LLVMFunc2CallGraphNode.end() && "CallGraph Node not found!");
++        return it->second;
++    }
++
+     inline SVFBasicBlock* getSVFBasicBlock(const BasicBlock* bb) const
+     {
+         LLVMBB2SVFBBMap::const_iterator it = LLVMBB2SVFBB.find(bb);
+diff --git a/SVF/svf-llvm/lib/LLVMModule.cpp b/SVF/svf-llvm/lib/LLVMModule.cpp
+index 5ecc89316..0bab01b66 100644
+--- a/SVF/svf-llvm/lib/LLVMModule.cpp
++++ b/SVF/svf-llvm/lib/LLVMModule.cpp
+@@ -41,7 +41,7 @@
+ #include "SVF-LLVM/ObjTypeInference.h"
+ #include "llvm/Transforms/Utils/Cloning.h"
+ #include "SVF-LLVM/ICFGBuilder.h"
+-#include "Graphs/PTACallGraph.h"
++#include "Graphs/CallGraph.h"
+ #include "Util/CallGraphBuilder.h"
+ 
+ using namespace std;
+@@ -174,6 +174,13 @@ void LLVMModuleSet::build()
+ 
+     CallGraphBuilder callGraphBuilder;
+     callgraph = callGraphBuilder.buildSVFIRCallGraph(svfModule);
++
++    for (const auto& it : *callgraph)
++    {
++        addFunctionMap(
++            SVFUtil::cast<Function>(getLLVMValue(it.second->getFunction())),
++            it.second);
++    }
+ }
+ 
+ void LLVMModuleSet::createSVFDataStructure()
+@@ -1210,6 +1217,12 @@ void LLVMModuleSet::dumpModulesToFile(const std::string& suffix)
+     }
+ }
+ 
++void LLVMModuleSet::addFunctionMap(const SVF::Function* func, SVF::CallGraphNode* svfFunc)
++{
++    LLVMFunc2CallGraphNode[func] = svfFunc;
++    setValueAttr(func,svfFunc);
++}
++
+ void LLVMModuleSet::setValueAttr(const Value* val, SVFValue* svfvalue)
+ {
+     SVFValue2LLVMValue[svfvalue] = val;
+diff --git a/SVF/svf-llvm/lib/SVFIRBuilder.cpp b/SVF/svf-llvm/lib/SVFIRBuilder.cpp
+index 2db52cf1b..a4eafb5f9 100644
+--- a/SVF/svf-llvm/lib/SVFIRBuilder.cpp
++++ b/SVF/svf-llvm/lib/SVFIRBuilder.cpp
+@@ -39,6 +39,7 @@
+ #include "SVFIR/SVFModule.h"
+ #include "SVFIR/SVFValue.h"
+ #include "Util/CallGraphBuilder.h"
++#include "Graphs/CallGraph.h"
+ #include "Util/Options.h"
+ #include "Util/SVFUtil.h"
+ 
+@@ -78,6 +79,11 @@ SVFIR* SVFIRBuilder::build()
+             if(llvmModuleSet()->hasICFGNode(inst))
+                 it.second->gNode = llvmModuleSet()->getICFGNode(inst);
+         }
++        else if (const Function* func = SVFUtil::dyn_cast<Function>(llvmModuleSet()->getLLVMValue(
++                                            it.second->getValue())))
++        {
++            it.second->gNode = llvmModuleSet()->getCallGraphNode(func);
++        }
+     }
+ 
+     CHGraph* chg = new CHGraph(pag->getModule());
+@@ -216,16 +222,26 @@ void SVFIRBuilder::initialiseNodes()
+         if(iter->second == symTable->blkPtrSymID() || iter->second == symTable->nullPtrSymID())
+             continue;
+ 
+-        const SVFBaseNode* gNode = nullptr;
++        const ICFGNode* icfgNode = nullptr;
+         if (const Instruction* inst =
+                     SVFUtil::dyn_cast<Instruction>(llvmModuleSet()->getLLVMValue(iter->first)))
+         {
+             if (llvmModuleSet()->hasICFGNode(inst))
+             {
+-                gNode = llvmModuleSet()->getICFGNode(inst);
++                icfgNode = llvmModuleSet()->getICFGNode(inst);
+             }
+         }
+-        pag->addValNode(iter->first, iter->second, gNode);
++
++        if (const Function* func =
++                    SVFUtil::dyn_cast<Function>(llvmModuleSet()->getLLVMValue(iter->first)))
++        {
++            const CallGraphNode* cgn = llvmModuleSet()->getCallGraphNode(func);
++            pag->addFunValNode(cgn, iter->second, icfgNode);
++        }
++        else
++        {
++            pag->addValNode(iter->first, iter->second, icfgNode);
++        }
+     }
+ 
+     for (SymbolTableInfo::ValueToIDMapTy::iterator iter =
+@@ -235,7 +251,15 @@ void SVFIRBuilder::initialiseNodes()
+         DBOUT(DPAGBuild, outs() << "add obj node " << iter->second << "\n");
+         if(iter->second == symTable->blackholeSymID() || iter->second == symTable->constantSymID())
+             continue;
+-        pag->addObjNode(iter->first, iter->second);
++        if (const Function* func = SVFUtil::dyn_cast<Function>(
++                                       llvmModuleSet()->getLLVMValue(iter->first)))
++        {
++            pag->addFunObjNode(llvmModuleSet()->getCallGraphNode(func), iter->second);
++        }
++        else
++        {
++            pag->addObjNode(iter->first, iter->second);
++        }
+     }
+ 
+     for (SymbolTableInfo::FunToIDMapTy::iterator iter =
+@@ -243,7 +267,10 @@ void SVFIRBuilder::initialiseNodes()
+             ++iter)
+     {
+         DBOUT(DPAGBuild, outs() << "add ret node " << iter->second << "\n");
+-        pag->addRetNode(iter->first, iter->second);
++        pag->addRetNode(
++            llvmModuleSet()->getCallGraphNode(SVFUtil::cast<Function>(
++                    llvmModuleSet()->getLLVMValue(iter->first))),
++            iter->second);
+     }
+ 
+     for (SymbolTableInfo::FunToIDMapTy::iterator iter =
+@@ -251,7 +278,10 @@ void SVFIRBuilder::initialiseNodes()
+             iter != symTable->varargSyms().end(); ++iter)
+     {
+         DBOUT(DPAGBuild, outs() << "add vararg node " << iter->second << "\n");
+-        pag->addVarargNode(iter->first, iter->second);
++        pag->addVarargNode(
++            llvmModuleSet()->getCallGraphNode(SVFUtil::cast<Function>(
++                    llvmModuleSet()->getLLVMValue(iter->first))),
++            iter->second);
+     }
+ 
+     /// add address edges for constant nodes.
+@@ -867,7 +897,9 @@ void SVFIRBuilder::visitCallSite(CallBase* cs)
+ 
+     /// Collect callsite arguments and returns
+     for (u32_t i = 0; i < cs->arg_size(); i++)
+-        pag->addCallSiteArgs(callBlockNode,pag->getGNode(getValueNode(cs->getArgOperand(i))));
++        pag->addCallSiteArgs(
++            callBlockNode,
++            SVFUtil::cast<ValVar>(pag->getGNode(getValueNode(cs->getArgOperand(i)))));
+ 
+     if(!cs->getType()->isVoidTy())
+         pag->addCallSiteRets(retBlockNode,pag->getGNode(getValueNode(cs)));
+@@ -1319,7 +1351,7 @@ void SVFIRBuilder::setCurrentBBAndValueForPAGEdge(PAGEdge* edge)
+         {
+             assert(srcFun==curInst->getFunction() && "SrcNode of the PAGEdge not in the same function?");
+         }
+-        if(dstFun!=nullptr && !SVFUtil::isa<CallPE>(edge) && !SVFUtil::isa<SVFFunction>(edge->getDstNode()->getValue()))
++        if(dstFun!=nullptr && !SVFUtil::isa<CallPE>(edge) && !SVFUtil::isa<RetPN>(edge->getDstNode()))
+         {
+             assert(dstFun==curInst->getFunction() && "DstNode of the PAGEdge not in the same function?");
+         }
+diff --git a/SVF/svf-llvm/lib/SVFIRExtAPI.cpp b/SVF/svf-llvm/lib/SVFIRExtAPI.cpp
+index 01930d41b..d9db98eec 100644
+--- a/SVF/svf-llvm/lib/SVFIRExtAPI.cpp
++++ b/SVF/svf-llvm/lib/SVFIRExtAPI.cpp
+@@ -31,6 +31,7 @@
+ #include "Util/SVFUtil.h"
+ #include "SVF-LLVM/SymbolTableBuilder.h"
+ #include "SVF-LLVM/ObjTypeInference.h"
++#include "Graphs/CallGraph.h"
+ 
+ using namespace std;
+ using namespace SVF;
+@@ -256,9 +257,11 @@ void SVFIRBuilder::handleExtCall(const CallBase* cs, const SVFFunction* svfCalle
+ 
+     if (isThreadForkCall(callICFGNode))
+     {
+-        if (const SVFFunction* forkedFun = SVFUtil::dyn_cast<SVFFunction>(getForkedFun(callICFGNode)->getValue()))
++        const ValVar* valVar = getForkedFun(callICFGNode);
++        if (const FunValVar* funcValVar = SVFUtil::dyn_cast<FunValVar>(valVar))
+         {
+-            forkedFun = forkedFun->getDefFunForMultipleModule();
++            const SVFFunction* forkedFun = funcValVar->getCallGraphNode()->getFunction()
++                                           ->getDefFunForMultipleModule();
+             const SVFVar* actualParm = getActualParmAtForkSite(callICFGNode);
+             /// pthread_create has 1 arg.
+             /// apr_thread_create has 2 arg.
+diff --git a/SVF/svf/CMakeLists.txt b/SVF/svf/CMakeLists.txt
+index e624c2869..9d8ca0e37 100644
+--- a/SVF/svf/CMakeLists.txt
++++ b/SVF/svf/CMakeLists.txt
+@@ -1,5 +1,6 @@
+ # Define the core library
+ add_library(SvfCore)
++find_package(LLVM REQUIRED CONFIG HINTS ${LLVM_DIR} $ENV{LLVM_DIR})
+ 
+ # Add the public headers as an include directory
+ target_include_directories(SvfCore
+@@ -14,6 +15,11 @@ set_target_properties(SvfCore PROPERTIES
+     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
+ )
+ 
++include_directories(SYSTEM ${LLVM_INCLUDE_DIRS})
++link_directories(${LLVM_LIBRARY_DIRS})
++add_definitions(${LLVM_DEFINITIONS})
++target_link_libraries(SvfCore PUBLIC SvfLLVM)
++
+ # Get the source files (i.e. all *.c/*.cpp files) for SVF's subprojects and add them to SvfCore
+ file(GLOB_RECURSE SVF_CORE_SOURCES lib/*.cpp)
+ target_sources(SvfCore PRIVATE ${SVF_CORE_SOURCES})
+diff --git a/SVF/svf/include/Graphs/GenericGraph.h b/SVF/svf/include/Graphs/GenericGraph.h
+index fafd1746e..87fb354b3 100644
+--- a/SVF/svf/include/Graphs/GenericGraph.h
++++ b/SVF/svf/include/Graphs/GenericGraph.h
+@@ -161,6 +161,8 @@ public:
+         // │   ┌── ValVarKinds: Types of value variable nodes
+         // │   │   ├── Represents a standard value variable
+         ValNode,
++        // │   │   ├── Represents a Function value variable
++        FunValNode,
+         // │   │   ├── Represents a GEP value variable
+         GepValNode,
+         // │   │   ├── Represents a return value node
+@@ -174,8 +176,10 @@ public:
+         ObjNode,
+         // │       ├── GepObjNode: Represents a GEP object variable
+         GepObjNode,
+-        // │       ├── FIObjNode: Represents a flow-insensitive object node
++        // │       └── FIObjNode: Represents a flow-insensitive object node
+         FIObjNode,
++        // │            ├──FunObjNode: Types of function object
++        FunObjNode,
+         // │       └── DummyObjNode: Dummy node for uninitialized objects
+         DummyObjNode,
+         // └────────
+@@ -313,7 +317,7 @@ protected:
+ 
+     static inline bool isSVFVarKind(GNodeK n)
+     {
+-        static_assert(DummyObjNode - ValNode == 8,
++        static_assert(DummyObjNode - ValNode == 10,
+                       "The number of SVFVarKinds has changed, make sure the "
+                       "range is correct");
+ 
+@@ -322,7 +326,7 @@ protected:
+ 
+     static inline bool isValVarKinds(GNodeK n)
+     {
+-        static_assert(DummyValNode - ValNode == 4,
++        static_assert(DummyValNode - ValNode == 5,
+                       "The number of ValVarKinds has changed, make sure the "
+                       "range is correct");
+         return n <= DummyValNode && n >= ValNode;
+@@ -330,12 +334,20 @@ protected:
+ 
+     static inline bool isObjVarKinds(GNodeK n)
+     {
+-        static_assert(DummyObjNode - ObjNode == 3,
++        static_assert(DummyObjNode - ObjNode == 4,
+                       "The number of ObjVarKinds has changed, make sure the "
+                       "range is correct");
+         return n <= DummyObjNode && n >= ObjNode;
+     }
+ 
++    static inline bool isFIObjVarKinds(GNodeK n)
++    {
++        static_assert(FunObjNode - FIObjNode == 1,
++                      "The number of FIObjVarKinds has changed, make sure the "
++                      "range is correct");
++        return n <= FunObjNode && n >= FIObjNode;
++    }
++
+     static inline bool isVFGNodeKinds(GNodeK n)
+     {
+         static_assert(MInterPhi - Cmp == 24,
+diff --git a/SVF/svf/include/Graphs/ICFGNode.h b/SVF/svf/include/Graphs/ICFGNode.h
+index e279a7802..f211dc278 100644
+--- a/SVF/svf/include/Graphs/ICFGNode.h
++++ b/SVF/svf/include/Graphs/ICFGNode.h
+@@ -30,9 +30,9 @@
+ #ifndef ICFGNODE_H_
+ #define ICFGNODE_H_
+ 
+-#include "Util/SVFUtil.h"
+ #include "Graphs/GenericGraph.h"
+ #include "Graphs/ICFGEdge.h"
++#include "Util/SVFUtil.h"
+ 
+ namespace SVF
+ {
+@@ -46,8 +46,9 @@ class SVFVar;
+ class VFGNode;
+ 
+ /*!
+- * Interprocedural control-flow graph node, representing different kinds of program statements
+- * including top-level pointers (ValVar) and address-taken objects (ObjVar)
++ * Interprocedural control-flow graph node, representing different kinds of
++ * program statements including top-level pointers (ValVar) and address-taken
++ * objects (ObjVar)
+  */
+ typedef GenericNode<ICFGNode, ICFGEdge> GenericICFGNodeTy;
+ 
+@@ -57,18 +58,18 @@ class ICFGNode : public GenericICFGNodeTy
+     friend class SVFIRReader;
+ 
+ public:
+-
+     typedef ICFGEdge::ICFGEdgeSetTy::iterator iterator;
+     typedef ICFGEdge::ICFGEdgeSetTy::const_iterator const_iterator;
+-    typedef Set<const CallPE *> CallPESet;
+-    typedef Set<const RetPE *> RetPESet;
++    typedef Set<const CallPE*> CallPESet;
++    typedef Set<const RetPE*> RetPESet;
+     typedef std::list<const VFGNode*> VFGNodeList;
+     typedef std::list<const SVFStmt*> SVFStmtList;
+     typedef GNodeK ICFGNodeK;
+ 
+ public:
+     /// Constructor
+-    ICFGNode(NodeID i, GNodeK k) : GenericICFGNodeTy(i, k), fun(nullptr), bb(nullptr)
++    ICFGNode(NodeID i, GNodeK k)
++        : GenericICFGNodeTy(i, k), fun(nullptr), bb(nullptr)
+     {
+     }
+ 
+@@ -84,10 +85,9 @@ public:
+         return bb;
+     }
+ 
+-
+     /// Overloading operator << for dumping ICFG node ID
+     //@{
+-    friend OutStream &operator<<(OutStream &o, const ICFGNode &node)
++    friend OutStream& operator<<(OutStream& o, const ICFGNode& node)
+     {
+         o << node.toString();
+         return o;
+@@ -96,7 +96,7 @@ public:
+ 
+     /// Set/Get methods of VFGNodes
+     ///@{
+-    inline void addVFGNode(const VFGNode *vfgNode)
++    inline void addVFGNode(const VFGNode* vfgNode)
+     {
+         VFGNodes.push_back(vfgNode);
+     }
+@@ -109,7 +109,7 @@ public:
+ 
+     /// Set/Get methods of VFGNodes
+     ///@{
+-    inline void addSVFStmt(const SVFStmt *edge)
++    inline void addSVFStmt(const SVFStmt* edge)
+     {
+         pagEdges.push_back(edge);
+     }
+@@ -122,12 +122,9 @@ public:
+ 
+     virtual const std::string toString() const;
+ 
+-
+-
+     void dump() const;
+ 
+-
+-    static inline bool classof(const ICFGNode *)
++    static inline bool classof(const ICFGNode*)
+     {
+         return true;
+     }
+@@ -142,14 +139,11 @@ public:
+         return isICFGNodeKinds(node->getNodeKind());
+     }
+ 
+-
+-
+ protected:
+     const SVFFunction* fun;
+     const SVFBasicBlock* bb;
+     VFGNodeList VFGNodes; //< a list of VFGNodes
+     SVFStmtList pagEdges; //< a list of PAGEdges
+-
+ };
+ 
+ /*!
+@@ -159,23 +153,21 @@ class GlobalICFGNode : public ICFGNode
+ {
+ 
+ public:
+-    GlobalICFGNode(NodeID id) : ICFGNode(id, GlobalBlock)
+-    {
+-    }
++    GlobalICFGNode(NodeID id) : ICFGNode(id, GlobalBlock) {}
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const GlobalICFGNode *)
++    static inline bool classof(const GlobalICFGNode*)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const ICFGNode *node)
++    static inline bool classof(const ICFGNode* node)
+     {
+         return node->getNodeKind() == GlobalBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy *node)
++    static inline bool classof(const GenericICFGNodeTy* node)
+     {
+         return node->getNodeKind() == GlobalBlock;
+     }
+@@ -196,14 +188,17 @@ class IntraICFGNode : public ICFGNode
+ {
+     friend class SVFIRWriter;
+     friend class SVFIRReader;
++
+ private:
+     bool isRet;
+ 
+-    /// Constructor to create empty IntraICFGNode (for SVFIRReader/deserialization)
++    /// Constructor to create empty IntraICFGNode (for
++    /// SVFIRReader/deserialization)
+     IntraICFGNode(NodeID id) : ICFGNode(id, IntraBlock), isRet(false) {}
+ 
+ public:
+-    IntraICFGNode(NodeID id, const SVFBasicBlock* b, bool isReturn) : ICFGNode(id, IntraBlock), isRet(isReturn)
++    IntraICFGNode(NodeID id, const SVFBasicBlock* b, bool isReturn)
++        : ICFGNode(id, IntraBlock), isRet(isReturn)
+     {
+         fun = b->getFunction();
+         bb = b;
+@@ -211,17 +206,17 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const IntraICFGNode *)
++    static inline bool classof(const IntraICFGNode*)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const ICFGNode *node)
++    static inline bool classof(const ICFGNode* node)
+     {
+         return node->getNodeKind() == IntraBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy *node)
++    static inline bool classof(const GenericICFGNodeTy* node)
+     {
+         return node->getNodeKind() == IntraBlock;
+     }
+@@ -240,13 +235,11 @@ class InterICFGNode : public ICFGNode
+ 
+ public:
+     /// Constructor
+-    InterICFGNode(NodeID id, ICFGNodeK k) : ICFGNode(id, k)
+-    {
+-    }
++    InterICFGNode(NodeID id, ICFGNodeK k) : ICFGNode(id, k) {}
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const InterICFGNode *)
++    static inline bool classof(const InterICFGNode*)
+     {
+         return true;
+     }
+@@ -269,9 +262,6 @@ public:
+     //@}
+ };
+ 
+-
+-
+-
+ /*!
+  * Function entry ICFGNode containing a set of FormalParmVFGNodes of a function
+  */
+@@ -281,11 +271,13 @@ class FunEntryICFGNode : public InterICFGNode
+     friend class SVFIRReader;
+ 
+ public:
+-    typedef std::vector<const SVFVar *> FormalParmNodeVec;
++    typedef std::vector<const SVFVar*> FormalParmNodeVec;
++
+ private:
+     FormalParmNodeVec FPNodes;
+ 
+-    /// Constructor to create empty FunEntryICFGNode (for SVFIRReader/deserialization)
++    /// Constructor to create empty FunEntryICFGNode (for
++    /// SVFIRReader/deserialization)
+     FunEntryICFGNode(NodeID id) : InterICFGNode(id, FunEntryBlock) {}
+ 
+ public:
+@@ -298,40 +290,40 @@ public:
+     }
+ 
+     /// Return the set of formal parameters
+-    inline const FormalParmNodeVec &getFormalParms() const
++    inline const FormalParmNodeVec& getFormalParms() const
+     {
+         return FPNodes;
+     }
+ 
+     /// Add formal parameters
+-    inline void addFormalParms(const SVFVar *fp)
++    inline void addFormalParms(const SVFVar* fp)
+     {
+         FPNodes.push_back(fp);
+     }
+ 
+-    ///Methods for support type inquiry through isa, cast, and dyn_cast:
++    /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const FunEntryICFGNode *)
++    static inline bool classof(const FunEntryICFGNode*)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const InterICFGNode *node)
++    static inline bool classof(const InterICFGNode* node)
+     {
+         return node->getNodeKind() == FunEntryBlock;
+     }
+ 
+-    static inline bool classof(const ICFGNode *node)
++    static inline bool classof(const ICFGNode* node)
+     {
+         return node->getNodeKind() == FunEntryBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy *node)
++    static inline bool classof(const GenericICFGNodeTy* node)
+     {
+         return node->getNodeKind() == FunEntryBlock;
+     }
+ 
+-    static inline bool classof(const SVFBaseNode*node)
++    static inline bool classof(const SVFBaseNode* node)
+     {
+         return node->getNodeKind() == FunEntryBlock;
+     }
+@@ -346,7 +338,8 @@ public:
+ };
+ 
+ /*!
+- * Function exit ICFGNode containing (at most one) FormalRetVFGNodes of a function
++ * Function exit ICFGNode containing (at most one) FormalRetVFGNodes of a
++ * function
+  */
+ class FunExitICFGNode : public InterICFGNode
+ {
+@@ -354,9 +347,10 @@ class FunExitICFGNode : public InterICFGNode
+     friend class SVFIRReader;
+ 
+ private:
+-    const SVFVar *formalRet;
++    const SVFVar* formalRet;
+ 
+-    /// Constructor to create empty FunExitICFGNode (for SVFIRReader/deserialization)
++    /// Constructor to create empty FunExitICFGNode (for
++    /// SVFIRReader/deserialization)
+     FunExitICFGNode(NodeID id) : InterICFGNode(id, FunExitBlock), formalRet{} {}
+ 
+ public:
+@@ -369,40 +363,40 @@ public:
+     }
+ 
+     /// Return formal return parameter
+-    inline const SVFVar *getFormalRet() const
++    inline const SVFVar* getFormalRet() const
+     {
+         return formalRet;
+     }
+ 
+     /// Add formal return parameter
+-    inline void addFormalRet(const SVFVar *fr)
++    inline void addFormalRet(const SVFVar* fr)
+     {
+         formalRet = fr;
+     }
+ 
+-    ///Methods for support type inquiry through isa, cast, and dyn_cast:
++    /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const FunEntryICFGNode *)
++    static inline bool classof(const FunEntryICFGNode*)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const ICFGNode *node)
++    static inline bool classof(const ICFGNode* node)
+     {
+         return node->getNodeKind() == FunExitBlock;
+     }
+ 
+-    static inline bool classof(const InterICFGNode *node)
++    static inline bool classof(const InterICFGNode* node)
+     {
+         return node->getNodeKind() == FunExitBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy *node)
++    static inline bool classof(const GenericICFGNodeTy* node)
+     {
+         return node->getNodeKind() == FunExitBlock;
+     }
+ 
+-    static inline bool classof(const SVFBaseNode*node)
++    static inline bool classof(const SVFBaseNode* node)
+     {
+         return node->getNodeKind() == FunExitBlock;
+     }
+@@ -425,19 +419,21 @@ class CallICFGNode : public InterICFGNode
+     friend class SVFIRReader;
+ 
+ public:
+-    typedef std::vector<const SVFVar *> ActualParmNodeVec;
++    typedef std::vector<const ValVar*> ActualParmNodeVec;
+ 
+ protected:
+     const RetICFGNode* ret;
+-    ActualParmNodeVec APNodes;      /// arguments
+-    const SVFFunction* calledFunc;  /// called function
+-    bool isvararg;                  /// is variable argument
+-    bool isVirCallInst;             /// is virtual call inst
+-    SVFVar* vtabPtr;                /// virtual table pointer
+-    s32_t virtualFunIdx;            /// virtual function index of the virtual table(s) at a virtual call
+-    std::string funNameOfVcall;     /// the function name of this virtual call
+-
+-    /// Constructor to create empty CallICFGNode (for SVFIRReader/deserialization)
++    ActualParmNodeVec APNodes;     /// arguments
++    const SVFFunction* calledFunc; /// called function
++    bool isvararg;                 /// is variable argument
++    bool isVirCallInst;            /// is virtual call inst
++    SVFVar* vtabPtr;               /// virtual table pointer
++    s32_t virtualFunIdx; /// virtual function index of the virtual table(s) at a
++                         /// virtual call
++    std::string funNameOfVcall; /// the function name of this virtual call
++
++    /// Constructor to create empty CallICFGNode (for
++    /// SVFIRReader/deserialization)
+     CallICFGNode(NodeID id) : InterICFGNode(id, FunCallBlock), ret{} {}
+ 
+ public:
+@@ -485,19 +481,19 @@ public:
+     }
+ 
+     /// Return the set of actual parameters
+-    inline const ActualParmNodeVec &getActualParms() const
++    inline const ActualParmNodeVec& getActualParms() const
+     {
+         return APNodes;
+     }
+ 
+     /// Add actual parameters
+-    inline void addActualParms(const SVFVar *ap)
++    inline void addActualParms(const ValVar* ap)
+     {
+         APNodes.push_back(ap);
+     }
+     /// Parameter operations
+     //@{
+-    inline const SVFVar* getArgument(u32_t ArgNo) const
++    inline const ValVar* getArgument(u32_t ArgNo) const
+     {
+         return getActualParms()[ArgNo];
+     }
+@@ -540,11 +536,11 @@ public:
+         return vtabPtr;
+     }
+ 
+-
+     inline s32_t getFunIdxInVtable() const
+     {
+         assert(isVirtualCall() && "not a virtual call?");
+-        assert(virtualFunIdx >=0 && "virtual function idx is less than 0? not set yet?");
++        assert(virtualFunIdx >= 0 &&
++               "virtual function idx is less than 0? not set yet?");
+         return virtualFunIdx;
+     }
+ 
+@@ -555,29 +551,29 @@ public:
+     }
+     //@}
+ 
+-    ///Methods for support type inquiry through isa, cast, and dyn_cast:
++    /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const CallICFGNode *)
++    static inline bool classof(const CallICFGNode*)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const ICFGNode *node)
++    static inline bool classof(const ICFGNode* node)
+     {
+         return node->getNodeKind() == FunCallBlock;
+     }
+ 
+-    static inline bool classof(const InterICFGNode *node)
++    static inline bool classof(const InterICFGNode* node)
+     {
+         return node->getNodeKind() == FunCallBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy *node)
++    static inline bool classof(const GenericICFGNodeTy* node)
+     {
+         return node->getNodeKind() == FunCallBlock;
+     }
+ 
+-    static inline bool classof(const SVFBaseNode*node)
++    static inline bool classof(const SVFBaseNode* node)
+     {
+         return node->getNodeKind() == FunCallBlock;
+     }
+@@ -587,11 +583,10 @@ public:
+ 
+     const std::string getSourceLoc() const override
+     {
+-        return "SourceLoc->" + ICFGNode::getSourceLoc();
++        return ICFGNode::getSourceLoc();
+     }
+ };
+ 
+-
+ /*!
+  * Return ICFGNode containing (at most one) ActualRetVFGNode at a callsite
+  */
+@@ -601,18 +596,19 @@ class RetICFGNode : public InterICFGNode
+     friend class SVFIRReader;
+ 
+ private:
+-    const SVFVar *actualRet;
++    const SVFVar* actualRet;
+     const CallICFGNode* callBlockNode;
+ 
+-    /// Constructor to create empty RetICFGNode (for SVFIRReader/deserialization)
++    /// Constructor to create empty RetICFGNode (for
++    /// SVFIRReader/deserialization)
+     RetICFGNode(NodeID id)
+         : InterICFGNode(id, FunRetBlock), actualRet{}, callBlockNode{}
+     {
+     }
+ 
+ public:
+-    RetICFGNode(NodeID id, CallICFGNode* cb) :
+-        InterICFGNode(id, FunRetBlock), actualRet(nullptr), callBlockNode(cb)
++    RetICFGNode(NodeID id, CallICFGNode* cb)
++        : InterICFGNode(id, FunRetBlock), actualRet(nullptr), callBlockNode(cb)
+     {
+         fun = cb->getFun();
+         bb = cb->getBB();
+@@ -624,39 +620,39 @@ public:
+         return callBlockNode;
+     }
+     /// Return actual return parameter
+-    inline const SVFVar *getActualRet() const
++    inline const SVFVar* getActualRet() const
+     {
+         return actualRet;
+     }
+ 
+     /// Add actual return parameter
+-    inline void addActualRet(const SVFVar *ar)
++    inline void addActualRet(const SVFVar* ar)
+     {
+         actualRet = ar;
+     }
+ 
+-    ///Methods for support type inquiry through isa, cast, and dyn_cast:
++    /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const RetICFGNode *)
++    static inline bool classof(const RetICFGNode*)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const InterICFGNode *node)
++    static inline bool classof(const InterICFGNode* node)
+     {
+         return node->getNodeKind() == FunRetBlock;
+     }
+ 
+-    static inline bool classof(const ICFGNode *node)
++    static inline bool classof(const ICFGNode* node)
+     {
+         return node->getNodeKind() == FunRetBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy *node)
++    static inline bool classof(const GenericICFGNodeTy* node)
+     {
+         return node->getNodeKind() == FunRetBlock;
+     }
+-    static inline bool classof(const SVFBaseNode*node)
++    static inline bool classof(const SVFBaseNode* node)
+     {
+         return node->getNodeKind() == FunRetBlock;
+     }
+@@ -666,7 +662,7 @@ public:
+ 
+     const std::string getSourceLoc() const override
+     {
+-        return "RetICFGNode: " + ICFGNode::getSourceLoc();
++        return ICFGNode::getSourceLoc();
+     }
+ };
+ 
+diff --git a/SVF/svf/include/MSSA/MSSAMuChi.h b/SVF/svf/include/MSSA/MSSAMuChi.h
+index 45fcbc966..f495609b2 100644
+--- a/SVF/svf/include/MSSA/MSSAMuChi.h
++++ b/SVF/svf/include/MSSA/MSSAMuChi.h
+@@ -45,6 +45,7 @@ class MRVer
+ 
+ public:
+     typedef MSSADEF MSSADef;
++
+ private:
+     /// ver ID 0 is reserved
+     static u32_t totalVERNum;
+@@ -52,10 +53,11 @@ private:
+     MRVERSION version;
+     MRVERID vid;
+     MSSADef* def;
++
+ public:
+     /// Constructor
+-    MRVer(const MemRegion* m, MRVERSION v, MSSADef* d) :
+-        mr(m), version(v), vid(totalVERNum++),def(d)
++    MRVer(const MemRegion* m, MRVERSION v, MSSADef* d)
++        : mr(m), version(v), vid(totalVERNum++), def(d)
+     {
+     }
+ 
+@@ -84,21 +86,21 @@ public:
+     }
+ };
+ 
+-
+ /*!
+  * Indirect Memory Read
+  * 1) LoadMU at each store instruction
+  * 2) CallMU at callsite
+  * 3) RetMU at function return
+  */
+-template<class Cond>
+-class MSSAMU
++template <class Cond> class MSSAMU
+ {
+ 
+ public:
+     enum MUTYPE
+     {
+-        LoadMSSAMU, CallMSSAMU, RetMSSAMU
++        LoadMSSAMU,
++        CallMSSAMU,
++        RetMSSAMU
+     };
+ 
+ protected:
+@@ -106,15 +108,15 @@ protected:
+     const MemRegion* mr;
+     MRVer* ver;
+     Cond cond;
++
+ public:
+     /// Constructor/Destructor for MU
+     //@{
+-    MSSAMU(MUTYPE t, const MemRegion* m, Cond c) : type(t), mr(m), ver(nullptr), cond(c)
+-    {
+-    }
+-    virtual ~MSSAMU()
++    MSSAMU(MUTYPE t, const MemRegion* m, Cond c)
++        : type(t), mr(m), ver(nullptr), cond(c)
+     {
+     }
++    virtual ~MSSAMU() {}
+     //@}
+ 
+     /// Return MR
+@@ -136,7 +138,7 @@ public:
+     /// Get Ver
+     inline MRVer* getMRVer() const
+     {
+-        assert(ver!=nullptr && "version is nullptr, did not rename?");
++        assert(ver != nullptr && "version is nullptr, did not rename?");
+         return ver;
+     }
+     /// Return condition
+@@ -146,23 +148,24 @@ public:
+     }
+ 
+     /// Avoid adding duplicated mus
+-    inline bool operator < (const MSSAMU & rhs) const
++    inline bool operator<(const MSSAMU& rhs) const
+     {
+         return mr > rhs.getMR();
+     }
+     /// Print MU
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "MU(MR_" << mr->getMRID() << "V_" << ver->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << "MU(MR_" << mr->getMRID() << "V_"
++                        << ver->getSSAVersion() << ") \t"
++                        << this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+ /*!
+- * LoadMU is annotated at each load instruction, representing a memory object is read here
++ * LoadMU is annotated at each load instruction, representing a memory object is
++ * read here
+  */
+-template<class Cond>
+-class LoadMU : public MSSAMU<Cond>
++template <class Cond> class LoadMU : public MSSAMU<Cond>
+ {
+ 
+ private:
+@@ -172,14 +175,12 @@ private:
+ public:
+     /// Constructor/Destructor for MU
+     //@{
+-    LoadMU(const SVFBasicBlock* b,const LoadStmt* i, const MemRegion* m, Cond c = true) :
+-        MSSAMU<Cond>(MSSAMU<Cond>::LoadMSSAMU,m,c), inst(i), bb(b)
+-    {
+-    }
+-    virtual ~LoadMU()
++    LoadMU(const SVFBasicBlock* b, const LoadStmt* i, const MemRegion* m,
++           Cond c = true)
++        : MSSAMU<Cond>(MSSAMU<Cond>::LoadMSSAMU, m, c), inst(i), bb(b)
+     {
+-
+     }
++    virtual ~LoadMU() {}
+     //@}
+ 
+     /// Return load instruction
+@@ -196,11 +197,11 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const LoadMU *)
++    static inline bool classof(const LoadMU*)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSAMU<Cond> *mu)
++    static inline bool classof(const MSSAMU<Cond>* mu)
+     {
+         return mu->getType() == MSSAMU<Cond>::LoadMSSAMU;
+     }
+@@ -209,16 +210,17 @@ public:
+     /// Print MU
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "LDMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << "LDMU(MR_" << this->getMR()->getMRID() << "V_"
++                        << this->getMRVer()->getSSAVersion() << ") \t"
++                        << this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+ /*!
+- * CallMU is annotated at callsite, representing a memory object is indirect read by callee
++ * CallMU is annotated at callsite, representing a memory object is indirect
++ * read by callee
+  */
+-template<class Cond>
+-class CallMU : public MSSAMU<Cond>
++template <class Cond> class CallMU : public MSSAMU<Cond>
+ {
+ 
+ private:
+@@ -227,14 +229,11 @@ private:
+ public:
+     /// Constructor/Destructor for MU
+     //@{
+-    CallMU(const CallICFGNode* cs, const MemRegion* m, Cond c = true) :
+-        MSSAMU<Cond>(MSSAMU<Cond>::CallMSSAMU,m,c), callsite(cs)
++    CallMU(const CallICFGNode* cs, const MemRegion* m, Cond c = true)
++        : MSSAMU<Cond>(MSSAMU<Cond>::CallMSSAMU, m, c), callsite(cs)
+     {
+     }
+-    virtual ~CallMU()
+-    {
+-
+-    }
++    virtual ~CallMU() {}
+     //@}
+ 
+     /// Return callsite
+@@ -251,11 +250,11 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const CallMU *)
++    static inline bool classof(const CallMU*)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSAMU<Cond> *mu)
++    static inline bool classof(const MSSAMU<Cond>* mu)
+     {
+         return mu->getType() == MSSAMU<Cond>::CallMSSAMU;
+     }
+@@ -264,25 +263,27 @@ public:
+     /// Print MU
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "CALMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n" << this->getCallSite()->getSourceLoc() << "\n";
++        SVFUtil::outs() << "CALMU(MR_" << this->getMR()->getMRID() << "V_"
++                        << this->getMRVer()->getSSAVersion() << ") \t"
++                        << this->getMR()->dumpStr() << "\n"
++                        << this->getCallSite()->getSourceLoc() << "\n";
+     }
+ };
+ 
+-
+ /*!
+- * RetMU is annotated at function return, representing memory objects returns to callers
++ * RetMU is annotated at function return, representing memory objects returns to
++ * callers
+  */
+-template<class Cond>
+-class RetMU : public MSSAMU<Cond>
++template <class Cond> class RetMU : public MSSAMU<Cond>
+ {
+ private:
+     const SVFFunction* fun;
++
+ public:
+     /// Constructor/Destructor for MU
+     //@{
+-    RetMU(const SVFFunction* f, const MemRegion* m, Cond c = true) :
+-        MSSAMU<Cond>(MSSAMU<Cond>::RetMSSAMU,m,c), fun(f)
++    RetMU(const SVFFunction* f, const MemRegion* m, Cond c = true)
++        : MSSAMU<Cond>(MSSAMU<Cond>::RetMSSAMU, m, c), fun(f)
+     {
+     }
+     virtual ~RetMU() {}
+@@ -296,11 +297,11 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const RetMU *)
++    static inline bool classof(const RetMU*)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSAMU<Cond> *mu)
++    static inline bool classof(const MSSAMU<Cond>* mu)
+     {
+         return mu->getType() == MSSAMU<Cond>::RetMSSAMU;
+     }
+@@ -309,12 +310,12 @@ public:
+     /// Print MU
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "RETMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << "RETMU(MR_" << this->getMR()->getMRID() << "V_"
++                        << this->getMRVer()->getSSAVersion() << ") \t"
++                        << this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+-
+ /*!
+  * Indirect Memory Definition
+  * 1) MSSACHI indirect memory object is modified
+@@ -343,10 +344,7 @@ protected:
+ public:
+     /// Constructor/Destructor for MSSADEF
+     //@{
+-    MSSADEF(DEFTYPE t, const MemRegion* m): type(t), mr(m), resVer(nullptr)
+-    {
+-
+-    }
++    MSSADEF(DEFTYPE t, const MemRegion* m) : type(t), mr(m), resVer(nullptr) {}
+     virtual ~MSSADEF() {}
+     //@}
+ 
+@@ -372,12 +370,12 @@ public:
+     /// Set operand vers
+     inline MRVer* getResVer() const
+     {
+-        assert(resVer!=nullptr && "version is nullptr, did not rename?");
++        assert(resVer != nullptr && "version is nullptr, did not rename?");
+         return resVer;
+     }
+ 
+     /// Avoid adding duplicated chis and phis
+-    inline bool operator < (const MSSADEF & rhs) const
++    inline bool operator<(const MSSADEF& rhs) const
+     {
+         return mr > rhs.getMR();
+     }
+@@ -385,27 +383,28 @@ public:
+     /// Print MSSADef
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "DEF(MR_" << mr->getMRID() << "V_" << resVer->getSSAVersion() << ")\n";
++        SVFUtil::outs() << "DEF(MR_" << mr->getMRID() << "V_"
++                        << resVer->getSSAVersion() << ")\n";
+     }
+ };
+ 
+ /*!
+  * Indirect Memory Write
+  */
+-template<class Cond>
+-class MSSACHI : public MSSADEF
++template <class Cond> class MSSACHI : public MSSADEF
+ {
+ 
+ private:
+     MRVer* opVer;
+     Cond cond;
++
+ public:
+     typedef typename MSSADEF::DEFTYPE CHITYPE;
+     /// Constructor/Destructor for MSSACHI
+     //@{
+-    MSSACHI(CHITYPE t, const MemRegion* m, Cond c): MSSADEF(t,m), opVer(nullptr), cond(c)
++    MSSACHI(CHITYPE t, const MemRegion* m, Cond c)
++        : MSSADEF(t, m), opVer(nullptr), cond(c)
+     {
+-
+     }
+     virtual ~MSSACHI() {}
+     //@}
+@@ -413,14 +412,15 @@ public:
+     /// Set operand ver
+     inline void setOpVer(MRVer* v)
+     {
+-        assert(v->getMR() == this->getMR() && "inserting different memory region?");
++        assert(v->getMR() == this->getMR() &&
++               "inserting different memory region?");
+         opVer = v;
+     }
+ 
+     /// Get operand ver
+     inline MRVer* getOpVer() const
+     {
+-        assert(opVer!=nullptr && "version is nullptr, did not rename?");
++        assert(opVer != nullptr && "version is nullptr, did not rename?");
+         return opVer;
+     }
+ 
+@@ -432,47 +432,49 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const MSSACHI * chi)
++    static inline bool classof(const MSSACHI* chi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSADEF *chi)
++    static inline bool classof(const MSSADEF* chi)
+     {
+         return chi->getType() == MSSADEF::EntryMSSACHI ||
+                chi->getType() == MSSADEF::StoreMSSACHI ||
+-               chi->getType() == MSSADEF::SSACHI ;
++               chi->getType() == MSSADEF::SSACHI;
+     }
+     //@}
+ 
+     /// Print CHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "MR_" << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
+-                        " = CHI(MR_" << this->getMR()->getMRID() << "V_" << opVer->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << "MR_" << this->getMR()->getMRID() << "V_"
++                        << this->getResVer()->getSSAVersion() << " = CHI(MR_"
++                        << this->getMR()->getMRID() << "V_"
++                        << opVer->getSSAVersion() << ") \t"
++                        << this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+ /*!
+  *
+- *  StoreCHI is annotated at each store instruction, representing a memory object is modified here
++ *  StoreCHI is annotated at each store instruction, representing a memory
++ * object is modified here
+  */
+-template<class Cond>
+-class StoreCHI : public MSSACHI<Cond>
++template <class Cond> class StoreCHI : public MSSACHI<Cond>
+ {
+ private:
+     const SVFBasicBlock* bb;
+     const StoreStmt* inst;
++
+ public:
+     /// Constructors for StoreCHI
+     //@{
+-    StoreCHI(const SVFBasicBlock* b, const StoreStmt* i, const MemRegion* m, Cond c = true) :
+-        MSSACHI<Cond>(MSSADEF::StoreMSSACHI,m,c), bb(b), inst(i)
+-    {
+-    }
+-    virtual ~StoreCHI()
++    StoreCHI(const SVFBasicBlock* b, const StoreStmt* i, const MemRegion* m,
++             Cond c = true)
++        : MSSACHI<Cond>(MSSADEF::StoreMSSACHI, m, c), bb(b), inst(i)
+     {
+     }
++    virtual ~StoreCHI() {}
+     //@}
+ 
+     /// Get basic block
+@@ -489,15 +491,15 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const StoreCHI * chi)
++    static inline bool classof(const StoreCHI* chi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSACHI<Cond> * chi)
++    static inline bool classof(const MSSACHI<Cond>* chi)
+     {
+         return chi->getType() == MSSADEF::StoreMSSACHI;
+     }
+-    static inline bool classof(const MSSADEF *chi)
++    static inline bool classof(const MSSADEF* chi)
+     {
+         return chi->getType() == MSSADEF::StoreMSSACHI;
+     }
+@@ -506,32 +508,32 @@ public:
+     /// Print CHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
+-                        " = STCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << this->getMR()->getMRID() << "V_"
++                        << this->getResVer()->getSSAVersion() << " = STCHI(MR_"
++                        << this->getMR()->getMRID() << "V_"
++                        << this->getOpVer()->getSSAVersion() << ") \t"
++                        << this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+-
+ /*!
+  *
+- *  CallCHI is annotated at callsite, representing a memory object is indirect modified by callee
++ *  CallCHI is annotated at callsite, representing a memory object is indirect
++ * modified by callee
+  */
+-template<class Cond>
+-class CallCHI : public MSSACHI<Cond>
++template <class Cond> class CallCHI : public MSSACHI<Cond>
+ {
+ private:
+     const CallICFGNode* callsite;
++
+ public:
+     /// Constructors for CallCHI
+     //@{
+-    CallCHI(const CallICFGNode* cs, const MemRegion* m, Cond c = true) :
+-        MSSACHI<Cond>(MSSADEF::CallMSSACHI,m,c), callsite(cs)
+-    {
+-    }
+-    virtual ~CallCHI()
++    CallCHI(const CallICFGNode* cs, const MemRegion* m, Cond c = true)
++        : MSSACHI<Cond>(MSSADEF::CallMSSACHI, m, c), callsite(cs)
+     {
+     }
++    virtual ~CallCHI() {}
+     //@}
+ 
+     /// Return basic block
+@@ -548,15 +550,15 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const CallCHI * chi)
++    static inline bool classof(const CallCHI* chi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSACHI<Cond> * chi)
++    static inline bool classof(const MSSACHI<Cond>* chi)
+     {
+         return chi->getType() == MSSADEF::CallMSSACHI;
+     }
+-    static inline bool classof(const MSSADEF *chi)
++    static inline bool classof(const MSSADEF* chi)
+     {
+         return chi->getType() == MSSADEF::CallMSSACHI;
+     }
+@@ -565,30 +567,32 @@ public:
+     /// Print CHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
+-                        " = CALCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n" << this->getCallSite()->getSourceLoc() << "\n";
++        SVFUtil::outs() << this->getMR()->getMRID() << "V_"
++                        << this->getResVer()->getSSAVersion() << " = CALCHI(MR_"
++                        << this->getMR()->getMRID() << "V_"
++                        << this->getOpVer()->getSSAVersion() << ") \t"
++                        << this->getMR()->dumpStr() << "\n"
++                        << this.getCallSite()->getSourceLoc() << "\n";
+     }
+ };
+ 
+ /*!
+- * EntryCHI is annotated at function entry, representing receiving memory objects from callers
++ * EntryCHI is annotated at function entry, representing receiving memory
++ * objects from callers
+  */
+-template<class Cond>
+-class EntryCHI : public MSSACHI<Cond>
++template <class Cond> class EntryCHI : public MSSACHI<Cond>
+ {
+ private:
+     const SVFFunction* fun;
++
+ public:
+     /// Constructors for EntryCHI
+     //@{
+-    EntryCHI(const SVFFunction* f, const MemRegion* m, Cond c = true) :
+-        MSSACHI<Cond>(MSSADEF::EntryMSSACHI,m,c),fun(f)
+-    {
+-    }
+-    virtual ~EntryCHI()
++    EntryCHI(const SVFFunction* f, const MemRegion* m, Cond c = true)
++        : MSSACHI<Cond>(MSSADEF::EntryMSSACHI, m, c), fun(f)
+     {
+     }
++    virtual ~EntryCHI() {}
+     //@}
+ 
+     /// Return function
+@@ -599,15 +603,15 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const EntryCHI * chi)
++    static inline bool classof(const EntryCHI* chi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSACHI<Cond> * chi)
++    static inline bool classof(const MSSACHI<Cond>* chi)
+     {
+         return chi->getType() == MSSADEF::EntryMSSACHI;
+     }
+-    static inline bool classof(const MSSADEF *chi)
++    static inline bool classof(const MSSADEF* chi)
+     {
+         return chi->getType() == MSSADEF::EntryMSSACHI;
+     }
+@@ -616,41 +620,43 @@ public:
+     /// Print CHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
+-                        " = ENCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
+-                        this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << this->getMR()->getMRID() << "V_"
++                        << this->getResVer()->getSSAVersion() << " = ENCHI(MR_"
++                        << this->getMR()->getMRID() << "V_"
++                        << this->getOpVer()->getSSAVersion() << ") \t"
++                        << this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+ /*
+  * Memory SSA Select, similar to PHINode
+  */
+-template<class Cond>
+-class MSSAPHI : public MSSADEF
++template <class Cond> class MSSAPHI : public MSSADEF
+ {
+ 
+ public:
+-    typedef Map<u32_t,const MRVer*> OPVers;
++    typedef Map<u32_t, const MRVer*> OPVers;
++
+ private:
+     const SVFBasicBlock* bb;
+     OPVers opVers;
+     Cond cond;
++
+ public:
+     /// Constructors for PHI
+     //@{
+-    MSSAPHI(const SVFBasicBlock* b, const MemRegion* m, Cond c = true) :
+-        MSSADEF(MSSADEF::SSAPHI,m), bb(b), cond(c)
+-    {
+-    }
+-    virtual ~MSSAPHI()
++    MSSAPHI(const SVFBasicBlock* b, const MemRegion* m, Cond c = true)
++        : MSSADEF(MSSADEF::SSAPHI, m), bb(b), cond(c)
+     {
+     }
++    virtual ~MSSAPHI() {}
+     //@}
+ 
+     /// Set operand ver
+     inline void setOpVer(const MRVer* v, u32_t pos)
+     {
+-        assert(v->getMR() == this->getMR() && "inserting different memory region?");
++        assert(v->getMR() == this->getMR() &&
++               "inserting different memory region?");
+         opVers[pos] = v;
+     }
+ 
+@@ -658,7 +664,7 @@ public:
+     inline const MRVer* getOpVer(u32_t pos) const
+     {
+         OPVers::const_iterator it = opVers.find(pos);
+-        assert(it!=opVers.end() && "version is nullptr, did not rename?");
++        assert(it != opVers.end() && "version is nullptr, did not rename?");
+         return it->second;
+     }
+ 
+@@ -694,29 +700,31 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const MSSAPHI * phi)
++    static inline bool classof(const MSSAPHI* phi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSADEF *phi)
++    static inline bool classof(const MSSADEF* phi)
+     {
+-        return phi->getType() == MSSADEF::SSAPHI ;
++        return phi->getType() == MSSADEF::SSAPHI;
+     }
+     //@}
+ 
+     /// Print PHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
+-                        " = PHI(";
+-        for(OPVers::iterator it = opVers.begin(), eit = opVers.end(); it!=eit; ++it)
+-            SVFUtil::outs() << "MR_" << this->getMR()->getMRID() << "V_" << it->second->getSSAVersion() << ", ";
++        SVFUtil::outs() << this->getMR()->getMRID() << "V_"
++                        << this->getResVer()->getSSAVersion() << " = PHI(";
++        for (OPVers::iterator it = opVers.begin(), eit = opVers.end();
++             it != eit; ++it)
++            SVFUtil::outs() << "MR_" << this->getMR()->getMRID() << "V_"
++                            << it->second->getSSAVersion() << ", ";
+ 
+         SVFUtil::outs() << ")\n";
+     }
+ };
+ 
+-std::ostream& operator<<(std::ostream &o, const MRVer& mrver);
++std::ostream& operator<<(std::ostream& o, const MRVer& mrver);
+ } // End namespace SVF
+ 
+ #endif /* MSSAMUCHI_H_ */
+diff --git a/SVF/svf/include/SVFIR/SVFIR.h b/SVF/svf/include/SVFIR/SVFIR.h
+index 96c174712..5af89f24b 100644
+--- a/SVF/svf/include/SVFIR/SVFIR.h
++++ b/SVF/svf/include/SVFIR/SVFIR.h
+@@ -522,7 +522,7 @@ private:
+         funRetMap[fun] = ret;
+     }
+     /// Add callsite arguments
+-    inline void addCallSiteArgs(CallICFGNode* callBlockNode,const SVFVar* arg)
++    inline void addCallSiteArgs(CallICFGNode* callBlockNode,const ValVar* arg)
+     {
+         callBlockNode->addActualParms(arg);
+         callSiteArgsListMap[callBlockNode].push_back(arg);
+@@ -545,11 +545,18 @@ private:
+     /// add node into SVFIR
+     //@{
+     /// Add a value (pointer) node
+-    inline NodeID addValNode(const SVFValue* val, NodeID i, const SVFBaseNode* gNode)
++    inline NodeID addValNode(const SVFValue* val, NodeID i, const ICFGNode* icfgNode)
+     {
+-        SVFVar *node = new ValVar(val,i, ValVar::ValNode, gNode);
++        SVFVar *node = new ValVar(val,i, ValVar::ValNode, icfgNode);
+         return addValNode(val, node, i);
+     }
++
++    NodeID addFunValNode(const CallGraphNode* callGraphNode, NodeID i, const ICFGNode* icfgNode)
++    {
++        FunValVar* node = new FunValVar(callGraphNode, i, icfgNode);
++        return addValNode(nullptr, node, i);
++    }
++
+     /// Add a memory obj node
+     inline NodeID addObjNode(const SVFValue* val, NodeID i)
+     {
+@@ -557,14 +564,16 @@ private:
+         assert(mem->getId() == i && "not same object id?");
+         return addFIObjNode(mem);
+     }
++
++    NodeID addFunObjNode(const CallGraphNode* callGraphNode, NodeID id);
+     /// Add a unique return node for a procedure
+-    inline NodeID addRetNode(const SVFFunction* val, NodeID i)
++    inline NodeID addRetNode(const CallGraphNode* callGraphNode, NodeID i)
+     {
+-        SVFVar *node = new RetPN(val,i);
+-        return addRetNode(val, node, i);
++        SVFVar *node = new RetPN(callGraphNode,i);
++        return addRetNode(callGraphNode, node, i);
+     }
+     /// Add a unique vararg node for a procedure
+-    inline NodeID addVarargNode(const SVFFunction* val, NodeID i)
++    inline NodeID addVarargNode(const CallGraphNode* val, NodeID i)
+     {
+         SVFVar *node = new VarArgPN(val,i);
+         return addNode(node,i);
+@@ -576,6 +585,7 @@ private:
+     NodeID addGepObjNode(const MemObj* obj, const APOffset& apOffset, const NodeID gepId);
+     /// Add a field-insensitive node, this method can only invoked by getFIGepObjNode
+     NodeID addFIObjNode(const MemObj* obj);
++
+     //@}
+ 
+     ///  Add a dummy value/object node according to node ID (llvm value is null)
+@@ -628,7 +638,7 @@ private:
+         return addNode(node, i);
+     }
+     /// Add a unique return node for a procedure
+-    inline NodeID addRetNode(const SVFFunction*, SVFVar *node, NodeID i)
++    inline NodeID addRetNode(const CallGraphNode*, SVFVar *node, NodeID i)
+     {
+         return addNode(node,i);
+     }
+diff --git a/SVF/svf/include/SVFIR/SVFVariables.h b/SVF/svf/include/SVFIR/SVFVariables.h
+index 01307c99b..dde8c223f 100644
+--- a/SVF/svf/include/SVFIR/SVFVariables.h
++++ b/SVF/svf/include/SVFIR/SVFVariables.h
+@@ -87,8 +87,7 @@ public:
+                "dummy node do not have value!");
+         assert(!SymbolTableInfo::isBlkObjOrConstantObj(this->getId()) &&
+                "blackhole and constant obj do not have value");
+-        assert(value &&
+-               "value is null (GepObjNode whose basenode is a DummyObj?)");
++        assert(value && "value is null (GepObjNode whose basenode is a DummyObj?)");
+         return value;
+     }
+ 
+@@ -112,7 +111,7 @@ public:
+     bool isConstDataOrAggDataButNotNullPtr() const;
+ 
+     /// Whether this is an isolated node on the SVFIR graph
+-    bool isIsolatedNode() const;
++    virtual bool isIsolatedNode() const;
+ 
+     /// Get name of the LLVM value
+     // TODO: (Optimization) Should it return const reference instead of value?
+@@ -127,8 +126,6 @@ public:
+                 return inst->getParent()->getParent();
+             else if (auto arg = SVFUtil::dyn_cast<SVFArgument>(value))
+                 return arg->getParent();
+-            else if (auto fun = SVFUtil::dyn_cast<SVFFunction>(value))
+-                return fun;
+         }
+         return nullptr;
+     }
+@@ -269,10 +266,10 @@ class ValVar: public SVFVar
+     friend class SVFIRReader;
+ 
+ private:
+-    const SVFBaseNode* gNode; // constant, gepValvar, retPN, dummy could be null
++    const ICFGNode* icfgNode; // icfgnode related to valvar
+ protected:
+     /// Constructor to create an empty ValVar (for SVFIRReader/deserialization)
+-    ValVar(NodeID i, PNODEK ty = ValNode) : SVFVar(i, ty), gNode(nullptr) {}
++    ValVar(NodeID i, PNODEK ty = ValNode) : SVFVar(i, ty), icfgNode(nullptr) {}
+ 
+ public:
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+@@ -296,8 +293,8 @@ public:
+     //@}
+ 
+     /// Constructor
+-    ValVar(const SVFValue* val, NodeID i, PNODEK ty = ValNode, const SVFBaseNode* node = nullptr)
+-        : SVFVar(val, i, ty), gNode(node)
++    ValVar(const SVFValue* val, NodeID i, PNODEK ty = ValNode, const ICFGNode* node = nullptr)
++        : SVFVar(val, i, ty), icfgNode(node)
+     {
+     }
+     /// Return name of a LLVM value
+@@ -308,9 +305,9 @@ public:
+         return "";
+     }
+ 
+-    const SVFBaseNode* getGNode() const
++    const ICFGNode* getICFGNode() const
+     {
+-        return gNode;
++        return icfgNode;
+     }
+ 
+     virtual const std::string toString() const;
+@@ -540,7 +537,7 @@ class FIObjVar: public ObjVar
+     friend class SVFIRWriter;
+     friend class SVFIRReader;
+ 
+-private:
++protected:
+     /// Constructor to create empty ObjVar (for SVFIRReader/deserialization)
+     FIObjVar(NodeID i, PNODEK ty = FIObjNode) : ObjVar(i, ty) {}
+ 
+@@ -553,19 +550,19 @@ public:
+     }
+     static inline bool classof(const ObjVar* node)
+     {
+-        return node->getNodeKind() == SVFVar::FIObjNode;
++        return isFIObjVarKinds(node->getNodeKind());
+     }
+     static inline bool classof(const SVFVar* node)
+     {
+-        return node->getNodeKind() == SVFVar::FIObjNode;
++        return isFIObjVarKinds(node->getNodeKind());
+     }
+     static inline bool classof(const GenericPAGNodeTy* node)
+     {
+-        return node->getNodeKind() == SVFVar::FIObjNode;
++        return isFIObjVarKinds(node->getNodeKind());
+     }
+     static inline bool classof(const SVFBaseNode* node)
+     {
+-        return node->getNodeKind() == SVFVar::FIObjNode;
++        return isFIObjVarKinds(node->getNodeKind());
+     }
+     //@}
+ 
+@@ -587,6 +584,111 @@ public:
+     virtual const std::string toString() const;
+ };
+ 
++class CallGraphNode;
++
++class FunValVar : public ValVar
++{
++    friend class SVFIRWriter;
++    friend class SVFIRReader;
++private:
++    const CallGraphNode* callGraphNode;
++
++public:
++    ///  Methods for support type inquiry through isa, cast, and dyn_cast:
++    //@{
++    static inline bool classof(const FunValVar*)
++    {
++        return true;
++    }
++    static inline bool classof(const ValVar* node)
++    {
++        return node->getNodeKind() == FunValNode;
++    }
++    static inline bool classof(const SVFVar* node)
++    {
++        return node->getNodeKind() == FunValNode;
++    }
++    static inline bool classof(const GenericPAGNodeTy* node)
++    {
++        return node->getNodeKind() == FunValNode;
++    }
++    static inline bool classof(const SVFBaseNode* node)
++    {
++        return node->getNodeKind() == FunValNode;
++    }
++    //@}
++
++    inline const CallGraphNode* getCallGraphNode() const
++    {
++        return callGraphNode;
++    }
++
++    /// Constructor
++    FunValVar(const CallGraphNode* cgn, NodeID i, const ICFGNode* icn,
++              PNODEK ty = FunValNode)
++        : ValVar(nullptr, i, ty, icn), callGraphNode(cgn)
++    {
++
++    }
++
++    virtual const std::string toString() const;
++};
++
++class FunObjVar : public FIObjVar
++{
++    friend class SVFIRWriter;
++    friend class SVFIRReader;
++
++private:
++    const CallGraphNode* callGraphNode;
++
++private:
++    /// Constructor to create empty ObjVar (for SVFIRReader/deserialization)
++    FunObjVar(NodeID i, PNODEK ty = FunObjNode) : FIObjVar(i, ty) {}
++
++public:
++    ///  Methods for support type inquiry through isa, cast, and dyn_cast:
++    //@{
++    static inline bool classof(const FunObjVar*)
++    {
++        return true;
++    }
++    static inline bool classof(const FIObjVar* node)
++    {
++        return node->getNodeKind() == FunObjNode;
++    }
++    static inline bool classof(const ObjVar* node)
++    {
++        return node->getNodeKind() == FunObjNode;
++    }
++    static inline bool classof(const SVFVar* node)
++    {
++        return node->getNodeKind() == FunObjNode;
++    }
++    static inline bool classof(const GenericPAGNodeTy* node)
++    {
++        return node->getNodeKind() == FunObjNode;
++    }
++    static inline bool classof(const SVFBaseNode* node)
++    {
++        return node->getNodeKind() == FunObjNode;
++    }
++    //@}
++
++    /// Constructor
++    FunObjVar(const CallGraphNode* cgNode, NodeID i, const MemObj* mem,
++              PNODEK ty = FunObjNode);
++
++    inline const CallGraphNode* getCallGraphNode() const
++    {
++        return callGraphNode;
++    }
++
++    virtual bool isIsolatedNode() const;
++
++    virtual const std::string toString() const;
++};
++
+ /*
+  * Unique Return node of a procedure
+  */
+@@ -595,6 +697,8 @@ class RetPN: public ValVar
+     friend class SVFIRWriter;
+     friend class SVFIRReader;
+ 
++private:
++    const CallGraphNode* callGraphNode;
+ private:
+     /// Constructor to create empty RetPN (for SVFIRReader/deserialization)
+     RetPN(NodeID i) : ValVar(i, RetNode) {}
+@@ -623,15 +727,20 @@ public:
+     }
+     //@}
+ 
++
+     /// Constructor
+-    RetPN(const SVFFunction* val, NodeID i) : ValVar(val, i, RetNode) {}
++    RetPN(const CallGraphNode* node, NodeID i);
+ 
+-    /// Return name of a LLVM value
+-    const std::string getValueName() const
++    inline const CallGraphNode* getCallGraphNode() const
+     {
+-        return value->getName() + "_ret";
++        return callGraphNode;
+     }
+ 
++    virtual const SVFFunction* getFunction() const;
++
++    /// Return name of a LLVM value
++    const std::string getValueName() const;
++
+     virtual const std::string toString() const;
+ };
+ 
+@@ -642,6 +751,8 @@ class VarArgPN: public ValVar
+ {
+     friend class SVFIRWriter;
+     friend class SVFIRReader;
++private:
++    const CallGraphNode* callGraphNode;
+ 
+ private:
+     /// Constructor to create empty VarArgPN (for SVFIRReader/deserialization)
+@@ -672,13 +783,12 @@ public:
+     //@}
+ 
+     /// Constructor
+-    VarArgPN(const SVFFunction* val, NodeID i) : ValVar(val, i, VarargNode) {}
++    VarArgPN(const CallGraphNode* node, NodeID i) : ValVar(nullptr, i, VarargNode), callGraphNode(node) {}
++
++    virtual const SVFFunction* getFunction() const;
+ 
+     /// Return name of a LLVM value
+-    inline const std::string getValueName() const
+-    {
+-        return value->getName() + "_vararg";
+-    }
++    const std::string getValueName() const;
+ 
+     virtual const std::string toString() const;
+ };
+diff --git a/SVF/svf/include/Util/SVFUtil.h b/SVF/svf/include/Util/SVFUtil.h
+index a48387692..3ec67b1e2 100644
+--- a/SVF/svf/include/Util/SVFUtil.h
++++ b/SVF/svf/include/Util/SVFUtil.h
+@@ -351,9 +351,11 @@ inline bool isArgOfUncalledFunction(const SVFValue* svfval)
+         return false;
+ }
+ 
++const ObjVar* getObjVarOfValVar(const ValVar* valVar);
++
+ /// Return thread fork function
+ //@{
+-inline const SVFVar* getForkedFun(const CallICFGNode *inst)
++inline const ValVar* getForkedFun(const CallICFGNode *inst)
+ {
+     return ThreadAPI::getThreadAPI()->getForkedFun(inst);
+ }
+@@ -432,7 +434,7 @@ inline bool isBarrierWaitCall(const CallICFGNode* cs)
+ 
+ /// Return sole argument of the thread routine
+ //@{
+-inline const SVFVar* getActualParmAtForkSite(const CallICFGNode* cs)
++inline const ValVar* getActualParmAtForkSite(const CallICFGNode* cs)
+ {
+     return ThreadAPI::getThreadAPI()->getActualParmAtForkSite(cs);
+ }
+diff --git a/SVF/svf/include/Util/ThreadAPI.h b/SVF/svf/include/Util/ThreadAPI.h
+index 356bde4db..3acb042b5 100644
+--- a/SVF/svf/include/Util/ThreadAPI.h
++++ b/SVF/svf/include/Util/ThreadAPI.h
+@@ -39,6 +39,8 @@ class SVFModule;
+ class ICFGNode;
+ class CallICFGNode;
+ class SVFVar;
++class ValVar;
++class ObjVar;
+ 
+ /*
+  * ThreadAPI class contains interfaces for pthread programs
+@@ -124,14 +126,14 @@ public:
+     //@{
+     /// Return the first argument of the call,
+     /// Note that, it is the pthread_t pointer
+-    const SVFVar* getForkedThread(const CallICFGNode *inst) const;
++    const ValVar* getForkedThread(const CallICFGNode *inst) const;
+     /// Return the third argument of the call,
+     /// Note that, it could be function type or a void* pointer
+-    const SVFVar* getForkedFun(const CallICFGNode *inst) const;
++    const ValVar* getForkedFun(const CallICFGNode *inst) const;
+ 
+     /// Return the forth argument of the call,
+     /// Note that, it is the sole argument of start routine ( a void* pointer )
+-    const SVFVar* getActualParmAtForkSite(const CallICFGNode *inst) const;
++    const ValVar* getActualParmAtForkSite(const CallICFGNode *inst) const;
+ 
+     /// Return the formal parm of forked function (the first arg in pthread)
+     const SVFVar* getFormalParmOfForkedFun(const SVFFunction* F) const;
+diff --git a/SVF/svf/lib/AE/Svfexe/AbsExtAPI.cpp b/SVF/svf/lib/AE/Svfexe/AbsExtAPI.cpp
+index bdd11e357..2260d3fba 100644
+--- a/SVF/svf/lib/AE/Svfexe/AbsExtAPI.cpp
++++ b/SVF/svf/lib/AE/Svfexe/AbsExtAPI.cpp
+@@ -130,8 +130,7 @@ void AbsExtAPI::initExtFunMap()
+         assert(lb.getInterval().is_numeral() && ub.getInterval().is_numeral());
+         num.getInterval().set_to_top();
+         num.getInterval().meet_with(IntervalValue(lb.getInterval().lb(), ub.getInterval().ub()));
+-        const ICFGNode* node = SVFUtil::cast<ICFGNode>(
+-                                   SVFUtil::cast<ValVar>(callNode->getArgument(0))->getGNode());
++        const ICFGNode* node = SVFUtil::cast<ValVar>(callNode->getArgument(0))->getICFGNode();
+         for (const SVFStmt* stmt: node->getSVFStmts())
+         {
+             if (SVFUtil::isa<LoadStmt>(stmt))
+diff --git a/SVF/svf/lib/AE/Svfexe/AbstractInterpretation.cpp b/SVF/svf/lib/AE/Svfexe/AbstractInterpretation.cpp
+index 8ea21a40a..4e34e4d47 100644
+--- a/SVF/svf/lib/AE/Svfexe/AbstractInterpretation.cpp
++++ b/SVF/svf/lib/AE/Svfexe/AbstractInterpretation.cpp
+@@ -30,6 +30,7 @@
+ #include "SVFIR/SVFIR.h"
+ #include "Util/Options.h"
+ #include "Util/WorkList.h"
++#include "Graphs/CallGraph.h"
+ #include <cmath>
+ 
+ using namespace SVF;
+@@ -646,9 +647,9 @@ void AbstractInterpretation::indirectCallFunPass(const SVF::CallICFGNode *callNo
+     AbstractValue Addrs = as[call_id];
+     NodeID addr = *Addrs.getAddrs().begin();
+     SVFVar *func_var = svfir->getGNode(AbstractState::getInternalID(addr));
+-    const SVFFunction *callfun = SVFUtil::dyn_cast<SVFFunction>(func_var->getValue());
+-    if (callfun)
++    if(const FunObjVar*funObjVar = SVFUtil::dyn_cast<FunObjVar>(func_var))
+     {
++        const SVFFunction* callfun = funObjVar->getCallGraphNode()->getFunction();
+         callSiteStack.push_back(callNode);
+         abstractTrace[callNode] = as;
+ 
+@@ -656,7 +657,7 @@ void AbstractInterpretation::indirectCallFunPass(const SVF::CallICFGNode *callNo
+         handleWTOComponents(wto->getWTOComponents());
+         callSiteStack.pop_back();
+         // handle Ret node
+-        const RetICFGNode *retNode = callNode->getRetICFGNode();
++        const RetICFGNode* retNode = callNode->getRetICFGNode();
+         abstractTrace[retNode] = abstractTrace[callNode];
+     }
+ }
+diff --git a/SVF/svf/lib/Graphs/PTACallGraph.cpp b/SVF/svf/lib/Graphs/PTACallGraph.cpp
+index 7c30f3828..7d24d7644 100644
+--- a/SVF/svf/lib/Graphs/PTACallGraph.cpp
++++ b/SVF/svf/lib/Graphs/PTACallGraph.cpp
+@@ -52,7 +52,8 @@ void PTACallGraphEdge::addDirectCallSite(const CallICFGNode* call)
+ 
+ void PTACallGraphEdge::addInDirectCallSite(const CallICFGNode* call)
+ {
+-    assert((nullptr == call->getCalledFunction() || nullptr == SVFUtil::dyn_cast<SVFFunction> (SVFUtil::getForkedFun(call)->getValue())) && "not an indirect callsite??");
++    assert((nullptr == call->getCalledFunction() || !SVFUtil::isa<FunValVar>(SVFUtil::getForkedFun(call))) &&
++           "not an indirect callsite??");
+     indirectCalls.insert(call);
+ }
+ //@}
+diff --git a/SVF/svf/lib/Graphs/ThreadCallGraph.cpp b/SVF/svf/lib/Graphs/ThreadCallGraph.cpp
+index 470293c52..1be851468 100644
+--- a/SVF/svf/lib/Graphs/ThreadCallGraph.cpp
++++ b/SVF/svf/lib/Graphs/ThreadCallGraph.cpp
+@@ -32,6 +32,7 @@
+ #include "Util/ThreadAPI.h"
+ #include "SVFIR/SVFIR.h"
+ #include "MemoryModel/PointerAnalysisImpl.h"
++#include "Graphs/CallGraph.h"
+ 
+ using namespace SVF;
+ using namespace SVFUtil;
+@@ -73,8 +74,8 @@ void ThreadCallGraph::updateCallGraph(PointerAnalysis* pta)
+     // Fork sites
+     for (CallSiteSet::const_iterator it = forksitesBegin(), eit = forksitesEnd(); it != eit; ++it)
+     {
+-        const SVFVar* forkedval = tdAPI->getForkedFun(*it);
+-        if(SVFUtil::dyn_cast<SVFFunction>(forkedval->getValue())==nullptr)
++        const ValVar* forkedval = tdAPI->getForkedFun(*it);
++        if(SVFUtil::dyn_cast<FunValVar>(forkedval)==nullptr)
+         {
+             SVFIR* pag = pta->getPAG();
+             const NodeBS targets = pta->getPts(forkedval->getId()).toNodeBS();
+@@ -85,7 +86,7 @@ void ThreadCallGraph::updateCallGraph(PointerAnalysis* pta)
+                     const MemObj* obj = pag->getObject(objPN);
+                     if(obj->isFunction())
+                     {
+-                        const SVFFunction* svfCallee = SVFUtil::cast<SVFFunction>(obj->getValue());
++                        const SVFFunction* svfCallee = SVFUtil::cast<CallGraphNode>(obj->getGNode())->getFunction();
+                         this->addIndirectForkEdge(*it, svfCallee);
+                     }
+                 }
+@@ -126,7 +127,8 @@ bool ThreadCallGraph::addDirectForkEdge(const CallICFGNode* cs)
+ {
+ 
+     PTACallGraphNode* caller = getCallGraphNode(cs->getCaller());
+-    const SVFFunction* forkee = SVFUtil::dyn_cast<SVFFunction>(tdAPI->getForkedFun(cs)->getValue());
++    const SVFFunction* forkee = SVFUtil::dyn_cast<FunValVar>(tdAPI->getForkedFun(cs))
++                                ->getCallGraphNode()->getFunction();
+     assert(forkee && "callee does not exist");
+     PTACallGraphNode* callee = getCallGraphNode(forkee->getDefFunForMultipleModule());
+     CallSiteID csId = addCallSite(cs, callee->getFunction());
+@@ -185,7 +187,10 @@ void ThreadCallGraph::addDirectJoinEdge(const CallICFGNode* cs,const CallSiteSet
+     for (CallSiteSet::const_iterator it = forkset.begin(), eit = forkset.end(); it != eit; ++it)
+     {
+ 
+-        const SVFFunction* threadRoutineFun = SVFUtil::dyn_cast<SVFFunction>(tdAPI->getForkedFun(*it)->getValue());
++        const SVFFunction* threadRoutineFun =
++            SVFUtil::dyn_cast<FunValVar>(tdAPI->getForkedFun(*it))
++            ->getCallGraphNode()
++            ->getFunction();
+         assert(threadRoutineFun && "thread routine function does not exist");
+         PTACallGraphNode* threadRoutineFunNode = getCallGraphNode(threadRoutineFun);
+         CallSiteID csId = addCallSite(cs, threadRoutineFun);
+diff --git a/SVF/svf/lib/Graphs/VFG.cpp b/SVF/svf/lib/Graphs/VFG.cpp
+index c4609c97f..dd0924e82 100644
+--- a/SVF/svf/lib/Graphs/VFG.cpp
++++ b/SVF/svf/lib/Graphs/VFG.cpp
+@@ -1090,7 +1090,7 @@ const SVFValue* BinaryOPVFGNode::getValue() const
+ 
+ const SVFValue* PHIVFGNode::getValue() const
+ {
+-    return getRes()->getValue();
++    return getRes()->hasValue() ? getRes()->getValue(): nullptr;
+ }
+ 
+ const SVFValue* ArgumentVFGNode::getValue() const
+diff --git a/SVF/svf/lib/MSSA/MemSSA.cpp b/SVF/svf/lib/MSSA/MemSSA.cpp
+index 1245a557b..849b335ef 100644
+--- a/SVF/svf/lib/MSSA/MemSSA.cpp
++++ b/SVF/svf/lib/MSSA/MemSSA.cpp
+@@ -33,6 +33,8 @@
+ #include "Graphs/SVFGStat.h"
+ #include "Graphs/CallGraph.h"
+ 
++#include "SVF-LLVM/LLVMModule.h"
++
+ using namespace SVF;
+ using namespace SVFUtil;
+ 
+@@ -570,6 +572,41 @@ u32_t MemSSA::getBBPhiNum() const
+     return num;
+ }
+ 
++const char* InitSections[] = {
++    ".init.text", // denoted by __init
++    ".init.data", // denoted by __initdata
++    ".init.rodata", // denoted by __initconst
++    ".exit.text", // denoted by __exit
++    ".exit.data", // denoted by __exitdata
++    ".exitcall.exit" // denoted by __exit_call
++};
++
++bool isInitFunc(const Function* F)
++{
++    if (F == nullptr || !F->hasSection())
++        return false;
++    return std::any_of(InitSections,
++        InitSections + sizeof(InitSections) / sizeof(char*),
++        [F](const char* s){return s == F->getSection();});
++}
++
++/*
++ * detect if the Function F is called by InitFunc and only called once in the module.
++ */
++bool isCalledByInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F, OutStream& Out)
++{
++    if (F == nullptr) return false;
++    auto callGraphNode = llvmModuleSet->getCallGraphNode(F);
++    auto inEdges = callGraphNode->getInEdges();
++    Out << "Function: " << F->getName().str() << "is called " << inEdges.size() << " times\n";
++    for (const auto edge : inEdges)
++    {
++        if (F->getName() != edge->getDstNode()->getName()) Out << "Parameter does not equal to DstNode!\n";
++        Out << "Function: " << edge->getSrcNode()->getName() << " calls " << F->getName().str() << "\n";
++    }
++    return true;
++}
++
+ /*!
+  * Print SSA
+  */
+@@ -580,6 +617,11 @@ void MemSSA::dumpMSSA(OutStream& Out)
+     for (const auto& item: *svfirCallGraph)
+     {
+         const SVFFunction* fun = item.second->getFunction();
++        auto llvmModuleSet = LLVMModuleSet::getLLVMModuleSet();
++        auto llvmValue = llvmModuleSet->getLLVMValue(fun);
++        auto llvmFunction = llvm::dyn_cast<llvm::Function>(llvmValue);
++        if (isCalledByInitFunc(llvmModuleSet, llvmFunction, Out))
++            continue;
+         if(Options::MSSAFun()!="" && Options::MSSAFun()!=fun->getName())
+             continue;
+ 
+@@ -648,10 +690,9 @@ void MemSSA::dumpMSSA(OutStream& Out)
+                             }
+                         }
+                     }
+-
+                     bool has_chi = false;
+                     for(SVFStmtList::const_iterator bit = pagEdgeList.begin(), ebit= pagEdgeList.end();
+-                            bit!=ebit; ++bit)
++                            bit!=ebit && has_debug_info; ++bit)
+                     {
+                         const PAGEdge* edge = *bit;
+                         if (const StoreStmt* store = SVFUtil::dyn_cast<StoreStmt>(edge))
+diff --git a/SVF/svf/lib/MTA/MTAStat.cpp b/SVF/svf/lib/MTA/MTAStat.cpp
+index 9abdedaf6..1f6c69456 100644
+--- a/SVF/svf/lib/MTA/MTAStat.cpp
++++ b/SVF/svf/lib/MTA/MTAStat.cpp
+@@ -33,6 +33,7 @@
+ #include "MTA/MHP.h"
+ #include "MTA/LockAnalysis.h"
+ #include "Graphs/ThreadCallGraph.h"
++#include "Graphs/CallGraph.h"
+ 
+ using namespace SVF;
+ 
+@@ -49,8 +50,8 @@ void MTAStat::performThreadCallGraphStat(ThreadCallGraph* tcg)
+     for (ThreadCallGraph::CallSiteSet::const_iterator it = tcg->forksitesBegin(), eit = tcg->forksitesEnd(); it != eit; ++it)
+     {
+         bool indirectfork = false;
+-        const SVFFunction* spawnee = SVFUtil::dyn_cast<SVFFunction>(tcg->getThreadAPI()->getForkedFun(*it)->getValue());
+-        if(spawnee==nullptr)
++        const ValVar* pValVar = tcg->getThreadAPI()->getForkedFun(*it);
++        if(!SVFUtil::isa<FunValVar>(pValVar))
+         {
+             numOfIndForksite++;
+             indirectfork = true;
+diff --git a/SVF/svf/lib/MemoryModel/PointerAnalysis.cpp b/SVF/svf/lib/MemoryModel/PointerAnalysis.cpp
+index 9f4a8122a..3d292fba5 100644
+--- a/SVF/svf/lib/MemoryModel/PointerAnalysis.cpp
++++ b/SVF/svf/lib/MemoryModel/PointerAnalysis.cpp
+@@ -36,6 +36,7 @@
+ #include "Util/PTAStat.h"
+ #include "Graphs/ThreadCallGraph.h"
+ #include "Graphs/ICFG.h"
++#include "Graphs/CallGraph.h"
+ #include "Util/CallGraphBuilder.h"
+ 
+ #include <iomanip>
+@@ -399,7 +400,7 @@ void PointerAnalysis::resolveIndCalls(const CallICFGNode* cs, const PointsTo& ta
+ 
+             if(obj->isFunction())
+             {
+-                const SVFFunction* calleefun = SVFUtil::cast<SVFFunction>(obj->getValue());
++                const SVFFunction* calleefun = SVFUtil::cast<CallGraphNode>(obj->getGNode())->getFunction();
+                 const SVFFunction* callee = calleefun->getDefFunForMultipleModule();
+ 
+                 if(SVFUtil::matchArgs(cs, callee) == false)
+diff --git a/SVF/svf/lib/MemoryModel/PointerAnalysisImpl.cpp b/SVF/svf/lib/MemoryModel/PointerAnalysisImpl.cpp
+index 8e57096b8..0d47c1567 100644
+--- a/SVF/svf/lib/MemoryModel/PointerAnalysisImpl.cpp
++++ b/SVF/svf/lib/MemoryModel/PointerAnalysisImpl.cpp
+@@ -34,6 +34,8 @@
+ #include <fstream>
+ #include <sstream>
+ 
++#include "Graphs/CallGraph.h"
++
+ using namespace SVF;
+ using namespace SVFUtil;
+ using namespace std;
+@@ -521,11 +523,11 @@ void BVDataPTAImpl::onTheFlyThreadCallGraphSolve(const CallSiteToFunPtrMap& call
+         for(CallSiteSet::const_iterator it = tdCallGraph->forksitesBegin(),
+                 eit = tdCallGraph->forksitesEnd(); it != eit; ++it)
+         {
+-            const SVFValue* forkedVal =tdCallGraph->getThreadAPI()->getForkedFun(*it)->getValue();
+-            if(SVFUtil::dyn_cast<SVFFunction>(forkedVal) == nullptr)
++            const ValVar* pVar = tdCallGraph->getThreadAPI()->getForkedFun(*it);
++            if(SVFUtil::dyn_cast<FunValVar>(pVar) == nullptr)
+             {
+                 SVFIR *pag = this->getPAG();
+-                const NodeBS targets = this->getPts(pag->getValueNode(forkedVal)).toNodeBS();
++                const NodeBS targets = this->getPts(pVar->getId()).toNodeBS();
+                 for(NodeBS::iterator ii = targets.begin(), ie = targets.end(); ii != ie; ++ii)
+                 {
+                     if(ObjVar *objPN = SVFUtil::dyn_cast<ObjVar>(pag->getGNode(*ii)))
+@@ -533,7 +535,7 @@ void BVDataPTAImpl::onTheFlyThreadCallGraphSolve(const CallSiteToFunPtrMap& call
+                         const MemObj *obj = pag->getObject(objPN);
+                         if(obj->isFunction())
+                         {
+-                            const SVFFunction *svfForkedFun = SVFUtil::cast<SVFFunction>(obj->getValue());
++                            const SVFFunction *svfForkedFun = SVFUtil::cast<CallGraphNode>(obj->getGNode())->getFunction();
+                             if(tdCallGraph->addIndirectForkEdge(*it, svfForkedFun))
+                                 newForkEdges[*it].insert(svfForkedFun);
+                         }
+diff --git a/SVF/svf/lib/SABER/SaberCondAllocator.cpp b/SVF/svf/lib/SABER/SaberCondAllocator.cpp
+index c6d989aad..082d7a52b 100644
+--- a/SVF/svf/lib/SABER/SaberCondAllocator.cpp
++++ b/SVF/svf/lib/SABER/SaberCondAllocator.cpp
+@@ -195,7 +195,7 @@ SaberCondAllocator::evaluateTestNullLikeExpr(const BranchStmt *branchStmt, const
+         //  br i1 false, label %44, label %75, !dbg !7669 { "ln": 2033, "cl": 7, "fl": "re_lexer.c" }
+         return Condition::nullExpr();
+     }
+-    if (isTestNullExpr(SVFUtil::cast<ICFGNode>(condVar->getGNode())))
++    if (isTestNullExpr(SVFUtil::cast<ICFGNode>(condVar->getICFGNode())))
+     {
+         // succ is then branch
+         if (succ1 == succ)
+@@ -204,7 +204,7 @@ SaberCondAllocator::evaluateTestNullLikeExpr(const BranchStmt *branchStmt, const
+         else
+             return getTrueCond();
+     }
+-    if (isTestNotNullExpr(SVFUtil::cast<ICFGNode>(condVar->getGNode())))
++    if (isTestNotNullExpr(condVar->getICFGNode()))
+     {
+         // succ is then branch
+         if (succ1 == succ)
+diff --git a/SVF/svf/lib/SABER/SaberSVFGBuilder.cpp b/SVF/svf/lib/SABER/SaberSVFGBuilder.cpp
+index b883adbe6..f90d86e36 100644
+--- a/SVF/svf/lib/SABER/SaberSVFGBuilder.cpp
++++ b/SVF/svf/lib/SABER/SaberSVFGBuilder.cpp
+@@ -82,11 +82,8 @@ void SaberSVFGBuilder::collectGlobals(BVDataPTAImpl* pta)
+             if(SVFUtil::isa<DummyObjVar>(pag->getGNode(gepobj->getBaseNode())))
+                 continue;
+         }
+-        if(const SVFValue* val = pagNode->getValue())
+-        {
+-            if(SVFUtil::isa<SVFGlobalValue>(val))
+-                worklist.push_back(it->first);
+-        }
++        if(pagNode->hasValue() && SVFUtil::isa<SVFGlobalValue>(pagNode->getValue()))
++            worklist.push_back(it->first);
+     }
+ 
+     NodeToPTSSMap cachedPtsMap;
+@@ -138,7 +135,7 @@ PointsTo& SaberSVFGBuilder::CollectPtsChain(BVDataPTAImpl* pta, NodeID id, NodeT
+             if(pta->isFIObjNode(baseId) && pag->getGNode(baseId)->hasValue())
+             {
+                 ValVar* valVar = SVFUtil::dyn_cast<ValVar>(pag->getGNode(baseId));
+-                if(valVar && valVar->getGNode() && SVFUtil::isExtCall(SVFUtil::cast<ICFGNode>(valVar->getGNode())))
++                if(valVar && valVar->getICFGNode() && SVFUtil::isExtCall(valVar->getICFGNode()))
+                 {
+                     return pts;
+                 }
+diff --git a/SVF/svf/lib/SVFIR/SVFFileSystem.cpp b/SVF/svf/lib/SVFIR/SVFFileSystem.cpp
+index 0dfe58ac9..fc1d5fbda 100644
+--- a/SVF/svf/lib/SVFIR/SVFFileSystem.cpp
++++ b/SVF/svf/lib/SVFIR/SVFFileSystem.cpp
+@@ -224,6 +224,8 @@ cJSON* SVFIRWriter::virtToJson(const SVFVar* var)
+         CASE(FIObjNode, FIObjVar);
+         CASE(DummyValNode, DummyValVar);
+         CASE(DummyObjNode, DummyObjVar);
++        CASE(FunObjNode, FunObjVar);
++        CASE(FunValNode, FunValVar);
+ #undef CASE
+     }
+ }
+diff --git a/SVF/svf/lib/SVFIR/SVFIR.cpp b/SVF/svf/lib/SVFIR/SVFIR.cpp
+index b79145c27..ae52cb87a 100644
+--- a/SVF/svf/lib/SVFIR/SVFIR.cpp
++++ b/SVF/svf/lib/SVFIR/SVFIR.cpp
+@@ -472,6 +472,17 @@ NodeID SVFIR::addFIObjNode(const MemObj* obj)
+     return addObjNode(obj->getValue(), node, obj->getId());
+ }
+ 
++NodeID SVFIR::addFunObjNode(const CallGraphNode* callGraphNode, NodeID id)
++{
++    const MemObj* mem = getMemObj(callGraphNode->getFunction());
++    assert(mem->getId() == id && "not same object id?");
++    //assert(findPAGNode(i) == false && "this node should not be created before");
++    NodeID base = mem->getId();
++    memToFieldsMap[base].set(mem->getId());
++    FunObjVar*node = new FunObjVar(callGraphNode, mem->getId(), mem);
++    return addObjNode(mem->getValue(), node, mem->getId());
++}
++
+ /*!
+  * Get all fields object nodes of an object
+  */
+@@ -675,9 +686,15 @@ bool SVFIR::isValidTopLevelPtr(const SVFVar* node)
+ {
+     if (SVFUtil::isa<ValVar>(node))
+     {
+-        if (isValidPointer(node->getId()) && node->hasValue())
++        if (isValidPointer(node->getId()))
+         {
+-            return !SVFUtil::isArgOfUncalledFunction(node->getValue());
++            // TODO: after svf value is removed, we use type to determine top level ptr
++            if (SVFUtil::isa<RetPN>(node) || SVFUtil::isa<VarArgPN>(node) || SVFUtil::isa<FunValVar>(node))
++            {
++                return true;
++            }
++            else if(node->hasValue())
++                return !SVFUtil::isArgOfUncalledFunction(node->getValue());
+         }
+     }
+     return false;
+diff --git a/SVF/svf/lib/SVFIR/SVFVariables.cpp b/SVF/svf/lib/SVFIR/SVFVariables.cpp
+index 72b406e1f..4cd9cdc63 100644
+--- a/SVF/svf/lib/SVFIR/SVFVariables.cpp
++++ b/SVF/svf/lib/SVFIR/SVFVariables.cpp
+@@ -30,6 +30,7 @@
+ #include "SVFIR/SVFVariables.h"
+ #include "Util/Options.h"
+ #include "Util/SVFUtil.h"
++#include "Graphs/CallGraph.h"
+ 
+ using namespace SVF;
+ using namespace SVFUtil;
+@@ -52,11 +53,12 @@ SVFVar::SVFVar(const SVFValue* val, NodeID i, PNODEK k) :
+         break;
+     }
+     case RetNode:
++    case FunObjNode:
+     {
+-        assert(val != nullptr && "value is nullptr for RetNode");
+-        isPtr = SVFUtil::cast<SVFFunction>(val)->getReturnType()->isPointerTy();
++        // to be completed in derived class
+         break;
+     }
++    case FunValNode:
+     case VarargNode:
+     case DummyValNode:
+     {
+@@ -85,8 +87,6 @@ bool SVFVar::isIsolatedNode() const
+         return true;
+     else if (isConstDataOrAggDataButNotNullPtr())
+         return true;
+-    else if (value && SVFUtil::isa<SVFFunction>(value))
+-        return SVFUtil::cast<SVFFunction>(value)->isIntrinsic();
+     else
+         return false;
+ }
+@@ -144,6 +144,21 @@ const std::string GepValVar::toString() const
+     return rawstr.str();
+ }
+ 
++RetPN::RetPN(const CallGraphNode* node, NodeID i) : ValVar(i, RetNode), callGraphNode(node)
++{
++    isPtr = node->getFunction()->getReturnType()->isPointerTy();
++}
++
++const SVFFunction* RetPN::getFunction() const
++{
++    return callGraphNode->getFunction();
++}
++
++const std::string RetPN::getValueName() const
++{
++    return callGraphNode->getName() + "_ret";
++}
++
+ const std::string GepObjVar::toString() const
+ {
+     std::string str;
+@@ -170,19 +185,67 @@ const std::string FIObjVar::toString() const
+     return rawstr.str();
+ }
+ 
++const std::string FunValVar::toString() const
++{
++    std::string str;
++    std::stringstream rawstr(str);
++    rawstr << "FunValVar ID: " << getId();
++    if (Options::ShowSVFIRValue())
++    {
++        rawstr << "\n";
++        rawstr << callGraphNode->getName();
++    }
++    return rawstr.str();
++}
++
++FunObjVar::FunObjVar(const CallGraphNode* cgNode, NodeID i, const MemObj* mem,
++                     PNODEK ty)
++    : FIObjVar(nullptr, i, mem, ty), callGraphNode(cgNode)
++{
++    isPtr = callGraphNode->getFunction()->getType()->isPointerTy();
++}
++
++bool FunObjVar::isIsolatedNode() const
++{
++    return callGraphNode->getFunction()->isIntrinsic();
++}
++
++const std::string FunObjVar::toString() const
++{
++    std::string str;
++    std::stringstream rawstr(str);
++    rawstr << "FunObjVar ID: " << getId() << " (base object)";
++    if (Options::ShowSVFIRValue())
++    {
++        rawstr << "\n";
++        rawstr << callGraphNode->getName();
++    }
++    return rawstr.str();
++}
++
+ const std::string RetPN::toString() const
+ {
+     std::string str;
+     std::stringstream rawstr(str);
+-    rawstr << "RetPN ID: " << getId() << " unique return node for function " << SVFUtil::cast<SVFFunction>(value)->getName();
++    rawstr << "RetPN ID: " << getId() << " unique return node for function " << callGraphNode->getName();
+     return rawstr.str();
+ }
+ 
++const SVFFunction* VarArgPN::getFunction() const
++{
++    return callGraphNode->getFunction();
++}
++
++const std::string VarArgPN::getValueName() const
++{
++    return callGraphNode->getName() + "_vararg";
++}
++
+ const std::string VarArgPN::toString() const
+ {
+     std::string str;
+     std::stringstream rawstr(str);
+-    rawstr << "VarArgPN ID: " << getId() << " Var arg node for function " << SVFUtil::cast<SVFFunction>(value)->getName();
++    rawstr << "VarArgPN ID: " << getId() << " Var arg node for function " << callGraphNode->getName();
+     return rawstr.str();
+ }
+ 
+diff --git a/SVF/svf/lib/Util/CallGraphBuilder.cpp b/SVF/svf/lib/Util/CallGraphBuilder.cpp
+index ba01d4d1f..6c7a012db 100644
+--- a/SVF/svf/lib/Util/CallGraphBuilder.cpp
++++ b/SVF/svf/lib/Util/CallGraphBuilder.cpp
+@@ -88,15 +88,15 @@ ThreadCallGraph* CallGraphBuilder::buildThreadCallGraph()
+                 {
+                     const CallICFGNode* cs = cast<CallICFGNode>(inst);
+                     cg->addForksite(cs);
+-                    const SVFFunction* forkee = SVFUtil::dyn_cast<SVFFunction>(tdAPI->getForkedFun(cs)->getValue());
+-                    if (forkee)
++                    const ValVar* svfVar = tdAPI->getForkedFun(cs);
++                    if (SVFUtil::isa<FunValVar>(svfVar))
+                     {
+                         cg->addDirectForkEdge(cs);
+                     }
+                     // indirect call to the start routine function
+                     else
+                     {
+-                        cg->addThreadForkEdgeSetMap(cs,nullptr);
++                        cg->addThreadForkEdgeSetMap(cs, nullptr);
+                     }
+                 }
+             }
+diff --git a/SVF/svf/lib/Util/SVFUtil.cpp b/SVF/svf/lib/Util/SVFUtil.cpp
+index bf7282945..ecaed39fe 100644
+--- a/SVF/svf/lib/Util/SVFUtil.cpp
++++ b/SVF/svf/lib/Util/SVFUtil.cpp
+@@ -423,4 +423,11 @@ const SVFFunction* SVFUtil::getProgEntryFunction()
+             return (fun->getFunction());
+     }
+     return nullptr;
++}
++
++
++const ObjVar* SVFUtil::getObjVarOfValVar(const SVF::ValVar* valVar)
++{
++    assert(valVar->getInEdges().size() == 1);
++    return SVFUtil::dyn_cast<ObjVar>((*valVar->getInEdges().begin())->getSrcNode());
+ }
+\ No newline at end of file
+diff --git a/SVF/svf/lib/Util/ThreadAPI.cpp b/SVF/svf/lib/Util/ThreadAPI.cpp
+index 6e5bbbf9c..2cf335753 100644
+--- a/SVF/svf/lib/Util/ThreadAPI.cpp
++++ b/SVF/svf/lib/Util/ThreadAPI.cpp
+@@ -161,13 +161,13 @@ bool ThreadAPI::isTDBarWait(const CallICFGNode *inst) const
+ }
+ 
+ 
+-const SVFVar* ThreadAPI::getForkedThread(const CallICFGNode *inst) const
++const ValVar* ThreadAPI::getForkedThread(const CallICFGNode *inst) const
+ {
+     assert(isTDFork(inst) && "not a thread fork function!");
+     return inst->getArgument(0);
+ }
+ 
+-const SVFVar* ThreadAPI::getForkedFun(const CallICFGNode *inst) const
++const ValVar* ThreadAPI::getForkedFun(const CallICFGNode *inst) const
+ {
+     assert(isTDFork(inst) && "not a thread fork function!");
+     return inst->getArgument(2);
+@@ -175,7 +175,7 @@ const SVFVar* ThreadAPI::getForkedFun(const CallICFGNode *inst) const
+ 
+ /// Return the forth argument of the call,
+ /// Note that, it is the sole argument of start routine ( a void* pointer )
+-const SVFVar* ThreadAPI::getActualParmAtForkSite(const CallICFGNode *inst) const
++const ValVar* ThreadAPI::getActualParmAtForkSite(const CallICFGNode *inst) const
+ {
+     assert(isTDFork(inst) && "not a thread fork function!");
+     return inst->getArgument(3);
+-- 
+2.39.5 (Apple Git-154)
+

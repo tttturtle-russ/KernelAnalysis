@@ -1,0 +1,56 @@
+From 58afbdb3dc9a364a3a83ffc9056037fb2aec5927 Mon Sep 17 00:00:00 2001
+From: TurtleRuss <tttturtleruss@gmail.com>
+Date: Thu, 5 Dec 2024 10:48:51 +0800
+Subject: [PATCH 08/10] svf: update ancestor detection
+
+
+diff --git a/SVF/svf/lib/MSSA/MemSSA.cpp b/SVF/svf/lib/MSSA/MemSSA.cpp
+index 90f651350..3a862b48a 100644
+--- a/SVF/svf/lib/MSSA/MemSSA.cpp
++++ b/SVF/svf/lib/MSSA/MemSSA.cpp
+@@ -572,6 +572,7 @@ u32_t MemSSA::getBBPhiNum() const
+     return num;
+ }
+ 
++// init and exit sections defined by linux kernel
+ const char* InitSections[] = {
+     ".init.text", // denoted by __init
+     ".init.data", // denoted by __initdata
+@@ -581,6 +582,7 @@ const char* InitSections[] = {
+     ".exitcall.exit" // denoted by __exit_call
+ };
+ 
++// utility function, get the llvm::Function from SVFFunction
+ const Function* getLLVMFunction(const LLVMModuleSet* llvmModuleSet,const SVFFunction* SF)
+ {
+     auto llvmValue = llvmModuleSet->getLLVMValue(SF);
+@@ -588,6 +590,13 @@ const Function* getLLVMFunction(const LLVMModuleSet* llvmModuleSet,const SVFFunc
+     return llvmFunction;
+ }
+ 
++/*
++ * detect if the function is linked in InitSections
++ * a function is init function iff:
++ * 1. it is in InitSections
++ * or
++ * 2. it has no caller
++*/
+ bool isInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F)
+ {
+     if (F == nullptr || !F->hasSection())
+@@ -609,11 +618,8 @@ bool isCalledByInitFunc(const LLVMModuleSet* llvmModuleSet, const Function* F)
+     auto inEdges = callGraphNode->getInEdges();
+     return std::all_of(inEdges.begin(), inEdges.end(), [llvmModuleSet](const CallGraphEdge* edge) {
+         auto caller = edge->getSrcNode();
+-        if (caller == nullptr) return true;
+         auto F = getLLVMFunction(llvmModuleSet, caller->getFunction());
+-        if (F == nullptr) return true;
+-        if (isInitFunc(llvmModuleSet, F)) return true;
+-        return false;
++        return isInitFunc(llvmModuleSet,F);
+     });
+ }
+ 
+-- 
+2.39.5 (Apple Git-154)
+

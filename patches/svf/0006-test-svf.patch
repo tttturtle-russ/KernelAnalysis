@@ -1,0 +1,1594 @@
+From 5e90b830148ba3355970291841ce27e07a8b1521 Mon Sep 17 00:00:00 2001
+From: TurtleRuss <tttturtleruss@gmail.com>
+Date: Tue, 3 Dec 2024 09:17:19 +0800
+Subject: [PATCH 06/10] test: svf
+
+
+diff --git a/SVF/build.sh b/SVF/build.sh
+index a988f9c79..d145bc1cd 100755
+--- a/SVF/build.sh
++++ b/SVF/build.sh
+@@ -4,14 +4,14 @@
+ # if the LLVM_DIR variable is not set, LLVM will be downloaded.
+ #
+ # Dependencies include: build-essential libncurses5 libncurses-dev cmake zlib1g-dev
+-set -e # exit on first error
++#set -e # exit on first error
+ 
+-jobs=$(nproc)
++jobs=`nproc`
+ 
+ #########
+ # VARs and Links
+ ########
+-SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
++SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ SVFHOME="${SCRIPT_DIR}"
+ sysOS=$(uname -s)
+ arch=$(uname -m)
+@@ -29,112 +29,113 @@ SourceZ3="https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.8.8.zip"
+ LLVMHome="llvm-${MajorLLVMVer}.0.0.obj"
+ Z3Home="z3.obj"
+ 
++
+ # Downloads $1 (URL) to $2 (target destination) using wget or curl,
+ # depending on OS.
+ # E.g. generic_download_file www.url.com/my.zip loc/my.zip
+ function generic_download_file {
+-	if [[ $# -ne 2 ]]; then
+-		echo "$0: bad args to generic_download_file!"
+-		exit 1
+-	fi
++    if [[ $# -ne 2 ]]; then
++        echo "$0: bad args to generic_download_file!"
++        exit 1
++    fi
+ 
+-	if [[ -f "$2" ]]; then
+-		echo "File $2 exists, skip download..."
+-		return
+-	fi
++    if [[ -f "$2" ]]; then
++        echo "File $2 exists, skip download..."
++        return
++    fi
+ 
+-	local download_failed=false
+-	if type curl &>/dev/null; then
+-		if ! curl -L "$1" -o "$2"; then
+-			download_failed=true
+-		fi
+-	elif type wget &>/dev/null; then
+-		if ! wget -c "$1" -O "$2"; then
+-			download_failed=true
+-		fi
+-	else
+-		echo "Cannot find download tool. Please install curl or wget."
+-		exit 1
+-	fi
++    local download_failed=false
++    if type curl &> /dev/null; then
++        if ! curl -L "$1" -o "$2"; then
++            download_failed=true
++        fi
++    elif type wget &> /dev/null; then
++        if ! wget -c "$1" -O "$2"; then
++            download_failed=true
++        fi
++    else
++        echo "Cannot find download tool. Please install curl or wget."
++        exit 1
++    fi
+ 
+-	if $download_failed; then
+-		echo "Failed to download $1"
+-		rm -f "$2"
+-		exit 1
+-	fi
++    if $download_failed; then
++        echo "Failed to download $1"
++        rm -f "$2"
++        exit 1
++    fi
+ }
+ 
+ # check if unzip is missing (Z3)
+ function check_unzip {
+-	if ! type unzip &>/dev/null; then
+-		echo "Cannot find unzip. Please install unzip."
+-		exit 1
+-	fi
++    if ! type unzip &> /dev/null; then
++        echo "Cannot find unzip. Please install unzip."
++        exit 1
++    fi
+ }
+ 
+ # check if xz is missing (LLVM)
+ function check_xz {
+-	if ! type xz &>/dev/null; then
+-		echo "Cannot find xz. Please install xz-utils."
+-		exit 1
+-	fi
++    if ! type xz &> /dev/null; then
++        echo "Cannot find xz. Please install xz-utils."
++        exit 1
++    fi
+ }
+ 
+ function build_z3_from_source {
+-	mkdir "$Z3Home"
+-	echo "Downloading Z3 source..."
+-	generic_download_file "$SourceZ3" z3.zip
+-	check_unzip
+-	echo "Unzipping Z3 source..."
+-	mkdir z3-source
+-	unzip z3.zip -d z3-source
++    mkdir "$Z3Home"
++    echo "Downloading Z3 source..."
++    generic_download_file "$SourceZ3" z3.zip
++    check_unzip
++    echo "Unzipping Z3 source..."
++    mkdir z3-source
++    unzip z3.zip -d z3-source
+ 
+-	echo "Building Z3..."
+-	mkdir z3-build
+-	cd z3-build
+-	# /* is a dirty hack to get z3-version...
+-	cmake -DCMAKE_INSTALL_PREFIX="$SVFHOME/$Z3Home" -DZ3_BUILD_LIBZ3_SHARED=false ../z3-source/*
+-	cmake --build . -j ${jobs}
+-	cmake --install .
++    echo "Building Z3..."
++    mkdir z3-build
++    cd z3-build
++    # /* is a dirty hack to get z3-version...
++    cmake -DCMAKE_INSTALL_PREFIX="$SVFHOME/$Z3Home" -DZ3_BUILD_LIBZ3_SHARED=false ../z3-source/*
++    cmake --build . -j ${jobs}
++    cmake --install .
+ 
+-	cd ..
+-	rm -r z3-source z3-build z3.zip
++    cd ..
++    rm -r z3-source z3-build z3.zip
+ }
+ 
+ function build_llvm_from_source {
+-	mkdir "$LLVMHome"
+-	echo "Downloading LLVM source..."
+-	generic_download_file "$SourceLLVM" llvm.zip
+-	check_unzip
+-	echo "Unzipping LLVM source..."
+-	mkdir llvm-source
+-	unzip llvm.zip -d llvm-source
++    mkdir "$LLVMHome"
++    echo "Downloading LLVM source..."
++    generic_download_file "$SourceLLVM" llvm.zip
++    check_unzip
++    echo "Unzipping LLVM source..."
++    mkdir llvm-source
++    unzip llvm.zip -d llvm-source
+ 
+-	echo "Building LLVM..."
+-	mkdir llvm-build
+-	cd llvm-build
+-	# /*/ is a dirty hack to get llvm-project-llvmorg-version...
+-	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$SVFHOME/$LLVMHome" -DLLVM_ENABLE_PROJECTS=clang ../llvm-source/*/llvm
+-	cmake --build . -j ${jobs}
+-	cmake --install .
++    echo "Building LLVM..."
++    mkdir llvm-build
++    cd llvm-build
++    # /*/ is a dirty hack to get llvm-project-llvmorg-version...
++    cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$SVFHOME/$LLVMHome" -DLLVM_ENABLE_PROJECTS=clang ../llvm-source/*/llvm
++    cmake --build . -j ${jobs}
++    cmake --install .
+ 
+-	cd ..
+-	rm -r llvm-source llvm-build llvm.zip
++    cd ..
++    rm -r llvm-source llvm-build llvm.zip
+ }
+ 
+ function check_and_install_brew {
+-	if command -v brew >/dev/null 2>&1; then
+-		echo "Homebrew is already installed."
+-	else
+-		echo "Homebrew not found. Installing Homebrew..."
+-		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+-		if [ $? -eq 0 ]; then
+-			echo "Homebrew installation completed."
+-		else
+-			echo "Homebrew installation failed."
+-			exit 1
+-		fi
+-	fi
++    if command -v brew >/dev/null 2>&1; then
++        echo "Homebrew is already installed."
++    else
++        echo "Homebrew not found. Installing Homebrew..."
++        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
++        if [ $? -eq 0 ]; then
++            echo "Homebrew installation completed."
++        else
++            echo "Homebrew installation failed."
++            exit 1
++        fi
++    fi
+ }
+ 
+ # OS-specific values.
+@@ -147,85 +148,86 @@ OSDisplayName=""
+ # M1 Macs give back arm64, some Linuxes can give aarch64 for arm architecture
+ #######
+ if [[ $sysOS == "Darwin" ]]; then
+-	check_and_install_brew
+-	if [[ "$arch" == "arm64" ]]; then
+-		OSDisplayName="macOS arm64"
+-	else
+-		OSDisplayName="macOS x86"
+-	fi
++    check_and_install_brew
++    if [[ "$arch" == "arm64" ]]; then
++        OSDisplayName="macOS arm64"
++    else
++        OSDisplayName="macOS x86"
++    fi
+ elif [[ $sysOS == "Linux" ]]; then
+-	if [[ "$arch" == "aarch64" ]]; then
+-		urlLLVM="$UbuntuArmLLVM"
+-		urlZ3="$UbuntuZ3Arm"
+-		OSDisplayName="Ubuntu arm64"
+-	else
+-		urlLLVM="$UbuntuLLVM"
+-		urlZ3="$UbuntuZ3"
+-		OSDisplayName="Ubuntu x86"
+-	fi
++    if [[ "$arch" == "aarch64" ]]; then
++        urlLLVM="$UbuntuArmLLVM"
++        urlZ3="$UbuntuZ3Arm"
++        OSDisplayName="Ubuntu arm64"
++    else
++        urlLLVM="$UbuntuLLVM"
++        urlZ3="$UbuntuZ3"
++        OSDisplayName="Ubuntu x86"
++    fi
+ else
+-	echo "Builds outside Ubuntu and macOS are not supported."
++    echo "Builds outside Ubuntu and macOS are not supported."
+ fi
+ 
+ ########
+ # Download LLVM if need be.
+ #######
+ if [[ ! -d "$LLVM_DIR" ]]; then
+-	if [[ ! -d "$LLVMHome" ]]; then
+-		if [[ "$sysOS" = "Darwin" ]]; then
+-			echo "Installing LLVM binary for $OSDisplayName"
+-			brew install llvm@${MajorLLVMVer}
+-			# check whether llvm is installed
+-			if [ $? -eq 0 ]; then
+-				echo "LLVM binary installation completed."
+-			else
+-				echo "LLVM binary installation failed."
+-				exit 1
+-			fi
+-			mkdir -p $SVFHOME/$LLVMHome
+-			ln -s $(brew --prefix llvm@${MajorLLVMVer})/* $SVFHOME/$LLVMHome
+-		else
+-			# everything else downloads pre-built lib includ osx "arm64"
+-			echo "Downloading LLVM binary for $OSDisplayName"
+-			generic_download_file "$urlLLVM" llvm.tar.xz
+-			check_xz
+-			echo "Unzipping llvm package..."
+-			mkdir -p "./$LLVMHome" && tar -xf llvm.tar.xz -C "./$LLVMHome" --strip-components 1
+-			rm llvm.tar.xz
+-		fi
+-	fi
+-	export LLVM_DIR="$SVFHOME/$LLVMHome"
++    if [[ ! -d "$LLVMHome" ]]; then
++        if [[ "$sysOS" = "Darwin" ]]; then
++            echo "Installing LLVM binary for $OSDisplayName"
++            brew install llvm@${MajorLLVMVer}
++            # check whether llvm is installed
++            if [ $? -eq 0 ]; then
++                echo "LLVM binary installation completed."
++            else
++                echo "LLVM binary installation failed."
++                exit 1
++            fi
++            mkdir -p $SVFHOME/$LLVMHome
++            ln -s $(brew --prefix llvm@${MajorLLVMVer})/* $SVFHOME/$LLVMHome
++        else
++            # everything else downloads pre-built lib includ osx "arm64"
++            echo "Downloading LLVM binary for $OSDisplayName"
++            generic_download_file "$urlLLVM" llvm.tar.xz
++            check_xz
++            echo "Unzipping llvm package..."
++            mkdir -p "./$LLVMHome" && tar -xf llvm.tar.xz -C "./$LLVMHome" --strip-components 1
++            rm llvm.tar.xz
++        fi
++    fi
++    export LLVM_DIR="$SVFHOME/$LLVMHome"
+ fi
+ 
++
+ ########
+ # Download Z3 if need be.
+ #######
+ if [[ ! -d "$Z3_DIR" ]]; then
+-	if [[ ! -d "$Z3Home" ]]; then
+-		# M1 Macs give back arm64, some Linuxes can give aarch64.
+-		if [[ "$sysOS" = "Darwin" ]]; then
+-			echo "Downloading Z3 binary for $OSDisplayName"
+-			brew install z3
+-			if [ $? -eq 0 ]; then
+-				echo "z3 binary installation completed."
+-			else
+-				echo "z3 binary installation failed."
+-				exit 1
+-			fi
+-			mkdir -p $SVFHOME/$Z3Home
+-			ln -s $(brew --prefix z3)/* $SVFHOME/$Z3Home
+-		else
+-			# everything else downloads pre-built lib
+-			echo "Downloading Z3 binary for $OSDisplayName"
+-			generic_download_file "$urlZ3" z3.zip
+-			check_unzip
+-			echo "Unzipping z3 package..."
+-			unzip -q "z3.zip" && mv ./z3-* ./$Z3Home
+-			rm z3.zip
+-		fi
+-	fi
++    if [[ ! -d "$Z3Home" ]]; then
++        # M1 Macs give back arm64, some Linuxes can give aarch64.
++        if [[ "$sysOS" = "Darwin" ]]; then
++            echo "Downloading Z3 binary for $OSDisplayName"
++            brew install z3
++            if [ $? -eq 0 ]; then
++		      echo "z3 binary installation completed."
++	        else
++		      echo "z3 binary installation failed."
++		      exit 1
++	        fi
++            mkdir -p $SVFHOME/$Z3Home
++            ln -s $(brew --prefix z3)/* $SVFHOME/$Z3Home
++        else
++            # everything else downloads pre-built lib
++            echo "Downloading Z3 binary for $OSDisplayName"
++            generic_download_file "$urlZ3" z3.zip
++            check_unzip
++            echo "Unzipping z3 package..."
++            unzip -q "z3.zip" && mv ./z3-* ./$Z3Home
++            rm z3.zip
++        fi
++    fi
+ 
+-	export Z3_DIR="$SVFHOME/$Z3Home"
++    export Z3_DIR="$SVFHOME/$Z3Home"
+ fi
+ 
+ # Add LLVM & Z3 to $PATH and $LD_LIBRARY_PATH (prepend so that selected instances will be used first)
+@@ -239,9 +241,9 @@ echo "Z3_DIR=$Z3_DIR"
+ # Build SVF
+ ########
+ if [[ $1 =~ ^[Dd]ebug$ ]]; then
+-	BUILD_TYPE='Debug'
++    BUILD_TYPE='Debug'
+ else
+-	BUILD_TYPE='Release'
++    BUILD_TYPE='Release'
+ fi
+ BUILD_DIR="./${BUILD_TYPE}-build"
+ 
+@@ -249,10 +251,10 @@ rm -rf "${BUILD_DIR}"
+ mkdir "${BUILD_DIR}"
+ # If you need shared libs, turn BUILD_SHARED_LIBS on
+ cmake -D CMAKE_BUILD_TYPE:STRING="${BUILD_TYPE}" \
+-	-DSVF_ENABLE_ASSERTIONS:BOOL=true \
+-	-DSVF_SANITIZE="${SVF_SANITIZER}" \
+-	-DBUILD_SHARED_LIBS=off \
+-	-S "${SVFHOME}" -B "${BUILD_DIR}"
++    -DSVF_ENABLE_ASSERTIONS:BOOL=true            \
++    -DSVF_SANITIZE="${SVF_SANITIZER}"            \
++    -DBUILD_SHARED_LIBS=off                      \
++    -S "${SVFHOME}" -B "${BUILD_DIR}"
+ cmake --build "${BUILD_DIR}" -j ${jobs}
+ 
+ ########
+diff --git a/SVF/svf/include/Graphs/ICFGNode.h b/SVF/svf/include/Graphs/ICFGNode.h
+index f211dc278..033660187 100644
+--- a/SVF/svf/include/Graphs/ICFGNode.h
++++ b/SVF/svf/include/Graphs/ICFGNode.h
+@@ -30,9 +30,9 @@
+ #ifndef ICFGNODE_H_
+ #define ICFGNODE_H_
+ 
++#include "Util/SVFUtil.h"
+ #include "Graphs/GenericGraph.h"
+ #include "Graphs/ICFGEdge.h"
+-#include "Util/SVFUtil.h"
+ 
+ namespace SVF
+ {
+@@ -46,9 +46,8 @@ class SVFVar;
+ class VFGNode;
+ 
+ /*!
+- * Interprocedural control-flow graph node, representing different kinds of
+- * program statements including top-level pointers (ValVar) and address-taken
+- * objects (ObjVar)
++ * Interprocedural control-flow graph node, representing different kinds of program statements
++ * including top-level pointers (ValVar) and address-taken objects (ObjVar)
+  */
+ typedef GenericNode<ICFGNode, ICFGEdge> GenericICFGNodeTy;
+ 
+@@ -58,18 +57,18 @@ class ICFGNode : public GenericICFGNodeTy
+     friend class SVFIRReader;
+ 
+ public:
++
+     typedef ICFGEdge::ICFGEdgeSetTy::iterator iterator;
+     typedef ICFGEdge::ICFGEdgeSetTy::const_iterator const_iterator;
+-    typedef Set<const CallPE*> CallPESet;
+-    typedef Set<const RetPE*> RetPESet;
++    typedef Set<const CallPE *> CallPESet;
++    typedef Set<const RetPE *> RetPESet;
+     typedef std::list<const VFGNode*> VFGNodeList;
+     typedef std::list<const SVFStmt*> SVFStmtList;
+     typedef GNodeK ICFGNodeK;
+ 
+ public:
+     /// Constructor
+-    ICFGNode(NodeID i, GNodeK k)
+-        : GenericICFGNodeTy(i, k), fun(nullptr), bb(nullptr)
++    ICFGNode(NodeID i, GNodeK k) : GenericICFGNodeTy(i, k), fun(nullptr), bb(nullptr)
+     {
+     }
+ 
+@@ -85,9 +84,10 @@ public:
+         return bb;
+     }
+ 
++
+     /// Overloading operator << for dumping ICFG node ID
+     //@{
+-    friend OutStream& operator<<(OutStream& o, const ICFGNode& node)
++    friend OutStream &operator<<(OutStream &o, const ICFGNode &node)
+     {
+         o << node.toString();
+         return o;
+@@ -96,7 +96,7 @@ public:
+ 
+     /// Set/Get methods of VFGNodes
+     ///@{
+-    inline void addVFGNode(const VFGNode* vfgNode)
++    inline void addVFGNode(const VFGNode *vfgNode)
+     {
+         VFGNodes.push_back(vfgNode);
+     }
+@@ -109,7 +109,7 @@ public:
+ 
+     /// Set/Get methods of VFGNodes
+     ///@{
+-    inline void addSVFStmt(const SVFStmt* edge)
++    inline void addSVFStmt(const SVFStmt *edge)
+     {
+         pagEdges.push_back(edge);
+     }
+@@ -122,9 +122,12 @@ public:
+ 
+     virtual const std::string toString() const;
+ 
++
++
+     void dump() const;
+ 
+-    static inline bool classof(const ICFGNode*)
++
++    static inline bool classof(const ICFGNode *)
+     {
+         return true;
+     }
+@@ -139,11 +142,14 @@ public:
+         return isICFGNodeKinds(node->getNodeKind());
+     }
+ 
++
++
+ protected:
+     const SVFFunction* fun;
+     const SVFBasicBlock* bb;
+     VFGNodeList VFGNodes; //< a list of VFGNodes
+     SVFStmtList pagEdges; //< a list of PAGEdges
++
+ };
+ 
+ /*!
+@@ -153,21 +159,23 @@ class GlobalICFGNode : public ICFGNode
+ {
+ 
+ public:
+-    GlobalICFGNode(NodeID id) : ICFGNode(id, GlobalBlock) {}
++    GlobalICFGNode(NodeID id) : ICFGNode(id, GlobalBlock)
++    {
++    }
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const GlobalICFGNode*)
++    static inline bool classof(const GlobalICFGNode *)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const ICFGNode* node)
++    static inline bool classof(const ICFGNode *node)
+     {
+         return node->getNodeKind() == GlobalBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy* node)
++    static inline bool classof(const GenericICFGNodeTy *node)
+     {
+         return node->getNodeKind() == GlobalBlock;
+     }
+@@ -188,17 +196,14 @@ class IntraICFGNode : public ICFGNode
+ {
+     friend class SVFIRWriter;
+     friend class SVFIRReader;
+-
+ private:
+     bool isRet;
+ 
+-    /// Constructor to create empty IntraICFGNode (for
+-    /// SVFIRReader/deserialization)
++    /// Constructor to create empty IntraICFGNode (for SVFIRReader/deserialization)
+     IntraICFGNode(NodeID id) : ICFGNode(id, IntraBlock), isRet(false) {}
+ 
+ public:
+-    IntraICFGNode(NodeID id, const SVFBasicBlock* b, bool isReturn)
+-        : ICFGNode(id, IntraBlock), isRet(isReturn)
++    IntraICFGNode(NodeID id, const SVFBasicBlock* b, bool isReturn) : ICFGNode(id, IntraBlock), isRet(isReturn)
+     {
+         fun = b->getFunction();
+         bb = b;
+@@ -206,17 +211,17 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const IntraICFGNode*)
++    static inline bool classof(const IntraICFGNode *)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const ICFGNode* node)
++    static inline bool classof(const ICFGNode *node)
+     {
+         return node->getNodeKind() == IntraBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy* node)
++    static inline bool classof(const GenericICFGNodeTy *node)
+     {
+         return node->getNodeKind() == IntraBlock;
+     }
+@@ -235,11 +240,13 @@ class InterICFGNode : public ICFGNode
+ 
+ public:
+     /// Constructor
+-    InterICFGNode(NodeID id, ICFGNodeK k) : ICFGNode(id, k) {}
++    InterICFGNode(NodeID id, ICFGNodeK k) : ICFGNode(id, k)
++    {
++    }
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const InterICFGNode*)
++    static inline bool classof(const InterICFGNode *)
+     {
+         return true;
+     }
+@@ -262,6 +269,9 @@ public:
+     //@}
+ };
+ 
++
++
++
+ /*!
+  * Function entry ICFGNode containing a set of FormalParmVFGNodes of a function
+  */
+@@ -271,13 +281,11 @@ class FunEntryICFGNode : public InterICFGNode
+     friend class SVFIRReader;
+ 
+ public:
+-    typedef std::vector<const SVFVar*> FormalParmNodeVec;
+-
++    typedef std::vector<const SVFVar *> FormalParmNodeVec;
+ private:
+     FormalParmNodeVec FPNodes;
+ 
+-    /// Constructor to create empty FunEntryICFGNode (for
+-    /// SVFIRReader/deserialization)
++    /// Constructor to create empty FunEntryICFGNode (for SVFIRReader/deserialization)
+     FunEntryICFGNode(NodeID id) : InterICFGNode(id, FunEntryBlock) {}
+ 
+ public:
+@@ -290,40 +298,40 @@ public:
+     }
+ 
+     /// Return the set of formal parameters
+-    inline const FormalParmNodeVec& getFormalParms() const
++    inline const FormalParmNodeVec &getFormalParms() const
+     {
+         return FPNodes;
+     }
+ 
+     /// Add formal parameters
+-    inline void addFormalParms(const SVFVar* fp)
++    inline void addFormalParms(const SVFVar *fp)
+     {
+         FPNodes.push_back(fp);
+     }
+ 
+-    /// Methods for support type inquiry through isa, cast, and dyn_cast:
++    ///Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const FunEntryICFGNode*)
++    static inline bool classof(const FunEntryICFGNode *)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const InterICFGNode* node)
++    static inline bool classof(const InterICFGNode *node)
+     {
+         return node->getNodeKind() == FunEntryBlock;
+     }
+ 
+-    static inline bool classof(const ICFGNode* node)
++    static inline bool classof(const ICFGNode *node)
+     {
+         return node->getNodeKind() == FunEntryBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy* node)
++    static inline bool classof(const GenericICFGNodeTy *node)
+     {
+         return node->getNodeKind() == FunEntryBlock;
+     }
+ 
+-    static inline bool classof(const SVFBaseNode* node)
++    static inline bool classof(const SVFBaseNode*node)
+     {
+         return node->getNodeKind() == FunEntryBlock;
+     }
+@@ -338,8 +346,7 @@ public:
+ };
+ 
+ /*!
+- * Function exit ICFGNode containing (at most one) FormalRetVFGNodes of a
+- * function
++ * Function exit ICFGNode containing (at most one) FormalRetVFGNodes of a function
+  */
+ class FunExitICFGNode : public InterICFGNode
+ {
+@@ -347,10 +354,9 @@ class FunExitICFGNode : public InterICFGNode
+     friend class SVFIRReader;
+ 
+ private:
+-    const SVFVar* formalRet;
++    const SVFVar *formalRet;
+ 
+-    /// Constructor to create empty FunExitICFGNode (for
+-    /// SVFIRReader/deserialization)
++    /// Constructor to create empty FunExitICFGNode (for SVFIRReader/deserialization)
+     FunExitICFGNode(NodeID id) : InterICFGNode(id, FunExitBlock), formalRet{} {}
+ 
+ public:
+@@ -363,40 +369,40 @@ public:
+     }
+ 
+     /// Return formal return parameter
+-    inline const SVFVar* getFormalRet() const
++    inline const SVFVar *getFormalRet() const
+     {
+         return formalRet;
+     }
+ 
+     /// Add formal return parameter
+-    inline void addFormalRet(const SVFVar* fr)
++    inline void addFormalRet(const SVFVar *fr)
+     {
+         formalRet = fr;
+     }
+ 
+-    /// Methods for support type inquiry through isa, cast, and dyn_cast:
++    ///Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const FunEntryICFGNode*)
++    static inline bool classof(const FunEntryICFGNode *)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const ICFGNode* node)
++    static inline bool classof(const ICFGNode *node)
+     {
+         return node->getNodeKind() == FunExitBlock;
+     }
+ 
+-    static inline bool classof(const InterICFGNode* node)
++    static inline bool classof(const InterICFGNode *node)
+     {
+         return node->getNodeKind() == FunExitBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy* node)
++    static inline bool classof(const GenericICFGNodeTy *node)
+     {
+         return node->getNodeKind() == FunExitBlock;
+     }
+ 
+-    static inline bool classof(const SVFBaseNode* node)
++    static inline bool classof(const SVFBaseNode*node)
+     {
+         return node->getNodeKind() == FunExitBlock;
+     }
+@@ -419,21 +425,19 @@ class CallICFGNode : public InterICFGNode
+     friend class SVFIRReader;
+ 
+ public:
+-    typedef std::vector<const ValVar*> ActualParmNodeVec;
++    typedef std::vector<const ValVar *> ActualParmNodeVec;
+ 
+ protected:
+     const RetICFGNode* ret;
+-    ActualParmNodeVec APNodes;     /// arguments
+-    const SVFFunction* calledFunc; /// called function
+-    bool isvararg;                 /// is variable argument
+-    bool isVirCallInst;            /// is virtual call inst
+-    SVFVar* vtabPtr;               /// virtual table pointer
+-    s32_t virtualFunIdx; /// virtual function index of the virtual table(s) at a
+-                         /// virtual call
+-    std::string funNameOfVcall; /// the function name of this virtual call
+-
+-    /// Constructor to create empty CallICFGNode (for
+-    /// SVFIRReader/deserialization)
++    ActualParmNodeVec APNodes;      /// arguments
++    const SVFFunction* calledFunc;  /// called function
++    bool isvararg;                  /// is variable argument
++    bool isVirCallInst;             /// is virtual call inst
++    SVFVar* vtabPtr;                /// virtual table pointer
++    s32_t virtualFunIdx;            /// virtual function index of the virtual table(s) at a virtual call
++    std::string funNameOfVcall;     /// the function name of this virtual call
++
++    /// Constructor to create empty CallICFGNode (for SVFIRReader/deserialization)
+     CallICFGNode(NodeID id) : InterICFGNode(id, FunCallBlock), ret{} {}
+ 
+ public:
+@@ -481,13 +485,13 @@ public:
+     }
+ 
+     /// Return the set of actual parameters
+-    inline const ActualParmNodeVec& getActualParms() const
++    inline const ActualParmNodeVec &getActualParms() const
+     {
+         return APNodes;
+     }
+ 
+     /// Add actual parameters
+-    inline void addActualParms(const ValVar* ap)
++    inline void addActualParms(const ValVar *ap)
+     {
+         APNodes.push_back(ap);
+     }
+@@ -536,11 +540,11 @@ public:
+         return vtabPtr;
+     }
+ 
++
+     inline s32_t getFunIdxInVtable() const
+     {
+         assert(isVirtualCall() && "not a virtual call?");
+-        assert(virtualFunIdx >= 0 &&
+-               "virtual function idx is less than 0? not set yet?");
++        assert(virtualFunIdx >=0 && "virtual function idx is less than 0? not set yet?");
+         return virtualFunIdx;
+     }
+ 
+@@ -551,29 +555,29 @@ public:
+     }
+     //@}
+ 
+-    /// Methods for support type inquiry through isa, cast, and dyn_cast:
++    ///Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const CallICFGNode*)
++    static inline bool classof(const CallICFGNode *)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const ICFGNode* node)
++    static inline bool classof(const ICFGNode *node)
+     {
+         return node->getNodeKind() == FunCallBlock;
+     }
+ 
+-    static inline bool classof(const InterICFGNode* node)
++    static inline bool classof(const InterICFGNode *node)
+     {
+         return node->getNodeKind() == FunCallBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy* node)
++    static inline bool classof(const GenericICFGNodeTy *node)
+     {
+         return node->getNodeKind() == FunCallBlock;
+     }
+ 
+-    static inline bool classof(const SVFBaseNode* node)
++    static inline bool classof(const SVFBaseNode*node)
+     {
+         return node->getNodeKind() == FunCallBlock;
+     }
+@@ -583,10 +587,11 @@ public:
+ 
+     const std::string getSourceLoc() const override
+     {
+-        return ICFGNode::getSourceLoc();
++        return "CallICFGNode: " + ICFGNode::getSourceLoc();
+     }
+ };
+ 
++
+ /*!
+  * Return ICFGNode containing (at most one) ActualRetVFGNode at a callsite
+  */
+@@ -596,19 +601,18 @@ class RetICFGNode : public InterICFGNode
+     friend class SVFIRReader;
+ 
+ private:
+-    const SVFVar* actualRet;
++    const SVFVar *actualRet;
+     const CallICFGNode* callBlockNode;
+ 
+-    /// Constructor to create empty RetICFGNode (for
+-    /// SVFIRReader/deserialization)
++    /// Constructor to create empty RetICFGNode (for SVFIRReader/deserialization)
+     RetICFGNode(NodeID id)
+         : InterICFGNode(id, FunRetBlock), actualRet{}, callBlockNode{}
+     {
+     }
+ 
+ public:
+-    RetICFGNode(NodeID id, CallICFGNode* cb)
+-        : InterICFGNode(id, FunRetBlock), actualRet(nullptr), callBlockNode(cb)
++    RetICFGNode(NodeID id, CallICFGNode* cb) :
++        InterICFGNode(id, FunRetBlock), actualRet(nullptr), callBlockNode(cb)
+     {
+         fun = cb->getFun();
+         bb = cb->getBB();
+@@ -620,39 +624,39 @@ public:
+         return callBlockNode;
+     }
+     /// Return actual return parameter
+-    inline const SVFVar* getActualRet() const
++    inline const SVFVar *getActualRet() const
+     {
+         return actualRet;
+     }
+ 
+     /// Add actual return parameter
+-    inline void addActualRet(const SVFVar* ar)
++    inline void addActualRet(const SVFVar *ar)
+     {
+         actualRet = ar;
+     }
+ 
+-    /// Methods for support type inquiry through isa, cast, and dyn_cast:
++    ///Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const RetICFGNode*)
++    static inline bool classof(const RetICFGNode *)
+     {
+         return true;
+     }
+ 
+-    static inline bool classof(const InterICFGNode* node)
++    static inline bool classof(const InterICFGNode *node)
+     {
+         return node->getNodeKind() == FunRetBlock;
+     }
+ 
+-    static inline bool classof(const ICFGNode* node)
++    static inline bool classof(const ICFGNode *node)
+     {
+         return node->getNodeKind() == FunRetBlock;
+     }
+ 
+-    static inline bool classof(const GenericICFGNodeTy* node)
++    static inline bool classof(const GenericICFGNodeTy *node)
+     {
+         return node->getNodeKind() == FunRetBlock;
+     }
+-    static inline bool classof(const SVFBaseNode* node)
++    static inline bool classof(const SVFBaseNode*node)
+     {
+         return node->getNodeKind() == FunRetBlock;
+     }
+@@ -662,7 +666,7 @@ public:
+ 
+     const std::string getSourceLoc() const override
+     {
+-        return ICFGNode::getSourceLoc();
++        return "RetICFGNode: " + ICFGNode::getSourceLoc();
+     }
+ };
+ 
+diff --git a/SVF/svf/include/MSSA/MSSAMuChi.h b/SVF/svf/include/MSSA/MSSAMuChi.h
+index f495609b2..1e5dc0e41 100644
+--- a/SVF/svf/include/MSSA/MSSAMuChi.h
++++ b/SVF/svf/include/MSSA/MSSAMuChi.h
+@@ -45,7 +45,6 @@ class MRVer
+ 
+ public:
+     typedef MSSADEF MSSADef;
+-
+ private:
+     /// ver ID 0 is reserved
+     static u32_t totalVERNum;
+@@ -53,11 +52,10 @@ private:
+     MRVERSION version;
+     MRVERID vid;
+     MSSADef* def;
+-
+ public:
+     /// Constructor
+-    MRVer(const MemRegion* m, MRVERSION v, MSSADef* d)
+-        : mr(m), version(v), vid(totalVERNum++), def(d)
++    MRVer(const MemRegion* m, MRVERSION v, MSSADef* d) :
++        mr(m), version(v), vid(totalVERNum++),def(d)
+     {
+     }
+ 
+@@ -86,21 +84,21 @@ public:
+     }
+ };
+ 
++
+ /*!
+  * Indirect Memory Read
+  * 1) LoadMU at each store instruction
+  * 2) CallMU at callsite
+  * 3) RetMU at function return
+  */
+-template <class Cond> class MSSAMU
++template<class Cond>
++class MSSAMU
+ {
+ 
+ public:
+     enum MUTYPE
+     {
+-        LoadMSSAMU,
+-        CallMSSAMU,
+-        RetMSSAMU
++        LoadMSSAMU, CallMSSAMU, RetMSSAMU
+     };
+ 
+ protected:
+@@ -108,15 +106,15 @@ protected:
+     const MemRegion* mr;
+     MRVer* ver;
+     Cond cond;
+-
+ public:
+     /// Constructor/Destructor for MU
+     //@{
+-    MSSAMU(MUTYPE t, const MemRegion* m, Cond c)
+-        : type(t), mr(m), ver(nullptr), cond(c)
++    MSSAMU(MUTYPE t, const MemRegion* m, Cond c) : type(t), mr(m), ver(nullptr), cond(c)
++    {
++    }
++    virtual ~MSSAMU()
+     {
+     }
+-    virtual ~MSSAMU() {}
+     //@}
+ 
+     /// Return MR
+@@ -138,7 +136,7 @@ public:
+     /// Get Ver
+     inline MRVer* getMRVer() const
+     {
+-        assert(ver != nullptr && "version is nullptr, did not rename?");
++        assert(ver!=nullptr && "version is nullptr, did not rename?");
+         return ver;
+     }
+     /// Return condition
+@@ -148,24 +146,23 @@ public:
+     }
+ 
+     /// Avoid adding duplicated mus
+-    inline bool operator<(const MSSAMU& rhs) const
++    inline bool operator < (const MSSAMU & rhs) const
+     {
+         return mr > rhs.getMR();
+     }
+     /// Print MU
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "MU(MR_" << mr->getMRID() << "V_"
+-                        << ver->getSSAVersion() << ") \t"
+-                        << this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << "MU(MR_" << mr->getMRID() << "V_" << ver->getSSAVersion() << ") \t" <<
++                        this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+ /*!
+- * LoadMU is annotated at each load instruction, representing a memory object is
+- * read here
++ * LoadMU is annotated at each load instruction, representing a memory object is read here
+  */
+-template <class Cond> class LoadMU : public MSSAMU<Cond>
++template<class Cond>
++class LoadMU : public MSSAMU<Cond>
+ {
+ 
+ private:
+@@ -175,12 +172,14 @@ private:
+ public:
+     /// Constructor/Destructor for MU
+     //@{
+-    LoadMU(const SVFBasicBlock* b, const LoadStmt* i, const MemRegion* m,
+-           Cond c = true)
+-        : MSSAMU<Cond>(MSSAMU<Cond>::LoadMSSAMU, m, c), inst(i), bb(b)
++    LoadMU(const SVFBasicBlock* b,const LoadStmt* i, const MemRegion* m, Cond c = true) :
++        MSSAMU<Cond>(MSSAMU<Cond>::LoadMSSAMU,m,c), inst(i), bb(b)
++    {
++    }
++    virtual ~LoadMU()
+     {
++
+     }
+-    virtual ~LoadMU() {}
+     //@}
+ 
+     /// Return load instruction
+@@ -197,11 +196,11 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const LoadMU*)
++    static inline bool classof(const LoadMU *)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSAMU<Cond>* mu)
++    static inline bool classof(const MSSAMU<Cond> *mu)
+     {
+         return mu->getType() == MSSAMU<Cond>::LoadMSSAMU;
+     }
+@@ -210,17 +209,16 @@ public:
+     /// Print MU
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "LDMU(MR_" << this->getMR()->getMRID() << "V_"
+-                        << this->getMRVer()->getSSAVersion() << ") \t"
+-                        << this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << "LDMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
++                        this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+ /*!
+- * CallMU is annotated at callsite, representing a memory object is indirect
+- * read by callee
++ * CallMU is annotated at callsite, representing a memory object is indirect read by callee
+  */
+-template <class Cond> class CallMU : public MSSAMU<Cond>
++template<class Cond>
++class CallMU : public MSSAMU<Cond>
+ {
+ 
+ private:
+@@ -229,11 +227,14 @@ private:
+ public:
+     /// Constructor/Destructor for MU
+     //@{
+-    CallMU(const CallICFGNode* cs, const MemRegion* m, Cond c = true)
+-        : MSSAMU<Cond>(MSSAMU<Cond>::CallMSSAMU, m, c), callsite(cs)
++    CallMU(const CallICFGNode* cs, const MemRegion* m, Cond c = true) :
++        MSSAMU<Cond>(MSSAMU<Cond>::CallMSSAMU,m,c), callsite(cs)
+     {
+     }
+-    virtual ~CallMU() {}
++    virtual ~CallMU()
++    {
++
++    }
+     //@}
+ 
+     /// Return callsite
+@@ -250,11 +251,11 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const CallMU*)
++    static inline bool classof(const CallMU *)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSAMU<Cond>* mu)
++    static inline bool classof(const MSSAMU<Cond> *mu)
+     {
+         return mu->getType() == MSSAMU<Cond>::CallMSSAMU;
+     }
+@@ -263,27 +264,25 @@ public:
+     /// Print MU
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "CALMU(MR_" << this->getMR()->getMRID() << "V_"
+-                        << this->getMRVer()->getSSAVersion() << ") \t"
+-                        << this->getMR()->dumpStr() << "\n"
+-                        << this->getCallSite()->getSourceLoc() << "\n";
++        SVFUtil::outs() << "CALMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
++                        this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
++
+ /*!
+- * RetMU is annotated at function return, representing memory objects returns to
+- * callers
++ * RetMU is annotated at function return, representing memory objects returns to callers
+  */
+-template <class Cond> class RetMU : public MSSAMU<Cond>
++template<class Cond>
++class RetMU : public MSSAMU<Cond>
+ {
+ private:
+     const SVFFunction* fun;
+-
+ public:
+     /// Constructor/Destructor for MU
+     //@{
+-    RetMU(const SVFFunction* f, const MemRegion* m, Cond c = true)
+-        : MSSAMU<Cond>(MSSAMU<Cond>::RetMSSAMU, m, c), fun(f)
++    RetMU(const SVFFunction* f, const MemRegion* m, Cond c = true) :
++        MSSAMU<Cond>(MSSAMU<Cond>::RetMSSAMU,m,c), fun(f)
+     {
+     }
+     virtual ~RetMU() {}
+@@ -297,11 +296,11 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const RetMU*)
++    static inline bool classof(const RetMU *)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSAMU<Cond>* mu)
++    static inline bool classof(const MSSAMU<Cond> *mu)
+     {
+         return mu->getType() == MSSAMU<Cond>::RetMSSAMU;
+     }
+@@ -310,12 +309,12 @@ public:
+     /// Print MU
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "RETMU(MR_" << this->getMR()->getMRID() << "V_"
+-                        << this->getMRVer()->getSSAVersion() << ") \t"
+-                        << this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << "RETMU(MR_" << this->getMR()->getMRID() << "V_" << this->getMRVer()->getSSAVersion() << ") \t" <<
++                        this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
++
+ /*!
+  * Indirect Memory Definition
+  * 1) MSSACHI indirect memory object is modified
+@@ -344,7 +343,10 @@ protected:
+ public:
+     /// Constructor/Destructor for MSSADEF
+     //@{
+-    MSSADEF(DEFTYPE t, const MemRegion* m) : type(t), mr(m), resVer(nullptr) {}
++    MSSADEF(DEFTYPE t, const MemRegion* m): type(t), mr(m), resVer(nullptr)
++    {
++
++    }
+     virtual ~MSSADEF() {}
+     //@}
+ 
+@@ -370,12 +372,12 @@ public:
+     /// Set operand vers
+     inline MRVer* getResVer() const
+     {
+-        assert(resVer != nullptr && "version is nullptr, did not rename?");
++        assert(resVer!=nullptr && "version is nullptr, did not rename?");
+         return resVer;
+     }
+ 
+     /// Avoid adding duplicated chis and phis
+-    inline bool operator<(const MSSADEF& rhs) const
++    inline bool operator < (const MSSADEF & rhs) const
+     {
+         return mr > rhs.getMR();
+     }
+@@ -383,28 +385,27 @@ public:
+     /// Print MSSADef
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "DEF(MR_" << mr->getMRID() << "V_"
+-                        << resVer->getSSAVersion() << ")\n";
++        SVFUtil::outs() << "DEF(MR_" << mr->getMRID() << "V_" << resVer->getSSAVersion() << ")\n";
+     }
+ };
+ 
+ /*!
+  * Indirect Memory Write
+  */
+-template <class Cond> class MSSACHI : public MSSADEF
++template<class Cond>
++class MSSACHI : public MSSADEF
+ {
+ 
+ private:
+     MRVer* opVer;
+     Cond cond;
+-
+ public:
+     typedef typename MSSADEF::DEFTYPE CHITYPE;
+     /// Constructor/Destructor for MSSACHI
+     //@{
+-    MSSACHI(CHITYPE t, const MemRegion* m, Cond c)
+-        : MSSADEF(t, m), opVer(nullptr), cond(c)
++    MSSACHI(CHITYPE t, const MemRegion* m, Cond c): MSSADEF(t,m), opVer(nullptr), cond(c)
+     {
++
+     }
+     virtual ~MSSACHI() {}
+     //@}
+@@ -412,15 +413,14 @@ public:
+     /// Set operand ver
+     inline void setOpVer(MRVer* v)
+     {
+-        assert(v->getMR() == this->getMR() &&
+-               "inserting different memory region?");
++        assert(v->getMR() == this->getMR() && "inserting different memory region?");
+         opVer = v;
+     }
+ 
+     /// Get operand ver
+     inline MRVer* getOpVer() const
+     {
+-        assert(opVer != nullptr && "version is nullptr, did not rename?");
++        assert(opVer!=nullptr && "version is nullptr, did not rename?");
+         return opVer;
+     }
+ 
+@@ -432,49 +432,47 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const MSSACHI* chi)
++    static inline bool classof(const MSSACHI * chi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSADEF* chi)
++    static inline bool classof(const MSSADEF *chi)
+     {
+         return chi->getType() == MSSADEF::EntryMSSACHI ||
+                chi->getType() == MSSADEF::StoreMSSACHI ||
+-               chi->getType() == MSSADEF::SSACHI;
++               chi->getType() == MSSADEF::SSACHI ;
+     }
+     //@}
+ 
+     /// Print CHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << "MR_" << this->getMR()->getMRID() << "V_"
+-                        << this->getResVer()->getSSAVersion() << " = CHI(MR_"
+-                        << this->getMR()->getMRID() << "V_"
+-                        << opVer->getSSAVersion() << ") \t"
+-                        << this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << "MR_" << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
++                        " = CHI(MR_" << this->getMR()->getMRID() << "V_" << opVer->getSSAVersion() << ") \t" <<
++                        this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+ /*!
+  *
+- *  StoreCHI is annotated at each store instruction, representing a memory
+- * object is modified here
++ *  StoreCHI is annotated at each store instruction, representing a memory object is modified here
+  */
+-template <class Cond> class StoreCHI : public MSSACHI<Cond>
++template<class Cond>
++class StoreCHI : public MSSACHI<Cond>
+ {
+ private:
+     const SVFBasicBlock* bb;
+     const StoreStmt* inst;
+-
+ public:
+     /// Constructors for StoreCHI
+     //@{
+-    StoreCHI(const SVFBasicBlock* b, const StoreStmt* i, const MemRegion* m,
+-             Cond c = true)
+-        : MSSACHI<Cond>(MSSADEF::StoreMSSACHI, m, c), bb(b), inst(i)
++    StoreCHI(const SVFBasicBlock* b, const StoreStmt* i, const MemRegion* m, Cond c = true) :
++        MSSACHI<Cond>(MSSADEF::StoreMSSACHI,m,c), bb(b), inst(i)
++    {
++    }
++    virtual ~StoreCHI()
+     {
+     }
+-    virtual ~StoreCHI() {}
+     //@}
+ 
+     /// Get basic block
+@@ -491,15 +489,15 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const StoreCHI* chi)
++    static inline bool classof(const StoreCHI * chi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSACHI<Cond>* chi)
++    static inline bool classof(const MSSACHI<Cond> * chi)
+     {
+         return chi->getType() == MSSADEF::StoreMSSACHI;
+     }
+-    static inline bool classof(const MSSADEF* chi)
++    static inline bool classof(const MSSADEF *chi)
+     {
+         return chi->getType() == MSSADEF::StoreMSSACHI;
+     }
+@@ -508,32 +506,32 @@ public:
+     /// Print CHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << this->getMR()->getMRID() << "V_"
+-                        << this->getResVer()->getSSAVersion() << " = STCHI(MR_"
+-                        << this->getMR()->getMRID() << "V_"
+-                        << this->getOpVer()->getSSAVersion() << ") \t"
+-                        << this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
++                        " = STCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
++                        this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
++
+ /*!
+  *
+- *  CallCHI is annotated at callsite, representing a memory object is indirect
+- * modified by callee
++ *  CallCHI is annotated at callsite, representing a memory object is indirect modified by callee
+  */
+-template <class Cond> class CallCHI : public MSSACHI<Cond>
++template<class Cond>
++class CallCHI : public MSSACHI<Cond>
+ {
+ private:
+     const CallICFGNode* callsite;
+-
+ public:
+     /// Constructors for CallCHI
+     //@{
+-    CallCHI(const CallICFGNode* cs, const MemRegion* m, Cond c = true)
+-        : MSSACHI<Cond>(MSSADEF::CallMSSACHI, m, c), callsite(cs)
++    CallCHI(const CallICFGNode* cs, const MemRegion* m, Cond c = true) :
++        MSSACHI<Cond>(MSSADEF::CallMSSACHI,m,c), callsite(cs)
++    {
++    }
++    virtual ~CallCHI()
+     {
+     }
+-    virtual ~CallCHI() {}
+     //@}
+ 
+     /// Return basic block
+@@ -550,15 +548,15 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const CallCHI* chi)
++    static inline bool classof(const CallCHI * chi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSACHI<Cond>* chi)
++    static inline bool classof(const MSSACHI<Cond> * chi)
+     {
+         return chi->getType() == MSSADEF::CallMSSACHI;
+     }
+-    static inline bool classof(const MSSADEF* chi)
++    static inline bool classof(const MSSADEF *chi)
+     {
+         return chi->getType() == MSSADEF::CallMSSACHI;
+     }
+@@ -567,32 +565,30 @@ public:
+     /// Print CHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << this->getMR()->getMRID() << "V_"
+-                        << this->getResVer()->getSSAVersion() << " = CALCHI(MR_"
+-                        << this->getMR()->getMRID() << "V_"
+-                        << this->getOpVer()->getSSAVersion() << ") \t"
+-                        << this->getMR()->dumpStr() << "\n"
+-                        << this.getCallSite()->getSourceLoc() << "\n";
++        SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
++                        " = CALCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
++                        this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+ /*!
+- * EntryCHI is annotated at function entry, representing receiving memory
+- * objects from callers
++ * EntryCHI is annotated at function entry, representing receiving memory objects from callers
+  */
+-template <class Cond> class EntryCHI : public MSSACHI<Cond>
++template<class Cond>
++class EntryCHI : public MSSACHI<Cond>
+ {
+ private:
+     const SVFFunction* fun;
+-
+ public:
+     /// Constructors for EntryCHI
+     //@{
+-    EntryCHI(const SVFFunction* f, const MemRegion* m, Cond c = true)
+-        : MSSACHI<Cond>(MSSADEF::EntryMSSACHI, m, c), fun(f)
++    EntryCHI(const SVFFunction* f, const MemRegion* m, Cond c = true) :
++        MSSACHI<Cond>(MSSADEF::EntryMSSACHI,m,c),fun(f)
++    {
++    }
++    virtual ~EntryCHI()
+     {
+     }
+-    virtual ~EntryCHI() {}
+     //@}
+ 
+     /// Return function
+@@ -603,15 +599,15 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const EntryCHI* chi)
++    static inline bool classof(const EntryCHI * chi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSACHI<Cond>* chi)
++    static inline bool classof(const MSSACHI<Cond> * chi)
+     {
+         return chi->getType() == MSSADEF::EntryMSSACHI;
+     }
+-    static inline bool classof(const MSSADEF* chi)
++    static inline bool classof(const MSSADEF *chi)
+     {
+         return chi->getType() == MSSADEF::EntryMSSACHI;
+     }
+@@ -620,43 +616,41 @@ public:
+     /// Print CHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << this->getMR()->getMRID() << "V_"
+-                        << this->getResVer()->getSSAVersion() << " = ENCHI(MR_"
+-                        << this->getMR()->getMRID() << "V_"
+-                        << this->getOpVer()->getSSAVersion() << ") \t"
+-                        << this->getMR()->dumpStr() << "\n";
++        SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
++                        " = ENCHI(MR_" << this->getMR()->getMRID() << "V_" << this->getOpVer()->getSSAVersion() << ") \t" <<
++                        this->getMR()->dumpStr() << "\n";
+     }
+ };
+ 
+ /*
+  * Memory SSA Select, similar to PHINode
+  */
+-template <class Cond> class MSSAPHI : public MSSADEF
++template<class Cond>
++class MSSAPHI : public MSSADEF
+ {
+ 
+ public:
+-    typedef Map<u32_t, const MRVer*> OPVers;
+-
++    typedef Map<u32_t,const MRVer*> OPVers;
+ private:
+     const SVFBasicBlock* bb;
+     OPVers opVers;
+     Cond cond;
+-
+ public:
+     /// Constructors for PHI
+     //@{
+-    MSSAPHI(const SVFBasicBlock* b, const MemRegion* m, Cond c = true)
+-        : MSSADEF(MSSADEF::SSAPHI, m), bb(b), cond(c)
++    MSSAPHI(const SVFBasicBlock* b, const MemRegion* m, Cond c = true) :
++        MSSADEF(MSSADEF::SSAPHI,m), bb(b), cond(c)
++    {
++    }
++    virtual ~MSSAPHI()
+     {
+     }
+-    virtual ~MSSAPHI() {}
+     //@}
+ 
+     /// Set operand ver
+     inline void setOpVer(const MRVer* v, u32_t pos)
+     {
+-        assert(v->getMR() == this->getMR() &&
+-               "inserting different memory region?");
++        assert(v->getMR() == this->getMR() && "inserting different memory region?");
+         opVers[pos] = v;
+     }
+ 
+@@ -664,7 +658,7 @@ public:
+     inline const MRVer* getOpVer(u32_t pos) const
+     {
+         OPVers::const_iterator it = opVers.find(pos);
+-        assert(it != opVers.end() && "version is nullptr, did not rename?");
++        assert(it!=opVers.end() && "version is nullptr, did not rename?");
+         return it->second;
+     }
+ 
+@@ -700,31 +694,29 @@ public:
+ 
+     /// Methods for support type inquiry through isa, cast, and dyn_cast:
+     //@{
+-    static inline bool classof(const MSSAPHI* phi)
++    static inline bool classof(const MSSAPHI * phi)
+     {
+         return true;
+     }
+-    static inline bool classof(const MSSADEF* phi)
++    static inline bool classof(const MSSADEF *phi)
+     {
+-        return phi->getType() == MSSADEF::SSAPHI;
++        return phi->getType() == MSSADEF::SSAPHI ;
+     }
+     //@}
+ 
+     /// Print PHI
+     virtual void dump()
+     {
+-        SVFUtil::outs() << this->getMR()->getMRID() << "V_"
+-                        << this->getResVer()->getSSAVersion() << " = PHI(";
+-        for (OPVers::iterator it = opVers.begin(), eit = opVers.end();
+-             it != eit; ++it)
+-            SVFUtil::outs() << "MR_" << this->getMR()->getMRID() << "V_"
+-                            << it->second->getSSAVersion() << ", ";
++        SVFUtil::outs() << this->getMR()->getMRID() << "V_" << this->getResVer()->getSSAVersion() <<
++                        " = PHI(";
++        for(OPVers::iterator it = opVers.begin(), eit = opVers.end(); it!=eit; ++it)
++            SVFUtil::outs() << "MR_" << this->getMR()->getMRID() << "V_" << it->second->getSSAVersion() << ", ";
+ 
+         SVFUtil::outs() << ")\n";
+     }
+ };
+ 
+-std::ostream& operator<<(std::ostream& o, const MRVer& mrver);
++std::ostream& operator<<(std::ostream &o, const MRVer& mrver);
+ } // End namespace SVF
+ 
+ #endif /* MSSAMUCHI_H_ */
+-- 
+2.39.5 (Apple Git-154)
+
