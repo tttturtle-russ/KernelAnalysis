@@ -39,4 +39,8 @@ echo "Start finding and merging mempairs and mappings"
 export -f find_and_merge_mempairs find_and_merge_mapping
 parallel --jobs 2 ::: find_and_merge_mempairs find_and_merge_mapping
 
+# export two directions mapping between statement and function
+echo 'Start exporting two directions mapping between statement and function'
+python3 "$SCRIPT_DIR/export_mapping.py" --mapping_file ./ka_mapping_uniq --json_path ./ka_mapping.json
+
 popd >/dev/null || exit 1

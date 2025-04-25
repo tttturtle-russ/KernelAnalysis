@@ -1,8 +1,16 @@
+"""
+This script aims to do the following things:
+    1. Analyze the SVF output and extract memory access information
+    2. Generate memory access pairs
+    3. Generate mapping of function locations and source locations
+    4. Dump the information to files
+"""
 import json
 import itertools
 import argparse
 import threading
 
+# Mempair related start
 class Instruction:
     def __init__(self) -> None:
         self.write_to = set()
@@ -73,22 +81,6 @@ class Instruction:
         loc = json.loads(line.strip())
         return f"{loc["fl"]}:{loc["ln"]}"
 
-class FunctionMapping:
-    def __init__(self) -> None:
-        self.mapping = {}
-
-    def add_instruction(self, inst: Instruction) -> None:
-        if inst.func_loc not in self.mapping:
-            self.mapping[inst.func_loc] = set()
-        self.mapping[inst.func_loc].add((inst.func_name, inst.source_loc))
-
-    def dump2file(self, path):
-        with open(path, "w") as f:
-            for func_loc, name_and_loc_set in self.mapping.items():
-                for name_and_loc in name_and_loc_set:
-                    # source_loc:func_name:func_loc
-                    f.write(f"{name_and_loc[1]}\t{name_and_loc[0]}\t{func_loc}\n")
-
 
 class MemoryLoc:
     def __init__(self) -> None:
@@ -127,6 +119,28 @@ class MemPairs:
             for pair in self.pairs:
                 f.write(f"{pair}\n")
 
+# Mempair related end
+
+
+# Mapping related start
+class FunctionMapping:
+    def __init__(self) -> None:
+        self.mapping = {}
+
+    def add_instruction(self, inst: Instruction) -> None:
+        if inst.func_loc not in self.mapping:
+            self.mapping[inst.func_loc] = set()
+        self.mapping[inst.func_loc].add((inst.func_name, inst.source_loc))
+
+    def dump2file(self, path):
+        with open(path, "w") as f:
+            for func_loc, name_and_loc_set in self.mapping.items():
+                for name_and_loc in name_and_loc_set:
+                    # source_loc:func_name:func_loc
+                    f.write(f"{name_and_loc[1]}\t{name_and_loc[0]}\t{func_loc}\n")
+# Mapping related end
+
+# Main function
 if __name__ == '__main__':
     argParser = argparse.ArgumentParser()
     argParser.add_argument("--mssa")
