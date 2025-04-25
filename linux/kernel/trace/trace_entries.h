@@ -65,8 +65,9 @@ FTRACE_ENTRY_REG(function, ftrace_entry,
 		__field_fn(	unsigned long,	parent_ip	)
 	),
 
-	F_printk(" %ps <-- %ps",
-		 (void *)__entry->ip, (void *)__entry->parent_ip),
+	F_printk("function: %px,%px,%ps,%ps",
+		(void *)__entry->ip, (void *)__entry->parent_ip,
+		(void *)__entry->ip, (void *)__entry->parent_ip),
 
 	perf_ftrace_event_register
 );

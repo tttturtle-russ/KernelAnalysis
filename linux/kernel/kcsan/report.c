@@ -5,6 +5,7 @@
  * Copyright (C) 2019, Google LLC.
  */
 
+#include "asm/bug.h"
 #include <linux/debug_locks.h>
 #include <linux/delay.h>
 #include <linux/jiffies.h>
@@ -402,8 +403,8 @@ static void print_report(enum kcsan_value_change value_change,
 	/*
 	 * Must check report filter rules before starting to print.
 	 */
-	if (skip_report(KCSAN_VALUE_CHANGE_TRUE, stack_entries[skipnr]))
-		return;
+	// if (skip_report(KCSAN_VALUE_CHANGE_TRUE, stack_entries[skipnr]))
+	// 	return;
 
 	if (other_info) {
 		other_skipnr = sanitize_stack_entries(other_info->stack_entries,
@@ -412,12 +413,12 @@ static void print_report(enum kcsan_value_change value_change,
 		other_frame = other_info->stack_entries[other_skipnr];
 
 		/* @value_change is only known for the other thread */
-		if (skip_report(value_change, other_frame))
-			return;
+		// if (skip_report(value_change, other_frame))
+		// 	return;
 	}
 
-	if (rate_limit_report(this_frame, other_frame))
-		return;
+	// if (rate_limit_report(this_frame, other_frame))
+	// 	return;
 
 	/* Print report header. */
 	pr_err("==================================================================\n");
@@ -434,6 +435,7 @@ static void print_report(enum kcsan_value_change value_change,
 		       (void *)(cmp < 0 ? other_frame : this_frame),
 		       (void *)(cmp < 0 ? this_frame : other_frame));
 	} else {
+		pr_err("KCSAN: other info not found");
 		pr_err("BUG: KCSAN: %s in %pS\n", get_bug_type(ai->access_type),
 		       (void *)this_frame);
 	}
@@ -501,7 +503,7 @@ static void release_report(unsigned long *flags, struct other_info *other_info)
 	 * Use size to denote valid/invalid, since KCSAN entirely ignores
 	 * 0-sized accesses.
 	 */
-	other_info->ai.size = 0;
+	// other_info->ai.size = 0;
 	raw_spin_unlock_irqrestore(&report_lock, *flags);
 }
 
@@ -607,6 +609,7 @@ static bool prepare_report_consumer(unsigned long *flags,
 
 	raw_spin_lock_irqsave(&report_lock, *flags);
 	while (!other_info->ai.size) { /* Await valid @other_info. */
+		BUG();
 		raw_spin_unlock_irqrestore(&report_lock, *flags);
 		cpu_relax();
 		raw_spin_lock_irqsave(&report_lock, *flags);
@@ -688,8 +691,8 @@ void kcsan_report_known_origin(const volatile void *ptr, size_t size, int access
 	 * either TRUE or MAYBE. In case of MAYBE, further filtering may
 	 * be done once we know the full stack trace in print_report().
 	 */
-	if (value_change != KCSAN_VALUE_CHANGE_FALSE)
-		print_report(value_change, &ai, other_info, old, new, mask);
+	print_report(value_change, &ai, other_info, old, new, mask);
+	
 
 	release_report(&flags, other_info);
 out:

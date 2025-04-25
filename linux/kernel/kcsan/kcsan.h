@@ -139,4 +139,49 @@ void kcsan_report_known_origin(const volatile void *ptr, size_t size, int access
 void kcsan_report_unknown_origin(const volatile void *ptr, size_t size, int access_type,
 				 unsigned long ip, u64 old, u64 new, u64 mask);
 
+extern struct watchpoints {
+	/* The two threads that are racing. */
+	pid_t pid1, pid2;
+
+	/* The instruction pointer of the thread that hit the watchpoint. */
+	u64 ip;
+
+	/* The address of the watchpoint. */
+	u64 addr;
+
+	/* Number of watchpoints set up. */
+	u64 skips;
+
+	/* Number of watchpoints that were hit. */
+	int trace;
+
+	/* Watchpoint is set up. */
+	bool watchpoint_is_set;
+
+	/* Watchpoint was hit. */
+	bool watchpoint_hit;
+
+	/* Process 1 barrier */
+	bool barrier1;
+	/* Process 2 barrier */
+	bool barrier2;
+	/* Process 1 is running */
+	bool pid1_running;
+	/* Process 2 is running */
+	bool pid2_running;
+
+	/* Race is detected */
+	bool race_detected;
+
+	/* Old Value */
+	u64 old_val;
+
+	/* Semaphore 1 */
+	atomic_long_t semaphore1;
+
+	/* Semaphore 2 */
+	atomic_long_t semaphore2;
+
+} kc_watchpoints;
+
 #endif /* _KERNEL_KCSAN_KCSAN_H */

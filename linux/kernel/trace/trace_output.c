@@ -994,13 +994,10 @@ static void print_fn_trace(struct trace_seq *s, unsigned long ip,
 {
 	ip += delta;
 	parent_ip += delta;
-
+	trace_seq_printf(s, "function: %px,%px,",ip, parent_ip);
 	seq_print_ip_sym(s, ip, flags);
-
-	if ((flags & TRACE_ITER_PRINT_PARENT) && parent_ip) {
-		trace_seq_puts(s, " <-");
-		seq_print_ip_sym(s, parent_ip, flags);
-	}
+	trace_seq_puts(s, ",");
+	seq_print_ip_sym(s, parent_ip, flags);
 }
 
 /* TRACE_FN */

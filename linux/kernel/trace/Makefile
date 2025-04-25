@@ -1,5 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 
+KCSAN_SANITIZE := n
+
 # Do not instrument the tracer itself:
 
 ccflags-remove-$(CONFIG_FUNCTION_TRACER) += $(CC_FLAGS_FTRACE)

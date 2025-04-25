@@ -5,6 +5,11 @@
  * Copyright (C) 2019, Google LLC.
  */
 
+
+#define CREATE_TRACE_POINTS
+#include <trace/events/mem_read_write.h>
+#undef CREATE_TRACE_POINTS
+
 #define pr_fmt(fmt) "kcsan: " fmt
 
 #include <linux/atomic.h>
@@ -21,6 +26,7 @@
 #include <linux/sched.h>
 #include <linux/string.h>
 #include <linux/uaccess.h>
+#include <linux/printk.h>
 
 #include "encoding.h"
 #include "kcsan.h"
@@ -320,15 +326,11 @@ static __always_inline bool kcsan_is_enabled(struct kcsan_ctx *ctx)
 /* Introduce delay depending on context and configuration. */
 static void delay_access(int type)
 {
-	unsigned int delay = in_task() ? kcsan_udelay_task : kcsan_udelay_interrupt;
-	/* For certain access types, skew the random delay to be longer. */
-	unsigned int skew_delay_order =
-		(type & (KCSAN_ACCESS_COMPOUND | KCSAN_ACCESS_ASSERT)) ? 1 : 0;
-
-	delay -= IS_ENABLED(CONFIG_KCSAN_DELAY_RANDOMIZE) ?
-			       kcsan_prandom_u32_max(delay >> skew_delay_order) :
-			       0;
-	udelay(delay);
+	if (in_task()) {
+		mdelay(1000);
+	} else {
+		mdelay(50);
+	}
 }
 
 /*
@@ -715,79 +717,112 @@ out:
 	user_access_restore(ua_flags);
 }
 
+static bool watchpoint_is_set = false;
+
 static __always_inline void
 check_access(const volatile void *ptr, size_t size, int type, unsigned long ip)
 {
-	atomic_long_t *watchpoint;
-	long encoded_watchpoint;
-
-	/*
-	 * Do nothing for 0 sized check; this comparison will be optimized out
-	 * for constant sized instrumentation (__tsan_{read,write}N).
-	 */
-	if (unlikely(size == 0))
+	struct kcsan_ctx *ctx = get_ctx();
+	int is_enabled = (int)kcsan_is_enabled(ctx);
+	if ((!is_enabled && !kc_watchpoints.pid1))
 		return;
 
-again:
-	/*
-	 * Avoid user_access_save in fast-path: find_watchpoint is safe without
-	 * user_access_save, as the address that ptr points to is only used to
-	 * check if a watchpoint exists; ptr is never dereferenced.
-	 */
-	watchpoint = find_watchpoint((unsigned long)ptr, size,
-				     !(type & KCSAN_ACCESS_WRITE),
-				     &encoded_watchpoint);
-	/*
-	 * It is safe to check kcsan_is_enabled() after find_watchpoint in the
-	 * slow-path, as long as no state changes that cause a race to be
-	 * detected and reported have occurred until kcsan_is_enabled() is
-	 * checked.
-	 */
+	pid_t current_pid = task_pid_nr(current);
+	bool is_pid1 = kc_watchpoints.pid1 && (current_pid == (pid_t)kc_watchpoints.pid1);
+	bool is_pid2 = kc_watchpoints.pid2 && (current_pid == (pid_t)kc_watchpoints.pid2);
+	if (!is_pid1 && !is_pid2)
+		return;
 
-	if (unlikely(watchpoint != NULL))
-		kcsan_found_watchpoint(ptr, size, type, ip, watchpoint, encoded_watchpoint);
-	else {
-		struct kcsan_ctx *ctx = get_ctx(); /* Call only once in fast-path. */
+	pid_t current_tgid = task_tgid_nr(current);
+	BUG_ON(current_pid != current_tgid);
 
-		if (unlikely(should_watch(ctx, ptr, size, type))) {
-			kcsan_setup_watchpoint(ptr, size, type, ip);
-			return;
-		}
+	if (is_pid1 && !READ_ONCE(kc_watchpoints.pid1_running))
+		WRITE_ONCE(kc_watchpoints.pid1_running, 1);
+	else if (is_pid2 && !READ_ONCE(kc_watchpoints.pid2_running))
+		WRITE_ONCE(kc_watchpoints.pid2_running, 1);
 
-		if (!(type & KCSAN_ACCESS_SCOPED)) {
-			struct kcsan_scoped_access *reorder_access = get_reorder_access(ctx);
+	if (kc_watchpoints.trace) {
+		kcsan_disable_current();
+		pr_warn("enabled=%d, addr=%px, ip=%px, kc.ip=%px, is_pid1=%d, is_pid2=%d, pid=%d, cpu=%u, in_task=%u\n",
+        	is_enabled, ptr, ip, kc_watchpoints.ip, is_pid1, is_pid2, current_pid, task_cpu(current), in_task());
+		kcsan_enable_current();
+	}
 
-			if (reorder_access) {
-				/*
-				 * reorder_access check: simulates reordering of
-				 * the access after subsequent operations.
-				 */
-				ptr = reorder_access->ptr;
-				type = reorder_access->type;
-				ip = reorder_access->ip;
-				/*
-				 * Upon a nested interrupt, this context's
-				 * reorder_access can be modified (shared ctx).
-				 * We know that upon return, reorder_access is
-				 * always invalidated by setting size to 0 via
-				 * __tsan_func_exit(). Therefore we must read
-				 * and check size after the other fields.
-				 */
-				barrier();
-				size = READ_ONCE(reorder_access->size);
-				if (size)
-					goto again;
+	if (kc_watchpoints.ip && kc_watchpoints.addr) {
+		if ((u64)ptr == kc_watchpoints.addr) {
+			kcsan_disable_current();
+			pr_err("at addr %px, ip=%px, kc.ip=%px, is_pid1=%d, is_pid2=%d, cpu=%u, in_task=%u\n", ptr, ip, kc_watchpoints.ip, is_pid1, is_pid2, task_cpu(current), in_task());
+			kcsan_enable_current();
+
+			if (is_pid1 && ((u64)ip == kc_watchpoints.ip)){
+				kcsan_disable_current();
+				unsigned int cpu = task_cpu(current);
+				pr_err("PID1 SET WATCHPOINT, cpu=%u\n", cpu);
+				const bool is_write = (type & KCSAN_ACCESS_WRITE) != 0;
+	      		atomic_long_t *watchpoint;
+	      		watchpoint = insert_watchpoint((unsigned long)ptr, size, is_write);
+
+				kcsan_save_irqtrace(current);
+				kcsan_report_set_info(ptr, size, type, ip, watchpoint - watchpoints);
+				kcsan_restore_irqtrace(current);
+
+				WRITE_ONCE(kc_watchpoints.old_val, read_instrumented_memory(ptr, size));
+
+				/*WRITE_ONCE(kc_watchpoints.watchpoint_is_set, 1);*/
+				smp_store_release(&kc_watchpoints.watchpoint_is_set, 1);
+
+				mdelay(500);
+				WRITE_ONCE(kc_watchpoints.watchpoint_is_set, 0);
+				pr_err("PID1 RESET WATCHPOINT\n");
+				kcsan_enable_current();
+			} else if (is_pid2) {
+				if (smp_load_acquire(&kc_watchpoints.watchpoint_is_set)) {
+					kcsan_disable_current();
+					WRITE_ONCE(kc_watchpoints.watchpoint_hit, 1);
+					WRITE_ONCE(kc_watchpoints.race_detected, 1);
+					unsigned int cpu2 = task_cpu(current);
+					pr_err("PID2 RACE AT %px, cpu=%u", ip, cpu2);
+					long encoded_watchpoint;
+					atomic_long_t *watchpoint;
+					watchpoint = find_watchpoint((unsigned long)ptr, size,
+							   !(type & KCSAN_ACCESS_WRITE),
+							   &encoded_watchpoint);
+		  
+					enum kcsan_value_change value_change = KCSAN_VALUE_CHANGE_MAYBE;
+					u64 new = read_instrumented_memory(ptr, size);
+					u64 old = READ_ONCE(kc_watchpoints.old_val);
+		  
+					kcsan_report_known_origin(ptr, size, type, ip,
+								value_change, watchpoint - watchpoints,
+								old, new, ctx->access_mask);
+		  
+					kcsan_enable_current();
+				}
 			}
 		}
-
-		/*
-		 * Always checked last, right before returning from runtime;
-		 * if reorder_access is valid, checked after it was checked.
-		 */
-		if (unlikely(ctx->scoped_accesses.prev))
-			kcsan_check_scoped_accesses();
+		return;
 	}
+
+	if (is_atomic(ctx, ptr, size, type)){
+		type |= (1<<5); /* record is_atomic in type */
+
+    // get reason for atomic
+    if (ctx->in_flat_atomic)
+      type |= (1<<6);
+
+    if (ctx->atomic_next > 0)
+      type |= (1<<7);
+
+    if (ctx->atomic_nest_count > 0)
+      type |= (1<<8);
+	}
+
+	u64 val = read_instrumented_memory(ptr, size);
+	trace_mem_read_write(ip, ptr, size, type, val);
+	pr_warn("trace_mem_read_write: ip=%px, ptr=%px, size=%zu, type=%d, val=%llx\n", ip, ptr, size, type, val);
+	return;
 }
+
 
 /* === Public interface ===================================================== */
 

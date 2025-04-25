@@ -33,15 +33,19 @@ TRACE_EVENT(lock_acquire,
 		__field(unsigned int, flags)
 		__string(name, lock->name)
 		__field(void *, lockdep_addr)
+		__field(const volatile void *, ip)
 	),
 
 	TP_fast_assign(
 		__entry->flags = (trylock ? 1 : 0) | (read ? 2 : 0);
 		__assign_str(name);
 		__entry->lockdep_addr = lock;
+		__entry->ip = ip;
 	),
 
-	TP_printk("%p %s%s%s", __entry->lockdep_addr,
+	TP_printk("%px,%px,%s%s%s", 
+		__entry->lockdep_addr,
+		__entry->ip,
 		  (__entry->flags & 1) ? "try " : "",
 		  (__entry->flags & 2) ? "read " : "",
 		  __get_str(name))
@@ -56,14 +60,19 @@ DECLARE_EVENT_CLASS(lock,
 	TP_STRUCT__entry(
 		__string(	name, 	lock->name	)
 		__field(	void *, lockdep_addr	)
+		__field(const volatile void *, ip)
 	),
 
 	TP_fast_assign(
 		__assign_str(name);
 		__entry->lockdep_addr = lock;
+		__entry->ip = ip;
 	),
 
-	TP_printk("%p %s",  __entry->lockdep_addr, __get_str(name))
+	TP_printk("%px,%px,%s",  
+		__entry->lockdep_addr, 
+		__entry->ip,
+		__get_str(name))
 );
 
 DEFINE_EVENT(lock, lock_release,
