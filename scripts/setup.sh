@@ -34,7 +34,7 @@ pushd "$KERNEL_DIR" > /dev/null || exit 1
 
 make CC=wllvm HOSTCC=wllvm defconfig
 # make CC=wllvm HOSTCC=wllvm -j"$(nproc)" drivers/ > "$LOG_DIR/kernel_build.log"
-make CC=wllvm HOSTCC=wllvm KCFLAGS="-Og -g -Xclang -disable-O0-optnone -fno-inline" -j"$(nproc)" drivers/
+make CC=wllvm HOSTCC=wllvm KCFLAGS="-Og -g -Xclang -disable-O0-optnone -fno-inline" -j"$(nproc)" drivers/ > "$LOG_DIR/kernel_build.log"
 for dir in drivers/*; do
         if [ -d "$dir" ]; then
                 if [ ! -f "$dir/built-in.a" ]; then
