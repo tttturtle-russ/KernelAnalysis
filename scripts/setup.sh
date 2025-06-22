@@ -11,7 +11,7 @@ if [ ! -d "$LOG_DIR" ]; then
 fi
 
 
-# build SVF
+build SVF
 echo "Building SVF, see logs in $LOG_DIR/SVF.log"
 pushd "$SVF_DIR" > /dev/null || exit 1
 source ./build.sh > "$LOG_DIR/SVF.log"
@@ -28,11 +28,13 @@ pip3 install wllvm
 export LLVM_COMPILER=clang
 
 echo "Building Linux, see logs in $LOG_DIR/kernel_build.log"
-echo "For now only support linux-6.12-rc3"
+echo "For now only support linux-6.12-rc7"
 # build linux kernel bitcode files
 pushd "$KERNEL_DIR" > /dev/null || exit 1
+
 make CC=wllvm HOSTCC=wllvm defconfig
-make CC=wllvm HOSTCC=wllvm -j"$(nproc)" drivers/ > "$LOG_DIR/kernel_build.log"
+# make CC=wllvm HOSTCC=wllvm -j"$(nproc)" drivers/ > "$LOG_DIR/kernel_build.log"
+make CC=wllvm HOSTCC=wllvm KCFLAGS="-Og -g -Xclang -disable-O0-optnone -fno-inline" -j"$(nproc)" drivers/
 for dir in drivers/*; do
         if [ -d "$dir" ]; then
                 if [ ! -f "$dir/built-in.a" ]; then
