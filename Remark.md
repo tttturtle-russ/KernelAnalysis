@@ -16,5 +16,3 @@
 - [ ] 12. Uniq mempairs by different ways are different
 - [ ] 13. pip install networkx
 - [ ] 14. Need to check the correctness of the cfg logic
-
-sdsd
