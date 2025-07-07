@@ -107,3 +107,9 @@ echo "[INFO] Filling Src..."
 python3 "$SCRIPTS_DIR/path/fill_src.py" "$exact_out" "$final_out" "$NUM1" "$NUM2"
 echo "3 Successfully collected path: $final_out"
 echo "################################################################################################################"
+
+# Generate prompt
+echo "[INFO] Generating Prompt..."
+python3 "$SCRIPTS_DIR/path/prompt.py" "$FUNC1" "$FUNC2" "$current_folder"
+echo "4 Successfully generated prompt: ${FUNC1}-${FUNC2}.prompt"
+echo "################################################################################################################"
