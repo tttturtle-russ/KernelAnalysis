@@ -8,7 +8,7 @@
 # Usage:
 #   ./path_gen.sh func1 number1 func2 number2
 # -----------------------------------------------------------------------------
-
+current_folder=$(basename "$PWD")
 set -e
 
 # Make sure SCRIPTS_DIR is set
