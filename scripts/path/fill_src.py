@@ -17,18 +17,9 @@ def extract_code_segment(filename, start_line, next_funcname=None, end_line=None
     - If next_funcname is given (not at the terminal path point), extract up to (and including) the first call to next_funcname.
     - If end_line is given (for the terminal path point), extract from start_line up to and including end_line.
     - All lines are joined with tab instead of real newlines.
-    - The filename is prefixed with $TOP_DIR/../ if $TOP_DIR is set.
     """
     top_dir = os.environ.get('MY_PATH', '').rstrip('/')
-    # print("top_dir is: " + top_dir)
-    # if top_dir:
-    #     rel_filename = os.path.relpath(filename, '/')
-    #     # print("rel_filename is: " + rel_filename)
-    #     # real_path = os.path.normpath(os.path.join(top_dir, rel_filename))
-    # else:
     real_path = filename
-    # print("real_path is: " + real_path)
-    # print("Start Dealing with {real_path}........")
     try:
         with open(real_path, 'r', encoding='utf-8', errors='ignore') as f:
             lines = f.readlines()
@@ -47,17 +38,14 @@ def extract_code_segment(filename, start_line, next_funcname=None, end_line=None
             call_pat = r'\b{}\s*\('.format(re.escape(next_funcname))
             if re.search(call_pat, lines[i]):
                 break
-        # print("End Dealing with {real_path}")
         return '\t'.join(segment)
     # Case 2: Terminal node, extract from start_line up to and including end_line
     elif end_line:
         for i in range(idx, min(end_line, len(lines))):
             segment.append(lines[i].rstrip('\n'))
-        # print("End Dealing with {real_path}")
         return '\t'.join(segment)
     else:
         # Fallback: just return the start line
-        # print("End Dealing with {real_path}")
         return lines[idx].rstrip('\n')
 
 def main():
@@ -74,34 +62,51 @@ def main():
         data = json.load(f)
 
     keys = list(data.keys())
-    if len(keys) != 2:
-        print("Error: Input JSON must contain exactly two top-level keys.")
-        sys.exit(2)
-
-    # Map each top-level key to its corresponding terminal end line
-    key_numbers = {keys[0]: number1, keys[1]: number2}
-
     new_data = {}
-    for key in keys:
-        end_number = key_numbers[key]
-        new_paths = []
-        for path in data[key]:
-            code_path = []
-            for i, point in enumerate(path):
-                filename, lineno, funcname = parse_path_point(point)
-                # If this is the last point in the path
-                if i == len(path) - 1:
-                    code_segment = extract_code_segment(filename, lineno, end_line=end_number)
-                else:
-                    # Not terminal, extract up to next function call
-                    next_funcname = None
-                    if i + 1 < len(path):
-                        _, _, next_funcname = parse_path_point(path[i+1])
-                    code_segment = extract_code_segment(filename, lineno, next_funcname=next_funcname)
-                # Prepend the original path point and the separator
-                code_path.append(point + ' ||| ' + code_segment)
-            new_paths.append(code_path)
-        new_data[key] = new_paths
+
+    if len(keys) == 1:
+        # func1 == func2, 只处理一个key，输出两个key: key_1, key_2
+        key = keys[0]
+        for idx, end_number in enumerate([number1, number2], 1):
+            new_paths = []
+            for path in data[key]:
+                code_path = []
+                for i, point in enumerate(path):
+                    filename, lineno, funcname = parse_path_point(point)
+                    if i == len(path) - 1:
+                        code_segment = extract_code_segment(filename, lineno, end_line=end_number)
+                    else:
+                        next_funcname = None
+                        if i + 1 < len(path):
+                            _, _, next_funcname = parse_path_point(path[i+1])
+                        code_segment = extract_code_segment(filename, lineno, next_funcname=next_funcname)
+                    code_path.append(point + ' ||| ' + code_segment)
+                new_paths.append(code_path)
+            new_data[f"{key}_{idx}"] = new_paths
+
+    elif len(keys) == 2:
+        # func1 != func2，保持原有逻辑
+        key_numbers = {keys[0]: number1, keys[1]: number2}
+        for key in keys:
+            end_number = key_numbers[key]
+            new_paths = []
+            for path in data[key]:
+                code_path = []
+                for i, point in enumerate(path):
+                    filename, lineno, funcname = parse_path_point(point)
+                    if i == len(path) - 1:
+                        code_segment = extract_code_segment(filename, lineno, end_line=end_number)
+                    else:
+                        next_funcname = None
+                        if i + 1 < len(path):
+                            _, _, next_funcname = parse_path_point(path[i+1])
+                        code_segment = extract_code_segment(filename, lineno, next_funcname=next_funcname)
+                    code_path.append(point + ' ||| ' + code_segment)
+                new_paths.append(code_path)
+            new_data[key] = new_paths
+    else:
+        print("Error: Input JSON must contain one or two top-level keys.")
+        sys.exit(2)
 
     with open(output_json, 'w', encoding='utf-8') as f:
         json.dump(new_data, f, indent=2, ensure_ascii=False)
