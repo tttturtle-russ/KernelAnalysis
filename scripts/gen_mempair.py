@@ -88,6 +88,9 @@ class MemoryLoc:
         self.write_insts = set()
 
     def add_instruction(self, inst: Instruction) -> None:
+        # Ignore the kernel internal functions
+        if "include/linux" in inst.func_loc:
+            return
         if inst.is_write:
             self.write_insts.add(inst.source_loc)
         else:
