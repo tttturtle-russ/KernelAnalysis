@@ -11,7 +11,7 @@ if [ ! -d "$LOG_DIR" ]; then
 fi
 
 
-build SVF
+# build SVF
 echo "Building SVF, see logs in $LOG_DIR/SVF.log"
 pushd "$SVF_DIR" > /dev/null || exit 1
 source ./build.sh > "$LOG_DIR/SVF.log"
