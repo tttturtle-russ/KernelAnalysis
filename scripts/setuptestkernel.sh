@@ -35,6 +35,6 @@ pushd "$KERNEL_DIR" > /dev/null || exit 1
 # make CC=wllvm HOSTCC=wllvm defconfig
 make CC=clang HOSTCC=clang defconfig
 make menuconfig
-make  CC=clang HOSTCC=clang KCFLAGS="-Og -g -Xclang -disable-O0-optnone -gdwarf-4 -fno-inline -Wno-error" -j"$(nproc)" > "$LOG_DIR/kernel_build.log"
+make CC=clang HOSTCC=clang KCFLAGS="-Og -g -Xclang -disable-O0-optnone -gdwarf-4 -fno-inline -Wno-error" -j"$(nproc)" > "$LOG_DIR/kernel_build.log"
 
 popd > /dev/null || exit 1
