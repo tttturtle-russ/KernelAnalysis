@@ -227,7 +227,7 @@ debugfs_write(struct file *file, const char __user *buf, size_t count, loff_t *o
 {
 	char kbuf[KSYM_NAME_LEN];
 	char *arg;
-	const size_t read_len = min(count, sizeof(kbuf) - 1);
+	int read_len = count < (sizeof(kbuf) - 1) ? count : (sizeof(kbuf) - 1);
 
 	if (copy_from_user(kbuf, buf, read_len))
 		return -EFAULT;
@@ -276,25 +276,46 @@ static int __init kcsan_debugfs_init(void)
 
 late_initcall(kcsan_debugfs_init);
 
+
+/* ------------------------------------------------------------
+ * GABE: kconcur debugfs controls defined here
+ * based on kernel/trace/trace_events.c
+ * ------------------------------------------------------------
+ */
+
 struct watchpoints kc_watchpoints
 = {
   .pid1 = 0,
   .pid2 = 0,
   .ip = 0,
+  .ip_low = 0,
+  .ip_high = 0,
   .addr = 0,
   .skips = 0,
   .trace = 0,
   .watchpoint_is_set = 0,
   .watchpoint_hit = 0,
   .race_detected = 0,
+  .print_enabled = 0,
+  .cpu_lock = 0,
+  .cpu_unlock = 0,
   .pid1_running = 0,
   .pid2_running = 0,
+  .barrier0 = 0,
   .barrier1 = 0,
-  .barrier2 = 0,
   .old_val = 0,
+  .semaphore1 = ATOMIC_INIT(0),
+  .semaphore2 = ATOMIC_INIT(0),
 };
 
 static int stop_fn(void* arg) {
+  /*while (1) {*/
+    /*udelay(100);*/
+    /*if (READ_ONCE(kc_watchpoints.cpulock3)) {*/
+      /*pr_warn("restarting cpu\n");*/
+      /*break;*/
+    /*}*/
+  /*}*/
   mdelay(10000);
   pr_warn("finish cpu lock: watchpt_set=%u, watchpt_hit=%u, race_detected=%u running: %u,%u\n",
           READ_ONCE(kc_watchpoints.watchpoint_is_set),
@@ -318,6 +339,25 @@ static int cpu_unlock_u64_set(void *data, u64 val)
 static struct cpu_stop_work cpu2_work;
 static struct cpu_stop_work cpu3_work;
 
+static int barrier0_set(void *data, u64 val)
+{
+	*(u64 *)data = val;
+
+  unsigned int cpu = task_cpu(current);
+  pr_warn("barrier0 set: val=%llu, process cpu=%u\n", val, cpu);
+
+  /* wait for barrier1, then proceed */
+  WRITE_ONCE(kc_watchpoints.barrier0, 1);
+
+  while (!READ_ONCE(kc_watchpoints.barrier1)) {
+    // TODO efficient wait here?
+  }
+  pr_warn("barrier0 continuing\n");
+
+	return 0;
+}
+
+
 static int barrier1_set(void *data, u64 val)
 {
 	*(u64 *)data = val;
@@ -325,28 +365,9 @@ static int barrier1_set(void *data, u64 val)
   unsigned int cpu = task_cpu(current);
   pr_warn("barrier1 set: val=%llu, process cpu=%u\n", val, cpu);
 
-  /* wait for barrier1, then proceed */
-  WRITE_ONCE(kc_watchpoints.barrier1, 1);
-
-  while (!READ_ONCE(kc_watchpoints.barrier1)) {
-    // TODO efficient wait here?
-  }
-  pr_warn("barrier1 continuing\n");
-
-	return 0;
-}
-
-
-static int barrier2_set(void *data, u64 val)
-{
-	*(u64 *)data = val;
-
-  unsigned int cpu = task_cpu(current);
-  pr_warn("barrier2 set: val=%llu, process cpu=%u\n", val, cpu);
-
   /* wait for watchpoint, then proceed */
   /* TODO maybe wait for pid1 running instead? */
-  WRITE_ONCE(kc_watchpoints.barrier2, 1);
+  WRITE_ONCE(kc_watchpoints.barrier1, 1);
 
   while (!READ_ONCE(kc_watchpoints.watchpoint_is_set)) {
     // TODO efficient wait here?
@@ -387,7 +408,7 @@ static int u64_get(void *data, u64 *val)
 {
 	*val = *(u64 *)data;
 
-  	pr_warn("get %llu\n", *val);
+  pr_warn("get %llu\n", *val);
 
 	return 0;
 }
@@ -396,11 +417,11 @@ static int u64_get(void *data, u64 *val)
 static int u64_atomic_set(void *data, u64 val)
 {
 	/**(u64 *)data = val;*/
-	/*atomic_long_set(val, (atomic_long_t *)data);*/
-	unsigned int cpu = task_cpu(current);
-	atomic_long_set((atomic_long_t *)data, val);
-	pid_t current_pid = task_pid_nr(current);
-	pr_warn("semaphore set: val=%llu, pid=%d, cpu=%u\n", val, current_pid, cpu);
+  /*atomic_long_set(val, (atomic_long_t *)data);*/
+  unsigned int cpu = task_cpu(current);
+  atomic_long_set((atomic_long_t *)data, val);
+  pid_t current_pid = task_pid_nr(current);
+  pr_warn("semaphore set: val=%llu, pid=%d, cpu=%u\n", val, current_pid, cpu);
 	return 0;
 }
 
@@ -408,25 +429,25 @@ static int semaphore1_get(void *data, u64 *val)
 {
 	/**val = *(u64 *)data;*/
 
-	/*atomic_long_t *semaphore = (atomic_long_t *) data;*/
+  /*atomic_long_t *semaphore = (atomic_long_t *) data;*/
 
-	/*unsigned int cpu = task_cpu(current);*/
-	pid_t current_pid = task_pid_nr(current);
-	/*pr_warn("semaphore1 get: val=%llu, pid=%d\n", *val, current_pid);*/
-	pr_warn("semaphore1 get: val=%lu, pid=%d\n",
-    	atomic_long_read(&kc_watchpoints.semaphore1), current_pid);
+  /*unsigned int cpu = task_cpu(current);*/
+  pid_t current_pid = task_pid_nr(current);
+  /*pr_warn("semaphore1 get: val=%llu, pid=%d\n", *val, current_pid);*/
+  pr_warn("semaphore1 get: val=%llu, pid=%d\n",
+      atomic_long_read(&kc_watchpoints.semaphore1), current_pid);
 
-	/*atomic_long_dec(&kc_watchpoints.semaphore1);*/
-	atomic_long_dec(&kc_watchpoints.semaphore1);
+  /*atomic_long_dec(&kc_watchpoints.semaphore1);*/
+  atomic_long_dec(&kc_watchpoints.semaphore1);
 
-	/* wait for all processes to dec to 0 */
-	while (atomic_long_read(&kc_watchpoints.semaphore1)) {
-		/* reschedule if we can't progress, another process
-		* needs to decrement the semaphore first
-		*/
-		schedule();
-	}
-  	pr_warn("semaphore1 executing: pid=%d\n", current_pid);
+  /* wait for all processes to dec to 0 */
+  while (atomic_long_read(&kc_watchpoints.semaphore1)) {
+    /* reschedule if we can't progress, another process
+     * needs to decrement the semaphore first
+     */
+    schedule();
+  }
+  pr_warn("semaphore1 executing: pid=%d\n", current_pid);
 
 	return 0;
 }
@@ -436,21 +457,21 @@ static int semaphore2_get(void *data, u64 *val)
 {
 	/**val = *(u64 *)data;*/
 
-	/*unsigned int cpu = task_cpu(current);*/
-	pid_t current_pid = task_pid_nr(current);
-	pr_warn("semaphore2 get: val=%lu, pid=%d\n",
-    	atomic_long_read(&kc_watchpoints.semaphore2), current_pid);
+  /*unsigned int cpu = task_cpu(current);*/
+  pid_t current_pid = task_pid_nr(current);
+  pr_warn("semaphore2 get: val=%llu, pid=%d\n",
+      atomic_long_read(&kc_watchpoints.semaphore2), current_pid);
 
-  	atomic_long_dec(&kc_watchpoints.semaphore2);
+  atomic_long_dec(&kc_watchpoints.semaphore2);
 
-	/* wait for all processes to dec to 0 */
-	while (atomic_long_read(&kc_watchpoints.semaphore2)) {
-		/* reschedule if we can't progress, another process
-		* needs to decrement the semaphore first
-		*/
-		schedule();
-	}
-  	pr_warn("semaphore2 executing: pid=%d\n", current_pid);
+  /* wait for all processes to dec to 0 */
+  while (atomic_long_read(&kc_watchpoints.semaphore2)) {
+    /* reschedule if we can't progress, another process
+     * needs to decrement the semaphore first
+     */
+    schedule();
+  }
+  pr_warn("semaphore2 executing: pid=%d\n", current_pid);
 
 	return 0;
 }
@@ -458,68 +479,66 @@ static int semaphore2_get(void *data, u64 *val)
 DEFINE_DEBUGFS_ATTRIBUTE(cpu_lock_ops, u64_get, cpu_lock_u64_set, "%llu\n");
 DEFINE_DEBUGFS_ATTRIBUTE(cpu_unlock_ops, u64_get, cpu_unlock_u64_set, "%llu\n");
 
+DEFINE_DEBUGFS_ATTRIBUTE(barrier0_ops, u64_get, barrier0_set, "%llu\n");
 DEFINE_DEBUGFS_ATTRIBUTE(barrier1_ops, u64_get, barrier1_set, "%llu\n");
-DEFINE_DEBUGFS_ATTRIBUTE(barrier2_ops, u64_get, barrier2_set, "%llu\n");
 
 DEFINE_DEBUGFS_ATTRIBUTE(semaphore1_ops, semaphore1_get, u64_atomic_set, "%llu\n");
 DEFINE_DEBUGFS_ATTRIBUTE(semaphore2_ops, semaphore2_get, u64_atomic_set, "%llu\n");
 
-static void inline dump_wp(struct watchpoints kc) {
-	pr_info("watchpoints: pid1=%d, pid2=%d, ip=%llu, addr=%llu\n",
-			READ_ONCE(kc.pid1),
-			READ_ONCE(kc.pid2),
-			READ_ONCE(kc.ip),
-			READ_ONCE(kc.addr));
-}
+
 
 static int __init kconcur_init(void)
 {
-  	pr_warn("kconcur debugfs init\n");
+  pr_warn("kconcur debugfs init\n");
 
 	struct dentry* dir;
-	dir = debugfs_create_dir("kconcur", NULL);
-	if (IS_ERR(dir)) {
-		pr_err("kconcur debugfs init dir create error\n");
-			return PTR_ERR(dir);
-	}
+  dir = debugfs_create_dir("kconcur", NULL);
+  if (IS_ERR(dir)) {
+    pr_err("kconcur debugfs init dir create error\n");
+		return PTR_ERR(dir);
+  }
 
 	umode_t mode = S_IFREG | S_IRUSR | S_IWUSR;
 
-	debugfs_create_u32("pid1",  mode, dir, &kc_watchpoints.pid1);
-	debugfs_create_u32("pid2",  mode, dir, &kc_watchpoints.pid2);
+	debugfs_create_u64("pid1",  mode, dir, &kc_watchpoints.pid1);
+	debugfs_create_u64("pid2",  mode, dir, &kc_watchpoints.pid2);
 	debugfs_create_x64("ip",    mode, dir, &kc_watchpoints.ip);
+
+	debugfs_create_x64("ip_low", mode, dir, &kc_watchpoints.ip_low);
+	debugfs_create_x64("ip_high", mode, dir, &kc_watchpoints.ip_high);
+
 	debugfs_create_x64("addr",  mode, dir, &kc_watchpoints.addr);
 
 	debugfs_create_u64("skips", mode, dir, &kc_watchpoints.skips);
-	debugfs_create_u32("trace", mode, dir, &kc_watchpoints.trace);
+  debugfs_create_u64("trace", mode, dir, &kc_watchpoints.trace);
 
-	debugfs_create_bool("watchpoint_is_set", mode, dir, &kc_watchpoints.watchpoint_is_set);
+  debugfs_create_u64("watchpoint_is_set", mode, dir, &kc_watchpoints.watchpoint_is_set);
 
-//   debugfs_create_file_unsafe("cpu_lock", mode, dir, &kc_watchpoints.cpu_lock, &cpu_lock_ops);
-//   debugfs_create_file_unsafe("cpu_unlock", mode, dir, &kc_watchpoints.cpu_unlock, &cpu_unlock_ops);
-
-
-//   debugfs_create_u64("printing", mode, dir, &kc_watchpoints.print_enabled);
+  debugfs_create_file_unsafe("cpu_lock", mode, dir, &kc_watchpoints.cpu_lock, &cpu_lock_ops);
+  debugfs_create_file_unsafe("cpu_unlock", mode, dir, &kc_watchpoints.cpu_unlock, &cpu_unlock_ops);
 
 
-	debugfs_create_file_unsafe("barrier1", mode, dir, &kc_watchpoints.barrier1, &barrier1_ops);
-	debugfs_create_file_unsafe("barrier2", mode, dir, &kc_watchpoints.barrier2, &barrier2_ops);
+  debugfs_create_u64("printing", mode, dir, &kc_watchpoints.print_enabled);
 
 
-	debugfs_create_file_unsafe("semaphore1", mode, dir, &kc_watchpoints.semaphore1, &semaphore1_ops);
-	debugfs_create_file_unsafe("semaphore2", mode, dir, &kc_watchpoints.semaphore2, &semaphore2_ops);
-	pr_warn("kconcur debugfs init done\n");
-	dump_wp(kc_watchpoints);
-	/*debugfs_create_u64("cpulock0", mode, dir, &kc_watchpoints.cpulock0);*/
+  debugfs_create_file_unsafe("barrier0", mode, dir, &kc_watchpoints.barrier0, &barrier0_ops);
+  debugfs_create_file_unsafe("barrier1", mode, dir, &kc_watchpoints.barrier1, &barrier1_ops);
 
-	/*debugfs_create_u64("cpulock1", mode, dir, &kc_watchpoints.cpulock1);*/
-	/*debugfs_create_u64("cpulock2", mode, dir, &kc_watchpoints.cpulock2);*/
-	/*debugfs_create_u64("cpulock3", mode, dir, &kc_watchpoints.cpulock3);*/
 
-	// GABE: maybe eventually add separate enable option for kconcur?
+  debugfs_create_file_unsafe("semaphore1", mode, dir, &kc_watchpoints.semaphore1, &semaphore1_ops);
+  debugfs_create_file_unsafe("semaphore2", mode, dir, &kc_watchpoints.semaphore2, &semaphore2_ops);
+
+  /*debugfs_create_u64("cpulock0", mode, dir, &kc_watchpoints.cpulock0);*/
+
+  /*debugfs_create_u64("cpulock1", mode, dir, &kc_watchpoints.cpulock1);*/
+  /*debugfs_create_u64("cpulock2", mode, dir, &kc_watchpoints.cpulock2);*/
+  /*debugfs_create_u64("cpulock3", mode, dir, &kc_watchpoints.cpulock3);*/
+
+  // GABE: maybe eventually add separate enable option for kconcur?
 	WRITE_ONCE(kcsan_enabled, true);
 
-  	return 0;
+  return 0;
 }
 
 late_initcall(kconcur_init);
+
