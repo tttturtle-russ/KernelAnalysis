@@ -38,11 +38,11 @@ class Instruction:
         bool: if the instruction has beem constructed
     """
     def readline(self, line: str) -> bool:
-        if "LDMU" in line or "CALMU" in line:
+        if "LDMU" in line:
             pts = self.__parse_pts(line)
             self.read_from = self.read_from.union(pts)
             self.is_write = False
-        elif "STCHI" in line or 'CALCHI' in line:
+        elif "STCHI" in line:
             pts = self.__parse_pts(line)
             self.write_to = self.write_to.union(pts)
             self.is_write = True
@@ -69,7 +69,7 @@ class Instruction:
     @staticmethod
     def __parse_function(line: str) -> str:
         loc = json.loads(line.strip())
-        return f"{loc["file"]}:{loc["ln"]}"
+        return f"{loc['file']}:{loc['ln']}"
 
     @staticmethod
     def __parse_pts(line: str) -> set:
@@ -79,7 +79,7 @@ class Instruction:
     @staticmethod
     def __parse_source_loc(line:str) -> str:
         loc = json.loads(line.strip())
-        return f"{loc["fl"]}:{loc["ln"]}"
+        return f"{loc['fl']}:{loc['ln']}"
 
 
 class MemoryLoc:
@@ -89,7 +89,7 @@ class MemoryLoc:
 
     def add_instruction(self, inst: Instruction) -> None:
         # Ignore the kernel internal functions
-        if "include/linux" in inst.func_loc:
+        if "include/" in inst.func_loc:
             return
         if inst.is_write:
             self.write_insts.add(inst.source_loc)

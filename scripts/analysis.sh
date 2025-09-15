@@ -1,9 +1,5 @@
 #!/bin/bash
 
-TOP_DIR="$(pwd)/.."
-KERNEL_DIR="$TOP_DIR/linux"
-SCRIPT_DIR="$TOP_DIR/scripts"
-
 find_and_merge_mempairs() {
     find . -mindepth 3 -maxdepth 3 -name "ka_mempairs.*" -exec sh -c 'cat "$1"' _ {} \; > ka_mempairs_all
     sort ka_mempairs_all | uniq > ka_mempairs_uniq
@@ -31,16 +27,15 @@ find . -mindepth 3 -maxdepth 3 -name "ka_mssa.*" | while read -r mssa; do
   dir=$(dirname "$mssa")
   name=$(dirname "$mssa" | awk -F/ '{print $NF}')
   echo "Generating $name"
-  python3 "$SCRIPT_DIR/gen_mempair.py" --mssa "$mssa" --mempair "$dir/ka_mempairs.$name" --mapping "$dir/ka_mapping.$name"
+  python3 "$SCRIPTS_DIR/gen_mempair.py" --mssa "$mssa" --mempair "$dir/ka_mempairs.$name" --mapping "$dir/ka_mapping.$name"
 done
 
 # use parallel to speed up
-echo "Start finding and merging mempairs and mappings"
-export -f find_and_merge_mempairs find_and_merge_mapping
-parallel --jobs 2 ::: find_and_merge_mempairs find_and_merge_mapping
+export -f find_and_merge_mempairs
+parallel --jobs 2 ::: find_and_merge_mempairs
 
 # export two directions mapping between statement and function
-echo 'Start exporting two directions mapping between statement and function'
-python3 "$SCRIPT_DIR/export_mapping.py" --mapping_file ./ka_mapping_uniq --json_path ./ka_mapping.json
+# echo 'Start exporting two directions mapping between statement and function'
+# python3 "$SCRIPTS_DIR/export_mapping.py" --mapping_file ./ka_mapping_uniq --json_path ./ka_mapping.json
 
 popd >/dev/null || exit 1
