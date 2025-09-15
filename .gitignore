@@ -1,2 +1,17 @@
+# omit build and analysis logs
 logs
+
+# omit IDE settings
 .vscode
+
+# omit virtual environment
+.venv
+
+# omit generated files
+ka_mssa*
+ka_mempairs*
+ka_mapping*
+*.bc
+
+# omit env file
+.env
