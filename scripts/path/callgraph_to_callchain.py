@@ -75,11 +75,11 @@ if __name__ == "__main__":
     
     # 归一化 key
     norm_func_name = normalize_func_name(func_name)
-    if all(len(p) == 1 and p[0] == norm_func_name for p in name_paths):
-        print(f"Note: {norm_func_name} is never called by any other function (root or isolated).")
+    # if all(len(p) == 1 and p[0] == norm_func_name for p in name_paths):
+    #     print(f"Note: {norm_func_name} is never called by any other function (root or isolated).")
     
     result = {norm_func_name: name_paths}
     with open(output_json, 'w') as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
 
-    print(f"Saved call chains for {norm_func_name} to {output_json}")
+    # print(f"Saved call chains for {norm_func_name} to {output_json}")

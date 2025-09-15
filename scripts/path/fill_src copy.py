@@ -49,7 +49,7 @@ def extract_code_segment(filename, start_line, next_funcname=None, end_line=None
 
 def main():
     if len(sys.argv) < 8:
-        print(f"Usage: {sys.argv[0]} input.json output.json number1 number2 func1 func2 driver")
+        print(f"Usage: {sys.argv[0]} input.json output.json number1 number2")
         sys.exit(1)
 
     input_json = sys.argv[1]
@@ -67,6 +67,7 @@ def main():
     new_data = {}
 
     if len(keys) == 1:
+        # func1 == func2, 只处理一个key，输出两个key: key_1, key_2
         key = keys[0]
         for idx, end_number in enumerate([number1, number2], 1):
             new_paths = []
@@ -86,6 +87,7 @@ def main():
             new_data[f"{key}_{idx}"] = new_paths
 
     elif len(keys) == 2:
+        # func1 != func2，保持原有逻辑
         key_numbers = {keys[0]: number1, keys[1]: number2}
         for key in keys:
             end_number = key_numbers[key]
@@ -108,15 +110,8 @@ def main():
         print("Error: Input JSON must contain one or two top-level keys.")
         sys.exit(2)
 
-    # 这里是新加的包壳
-    output_obj = {
-        "driver": driver,
-        "func1": func1,
-        "func2": func2,
-        "path": new_data
-    }
-
     with open(output_json, 'w', encoding='utf-8') as f:
-        json.dump(output_obj, f, indent=2, ensure_ascii=False)
+        json.dump(new_data, f, indent=2, ensure_ascii=False)
+
 if __name__ == "__main__":
     main()

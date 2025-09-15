@@ -53,14 +53,14 @@ def main():
 
     # Check if built-in.ll exists, if not generate it from built-in.bc
     if not os.path.exists(BUILTIN_LL):
-        print(f"[INFO] {BUILTIN_LL} not found, generating from built-in.bc...")
+        # print(f"[INFO] {BUILTIN_LL} not found, generating from built-in.bc...")
         ret = subprocess.run(["llvm-dis", "built-in.bc", "-o", BUILTIN_LL])
         if ret.returncode != 0:
             print(f"[ERROR] Failed to generate {BUILTIN_LL} from built-in.bc")
             return
 
     # Read built-in.ll content once
-    print(f"[INFO] Reading {BUILTIN_LL}...")
+    # print(f"[INFO] Reading {BUILTIN_LL}...")
     with open(BUILTIN_LL, "r", encoding="utf-8", errors="ignore") as f:
         builtin_ll_content = f.read()
 
@@ -82,7 +82,7 @@ def main():
     for func in unique_funcs:
         try:
             info = get_source_path_line_from_index(func, funcname2fileline, filenum2file)
-            print(f"[OK] {func}: {info}")
+            # print(f"[OK] {func}: {info}")
         except Exception as e:
             print(f"[ERROR] Failed to process function {func}: {e}")
             exit(1)

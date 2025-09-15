@@ -6,10 +6,9 @@
 # All input/output files are relative to the current working directory ($PWD).
 #
 # Usage:
-#   ./path_gen.sh func1 number1 func2 number2
+#   ./path_gen.sh file1 line1 file2 line2
 # -----------------------------------------------------------------------------
-current_folder=$(basename "$PWD")
-set -e
+# set -e
 
 # Make sure SCRIPTS_DIR is set
 if [ -z "$SCRIPTS_DIR" ]; then
@@ -17,99 +16,116 @@ if [ -z "$SCRIPTS_DIR" ]; then
   exit 1
 fi
 
-export MY_PATH=/home/kddrca/
-
-# Check for jq
-if ! command -v jq >/dev/null 2>&1; then
-  echo "[Error] jq is not installed. Please install jq first."
-  exit 1
-fi
-
-# Check for python3
-if ! command -v python3 >/dev/null 2>&1; then
-  echo "[Error] python3 is not installed. Please install python3 first."
-  exit 1
-fi
-
-# Check for opt
-if ! command -v opt >/dev/null 2>&1; then
-  echo "[Error] opt is not installed or not in PATH."
-  exit 1
-fi
-
-# Check for built-in.bc file in current working directory
-if [ ! -f "$PWD/built-in.bc" ]; then
-  echo "[Error] built-in.bc not found in current working directory."
-  exit 1
-fi
-
-# Check for llvm-dis
-if ! command -v llvm-dis >/dev/null 2>&1; then
-  echo "[Error] llvm-dis is not installed or not in PATH."
-  exit 1
-fi
-
 if [ $# -ne 4 ]; then
-  echo "Usage: $0 func1 number1 func2 number2"
+  echo "Usage: $0 FILE1 NUM1 FILE2 NUM2"
   exit 2
 fi
 
-FUNC1="$1"
+FILE1="$1"
 NUM1="$2"
-FUNC2="$3"
+FILE2="$3"
 NUM2="$4"
+if [ "$NUM1" -ne 0 ] && [ "$NUM2" -ne 0 ] && [[ "$FILE1" != ./include/* ]]  && [[ "$FILE2" != ./include/* ]]; then
+  BASE1=$(basename "$FILE1" .c)
+  BASE2=$(basename "$FILE2" .c)
 
-DOT_FILE="$PWD/built-in.bc.callgraph.dot"
+  # 生成tags文件
+  TAGFILE1="${BASE1}.tags"
+  TAGFILE2="${BASE2}.tags"
 
-# 1. Check for DOT file, generate only if missing
-echo "########################################################"
-if [ ! -f "$DOT_FILE" ]; then
-  echo "[INFO] Generating Callgraph...."
-  opt -passes='dot-callgraph' "$PWD/built-in.bc" >/dev/null 2>&1
+if [ ! -s "$TAGFILE1" ]; then
+  ctags -x --c-kinds=f --fields=+n "$KERNEL_DIR/$FILE1" > "$TAGFILE1"
 fi
 
-if [ ! -f "$DOT_FILE" ]; then
-  echo "[Error] $DOT_FILE was not generated."
-  exit 3
-fi
-
-
-echo "0 Successfully got Callgraph: $DOT_FILE"
-echo "################################################################################################################"
-
-# 2. For each function, check for JSON file first, only generate if missing
-echo "[INFO] Generating Callchain of Pair...."
-for FUNC_NAME in "$FUNC1" "$FUNC2"; do
-  JSON_FILE="$PWD/${FUNC_NAME}.json"
-  if [ ! -f "$JSON_FILE" ]; then
-    python3 "$SCRIPTS_DIR/path/callgraph_to_callchain.py" "$DOT_FILE" "$FUNC_NAME" "$JSON_FILE" # >/dev/null 2>&1
-    if [ ! -f "$JSON_FILE" ]; then
-      echo "[Error] $JSON_FILE was not created for function $FUNC_NAME."
-      exit 4
-    fi
+if [ ! -s "$TAGFILE2" ]; then
+  if [ "$FILE2" != "$FILE1" ]; then
+    ctags -x --c-kinds=f --fields=+n "$KERNEL_DIR/$FILE2" > "$TAGFILE2"
   fi
-done
+fi
 
-# Merge the generated JSON files into pair.json
-jq -s 'reduce .[] as $item ({}; . * $item)' "$PWD/${FUNC1}.json" "$PWD/${FUNC2}.json" > "$PWD/pair.json" 2>/dev/null
-echo "1 Successfully got Call-chain: $PWD/pair.json"
-echo "################################################################################################################"
+  # 调用 find_func.py 得到函数名
+  TAGFILE1_ABS="$(pwd)/$TAGFILE1"
+  TAGFILE2_ABS="$(pwd)/$TAGFILE2"
 
-# Generate the exactpath JSON
-exact_out="$PWD/${FUNC1}-${FUNC2}-exactpath.json"
-python3 "$SCRIPTS_DIR/path/get_func_exactpath.py" "$PWD/pair.json" "$exact_out"
-echo "2 Successfully transfer to path $exact_out"
-echo "################################################################################################################"
+  FUNC1=$(python3 "$SCRIPTS_DIR/path/find_func.py" "$TAGFILE1_ABS" "$NUM1")
+  if [ -z "$FUNC1" ]; then
+    echo "[Error] Cannot find function for $FILE1:$NUM1"
+    exit 3
+  fi
+  FUNC2=$(python3 "$SCRIPTS_DIR/path/find_func.py" "$TAGFILE2_ABS" "$NUM2")
+  if [ -z "$FUNC2" ]; then
+    echo "[Error] Cannot find function for $FILE2:$NUM2"
+    exit 3
+  fi
+  # echo "[INFO] $FILE1:$NUM1 -> $FUNC1"
+  # echo "[INFO] $FILE2:$NUM2 -> $FUNC2"
 
-# Generate the filled source JSON
-final_out="$PWD/${FUNC1}-${FUNC2}.json"
-echo "[INFO] Filling Src..."
-python3 "$SCRIPTS_DIR/path/fill_src.py" "$exact_out" "$final_out" "$NUM1" "$NUM2"
-echo "3 Successfully collected path: $final_out"
-echo "################################################################################################################"
+  DOT_FILE="$PWD/built-in.bc.callgraph.dot"
 
-# Generate prompt
-echo "[INFO] Generating Prompt..."
-python3 "$SCRIPTS_DIR/path/prompt.py" "$FUNC1" "$FUNC2" "$current_folder"
-echo "4 Successfully generated prompt: ${FUNC1}-${FUNC2}.prompt"
-echo "################################################################################################################"
+  # 1. Check for DOT file, generate only if missing
+  # echo "########################################################"
+  if [ ! -f "$DOT_FILE" ]; then
+    echo "[INFO] Generating Callgraph...."
+    opt -passes='dot-callgraph' "$PWD/built-in.bc" >/dev/null 2>&1
+    echo echo "[INFO] Generating built-in.ll...."
+    llvm-dis $PWD/built-in.bc  -o built-in.ll
+  fi
+
+  echo "0 Successfully got Callgraph: $DOT_FILE"
+  # echo "################################################################################################################"
+
+  # 2. For each function, check for JSON file first, only generate if missing
+  # echo "[INFO] Generating Callchain of Pair...."
+  for FUNC_NAME in "$FUNC1" "$FUNC2"; do
+    JSON_FILE="$PWD/${FUNC_NAME}.json"
+    if [ ! -f "$JSON_FILE" ]; then
+      python3 "$SCRIPTS_DIR/path/callgraph_to_callchain.py" "$DOT_FILE" "$FUNC_NAME" "$JSON_FILE" # >/dev/null 2>&1
+      if [ ! -f "$JSON_FILE" ]; then
+        echo "[Error] $JSON_FILE was not created for function $FUNC_NAME."
+        exit 4
+      fi
+    fi
+  done
+
+  # Merge the generated JSON files into pair.json
+  jq -s 'reduce .[] as $item ({}; . * $item)' "$PWD/${FUNC1}.json" "$PWD/${FUNC2}.json" > "$PWD/${FUNC1}-${FUNC2}-pair.json" 2>/dev/null
+  python3 "$SCRIPTS_DIR/path/prune_paths.py" "$PWD/${FUNC1}-${FUNC2}-pair.json" "$SCRIPTS_DIR/path/ioctl_handler.txt" "$PWD/built-in.ll"
+  # echo "1 Successfully got Call-chain: $PWD/${FUNC1}-${FUNC2}-pair.json"
+  # echo "################################################################################################################"
+
+  # Generate the exactpath JSON
+  exact_out="$PWD/${FUNC1}-${FUNC2}-exactpath.json"
+  python3 "$SCRIPTS_DIR/path/get_func_exactpath.py" "$PWD/${FUNC1}-${FUNC2}-pair.json" "$exact_out"
+  # echo "2 Successfully transfer to path $exact_out"
+  # echo "################################################################################################################"
+
+  # Generate the filled source JSON
+  final_out="$PWD/${FUNC1}-${NUM1}-${FUNC2}-${NUM2}.json"
+  # echo "[INFO] Filling Src..."
+  python3 "$SCRIPTS_DIR/path/fill_src.py" "$exact_out" "$final_out" "$NUM1" "$NUM2" "$FUNC1" "$FUNC2" "$(basename "$(pwd)")"
+  # echo "3 Successfully collected path: $final_out"
+  # echo "################################################################################################################"
+
+  # Generate prompt
+  # echo "[INFO] Generating Prompt..."
+  NEWFILE1=$(basename "$FILE1")
+  NEWFILE2=$(basename "$FILE2")
+  python3 "$SCRIPTS_DIR/path/prompt.py" "$FUNC1" "$FUNC2" "$(basename "$(pwd)")" "${FUNC1}-${NUM1}-${FUNC2}-${NUM2}.json" "$NEWFILE1" "$NEWFILE2" "$NUM1" "$NUM2"
+  # echo "4 Successfully generated prompt: ${FILE1}_${NUM1}-${FILE2}_${NUM2}.prompt"
+  # echo "################################################################################################################"
+
+  # Clear rubbish
+  # echo "[INFO] Clearing ..."
+  rm ${FUNC1}.json
+  if [ -f "${FUNC2}.json" ]; then
+    rm ${FUNC2}.json
+  fi
+  
+  # rm ${FUNC1}-${FUNC2}-pair.json
+  # rm ${FUNC1}-${FUNC2}-pair-new.json
+  # rm ${FUNC1}-${FUNC2}-exactpath.json
+
+  # echo "5 Finish Cleaning"
+  # echo "################################################################################################################"
+
+fi
