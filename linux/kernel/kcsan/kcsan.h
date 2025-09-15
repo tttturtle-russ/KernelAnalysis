@@ -14,7 +14,7 @@
 #include <linux/sched.h>
 
 /* The number of adjacent watchpoints to check. */
-#define KCSAN_CHECK_ADJACENT 1
+#define KCSAN_CHECK_ADJACENT 10
 #define NUM_SLOTS (1 + 2*KCSAN_CHECK_ADJACENT)
 
 extern unsigned int kcsan_udelay_task;
@@ -146,8 +146,6 @@ extern struct watchpoints {
   u64 pid1;
   u64 pid2;
   u64 ip;
-  u64 ip_low;
-  u64 ip_high;
   u64 addr;
   u64 skips;
   u64 trace;
@@ -159,11 +157,12 @@ extern struct watchpoints {
   u64 cpu_unlock;
   u64 pid1_running;
   u64 pid2_running;
-  u64 barrier0;
   u64 barrier1;
+  u64 barrier2;
+  atomic_t barrier;
   u64 old_val;
-  atomic_long_t semaphore1;
-  atomic_long_t semaphore2;
+//   atomic_long_t semaphore1;
+//   atomic_long_t semaphore2;
 } kc_watchpoints;
 
 

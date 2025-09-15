@@ -5,11 +5,9 @@
  * Copyright (C) 2019, Google LLC.
  */
 
-#define CREATE_TRACE_POINTS
-#include <trace/events/mem_read_write.h>
-#undef CREATE_TRACE_POINTS
 
-
+#include "linux/kcsan-checks.h"
+#include "linux/types.h"
 #define pr_fmt(fmt) "kcsan: " fmt
 
 #include <linux/atomic.h>
@@ -24,6 +22,7 @@
 #include <linux/preempt.h>
 #include <linux/sched.h>
 #include <linux/uaccess.h>
+#include <linux/completion.h>
 
 #include "encoding.h"
 #include "kcsan.h"
@@ -128,7 +127,7 @@ static __always_inline atomic_long_t *find_watchpoint(unsigned long addr,
 	int i;
 
 	BUILD_BUG_ON(CONFIG_KCSAN_NUM_WATCHPOINTS < NUM_SLOTS);
-
+	
 	for (i = 0; i < NUM_SLOTS; ++i) {
 		watchpoint = &watchpoints[SLOT_IDX_FAST(slot, i)];
 		*encoded_watchpoint = atomic_long_read(watchpoint);
@@ -722,306 +721,317 @@ out:
 
 // GABE: kconcur here
 
+enum barrier {
+	BARRIER_STATE_INIT = 0, /* Initial State */
+	BARRIER_STATE_SETTER_ARRIVED = 1,  /* Setter process arrived and set the watchpoint successfully */
+	BARRIER_STATE_GO = 2,           /* Racer process arrived and go */
+};
 
-static bool watchpoint_is_set = false;
+static DECLARE_COMPLETION(setter_done);
+
+#define PID_LOG(fmt, ...) \
+	pr_err("%s: " fmt, (is_pid1 ? "PID1" : "PID2"), ##__VA_ARGS__)
 
 static __always_inline void
 check_access(const volatile void *ptr, size_t size, int type, unsigned long ip)
 {
-
 	/*
 	* GABE: main tracing here
 	*/
+	static const volatile void* target_mem = NULL;
+	static bool is_pid1_target = false;
+	static bool first_attempt = true;
+	bool is_racer = false;
+	bool is_setter = false;
 	struct kcsan_ctx *ctx = get_ctx();
-  	int is_enabled = (int) kcsan_is_enabled(ctx);
-  	if ((!is_enabled) || (!kc_watchpoints.pid1))
-    	return;
-
-	/* get following from 'in_task()` */
-		/*pc = preempt_count();*/
-	/*bool is_nmi = pc & NMI_MASK;*/
-	/*bool is_hardirq = pc & HARDIRQ_MASK;*/
-	/*bool is_softirq = in_serving_softirq;*/
-
+	int is_enabled = (int) kcsan_is_enabled(ctx);
+	if ((!is_enabled) || (!kc_watchpoints.pid1))
+		return;
 	/*pid_t current_pid = (pid_t) task_pid_nr(current);*/
 	pid_t current_pid = READ_ONCE(current->pid);
+	pid_t setter_pid = 0;
+	pid_t racer_pid = 0;
 	bool is_pid1 = kc_watchpoints.pid1 && (current_pid == (pid_t)kc_watchpoints.pid1);
 	bool is_pid2 = kc_watchpoints.pid2 && (current_pid == (pid_t)kc_watchpoints.pid2);
-
 	// TODO do we ignore all interrupts always?
-	if ( !(is_pid1 || is_pid2) || !in_task())
-	//   if ( !(is_pid1 || is_pid2) )
+	if ( !(is_pid1 || is_pid2) )
 		return;
-		
+
+	if (kc_watchpoints.ip == 0)
+		return;
 
 	/* validate there isn't any multithreading going on */
 	//   pid_t current_tgid = task_tgid_nr(current);
 	pid_t current_tgid = READ_ONCE(current->tgid);
 	BUG_ON(current_tgid != current_pid);
 
+	// PHASE 1: pre run, to get target pid and target ptr
+	if (kc_watchpoints.print_enabled && ((u64)ip == kc_watchpoints.ip) && first_attempt) {
+		kcsan_disable_current();
+		pr_err("at addr %px, ip=%px, kc.ip=%px, is_pid1=%d, is_pid2=%d, cpu=%u, in_task=%u\n", ptr, (void*)ip, (void*)kc_watchpoints.ip, is_pid1, is_pid2, task_cpu(current), in_task());
+		target_mem = ptr;
+		setter_pid = current_pid;
+		is_pid1_target = is_pid1;
+		first_attempt = false;
+		kcsan_enable_current();
+		return ;
+	}
+
+	if (first_attempt)
+		return ;
+
 	kcsan_disable_current();
 	/* DEBUG: optionally track when pids are running */
 	if (is_pid1 && !READ_ONCE(kc_watchpoints.pid1_running)) {
 		WRITE_ONCE(kc_watchpoints.pid1_running, 1);
 		pr_err("PID1 RUNNING\n");
-		// trace_printk("PID1 RUNNING\n");
 	}
 	else if (is_pid2 && !READ_ONCE(kc_watchpoints.pid2_running)) {
 		WRITE_ONCE(kc_watchpoints.pid2_running, 1);
 		pr_err("PID2 RUNNING\n");
-		// trace_printk("PID2 RUNNING\n");
 	}
 	kcsan_enable_current();
 
-	// watchpoint is configured
-	if (kc_watchpoints.ip) {
-		// if watchpoint is configured, make sure lock is acquired
-		// TODO: maybe control locking w/debugfs?
-		/*if (is_pid1 && !spin_is_locked(&watchpoint_lock)) {*/
-		/*
-		if (is_pid1 && !spin_is_locked(&watchpoint_lock)) {
-		spin_trylock(&watchpoint_lock);
-		}
-		*/
-		kcsan_disable_current();
-		if (kc_watchpoints.ip_low <= ip && ip <= kc_watchpoints.ip_high) {
-			pr_err("PID1 WATCHPOINT IP %px, current ip %px\n", kc_watchpoints.ip, ip);
-	}
-	//else
-	//{
-		//pr_err("caller ip %pS\n", __builtin_return_address(0));
-	//}
-	kcsan_enable_current();
-    /*trace_dbg("%px:%px, %px:%px", ip, kc_watchpoints.ip, ptr, kc_watchpoints.addr);*/
-    if (ptr) {
-      	// disable by default, can spam and prevent checks working
-      	if (kc_watchpoints.print_enabled) {
+	// we treat two process as setter and racer
+	// setter sets the watchpoint to the target memory
+	// then check if racer can reach the target memory with the time period
+	is_racer = (is_pid2 && is_pid1_target) || (is_pid1 && !is_pid1_target);
+	is_setter = (is_pid1 && is_pid1_target) || (is_pid2 && !is_pid1_target);
+
+	// PHASE 2: check if there is a data race in target memory
+	if (ptr == target_mem) {
+		if (is_setter) {
+			// setter sets the watchpoint and barrier state.
+			// with 100ms time window, if no racer arrives, then indicates that there is no data race
 			kcsan_disable_current();
-			// trace_printk("at addr %px, ip=%px, kc.ip=%px, is_pid1=%d, is_pid2=%d, cpu=%u, in_task=%u\n",
-			//   ptr, ip, kc_watchpoints.ip, is_pid1, is_pid2, task_cpu(current), in_task());
-			pr_err("at addr %px, ip=%px, kc.ip=%px, is_pid1=%d, is_pid2=%d, cpu=%u, in_task=%u\n", ptr, ip, kc_watchpoints.ip, is_pid1, is_pid2, task_cpu(current), in_task());
-			kcsan_enable_current();
-      	}
-
-		// TODO add nskips to watchpoint set trigger
-		if (is_pid1 && ((u64)ip == kc_watchpoints.ip)) {
-			kcsan_disable_current();
-			/*local_irq_disable();*/
-			/*WRITE_ONCE(kc_watchpoints.watchpoint_is_set, true);*/
-
-			// GABE: setup watchpoint
-			// note we flip producer and consumer
-			// so we populate *other_info first
-			// and then generate report when we see watchpoint
-			// from other thread
-			/*if (kc_watchpoints.print_enabled) {*/
-			unsigned int cpu = task_cpu(current);
-			// trace_printk("PID1 SET WATCHPOINT, addr=%px, ip=%px, cpu=%u\n", ptr, ip, cpu);
-			pr_err("PID1 SET WATCHPOINT, cpu=%u\n", cpu);
-			/*}*/
-
-			// TODO check for other rules (nested scoped access, mem reorder)
 			const bool is_write = (type & KCSAN_ACCESS_WRITE) != 0;
-			atomic_long_t *watchpoint;
-			watchpoint = insert_watchpoint((unsigned long)ptr, size, is_write);
-
+			atomic_long_t *watchpoint = insert_watchpoint((unsigned long)ptr, size, is_write);
+			if (watchpoint == NULL) {
+				kcsan_enable_current();
+				return;
+			}
+			PID_LOG("set watchpoint\n");
+			PID_LOG("target mem %px\n", target_mem);
 			kcsan_save_irqtrace(current);
 			kcsan_report_set_info(ptr, size, type, ip, watchpoint - watchpoints);
 			kcsan_restore_irqtrace(current);
-
-
 			WRITE_ONCE(kc_watchpoints.old_val, read_instrumented_memory(ptr, size));
-
 			WRITE_ONCE(kc_watchpoints.watchpoint_is_set, 1);
-			// smp_store_release(&kc_watchpoints.watchpoint_is_set, 1);
-
-			/*local_irq_enable();*/
-
-			// trace_dbg("PID1 SET WATCHPOINT");
-
-
-			// GABE: deliberately deadlock here, we wait until another process unlocks this one
-			// TODO: maybe replace with spin?
-			// not sure if we want to fully utilize cpu while waiting or not
-			/*spin_lock(&watchpoint_lock);*/
-			/*mutex_lock(&watchpoint_lock);*/
-			/*spin_lock_interruptible(&watchpoint_lock);*/
-
-			// try dumbest thing here?
-			/*kcsan_disable_current();*/
-
-					/*local_irq_disable();*/
-
-			// try just waiting a second
-			
-			
-			// mdelay(500);
-			// WRITE_ONCE(kc_watchpoints.watchpoint_is_set, 0);
-			
-			
-			// pr_err("PID1 RESET WATCHPOINT\n");
-			// trace_printk("PID1 RESET WATCHPOINT, addr=%px, ip=%px\n", ptr, ip);
-
-
-			/*while (1) {*/
-			/*}*/
-			/*BUG_ON(true); // we should not be here*/
-			/*pr_err("PID1 AFTER WATCHPOINT, ERROR\n");*/
-
-					/*local_irq_enable();*/
+			// complete setting the watchpoint, then release racer process
+			complete(&setter_done);
+			PID_LOG("setter done\n");
+			mdelay(100);
+			WRITE_ONCE(kc_watchpoints.watchpoint_is_set, 0);
 			kcsan_enable_current();
-
-		// for pid2 check if watchpoint is set, then we at a race!
-		} else if (is_pid2) {
-
-			/*if (READ_ONCE(kc_watchpoints.watchpoint_is_set)) {*/
-			if (smp_load_acquire(&kc_watchpoints.watchpoint_is_set)) {
-				kcsan_disable_current();
-				WRITE_ONCE(kc_watchpoints.watchpoint_hit, 1);
-				WRITE_ONCE(kc_watchpoints.race_detected, 1);
-				/*trace_dbg("PID2 RACE AT %px", ip);*/
-
-				/*if (kc_watchpoints.print_enabled) {*/
-				unsigned int cpu2 = task_cpu(current);
-				//   pr_err("PID2 RACE AT %px, cpu=%u", ip, cpu2);
-				//   trace_printk("PID2 RACE AT %px, cpu=%u\n", ip, cpu2);
-				/*}*/
-				// TODO value change checking
-				long encoded_watchpoint;
-				atomic_long_t *watchpoint;
-				watchpoint = find_watchpoint((unsigned long)ptr, size,
-							!(type & KCSAN_ACCESS_WRITE),
-							&encoded_watchpoint);
-
-				enum kcsan_value_change value_change = KCSAN_VALUE_CHANGE_MAYBE;
-				u64 new = read_instrumented_memory(ptr, size);
-				u64 old = READ_ONCE(kc_watchpoints.old_val);
-
-				kcsan_report_known_origin(ptr, size, type, ip,
-							value_change, watchpoint - watchpoints,
-							old, new, ctx->access_mask);
-
+		} else if (is_racer) {
+			// racer, wait until setter is ready
+			// if setter is ready, then find watchpoint
+			// if find one, then report the data race.
+			kcsan_disable_current();
+			// wait until setter has setup watchpoint
+			PID_LOG("racer waiting...\n");
+			if(!wait_for_completion_timeout(&setter_done, 100)){
+				PID_LOG("racer timeout, exiting...\n");
 				kcsan_enable_current();
+				return ;
+			}
+			PID_LOG("racer proceeding...\n");
+			PID_LOG("target mem %px\n", target_mem);
+			long encoded_watchpoint;
+			atomic_long_t *watchpoint = find_watchpoint((unsigned long)ptr, size,
+										!(type & KCSAN_ACCESS_WRITE),
+										&encoded_watchpoint);
+
+			if (watchpoint == NULL){
+				PID_LOG("Watchpoint not found\n");
+				kcsan_enable_current();
+				return ;
 			} else {
-			// disable warning here in case it spams and slows execution
-			/*if (kc_watchpoints.barrier1) {*/
-				/*kcsan_disable_current();*/
-				/*unsigned int cpu2 = task_cpu(current);*/
-				/*pr_warn("PID2 HIT ADDR FIRST %px, cpu=%u", ip, cpu2);*/
-				/*kcsan_enable_current();*/
-			/*}*/
+				PID_LOG("Watchpoint is: %ld\n", atomic_long_read(watchpoint));
+				WRITE_ONCE(kc_watchpoints.watchpoint_hit, 1);
 			}
+			WRITE_ONCE(kc_watchpoints.race_detected, 1);
+			enum kcsan_value_change value_change = KCSAN_VALUE_CHANGE_MAYBE;
+			u64 new = read_instrumented_memory(ptr, size);
+			u64 old = READ_ONCE(kc_watchpoints.old_val);
+
+			if (kc_watchpoints.print_enabled) {
+				unsigned int cpu2 = task_cpu(current);
+				PID_LOG("RACE AT %lu, cpu = %u\n", ip, cpu2);
+				pr_err("new val: %llu\n", new);
+				pr_err("old val: %llu\n", old);
+				kcsan_report_known_origin(ptr, size, type, ip,
+						value_change, watchpoint - watchpoints,
+						old, new, ctx->access_mask);
+			}
+			kcsan_enable_current();
 		}
 	}
+	return ;
 
-    // if watchpoint is configured, return before tracing
-    // DEBUG: or don't return, trace too
-    return;
-  }
+	// kcsan_disable_current();
+	// // the first arrived process set the target_mem and watchpoint
+	// if (target_mem == NULL) {
+	// 	if (ip != kc_watchpoints.ip)
+	// 		return ;
+	// 	const bool is_write = (type & KCSAN_ACCESS_WRITE) != 0;
+	// 	atomic_long_t *watchpoint = insert_watchpoint((unsigned long)ptr, size, is_write);
+	// 	if (watchpoint == NULL) {
+	// 		// if watchpoint is NULL, then we do this procedure all over again
+	// 		target_mem = NULL;
+	// 		return;
+	// 	}
+	// 	pr_err("%s: set watchpoint\n", is_pid1 ? "PID1" : "PID2");
+	// 	pr_err("%s: 1 target mem %px\n", is_pid1 ? "PID1" : "PID2", target_mem);
+	// 	kcsan_save_irqtrace(current);
+	// 	kcsan_report_set_info(ptr, size, type, ip, watchpoint - watchpoints);
+	// 	kcsan_restore_irqtrace(current);
+	// 	WRITE_ONCE(kc_watchpoints.old_val, read_instrumented_memory(ptr, size));
+	// 	WRITE_ONCE(kc_watchpoints.watchpoint_is_set, 1);
+	// 	atomic_set(&kc_watchpoints.barrier, BARRIER_STATE_ONE_ARRIVED);
+	// 	pr_err("%s: set barrier to arrived\n", is_pid1 ? "PID1" : "PID2");
+	// 	while (atomic_read(&kc_watchpoints.barrier) != BARRIER_STATE_GO);
+	// 	mdelay(100);
+	// 	WRITE_ONCE(kc_watchpoints.watchpoint_is_set, 0);
+	// } else if (target_mem == ptr) {
+	// 	while (atomic_read(&kc_watchpoints.barrier) != BARRIER_STATE_ONE_ARRIVED);
+	// 	pr_err("%s: 2 target mem %px\n", is_pid1 ? "PID1" : "PID2", target_mem);
+	// 	atomic_set(&kc_watchpoints.barrier, BARRIER_STATE_GO);
+	// 	WRITE_ONCE(kc_watchpoints.watchpoint_hit, 1);
+	// 	WRITE_ONCE(kc_watchpoints.race_detected, 1);
+	// 	long encoded_watchpoint;
+	// 	atomic_long_t *watchpoint = find_watchpoint((unsigned long)ptr, size,
+	// 								!(type & KCSAN_ACCESS_WRITE),
+	// 								&encoded_watchpoint);
 
+	// 	if (watchpoint == NULL)
+	// 		pr_err("Watchpoint not found\n");
+	// 	else
+	// 		pr_err("Watchpoint is: %ld\n", watchpoint);
 
-  // mem tracing (watchpoint is not set)
-  if (is_atomic(ctx, ptr, size, type)) {
-    type |= (1<<5); /* record is_atomic in type */
+	// 	enum kcsan_value_change value_change = KCSAN_VALUE_CHANGE_MAYBE;
+	// 	u64 new = read_instrumented_memory(ptr, size);
+	// 	u64 old = READ_ONCE(kc_watchpoints.old_val);
 
-    // get reason for atomic
-    if (ctx->in_flat_atomic)
-      type |= (1<<6);
+	// 	if (kc_watchpoints.print_enabled) {
+	// 		unsigned int cpu2 = task_cpu(current);
+	// 		pr_err("%s: RACE AT %px, cpu=%u\n",is_pid1 ? "PID1" : "PID2", ip, cpu2);
+	// 		pr_err("new val: %llu\n", new);
+	// 		pr_err("old val: %llu\n", old);
+	// 		// printk(KERN_DEBUG "DEBUG: About to call kcsan_report_known_origin\n");
+	// 		printk(KERN_DEBUG "DEBUG: value_change=%d, watchpoint=%px, wpt_idx=%ld, old=0x%llx, new=0x%llx, mask=0x%llx\n",
+	// 		value_change, watchpoint, watchpoint ? (long)(watchpoint - watchpoints) : -1L, old, new, ctx->access_mask);
+	// 		kcsan_report_known_origin(ptr, size, type, ip,
+	// 				value_change, watchpoint - watchpoints,
+	// 				old, new, ctx->access_mask);
+	// 	}
+	// }
+	// kcsan_enable_current();
+	// return ;
 
-    if (ctx->atomic_next > 0)
-      type |= (1<<7);
+	// if (ptr) {
+	// 	// disable by default, can spam and prevent checks working
+	// 	if (kc_watchpoints.print_enabled && ((u64)ip == kc_watchpoints.ip)) {
+	// 		kcsan_disable_current();
+	// 		pr_err("at addr %px, ip=%px, kc.ip=%px, is_pid1=%d, is_pid2=%d, cpu=%u, in_task=%u\n", ptr, ip, kc_watchpoints.ip, is_pid1, is_pid2, task_cpu(current), in_task());
+	// 		kcsan_enable_current();
+	// 	}
+	// 	// TODO add nskips to watchpoint set trigger
+	// 	if (is_pid1 && ((u64)ip == kc_watchpoints.ip)) {
+	// 		kcsan_disable_current();
+	// 		target_mem = ptr;
+	// 		/*local_irq_disable();*/
+	// 		/*WRITE_ONCE(kc_watchpoints.watchpoint_is_set, true);*/
+	// 		// GABE: setup watchpoint
+	// 		// note we flip producer and consumer
+	// 		// so we populate *other_info first
+	// 		// and then generate report when we see watchpoint
+	// 		// from other thread
+	// 		unsigned int cpu = task_cpu(current);
+	// 		pr_err("PID1 SET WATCHPOINT, cpu=%u\n", cpu);
+	// 		// TODO check for other rules (nested scoped access, mem reorder)
+	// 		const bool is_write = (type & KCSAN_ACCESS_WRITE) != 0;
+	// 		atomic_long_t *watchpoint;
+	// 		watchpoint = insert_watchpoint((unsigned long)ptr, size, is_write);
+	// 		pr_err("Watchpoint: %px\n", watchpoint);
+	// 		if (watchpoint == NULL) return;
+	// 		kcsan_save_irqtrace(current);
+	// 		kcsan_report_set_info(ptr, size, type, ip, watchpoint - watchpoints);
+	// 		kcsan_restore_irqtrace(current);
+	// 		WRITE_ONCE(kc_watchpoints.old_val, read_instrumented_memory(ptr, size));
+	// 		WRITE_ONCE(kc_watchpoints.watchpoint_is_set, 1);
+				
+	// 		// GABE: deliberately deadlock here, we wait until another process unlocks this one
+	// 		// TODO: maybe replace with spin?
+	// 		// not sure if we want to fully utilize cpu while waiting or not
+			
+	// 		// try just waiting a second
 
-    if (ctx->atomic_nest_count > 0)
-      type |= (1<<8);
-  }
-
-  u64 val = read_instrumented_memory(ptr, size);
-//   pr_err("TRACE: %px, %px, %px, %px, %d, %d, %d\n", ip, ptr, size, val, type, is_pid1, is_pid2);
-//   trace_printk("TRACE: %px, %px, %zu, %llu, %d, %d, %d\n",
-// 		ip, ptr, size, val, type, is_pid1, is_pid2);
-  trace_mem_read_write((void *)ip, ptr, size, type, val);
-  /*trace_mem_read_write(__builtin_extract_return_addr(ip), ptr, kc_watchpoints.pid1, type);*/
-  /*trace_mem_read_write(__builtin_extract_return_addr(ip), ptr, size, type);*/
-
-  // GABE: for now hard disable rest of kcsan, only trace + watchpoint
-  return;
-
-
-
-
-
-
-
-
-	atomic_long_t *watchpoint;
-	long encoded_watchpoint;
-
-	/*
-	 * Do nothing for 0 sized check; this comparison will be optimized out
-	 * for constant sized instrumentation (__tsan_{read,write}N).
-	 */
-	if (unlikely(size == 0))
-		return;
-
-again:
-	/*
-	 * Avoid user_access_save in fast-path: find_watchpoint is safe without
-	 * user_access_save, as the address that ptr points to is only used to
-	 * check if a watchpoint exists; ptr is never dereferenced.
-	 */
-	watchpoint = find_watchpoint((unsigned long)ptr, size,
-				     !(type & KCSAN_ACCESS_WRITE),
-				     &encoded_watchpoint);
-	/*
-	 * It is safe to check kcsan_is_enabled() after find_watchpoint in the
-	 * slow-path, as long as no state changes that cause a race to be
-	 * detected and reported have occurred until kcsan_is_enabled() is
-	 * checked.
-	 */
-
-	if (unlikely(watchpoint != NULL))
-		kcsan_found_watchpoint(ptr, size, type, ip, watchpoint, encoded_watchpoint);
-	else {
-		struct kcsan_ctx *ctx = get_ctx(); /* Call only once in fast-path. */
-
-		if (unlikely(should_watch(ctx, ptr, size, type))) {
-			kcsan_setup_watchpoint(ptr, size, type, ip);
-			return;
-		}
-
-		if (!(type & KCSAN_ACCESS_SCOPED)) {
-			struct kcsan_scoped_access *reorder_access = get_reorder_access(ctx);
-
-			if (reorder_access) {
-				/*
-				 * reorder_access check: simulates reordering of
-				 * the access after subsequent operations.
-				 */
-				ptr = reorder_access->ptr;
-				type = reorder_access->type;
-				ip = reorder_access->ip;
-				/*
-				 * Upon a nested interrupt, this context's
-				 * reorder_access can be modified (shared ctx).
-				 * We know that upon return, reorder_access is
-				 * always invalidated by setting size to 0 via
-				 * __tsan_func_exit(). Therefore we must read
-				 * and check size after the other fields.
-				 */
-				barrier();
-				size = READ_ONCE(reorder_access->size);
-				if (size)
-					goto again;
-			}
-		}
-
-		/*
-		 * Always checked last, right before returning from runtime;
-		 * if reorder_access is valid, checked after it was checked.
-		 */
-		if (unlikely(ctx->scoped_accesses.prev))
-			kcsan_check_scoped_accesses();
-	}
+	// 		if (atomic_cmpxchg(&kc_watchpoints.barrier, BARRIER_STATE_INIT, BARRIER_STATE_ONE_ARRIVED) == BARRIER_STATE_INIT) {
+	// 			pr_err("PID1: First to arrive, waiting...\n");
+	// 			while (atomic_read(&kc_watchpoints.barrier) != BARRIER_STATE_GO);
+	// 		} else {
+	// 			pr_err("PID1: Second to arrive, releasing barrier.\n");
+	// 			atomic_set(&kc_watchpoints.barrier, BARRIER_STATE_GO);
+	// 		}
+	// 		mdelay(500);
+	// 		WRITE_ONCE(kc_watchpoints.watchpoint_is_set, 0);
+				
+	// 		pr_err("PID1 RESET WATCHPOINT\n");
+			
+	// 		kcsan_enable_current();
+	// 	// for pid2 check if watchpoint is set, then we at a race!
+	// 	} else if (is_pid2) {
+	// 		/*if (READ_ONCE(kc_watchpoints.watchpoint_is_set)) {*/
+	// 		if (smp_load_acquire(&kc_watchpoints.watchpoint_is_set) && ptr == target_mem) {
+	// 			kcsan_disable_current();
+	// 			if (atomic_cmpxchg(&kc_watchpoints.barrier, BARRIER_STATE_INIT, BARRIER_STATE_ONE_ARRIVED) == BARRIER_STATE_INIT) {
+	// 				pr_err("PID2: First to arrive, waiting...\n");
+	// 				while (atomic_read(&kc_watchpoints.barrier) != BARRIER_STATE_GO);
+	// 			} else {
+	// 				pr_err("PID2: Second to arrive, releasing barrier.\n");
+	// 				atomic_set(&kc_watchpoints.barrier, BARRIER_STATE_GO);
+	// 			}
+	// 			if (READ_ONCE(kc_watchpoints.race_detected))
+	// 				raced = true;
+	// 			WRITE_ONCE(kc_watchpoints.watchpoint_hit, 1);
+	// 			WRITE_ONCE(kc_watchpoints.race_detected, 1);
+	// 			// TODO value change checking
+	// 			long encoded_watchpoint;
+	// 			atomic_long_t *watchpoint;
+	// 			watchpoint = find_watchpoint((unsigned long)ptr, size,
+	// 						!(type & KCSAN_ACCESS_WRITE),
+	// 						&encoded_watchpoint);
+	// 			if (!watchpoint)
+	// 				pr_err("Watchpoint not found\n");
+	// 			else 
+	// 				pr_err("Watchpoint is: %ld\n", atomic_long_read(watchpoint));
+	// 			enum kcsan_value_change value_change = KCSAN_VALUE_CHANGE_MAYBE;
+	// 			u64 new = read_instrumented_memory(ptr, size);
+	// 			u64 old = READ_ONCE(kc_watchpoints.old_val);
+	// 			// long val = atomic_long_read(watchpoint);
+				
+	// 			if (kc_watchpoints.print_enabled && !raced) {
+	// 				unsigned int cpu2 = task_cpu(current);
+	// 				pr_err(" PID2RACE AT %px, cpu=%u\n", ip, cpu2);
+	// 				pr_err("new val: %llu\n", new);
+	// 				pr_err("old val: %llu\n", old);
+	// 				// printk(KERN_DEBUG "DEBUG: About to call kcsan_report_known_origin\n");
+	// 				printk(KERN_DEBUG "DEBUG: value_change=%d, watchpoint=%px, wpt_idx=%ld, old=0x%llx, new=0x%llx, mask=0x%llx\n",
+	// 				value_change, watchpoint, watchpoint ? (long)(watchpoint - watchpoints) : -1L, old, new, ctx->access_mask);
+	// 				kcsan_report_known_origin(ptr, size, type, ip,
+	// 						value_change, watchpoint - watchpoints,
+	// 						old, new, ctx->access_mask);
+	// 			}
+				
+	// 			kcsan_enable_current();
+	// 			// printk(KERN_DEBUG "DEBUG: Already call kcsan_report_known_origin\n");
+	// 		}
+	// 	}
+	// }
+	// // if watchpoint is configured, return before tracing
+	// // DEBUG: or don't return, trace too
+	// return;
 }
 
 /* === Public interface ===================================================== */
