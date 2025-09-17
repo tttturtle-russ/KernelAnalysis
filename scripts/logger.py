@@ -42,8 +42,12 @@ class KALogger(logging.Logger):
     def tool_log(self, msg, *args, **kwargs):
         msg = self.truncate_msg(msg)
         self.console.print("[bold yellow]TOOL CALL:[/bold yellow]")
-        self.console.print(JSON(msg))
-        self.console.print("\n")
+        try:
+            self.console.print(JSON(msg))
+        except Exception:
+            self.console.print(Markdown(msg))
+        finally:
+            self.console.print("\n")
     
     def tool_result_log(self, msg, *args, **kwargs):
         msg = self.truncate_msg(msg)

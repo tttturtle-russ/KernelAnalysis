@@ -159,7 +159,7 @@ class LLM:
         result = self.qemu.exec_cmd(cmd)
         return result
     
-    def dump(self, filepath):
+    def dump(self, filepath="log.json"):
         message_list = []
         for message in self.messages:
             tmp_message = message.copy()

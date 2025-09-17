@@ -4,46 +4,50 @@ import subprocess
 import argparse
 import sys
 
-def infer_func(vmlinux, source_loc):
+def get_start_ip(vmlinux, source_loc):
     gdb_command = f"gdb -q -batch -ex 'file {vmlinux}' -ex 'info line {source_loc}'"
     try:
         output = subprocess.check_output(gdb_command, shell=True, text=True, stderr=open("/dev/null", "w"))
-        for line in output.splitlines():
-            m = re.search(r'at address 0x[0-9a-fA-F]+ <([\w\d_+<>.-]+)>', output)
-            if m:
-                # format: func+offset
-                funcname = m.group(1)
-                # now split and just use func
-                funcname = funcname.split("+")[0]
-                return funcname
-            else:
-                raise RuntimeError(f"Cannot infer function name from source location {source_loc}")
+        m = re.search(r'at address (0x[0-9a-fA-F]+)', output)
+        if m:
+            start_ip = m.group(1)
+            return start_ip
+        else:
+            raise RuntimeError(f"Cannot infer IP from source location {source_loc}")
     except Exception as e:
         print(f"[!] Error running gdb: {e}", file=sys.stderr)
         sys.exit(1)
 
-def infer_ip(vmlinux, func_name):
-    gdb_command = f"gdb -q -batch -ex 'file {vmlinux}' -ex 'disassemble {func_name}'"
+def get_disass(vmlinux, start_ip):
+    gdb_command = f"gdb -q -batch -ex 'file {vmlinux}' -ex 'disassemble {start_ip}'"
     try:
         output = subprocess.check_output(gdb_command, shell=True, text=True, stderr=open("/dev/null", "w"))
         disassembles = output.strip().splitlines()
-        for idx, line in enumerate(disassembles):
-            if 'call' in line and '__tsan_write' in line:
-                for next_line in disassembles[idx+1:]:
-                    next_line = next_line.strip()
-                    if not next_line or not next_line.startswith('0x'):
-                        continue
-                    match = re.match(r'(0x[0-9a-fA-F]+)', next_line)
-                    if match:
-                        ip = match.group(1)
-                        return ip
+        return disassembles
     except Exception as e:
-        print(f"[!] Error running gdb: {e}")
+        print(f"[!] Error running gdb: {e}", file=sys.stderr)
+        sys.exit(1)
 
+def get_target_ip(vmlinux, source_loc):
+    start_ip = get_start_ip(vmlinux, source_loc)
+    disass = get_disass(vmlinux, start_ip)
+    found_start = False
+    for idx, line in enumerate(disass):
+        if start_ip in line:
+            found_start = True
+        if found_start and 'call' in line and '__tsan_write' in line:
+            # return the next instruction address after __tsan_write call
+            # find next line with address
+            next_line = disass[idx + 1]
+            match = re.match(r'^\s*(0x[0-9a-fA-F]+)', next_line)
+            if match:
+                ip = match.group(1)
+                return ip
+    return None
 
 def main():
     argparser = argparse.ArgumentParser()
-    argparser.add_argument("--source_loc", required=True, help="Source location in the format 'file:line'")
+    argparser.add_argument("source_loc", help="Source location in the format 'file:line'")
     args = argparser.parse_args()
 
     kernel_dir = os.getenv("KERNEL_DIR", None)
@@ -52,9 +56,7 @@ def main():
         sys.exit(1)
     vmlinux = f"{kernel_dir}/vmlinux"
     source_loc = args.source_loc
-    func_name = infer_func(vmlinux, source_loc)
-
-    ip = infer_ip(vmlinux, func_name)
+    ip = get_target_ip(vmlinux, source_loc)
     print(ip)
 
 if __name__ == "__main__":

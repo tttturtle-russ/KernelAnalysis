@@ -95,7 +95,7 @@ fi
 
   # Generate the exactpath JSON
   exact_out="$PWD/${FUNC1}-${FUNC2}-exactpath.json"
-  python3 "$SCRIPTS_DIR/path/get_func_exactpath.py" "$PWD/${FUNC1}-${FUNC2}-pair.json" "$exact_out"
+  python3 "$SCRIPTS_DIR/path/get_func_exactpath.py" "$PWD/${FUNC1}-${FUNC2}-pair-new.json" "$exact_out"
   # echo "2 Successfully transfer to path $exact_out"
   # echo "################################################################################################################"
 
@@ -108,9 +108,9 @@ fi
 
   # Generate prompt
   # echo "[INFO] Generating Prompt..."
-  NEWFILE1=$(basename "$FILE1")
-  NEWFILE2=$(basename "$FILE2")
-  python3 "$SCRIPTS_DIR/path/prompt.py" "$FUNC1" "$FUNC2" "$(basename "$(pwd)")" "${FUNC1}-${NUM1}-${FUNC2}-${NUM2}.json" "$NEWFILE1" "$NEWFILE2" "$NUM1" "$NUM2"
+  # NEWFILE1=$(basename "$FILE1")
+  # NEWFILE2=$(basename "$FILE2")
+  # python3 "$SCRIPTS_DIR/path/prompt.py" "$FUNC1" "$FUNC2" "$(basename "$(pwd)")" "${FUNC1}-${NUM1}-${FUNC2}-${NUM2}.json" "$NEWFILE1" "$NEWFILE2" "$NUM1" "$NUM2"
   # echo "4 Successfully generated prompt: ${FILE1}_${NUM1}-${FILE2}_${NUM2}.prompt"
   # echo "################################################################################################################"
 
@@ -121,9 +121,9 @@ fi
     rm ${FUNC2}.json
   fi
   
-  # rm ${FUNC1}-${FUNC2}-pair.json
-  # rm ${FUNC1}-${FUNC2}-pair-new.json
-  # rm ${FUNC1}-${FUNC2}-exactpath.json
+  rm ${FUNC1}-${FUNC2}-pair.json
+  rm ${FUNC1}-${FUNC2}-pair-new.json
+  rm ${FUNC1}-${FUNC2}-exactpath.json
 
   # echo "5 Finish Cleaning"
   # echo "################################################################################################################"
