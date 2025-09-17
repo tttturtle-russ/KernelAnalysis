@@ -4,6 +4,14 @@ import subprocess
 import argparse
 import sys
 
+TSAN_FUNCTIONS = [
+    "__tsan_write",
+    "__tsan_volatile_write",
+]
+
+def is_tsan_function(line):
+    return any(func in line for func in TSAN_FUNCTIONS)
+
 def get_start_ip(vmlinux, source_loc):
     gdb_command = f"gdb -q -batch -ex 'file {vmlinux}' -ex 'info line {source_loc}'"
     try:
@@ -35,7 +43,7 @@ def get_target_ip(vmlinux, source_loc):
     for idx, line in enumerate(disass):
         if start_ip in line:
             found_start = True
-        if found_start and 'call' in line and '__tsan_write' in line:
+        if found_start and 'call' in line and is_tsan_function(line):
             # return the next instruction address after __tsan_write call
             # find next line with address
             next_line = disass[idx + 1]
