@@ -760,6 +760,18 @@ check_access(const volatile void *ptr, size_t size, int type, unsigned long ip)
 	if (kc_watchpoints.ip == 0)
 		return;
 
+	kcsan_disable_current();
+	/* DEBUG: optionally track when pids are running */
+	if (is_pid1 && !READ_ONCE(kc_watchpoints.pid1_running)) {
+		WRITE_ONCE(kc_watchpoints.pid1_running, 1);
+		pr_err("PID1 RUNNING\n");
+	}
+	else if (is_pid2 && !READ_ONCE(kc_watchpoints.pid2_running)) {
+		WRITE_ONCE(kc_watchpoints.pid2_running, 1);
+		pr_err("PID2 RUNNING\n");
+	}
+	kcsan_enable_current();
+	
 	/* validate there isn't any multithreading going on */
 	//   pid_t current_tgid = task_tgid_nr(current);
 	pid_t current_tgid = READ_ONCE(current->tgid);
@@ -779,18 +791,6 @@ check_access(const volatile void *ptr, size_t size, int type, unsigned long ip)
 
 	if (first_attempt)
 		return ;
-
-	kcsan_disable_current();
-	/* DEBUG: optionally track when pids are running */
-	if (is_pid1 && !READ_ONCE(kc_watchpoints.pid1_running)) {
-		WRITE_ONCE(kc_watchpoints.pid1_running, 1);
-		pr_err("PID1 RUNNING\n");
-	}
-	else if (is_pid2 && !READ_ONCE(kc_watchpoints.pid2_running)) {
-		WRITE_ONCE(kc_watchpoints.pid2_running, 1);
-		pr_err("PID2 RUNNING\n");
-	}
-	kcsan_enable_current();
 
 	// we treat two process as setter and racer
 	// setter sets the watchpoint to the target memory
